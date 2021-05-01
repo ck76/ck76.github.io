@@ -1,0 +1,7 @@
+- Dr.unarchiver 解压软件
+- easy new file 右键打开终端啊，创建文件什么的
+- item2 更强大的终端
+- homebrew 包管理工具
+- Be Focused 计时软件
+- Sodoku++ 数独游戏
+- VLC播放器 不能发mkv但是能加速
