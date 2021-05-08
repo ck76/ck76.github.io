@@ -344,10 +344,10 @@ Point out, present, describe, state, mention, discuss, provide, demonstrate, int
 //最终版模板
 - In this set of materials, the reading passage describes a notice (title of the reading passage) ... and the listening passage is a discussion by two students on this...
 - //According to the reading passage, the notice explains(discusses)【可选】
-- In the conversation, the man/woman agrees/disagrees with this(xxx) for the following reasons.
+- In the conversation, the man/woman agrees/disagrees with this(xxx) 【for the following reasons.】
 - First, she believes/feels/thinks that …
 - Secondly, she believes/feels/thinks that …
-- So the man/woman agrees/disagrees with this(xxx) for the reasons stated above
+- So the man/woman agrees/disagrees with this(xxx) for the reasons stated above【有时间说，没时间不说】
 ```
 
 ```
@@ -393,7 +393,8 @@ So the woman vietually disagrees for the reasons stated above.
 ##### Task Four
 
 ```c
-- In this set of materials, the reading passage describes xxx and the listening passage is a lecture by a professor on the same topic.
+- In this set of materials, the reading passage describes xxx and at the listening passage, the speaker demonstrate it by several examples.
+  the listening passage is a lecture by a professor on the same topic.
 - //According to the reading passage..(optional)【可选】
 - In the listening passage, the professor( goes on to demonstrate it by 1 with two examples)- 
   - The first one is
@@ -407,9 +408,9 @@ So the woman vietually disagrees for the reasons stated above.
 ##### Task Six
 
 ```c
-- In the lecture, the professor talks about .
+- In the lecture, the professor talks about .【直切主题，说清例子，没时间扯淡】
   //- and then provides two examples to illustrate(ˈɪləstreɪt) this ...
-- And these are two examples the professor presented to explain the theory/phenomenon.
+- And these are two examples the professor presented to explain the theory/phenomenon.【不说，没时间说】
   - The first one is that ..- .
 	- Another example is that ...
   - (Still, the conclusion is optional)- (You can make adjustments on this style according to different lectures)
@@ -432,15 +433,24 @@ So the woman vietually disagrees for the reasons stated above.
 ```
 
 ```c
+In  the  lecture,the  speaker  rebuts  the  passage's  argument  that  it's  impractical  to  settle  on  earth.Conversely,he  proposes  that  it's  viable  to  achieve  the  goal  by  establishing  a  floating  station  above  50  kilometers  from  the  venus  surface.
+  
 The lecture is mainly discussing ______, ________ and ___________by _________, challenging what are stated in the reading passage that _________, _________ and _______.
 
-First of all, the speaker thinks that ___________. In contrast, the reading passage believes that _____________. So, the lecture totally disagree with the view made in the reading.
+First of all, the speaker thinks that ___________. 【In contrast,】 the reading passage believes that _____________. So, the lecture totally disagree with the view made in the reading.
 
-Second, the speaker discusses ___________, Contradicting what is stated in the reading that _____________________.
+Second, the speaker discusses ___________, 【Contradicting】 what is stated in the reading that _____________________.
 
-Finally, the speakers raises the issue that ___________. This point disagrees that ________________ demonstrated in the reading.
+Finally, the speakers raises the issue that ___________. 【This point disagrees】 that ________________ demonstrated in the reading.
 
+  In conclusion, the speaker precisely identifies the problems in the reading passage and convincingly proves that the main idea in the reading is incorrect.
+  
 So, the contents in the reading passage are totally jeopardized by the speaker and the speaker has totally different ideas on the topics made in the reading.【109这个差不多】
+```
+
+```c
+To be more specifically, because, in that case, if, what's more. 
+In detail, moreover/additionally, to explain it further, as a result, on the contrary. 
 ```
 
 
@@ -451,17 +461,16 @@ The lecture us mainly discussing xxx, and sss by xxx, challenging what are state
   First of all, the speaker thinks that xxx. In contrast, the reading passage believes that xxx. So, the lecture totally disagree with the view made in the reading.
   
   Second, the speaker discusses xxx, Contradicting what is stated in the reading that yyy.
-```
-
-
-
-The lecturer rejects the ideas presented in the reading passage about the problems involved with the booming business of commercial fossil trading. In her opinion, the benefits of this new development outweigh its negative
+  The lecturer rejects the ideas presented in the reading passage about the problems involved with the booming business of commercial fossil trading. In her opinion, the benefits of this new development outweigh its negative
 consequences. The lecturer does not agree with the first point made in the reading that private collectors will keep their fossil collection away from the public, leading the public to lose interests in fossils. She contends that the
 commercial trading of fossils actually makes them available to a wider public, because everyone with a budget, such as private schools and libraries, can purchase them for study and exhibition. The lecturer goes on to refute the
 claim in the reading that fossil trading business prevents scientists and public museums from benefiting from fossil finds, as these parties cannot compete with wealthy private buyers to acquire important fssils for research
 purpose. On the contrary, she argues, scientists themselves are the first to evaluate any important fossil before it can be sold in the commercial market at a price, so the academic community does not miss any opportunity to study
 privately traded fossils. Additionally, the lecturer challenges the final downside of fossil trading mentioned in the reading.The lecturer reminds us that the damages, if any, caused by private collectors in their field operations are
 more than offset by the effort they have made to increase the number of fossils available to the public that would otherwise remain undiscovered.
+```
+
+
 
 ```
 Integrated Writing 模版
@@ -493,6 +502,7 @@ In conclusion,the professor precisely identifies the problems in the reading pas
 
 ```
 1.综合写作所需字数为150-225字,不能低于150字的下限,但超过225字的上限一般不扣分。
+350-400
 2.原则上,独立写作更有利,但一般在500-700字之间,一般少于450个字将被认为无法充分表达考生的想法。
 ```
 
@@ -511,15 +521,21 @@ In conclusion,the professor precisely identifies the problems in the reading pas
   结尾段：重申立场+paraphrase理由
 ```
 
-- Nowadays more and more families have personal computers at home, and children are more likely to expose to the computers at a very young age. As a result, many computer games are available for children in recent years.
-  Many people are concerned about this fact and they believe playing computer games is a waste of time. However, I couldn' t disagree with this view of point more since I believe playing computer games could somehow benefit children. 
-- First off, playing computer games offers children another way to meet more people and gain communication ability. Nowadays many computer games, such as World of War craft, need cooperation among lots of people.
-  Children who involved in such kind of games have extra access to gaining social abilities. They can learn how to communicate efficiently with each other while playing. 
-- Furthermore, playing computer games could help to improve children' s nelligence. This means that children who play games may be cleverer than their peers and can learn more things without suffer. Many games available today, such as Angry Birds, really need some knowledge and deep thought so that you could complete the tasks. Under this circumstance, children can be better at solving problems and smarter in the future. 
+```c
+To be more specifically/This means that/In this way, 
+because, in that case, if, 
+what's more/ In detail, moreover/additionally, to explain it further, as a result/so, on the contrary. 
+```
+
+- Nowadays more and more families have personal computers at home, and children are more likely to expose to the computers at a very young age. **As a result**, many computer games are available for children in recent years.【描述问题】
+  Many people are concerned about this fact and they believe playing computer games is a waste of time. However, I couldn' t disagree with this view of point more **since** I believe playing computer games could somehow benefit children. 【提出观点】
+- First of all, playing computer games offers children another way to meet more people and gain communication ability. Nowadays many computer games, such as World of War craft, need cooperation among lots of people.
+  **To be more specifically**, Children who involved in such kind of games have extra access to gaining social abilities. **As a result** They can learn how to communicate efficiently with each other while playing. 
+- Furthermore, playing computer games could help to improve children' s nelligence. **This means that** children who play games may be cleverer than their peers and can learn more things without suffer. Many games available today, such as Angry Birds, really need some knowledge and deep thought so that you could complete the tasks. Under this circumstance, children can be better at solving problems and smarter in the future. 
 - What's more, computer games can be a very good way for relaxation. Children is modern society usually have more pressure and are more burdensome. By playing computer games, they can forget their worries and relax themselves. Their mind will be refreshed and they may be better at their work. 
 - However, I have to admit that some children are just addicted to computer games and they waste their entire time sitting in front of the computers. In addition, there are many computer games which contain lots of violent scene which is
   harmful to children. Anyway, these problems can be solved by letting parents to supervise their children about what is the proper game to play.
-- All in all, I draw the conclusion that computer games can benefit children by offering opportunities to gain social abilities, improving intelligence and relaxing. Computer games are good things to enrich a child s life rather than ruin it.
+- **All in all,** I draw the conclusion that computer games can benefit children by offering opportunities to gain social abilities, improving intelligence and relaxing. Computer games are good things to enrich a child s life rather than ruin it.
 
 
 
