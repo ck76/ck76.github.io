@@ -435,15 +435,19 @@ So the woman vietually disagrees for the reasons stated above.
 ```c
 In  the  lecture,the  speaker  rebuts  the  passage's  argument  that  it's  impractical  to  settle  on  earth.Conversely,he  proposes  that  it's  viable  to  achieve  the  goal  by  establishing  a  floating  station  above  50  kilometers  from  the  venus  surface.
   
+  
+  //--------------------------------------------------------------
 The lecture is mainly discussing ______, ________ and ___________by _________, challenging what are stated in the reading passage that _________, _________ and _______.
 
 First of all, the speaker thinks that ___________. 【In contrast,】 the reading passage believes that _____________. So, the lecture totally disagree with the view made in the reading.
 
-Second, the speaker discusses ___________, 【Contradicting】 what is stated in the reading that _____________________.
+Second, the speaker 【discusses】 ___________, 【Contradicting】 what is stated in the reading that _____________________.
 
-Finally, the speakers raises the issue that ___________. 【This point disagrees】 that ________________ demonstrated in the reading.
+Finally, the speakers 【raises the issue】 that ___________. 【This point disagrees】 that ________________ demonstrated in the reading.
 
-  In conclusion, the speaker precisely identifies the problems in the reading passage and convincingly proves that the main idea in the reading is incorrect.
+  
+  //--------------------------------------------------------------
+  In conclusion, the speaker precisely identifies the problems in the reading passage and convincingly proves that the main idea in the reading is incorrect.【必要性不高】
   
 So, the contents in the reading passage are totally jeopardized by the speaker and the speaker has totally different ideas on the topics made in the reading.【109这个差不多】
 ```
@@ -508,6 +512,12 @@ In conclusion,the professor precisely identifies the problems in the reading pas
 
 
 
+```c
+
+```
+
+
+
 ##### Independent Writing Task 
 
 ###### Agree Or Dissagree / 2选1 Prefer
@@ -516,26 +526,30 @@ In conclusion,the professor precisely identifies the problems in the reading pas
 （假设我持支持观点，支持的观点是A，对立面不支持的观点是B）
   开头段：给出观点/立场 
   第二段（让步段）：我承认B有好的方面+好的具体阐述+但是B的好比不过A的以下方面的好 
-  第三段：A好的点1（argument中心句）+解释说明（1-2句）+举例（具体！！） 
-  第四段：A好的点2（argument中心句）+解释说明（1-2句）+举例（具体！！） 
+  第三段：A好的点1（argument中心句）+解释说明（1-2句）+ 举例（具体！！）好处和坏处 + 结果。 
+  第四段：A好的点2（argument中心句）+解释说明（1-2句）+ 举例（具体！！） 
   结尾段：重申立场+paraphrase理由
 ```
 
 ```c
-To be more specifically/This means that/In this way, 
-because, in that case, if, 
-what's more/ In detail, moreover/additionally, to explain it further, as a result/so, on the contrary. 
+To be more specifically/ This means that, In detail, to explain it further, 
+For example, 
+because, if, 
+what's more /moreover/ additionally, on the contrary, In contrast, but if not, 
+In this way/ in that case, So, as a result, Under this circumstance
+I have to admit that. Anyway, these problems can be solved by
+All in all, I draw the conclusion that.
 ```
 
 - Nowadays more and more families have personal computers at home, and children are more likely to expose to the computers at a very young age. **As a result**, many computer games are available for children in recent years.【描述问题】
-  Many people are concerned about this fact and they believe playing computer games is a waste of time. However, I couldn' t disagree with this view of point more **since** I believe playing computer games could somehow benefit children. 【提出观点】
-- First of all, playing computer games offers children another way to meet more people and gain communication ability. Nowadays many computer games, such as World of War craft, need cooperation among lots of people.
+  Many people are concerned about this fact and they believe playing computer games is a waste of time. However, I couldn' t disagree with this view of point more **since** I believe playing computer games could **somehow benefit** children. 【提出观点】
+- First of all, playing computer games offers children another way to meet more people and gain communication ability. Nowadays many computer games, **such as** World of War craft, need cooperation among lots of people.
   **To be more specifically**, Children who involved in such kind of games have extra access to gaining social abilities. **As a result** They can learn how to communicate efficiently with each other while playing. 
-- Furthermore, playing computer games could help to improve children' s nelligence. **This means that** children who play games may be cleverer than their peers and can learn more things without suffer. Many games available today, such as Angry Birds, really need some knowledge and deep thought so that you could complete the tasks. Under this circumstance, children can be better at solving problems and smarter in the future. 
+- Furthermore, playing computer games could help to improve children' s nelligence. **This means that** children who play games may be cleverer than their peers and can learn more things without suffer. Many games available today, **such as** Angry Birds, really need some knowledge and deep thought so that you could complete the tasks. Under this circumstance, children can be better at solving problems and smarter in the future. 
 - What's more, computer games can be a very good way for relaxation. Children is modern society usually have more pressure and are more burdensome. By playing computer games, they can forget their worries and relax themselves. Their mind will be refreshed and they may be better at their work. 
-- However, I have to admit that some children are just addicted to computer games and they waste their entire time sitting in front of the computers. In addition, there are many computer games which contain lots of violent scene which is
-  harmful to children. Anyway, these problems can be solved by letting parents to supervise their children about what is the proper game to play.
-- **All in all,** I draw the conclusion that computer games can benefit children by offering opportunities to gain social abilities, improving intelligence and relaxing. Computer games are good things to enrich a child s life rather than ruin it.
+- However, **I have to admit that** some children are just addicted to computer games and they waste their entire time sitting in front of the computers. In addition, there are many computer games which contain lots of violent scene which is
+  harmful to children. **Anyway, these problems can be solved by** letting parents to supervise their children about what is the proper game to play.
+- **All in all,** **I draw the conclusion that** computer games **can benefit** children by offering opportunities to gain social abilities, improving intelligence and relaxing. Computer games are good things to enrich a child s life rather than ruin it.
 
 
 
