@@ -389,7 +389,19 @@ c. 上記3から6までの優遇措置が受けられる
 
 这就够80了？？？
 
+http://www.moj.go.jp/isa/publications/materials/newimmiact_3_evaluate_index.html
+
+https://continental-immigration.com/permanent-residency/it/
+
+qa http://www.moj.go.jp/isa/content/930001663.pdf
+
 http://www.moj.go.jp/isa/laws/nyukan_hourei_h09.html
+
+対象となる日本の国家資格弁護士・医師・公認会計士・技術士・計量士など。 その他IT資格は以下のもの：ITストラテジスト・システムアーキテクト・プロジェクトマネージャ・ネットワークスペシャリスト・データベーススペシャリスト・エンベデッドシステムスペシャリスト・ＩＴサービスマネージャ・システム監査技術者・応用情報技術者・基本情報技術者・情報セキュリティマネジメントなど。
+
+高度人材ポイント制の加点対象となる外国の資格，表彰等
+
+http://www.moj.go.jp/isa/content/930001661.pdf
 
 ```
 イ　情報処理の促進に関する法律（昭和四十五年法律第九十号）に基づき経済産業大臣が実施する情報処理安全確保支援士試験
