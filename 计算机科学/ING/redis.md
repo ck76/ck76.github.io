@@ -204,3 +204,73 @@
 
 ![image-20210629195938038](https://tva1.sinaimg.cn/large/008i3skNly1grzdytu2w9j30vi0jijvn.jpg)
 
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsq3a35olyj61jv0u0mzl02.jpg" alt="image-20210722221957054" style="zoom:50%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsq3bhgys7j31nk0leq56.jpg" alt="image-20210722222120551" style="zoom:50%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsq3d7p973j618a0soabj02.jpg" alt="image-20210722222259304" style="zoom:33%;" />
+
+![image-20210722222425065](https://tva1.sinaimg.cn/large/008i3skNly1gsq3elm1t6j31ib0u0add.jpg)
+
+![image-20210722222703402](https://tva1.sinaimg.cn/large/008i3skNly1gsq3hb2fn9j318q0u0wgy.jpg)
+
+![image-20210722222931516](https://tva1.sinaimg.cn/large/008i3skNly1gsq3jvrpwyj31te0u0q6v.jpg)
+
+![image-20210722223323033](https://tva1.sinaimg.cn/large/008i3skNly1gsq3nwlwz3j31j50u045m.jpg)
+
+![image-20210722223536591](https://tva1.sinaimg.cn/large/008i3skNly1gsq3q9a1zaj31ri0j876w.jpg)
+
+---
+
+
+
+
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsq3qm7r0cj31dc0qwgn4.jpg" alt="image-20210722223554488" style="zoom:33%;" />
+
+![image-20210722223737916](https://tva1.sinaimg.cn/large/008i3skNly1gsq3sby42ij31oi0si795.jpg)
+
+![image-20210722223748023](https://tva1.sinaimg.cn/large/008i3skNly1gsq3shqhdvj31rd0u0q6i.jpg)
+
+![image-20210722223801472](https://tva1.sinaimg.cn/large/008i3skNly1gsq3sq26gfj31ay0u041k.jpg)
+
+<img src="/Users/chengkun/Library/Application Support/typora-user-images/image-20210722223811040.png" alt="image-20210722223811040" style="zoom:50%;" />
+
+![image-20210722223858658](https://tva1.sinaimg.cn/large/008i3skNly1gsq3tppi38j31en0u00vv.jpg)
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsq3v9wwnzj31kc0u0aed.jpg" alt="image-20210722224024375" style="zoom:50%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsq3wnihizj314a0sg404.jpg" alt="image-20210722224148224" style="zoom:33%;" />
+
+----
+
+
+
+
+
+![image-20210723094819146](https://tva1.sinaimg.cn/large/008i3skNly1gsqn6789y3j31610u0wg9.jpg)
+
+
+
+
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsqn6j54xvj311g0tg0tx.jpg" alt="image-20210723094835414" style="zoom:33%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsqnaodehmj31g40pytaz.jpg" alt="image-20210723095233902" style="zoom: 33%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsqndsh9sbj30v40qqdhk.jpg" alt="image-20210723095534655" style="zoom:33%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsqnfn4j2aj31ic0u00vy.jpg" alt="image-20210723095724163" style="zoom:50%;" />
+
+![image-20210723100037489](https://tva1.sinaimg.cn/large/008i3skNly1gsqnj0zlx7j31lg0u0q56.jpg)
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsqnjua8f9j314d0u0acy.jpg" alt="image-20210723100120904" style="zoom:50%;" />
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsqnltn2bvj61ak0qg41k02.jpg" alt="image-20210723100313712" style="zoom:33%;" />
+
+- GEO数据类型
+
+![image-20210723100355707](https://tva1.sinaimg.cn/large/008i3skNly1gsqnmn6nghj31490u0q4h.jpg)
+
+![image-20210723100935456](https://tva1.sinaimg.cn/large/008i3skNly1gsqnsbfdfoj31lu0u040x.jpg)
+
