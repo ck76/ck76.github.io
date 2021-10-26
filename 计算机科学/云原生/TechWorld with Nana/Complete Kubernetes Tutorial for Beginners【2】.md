@@ -4,6 +4,22 @@
 
 ### Complete Application Deployment using Kubernetes Components | Kubernetes Tutorial 20
 
+```c
+TIMESTAMPS
+0:00 - Intro
+0:25 - Overview Diagram of Kubernetes Components we create
+1:42 - Browser Request Flow
+2:17 - MongoDB Deployment
+6:22 - Secret
+12:34 - Internal Service for MongoDB
+17:09 - MongoExpress Deployment
+19:53 - ConfigMap
+24:00 - MongoExpress External Service
+29:27 - Setup finished - review
+```
+
+
+
 - 一个实践，部署mongoDB和mongo-express
 
 ![image-20211022120258512](https://tva1.sinaimg.cn/large/008i3skNly1gvnygebcm7j61km0u0n1c02.jpg)
@@ -98,6 +114,26 @@
 
 ### Kubernetes Namespaces Explained in 15 mins | Kubernetes Tutorial 21
 
+```c
+
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro
+0:14 - What is a Namespace?
+0:32 - 4 Default Namespaces explained
+2:13 - Create a Namespace
+3:00 - Why to use Namespaces? 4 Use Cases
+   3:03 - Organizing your components
+   5:00 - Avoid conflicts with other teams
+   6:00 - Sharing resources
+   7:22 - Access and Resource Limits
+8:53 - Characteristics of Namespaces
+11:26 - Create Components in Namespaces
+13:54 - Change Active Namespace
+
+```
+
+
+
 - 命名空间可以理解为集群中的虚拟的集群
 
 ![image-20211022131949388](https://tva1.sinaimg.cn/large/008i3skNly1gvo0oa4j0qj61gn0u0gp802.jpg)
@@ -163,6 +199,27 @@
 ----
 
 ### Kubernetes **Ingress** Tutorial for Beginners | simply explained | Kubernetes Tutorial 22
+
+```c
+In detail the video covers the following topics:
+0:00 - Intro
+0:16 - What is Ingress? External Service vs. Ingress
+1:35 - Example YAML Configuration Files for External Service and Ingress
+4:00  - Internal Service Configuration for Ingress
+5:27 - How to configure Ingress in your cluster?
+6:20 - What is Ingress Controller?
+7:37 - Environment on which your cluster is running (Cloud provider or bare metal)
+10:48 - Demo: Configure Ingress in Minikube
+             1) Install Ingress Controller in Minikube
+             2) Create Ingress Rule
+16:15 - Ingress Default Backend
+18:30 - Routing Use Cases
+            18:40 - Multiple paths for same host
+            20:01 - Multiple sub-domains or domains
+20:57 - Configuring TLS Certificate
+```
+
+
 
 - External Service和Ingress的 区别
 
@@ -317,6 +374,28 @@
 ---
 
 ### What is Helm in Kubernetes? Helm and Helm Charts explained | Kubernetes Tutorial 23
+
+```c
+
+This Helm Tutorial covers the following topics.
+▬▬▬▬▬▬ T I M E S T A M P S ⏰  ▬▬▬▬▬▬
+0:00 - Intro
+0:37 - Package Manager and Helm Charts
+4:45 - Templating Engine
+7:13 - Use Cases for Helm
+8:14 - Helm Chart Structure
+9:57 - Values injection into template files
+11:24 - Release Management / Tiller (Helm Version 2!)
+13:08 - Downsides of Helm
+
+▬▬▬▬▬▬ Useful Links 🔗 ▬▬▬▬▬▬ 
+ - Helm hub: https://hub.helm.sh/
+ - Helm charts GitHub Project: https://github.com/helm/charts
+ - Installing Helm: https://helm.sh/docs/intro/install/
+ - Helm v3 release notes: https://helm.sh/blog/helm-3-released/
+```
+
+
 
 ▬▬▬▬▬▬ Useful Links 🔗 ▬▬▬▬▬▬  
 

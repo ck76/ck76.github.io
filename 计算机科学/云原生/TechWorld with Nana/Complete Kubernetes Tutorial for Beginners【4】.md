@@ -2,6 +2,18 @@
 
 ### Kubernetes ConfigMap and Secret as Kubernetes Volumes | Demo
 
+```c
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro
+0:13 - Configuration Files usages in pods
+1:13 - ConfigMap and Secret creating individual values (key-value pairs) for env variables
+2:40 - ConfigMap and Secret creating files for mounting them into the pod
+14:44 - Summary
+
+```
+
+
+
 ![image-20211025174136529](https://tva1.sinaimg.cn/large/008i3skNly1gvrp3ksqbmj31km0u0wj5.jpg)
 
 
@@ -90,6 +102,20 @@
 ----
 
 ### Pull Image from Private Docker Registry in Kubernetes cluster | Demo
+
+```c
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro - common workflow
+1:11 - Steps to pull image from private registry
+1:40 - Environment Setup: Private Registry, Application, Minikube
+2:42 -  Login to AWS Container Repository | docker login and create docker config.json file
+8:20 - Create Secret component
+15:45 - Configure Deployment component
+20:51 - Summary
+
+```
+
+
 
 - [这节的nodejs项目连接](https://gitlab.com/nanuchi/techworld-js-docker-demo-app)
 

@@ -6,9 +6,39 @@ https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC
 
 ### What is Kubernetes | Kubernetes explained in 15 mins
 
+```c
+0:59 - Official Definition
+1:40 - What problems does Kubernetes solve? Or why is there a need for a container orchestration tool?
+2:35 - What features do container orchestration tools offer?
+3:40 - Basic architecture: Master-Slave nodes, Kubernetes processes
+8:08 - Basic concepts: Pods, Containers, Services. What is the role of each?
+11:31 - Example Configuration File
+```
 
+
+
+
+
+
+
+
+
+----
 
 ### Kubernetes Components explained! Pods, Services, Secrets, ConfigMap | Kubernetes Tutorial 14
+
+```c
+▬▬▬▬▬▬ T I M E S T A M P S ⏰  ▬▬▬▬▬▬
+0:00 - Intro
+0:59 - Node and Pod
+3:50 - Service and Ingress
+6:04 - ConfigMap and Secret
+9:20 - Volumes
+11:26 - Deployment and StatefulSet
+16:54 - Main K8s components summarized
+```
+
+
 
 - Pod是K8s最小的单元
 - 通常情况下一个Pod里只有一个应用，也就是一个容器
@@ -65,6 +95,18 @@ https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC
 ---
 
 ### Kubernetes Architecture explained | Kubernetes Tutorial 15
+
+```c
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro
+1:09 - Worker Nodes - 3 Node Processes: Container Runtime, Kubelet, Kube Proxy
+4:55 - Master Nodes - 4 Master Processes
+   5:11   - Api Server
+   6:34   - Scheduler
+   8:00   - Controller Manager
+   8:57   - etcd - the cluster brain
+   11:04 - Example cluster setup
+```
 
 
 
@@ -136,6 +178,17 @@ https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC
 
 ### Benefits of Kubernetes | Scalability, High Availability, Disaster Recovery | Kubernetes Tutorial 16
 
+```c
+
+▬▬▬▬▬▬ T I M E S T A M P S ⏰  ▬▬▬▬▬▬
+0:00 - Intro
+0:38 - High availability and scalability
+4:17 - Disaster recovery
+6:27 - Kubernetes vs. AWS / Advantages of K8s
+```
+
+
+
 - 高扩展
 - 高可用
 - 灾难恢复
@@ -179,6 +232,19 @@ https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC
 
 ### Minikube and Kubectl explained | Setup for Beginners | Kubernetes Tutorial 17
 
+```c
+
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro
+0:12 - What is minikube?
+2:16 - What is kubectl?
+4:13 - install minikube and kubectl
+6:50 - create and start a minikube cluster
+10:00 - start the cluster in debug mode
+```
+
+
+
 ![image-20211021232434292](https://tva1.sinaimg.cn/large/008i3skNly1gvncj4woyjj61hx0u042s02.jpg)
 
 
@@ -212,6 +278,23 @@ https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC
 ----
 
 ### Kubectl Basic Commands - Create and Debug Pod in a Minikube cluster | Kubernetes Tutorial 18
+
+```c
+▬▬▬▬▬▬ T I M E S T A M P S ⏰  ▬▬▬▬▬▬
+0:12 - Get status of different components
+1:08 - create a pod/deployment
+4:57 - layers of abstraction
+5:19 change the pod/deployment
+7:14 - debugging pods
+10:43 - delete pod/deployment
+11:42 - CRUD by applying configuration file
+16:22 - summary of commands
+
+Git repo link of all the commands I use:
+https://gitlab.com/nanuchi/kubernetes...
+```
+
+
 
 ![image-20211021234805775](https://tva1.sinaimg.cn/large/008i3skNly1gvnd7m4r8yj61k60u0djo02.jpg)
 
@@ -274,6 +357,23 @@ https://www.youtube.com/playlist?list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC
 -----
 
 ### Kubernetes YAML File Explained - Deployment and Service | Kubernetes Tutorial 19
+
+```c
+▬▬▬▬▬▬ T I M E S T A M P S ⏰  ▬▬▬▬▬▬
+0:00 - Intro
+0:27 -  3 parts of a Kubernetes configuration file
+            0:45 - metadata and specification
+            1:54 - status
+3:35 - format of configuration file
+4:46 - blueprint for pods (template)
+5:59 - connecting services to deployments and pods (label & selector & port)
+           6:18 - connecting deployment to pods
+           6:59 - connecting services to deployments
+           7:37 - ports
+8:50 - demo
+```
+
+
 
 - ymal文件的结构详解
 - 三部分

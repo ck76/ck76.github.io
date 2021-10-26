@@ -2,6 +2,23 @@
 
 ### Pods and Containers - Kubernetes Networking | Container Communication inside the Pod
 
+```c
+
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro
+0:46 - Pod - fundamental concept
+1:05 - Problem with Container Port Mapping WITHOUT Pod
+4:15 - Solution - Pod abstraction
+6:28 - When do we need multiple containers in a pod? Side-car containers
+7:08 - How do containers in a pod communicate to each other?
+9:30 - pause or sandbox container
+12:27 - Kubernetes Networking Topics Overview
+
+► Reference to demo YAML Configs: https://gitlab.com/nanuchi/kubernetes...
+```
+
+
+
 ![image-20211025135642555](https://tva1.sinaimg.cn/large/008i3skNly1gvrilkex37j61iu0u0wi302.jpg)
 
 
@@ -119,6 +136,24 @@
 
 
 ### Kubernetes Volumes explained | Persistent Volume, Persistent Volume Claim & Storage Class
+
+```c
+▬▬▬▬▬▬ T I M E S T A M P S
+0:00 - Intro
+0:20 - The need for persistent storage & storage requirements
+2:05 - Persistent Volume (PV)
+6:33 - Local vs Remote Volume Types
+7:38 - Who creates the PV and when? (Kubernetes Administrator and Kubernetes User Role)
+9:03 - Persistent Volume Claim (PVC)
+10:33 - Levels of volume abstractions
+12:17 - Why are these abstractions good?
+13:40 - ConfigMap and Secret as volume types
+15:52 - Multiple and different volume types in 1 pod
+17:12 - Storage Class (SC)
+
+```
+
+
 
 - PV
 - PVC
