@@ -1,5 +1,26 @@
 
 
+```c
+# 切换为 root 用户
+sudo -i
+
+# 更改 root 用户的密码
+passwd
+
+# 允许 ssh 密码登录
+sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+
+# 重启 ssh 服务
+service ssh restart
+systemctl restart sshd.service
+```
+
+
+
 登录进服务器后，切换root用户
 
 sudo -i

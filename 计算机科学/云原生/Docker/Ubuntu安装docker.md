@@ -2,7 +2,7 @@
 
 
 
-
+- 安装compose https://docs.docker.com/compose/install/
 
 - https://docs.docker.com/engine/install/ubuntu/
 
