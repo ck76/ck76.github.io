@@ -2,6 +2,8 @@
 
 https://www.youtube.com/watch?v=h4Sl21AKiDg&list=PLy7NrYWoggjxCF3av5JKwyG7FFF9eLeL4
 
+- 记录显示看完了，但是我没印象哈哈哈
+
 ### How Prometheus Monitoring works | Prometheus Architecture explained
 
 ```c

@@ -2,9 +2,21 @@
 
 https://www.youtube.com/watch?v=p6xDCz00TxU&list=PLy7NrYWoggjxqLwqmbE-gGuxpo0nWZqCi&index=3
 
+- 1和2在Kubernetes的教程里有了Linode赞助的那两节
+
 ![image-20211027001244000](https://tva1.sinaimg.cn/large/008i3skNly1gvt60uf6xlj31pi0u0tju.jpg)
 
 
+
+### Managed Kubernetes Cluster explained | Kubernetes on Cloud (1/2)
+
+### Step by Step Application Deployment on LKE using Helm | Kubernetes on Cloud (2/2)
+
+- 1和2在Kubernetes的教程里有了Linode赞助的那两节
+
+
+
+---
 
 ### AWS EKS - Create Kubernetes cluster on Amazon EKS | the easy way
 
