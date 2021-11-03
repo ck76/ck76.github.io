@@ -34,5 +34,12 @@ In the final part, we will do a hands-on demo project, where we deploy ArgoCD in
 27:42 - Beginning of Hands-On Demo
 ```
 
+- 两个问题
+
+![image-20211103233809196](https://tva1.sinaimg.cn/large/008i3skNly1gw2dzbr6pxj31iq0u0jun.jpg)
 
 
+
+- 想想一个new feature或者bugfix的代码上传和build 
+
+![image-20211103233904772](https://tva1.sinaimg.cn/large/008i3skNly1gw2e0acesgj31xd0u0dk1.jpg)

@@ -329,6 +329,8 @@ Using Jenkins you want to build and package your application. So, depending on y
 
 
 
+
+
 ----
 
 ### Complete Jenkins Pipeline Tutorial | Jenkinsfile explained
@@ -354,4 +356,6 @@ Gitlab Link: https://gitlab.com/nanuchi/techworld-...
 22:30  Using Parameters for a Parameterized Build
 27:29  Using external Groovy scripts
 ```
+
+- https://www.youtube.com/watch?v=7KCS70sCoK0&list=PLy7NrYWoggjw_LIiDK1LXdNN82uYuuuiC&index=6
 
