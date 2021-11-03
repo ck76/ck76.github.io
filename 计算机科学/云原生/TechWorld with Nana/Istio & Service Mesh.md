@@ -287,13 +287,103 @@ In this video you will learn how to install Istio Service Mesh in a Kubernetes c
 
 - [https://www.kasten.io/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblVCWTlfTUlKeFRzdEp0WFdhTHJRR1JyZ2JnUXxBQ3Jtc0tuM0Y0QlY1ZXVwU19KbzFzWk9FMkZvV0N3aHBXeXdVRlRaa0Z4akZZQl9IdVEyTXhyekwxZnF0dmpOUEo1VWtLa1VhNXNHYzlMbE1EcUZUekIwd3FieUUtQUUzbXhTZzNXNWw1X0x5TktLZ1pwUnFEZw&q=https%3A%2F%2Fwww.kasten.io%2F)   kasten赞助
 
+- 还没注入代理
+
+![image-20211103203447164](https://tva1.sinaimg.cn/large/008i3skNly1gw28ojg8aoj31kn0u07b4.jpg)
+
+
+
+- 接下来注入代理
+
+- 先给默认的命名空间弄一个标签
+- 然后删除现有的节点，重启，所有的pod应该都会被打上标签
+
+![image-20211103203912293](https://tva1.sinaimg.cn/large/008i3skNly1gw28t4tnizj31hy0u0n4t.jpg)
+
+
+
+- 可以看到每个pod里有两个容器
+
+![image-20211103204031080](https://tva1.sinaimg.cn/large/008i3skNly1gw28uir52uj31wo0r0qaa.jpg)
+
+
+
+- describe看一下容器
+  - 被自动注入了by istio
+
+![image-20211103204101569](https://tva1.sinaimg.cn/large/008i3skNly1gw28v186u8j31jw0u0q8q.jpg)
+
+- 这些是被istio自动完成的
+
+![image-20211103204151069](https://tva1.sinaimg.cn/large/008i3skNly1gw28vvqalxj320a0tcteo.jpg)
 
 
 
 
 
+![image-20211103204159905](https://tva1.sinaimg.cn/large/008i3skNly1gw28w1cwpkj31gk0u00vp.jpg)
 
 
+
+- 现在
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNly1gw28wdliyfj30vq0mqq46.jpg" alt="image-20211103204219564" style="zoom:33%;" />
+
+
+
+![image-20211103204236863](https://tva1.sinaimg.cn/large/008i3skNly1gw28wox4hkj31f70u0tc0.jpg)
+
+
+
+![image-20211103204258873](https://tva1.sinaimg.cn/large/008i3skNly1gw28x2f1dtj31ea0u0tcz.jpg)
+
+
+
+- 这些yaml文件已经有了，直接用
+
+![image-20211103204349026](https://tva1.sinaimg.cn/large/008i3skNly1gw28xx6ewxj31je07imyh.jpg)
+
+
+
+- 现在看看，都有了
+
+![image-20211103204406186](https://tva1.sinaimg.cn/large/008i3skNly1gw28y801eej31y00gqadu.jpg)
+
+
+
+- 看看services
+
+![image-20211103204437200](https://tva1.sinaimg.cn/large/008i3skNly1gw28yruvhwj31wo0u0dms.jpg)
+
+
+
+![image-20211103204443853](https://tva1.sinaimg.cn/large/008i3skNly1gw28yw3a5qj31gr0u0wl6.jpg)
+
+
+
+![image-20211103204500448](https://tva1.sinaimg.cn/large/008i3skNly1gw28z6bfcdj31h10u0tee.jpg)
+
+
+
+![image-20211103204526257](https://tva1.sinaimg.cn/large/008i3skNly1gw28zmtww1j31j80cs406.jpg)
+
+
+
+- 配置一下
+
+![image-20211103204556042](https://tva1.sinaimg.cn/large/008i3skNly1gw2904ufxxj31ee082wfy.jpg)
+
+- 可以通过浏览器本地访问； 了
+
+![image-20211103204617837](https://tva1.sinaimg.cn/large/008i3skNly1gw290im1icj31f20u00w2.jpg)
+
+
+
+![image-20211103204626139](https://tva1.sinaimg.cn/large/008i3skNly1gw290nuo8uj31en0u0wj2.jpg)
+
+- 总结
+
+![image-20211103204700744](https://tva1.sinaimg.cn/large/008i3skNly1gw29198bzuj31i20k0q4q.jpg)
 
 
 
