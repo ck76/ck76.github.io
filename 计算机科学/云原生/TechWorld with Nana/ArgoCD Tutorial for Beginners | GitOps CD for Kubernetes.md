@@ -43,3 +43,68 @@ In the final part, we will do a hands-on demo project, where we deploy ArgoCD in
 - 想想一个new feature或者bugfix的代码上传和build 
 
 ![image-20211103233904772](https://tva1.sinaimg.cn/large/008i3skNly1gw2e0acesgj31xd0u0dk1.jpg)
+
+
+
+- 那么这个新的image是被推到k8s中的呢
+
+![image-20211104125153518](https://tva1.sinaimg.cn/large/008i3skNly1gw30x7b5fjj31hl0u0gq0.jpg)
+
+- 然后kubectl apply
+- 在image被推送到hub，CI步骤完成，然后jenkins通过apply命令，把镜像弄到k8s中，完成cd步骤
+
+![image-20211104125250809](https://tva1.sinaimg.cn/large/008i3skNly1gw30y6xd5gj31lu0u00xa.jpg)
+
+
+
+- 但是在CD步骤有些挑战，需要在类似Jenkins 的CD工具上安装kubectl，然后配置访问权限
+- 然后还有几点弊端，不能查看部署状态
+
+![image-20211104130207653](https://tva1.sinaimg.cn/large/008i3skNly1gw317utedjj31np0u0q80.jpg)
+
+
+
+- ArgoCD登场
+
+![image-20211104130230777](https://tva1.sinaimg.cn/large/008i3skNly1gw31899lg6j31gy0o2q5c.jpg)
+
+
+
+![image-20211104130258127](https://tva1.sinaimg.cn/large/008i3skNly1gw318q1kqtj31o60twadk.jpg)
+
+
+
+- 配置高ARgoCD，然后他会监听仓库的变化
+
+![image-20211104130327988](https://tva1.sinaimg.cn/large/008i3skNly1gw3198qqlvj31ea0tiwic.jpg)
+
+
+
+- CI步骤
+
+![image-20211104130354644](https://tva1.sinaimg.cn/large/008i3skNly1gw319p9xc7j316v0u0n0a.jpg)
+
+
+
+- 最好分开配置文件和代码？
+  - **那啥不配置监听某个文件夹下？**
+
+![image-20211104130423282](https://tva1.sinaimg.cn/large/008i3skNly1gw31a7oxudj31nm0rotcc.jpg)
+
+
+
+![image-20211104130543465](https://tva1.sinaimg.cn/large/008i3skNly1gw31bm5jvzj31nn0u00x4.jpg)
+
+
+
+![image-20211104130607449](https://tva1.sinaimg.cn/large/008i3skNly1gw31c0mvuqj31r00q2adj.jpg)
+
+
+
+![image-20211104130622223](https://tva1.sinaimg.cn/large/008i3skNly1gw31c9egsvj31iy0u0gpj.jpg)
+
+
+
+---
+
+行了先看到这⑧--第10分25秒
