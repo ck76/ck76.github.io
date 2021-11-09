@@ -4,8 +4,10 @@
 
 ![image-20211104175047861](https://tva1.sinaimg.cn/large/008i3skNly1gw39k841v9j31f50u0dlp.jpg)
 
-- https://aws.amazon.com/cn/certification/certified-cloud-practitioner/?ch=cta&cta=header&p=2
-- https://aws.amazon.com/cn/certification/certified-developer-associate/?ch=sec&sec=rmg&d=1&refid=gs_card
+- SAA https://aws.amazon.com/cn/certification/certified-solutions-architect-associate/?ch=sec&sec=rmg&d=1
+- SAP https://aws.amazon.com/cn/certification/certified-solutions-architect-professional/?ch=sec&sec=rmg&d=1
+- ❎https://aws.amazon.com/cn/certification/certified-cloud-practitioner/?ch=cta&cta=header&p=2
+- ❎https://aws.amazon.com/cn/certification/certified-developer-associate/?ch=sec&sec=rmg&d=1&refid=gs_card
 
 
 
