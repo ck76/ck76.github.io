@@ -150,6 +150,10 @@ VPN_USER='用户名' \
 VPN_PASSWORD='密码' sh vpnsetup.sh
 ```
 
+```c
+
+```
+
 
 
 五分钟后…
