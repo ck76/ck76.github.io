@@ -156,4 +156,5 @@
 
 ![img](https://s2.googleusercontent.com/s2/favicons?sz=32&domain=youtube.com) [Why Edge Computing? - YouTube](https://www.youtube.com/watch?v=AF5ZkcnptMs)
 
- 
+ https://www.youtube.com/watch?v=b61DPVFX03I
+
