@@ -1,0 +1,224 @@
+[TOC]
+
+- https://mp.weixin.qq.com/s/oLKyXi79TVhhk7RPgGMKfA
+
+### 第一章、基础数据结构
+
+- [二分搜索速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164909502477795329)
+  - [x] [34在排序数组中查找元素的第一个和最后一个位置（中等）](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+  - [x] [704. 二分查找（简单）](https://leetcode-cn.com/problems/binary-search)
+  - [ ] [35搜索插入位置（简单）](https://leetcode-cn.com/problems/search-insert-position/)
+  - [ ] [392.判断子序列（简单）](https://leetcode-cn.com/problems/is-subsequence/)
+  - [ ] [875.爱吃香蕉的珂珂（中等）](https://leetcode-cn.com/problems/koko-eating-bananas/)
+  - [ ] [1011.在D天内送达包裹的能力（中等）](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)
+  - [ ] [354.俄罗斯套娃信封问题（困难）](https://leetcode-cn.com/problems/russian-doll-envelopes/)
+- [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
+  - [ ] [76.最小覆盖子串（困难）](https://leetcode-cn.com/problems/minimum-window-substring/)
+  - [x] [3.无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+  - [ ] 438.找到字符串中所有字母异位词
+  - [ ] 567.字符串的排列
+  - [ ] [239.滑动窗口最大值（困难）](https://leetcode-cn.com/problems/sliding-window-maximum/)
+- [其他双指针算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165005132189564928)
+  - [x] [26.删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+  - [x] [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
+  - [ ] 283.移动零
+  - [x] [15.三数之和](https://leetcode-cn.com/problems/3sum/)
+  - [ ] 18.四数之和
+  - [ ] 870.优势洗牌
+  - [ ] 11.盛最多水的容器
+  - [ ] 42.接雨水
+- [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
+  - [x] [2.两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
+  - [ ] 19.删除链表的倒数第N个结点
+  - [x] [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+  - [ ] 23.合并K个升序链表
+  - [ ] 141.环形链表
+  - [ ] 142.环形链表|I
+  - [ ] 160.相交链表
+  - [ ] 876.链表的中间结点
+  - [x] [25.K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/submissions/)
+  - [ ] 83.删除排序链表中的重复元素
+  - [x] [206.翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+  - [ ] [92.反转链表||](https://leetcode-cn.com/problems/reverse-linked-list-ii)
+  - [ ] 234.回文链表
+- [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
+  - [ ] 303.区域和检索-数组不可变
+  - [ ] 304.二维区域和检索-矩阵不可变
+  - [ ] 560.和为K的子数组
+- [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
+  - [ ] 370.区间加法
+  - [ ] 1094.拼车
+  - [ ] 1109.航班预订统计
+- [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
+  - [x] [232.用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/)
+  - [x] [225.用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)
+  - [x] [32.最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+  - [ ] 1541.平衡括号字符串的最少插入次数
+  - [ ] 921.使括号有效的最少添加
+  - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+- [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
+  - [ ] [23.合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+  - [x] [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
+  - [x] [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
+  - [x] [295.数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
+- [数据结构设计速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165082437591138304)
+  - [x] [146.LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+  - [ ] 460.LFU缓存
+  - [x] [380.0(1)时间插入、删除和获取随机元素](https://leetcode-cn.com/problems/insert-delete-getrandom-o1/)
+  - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
+  - [ ] [895.最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack/)
+  - [x] [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
+
+
+### 第二章、进阶数据结构
+
+- [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
+  - [ ] 104.二叉树的最大深度
+  - [ ] 105.从前序与中序遍历序列构造二叉树
+  - [ ] 106.从中序与后序遍历序列构造二叉树
+  - [ ] 102.二叉树的层序遍历
+  - [ ] 111.二叉树的最小深度
+  - [ ] 654.最大二叉树
+  - [ ] 114.二叉树展开为链表
+  - [ ] 116.填充每个节点的下一个右侧节点指针
+  - [ ] 226.翻转二叉树
+  - [ ] 297.二叉树的序列化与反序列化
+  - [ ] 341.扁平化嵌套列表迭代器
+  - [ ] 652.寻找重复的子树
+  - [ ] 222.完全二叉树的节点个数
+
+- [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
+  - [ ] 700.二叉搜索树中的搜索
+  - [ ] 701.二叉搜索树中的插入操作
+  - [ ] 450.删除二叉搜索树中的节点
+  - [ ] 98.验证二叉搜索树
+  - [ ] 230.二叉搜索树中第K小的元素
+  - [ ] 96.不同的二叉搜索树
+  - [ ] 95.不同的二叉搜索树II
+  - [ ] 538.把二.叉搜索树转换为累加树
+  - [ ] 1373.二叉搜索子树的最大键值和
+
+- [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
+  - [x] 797.所有可能的路径
+  - [ ] 785.判断二分图
+  - [ ] 886.可能的二分法
+  - [x] 207.课程表
+  - [ ] 210.课程表II
+  - [x] 130.被围绕的区域
+  - [ ] 990.等式方程的可满足性
+  - [ ] 261.以图判树
+  - [ ] 1135.最低成本联通所有城市
+  - [ ] 1584.连接所有点的最小费用
+  - [ ] 743.网络延迟时间
+  - [ ] 1514.概率最大的路径
+  - [ ] 1631.最小体力消耗路径
+  - [ ] 787.K站中转内最便宜的航班
+
+
+### 第三章、暴力搜索算法
+
+- [回溯算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165135739779448832)
+  - [x] [46.全排列](https://leetcode-cn.com/problems/permutations/)
+  - [x] [78.子集](https://leetcode-cn.com/problems/subsets/)
+  - [x] [77.组合](https://leetcode-cn.com/problems/combinations/)
+  - [x] [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
+  - [ ] 17.电话号码的字母组合
+  - [ ] 37.解数独
+  - [ ] 51.N皇后
+  - [ ] 698.划分为k个相等的子集
+  - [x] [494.目标和](https://leetcode-cn.com/problems/target-sum)
+  - [x] 22.括号生成
+  
+- [DFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165155308136988673)
+  - [ ] 694.不同的岛屿数量
+  - [ ] [1905.统计子岛屿](https://leetcode-cn.com/problems/count-sub-islands/)
+  - [x] [695.岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
+  - [ ] 1020.飞地的数量
+  - [ ] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
+  - [x] [1254.统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
+  - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
+  
+- [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
+  - [x] 111.二叉树的最小深度
+  - [x] 102.二叉树的层序遍历
+  - [ ] 752.打开转盘锁
+  - [ ] 773.滑动谜题
+
+
+### 第四章、动态规划算法
+
+- [一维动态规划速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165170016067944448)
+  - [ ] 45.跳跃游戏||
+  - [x] 55.跳跃游戏
+  - [ ] 354.俄罗斯套娃信封问题
+  - [x] 53.最大子序和
+  - [x] 300.最长递增子序列
+  - [x] 322.零钱兑换
+  - [x] 70.爬楼梯
+  - [ ] 337.打家劫舍I
+  - [ ] 213.打家劫舍II
+  - [x] 198.打家劫舍
+  
+- [二维动态规划速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165181514903355392)
+  - [x] 64.最小路径和
+  - [x] 62.不同路径
+  - [ ] 931.下降路径最小和
+  - [ ] 72.编辑距离
+  - [ ] 10.正则表达式匹配
+  - [x] 121.买卖股票的最佳时机
+  - [ ] 122.买卖股票的最佳时机II
+  - [ ] 123.买卖股票的最佳时机III
+  - [ ] 188.买卖股票的最佳时机IV
+  - [ ] 309.最佳买卖股票时机含冷冻期
+  - [ ] 714.买卖股票的最佳时机含手续费
+  - [ ] 174.地下城游戏
+  - [ ] 312.戳气球
+  - [x] 416.分割等和子集
+  - [ ] 494.目标和
+  - [ ] 514.自由之路
+  - [ ] 518.零钱兑换II 
+  - [x] 1143.最长公共子序列
+  - [ ] 583.两个字符串的删除操作
+  - [ ] 712.两个字符串的最小ASCII删除和
+  - [ ] 787.K站中转内最便宜的航班
+  - [ ] 887.鸡蛋掉落
+  
+- [背包问题速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165222624753254401)
+  - [ ] 518.零钱兑换II
+  - [x] [494.目标和](https://leetcode-cn.com/problems/target-sum/)
+  - [x] 416.分割等和子集
+
+
+### 第五章、其他经典算法
+
+- [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
+  - [x] 77.组合
+  - [x] 78.子集
+  - [x] 46.全排列
+  - [x] 17.电话号码的字母组合
+  - [x] 134.加油站
+  - [ ] 136.只出现一次的数字
+  - [ ] 191.位1的个数
+  - [ ] 231.2的幂
+  - [ ] 172.阶乘后的零
+  - [ ] 793.阶乘函数后K个零
+  - [ ] 268.丢失的数字
+  - [ ] 292.Nim游戏
+  - [x] 319.灯泡开关
+  - [ ] 877.石子游戏
+  - [x] 295.数据流的中位数
+  - [ ] 372.超级次方
+  - [ ] 382.链表随机节点
+  - [ ] 398.随机数索引
+  - [ ] 391.完美矩形
+  - [x] 509.斐波那契数
+  - [ ] 645.错误的集合
+  - [x] 204.计数质数
+  - [ ] 710.黑名单中的随机数
+- [区间算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165269406745001984)
+  - [x] 56.合并区间
+  - [x] 986.区间列表的交集
+  - [x] 1288.删除被覆盖区间
+  - [x] 435.无重叠区间
+  - [x] 452.用最少数量的箭引爆气球
+  - [ ] 1024.视频拼接
