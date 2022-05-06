@@ -29,18 +29,18 @@
   - [ ] 42.接雨水
 - [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
   - [x] [2.两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
-  - [ ] 19.删除链表的倒数第N个结点
+  - [x] 19.删除链表的倒数第N个结点
   - [x] [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
-  - [ ] 23.合并K个升序链表
-  - [ ] 141.环形链表
-  - [ ] 142.环形链表|I
-  - [ ] 160.相交链表
-  - [ ] 876.链表的中间结点
+  - [x] 23.合并K个升序链表
+  - [x] 141.环形链表
+  - [x] 142.环形链表|I
+  - [x] 160.相交链表
+  - [x] 876.链表的中间结点
   - [x] [25.K个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/submissions/)
-  - [ ] 83.删除排序链表中的重复元素
+  - [x] 83.删除排序链表中的重复元素
   - [x] [206.翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-  - [ ] [92.反转链表||](https://leetcode-cn.com/problems/reverse-linked-list-ii)
-  - [ ] 234.回文链表
+  - [x] [92.反转链表||](https://leetcode-cn.com/problems/reverse-linked-list-ii)
+  - [x] 234.回文链表
 - [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
   - [ ] 303.区域和检索-数组不可变
   - [ ] 304.二维区域和检索-矩阵不可变
@@ -49,6 +49,12 @@
   - [ ] 370.区间加法
   - [ ] 1094.拼车
   - [ ] 1109.航班预订统计
+- 数组
+  - [ ] 
+  
+- 矩阵
+  - [ ] 
+
 - [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
   - [x] [232.用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks/)
   - [x] [225.用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)
@@ -56,6 +62,12 @@
   - [ ] 1541.平衡括号字符串的最少插入次数
   - [ ] 921.使括号有效的最少添加
   - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+- 单调栈
+  - [ ] 
+
+- 哈希表
+  - [ ] 
+
 - [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
   - [ ] [23.合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
   - [x] [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
@@ -73,31 +85,32 @@
 ### 第二章、进阶数据结构
 
 - [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
-  - [ ] 104.二叉树的最大深度
-  - [ ] 105.从前序与中序遍历序列构造二叉树
-  - [ ] 106.从中序与后序遍历序列构造二叉树
-  - [ ] 102.二叉树的层序遍历
-  - [ ] 111.二叉树的最小深度
-  - [ ] 654.最大二叉树
-  - [ ] 114.二叉树展开为链表
-  - [ ] 116.填充每个节点的下一个右侧节点指针
-  - [ ] 226.翻转二叉树
-  - [ ] 297.二叉树的序列化与反序列化
-  - [ ] 341.扁平化嵌套列表迭代器
-  - [ ] 652.寻找重复的子树
-  - [ ] 222.完全二叉树的节点个数
-
+  - [x] [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+  - [x] [105.从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+  - [x] [106.从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+  - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+  - [x] [111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+  - [x] [654.最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree/)
+  - [x] 114.二叉树展开为链表
+  - [x] 116.填充每个节点的下一个右侧节点指针
+  - [x] [226.翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+  - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
+  - [ ] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
+  - [x] 222.完全二叉树的节点个数
+  - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
+  - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 - [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
-  - [ ] 700.二叉搜索树中的搜索
-  - [ ] 701.二叉搜索树中的插入操作
-  - [ ] 450.删除二叉搜索树中的节点
-  - [ ] 98.验证二叉搜索树
-  - [ ] 230.二叉搜索树中第K小的元素
-  - [ ] 96.不同的二叉搜索树
-  - [ ] 95.不同的二叉搜索树II
-  - [ ] 538.把二.叉搜索树转换为累加树
-  - [ ] 1373.二叉搜索子树的最大键值和
-
+  - [x] [449. 序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
+  - [x] [235. 二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+  - [x] [700.二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
+  - [x] 701.二叉搜索树中的插入操作
+  - [x] 450.删除二叉搜索树中的节点
+  - [x] [98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
+  - [x] [230.二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)
+  - [ ] **[96.不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)**
+  - [x] 95.不同的二叉搜索树II
+  - [x] 538.把二叉搜索树转换为累加树
+  - [x] 1373.二叉搜索子树的最大键值和
 - [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
   - [x] 797.所有可能的路径
   - [ ] 785.判断二分图
@@ -139,9 +152,9 @@
   - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
   
 - [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
-  - [x] 111.二叉树的最小深度
-  - [x] 102.二叉树的层序遍历
-  - [ ] 752.打开转盘锁
+  - [x] [111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+  - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+  - [x] 752.打开转盘锁
   - [ ] 773.滑动谜题
 
 
@@ -185,12 +198,28 @@
   
 - [背包问题速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165222624753254401)
   - [ ] 518.零钱兑换II
-  - [x] [494.目标和](https://leetcode-cn.com/problems/target-sum/)
+  - [ ] [494.目标和](https://leetcode-cn.com/problems/target-sum/)
   - [x] 416.分割等和子集
 
 
 ### 第五章、其他经典算法
 
+- 贪心
+  - [ ] 
+- 字符串匹配
+  - [ ] 
+- 模拟
+  - [ ] 
+- 枚举
+  - [ ] 
+- 排序
+  - [ ] 归并排序
+  - [ ] 快速排序
+  - [ ] 计数排序
+  - [ ] 桶排序
+- 查找
+  - [ ] 二分查找-前面有
+- 分治
 - [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
   - [x] 77.组合
   - [x] 78.子集
