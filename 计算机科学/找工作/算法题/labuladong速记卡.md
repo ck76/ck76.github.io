@@ -63,10 +63,21 @@
   - [ ] 921.使括号有效的最少添加
   - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 - 单调栈
-  - [ ] 
+  - [ ] [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water)
+  - [ ] [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram)
+  - [ ] [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle)
+  - [ ] [316. 去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters)
+  - [ ] [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i)
+  - [ ] [654. 最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree)
+  - [ ] [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures)
+  - [ ] [1081. 不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters)
 
 - 哈希表
-  - [ ] 
+  - [ ] [1. 两数之和](https://leetcode-cn.com/problems/two-sum)
+  - [ ] [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)
+  - [ ] [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring)
+  - [ ] [208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree)
+  - [ ] [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k)
 
 - [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
   - [ ] [23.合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
@@ -220,6 +231,7 @@
 - 查找
   - [ ] 二分查找-前面有
 - 分治
+  - [ ] 
 - [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
   - [x] 77.组合
   - [x] 78.子集
