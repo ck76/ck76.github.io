@@ -22,7 +22,9 @@
 - [x] [3.无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 - [ ] 438.找到字符串中所有字母异位词
 - [ ] 567.字符串的排列
+- [ ] [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/)
 - [ ] [239.滑动窗口最大值（困难）](https://leetcode-cn.com/problems/sliding-window-maximum/)
+- [x] [面试题 17.18. 最短超串](https://leetcode.cn/problems/shortest-supersequence-lcci/)
 
 ##### [其他双指针算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165005132189564928)
 
@@ -34,6 +36,8 @@
 - [ ] 870.优势洗牌
 - [ ] 11.盛最多水的容器
 - [ ] 42.接雨水
+- [x] [LCP 18. 早餐组合](https://leetcode.cn/problems/2vYnGI/)
+- [x] [LCP 28. 采购方案](https://leetcode.cn/problems/4xy4Wx/)
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
 
@@ -50,6 +54,8 @@
 - [x] [206.翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [x] [92.反转链表||](https://leetcode-cn.com/problems/reverse-linked-list-ii)
 - [x] 234.回文链表
+- [ ] [面试题 02.04. 分割链表](https://leetcode.cn/problems/partition-list-lcci/)
+- [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
@@ -65,11 +71,20 @@
 
 ##### 数组
 
-- [ ] 
+- [ ] [453. 最小操作次数使数组元素相等](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements/)
+- [ ] [485. 最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/)
+- [ ] [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
+- [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
+
+##### 字符串
+
+- [ ] [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
 
 ##### 矩阵
 
-- [ ] 
+- [ ] [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
+- [ ] [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
+- [ ] [48. 旋转图像](https://leetcode.cn/problems/rotate-image/)
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
 
@@ -79,6 +94,7 @@
 - [ ] 1541.平衡括号字符串的最少插入次数
 - [ ] 921.使括号有效的最少添加
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
+- [ ] [394. 字符串解码](https://leetcode.cn/problems/decode-string/)
 
 ##### 单调栈
 
@@ -90,6 +106,7 @@
 - [ ] [654. 最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree)
 - [ ] [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures)
 - [ ] [1081. 不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters)
+- [x] [581. 最短无序连续子数组](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
 
 ##### 哈希表
 
@@ -121,6 +138,7 @@
 ##### [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
 
 - [x] [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+- [ ] [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/)
 - [x] [105.从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [x] [106.从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
@@ -134,6 +152,10 @@
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
 - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [x] [993. 二叉树的堂兄弟节点](https://leetcode.cn/problems/cousins-in-binary-tree/)
+- [ ] [面试题 17.12. BiNode](https://leetcode.cn/problems/binode-lcci/)
+- [ ] [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
+- [ ] [面试题 04.10. 检查子树](https://leetcode.cn/problems/check-subtree-lcci/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
@@ -148,6 +170,7 @@
 - [x] 95.不同的二叉搜索树II
 - [x] 538.把二叉搜索树转换为累加树
 - [x] 1373.二叉搜索子树的最大键值和
+- [ ] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
@@ -172,6 +195,7 @@
 ##### [回溯算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165135739779448832)
 
 - [x] [46.全排列](https://leetcode-cn.com/problems/permutations/)
+- [ ] [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/)
 - [x] [78.子集](https://leetcode-cn.com/problems/subsets/)
 - [x] [77.组合](https://leetcode-cn.com/problems/combinations/)
 - [x] [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
@@ -181,6 +205,7 @@
 - [ ] 698.划分为k个相等的子集
 - [x] [494.目标和](https://leetcode-cn.com/problems/target-sum)
 - [x] 22.括号生成
+- [x] [139. 单词拆分](https://leetcode.cn/problems/word-break/)
 
 ##### [DFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165155308136988673)
 
@@ -191,6 +216,7 @@
 - [ ] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
 - [x] [1254.统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
 - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
+- [x] [733. 图像渲染](https://leetcode.cn/problems/flood-fill/)
 
 ##### [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
 
@@ -198,6 +224,8 @@
 - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [x] 752.打开转盘锁
 - [ ] 773.滑动谜题
+- [x] [LCP 07. 传递信息](https://leetcode.cn/problems/chuan-di-xin-xi/)
+- [ ] [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci/)
 
 
 ### 第四章、动态规划算法
@@ -214,6 +242,7 @@
 - [ ] 337.打家劫舍I
 - [ ] 213.打家劫舍II
 - [x] 198.打家劫舍
+- [ ] [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/)
 
 ##### [二维动态规划速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165181514903355392)
 
@@ -239,6 +268,7 @@
 - [ ] 712.两个字符串的最小ASCII删除和
 - [ ] 787.K站中转内最便宜的航班
 - [ ] 887.鸡蛋掉落
+- [ ] [面试题 08.02. 迷路的机器人](https://leetcode.cn/problems/robot-in-a-grid-lcci/)
 
 ##### [背包问题速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165222624753254401)
 
@@ -259,7 +289,7 @@
 
 ##### 字符串匹配
 
-- [ ] 
+- [ ] [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
 
 ##### 模拟
 
@@ -272,9 +302,14 @@
 ##### 排序
 
 - [ ] **归并排序**
+  - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
+
 - [ ] **快速排序**
+  - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
+
 - [ ] 计数排序
 - [ ] 桶排序
+- [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 
 ##### 查找
 
@@ -309,6 +344,10 @@
 - [ ] 645.错误的集合
 - [x] 204.计数质数
 - [ ] 710.黑名单中的随机数
+
+##### 位运算
+
+- [ ] [面试题 17.01. 不用加号的加法](https://leetcode.cn/problems/add-without-plus-lcci/)
 
 ##### [区间算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165269406745001984)
 
