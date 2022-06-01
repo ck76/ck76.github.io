@@ -38,6 +38,8 @@ https://www.jianshu.com/p/81e5c3e88fc6
 
 ### list和数组互转
 
+- 
+
 
 
 ## 数组
@@ -56,6 +58,23 @@ Arrays.sort(int[] arr, int fromIndex, int toIndex, 比较器);   //一定是需�
 Arrays.sort(arr, (o1, o2) -> o2 - o1);   //数组全部 从大到小排序 跟Collections.sort()一样
 
 Arrays.sort(arr, 0, 3, (o1, o2) -> o2 - o1);   //从大到小排序，只排序[0, 3)
+
+Arrays.sort(a, Collections.reverseOrder()); //降序
+				/*
+         * 注意，要想改变默认的排列顺序，不能使用基本类型（int,double,char）而要使用它们对应的类
+         */
+        Integer[] a = { 9, 8, 7, 2, 3, 4, 1, 0, 6, 5 };
+
+   Integer[] integerNums = new Integer[nums.length];
+        for(int i =0;i<nums.length;i++){
+            integerNums[i] = new Integer(nums[i]);
+        }
+        // Arrays.sort(integerNums,(o1,o2)-> o2-o1);
+        Arrays.sort(integerNums,new Comparator<Integer>(){
+            public int compare(Integer val1,Integer val2){
+                return val2-val1;
+            }
+        });
 ```
 
 - 拷贝：Array.copyOf
@@ -73,6 +92,13 @@ Arrays.copyOfRange(dataType[] srcArray,int startIndex,int endIndex)
 ```
 
 - Fill
+- 求和
+
+```java
+Arrays.stream(matchsticks).sum();
+```
+
+
 
 
 
@@ -579,8 +605,8 @@ s = s.toUpperCase();    // 返回一个新的字符串全部转成大写 --- O(n
 ```
 
 - Equals()
-
 - new String(char[] charArray)
+- sb.append((char)(item[0]+'a')+" ");  //int->char->String
 
 
 
@@ -657,7 +683,7 @@ private void getStrtingRadix() {
     }
 Integer.toBinaryString(num);//可以转负数，补码表示
 在 Java 中使用 Integer.parseInt(,2) 将二进制字符串转换为 Int
-Integer.parseInt()
+Integer.parseInt() //可以将字符串转int值
 ```
 
 
