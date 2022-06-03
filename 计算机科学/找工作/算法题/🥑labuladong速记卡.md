@@ -7,6 +7,7 @@
 ##### [二分搜索速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164909502477795329)
 
 - [x] [34在排序数组中查找元素的第一个和最后一个位置（中等）](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+- [ ] [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/)
 - [ ] [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
 - [ ] [面试题 10.03. 搜索旋转数组](https://leetcode.cn/problems/search-rotate-array-lcci/)
 - [x] [704. 二分查找（简单）](https://leetcode-cn.com/problems/binary-search)
@@ -64,6 +65,7 @@
 - [x] [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
 - [x] 234.回文链表
 - [x] [面试题 02.04. 分割链表](https://leetcode.cn/problems/partition-list-lcci/)
+- [ ] [143. 重排链表](https://leetcode.cn/problems/reorder-list)
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
 - [ ] [剑指 Offer II 022. 链表中环的入口节点](https://leetcode.cn/problems/c32eOV/)
 - [x] [430. 扁平化多级双向链表](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
@@ -89,6 +91,8 @@
 - [ ] [485. 最大连续 1 的个数](https://leetcode.cn/problems/max-consecutive-ones/)
 - [ ] [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
 - [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
+- [x] [剑指 Offer II 069. 山峰数组的顶部](https://leetcode.cn/problems/B1IidL/)
+- [ ] [1893. 检查是否区域内所有整数都被覆盖](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/)
 
 ##### 字符串
 
@@ -103,6 +107,8 @@
 - [x] [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/)
 - [x] [867. 转置矩阵](https://leetcode.cn/problems/transpose-matrix/)
 - [ ] [661. 图片平滑器](https://leetcode.cn/problems/image-smoother/)
+- [ ] [542. 01 矩阵](https://leetcode.cn/problems/01-matrix/)
+- [ ] [1572. 矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum/)
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
 
@@ -114,14 +120,15 @@
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 - [ ] [394. 字符串解码](https://leetcode.cn/problems/decode-string/)
 - [ ] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
-- [ ] 
+- [ ] [341. 扁平化嵌套列表迭代器](https://leetcode.cn/problems/flatten-nested-list-iterator)
+- [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
 
 ##### 单调栈
 
 - [ ] [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water)
 - [ ] [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram)
 - [ ] [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle)
-- [ ] [316. 去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters)
+- [ ] [316. 去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters)[同1081]
 - [ ] [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i)
 - [ ] [654. 最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree)
 - [ ] [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures)
@@ -132,9 +139,11 @@
 
 - [ ] [1. 两数之和](https://leetcode-cn.com/problems/two-sum)
 - [ ] [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)
+- [ ] [41. 缺失的第一个正数](https://leetcode.cn/problems/first-missing-positive)
 - [ ] [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring)
 - [ ] [208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree)
 - [ ] [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k)
+- [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
@@ -142,6 +151,7 @@
 - [x] [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
 - [x] [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
 - [x] [295.数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
+- [ ] [912. 排序数组](https://leetcode.cn/problems/sort-an-array)
 
 ##### [数据结构设计速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165082437591138304)
 
@@ -182,6 +192,7 @@
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
+- [ ] [99. 恢复二叉搜索树](https://leetcode.cn/problems/recover-binary-search-tree)
 - [x] [449. 序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
 - [x] [235. 二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [x] [501. 二叉搜索树中的众数](https://leetcode.cn/problems/find-mode-in-binary-search-tree/)
@@ -199,11 +210,10 @@
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
-- [x] 797.所有可能的路径
-- [ ] 785.判断二分图
+- [ ] [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target)
 - [ ] 886.可能的二分法
-- [x] 207.课程表
-- [ ] 210.课程表II
+- [ ] [207. 课程表](https://leetcode.cn/problems/course-schedule)
+- [ ] [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii)
 - [x] 130.被围绕的区域
 - [ ] 990.等式方程的可满足性
 - [ ] 261.以图判树
@@ -212,7 +222,23 @@
 - [ ] 743.网络延迟时间
 - [ ] 1514.概率最大的路径
 - [ ] 1631.最小体力消耗路径
-- [ ] 787.K站中转内最便宜的航班
+- [ ] [787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops)
+- [ ] [133. 克隆图](https://leetcode.cn/problems/clone-graph/)
+- [ ] [547. 省份数量](https://leetcode.cn/problems/number-of-provinces)
+- [ ] [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)
+- [ ] [997. 找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/)
+- [ ] [684. 冗余连接](https://leetcode.cn/problems/redundant-connection)
+- [ ] [841. 钥匙和房间](https://leetcode.cn/problems/keys-and-rooms)
+- [ ] [399. 除法求值](https://leetcode.cn/problems/evaluate-division/)
+- [ ] [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci)
+- [ ] [886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition)
+- [ ] [1361. 验证二叉树](https://leetcode.cn/problems/validate-binary-tree-nodes)
+- [ ] [剑指 Offer II 110. 所有路径](https://leetcode.cn/problems/bP4bmD)
+- [ ] [剑指 Offer II 118. 多余的边](https://leetcode.cn/problems/7LpjUW)
+- [ ] [剑指 Offer II 112. 最长递增路径](https://leetcode.cn/problems/fpTFWP)
+- [ ] [剑指 Offer II 115. 重建序列](https://leetcode.cn/problems/ur2n8P)
+- [ ] [剑指 Offer II 111. 计算除法](https://leetcode.cn/problems/vlzXQL)
+- [ ] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations)
 
 
 ### 第三章、暴力搜索算法
@@ -284,6 +310,7 @@
 - [ ] 72.编辑距离
 - [ ] 10.正则表达式匹配
 - [x] 121.买卖股票的最佳时机
+- [ ] [2016. 增量元素之间的最大差值](https://leetcode.cn/problems/maximum-difference-between-increasing-elements/)
 - [ ] 122.买卖股票的最佳时机II
 - [ ] 123.买卖股票的最佳时机III
 - [ ] 188.买卖股票的最佳时机IV
@@ -347,6 +374,8 @@
 - [ ] 计数排序
 - [ ] 桶排序
 - [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
+- [ ] 比较器
+- [ ] [937. 重新排列日志文件](https://leetcode.cn/problems/reorder-data-in-log-files/)
 
 ##### 查找
 
@@ -381,6 +410,7 @@
 - [ ] 645.错误的集合
 - [x] 204.计数质数
 - [ ] 710.黑名单中的随机数
+- [x] [1217. 玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/)
 
 ##### 位运算
 
