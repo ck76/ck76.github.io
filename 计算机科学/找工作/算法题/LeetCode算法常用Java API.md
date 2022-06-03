@@ -156,6 +156,9 @@ add(int index, E e)    // 在index位置插一个元素e --- O(n)
 //都会影响到彼此对方. 如果你在调用了sublist返回了子list之后，如果修改了原list的大小，那么之前产生的子list将会失效，变得不可使用
 ```
 
+- clear()
+- 
+
 Integer[] ans2 = list.toArray(new Integer[list.size()]);
 
 ### 集合工具
@@ -563,7 +566,7 @@ lastIndexOf(String str, int fromIndex);    // 同上，
 //但从fromIndex开始从后往前找 [0 <- fromIndex] --- O(m * n)
 ```
 
-- replace
+- replace()
 
 ```java
 replace(char oldChar, char newChar);    // 返回一个新字符串String，其oldChar全部变成newChar --- O(n)
@@ -605,8 +608,16 @@ s = s.toUpperCase();    // 返回一个新的字符串全部转成大写 --- O(n
 ```
 
 - Equals()
+
 - new String(char[] charArray)
+
 - sb.append((char)(item[0]+'a')+" ");  //int->char->String
+
+- matches  //正则
+
+- ```java
+  
+  ```
 
 
 
@@ -667,6 +678,7 @@ toString();    // 返回一个与构建起或缓冲器内容相同的字符串 -
 ```
 
 - reverse().toString()
+- valueOf()  //int 转 string
 
 
 

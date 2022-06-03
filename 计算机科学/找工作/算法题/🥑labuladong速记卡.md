@@ -23,7 +23,7 @@
 - [x] [3.无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 - [ ] 438.找到字符串中所有字母异位词
 - [ ] 567.字符串的排列
-- [ ] [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/)
+- [x] [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/)
 - [ ] [239.滑动窗口最大值（困难）](https://leetcode-cn.com/problems/sliding-window-maximum/)
 - [x] [面试题 17.18. 最短超串](https://leetcode.cn/problems/shortest-supersequence-lcci/)
 - [x] [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
@@ -63,8 +63,10 @@
 - [x] [206.翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [x] [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
 - [x] 234.回文链表
-- [ ] [面试题 02.04. 分割链表](https://leetcode.cn/problems/partition-list-lcci/)
+- [x] [面试题 02.04. 分割链表](https://leetcode.cn/problems/partition-list-lcci/)
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
+- [ ] [剑指 Offer II 022. 链表中环的入口节点](https://leetcode.cn/problems/c32eOV/)
+- [x] [430. 扁平化多级双向链表](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
@@ -73,6 +75,7 @@
 - [ ] 560.和为K的子数组
 - [ ] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
 - [ ] [剑指 Offer II 011. 0 和 1 个数相同的子数组](https://leetcode.cn/problems/A1NYOS/)
+- [ ] [1089. 复写零](https://leetcode.cn/problems/duplicate-zeros/)
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
 
@@ -90,14 +93,16 @@
 ##### 字符串
 
 - [ ] [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
+- [ ] 
 
 ##### 矩阵
 
-- [ ] [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
-- [ ] [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
-- [ ] [48. 旋转图像](https://leetcode.cn/problems/rotate-image/)
-- [ ] [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/)
-- [ ] 
+- [x] [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
+- [x] [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
+- [x] [48. 旋转图像](https://leetcode.cn/problems/rotate-image/)
+- [x] [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/)
+- [x] [867. 转置矩阵](https://leetcode.cn/problems/transpose-matrix/)
+- [ ] [661. 图片平滑器](https://leetcode.cn/problems/image-smoother/)
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
 
@@ -109,6 +114,7 @@
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 - [ ] [394. 字符串解码](https://leetcode.cn/problems/decode-string/)
 - [ ] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+- [ ] 
 
 ##### 单调栈
 
@@ -170,11 +176,15 @@
 - [ ] [面试题 17.12. BiNode](https://leetcode.cn/problems/binode-lcci/)
 - [ ] [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
 - [x] [面试题 04.10. 检查子树](https://leetcode.cn/problems/check-subtree-lcci/)
+- [ ] [剑指 Offer II 047. 二叉树剪枝](https://leetcode.cn/problems/pOCWxh/)
+- [x] [剑指 Offer II 049. 从根节点到叶节点的路径数字之和](https://leetcode.cn/problems/3Etpl5/)
+- [ ] [剑指 Offer II 050. 向下的路径节点之和](https://leetcode.cn/problems/6eUYwP/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
 - [x] [449. 序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
 - [x] [235. 二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [x] [501. 二叉搜索树中的众数](https://leetcode.cn/problems/find-mode-in-binary-search-tree/)
 - [x] [700.二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
 - [x] 701.二叉搜索树中的插入操作
 - [x] 450.删除二叉搜索树中的节点
@@ -184,7 +194,8 @@
 - [x] 95.不同的二叉搜索树II
 - [x] 538.把二叉搜索树转换为累加树
 - [x] 1373.二叉搜索子树的最大键值和
-- [ ] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+- [x] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+- [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
@@ -314,6 +325,7 @@
 
 - [ ] [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
 - [ ] [38. 外观数列](https://leetcode.cn/problems/count-and-say/)
+- [ ] [1071. 字符串的最大公因子](https://leetcode.cn/problems/greatest-common-divisor-of-strings/)
 
 ##### 模拟
 
