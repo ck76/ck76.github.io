@@ -77,6 +77,7 @@
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
 - [ ] [剑指 Offer II 022. 链表中环的入口节点](https://leetcode.cn/problems/c32eOV/)
 - [x] [430. 扁平化多级双向链表](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
+- [ ] [143. 重排链表](https://leetcode.cn/problems/reorder-list/)
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
@@ -87,6 +88,7 @@
 - [ ] [剑指 Offer II 011. 0 和 1 个数相同的子数组](https://leetcode.cn/problems/A1NYOS/)
 - [ ] [1089. 复写零](https://leetcode.cn/problems/duplicate-zeros/)
 - [x] [1413. 逐步求和得到正数的最小值](https://leetcode.cn/problems/minimum-value-to-get-positive-step-by-step-sum/)
+- [ ] [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/)
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
 
@@ -404,6 +406,7 @@
 
 ##### 比较器
 
+- [x] [179. 最大数](https://leetcode.cn/problems/largest-number/)
 - [ ] [937. 重新排列日志文件](https://leetcode.cn/problems/reorder-data-in-log-files/)
 - [x] [2099. 找到和最大的长度为 K 的子序列](https://leetcode.cn/problems/find-subsequence-of-length-k-with-the-largest-sum/)
 - [ ] [451. 根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency/)
