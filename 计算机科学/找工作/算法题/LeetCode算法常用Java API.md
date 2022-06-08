@@ -40,6 +40,12 @@ https://www.jianshu.com/p/81e5c3e88fc6
 
 - 
 
+```java
+// 这里可以学一下 List 转Array
+        return numsList.stream().mapToInt(Integer::intValue).toArray();
+list.toArray(new String[0]);
+```
+
 
 
 ## 数组
@@ -77,6 +83,7 @@ Arrays.sort(a, Collections.reverseOrder()); //降序
         });
 ```
 
+- original = **array.clone**();
 - 拷贝：Array.copyOf
 
 ```java
@@ -96,6 +103,26 @@ Arrays.copyOfRange(dataType[] srcArray,int startIndex,int endIndex)
 
 ```java
 Arrays.stream(matchsticks).sum();
+```
+
+```java
+static int [] intArr = new int[]{30,96,23,69,85,62,12,99,11};
+    public static void main(String[] args) {
+        IntStream intStream =Arrays.stream(intArr);
+        int sum = intStream.sum();
+        System.out.println("总和："+sum);
+    }
+static int [] intArr = new int[]{30,96,23,69,85,62,12,99,11};
+	public static void main(String[] args) {
+		IntStream intStream =Arrays.stream(intArr);
+		int sum = intStream.sum();
+		intStream =Arrays.stream(intArr);
+		int max = intStream.max().getAsInt();
+		intStream =Arrays.stream(intArr);
+		int min = intStream.min().getAsInt();
+		intStream =Arrays.stream(intArr);
+		double avg = intStream.average().getAsDouble();
+		System.out.println("最大值："+max+"\n最小值："+min+"\n总和："+sum+"\n平均值："+avg);
 ```
 
 
@@ -387,7 +414,7 @@ getOrDefault(K key, V defaultValue);    // 返回Map中key对应的value。若Ma
     map.put('k', map.getOrDefault('k', 0) + 1);
 ```
 
-- containsKey
+- **containsKey()**
 
 ```java
 containsKey(Key key);    // 在Map中若存在key，则返回true，否则返回false --- O(1)
@@ -619,9 +646,9 @@ s = s.toUpperCase();    // 返回一个新的字符串全部转成大写 --- O(n
   
   ```
 
+- contains()//可以判断是不是包含某个子串
 
-
-
+- startsWith()  //
 
 Char-'A'或者-‘a’可以得到0
 
