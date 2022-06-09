@@ -37,6 +37,7 @@
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [ ] [1763. 最长的美好子字符串](https://leetcode.cn/problems/longest-nice-substring/)
 - [ ] [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/)
+- [ ] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
 ##### [其他双指针算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165005132189564928)
 
@@ -110,7 +111,7 @@
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [1331. 数组序号转换](https://leetcode.cn/problems/rank-transform-of-an-array/)
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
-- [ ] 
+- [ ] [442. 数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array/)
 
 ##### 字符串
 
@@ -166,6 +167,8 @@
 - [ ] [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k)
 - [x] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [2248. 多个数组求交集](https://leetcode.cn/problems/intersection-of-multiple-arrays/)
+- [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
+- [ ] [720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/)
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
@@ -195,12 +198,12 @@
 - [x] [106.从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [x] [111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
-- [x] [654.最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree/)
 - [x] 114.二叉树展开为链表
 - [x] 116.填充每个节点的下一个右侧节点指针
 - [x] [226.翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
 - [ ] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
+- [x] [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
 - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
@@ -231,6 +234,7 @@
 - [x] 1373.二叉搜索子树的最大键值和
 - [x] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 - [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
+- [ ] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
@@ -375,10 +379,11 @@
 - [ ] [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
 
-##### 字符串匹配
+##### 字符串
 
 - [ ] [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
 - [ ] [剑指 Offer II 014. 字符串中的变位词](https://leetcode.cn/problems/MPnaiL/)
+- [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [ ] [38. 外观数列](https://leetcode.cn/problems/count-and-say/)
 - [ ] [1071. 字符串的最大公因子](https://leetcode.cn/problems/greatest-common-divisor-of-strings/)
 
@@ -399,6 +404,7 @@
 
   - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list/)
   - [ ] [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/)
+- [ ] [912. 排序数组](https://leetcode.cn/problems/sort-an-array/)
 - [ ] 计数排序
 - [ ] 桶排序
 - [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
