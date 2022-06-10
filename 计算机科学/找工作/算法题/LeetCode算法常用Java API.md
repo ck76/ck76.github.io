@@ -422,6 +422,7 @@ containsKey(Key key);    // 在Map中若存在key，则返回true，否则返回
 get(x) == null // 可以代替改用法
 ```
 
+- boolean containsValue()
 - keySet
 
 ```java

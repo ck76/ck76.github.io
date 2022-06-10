@@ -177,6 +177,7 @@
 - [x] [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
 - [x] [295.数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
 - [ ] [912. 排序数组](https://leetcode.cn/problems/sort-an-array)
+- [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
 
 ##### [数据结构设计速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165082437591138304)
 
@@ -193,6 +194,7 @@
 ##### [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
 
 - [x] [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+- [ ] [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/)
 - [ ] [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/)
 - [x] [105.从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [x] [106.从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
@@ -302,6 +304,7 @@
 - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
 - [x] [733. 图像渲染](https://leetcode.cn/problems/flood-fill/)
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
+- [x] [690. 员工的重要性](https://leetcode.cn/problems/employee-importance/)
 
 ##### [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
 
@@ -378,6 +381,7 @@
 - [ ] [435. 无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals)
 - [ ] [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
+- [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
 
 ##### 字符串
 
