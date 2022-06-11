@@ -53,6 +53,7 @@
 - [ ] 42.接雨水
 - [x] [LCP 18. 早餐组合](https://leetcode.cn/problems/2vYnGI/)
 - [x] [LCP 28. 采购方案](https://leetcode.cn/problems/4xy4Wx/)
+- [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
 
@@ -89,7 +90,7 @@
 - [ ] [剑指 Offer II 011. 0 和 1 个数相同的子数组](https://leetcode.cn/problems/A1NYOS/)
 - [ ] [1089. 复写零](https://leetcode.cn/problems/duplicate-zeros/)
 - [x] [1413. 逐步求和得到正数的最小值](https://leetcode.cn/problems/minimum-value-to-get-positive-step-by-step-sum/)
-- [ ] [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/)
+- [x] [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/)
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
 
@@ -112,11 +113,18 @@
 - [x] [1331. 数组序号转换](https://leetcode.cn/problems/rank-transform-of-an-array/)
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [ ] [442. 数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array/)
+- [x] [1539. 第 k 个缺失的正整数](https://leetcode.cn/problems/kth-missing-positive-number/)
+- [ ] [1460. 通过翻转子数组使两个数组相等](https://leetcode.cn/problems/make-two-arrays-equal-by-reversing-sub-arrays/)
+- [ ] [2293. 极大极小游戏](https://leetcode.cn/problems/min-max-game/)
+- [ ] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)
 
 ##### 字符串
 
 - [ ] [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
 - [x] [2062. 统计字符串中的元音子字符串](https://leetcode.cn/problems/count-vowel-substrings-of-a-string/)
+- [ ] [1422. 分割字符串的最大得分](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/)
+- [x] [1957. 删除字符使字符串变好](https://leetcode.cn/problems/delete-characters-to-make-fancy-string/)
+- [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 
 ##### 矩阵
 
@@ -155,7 +163,11 @@
 - [ ] [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures)
 - [ ] [1081. 不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters)
 - [x] [581. 最短无序连续子数组](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
-- [ ] 
+- [ ] [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/)
+
+#####  单调队列
+
+- [ ] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
 ##### 哈希表
 
@@ -252,6 +264,7 @@
 - [ ] 743.网络延迟时间
 - [ ] 1514.概率最大的路径
 - [ ] 1631.最小体力消耗路径
+- [x] [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/)
 - [ ] [787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops)
 - [ ] [133. 克隆图](https://leetcode.cn/problems/clone-graph/)
 - [ ] [547. 省份数量](https://leetcode.cn/problems/number-of-provinces)
@@ -315,6 +328,7 @@
 - [x] [LCP 07. 传递信息](https://leetcode.cn/problems/chuan-di-xin-xi/)
 - [x] [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci/)
 - [ ] [面试题 17.22. 单词转换](https://leetcode.cn/problems/word-transformer-lcci/)
+- [ ] [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)
 
 
 ### 第四章、动态规划算法
@@ -382,6 +396,7 @@
 - [ ] [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
 - [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
+- [ ] [2027. 转换字符串的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-convert-string/)
 
 ##### 字符串
 
@@ -413,6 +428,8 @@
 - [ ] 桶排序
 - [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 - [ ] [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/)
+- [ ] [2164. 对奇偶下标分别排序](https://leetcode.cn/problems/sort-even-and-odd-indices-independently/)
+- [ ] [2231. 按奇偶性交换后的最大数字](https://leetcode.cn/problems/largest-number-after-digit-swaps-by-parity/)
 
 ##### 比较器
 
@@ -459,11 +476,14 @@
 - [ ] [908. 最小差值 I](https://leetcode.cn/problems/smallest-range-i/)
 - [ ] [面试题 16.14. 最佳直线](https://leetcode.cn/problems/best-line-lcci/)
 - [ ] [836. 矩形重叠](https://leetcode.cn/problems/rectangle-overlap/)
+- [ ] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)  gcd公约数
+- [ ] [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/)
 
 ##### 位运算
 
 - [ ] [面试题 17.01. 不用加号的加法](https://leetcode.cn/problems/add-without-plus-lcci/)
 - [ ] [1684. 统计一致字符串的数目](https://leetcode.cn/problems/count-the-number-of-consistent-strings/)
+- [ ] [2220. 转换数字的最少位翻转次数](https://leetcode.cn/problems/minimum-bit-flips-to-convert-number/)
 
 ##### [区间算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165269406745001984)
 
@@ -480,3 +500,7 @@
 
 - [ ] [1837. K 进制表示下的各位数字总和](https://leetcode.cn/problems/sum-of-digits-in-base-k/)
 - [ ] 
+
+##### 正则
+
+- [ ] [2047. 句子中的有效单词数](https://leetcode.cn/problems/number-of-valid-words-in-a-sentence/)

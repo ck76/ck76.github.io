@@ -54,6 +54,23 @@ list.toArray(new String[0]);
 
 ### Arrays
 
+- https://tobebetterjavaer.com/common-tool/arrays.html
+- 创建数组
+- 比较数组
+- 数组排序
+- 数组检索
+- 数组转流
+- 打印数组
+- 数组转 List
+- setAll（没想好中文名）
+- parallelPrefix（没想好中文名）
+
+
+
+
+
+
+
 Arrays是比较常用的数组工具类，可以完成排序、拷贝等功能。
 
 - 从小到大排序：Arrays.sort(int[] arr)``Arrays.sort(int[] arr, int fromIndex, int toIndex)
@@ -83,7 +100,18 @@ Arrays.sort(a, Collections.reverseOrder()); //降序
         });
 ```
 
+- Arrays.equals(target,arr); //判断两个数组元素是不是都相等
+
 - original = **array.clone**();
+
+- System.arraycopy()
+
+  ```java
+  		int[] ans = Arrays.copyOf(nums, len* 2);
+  		System.arraycopy(nums,0,ans,len,len);
+  		System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+  ```
+
 - 拷贝：Array.copyOf
 
 ```java
@@ -706,7 +734,19 @@ toString();    // 返回一个与构建起或缓冲器内容相同的字符串 -
 ```
 
 - reverse().toString()
+
 - valueOf()  //int 转 string
+
+- delete()
+
+- ```java
+  delete方法与deleteCharAt两个方法都是用来删除StringBuffer字符串指定索引字符的方法，
+  delete（int  begin,int  end）有两个参数，使用时删除索引从begin开始（包含begin）到end（不包含end）的所有字符；
+  deleteCharAt（int  index）只有一个参数，使用时删除索引为index的字符；
+  setCharAt(int i, char c)：将第 i 个代码单元设置为 c（可以理解为替换）
+  charAt(int indices);
+  sb.length()
+  ```
 
 
 
@@ -820,3 +860,41 @@ Math.floor(double x);  //向下取整
 ```java
 Math.round(double x);   //四舍五入
 ```
+
+- 求底数
+
+```java
+int log(int x) {
+        return (int) (Math.log(x) / Math.log(2));
+    }
+```
+
+
+
+### Object
+
+```java
+class Point{
+        int x;
+        int y ;
+        Point(int x,int y){
+            this.x=x;
+            this.y = y;
+        }
+
+        @Override
+        public boolean equals(Object o){
+            if(this == o){
+                return true;
+            }
+            Point p2 = (Point)o;
+            return  p2.x ==this.x && p2.y==this.y;
+        }
+
+        @Override
+        public int hashCode(){
+            return Objects.hash(x, y);
+        }
+    }
+```
+
