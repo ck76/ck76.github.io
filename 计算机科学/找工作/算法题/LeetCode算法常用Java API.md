@@ -368,6 +368,34 @@ peekFirst()   //获取但不删除双端队列的第一个元素 --- O(1)
 peekLast()   //获取但不删除双端队列的最后一个元素 --- O(1)
 ```
 
+```java
+Deque 的 12 种方法总结如下：
+
+插入：
+如果操作失败则抛出异常
+void addFirst(Object e)
+void addLast(Object e)
+如果操作失败则返回一个特殊值(null 或 false)
+boolean offerFirst(Object e)
+boolean offerLast(Object e);
+删除：
+如果操作失败则抛出异常
+Object removeFirst()
+Object removeLast()
+如果操作失败则返回一个特殊值(null 或 false)
+Object pollFirst()
+Object pollLast()
+获取：
+如果操作失败则抛出异常
+Object getFirst()
+Object getLast()
+如果操作失败则返回一个特殊值(null 或 false)
+Object peekFirst()
+Object peekLast()
+```
+
+
+
 ## 优先队列
 
 优先队列是一种比较特殊的队列，保存队列元素的顺序不是按照元素添加的顺序来保存的，而是在添加元素的时候对元素的大小排序后再保存。

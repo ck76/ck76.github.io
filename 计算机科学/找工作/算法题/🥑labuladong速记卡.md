@@ -125,6 +125,7 @@
 - [ ] [1422. 分割字符串的最大得分](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/)
 - [x] [1957. 删除字符使字符串变好](https://leetcode.cn/problems/delete-characters-to-make-fancy-string/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
+- [ ] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
 
 ##### 矩阵
 
@@ -168,6 +169,10 @@
 #####  单调队列
 
 - [ ] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
+##### 双端队列
+
+- [x] [2243. 计算字符串的数字和](https://leetcode.cn/problems/calculate-digit-sum-of-a-string/)
 
 ##### 哈希表
 
@@ -342,6 +347,7 @@
 - [x] 300.最长递增子序列
 - [x] 322.零钱兑换
 - [x] 70.爬楼梯
+- [x] [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
 - [ ] 337.打家劫舍I
 - [ ] 213.打家劫舍II
 - [x] 198.打家劫舍
@@ -396,7 +402,7 @@
 - [ ] [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
 - [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
-- [ ] [2027. 转换字符串的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-convert-string/)
+- [x] [2027. 转换字符串的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-convert-string/)
 
 ##### 字符串
 
@@ -428,8 +434,8 @@
 - [ ] 桶排序
 - [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 - [ ] [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/)
-- [ ] [2164. 对奇偶下标分别排序](https://leetcode.cn/problems/sort-even-and-odd-indices-independently/)
-- [ ] [2231. 按奇偶性交换后的最大数字](https://leetcode.cn/problems/largest-number-after-digit-swaps-by-parity/)
+- [x] [2164. 对奇偶下标分别排序](https://leetcode.cn/problems/sort-even-and-odd-indices-independently/)
+- [x] [2231. 按奇偶性交换后的最大数字](https://leetcode.cn/problems/largest-number-after-digit-swaps-by-parity/)
 
 ##### 比较器
 
@@ -437,6 +443,7 @@
 - [ ] [937. 重新排列日志文件](https://leetcode.cn/problems/reorder-data-in-log-files/)
 - [x] [2099. 找到和最大的长度为 K 的子序列](https://leetcode.cn/problems/find-subsequence-of-length-k-with-the-largest-sum/)
 - [ ] [451. 根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency/)
+- [x] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 
 ##### 查找
 
