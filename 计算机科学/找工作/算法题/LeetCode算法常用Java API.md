@@ -883,6 +883,13 @@ Math.pow(double a, double b);  //返回第一个参数的第二个参数次方�
 
 ```java
 Math.ceil(double x);   //向上取整
+// 贪心，优先扩大带宽，最后的加一是下载的那一次操作
+class Solution {
+    public int leastMinutes(int n) {
+        int cnt = (int)Math.ceil(Math.log(n) / Math.log(2));
+        return cnt + 1;
+    }
+}
 ```
 
 - floor
@@ -903,6 +910,13 @@ Math.round(double x);   //四舍五入
 int log(int x) {
         return (int) (Math.log(x) / Math.log(2));
     }
+// 贪心，优先扩大带宽，最后的加一是下载的那一次操作
+class Solution {
+    public int leastMinutes(int n) {
+        int cnt = (int)Math.ceil(Math.log(n) / Math.log(2));
+        return cnt + 1;
+    }
+}
 ```
 
 

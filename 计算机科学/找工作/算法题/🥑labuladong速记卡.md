@@ -38,6 +38,7 @@
 - [ ] [1763. 最长的美好子字符串](https://leetcode.cn/problems/longest-nice-substring/)
 - [ ] [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/)
 - [ ] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+- [x] [剑指 Offer II 014. 字符串中的变位词](https://leetcode.cn/problems/MPnaiL/)
 
 ##### [其他双指针算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165005132189564928)
 
@@ -149,11 +150,10 @@
 - [ ] 921.使括号有效的最少添加
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 - [ ] [394. 字符串解码](https://leetcode.cn/problems/decode-string/)
-- [ ] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
 - [ ] [341. 扁平化嵌套列表迭代器](https://leetcode.cn/problems/flatten-nested-list-iterator)
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
 - [ ] [950. 按递增顺序显示卡牌](https://leetcode.cn/problems/reveal-cards-in-increasing-order/)
-- [ ] [1823. 找出游戏的获胜者](https://leetcode.cn/problems/find-the-winner-of-the-circular-game/)
+- [x] [1823. 找出游戏的获胜者](https://leetcode.cn/problems/find-the-winner-of-the-circular-game/)
 
 ##### 单调栈
 
@@ -237,6 +237,7 @@
 - [x] [剑指 Offer II 049. 从根节点到叶节点的路径数字之和](https://leetcode.cn/problems/3Etpl5/)
 - [ ] [剑指 Offer II 050. 向下的路径节点之和](https://leetcode.cn/problems/6eUYwP/)
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
+- [ ] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
@@ -255,7 +256,7 @@
 - [x] 1373.二叉搜索子树的最大键值和
 - [x] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 - [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
-- [ ] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
+- [x] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
@@ -318,13 +319,14 @@
 - [ ] 694.不同的岛屿数量
 - [ ] [1905.统计子岛屿](https://leetcode-cn.com/problems/count-sub-islands/)
 - [x] [695.岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
-- [ ] 1020.飞地的数量
+- [ ] [1020. 飞地的数量](https://leetcode.cn/problems/number-of-enclaves/)
 - [ ] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
 - [x] [1254.统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
 - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
 - [x] [733. 图像渲染](https://leetcode.cn/problems/flood-fill/)
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [x] [690. 员工的重要性](https://leetcode.cn/problems/employee-importance/)
+- [ ] [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/)
 
 ##### [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
 
@@ -335,7 +337,7 @@
 - [x] [LCP 07. 传递信息](https://leetcode.cn/problems/chuan-di-xin-xi/)
 - [x] [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci/)
 - [ ] [面试题 17.22. 单词转换](https://leetcode.cn/problems/word-transformer-lcci/)
-- [ ] [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)
+- [x] [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)
 
 
 ### 第四章、动态规划算法
