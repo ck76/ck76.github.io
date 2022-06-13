@@ -28,7 +28,7 @@
 - [ ] 438.找到字符串中所有字母异位词
 - [ ] 567.字符串的排列
 - [x] [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/)
-- [ ] [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+- [x] [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
 - [ ] [239.滑动窗口最大值（困难）](https://leetcode-cn.com/problems/sliding-window-maximum/)
 - [x] [面试题 17.18. 最短超串](https://leetcode.cn/problems/shortest-supersequence-lcci/)
 - [x] [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
@@ -152,6 +152,8 @@
 - [ ] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
 - [ ] [341. 扁平化嵌套列表迭代器](https://leetcode.cn/problems/flatten-nested-list-iterator)
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
+- [ ] [950. 按递增顺序显示卡牌](https://leetcode.cn/problems/reveal-cards-in-increasing-order/)
+- [ ] [1823. 找出游戏的获胜者](https://leetcode.cn/problems/find-the-winner-of-the-circular-game/)
 
 ##### 单调栈
 
@@ -185,7 +187,7 @@
 - [x] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [2248. 多个数组求交集](https://leetcode.cn/problems/intersection-of-multiple-arrays/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
-- [ ] [720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/)
+- [x] [720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/)
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
@@ -194,7 +196,7 @@
 - [x] [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
 - [x] [295.数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
 - [ ] [912. 排序数组](https://leetcode.cn/problems/sort-an-array)
-- [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
+- [x] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
 
 ##### [数据结构设计速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165082437591138304)
 
@@ -452,6 +454,7 @@
 ##### 分治
 
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
+- [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list)
 - [ ] 
 
 ##### [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)

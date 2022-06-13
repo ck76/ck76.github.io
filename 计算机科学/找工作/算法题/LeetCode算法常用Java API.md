@@ -723,6 +723,14 @@ char c = (char)(num + '0');
 
 A65 a97  32差
 
+- conpareTo(String)
+
+  ```c
+  int compareTo(String anotherString)
+  ```
+
+  
+
 
 
 s.equals()
