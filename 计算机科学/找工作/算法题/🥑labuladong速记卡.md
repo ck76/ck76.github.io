@@ -48,6 +48,7 @@
 - [x] [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
 - [ ] 283.移动零
 - [x] [15.三数之和](https://leetcode-cn.com/problems/3sum/)
+- [ ] [611. 有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number/)
 - [ ] 18.四数之和
 - [ ] 870.优势洗牌
 - [ ] 11.盛最多水的容器
@@ -146,6 +147,7 @@
 - [x] [225.用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)
 - [x] [32.最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 - [x] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
+- [ ] [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) 投降了
 - [ ] 1541.平衡括号字符串的最少插入次数
 - [ ] 921.使括号有效的最少添加
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
@@ -154,6 +156,7 @@
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
 - [ ] [950. 按递增顺序显示卡牌](https://leetcode.cn/problems/reveal-cards-in-increasing-order/)
 - [x] [1823. 找出游戏的获胜者](https://leetcode.cn/problems/find-the-winner-of-the-circular-game/)
+- [ ] 
 
 ##### 单调栈
 
@@ -168,7 +171,7 @@
 - [x] [581. 最短无序连续子数组](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
 - [ ] [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/)
 
-#####  单调队列
+##### 单调队列
 
 - [ ] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
@@ -399,6 +402,7 @@
 
 ##### 贪心
 
+- [x] [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) 投降了
 - [ ] [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)
 - [ ] [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/)
 - [ ] [134. 加油站](https://leetcode.cn/problems/gas-station)

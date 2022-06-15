@@ -656,6 +656,7 @@ lastIndexOf(String str, int fromIndex);    // 同上，
 replace(char oldChar, char newChar);    // 返回一个新字符串String，其oldChar全部变成newChar --- O(n)
 ```
 
+- replaceFirst(s1,s2);
 - toCharArray
 
 ```java
