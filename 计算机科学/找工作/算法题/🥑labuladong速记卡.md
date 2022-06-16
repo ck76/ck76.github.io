@@ -148,6 +148,7 @@
 - [x] [32.最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 - [x] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
 - [ ] [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) 投降了
+- [ ] [面试题 03.05. 栈排序](https://leetcode.cn/problems/sort-of-stacks-lcci/)
 - [ ] 1541.平衡括号字符串的最少插入次数
 - [ ] 921.使括号有效的最少添加
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
@@ -170,6 +171,10 @@
 - [ ] [1081. 不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters)
 - [x] [581. 最短无序连续子数组](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
 - [ ] [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/)
+- [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)
+- [ ] [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/)
+- [ ] [2104. 子数组范围和](https://leetcode.cn/problems/sum-of-subarray-ranges/)
+- [ ] [962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/)
 
 ##### 单调队列
 
@@ -452,6 +457,7 @@
 - [x] [2099. 找到和最大的长度为 K 的子序列](https://leetcode.cn/problems/find-subsequence-of-length-k-with-the-largest-sum/)
 - [ ] [451. 根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency/)
 - [x] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
+- [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)
 
 ##### 查找
 
