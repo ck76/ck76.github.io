@@ -187,6 +187,7 @@
 ##### 哈希表
 
 - [x] [1. 两数之和](https://leetcode-cn.com/problems/two-sum)
+- [x] [532. 数组中的 k-diff 数对](https://leetcode.cn/problems/k-diff-pairs-in-an-array/)
 - [ ] [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)
 - [ ] [41. 缺失的第一个正数](https://leetcode.cn/problems/first-missing-positive)
 - [ ] [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring)
@@ -196,6 +197,8 @@
 - [x] [2248. 多个数组求交集](https://leetcode.cn/problems/intersection-of-multiple-arrays/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [x] [720. 词典中最长的单词](https://leetcode.cn/problems/longest-word-in-dictionary/)
+- [ ] [1128. 等价多米诺骨牌对的数量](https://leetcode.cn/problems/number-of-equivalent-domino-pairs/)
+- [ ] [1296. 划分数组为连续数字的集合](https://leetcode.cn/problems/divide-array-in-sets-of-k-consecutive-numbers/)
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
