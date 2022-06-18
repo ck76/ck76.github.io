@@ -82,6 +82,7 @@
 - [ ] [剑指 Offer II 022. 链表中环的入口节点](https://leetcode.cn/problems/c32eOV/)
 - [x] [430. 扁平化多级双向链表](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
 - [ ] [143. 重排链表](https://leetcode.cn/problems/reorder-list/)
+- [x] [剑指 Offer II 029. 排序的循环链表](https://leetcode.cn/problems/4ueAj6/)
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
@@ -223,6 +224,7 @@
 
 ##### [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
 
+- [x] [687. 最长同值路径](https://leetcode.cn/problems/longest-univalue-path/) 跪了
 - [x] [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 - [ ] [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/)
 - [ ] [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/)
