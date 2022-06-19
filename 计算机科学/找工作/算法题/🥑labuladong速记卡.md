@@ -235,6 +235,7 @@
 - [x] 114.二叉树展开为链表
 - [x] 116.填充每个节点的下一个右侧节点指针
 - [x] [226.翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
+- [x] [951. 翻转等价二叉树](https://leetcode.cn/problems/flip-equivalent-binary-trees/)
 - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
 - [ ] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 - [x] [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)
@@ -251,6 +252,7 @@
 - [ ] [剑指 Offer II 050. 向下的路径节点之和](https://leetcode.cn/problems/6eUYwP/)
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
 - [ ] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
+- [x] [1367. 二叉树中的列表](https://leetcode.cn/problems/linked-list-in-binary-tree/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
