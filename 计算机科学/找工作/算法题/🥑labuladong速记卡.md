@@ -73,6 +73,7 @@
 - [ ] [82. 删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
 - [x] 83.删除排序链表中的重复元素
 - [x] [86. 分隔链表](https://leetcode.cn/problems/partition-list/)
+- [x] [725. 分隔链表](https://leetcode.cn/problems/split-linked-list-in-parts/)
 - [x] [206.翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [x] [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
 - [x] 234.回文链表
@@ -166,16 +167,18 @@
 - [ ] [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram)
 - [ ] [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle)
 - [ ] [316. 去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters)[同1081]
-- [ ] [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i)
+- [x] [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i)
+- [x] [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/)
 - [ ] [654. 最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree)
 - [ ] [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures)
 - [ ] [1081. 不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters)
 - [x] [581. 最短无序连续子数组](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
 - [ ] [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/)
-- [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)
-- [ ] [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/)
-- [ ] [2104. 子数组范围和](https://leetcode.cn/problems/sum-of-subarray-ranges/)
-- [ ] [962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/)
+- [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)看看
+- [ ] [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/)看看
+- [ ] [2104. 子数组范围和](https://leetcode.cn/problems/sum-of-subarray-ranges/) 看看
+- [ ] [962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/) 看看
+- [x] [853. 车队](https://leetcode.cn/problems/car-fleet/)
 
 ##### 单调队列
 
@@ -236,6 +239,7 @@
 - [x] 116.填充每个节点的下一个右侧节点指针
 - [x] [226.翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 - [x] [951. 翻转等价二叉树](https://leetcode.cn/problems/flip-equivalent-binary-trees/)
+- [ ] [971. 翻转二叉树以匹配先序遍历](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/)
 - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
 - [ ] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 - [x] [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)
@@ -253,6 +257,7 @@
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
 - [ ] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
 - [x] [1367. 二叉树中的列表](https://leetcode.cn/problems/linked-list-in-binary-tree/)
+- [ ] [1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 

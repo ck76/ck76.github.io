@@ -126,7 +126,7 @@ int[] newA = Arrays.copyOf(a, 5);
 Arrays.copyOfRange(dataType[] srcArray,int startIndex,int endIndex)
 ```
 
-- Fill
+- Fill()
 - 求和
 
 ```java
