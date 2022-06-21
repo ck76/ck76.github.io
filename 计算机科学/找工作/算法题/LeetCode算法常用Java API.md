@@ -324,7 +324,7 @@ size()    // 返回队中元素个数 --- O(1)
 
 ## 双向队列
 
-`Queue`有一个子接口`Dueue`，即双向队列，和单向队列不同，它的出队入队可以从两个方向。
+`Queue`有一个子接口`**Dueue**`，即双向队列，和单向队列不同，它的出队入队可以从两个方向。
 
 - 构造
 
@@ -417,6 +417,8 @@ Queue<Integer> minH = new PriorityQueue<>(100);  // 定义一个默认容量有1
 ```java
 Queue<Integer> maxH = new PriorityQueue<>((i1, i2) -> i2 - i1);    // 大根堆，默认大小为11 相当于  new PriorityQueue<>(11, (i1, i2) -> i2 - i1)
 Queue<Integer> maxH = new PriorityQueue<>(100, (i1, i2) -> i2 - i1);    // 定义一个默认容量有100的大根堆。在当中增加元素会扩容，只是开始指定大小
+PriorityQueue<Integer> minQueue = new PriorityQueue<>(Comparator.naturalOrder());
+PriorityQueue<Integer> maxQueue = new PriorityQueue<>(Comparator.reverseOrder());
 ```
 
 - offer
@@ -452,6 +454,12 @@ Map<Characters, Integer> map = new HashMap<>();
 ```java
 put(K key, V value);    // 在Map中加入键值对<key, value>。返回value值。如果Map中有key，则replace旧的value --- O(1)
 ```
+
+- putIfAbsent（）
+
+- ```java
+  putIfAbsent
+  ```
 
 - get
 
