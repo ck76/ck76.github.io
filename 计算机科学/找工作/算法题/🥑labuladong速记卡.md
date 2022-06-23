@@ -23,6 +23,8 @@
 
 ##### [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
 
+- [x] [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
+
 - [ ] [76.最小覆盖子串（困难）](https://leetcode-cn.com/problems/minimum-window-substring/)
 
 - [x] [3.无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
@@ -111,6 +113,8 @@
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
+区间，子数组
+
 - [ ] 303.区域和检索-数组不可变
 - [ ] 304.二维区域和检索-矩阵不可变
 - [ ] 560.和为K的子数组
@@ -120,6 +124,7 @@
 - [x] [1413. 逐步求和得到正数的最小值](https://leetcode.cn/problems/minimum-value-to-get-positive-step-by-step-sum/)
 - [x] [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/)
 - [ ] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
+- [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
 
@@ -223,6 +228,8 @@
 - [x] [853. 车队](https://leetcode.cn/problems/car-fleet/)
 
 - [ ] #### [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)
+
+- [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
 
 ##### 单调队列
 
@@ -506,6 +513,7 @@
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
 - [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
 - [x] [2027. 转换字符串的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-convert-string/)
+- [x] [646. 最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/)
 
 ##### 字符串
 
