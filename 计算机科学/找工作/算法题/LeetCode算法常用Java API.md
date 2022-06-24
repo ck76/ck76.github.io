@@ -324,12 +324,12 @@ size()    // 返回队中元素个数 --- O(1)
 
 ## 双向队列
 
-`Queue`有一个子接口`**Dueue**`，即双向队列，和单向队列不同，它的出队入队可以从两个方向。
+`Queue`有一个子接口`**Deque**`，即双向队列，和单向队列不同，它的出队入队可以从两个方向。
 
 - 构造
 
 ```java
-Dueue<Integer> q = new LinkedList<>();
+Deque<Integer> q = new LinkedList<>();
 ```
 
 - offFirst

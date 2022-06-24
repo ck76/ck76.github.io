@@ -155,6 +155,7 @@
 ##### 字符串
 
 - [ ] [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
+- [ ] [443. 压缩字符串](https://leetcode.cn/problems/string-compression/)
 - [x] [2062. 统计字符串中的元音子字符串](https://leetcode.cn/problems/count-vowel-substrings-of-a-string/)
 - [ ] [1422. 分割字符串的最大得分](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/)
 - [x] [1957. 删除字符使字符串变好](https://leetcode.cn/problems/delete-characters-to-make-fancy-string/)
@@ -227,7 +228,7 @@
 
 - [x] [853. 车队](https://leetcode.cn/problems/car-fleet/)
 
-- [ ] #### [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)
+- [x] [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)
 
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
 
