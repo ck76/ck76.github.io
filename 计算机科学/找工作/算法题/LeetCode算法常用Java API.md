@@ -525,6 +525,12 @@ isEmpty()    // 若Map为空返回true， 否则返回false --- O(1)
 size()    // 返回Map中中键值对<K, V>的个数 --- O(1)
 ```
 
+- remove(key)
+
+
+
+
+
 ## Set
 
 Set是一种没有重复元素的集合，常用的实现是`HashSet`。

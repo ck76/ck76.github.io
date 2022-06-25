@@ -110,6 +110,7 @@
 - [x] [143. 重排链表](https://leetcode.cn/problems/reorder-list/)
 - [x] [剑指 Offer II 026. 重排链表](https://leetcode.cn/problems/LGjMqU/)
 - [x] [剑指 Offer II 029. 排序的循环链表](https://leetcode.cn/problems/4ueAj6/)
+- [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
@@ -118,13 +119,15 @@
 - [ ] 303.区域和检索-数组不可变
 - [ ] 304.二维区域和检索-矩阵不可变
 - [ ] 560.和为K的子数组
+- [ ] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
 - [x] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
 - [ ] [剑指 Offer II 011. 0 和 1 个数相同的子数组](https://leetcode.cn/problems/A1NYOS/)
 - [ ] [1089. 复写零](https://leetcode.cn/problems/duplicate-zeros/)
 - [x] [1413. 逐步求和得到正数的最小值](https://leetcode.cn/problems/minimum-value-to-get-positive-step-by-step-sum/)
 - [x] [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/)
-- [ ] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
+- [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
+- [ ] 
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
 
@@ -181,7 +184,7 @@
 - [x] [32.最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 - [x] [150. 逆波兰表达式求值](https://leetcode.cn/problems/evaluate-reverse-polish-notation/)
 - [ ] [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) 投降了
-- [ ] [面试题 03.05. 栈排序](https://leetcode.cn/problems/sort-of-stacks-lcci/)
+- [x] [面试题 03.05. 栈排序](https://leetcode.cn/problems/sort-of-stacks-lcci/)
 - [ ] 1541.平衡括号字符串的最少插入次数
 - [ ] 921.使括号有效的最少添加
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
@@ -191,46 +194,30 @@
 - [ ] [950. 按递增顺序显示卡牌](https://leetcode.cn/problems/reveal-cards-in-increasing-order/)
 - [x] [1823. 找出游戏的获胜者](https://leetcode.cn/problems/find-the-winner-of-the-circular-game/)
 - [ ] 
+- [ ] 
 
 ##### 单调栈
 
 - [ ] [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water)
-
 - [ ] [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram)
-
 - [ ] [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle)
-
 - [ ] [316. 去除重复字母](https://leetcode-cn.com/problems/remove-duplicate-letters)[同1081]
-
 - [x] [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i)
-
 - [x] [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/)
-
 - [ ] [654. 最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree)
-
 - [ ] [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures)
-
 - [ ] [1081. 不同字符的最小子序列](https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters)
-
 - [x] [581. 最短无序连续子数组](https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/)
-
 - [ ] [1475. 商品折扣后的最终价格](https://leetcode.cn/problems/final-prices-with-a-special-discount-in-a-shop/)
-
 - [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)看看
-
 - [ ] [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/)看看
-
 - [ ] [2104. 子数组范围和](https://leetcode.cn/problems/sum-of-subarray-ranges/) 看看
-
 - [ ] [962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/) 看看
-
 - [ ] [1124. 表现良好的最长时间段](https://leetcode.cn/problems/longest-well-performing-interval/)
-
 - [x] [853. 车队](https://leetcode.cn/problems/car-fleet/)
-
 - [x] [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)
-
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
+- [x] [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/)
 
 ##### 单调队列
 
@@ -256,7 +243,7 @@
 - [ ] [1128. 等价多米诺骨牌对的数量](https://leetcode.cn/problems/number-of-equivalent-domino-pairs/)
 - [ ] [1296. 划分数组为连续数字的集合](https://leetcode.cn/problems/divide-array-in-sets-of-k-consecutive-numbers/)
 - [ ] [447. 回旋镖的数量](https://leetcode.cn/problems/number-of-boomerangs/)
-- [ ] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
+- [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
@@ -284,10 +271,11 @@
 
 - [x] [687. 最长同值路径](https://leetcode.cn/problems/longest-univalue-path/) 跪了
 - [x] [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
-- [ ] [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/)
+- [x] [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/)
 - [ ] [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/)
 - [x] [105.从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 - [x] [106.从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+- [x] [889. 根据前序和后序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [x] [111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 - [x] 114.二叉树展开为链表
@@ -296,7 +284,7 @@
 - [x] [951. 翻转等价二叉树](https://leetcode.cn/problems/flip-equivalent-binary-trees/)
 - [ ] [971. 翻转二叉树以匹配先序遍历](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/)
 - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
-- [ ] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
+- [x] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 - [x] [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
