@@ -301,6 +301,7 @@
 - [ ] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
 - [x] [1367. 二叉树中的列表](https://leetcode.cn/problems/linked-list-in-binary-tree/)
 - [ ] [1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)
+- [x] [623. 在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 

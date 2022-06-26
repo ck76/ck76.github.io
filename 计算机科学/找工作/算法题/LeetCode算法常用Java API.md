@@ -963,3 +963,12 @@ class Point{
     }
 ```
 
+
+
+#### Random
+
+```java
+Random rand=new Random();
+        int n1=rand.nextInt(100);//返回值在范围[0,100) 即[0,99]
+```
+
