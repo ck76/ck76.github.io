@@ -81,6 +81,9 @@
 - [x] [LCP 18. 早餐组合](https://leetcode.cn/problems/2vYnGI/)
 - [x] [LCP 28. 采购方案](https://leetcode.cn/problems/4xy4Wx/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
+- [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
+- [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
+- [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
 
@@ -164,6 +167,7 @@
 - [x] [1957. 删除字符使字符串变好](https://leetcode.cn/problems/delete-characters-to-make-fancy-string/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [ ] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
+- [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
 
 ##### 矩阵
 
@@ -504,6 +508,8 @@
 - [ ] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
 - [x] [2027. 转换字符串的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-convert-string/)
 - [x] [646. 最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/)
+- [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
+- [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
 
 ##### 字符串
 
