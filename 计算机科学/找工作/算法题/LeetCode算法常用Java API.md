@@ -934,6 +934,37 @@ class Solution {
 }
 ```
 
+- 求质数
+
+```java
+boolean isPrim(int num){
+        for(int i=2;i<num;i++){
+            if(num%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+```
+
+- Mod
+
+- ```java
+  private static  final int MOD = 1000000000 + 7;  9个0
+  ```
+
+- 排列公式
+
+![img](https://bkimg.cdn.bcebos.com/formula/ac0926e610dce08b12a0c0c42b835cb0.svg)
+
+- 组合公式
+
+![img](https://bkimg.cdn.bcebos.com/formula/085254eb0c739dcdd352ba204a2db729.svg)
+
+
+
+
+
 
 
 ### Object
