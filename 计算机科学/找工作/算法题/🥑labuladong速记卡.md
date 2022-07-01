@@ -176,6 +176,7 @@
 - [x] [48. 旋转图像](https://leetcode.cn/problems/rotate-image/)
 - [x] [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/)
 - [x] [867. 转置矩阵](https://leetcode.cn/problems/transpose-matrix/)
+- [ ] [1886. 判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 - [ ] [661. 图片平滑器](https://leetcode.cn/problems/image-smoother/)
 - [ ] [542. 01 矩阵](https://leetcode.cn/problems/01-matrix/)
 - [ ] [1572. 矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum/)
@@ -561,7 +562,7 @@
 
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list)
-- [ ] 
+- [ ] [241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses)
 
 ##### [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
 

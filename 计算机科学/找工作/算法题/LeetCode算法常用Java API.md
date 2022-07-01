@@ -947,11 +947,21 @@ boolean isPrim(int num){
     }
 ```
 
+- 求最大公约数
+
+```java
+ int gcd(int a, int b) {
+        if(b == 0) 
+            return a;
+        return  gcd(b, a % b);
+    }
+```
+
 - Mod
 
-- ```java
+```java
   private static  final int MOD = 1000000000 + 7;  9个0
-  ```
+```
 
 - 排列公式
 
@@ -1002,4 +1012,12 @@ class Point{
 Random rand=new Random();
         int n1=rand.nextInt(100);//返回值在范围[0,100) 即[0,99]
 ```
+
+
+
+
+
+---
+
+
 
