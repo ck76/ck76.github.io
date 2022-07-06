@@ -84,6 +84,7 @@
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
 - [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
+- [ ] [925. 长按键入](https://leetcode.cn/problems/long-pressed-name/)
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
 
