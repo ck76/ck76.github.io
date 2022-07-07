@@ -227,6 +227,14 @@ Collections.sort(list); 从小到大排序
 Collections.sort(list, (o1, o2) -> o2 - o1); 从大到小排序， 第二个参数为一个比较器
 ```
 
+- reverse
+
+```java
+Collections.reverse(list);
+```
+
+
+
 两种实现，ArrayList利于查找，LinkedList利于增删。
 
 大概对比如下：

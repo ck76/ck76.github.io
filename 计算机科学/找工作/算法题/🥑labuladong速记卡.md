@@ -410,6 +410,9 @@
 - [ ] [面试题 17.22. 单词转换](https://leetcode.cn/problems/word-transformer-lcci/)
 - [x] [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)
 
+##### 并查集
+
+- [x] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)
 
 ### 第四章、动态规划算法
 
