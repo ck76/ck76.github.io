@@ -330,12 +330,8 @@
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
-- [ ] [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target)
-- [ ] 886.可能的二分法
-- [ ] [207. 课程表](https://leetcode.cn/problems/course-schedule)
-- [ ] [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii)
-- [x] 130.被围绕的区域
-- [ ] 990.等式方程的可满足性
+- [x] [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target)
+- [x] [130.被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)
 - [ ] 261.以图判树
 - [ ] 1135.最低成本联通所有城市
 - [ ] 1584.连接所有点的最小费用
@@ -346,20 +342,33 @@
 - [ ] [787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops)
 - [ ] [133. 克隆图](https://leetcode.cn/problems/clone-graph/)
 - [ ] [547. 省份数量](https://leetcode.cn/problems/number-of-provinces)
-- [ ] [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)
 - [ ] [997. 找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/)
 - [ ] [684. 冗余连接](https://leetcode.cn/problems/redundant-connection)
 - [ ] [841. 钥匙和房间](https://leetcode.cn/problems/keys-and-rooms)
 - [ ] [399. 除法求值](https://leetcode.cn/problems/evaluate-division/)
 - [ ] [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci)
-- [ ] [886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition)
 - [ ] [1361. 验证二叉树](https://leetcode.cn/problems/validate-binary-tree-nodes)
 - [ ] [剑指 Offer II 110. 所有路径](https://leetcode.cn/problems/bP4bmD)
 - [ ] [剑指 Offer II 118. 多余的边](https://leetcode.cn/problems/7LpjUW)
 - [ ] [剑指 Offer II 112. 最长递增路径](https://leetcode.cn/problems/fpTFWP)
 - [ ] [剑指 Offer II 115. 重建序列](https://leetcode.cn/problems/ur2n8P)
 - [ ] [剑指 Offer II 111. 计算除法](https://leetcode.cn/problems/vlzXQL)
-- [ ] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations)
+
+##### 并查集
+
+- [x] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)
+- [x] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
+
+##### 二分图
+
+- [x] [886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition)
+- [x] [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/)
+
+##### 拓扑排序
+
+- [x] [207. 课程表](https://leetcode.cn/problems/course-schedule)
+- [x] [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii)
+
 
 
 ### 第三章、暴力搜索算法
@@ -391,7 +400,7 @@
 - [ ] [1905.统计子岛屿](https://leetcode-cn.com/problems/count-sub-islands/)
 - [x] [695.岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
 - [ ] [1020. 飞地的数量](https://leetcode.cn/problems/number-of-enclaves/)
-- [ ] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
+- [x] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
 - [x] [1254.统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
 - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
 - [x] [733. 图像渲染](https://leetcode.cn/problems/flood-fill/)
@@ -410,9 +419,7 @@
 - [ ] [面试题 17.22. 单词转换](https://leetcode.cn/problems/word-transformer-lcci/)
 - [x] [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)
 
-##### 并查集
-
-- [x] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)
+- [x] 
 
 ### 第四章、动态规划算法
 
