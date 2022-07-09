@@ -522,6 +522,7 @@
 - [x] [646. 最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/)
 - [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
+- [x] [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/)
 
 ##### 字符串
 
@@ -604,7 +605,7 @@
 - [ ] [908. 最小差值 I](https://leetcode.cn/problems/smallest-range-i/)
 - [ ] [面试题 16.14. 最佳直线](https://leetcode.cn/problems/best-line-lcci/)
 - [ ] [836. 矩形重叠](https://leetcode.cn/problems/rectangle-overlap/)
-- [ ] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)  gcd公约数
+- [x] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)  gcd公约数
 - [ ] [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/)
 
 ##### 位运算

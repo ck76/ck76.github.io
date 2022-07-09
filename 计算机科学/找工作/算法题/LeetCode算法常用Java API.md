@@ -1023,6 +1023,14 @@ Random rand=new Random();
 
 
 
+## 技巧
+
+### 方向数组
+
+```java
+int[][] dirctions = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
+```
+
 
 
 ---
