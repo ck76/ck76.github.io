@@ -110,6 +110,10 @@ Arrays.sort(a, Collections.reverseOrder()); //降序
   		int[] ans = Arrays.copyOf(nums, len* 2);
   		System.arraycopy(nums,0,ans,len,len);
   		System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+        
+      int[] nums2 =  Arrays.copyOf(nums, nums.length* 2);
+  		System.arraycopy(nums,0,nums2,0,len);
+      System.arraycopy(nums,0,nums2,len,len);
   ```
 
 - 拷贝：Array.copyOf

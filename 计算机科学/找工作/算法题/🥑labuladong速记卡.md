@@ -12,6 +12,7 @@
 - [ ] [面试题 10.03. 搜索旋转数组](https://leetcode.cn/problems/search-rotate-array-lcci/)
 - [x] [704. 二分查找（简单）](https://leetcode-cn.com/problems/binary-search)
 - [ ] [35搜索插入位置（简单）](https://leetcode-cn.com/problems/search-insert-position/)
+- [x] [278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/)
 - [ ] [392.判断子序列（简单）](https://leetcode-cn.com/problems/is-subsequence/)
 - [x] [875.爱吃香蕉的珂珂（中等）](https://leetcode-cn.com/problems/koko-eating-bananas/)
 - [ ] [1011.在D天内送达包裹的能力（中等）](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)
@@ -131,7 +132,7 @@
 - [x] [1991. 找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array/)
 - [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
-- [ ] 
+- [x] [1422. 分割字符串的最大得分](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/)
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
 
@@ -169,6 +170,7 @@
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [ ] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
+- [x] [1417. 重新格式化字符串](https://leetcode.cn/problems/reformat-the-string/)
 
 ##### 矩阵
 
@@ -182,6 +184,7 @@
 - [ ] [542. 01 矩阵](https://leetcode.cn/problems/01-matrix/)
 - [ ] [1572. 矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum/)
 - [ ] [598. 范围求和 II](https://leetcode.cn/problems/range-addition-ii/)
+- [x] [2319. 判断矩阵是否是一个 X 矩阵](https://leetcode.cn/problems/check-if-matrix-is-x-matrix/)
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
 
@@ -308,6 +311,7 @@
 - [x] [1367. 二叉树中的列表](https://leetcode.cn/problems/linked-list-in-binary-tree/)
 - [ ] [1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)
 - [x] [623. 在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/)
+- [x] [6116. 计算布尔二叉树的值](https://leetcode.cn/problems/evaluate-boolean-binary-tree/)
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
