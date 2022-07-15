@@ -172,6 +172,7 @@
 - [ ] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
 - [x] [1417. 重新格式化字符串](https://leetcode.cn/problems/reformat-the-string/)
+- [ ] [205. 同构字符串](https://leetcode.cn/problems/isomorphic-strings/)
 
 ##### 矩阵
 
@@ -509,9 +510,11 @@ n x n 矩阵旋转总结：
 
 - [ ] [剑指 Offer II 020. 回文子字符串的个数](https://leetcode.cn/problems/a7VOhD/)
 
-- [ ] #### [1696. 跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/)
+- [ ] [1696. 跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/)
 
 - [ ] [239. 滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/solution/c-you-xian-ji-dui-lie-he-dan-diao-dui-li-t8o8/)
+
+- [x] [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/)
 
 ##### [背包问题速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165222624753254401)
 
