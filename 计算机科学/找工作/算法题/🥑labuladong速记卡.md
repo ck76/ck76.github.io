@@ -159,6 +159,7 @@
 - [ ] [1460. 通过翻转子数组使两个数组相等](https://leetcode.cn/problems/make-two-arrays-equal-by-reversing-sub-arrays/)
 - [ ] [2293. 极大极小游戏](https://leetcode.cn/problems/min-max-game/)
 - [ ] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)
+- [x] [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
 
 ##### 字符串
 
@@ -174,12 +175,20 @@
 
 ##### 矩阵
 
+```java
+n x n 矩阵旋转总结：
+90 度：沿左上到右下对角线翻转，再沿垂直中线翻转
+180 度：沿水平中线翻转，沿垂直中线翻转
+270 度：沿左上到右下翻转，再沿水平中线翻转
+360 度：本身
+```
+
 - [x] [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
 - [x] [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
 - [x] [48. 旋转图像](https://leetcode.cn/problems/rotate-image/)
 - [x] [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/)
 - [x] [867. 转置矩阵](https://leetcode.cn/problems/transpose-matrix/)
-- [ ] [1886. 判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
+- [x] [1886. 判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 - [ ] [661. 图片平滑器](https://leetcode.cn/problems/image-smoother/)
 - [ ] [542. 01 矩阵](https://leetcode.cn/problems/01-matrix/)
 - [ ] [1572. 矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum/)
@@ -388,6 +397,7 @@
 - [x] [77.组合](https://leetcode-cn.com/problems/combinations/)
 - [x] [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
 - [x] [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
+- [x] [2094. 找出 3 位偶数](https://leetcode.cn/problems/finding-3-digit-even-numbers/)
 - [ ] 17.电话号码的字母组合
 - [ ] 37.解数独
 - [ ] 51.N皇后
