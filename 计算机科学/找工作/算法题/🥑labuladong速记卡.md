@@ -160,6 +160,7 @@
 - [ ] [2293. 极大极小游戏](https://leetcode.cn/problems/min-max-game/)
 - [ ] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)
 - [x] [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
+- [x] [1800. 最大升序子数组和](https://leetcode.cn/problems/maximum-ascending-subarray-sum/) 同上
 
 ##### 字符串
 
@@ -172,7 +173,7 @@
 - [ ] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
 - [x] [1417. 重新格式化字符串](https://leetcode.cn/problems/reformat-the-string/)
-- [ ] [205. 同构字符串](https://leetcode.cn/problems/isomorphic-strings/)
+- [x] [205. 同构字符串](https://leetcode.cn/problems/isomorphic-strings/)
 
 ##### 矩阵
 
@@ -422,6 +423,7 @@ n x n 矩阵旋转总结：
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [x] [690. 员工的重要性](https://leetcode.cn/problems/employee-importance/)
 - [ ] [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/)
+- [x] [565. 数组嵌套](https://leetcode.cn/problems/array-nesting)
 
 ##### [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
 
