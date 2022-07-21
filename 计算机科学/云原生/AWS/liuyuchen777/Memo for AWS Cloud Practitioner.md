@@ -1375,11 +1375,11 @@ Macie's will identify your **most at-risk users** which could lead to a compromi
 ### Security Groups vs NACLs
 
 - Security Groups
-  - act as a firewall at the instance level
+  - act as a firewall at the **instance** level
   - implicitly deny all traffic, you create allow rules
   - allow an EC2 instance access on port 22 for SSH
 - Network Access Control Lists (NACLs)
-  - act as a firewall at the subnet level
+  - act as a firewall at the **subnet** level
   - you create allow and deny rules
   - block a specific IP address known for abuse
 

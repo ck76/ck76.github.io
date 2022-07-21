@@ -90,7 +90,7 @@ If at any point you find yourself feeling uncertain of your progress and in need
 <a href="https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate-Exam-Guide_v1.1_2019_08_27_FINAL.pdf">**The official AWS Solutions Architect - Associate (SAA-C02) exam guide**</a>
 
 ### Exam Content Breakdown:
-![Screen Shot 2020-06-05 at 2 49 08 PM](https://user-images.githubusercontent.com/13093517/83912374-c2b87900-a73b-11ea-9691-b38383b43ff9.png)
+![Screen Shot 2020-06-05 at 2 49 08 PM](https://tva1.sinaimg.cn/large/e6c9d24egy1h4dpl5fmctj20lm03jq3b.jpg)
 
 *Domain 1: Design Resilient Architectures*
 
@@ -184,7 +184,7 @@ It is also PCI DSS compliant i.e. payment card industry data security standard. 
 
 **Policies** - the documented rule sets that are applied to grant or limit access. In order for users, groups, or roles to properly set permissions, they use policies. Policies are written in JSON and you can either use custom policies for your specific needs or use the default policies set by AWS.
 
-![Screen Shot 2020-06-06 at 10 49 48 PM](https://user-images.githubusercontent.com/13093517/83959193-11533980-a848-11ea-9d03-d8133e0aaa86.png)
+![Screen Shot 2020-06-06 at 10 49 48 PM](https://tva1.sinaimg.cn/large/e6c9d24egy1h4dpl6kqfwj205q06gmx7.jpg)
 
 IAM Policies are separated from the other entities above because they are not an IAM Identity. Instead, they are attached to IAM Identities so that the IAM Identity in question can perform its necessary function.
 
@@ -227,7 +227,7 @@ S3 provides developers and IT teams with secure, durable, and highly-scalable ob
 
 This makes it a perfect candidate to host files or directories and a poor candidate to host databases or operating systems. The following table highlights key differences between object and block storage:
 
-![Screen Shot 2020-06-05 at 3 34 57 PM](https://user-images.githubusercontent.com/13093517/83915925-352c5780-a742-11ea-975b-53d4e5d07e7c.png)
+![Screen Shot 2020-06-05 at 3 34 57 PM](https://tva1.sinaimg.cn/large/e6c9d24egy1h4dpl8qa35j20h80923zf.jpg)
 
 
 Data uploaded into S3 is spread across multiple files and facilities. The files uploaded into S3 have an upper-bound of 5TB per file and the number of files that can be uploaded is virtually limitless. S3 buckets, which contain all files, are named in a universal namespace so uniqueness is required. All successful uploads will return an HTTP 200 response.
@@ -521,7 +521,7 @@ The following table highlights the many instance states that a VM can be in at a
 | `terminated`  | The instance has been permanently deleted and cannot be started.  | Not billed |
 
 **Note**: Reserved Instances that are terminated are billed until the end of their term.  
- 
+
 ### EC2 Security:
 - When you deploy an Amazon EC2 instance, you are responsible for management of the guest operating system (including updates and security patches), any application software or utilities installed on the instances, and the configuration of the AWS-provided firewall (called a security group) on each instance. 
 - With EC2, termination protection of the instance is disabled by default. This means that you do not have a safe-guard in place from accidentally terminating your instance. You must turn this feature on if you want that extra bit of protection.
@@ -1199,6 +1199,7 @@ VPC lets you provision a logically isolated section of the AWS cloud where you c
   - a NACL
   - a security group
   
+
 ![Screen Shot 2020-06-19 at 6 26 37 PM](https://user-images.githubusercontent.com/13093517/85183681-8cf6b280-b25a-11ea-8b54-d1e54ba754a6.png)
 
 - These components, which will be explained in further depth in case they are not already known, actually correspond to the traffic flow for how data will reach your instances. Whether the traffic originates from outside of the VPC or from within it, it must first go through the route table by way of the router in order to know where the desired destination is. Once that is known, the traffic then passes through subnet level security as described by the NACL. If the NACL deems the traffic as valid, the traffic then passes through to the instance level security as described by the security group. If the traffic hasn't been dropped at this point, only then will it reach its intended instance.
@@ -1466,14 +1467,14 @@ Amazon Kinesis makes it easy to collect, process, and analyze real-time, streami
     - Kinesis Streams can continuously capture and store terabytes of data per hour from hundreds of thousands of sources such as website clickstreams, financial 
       transactions, social media feeds, IT logs, and location-tracking events. For example: purchase requests from a large online store like Amazon, stock prices, Netflix 
       content, Twitch content, online gaming data, Uber positioning and directions, etc.
-      
+    
   - Kinesis Firehose
     - Amazon Kinesis Firehose is the easiest way to load streaming data into data stores and analytics tools. When data is streamed into Kinesis Firehose, there is no 
       persistent storage there to hold onto it. The data has to be analyzed as it comes in so it's optional to have Lambda functions inside your Kinesis Firehose. Once 
       processed, you send the data elsewhere.
     - Kinesis Firehose can capture, transform, and load streaming data into Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, and Splunk, enabling near real-time 
       analytics with existing business intelligence tools and dashboards you’re already using today.
-      
+    
   - Kinesis Analytics
     - Kinesis Analytics works with both Kinesis Streams and Kinesis Firehose and can analyze data on the fly. The data within Kinesis Analytics also gets sent elsewhere once 
       it is finished processing. It analyzes your data inside of the Kinesis service itself.
@@ -1518,6 +1519,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
   - After CloudFront receives the response from the origin (origin response)
   - Before CloudFront forwards the response to the viewer (viewer response)
   
+
 ![Screen Shot 2020-06-30 at 9 27 48 AM](https://user-images.githubusercontent.com/13093517/86131713-fc1ea300-bab3-11ea-8190-1d13128bee92.png)
 
 - You'd use Lambda@Edge to simplify and reduce origin infrastructure.

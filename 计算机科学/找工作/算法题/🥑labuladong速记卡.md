@@ -318,7 +318,7 @@ n x n 矩阵旋转总结：
 - [x] [剑指 Offer II 049. 从根节点到叶节点的路径数字之和](https://leetcode.cn/problems/3Etpl5/)
 - [ ] [剑指 Offer II 050. 向下的路径节点之和](https://leetcode.cn/problems/6eUYwP/)
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
-- [ ] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
+- [x] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
 - [x] [1367. 二叉树中的列表](https://leetcode.cn/problems/linked-list-in-binary-tree/)
 - [ ] [1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)
 - [x] [623. 在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/)
