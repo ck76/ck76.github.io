@@ -15,25 +15,25 @@
 
 ### [AWS Overview](https://tutorialsdojo.com/aws-cheat-sheets-overview/)
 
-- [ ] [AWS Global Infrastructure](https://tutorialsdojo.com/aws-global-infrastructure/)
-- [ ] [AWS Pricing](https://tutorialsdojo.com/aws-pricing/)
-- [ ] [Six Pillars of Well-Architected Framework](https://tutorialsdojo.com/aws-well-architected-framework-five-pillars/)
-- [ ] [AWS Design Principles](https://tutorialsdojo.com/aws-well-architected-framework-design-principles/)
-- [ ] [AWS Disaster Recovery](https://tutorialsdojo.com/aws-well-architected-framework-disaster-recovery/)
-- [ ] [AWS Support Plans](https://tutorialsdojo.com/aws-support-plans/)
+- [x] [AWS Global Infrastructure](https://tutorialsdojo.com/aws-global-infrastructure/)
+- [x] [AWS Pricing](https://tutorialsdojo.com/aws-pricing/)
+- [x] [Six Pillars of Well-Architected Framework](https://tutorialsdojo.com/aws-well-architected-framework-five-pillars/)
+- [x] [AWS Design Principles](https://tutorialsdojo.com/aws-well-architected-framework-design-principles/)
+- [x] [AWS Disaster Recovery](https://tutorialsdojo.com/aws-well-architected-framework-disaster-recovery/)
+- [x] [AWS Support Plans](https://tutorialsdojo.com/aws-support-plans/)
 
 ### [AWS Compute Services](https://tutorialsdojo.com/aws-cheat-sheets-compute-services/)
 
-- [ ] [Amazon Elastic Compute Cloud (EC2)](https://tutorialsdojo.com/amazon-elastic-compute-cloud-amazon-ec2/)
-- [ ] [Amazon Elastic Container Registry (ECR)](https://tutorialsdojo.com/amazon-elastic-container-registry-amazon-ecr/)
-- [ ] [Amazon Elastic Container Service (ECS)](https://tutorialsdojo.com/amazon-elastic-container-service-amazon-ecs/)
+- [x] [Amazon Elastic Compute Cloud (EC2)](https://tutorialsdojo.com/amazon-elastic-compute-cloud-amazon-ec2/)
+- [x] [Amazon Elastic Container Registry (ECR)](https://tutorialsdojo.com/amazon-elastic-container-registry-amazon-ecr/)
+- [x] [Amazon Elastic Container Service (ECS)](https://tutorialsdojo.com/amazon-elastic-container-service-amazon-ecs/)
 - [ ] [Amazon Lightsail](https://tutorialsdojo.com/amazon-lightsail/)
 - [ ] [AWS Batch](https://tutorialsdojo.com/aws-batch/)
-- [ ] [AWS Elastic Beanstalk](https://tutorialsdojo.com/aws-elastic-beanstalk/)
-- [ ] [AWS Fargate](https://tutorialsdojo.com/aws-fargate/)
-- [ ] [AWS Lambda](https://tutorialsdojo.com/aws-lambda/)
+- [x] [AWS Elastic Beanstalk](https://tutorialsdojo.com/aws-elastic-beanstalk/)
+- [x] [AWS Fargate](https://tutorialsdojo.com/aws-fargate/)
+- [x] [AWS Lambda](https://tutorialsdojo.com/aws-lambda/)
 - [ ] [AWS ParallelCluster](https://tutorialsdojo.com/aws-parallelcluster/)
-- [ ] [AWS Serverless Application Model (SAM)](https://tutorialsdojo.com/aws-serverless-application-model-sam/)
+- [x] [AWS Serverless Application Model (SAM)](https://tutorialsdojo.com/aws-serverless-application-model-sam/)
 - [ ] [AWS Savings Plan](https://tutorialsdojo.com/aws-savings-plan/)
 
 Other Compute-related Notes:
@@ -48,15 +48,15 @@ Other Compute-related Notes:
 
 ### [AWS Storage Services](https://tutorialsdojo.com/aws-cheat-sheets-storage-services/)
 
-- [ ] [Amazon EBS](https://tutorialsdojo.com/amazon-ebs/)
-- [ ] [Amazon EFS](https://tutorialsdojo.com/amazon-efs/)
-- [ ] [Amazon FSx](https://tutorialsdojo.com/amazon-fsx/)
-- [ ] [Amazon S3](https://tutorialsdojo.com/amazon-s3/)
-- [ ] [Amazon S3 Glacier](https://tutorialsdojo.com/amazon-glacier/)
-- [ ] [AWS Snowball Edge](https://tutorialsdojo.com/aws-snowball-edge/)
-- [ ] [AWS Snowmobile](https://tutorialsdojo.com/aws-snowmobile/)
-- [ ] [AWS Storage Gateway](https://tutorialsdojo.com/aws-storage-gateway/)
-- [ ] [AWS Transfer Family](https://tutorialsdojo.com/aws-transfer-family/)
+- [x] [Amazon EBS](https://tutorialsdojo.com/amazon-ebs/)
+- [x] [Amazon EFS](https://tutorialsdojo.com/amazon-efs/)
+- [x] [Amazon FSx](https://tutorialsdojo.com/amazon-fsx/)
+- [x] [Amazon S3](https://tutorialsdojo.com/amazon-s3/)
+- [x] [Amazon S3 Glacier](https://tutorialsdojo.com/amazon-glacier/)
+- [x] [AWS Snowball Edge](https://tutorialsdojo.com/aws-snowball-edge/)
+- [x] [AWS Snowmobile](https://tutorialsdojo.com/aws-snowmobile/)
+- [x] [AWS Storage Gateway](https://tutorialsdojo.com/aws-storage-gateway/)
+- [x] [AWS Transfer Family](https://tutorialsdojo.com/aws-transfer-family/)
 
 Other Storage-related Notes:
 
@@ -66,11 +66,11 @@ Other Storage-related Notes:
 
 ### [AWS Database Services](https://tutorialsdojo.com/aws-cheat-sheets-database-services/)
 
-- [ ] [Amazon Aurora](https://tutorialsdojo.com/amazon-aurora/)
-- [ ] [Amazon DynamoDB](https://tutorialsdojo.com/amazon-dynamodb/)
-- [ ] [Amazon ElastiCache](https://tutorialsdojo.com/amazon-elasticache/)
-- [ ] [Amazon RDS](https://tutorialsdojo.com/amazon-relational-database-service-amazon-rds/)
-- [ ] [Amazon Redshift](https://tutorialsdojo.com/amazon-redshift/)
+- [x] [Amazon Aurora](https://tutorialsdojo.com/amazon-aurora/)
+- [x] [Amazon DynamoDB](https://tutorialsdojo.com/amazon-dynamodb/)
+- [x] [Amazon ElastiCache](https://tutorialsdojo.com/amazon-elasticache/)
+- [x] [Amazon RDS](https://tutorialsdojo.com/amazon-relational-database-service-amazon-rds/)
+- [x] [Amazon Redshift](https://tutorialsdojo.com/amazon-redshift/)
 - [ ] [Amazon DocumentDB](https://tutorialsdojo.com/amazon-documentdb/)
 - [ ] [Amazon Neptune](https://tutorialsdojo.com/amazon-neptune/)
 - [ ] [Amazon Quantum Ledger Database (QLDB)](https://tutorialsdojo.com/amazon-quantum-ledger-database-qldb/)
@@ -89,22 +89,22 @@ Other Database-Related Notes:
 
 ### [AWS Migration Services](https://tutorialsdojo.com/aws-cheat-sheets-migration-services/)
 
-- [ ] [AWS Database Migration Service](https://tutorialsdojo.com/aws-database-migration-service/)
-- [ ] [AWS DataSync](https://tutorialsdojo.com/aws-datasync/)
-- [ ] [AWS Migration Strategies – The 6 R‘](https://tutorialsdojo.com/aws-migration-strategies-the-6-rs/)s
-- [ ] [AWS Server Migration Service (SMS)](https://tutorialsdojo.com/aws-server-migration-service-sms/)
-- [ ] [AWS Snowball Edge](https://tutorialsdojo.com/aws-snowball-edge/)
-- [ ] [AWS Snowmobile](https://tutorialsdojo.com/aws-snowmobile/)
+- [x] [AWS Database Migration Service](https://tutorialsdojo.com/aws-database-migration-service/)
+- [x] [AWS DataSync](https://tutorialsdojo.com/aws-datasync/)
+- [x] [AWS Migration Strategies – The 6 R‘](https://tutorialsdojo.com/aws-migration-strategies-the-6-rs/)s
+- [x] [AWS Server Migration Service (SMS)](https://tutorialsdojo.com/aws-server-migration-service-sms/)
+- [x] [AWS Snowball Edge](https://tutorialsdojo.com/aws-snowball-edge/)
+- [x] [AWS Snowmobile](https://tutorialsdojo.com/aws-snowmobile/)
 
 ### [AWS Networking & Content Delivery](https://tutorialsdojo.com/aws-cheat-sheets-networking-and-content-delivery/)
 
-- [ ] [Amazon API Gateway](https://tutorialsdojo.com/amazon-api-gateway/)
-- [ ] [Amazon CloudFront](https://tutorialsdojo.com/amazon-cloudfront/)
-- [ ] [Amazon Route 53](https://tutorialsdojo.com/amazon-route-53/)
-- [ ] [Amazon VPC](https://tutorialsdojo.com/amazon-vpc/)
-- [ ] [AWS Direct Connect](https://tutorialsdojo.com/aws-direct-connect/)
-- [ ] [AWS Elastic Load Balancing (ELB)](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/)
-- [ ] [AWS Global Accelerator](https://tutorialsdojo.com/aws-global-accelerator/)
+- [x] [Amazon API Gateway](https://tutorialsdojo.com/amazon-api-gateway/)
+- [x] [Amazon CloudFront](https://tutorialsdojo.com/amazon-cloudfront/)
+- [x] [Amazon Route 53](https://tutorialsdojo.com/amazon-route-53/)
+- [x] [Amazon VPC](https://tutorialsdojo.com/amazon-vpc/)
+- [x] [AWS Direct Connect](https://tutorialsdojo.com/aws-direct-connect/)
+- [x] [AWS Elastic Load Balancing (ELB)](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/)
+- [x] [AWS Global Accelerator](https://tutorialsdojo.com/aws-global-accelerator/)
 - [ ] [AWS Transit Gateway](https://tutorialsdojo.com/aws-transit-gateway/)
 
 Other Networking-related Notes:
@@ -118,23 +118,23 @@ Other Networking-related Notes:
 
 ### [AWS Security & Identity Services](https://tutorialsdojo.com/aws-cheat-sheets-security-identity-services/)
 
-- [ ] [Amazon Cognito](https://tutorialsdojo.com/amazon-cognito/)
+- [x] [Amazon Cognito](https://tutorialsdojo.com/amazon-cognito/)
 - [ ] [Amazon Detective](https://tutorialsdojo.com/amazon-detective/)
-- [ ] [Amazon GuardDuty](https://tutorialsdojo.com/amazon-guardduty/)
-- [ ] [Amazon Inspector](https://tutorialsdojo.com/amazon-inspector/)
-- [ ] [Amazon Macie](https://tutorialsdojo.com/amazon-macie/)
+- [x] [Amazon GuardDuty](https://tutorialsdojo.com/amazon-guardduty/)
+- [x] [Amazon Inspector](https://tutorialsdojo.com/amazon-inspector/)
+- [x] [Amazon Macie](https://tutorialsdojo.com/amazon-macie/)
 - [ ] [AWS Artifact](https://tutorialsdojo.com/aws-artifact/)
-- [ ] [AWS Certificate Manager](https://tutorialsdojo.com/aws-certificate-manager/)
-- [ ] [AWS Directory Service](https://tutorialsdojo.com/aws-directory-service/)
-- [ ] [AWS Firewall Manager](https://tutorialsdojo.com/aws-firewall-manager/)
-- [ ] [AWS Identity & Access Management (IAM)](https://tutorialsdojo.com/aws-identity-and-access-management-iam/)
-- [ ] [AWS Key Management Service](https://tutorialsdojo.com/aws-key-management-service-aws-kms/)
+- [x] [AWS Certificate Manager](https://tutorialsdojo.com/aws-certificate-manager/)
+- [x] [AWS Directory Service](https://tutorialsdojo.com/aws-directory-service/)
+- [x] [AWS Firewall Manager](https://tutorialsdojo.com/aws-firewall-manager/)
+- [x] [AWS Identity & Access Management (IAM)](https://tutorialsdojo.com/aws-identity-and-access-management-iam/)
+- [x] [AWS Key Management Service](https://tutorialsdojo.com/aws-key-management-service-aws-kms/)
 - [ ] [AWS Organizations](https://tutorialsdojo.com/aws-organizations/)
 - [ ] [AWS Resource Access Manager (RAM)](https://tutorialsdojo.com/aws-resource-access-manager/)
-- [ ] [AWS Secrets Manager](https://tutorialsdojo.com/aws-secrets-manager/)
+- [x] [AWS Secrets Manager](https://tutorialsdojo.com/aws-secrets-manager/)
 - [ ] [AWS Security Hub](https://tutorialsdojo.com/aws-security-hub/)
-- [ ] [AWS Shield](https://tutorialsdojo.com/aws-shield/)
-- [ ] [AWS WAF](https://tutorialsdojo.com/aws-waf/)
+- [x] [AWS Shield](https://tutorialsdojo.com/aws-shield/)
+- [x] [AWS WAF](https://tutorialsdojo.com/aws-waf/)
 
 Other Security-related Notes
 
@@ -152,17 +152,17 @@ Other Security-related Notes
 
 ### [AWS Management Tools](https://tutorialsdojo.com/aws-cheat-sheets-management-tools/)
 
-- [ ] [Amazon CloudWatch](https://tutorialsdojo.com/amazon-cloudwatch/)
-- [ ] [AWS Auto Scaling](https://tutorialsdojo.com/aws-auto-scaling/)
-- [ ] [AWS CloudFormation](https://tutorialsdojo.com/aws-cloudformation/)
-- [ ] [AWS CloudTrail](https://tutorialsdojo.com/aws-cloudtrail/)
-- [ ] [AWS Config](https://tutorialsdojo.com/aws-config/)
+- [x] [Amazon CloudWatch](https://tutorialsdojo.com/amazon-cloudwatch/)
+- [x] [AWS Auto Scaling](https://tutorialsdojo.com/aws-auto-scaling/)
+- [x] [AWS CloudFormation](https://tutorialsdojo.com/aws-cloudformation/)
+- [x] [AWS CloudTrail](https://tutorialsdojo.com/aws-cloudtrail/)
+- [x] [AWS Config](https://tutorialsdojo.com/aws-config/)
 - [ ] [AWS Health](https://tutorialsdojo.com/aws-health/)
 - [ ] [AWS Management Console](https://tutorialsdojo.com/aws-management-console/)
-- [ ] [AWS OpsWorks](https://tutorialsdojo.com/aws-opsworks/)
+- [x] [AWS OpsWorks](https://tutorialsdojo.com/aws-opsworks/)
 - [ ] [AWS Service Catalog](https://tutorialsdojo.com/aws-service-catalog/)
-- [ ] [AWS Systems Manager](https://tutorialsdojo.com/aws-systems-manager/)
-- [ ] [AWS Trusted Advisor](https://tutorialsdojo.com/aws-trusted-advisor/)
+- [x] [AWS Systems Manager](https://tutorialsdojo.com/aws-systems-manager/)
+- [x] [AWS Trusted Advisor](https://tutorialsdojo.com/aws-trusted-advisor/)
 
 Other Management-related Notes:
 
@@ -175,15 +175,15 @@ Other Management-related Notes:
 
 ### [AWS Analytics Services](https://tutorialsdojo.com/aws-cheat-sheets-analytics-services/)
 
-- [ ] [Amazon Athena](https://tutorialsdojo.com/amazon-athena/)
+- [x] [Amazon Athena](https://tutorialsdojo.com/amazon-athena/)
 - [ ] [Amazon CloudSearch](https://tutorialsdojo.com/amazon-cloudsearch/)
 - [ ] [Amazon Elasticsearch (ES)](https://tutorialsdojo.com/amazon-elasticsearch-amazon-es/)
-- [ ] [Amazon EMR](https://tutorialsdojo.com/amazon-emr/)
-- [ ] [Amazon Kinesis](https://tutorialsdojo.com/amazon-kinesis/)
-- [ ] [Amazon QuickSight](https://tutorialsdojo.com/amazon-quicksight/)
-- [ ] [Amazon Redshift](https://tutorialsdojo.com/amazon-redshift/)
+- [x] [Amazon EMR](https://tutorialsdojo.com/amazon-emr/)
+- [x] [Amazon Kinesis](https://tutorialsdojo.com/amazon-kinesis/)
+- [x] [Amazon QuickSight](https://tutorialsdojo.com/amazon-quicksight/)
+- [x] [Amazon Redshift](https://tutorialsdojo.com/amazon-redshift/)
 - [ ] [AWS Data Pipeline](https://tutorialsdojo.com/aws-data-pipeline/)
-- [ ] [AWS Glue](https://tutorialsdojo.com/aws-glue/)
+- [x] [AWS Glue](https://tutorialsdojo.com/aws-glue/)
 
 Other Analytics-related Notes:
 
@@ -194,10 +194,10 @@ Other Analytics-related Notes:
 ### [AWS Developer Tools](https://tutorialsdojo.com/aws-cheat-sheets-developer-tools/)
 
 - [ ] [AWS CodeBuild](https://tutorialsdojo.com/aws-codebuild/)
-- [ ] [AWS CodeCommit](https://tutorialsdojo.com/aws-codecommit/)
+- [x] [AWS CodeCommit](https://tutorialsdojo.com/aws-codecommit/)
 - [ ] [AWS CodeDeploy](https://tutorialsdojo.com/aws-codedeploy/)
 - [ ] [AWS CodePipeline](https://tutorialsdojo.com/aws-codepipeline/)
-- [ ] [AWS CodeStar](https://tutorialsdojo.com/aws-codestar/)
+- [x] [AWS CodeStar](https://tutorialsdojo.com/aws-codestar/)
 - [ ] [AWS X-Ray](https://tutorialsdojo.com/aws-x-ray/)
 
 Other Developer-related Notes:
@@ -208,15 +208,15 @@ Other Developer-related Notes:
 
 ### [AWS Application Services](https://tutorialsdojo.com/aws-cheat-sheets-application-services/)
 
-- [ ] [Amazon SNS](https://tutorialsdojo.com/amazon-sns/)
-- [ ] [Amazon SQS](https://tutorialsdojo.com/amazon-sqs/)
-- [ ] [Amazon SWF](https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/)
+- [x] [Amazon SNS](https://tutorialsdojo.com/amazon-sns/)
+- [x] [Amazon SQS](https://tutorialsdojo.com/amazon-sqs/)
+- [x] [Amazon SWF](https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/)
 - [ ] [Amazon SES](https://tutorialsdojo.com/amazon-ses/)
 - [ ] [AWS Step Functions](https://tutorialsdojo.com/aws-step-functions/)
 
 ### [AWS Desktop and App Streaming](https://tutorialsdojo.com/aws-cheat-sheets-aws-desktop-and-app-streaming/)
 
-- [ ] [Amazon WorkSpaces](https://tutorialsdojo.com/amazon-workspaces/)
+- [x] [Amazon WorkSpaces](https://tutorialsdojo.com/amazon-workspaces/)
 
 ### [AWS Machine Learning and AI](https://tutorialsdojo.com/aws-cheat-sheets-aws-machine-learning-and-ai/)
 
@@ -236,7 +236,7 @@ Other Developer-related Notes:
 ### [Other AWS Services](https://tutorialsdojo.com/aws-cheat-sheets-other-aws-services/)
 
 - [ ] [Amazon Mechanical Turk](https://tutorialsdojo.com/amazon-mechanical-turk/)
-- [ ] [Amazon MQ](https://tutorialsdojo.com/amazon-mq/)
+- [x] [Amazon MQ](https://tutorialsdojo.com/amazon-mq/)
 
 
 
@@ -284,3 +284,108 @@ Other Developer-related Notes:
 - [ ] [Service Control Policies vs IAM Policies](https://tutorialsdojo.com/service-control-policies-scp-vs-iam-policies/)
 - [ ] [SNI Custom SSL vs Dedicated IP Custom SSL](https://tutorialsdojo.com/sni-custom-ssl-vs-dedicated-ip-custom-ssl/)
 - [ ] [Step Scaling vs Simple Scaling Policies in Amazon EC2](https://tutorialsdojo.com/step-scaling-vs-simple-scaling-policies-in-amazon-ec2/)
+
+
+
+
+
+---
+
+### --------------------------------------------------------------------------
+
+### 考试大纲
+
+Which key tools, technologies, and concepts might be covered on the exam?
+The following is a non-exhaustive list of the tools and technologies that could appear on the exam. This list is subject to change and is provided to help you understand the general scope of services, features, or technologies on the exam. The general tools and technologies in this list appear in no particular order. AWS services are grouped according to their primary functions. While some of these technologies will likely be covered more than others on the exam, the order and placement of them in this list is no indication of relative weight or importance:
+
+- Compute
+- Cost management
+- Database
+- Disaster recovery
+- High availability
+- Management and governance
+- Microservices and component decoupling
+- Migration and data transfer
+- Networking, connectivity, and content delivery
+- Security
+- Serverless design principles
+- Storage
+
+### AWS services and features
+
+#### Analytics:
+- Amazon Athena
+- Amazon Elasticsearch Service (Amazon ES)
+- Amazon EMR
+- AWS Glue
+- Amazon Kinesis
+- Amazon QuickSight
+
+#### AWS Billing and Cost Management:
+- AWS Budgets
+- Cost Explorer
+#### Application Integration:
+- Amazon Simple Notification Service (Amazon SNS)
+- Amazon Simple Queue Service (Amazon SQS)
+
+#### Compute:
+- Amazon EC2
+- AWS Elastic Beanstalk
+- Amazon Elastic Container Service (Amazon ECS)
+- Amazon Elastic Kubernetes Service (Amazon EKS)
+- Elastic Load Balancing
+- AWS Fargate
+- AWS Lambda
+#### Database:
+- Amazon Aurora
+- Amazon DynamoDB
+- Amazon ElastiCache
+- Amazon RDS
+- Amazon Redshift
+#### Management and Governance:
+- AWS Auto Scaling
+- AWS Backup
+- AWS CloudFormation
+- AWS CloudTrail
+- Amazon CloudWatch
+- AWS Config
+- Amazon EventBridge (Amazon CloudWatch Events)
+- AWS Organizations
+- AWS Resource Access Manager
+- AWS Systems Manager
+- AWS Trusted Advisor
+#### Migration and Transfer:
+- AWS Database Migration Service (AWS DMS)
+- AWS DataSync
+- AWS Migration Hub
+- AWS Server Migration Service (AWS SMS)
+- AWS Snowball
+- AWS Transfer Family
+#### Networking and Content Delivery:
+- Amazon API Gateway
+- Amazon CloudFront
+- AWS Direct Connect
+- AWS Global Accelerator
+- Amazon Route 53
+- AWS Transit Gateway
+- Amazon VPC (and associated features)
+
+#### Security, Identity, and Compliance:
+- AWS Certificate Manager (ACM)
+- AWS Directory Service
+- Amazon GuardDuty
+- AWS Identity and Access Management (IAM)
+- Amazon Inspector
+- AWS Key Management Service (AWS KMS)
+- Amazon Macie
+- AWS Secrets Manager
+- AWS Shield
+- AWS Single Sign-On
+- AWS WAF
+#### Storage:
+- Amazon Elastic Block Store (Amazon EBS)
+- Amazon Elastic File System (Amazon EFS)
+- Amazon FSx
+- Amazon S3
+- Amazon S3 Glacier
+- AWS Storage Gateway
