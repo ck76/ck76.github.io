@@ -34,7 +34,7 @@
 - [x] [AWS Lambda](https://tutorialsdojo.com/aws-lambda/)
 - [ ] [AWS ParallelCluster](https://tutorialsdojo.com/aws-parallelcluster/)
 - [x] [AWS Serverless Application Model (SAM)](https://tutorialsdojo.com/aws-serverless-application-model-sam/)
-- [ ] [AWS Savings Plan](https://tutorialsdojo.com/aws-savings-plan/)
+- [x] [AWS Savings Plan](https://tutorialsdojo.com/aws-savings-plan/)
 
 Other Compute-related Notes:
 
@@ -105,11 +105,11 @@ Other Database-Related Notes:
 - [x] [AWS Direct Connect](https://tutorialsdojo.com/aws-direct-connect/)
 - [x] [AWS Elastic Load Balancing (ELB)](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/)
 - [x] [AWS Global Accelerator](https://tutorialsdojo.com/aws-global-accelerator/)
-- [ ] [AWS Transit Gateway](https://tutorialsdojo.com/aws-transit-gateway/)
+- [x] [AWS Transit Gateway](https://tutorialsdojo.com/aws-transit-gateway/)
 
 Other Networking-related Notes:
 
-- [ ] [AWS Global Accelerator vs Amazon CloudFront](https://tutorialsdojo.com/aws-global-accelerator-vs-amazon-cloudfront/)
+- [x] [AWS Global Accelerator vs Amazon CloudFront](https://tutorialsdojo.com/aws-global-accelerator-vs-amazon-cloudfront/)
 - [ ] [How to Invalidate API Gateway Cache](https://tutorialsdojo.com/how-to-invalidate-api-gateway-cache/)
 - [ ] [Increasing MTU for Your EC2 Instance](https://tutorialsdojo.com/increasing-mtu-for-your-ec2-instance/)
 - [ ] [VPC Peering](https://tutorialsdojo.com/vpc-peering/)
@@ -129,7 +129,7 @@ Other Networking-related Notes:
 - [x] [AWS Firewall Manager](https://tutorialsdojo.com/aws-firewall-manager/)
 - [x] [AWS Identity & Access Management (IAM)](https://tutorialsdojo.com/aws-identity-and-access-management-iam/)
 - [x] [AWS Key Management Service](https://tutorialsdojo.com/aws-key-management-service-aws-kms/)
-- [ ] [AWS Organizations](https://tutorialsdojo.com/aws-organizations/)
+- [x] [AWS Organizations](https://tutorialsdojo.com/aws-organizations/)
 - [ ] [AWS Resource Access Manager (RAM)](https://tutorialsdojo.com/aws-resource-access-manager/)
 - [x] [AWS Secrets Manager](https://tutorialsdojo.com/aws-secrets-manager/)
 - [ ] [AWS Security Hub](https://tutorialsdojo.com/aws-security-hub/)
@@ -198,7 +198,7 @@ Other Analytics-related Notes:
 - [ ] [AWS CodeDeploy](https://tutorialsdojo.com/aws-codedeploy/)
 - [ ] [AWS CodePipeline](https://tutorialsdojo.com/aws-codepipeline/)
 - [x] [AWS CodeStar](https://tutorialsdojo.com/aws-codestar/)
-- [ ] [AWS X-Ray](https://tutorialsdojo.com/aws-x-ray/)
+- [x] [AWS X-Ray](https://tutorialsdojo.com/aws-x-ray/)
 
 Other Developer-related Notes:
 
@@ -212,7 +212,7 @@ Other Developer-related Notes:
 - [x] [Amazon SQS](https://tutorialsdojo.com/amazon-sqs/)
 - [x] [Amazon SWF](https://tutorialsdojo.com/amazon-simple-workflow-amazon-swf/)
 - [ ] [Amazon SES](https://tutorialsdojo.com/amazon-ses/)
-- [ ] [AWS Step Functions](https://tutorialsdojo.com/aws-step-functions/)
+- [x] [AWS Step Functions](https://tutorialsdojo.com/aws-step-functions/)
 
 ### [AWS Desktop and App Streaming](https://tutorialsdojo.com/aws-cheat-sheets-aws-desktop-and-app-streaming/)
 
