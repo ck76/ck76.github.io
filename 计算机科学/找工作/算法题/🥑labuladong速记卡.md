@@ -86,6 +86,7 @@
 - [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
 - [ ] [925. 长按键入](https://leetcode.cn/problems/long-pressed-name/)
+- [x] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
 
@@ -164,6 +165,8 @@
 
 ##### 字符串
 
+- [x] [165. 比较版本号](https://leetcode.cn/problems/compare-version-numbers/)
+- [x] [811. 子域名访问计数](https://leetcode.cn/problems/subdomain-visit-count/)
 - [ ] [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
 - [ ] [443. 压缩字符串](https://leetcode.cn/problems/string-compression/)
 - [x] [2062. 统计字符串中的元音子字符串](https://leetcode.cn/problems/count-vowel-substrings-of-a-string/)
@@ -579,11 +582,13 @@ n x n 矩阵旋转总结：
 ##### 比较器
 
 - [x] [179. 最大数](https://leetcode.cn/problems/largest-number/)
+- [ ] [791. 自定义字符串排序](https://leetcode.cn/problems/custom-sort-string/)
 - [ ] [937. 重新排列日志文件](https://leetcode.cn/problems/reorder-data-in-log-files/)
 - [x] [2099. 找到和最大的长度为 K 的子序列](https://leetcode.cn/problems/find-subsequence-of-length-k-with-the-largest-sum/)
 - [ ] [451. 根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency/)
 - [x] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 - [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)
+- [ ] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
 
 ##### 查找
 

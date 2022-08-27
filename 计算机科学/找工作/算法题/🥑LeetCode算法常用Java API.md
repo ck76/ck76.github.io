@@ -715,6 +715,10 @@ split(String regex);    // 返回 String[]，以regex(正则表达式)分隔好�
 // For example
 // 从非"/"算起 若"/a/c" -> 会变成"" "a" "c"
 String[] date = str.split("/");     // date[0]:1995 date[1]:12 date[2]:18 --- O(n)
+
+165题比较版本号注意反斜杠
+String[] a1 = version1.split("\\.");
+String[] a2 = version2.split("\\.");
 ```
 
 - toLowerCase, toUpperCase
