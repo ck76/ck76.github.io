@@ -402,6 +402,7 @@ n x n 矩阵旋转总结：
 - [x] [77.组合](https://leetcode-cn.com/problems/combinations/)
 - [x] [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
 - [x] [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
+- [x] [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
 - [x] [2094. 找出 3 位偶数](https://leetcode.cn/problems/finding-3-digit-even-numbers/)
 - [ ] 17.电话号码的字母组合
 - [ ] 37.解数独
@@ -582,7 +583,7 @@ n x n 矩阵旋转总结：
 ##### 比较器
 
 - [x] [179. 最大数](https://leetcode.cn/problems/largest-number/)
-- [ ] [791. 自定义字符串排序](https://leetcode.cn/problems/custom-sort-string/)
+- [x] [791. 自定义字符串排序](https://leetcode.cn/problems/custom-sort-string/)
 - [ ] [937. 重新排列日志文件](https://leetcode.cn/problems/reorder-data-in-log-files/)
 - [x] [2099. 找到和最大的长度为 K 的子序列](https://leetcode.cn/problems/find-subsequence-of-length-k-with-the-largest-sum/)
 - [ ] [451. 根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency/)
@@ -648,10 +649,11 @@ n x n 矩阵旋转总结：
 - [ ] 1024.视频拼接
 - [x] [1893. 检查是否区域内所有整数都被覆盖](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/)
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
+- [x] [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/)
 
 ##### 进制转换
 
-- [ ] [1837. K 进制表示下的各位数字总和](https://leetcode.cn/problems/sum-of-digits-in-base-k/)
+- [x] [1837. K 进制表示下的各位数字总和](https://leetcode.cn/problems/sum-of-digits-in-base-k/)
 - [ ] 
 
 ##### 正则
