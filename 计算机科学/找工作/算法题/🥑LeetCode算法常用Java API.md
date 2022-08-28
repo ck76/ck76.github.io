@@ -232,7 +232,7 @@ add(int index, E e)    // 在index位置插一个元素e --- O(n)
 
 Integer[] ans2 = list.toArray(new Integer[list.size()]);
 
-### 集合工具
+### 集合工具 Collections
 
 Collections是集合工具类，提供了一些操作集合的方法。
 
@@ -772,7 +772,14 @@ A65 a97  32差
   int compareTo(String anotherString)
   ```
 
-  
+-   比较两个字符串是否相等
+
+```java
+char[] c = String.valueOf(i).toCharArray();
+Arrays.sort(c);
+```
+
+
 
 
 
@@ -1054,6 +1061,49 @@ int[][] dirctions = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
 
 
 ---
+
+
+
+
+
+### Trie树
+
+```java
+// 定义tire
+class Trie {
+    
+    TrieNode root;
+    
+    public Trie() {
+        root = new TrieNode();
+    }
+
+    public int insert(String word) {
+        TrieNode cur = root;
+        boolean isNew = false;
+        // 倒着插入单词
+        for (int i = word.length() - 1; i >= 0; i--) {
+            int c = word.charAt(i) - 'a';
+            if (cur.children[c] == null) {
+                isNew = true; // 是新单词
+                cur.children[c] = new TrieNode();
+            }
+            cur = cur.children[c];
+        }
+        // 如果是新单词的话编码长度增加新单词的长度+1，否则不变。
+        return isNew? word.length() + 1: 0;
+    }
+}
+
+class TrieNode {
+    char val;
+    TrieNode[] children = new TrieNode[26];
+
+    public TrieNode() {}
+}
+```
+
+
 
 
 
