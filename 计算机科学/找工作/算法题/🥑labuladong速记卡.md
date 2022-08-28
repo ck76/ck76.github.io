@@ -214,7 +214,7 @@ n x n 矩阵旋转总结：
 - [ ] [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) 投降了
 - [x] [面试题 03.05. 栈排序](https://leetcode.cn/problems/sort-of-stacks-lcci/)
 - [ ] 1541.平衡括号字符串的最少插入次数
-- [ ] 921.使括号有效的最少添加
+- [ ] [921. 使括号有效的最少添加](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/)
 - [x] [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 - [ ] [394. 字符串解码](https://leetcode.cn/problems/decode-string/)
 - [ ] [341. 扁平化嵌套列表迭代器](https://leetcode.cn/problems/flatten-nested-list-iterator)
@@ -274,6 +274,7 @@ n x n 矩阵旋转总结：
 - [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 - [x] [面试题 10.10. 数字流的秩](https://leetcode.cn/problems/rank-from-stream-lcci/)
 - [ ] [554. 砖墙](https://leetcode.cn/problems/brick-wall/)
+- [ ] [1282. 用户分组](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/)
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
@@ -410,6 +411,7 @@ n x n 矩阵旋转总结：
 - [x] [77.组合](https://leetcode-cn.com/problems/combinations/)
 - [x] [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
 - [x] [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
+- [ ] [784. 字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation/)
 - [x] [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
 - [x] [2094. 找出 3 位偶数](https://leetcode.cn/problems/finding-3-digit-even-numbers/)
 - [ ] 17.电话号码的字母组合
@@ -521,7 +523,7 @@ n x n 矩阵旋转总结：
 
 - [x] 1143.最长公共子序列
 
-- [ ] 583.两个字符串的删除操作
+- [ ] [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
 
 - [ ] 712.两个字符串的最小ASCII删除和
 
@@ -626,6 +628,9 @@ n x n 矩阵旋转总结：
 - [ ] [241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses)
 
 ##### [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
+
+- [x] [453. 最小操作次数使数组元素相等](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements/)
+  - [ ] 🐸可以理解为每次会有1个元素减少，减少到和最小的一样需要多少步
 
 - [x] 77.组合
 - [x] 78.子集
