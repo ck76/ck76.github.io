@@ -44,6 +44,8 @@ https://www.jianshu.com/p/81e5c3e88fc6
 // 这里可以学一下 List 转Array
         return numsList.stream().mapToInt(Integer::intValue).toArray();
 list.toArray(new String[0]);
+
+Arrays.asList(entry.getKey(), entry.getValue())//不定长参数应该是
 ```
 
 
@@ -169,6 +171,15 @@ static int [] intArr = new int[]{30,96,23,69,85,62,12,99,11};
 		System.out.println("最大值："+max+"\n最小值："+min+"\n总和："+sum+"\n平均值："+avg);
 ```
 
+- Int[]转Integer[]
+
+```java
+				Integer[] nums = new Integer[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            nums[i] = arr[i];
+        }
+```
+
 
 
 
@@ -228,9 +239,9 @@ add(int index, E e)    // 在index位置插一个元素e --- O(n)
 ```
 
 - clear()
+- Integer[] ans2 = list.toArray(new Integer[list.size()]);
+- List.sort();
 - 
-
-Integer[] ans2 = list.toArray(new Integer[list.size()]);
 
 ### 集合工具 Collections
 
@@ -766,7 +777,7 @@ char c = (char)(num + '0');
 
 A65 a97  32差
 
-- conpareTo(String)
+- compareTo(String)
 
   ```c
   int compareTo(String anotherString)
@@ -1068,6 +1079,18 @@ int[][] dirctions = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
 
 ### Trie树
 
+好像用 trie 的题目都是一模一样的场景：给你一个长句子，再给你一堆“敏感词”，然后让你找敏感词在句子里的位置（因为要把敏感词换成 ***）。
+
+把敏感词 smalls 的数量记为 t，把敏感词里最长的字符串长度记为 k，把长句子 big 的长度记为 b。
+
+具体步骤：
+
+1）把这堆敏感词建成一颗 Trie 树，时间复杂度是 O(tk)。
+
+2）遍历长句子的每一个字母，检查“以该字母作为起点”的话，是否可以在 trie 中找到结果。时间复杂度是 O(bk)
+
+综上，总的时间复杂度是 O(tk + bk)。在这种题目场景下这种 trie 的思路应该就是时间复杂度最好的答案了。
+
 ```java
 // 定义tire
 class Trie {
@@ -1100,6 +1123,97 @@ class TrieNode {
     TrieNode[] children = new TrieNode[26];
 
     public TrieNode() {}
+}
+```
+
+
+
+### 并查集
+
+```java
+
+class UF {
+    // 记录连通分量个数
+    private int count;
+    // 存储若干棵树
+    private int[] parent;
+
+    public UF(int n) {
+        this.count = n;
+        parent = new int[n];
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;
+        }
+    }
+
+    /* 将 p 和 q 连通 */
+    public void union(int p, int q) {
+        int rootP = find(p);
+        int rootQ = find(q);
+        if (rootP == rootQ)
+            return;
+        parent[rootP] = rootQ;
+        count--;
+    }
+
+    /* 判断 p 和 q 是否互相连通 */
+    public boolean connected(int p, int q) {
+        int rootP = find(p);
+        int rootQ = find(q);
+        // 处于同一棵树上的节点，相互连通
+        return rootP == rootQ;
+    }
+
+    /* 返回节点 x 的根节点 */
+    private int find(int x) {
+        while (parent[x] != x) {
+            // 进行路径压缩
+            x = parent[x];
+        }
+        return x;
+    }
+
+    public int count() {
+        return count;
+    }
+}
+
+//并查集
+//路径压缩
+public class UnionFind{
+    //当前节点的父亲节点
+    Map<String, String> parent;
+    //当前节点人数
+    Map<String, Integer> size;
+
+    public UnionFind() {
+        this.parent = new HashMap<>();
+        this.size = new HashMap<>();
+    }
+
+    //找到x的根节点
+    public String find(String x) {
+        if(parent.get(x).equals(x))
+            return x;
+        //路径压缩
+        parent.put(x, find(parent.get(x)));
+        return parent.get(x);
+    }
+
+    public void union(String x, String y) {
+        String str1 = find(x), str2 = find(y);
+        if(str1.equals(str2))
+            return;
+        //字典序小的作为根
+        if(str1.compareTo(str2) > 0) {
+            parent.put(str1, str2);
+            //人数累加到根节点
+            size.put(str2, size.get(str1) + size.get(str2));
+        }else {
+            parent.put(str2, str1);
+            size.put(str1, size.get(str2) + size.get(str1));
+        }
+    }
 }
 ```
 

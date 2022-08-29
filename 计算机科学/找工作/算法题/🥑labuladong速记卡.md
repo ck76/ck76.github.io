@@ -68,6 +68,8 @@
 
 - [ ] [1248. 统计「优美子数组」](https://leetcode.cn/problems/count-number-of-nice-subarrays/)
 
+- [x] [2379. 得到 K 个黑块的最少涂色次数](https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/)
+
 ##### [其他双指针算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165005132189564928)
 
 - [x] [26.删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
@@ -144,6 +146,7 @@
 - [ ] 370.区间加法
 - [ ] 1094.拼车
 - [ ] 1109.航班预订统计
+- [x] [面试题 16.10. 生存人数](https://leetcode.cn/problems/living-people-lcci/)
 
 ##### 数组
 
@@ -204,6 +207,7 @@ n x n 矩阵旋转总结：
 - [ ] [1572. 矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum/)
 - [ ] [598. 范围求和 II](https://leetcode.cn/problems/range-addition-ii/)
 - [x] [2319. 判断矩阵是否是一个 X 矩阵](https://leetcode.cn/problems/check-if-matrix-is-x-matrix/)
+- [x] [2373. 矩阵中的局部最大值](https://leetcode.cn/problems/largest-local-values-in-a-matrix/)
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
 
@@ -275,6 +279,7 @@ n x n 矩阵旋转总结：
 - [x] [面试题 10.10. 数字流的秩](https://leetcode.cn/problems/rank-from-stream-lcci/)
 - [ ] [554. 砖墙](https://leetcode.cn/problems/brick-wall/)
 - [ ] [1282. 用户分组](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/)
+- [x] [2363. 合并相似的物品](https://leetcode.cn/problems/merge-similar-items/)
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
 
@@ -294,6 +299,11 @@ n x n 矩阵旋转总结：
 - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
 - [ ] [895.最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack/)
 - [x] [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
+- [x] [2335. 装满杯子需要的最短总时长](https://leetcode.cn/problems/minimum-amount-of-time-to-fill-cups/)
+- [ ] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
+  - [ ] 同杯子
+
+- [ ] 
 
 
 ### 第二章、进阶数据结构
@@ -354,6 +364,7 @@ n x n 矩阵旋转总结：
 - [x] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 - [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
 - [x] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
+- [ ] [面试题 04.09. 二叉搜索树序列](https://leetcode.cn/problems/bst-sequences-lcci/)
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
@@ -385,6 +396,10 @@ n x n 矩阵旋转总结：
 
 - [x] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)
 - [x] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
+- [ ] [面试题 17.07. 婴儿名字](https://leetcode.cn/problems/baby-names-lcci/)
+  - [ ] 需要查询每个节点上的人数
+
+- [ ] 
 
 ##### 二分图
 
@@ -423,6 +438,13 @@ n x n 矩阵旋转总结：
 - [x] 22.括号生成
 - [x] [139. 单词拆分](https://leetcode.cn/problems/word-break/)
 - [x] [LCP 51. 烹饪料理](https://leetcode.cn/problems/UEcfPD/)
+- [ ] [面试题 16.18. 模式匹配](https://leetcode.cn/problems/pattern-matching-lcci/)
+  - [ ] 太难了
+
+- [ ] [面试题 17.15. 最长单词](https://leetcode.cn/problems/longest-word-lcci/)
+  - [ ] 超时
+
+- [ ] 
 
 ##### [DFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165155308136988673)
 
@@ -465,6 +487,9 @@ n x n 矩阵旋转总结：
 - [ ] 354.俄罗斯套娃信封问题
 - [x] 53.最大子序和
 - [x] 300.最长递增子序列
+- [ ] [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci/)
+  - [ ] 300.最长递增子序列 变种
+
 - [x] 322.零钱兑换
 - [x] 70.爬楼梯
 - [x] [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
@@ -574,13 +599,17 @@ n x n 矩阵旋转总结：
 
 - [x] [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
 - [x] [剑指 Offer II 014. 字符串中的变位词](https://leetcode.cn/problems/MPnaiL/)
+- [x] [面试题 10.02. 变位词组](https://leetcode.cn/problems/group-anagrams-lcci/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [ ] [38. 外观数列](https://leetcode.cn/problems/count-and-say/)
 - [ ] [1071. 字符串的最大公因子](https://leetcode.cn/problems/greatest-common-divisor-of-strings/)
 - [x] [539. 最小时间差](https://leetcode.cn/problems/minimum-time-difference/)
+- [x] [811. 子域名访问计数](https://leetcode.cn/problems/subdomain-visit-count/)
+- [ ] 
 
 ##### 模拟
 
+- [ ] [1560. 圆形赛道上经过次数最多的扇区](https://leetcode.cn/problems/most-visited-sector-in-a-circular-track/)
 - [ ] 
 
 ##### 枚举
@@ -632,6 +661,10 @@ n x n 矩阵旋转总结：
 - [x] [453. 最小操作次数使数组元素相等](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements/)
   - [ ] 🐸可以理解为每次会有1个元素减少，减少到和最小的一样需要多少步
 
+- [ ] [2335. 装满杯子需要的最短总时长](https://leetcode.cn/problems/minimum-amount-of-time-to-fill-cups/)
+  - [ ] 
+
+- [ ] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
 - [x] 77.组合
 - [x] 78.子集
 - [x] 46.全排列
@@ -661,6 +694,10 @@ n x n 矩阵旋转总结：
 - [ ] [836. 矩形重叠](https://leetcode.cn/problems/rectangle-overlap/)
 - [x] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)  gcd公约数
 - [ ] [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/)
+- [ ] [2383. 赢得比赛需要的最少训练时长](https://leetcode.cn/problems/minimum-hours-of-training-to-win-a-competition/)
+  - [ ] G
+
+- [x] [1560. 圆形赛道上经过次数最多的扇区](https://leetcode.cn/problems/most-visited-sector-in-a-circular-track/)
 
 ##### 位运算
 
@@ -695,6 +732,8 @@ n x n 矩阵旋转总结：
 
 - [ ] [820. 单词的压缩编码](https://leetcode.cn/problems/short-encoding-of-words/)
 - [ ] [剑指 Offer II 065. 最短的单词编码](https://leetcode.cn/problems/iSwD2y/)
+- [ ] [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci/)
+- [ ] 
 
 
 ##### 多线程
