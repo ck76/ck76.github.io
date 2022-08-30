@@ -50,6 +50,20 @@ Arrays.asList(entry.getKey(), entry.getValue())//不定长参数应该是
 
 
 
+### Set和List互转
+
+```java
+				Set<Integer> set = new HashSet<>();
+        for (int x : nums) 
+            set.add(x);
+        List<Integer> list = new ArrayList<>(set);
+        Collections.sort(list);
+```
+
+
+
+
+
 ## 数组
 
 数组就不用多说什么了，大家最熟悉的数据结构。

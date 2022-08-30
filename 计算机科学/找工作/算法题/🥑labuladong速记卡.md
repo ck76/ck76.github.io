@@ -21,6 +21,7 @@
 - [ ] [面试题 10.03. 搜索旋转数组](https://leetcode.cn/problems/search-rotate-array-lcci/)
 - [ ] [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
 - [ ] [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)
+- [ ] [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/)
 
 ##### [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
 
@@ -300,8 +301,8 @@ n x n 矩阵旋转总结：
 - [ ] [895.最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack/)
 - [x] [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
 - [x] [2335. 装满杯子需要的最短总时长](https://leetcode.cn/problems/minimum-amount-of-time-to-fill-cups/)
-- [ ] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
-  - [ ] 同杯子
+- [x] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
+  - [ ] 同杯子，但是堆超时了，应该用贪心来解决
 
 - [ ] 
 
@@ -310,7 +311,10 @@ n x n 矩阵旋转总结：
 
 ##### [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
 
-- [x] [687. 最长同值路径](https://leetcode.cn/problems/longest-univalue-path/) 跪了
+- [x] [687. 最长同值路径](https://leetcode.cn/problems/longest-univalue-path/) 
+  - [x] 跪了
+
+- [x] [606. 根据二叉树创建字符串](https://leetcode.cn/problems/construct-string-from-binary-tree/)
 - [x] [104.二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 - [x] [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/)
 - [ ] [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/)
@@ -320,13 +324,14 @@ n x n 矩阵旋转总结：
 - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [x] [111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 - [x] 114.二叉树展开为链表
-- [x] 116.填充每个节点的下一个右侧节点指针
+- [x] [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
 - [x] [226.翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/)
 - [x] [951. 翻转等价二叉树](https://leetcode.cn/problems/flip-equivalent-binary-trees/)
 - [ ] [971. 翻转二叉树以匹配先序遍历](https://leetcode.cn/problems/flip-binary-tree-to-match-preorder-traversal/)
 - [x] [341.扁平化嵌套列表迭代器](https://leetcode-cn.com/problems/flatten-nested-list-iterator/)
 - [x] [652.寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 - [x] [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)
+- [x] [998. 最大二叉树 II](https://leetcode.cn/problems/maximum-binary-tree-ii/)
 - [ ] [655. 输出二叉树](https://leetcode.cn/problems/print-binary-tree/)
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
@@ -594,6 +599,9 @@ n x n 矩阵旋转总结：
 - [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
 - [x] [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/)
+- [x] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
+  - [ ] 同杯子，但是堆超时了，应该用贪心来解决
+- [ ] 
 
 ##### 字符串
 
@@ -686,7 +694,7 @@ n x n 矩阵旋转总结：
 - [ ] 391.完美矩形
 - [x] 509.斐波那契数
 - [ ] 645.错误的集合
-- [x] 204.计数质数
+- [x] [204. 计数质数](https://leetcode.cn/problems/count-primes/)
 - [ ] 710.黑名单中的随机数
 - [x] [1217. 玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/)
 - [ ] [908. 最小差值 I](https://leetcode.cn/problems/smallest-range-i/)
@@ -694,10 +702,14 @@ n x n 矩阵旋转总结：
 - [ ] [836. 矩形重叠](https://leetcode.cn/problems/rectangle-overlap/)
 - [x] [914. 卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards/)  gcd公约数
 - [ ] [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/)
-- [ ] [2383. 赢得比赛需要的最少训练时长](https://leetcode.cn/problems/minimum-hours-of-training-to-win-a-competition/)
+- [x] [2383. 赢得比赛需要的最少训练时长](https://leetcode.cn/problems/minimum-hours-of-training-to-win-a-competition/)
   - [ ] G
 
 - [x] [1560. 圆形赛道上经过次数最多的扇区](https://leetcode.cn/problems/most-visited-sector-in-a-circular-track/)
+
+- [x] [119. 杨辉三角 II](https://leetcode.cn/problems/pascals-triangle-ii/)
+
+- [x] [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/)
 
 ##### 位运算
 
