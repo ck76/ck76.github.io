@@ -576,6 +576,12 @@ size()    // 返回Map中中键值对<K, V>的个数 --- O(1)
 
 - remove(key)
 
+```java
+删除map的key
+```
+
+
+
 
 
 
@@ -1107,6 +1113,15 @@ Random rand=new Random();
 
 ```java
 int[][] dirctions = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
+```
+
+#### 结果需要对 `109 + 7` 取余
+
+```java
+int MOD = (int) 1e9 + 7;
+return (int)(ans % 1000000007);
+final int MOD = 1000000007;
+
 ```
 
 

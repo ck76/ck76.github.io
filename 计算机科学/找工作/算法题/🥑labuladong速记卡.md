@@ -22,6 +22,8 @@
 - [ ] [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
 - [ ] [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)
 - [ ] [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/)
+- [ ] [825. 适龄的朋友](https://leetcode.cn/problems/friends-of-appropriate-ages/)
+- [ ] 
 
 ##### [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
 
@@ -74,9 +76,11 @@
 
 - [x] [2379. 得到 K 个黑块的最少涂色次数](https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/)
 
-- [ ] [1052. 爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner/)
+- [x] [1052. 爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner/)
 
-- [ ] [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)
+- [x] [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)
+
+- [ ] [1658. 将 x 减到 0 的最小操作](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/)
 
 - [ ] 
 
@@ -102,7 +106,7 @@
 - [ ] [925. 长按键入](https://leetcode.cn/problems/long-pressed-name/)
 - [x] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
 - [ ] [面试题 16.06. 最小差](https://leetcode.cn/problems/smallest-difference-lcci/)
-- [ ] [845. 数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array/)
+- [x] [845. 数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array/)
 - [ ] 
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
@@ -155,7 +159,7 @@
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
 - [x] [1422. 分割字符串的最大得分](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/)
 - [x] [1170. 比较字符串最小字母出现频次](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/)
-- [ ] [1310. 子数组异或查询](https://leetcode.cn/problems/xor-queries-of-a-subarray/)
+- [x] [1310. 子数组异或查询](https://leetcode.cn/problems/xor-queries-of-a-subarray/)
 - [ ] [2100. 适合打劫银行的日子](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)
 - [ ] 
 
@@ -259,6 +263,8 @@ n x n 矩阵旋转总结：
 
 - [ ] [1006. 笨阶乘](https://leetcode.cn/problems/clumsy-factorial/)
 
+- [ ] [856. 括号的分数](https://leetcode.cn/problems/score-of-parentheses/)
+
 - [ ] 
 
 ##### 单调栈
@@ -342,6 +348,10 @@ n x n 矩阵旋转总结：
 
 - [ ] [385. 迷你语法分析器](https://leetcode.cn/problems/mini-parser/)
 
+- [ ] [1472. 设计浏览器历史记录](https://leetcode.cn/problems/design-browser-history/)
+
+- [ ] [2043. 简易银行系统](https://leetcode.cn/problems/simple-bank-system/)
+
 - [ ] 
 
 
@@ -371,6 +381,7 @@ n x n 矩阵旋转总结：
 - [x] [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/)
 - [x] [998. 最大二叉树 II](https://leetcode.cn/problems/maximum-binary-tree-ii/)
 - [ ] [655. 输出二叉树](https://leetcode.cn/problems/print-binary-tree/)
+- [ ] 
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
 - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
@@ -393,6 +404,8 @@ n x n 矩阵旋转总结：
 
 - [ ] [958. 二叉树的完全性检验](https://leetcode.cn/problems/check-completeness-of-a-binary-tree/)
 
+- [ ] [1026. 节点与其祖先之间的最大差值](https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/)
+
 - [ ] 
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
@@ -410,6 +423,8 @@ n x n 矩阵旋转总结：
 - [x] 95.不同的二叉搜索树II
 - [x] 538.把二叉搜索树转换为累加树
 - [x] 1373.二叉搜索子树的最大键值和
+- [ ] [669. 修剪二叉搜索树](https://leetcode.cn/problems/trim-a-binary-search-tree/)
+- [ ] [1382. 将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/)
 - [x] [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
 - [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
 - [x] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
@@ -516,6 +531,10 @@ n x n 矩阵旋转总结：
 
 - [ ] [面试题 17.15. 最长单词](https://leetcode.cn/problems/longest-word-lcci/)
   - [ ] 超时
+
+- [ ] [1079. 活字印刷](https://leetcode.cn/problems/letter-tile-possibilities/)
+
+- [ ] [1048. 最长字符串链](https://leetcode.cn/problems/longest-string-chain/)
 
 - [ ] 
 
@@ -681,6 +700,8 @@ n x n 矩阵旋转总结：
 - [x] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
   - [ ] 同杯子，但是堆超时了，应该用贪心来解决
 - [x] [1833. 雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars/)
+- [ ] [1578. 使绳子变成彩色的最短时间](https://leetcode.cn/problems/minimum-time-to-make-rope-colorful/)
+- [ ] [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/)
 - [ ] 
 
 ##### 字符串
@@ -693,6 +714,8 @@ n x n 矩阵旋转总结：
 - [ ] [1071. 字符串的最大公因子](https://leetcode.cn/problems/greatest-common-divisor-of-strings/)
 - [x] [539. 最小时间差](https://leetcode.cn/problems/minimum-time-difference/)
 - [x] [811. 子域名访问计数](https://leetcode.cn/problems/subdomain-visit-count/)
+- [x] [686. 重复叠加字符串匹配](https://leetcode.cn/problems/repeated-string-match/)
+- [x] [537. 复数乘法](https://leetcode.cn/problems/complex-number-multiplication/)
 - [ ] 
 
 ##### 模拟
@@ -821,6 +844,7 @@ n x n 矩阵旋转总结：
 - [x] [1893. 检查是否区域内所有整数都被覆盖](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/)
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/)
+- [ ] 
 
 ##### 进制转换
 
@@ -830,6 +854,7 @@ n x n 矩阵旋转总结：
 ##### 正则
 
 - [ ] [2047. 句子中的有效单词数](https://leetcode.cn/problems/number-of-valid-words-in-a-sentence/)
+- [ ] 
 
 ##### Trie
 
@@ -842,12 +867,17 @@ n x n 矩阵旋转总结：
 - [ ] [676. 实现一个魔法字典](https://leetcode.cn/problems/implement-magic-dictionary/)
 - [ ] 
 
+##### 树状数组/线段树
+
+- [ ] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+- [ ]  
 
 ##### 多线程
 
 - [ ] [1115. 交替打印 FooBar](https://leetcode.cn/problems/print-foobar-alternately/)
 - [ ] [1195. 交替打印字符串](https://leetcode.cn/problems/fizz-buzz-multithreaded/)
 - [ ] [1116. 打印零与奇偶数](https://leetcode.cn/problems/print-zero-even-odd/)
+- [ ] [1117. H2O 生成](https://leetcode.cn/problems/building-h2o/)
 - [ ] 
 
 
