@@ -46,6 +46,13 @@ https://www.jianshu.com/p/81e5c3e88fc6
 list.toArray(new String[0]);
 
 Arrays.asList(entry.getKey(), entry.getValue())//不定长参数应该是
+  
+//二维数组转list
+Arrays
+  .stream(ans)
+  .map(t ->	 Arrays.stream(t)
+                   .collect(Collectors.toList()))
+  								 .collect(Collectors.toList());
 ```
 
 
@@ -893,7 +900,11 @@ Decimal eqivalent of 100 = 100
 Hexadecimal eqivalent of 100 = 64
 ```
 
+- Integer.bitCount(i)计算比特位中1的个数
 
+- ```
+  Integer.bitCount(i)
+  ```
 
 - incompatible types: possible lossy conversion from double to int
 

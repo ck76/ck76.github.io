@@ -23,6 +23,7 @@
 - [ ] [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/)
 - [ ] [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/)
 - [ ] [825. 适龄的朋友](https://leetcode.cn/problems/friends-of-appropriate-ages/)
+- [ ] [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/)
 - [ ] 
 
 ##### [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
@@ -107,6 +108,8 @@
 - [x] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
 - [ ] [面试题 16.06. 最小差](https://leetcode.cn/problems/smallest-difference-lcci/)
 - [x] [845. 数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array/)
+- [x] [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/)
+- [x] [696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/)
 - [ ] 
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
@@ -193,6 +196,8 @@
 - [x] [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
 - [x] [1800. 最大升序子数组和](https://leetcode.cn/problems/maximum-ascending-subarray-sum/) 同上
 - [x] [1395. 统计作战单位数](https://leetcode.cn/problems/count-number-of-teams/)
+- [ ] [665. 非递减数列](https://leetcode.cn/problems/non-decreasing-array/)
+- [ ] [697. 数组的度](https://leetcode.cn/problems/degree-of-an-array/)
 - [ ] 
 
 ##### 字符串
@@ -238,6 +243,7 @@ n x n 矩阵旋转总结：
 - [x] [794. 有效的井字游戏](https://leetcode.cn/problems/valid-tic-tac-toe-state/)
 - [ ] [1314. 矩阵区域和](https://leetcode.cn/problems/matrix-block-sum/)
 - [ ] [1329. 将矩阵按对角线排序](https://leetcode.cn/problems/sort-the-matrix-diagonally/)
+- [ ] [566. 重塑矩阵](https://leetcode.cn/problems/reshape-the-matrix/)
 - [ ] 
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
@@ -316,10 +322,11 @@ n x n 矩阵旋转总结：
 - [ ] [447. 回旋镖的数量](https://leetcode.cn/problems/number-of-boomerangs/)
 - [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 - [x] [面试题 10.10. 数字流的秩](https://leetcode.cn/problems/rank-from-stream-lcci/)
-- [ ] [554. 砖墙](https://leetcode.cn/problems/brick-wall/)
-- [ ] [1282. 用户分组](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/)
+- [x] [554. 砖墙](https://leetcode.cn/problems/brick-wall/)
+- [x] [1282. 用户分组](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to/)
 - [x] [2363. 合并相似的物品](https://leetcode.cn/problems/merge-similar-items/)
 - [x] [676. 实现一个魔法字典](https://leetcode.cn/problems/implement-magic-dictionary/)
+- [x] [594. 最长和谐子序列](https://leetcode.cn/problems/longest-harmonious-subsequence/)
 - [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
@@ -351,6 +358,8 @@ n x n 矩阵旋转总结：
 - [ ] [1472. 设计浏览器历史记录](https://leetcode.cn/problems/design-browser-history/)
 
 - [ ] [2043. 简易银行系统](https://leetcode.cn/problems/simple-bank-system/)
+
+- [ ] [设计循环双端队列](https://leetcode.cn/problems/design-circular-deque/)
 
 - [ ] 
 
@@ -438,7 +447,7 @@ n x n 矩阵旋转总结：
 - [ ] 261.以图判树
 - [ ] 1135.最低成本联通所有城市
 - [ ] 1584.连接所有点的最小费用
-- [ ] 743.网络延迟时间
+- [ ] [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/)
 - [ ] 1514.概率最大的路径
 - [ ] 1631.最小体力消耗路径
 - [x] [1971. 寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph/)
@@ -479,10 +488,11 @@ n x n 矩阵旋转总结：
 - [ ] [721. 账户合并](https://leetcode.cn/problems/accounts-merge/)
 
 - [ ] [1202. 交换字符串中的元素](https://leetcode.cn/problems/smallest-string-with-swaps/)
+  - [ ] 
 
 - [ ] [1361. 验证二叉树](https://leetcode.cn/problems/validate-binary-tree-nodes/)
 
-- [ ] [1319. 连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/)
+- [x] [1319. 连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/)
 
 - [ ] 
 
@@ -536,6 +546,8 @@ n x n 矩阵旋转总结：
 
 - [ ] [1048. 最长字符串链](https://leetcode.cn/problems/longest-string-chain/)
 
+- [ ] [1239. 串联字符串的最大长度](https://leetcode.cn/problems/maximum-length-of-a-concatenated-string-with-unique-characters/)
+
 - [ ] 
 
 ##### [DFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165155308136988673)
@@ -553,6 +565,8 @@ n x n 矩阵旋转总结：
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [x] [690. 员工的重要性](https://leetcode.cn/problems/employee-importance/)
 - [ ] [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/)
+  - [ ] 寄了
+
 - [x] [565. 数组嵌套](https://leetcode.cn/problems/array-nesting)
 - [ ] [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/)
 - [ ] [1034. 边界着色](https://leetcode.cn/problems/coloring-a-border/)
@@ -644,9 +658,11 @@ n x n 矩阵旋转总结：
 
 - [x] 1143.最长公共子序列
 
-- [ ] [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
+- [ ] [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
 
 - [ ] [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
+
+- [ ] 
 
 - [ ] 712.两个字符串的最小ASCII删除和
 
@@ -668,6 +684,13 @@ n x n 矩阵旋转总结：
 
 - [ ] [926. 将字符串翻转到单调递增](https://leetcode.cn/problems/flip-string-to-monotone-increasing/)
 
+- [ ] [474. 一和零](https://leetcode.cn/problems/ones-and-zeroes/)
+
+- [ ] 
+
+##### 三维
+
+- [ ] [931. 下降路径最小和](https://leetcode.cn/problems/minimum-falling-path-sum/)
 - [ ] 
 
 ##### [背包问题速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165222624753254401)
@@ -716,6 +739,7 @@ n x n 矩阵旋转总结：
 - [x] [811. 子域名访问计数](https://leetcode.cn/problems/subdomain-visit-count/)
 - [x] [686. 重复叠加字符串匹配](https://leetcode.cn/problems/repeated-string-match/)
 - [x] [537. 复数乘法](https://leetcode.cn/problems/complex-number-multiplication/)
+- [ ] [640. 求解方程](https://leetcode.cn/problems/solve-the-equation/)
 - [ ] 
 
 ##### 模拟
@@ -744,6 +768,7 @@ n x n 矩阵旋转总结：
 - [ ] [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/)
 - [x] [2164. 对奇偶下标分别排序](https://leetcode.cn/problems/sort-even-and-odd-indices-independently/)
 - [x] [2231. 按奇偶性交换后的最大数字](https://leetcode.cn/problems/largest-number-after-digit-swaps-by-parity/)
+- [ ] 
 
 ##### 比较器
 
@@ -755,6 +780,7 @@ n x n 矩阵旋转总结：
 - [x] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 - [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)
 - [ ] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
+- [ ] 
 
 ##### 查找
 
@@ -766,6 +792,7 @@ n x n 矩阵旋转总结：
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list)
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [ ] [241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses)
+- [ ] 
 
 ##### [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
 
@@ -797,7 +824,7 @@ n x n 矩阵旋转总结：
 - [ ] 391.完美矩形
 - [x] 509.斐波那契数
 - [ ] 645.错误的集合
-- [ ] [204. 计数质数](https://leetcode.cn/problems/count-primes/)
+- [x] [204. 计数质数](https://leetcode.cn/problems/count-primes/)
 - [ ] 710.黑名单中的随机数
 - [x] [1217. 玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position/)
 - [ ] [908. 最小差值 I](https://leetcode.cn/problems/smallest-range-i/)
@@ -816,6 +843,9 @@ n x n 矩阵旋转总结：
 
 - [ ] [969. 煎饼排序](https://leetcode.cn/problems/pancake-sorting/)
   - [x] 汉诺塔
+
+- [ ] [面试题 16.05. 阶乘尾数](https://leetcode.cn/problems/factorial-zeros-lcci/)
+  - [x] 不会
 
 - [ ] 
 
