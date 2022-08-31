@@ -713,7 +713,7 @@ lastIndexOf(String str, int fromIndex);    // 同上，
 //但从fromIndex开始从后往前找 [0 <- fromIndex] --- O(m * n)
 ```
 
-- replace()
+- replace()  📢返回新的字符串
 
 ```java
 replace(char oldChar, char newChar);    // 返回一个新字符串String，其oldChar全部变成newChar --- O(n)
@@ -873,7 +873,8 @@ private void getStrtingRadix() {
          System.out.println("Hexadecimal eqivalent of 100 = " + Integer.toString(100, 16));
     }
 Integer.toBinaryString(num);//可以转负数，补码表示
-在 Java 中使用 Integer.parseInt(,2) 将二进制字符串转换为 Int
+在 Java 中使用 
+Integer.parseInt(,2) 将二进制字符串转换为 Int
 Integer.parseInt() //可以将字符串转int值
 ```
 
@@ -1005,6 +1006,31 @@ boolean isPrim(int num){
         }
         return true;
     }
+
+
+class Solution {
+    public int countPrimes(int n) {
+        int ans = 0;
+        for (int i = 2; i < n; ++i) {
+            ans += isPrime(i) ? 1 : 0;
+        }
+        return ans;
+    }
+
+    public boolean isPrime(int x) {
+        for (int i = 2; i * i <= x; ++i) {
+            if (x % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+作者：LeetCode-Solution
+链接：https://leetcode.cn/problems/count-primes/solution/ji-shu-zhi-shu-by-leetcode-solution/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 - 求最大公约数
@@ -1229,6 +1255,51 @@ public class UnionFind{
         }
     }
 }
+
+private class UnionFind {
+
+        private Map<Integer, Integer> parent;
+        private int count;
+
+        public UnionFind() {
+            this.parent = new HashMap<>();
+            this.count = 0;
+        }
+
+        public int getCount() {
+            return count;
+        }
+
+        public int find(int x) {
+            if (!parent.containsKey(x)) {
+                parent.put(x, x);
+                // 并查集集中新加入一个结点，结点的父亲结点是它自己，所以连通分量的总数 +1
+                count++;
+            }
+
+            if (x != parent.get(x)) {
+                parent.put(x, find(parent.get(x)));
+            }
+            return parent.get(x);
+        }
+
+        public void union(int x, int y) {
+            int rootX = find(x);
+            int rootY = find(y);
+            if (rootX == rootY) {
+                return;
+            }
+
+            parent.put(rootX, rootY);
+            // 两个连通分量合并成为一个，连通分量的总数 -1
+            count--;
+        }
+    }
+
+作者：LeetCode
+链接：https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/solution/947-yi-chu-zui-duo-de-tong-xing-huo-tong-ezha/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 
