@@ -100,9 +100,15 @@
 - [ ] 42.接雨水
 - [x] [LCP 18. 早餐组合](https://leetcode.cn/problems/2vYnGI/)
 - [x] [LCP 28. 采购方案](https://leetcode.cn/problems/4xy4Wx/)
-- [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
+- [x] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
-- [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
+- [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) 重要
+- [ ] [665. 非递减数列](https://leetcode.cn/problems/non-decreasing-array/)
+  - [ ] 
+
+- [ ] [978. 最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray/)
+  - [ ] 376变形
+
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
 - [ ] [925. 长按键入](https://leetcode.cn/problems/long-pressed-name/)
 - [x] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
@@ -110,6 +116,7 @@
 - [x] [845. 数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array/)
 - [x] [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/)
 - [x] [696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/)
+- [x] [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/)
 - [ ] 
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
@@ -164,6 +171,7 @@
 - [x] [1170. 比较字符串最小字母出现频次](https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/)
 - [x] [1310. 子数组异或查询](https://leetcode.cn/problems/xor-queries-of-a-subarray/)
 - [ ] [2100. 适合打劫银行的日子](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)
+- [x] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
 - [ ] 
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
@@ -198,6 +206,9 @@
 - [x] [1395. 统计作战单位数](https://leetcode.cn/problems/count-number-of-teams/)
 - [ ] [665. 非递减数列](https://leetcode.cn/problems/non-decreasing-array/)
 - [ ] [697. 数组的度](https://leetcode.cn/problems/degree-of-an-array/)
+- [ ] [659. 分割数组为连续子序列](https://leetcode.cn/problems/split-array-into-consecutive-subsequences/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### 字符串
@@ -361,12 +372,16 @@ n x n 矩阵旋转总结：
 
 - [ ] [设计循环双端队列](https://leetcode.cn/problems/design-circular-deque/)
 
+- [ ] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+
 - [ ] 
 
 
 ### 第二章、进阶数据结构
 
 ##### [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
+
+二叉树的递归分为「遍历」和「分解问题」两种思维模式
 
 - [x] [687. 最长同值路径](https://leetcode.cn/problems/longest-univalue-path/) 
   - [x] 跪了
@@ -394,6 +409,9 @@ n x n 矩阵旋转总结：
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
 - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [ ] [1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/)
+- [ ] [865. 具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/)
+- [ ] 
 - [x] [993. 二叉树的堂兄弟节点](https://leetcode.cn/problems/cousins-in-binary-tree/)
 - [ ] [面试题 17.12. BiNode](https://leetcode.cn/problems/binode-lcci/)
 - [ ] [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
@@ -411,9 +429,14 @@ n x n 矩阵旋转总结：
 - [ ] [1104. 二叉树寻路](https://leetcode.cn/problems/path-in-zigzag-labelled-binary-tree/)
   - [x] 倒着往上推算
 
-- [ ] [958. 二叉树的完全性检验](https://leetcode.cn/problems/check-completeness-of-a-binary-tree/)
+- [x] [958. 二叉树的完全性检验](https://leetcode.cn/problems/check-completeness-of-a-binary-tree/)
 
 - [ ] [1026. 节点与其祖先之间的最大差值](https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/)
+
+- [x] [1379. 找出克隆二叉树中的相同节点](https://leetcode.cn/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/)
+
+- [ ] [894. 所有可能的真二叉树](https://leetcode.cn/problems/all-possible-full-binary-trees/)
+  - [ ] Mark
 
 - [ ] 
 
@@ -438,6 +461,7 @@ n x n 矩阵旋转总结：
 - [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
 - [x] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
 - [ ] [面试题 04.09. 二叉搜索树序列](https://leetcode.cn/problems/bst-sequences-lcci/)
+- [ ] [1008. 前序遍历构造二叉搜索树](https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/)
 - [ ] 
 
 ##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
@@ -595,7 +619,10 @@ n x n 矩阵旋转总结：
 - [x] 55.跳跃游戏
 - [ ] 354.俄罗斯套娃信封问题
 - [x] 53.最大子序和
-- [x] 300.最长递增子序列
+- [x] [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+- [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
+  - [ ] 
+
 - [ ] [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci/)
   - [ ] 300.最长递增子序列 变种
 
@@ -604,6 +631,9 @@ n x n 矩阵旋转总结：
 - [x] [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
 - [ ] 337.打家劫舍I
 - [ ] 213.打家劫舍II
+- [ ] [740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/)
+  - [ ] 同打家劫舍
+
 - [x] 198.打家劫舍
 - [ ] [740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/)
   - [ ] 和打家劫舍一样的题，需要对数组转换
@@ -931,7 +961,7 @@ n x n 矩阵旋转总结：
 
 
 
-- 波峰波谷
+- 波峰波谷问题摆动序列
 - 图
 - dp
 - 接雨水
