@@ -651,6 +651,14 @@ last()    // 返回集合里的最大值（若给了比较器从大到小则是�
 
 
 
+## TreeSet
+
+
+
+
+
+
+
 ## 字符串
 
 ### String
@@ -910,6 +918,82 @@ Hexadecimal eqivalent of 100 = 64
 
 
 
+### BigInteger
+
+- [372. 超级次方](https://leetcode.cn/problems/super-pow/)
+
+```java
+import java.math.BigInteger;
+ class Solution {
+        public int superPow(int a, int[] b) {
+            StringBuilder sb = new StringBuilder();
+            for (int num : b) {
+                sb.append(num);
+            }
+
+            BigInteger bB = new BigInteger(sb.toString());
+            BigInteger aB = new BigInteger(String.valueOf(a));
+            BigInteger modB = new BigInteger("1337");
+
+            return aB.modPow(bB,modB).intValue();
+        }
+    }
+```
+
+- [1404. 将二进制表示减到 1 的步骤数](https://leetcode.cn/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/)
+
+```java
+import java.math.BigInteger;
+
+class Solution {
+    
+    private static final int BASIC_RADIX = 2;
+
+    private static final String NUM2_STR = "2";
+
+    private static final String ONE_STR = "1";
+
+    private static final String ZERO_STR = "0";
+
+    public int numSteps(String s) {
+        int len = s.length();
+        int count = 0;
+        if (len == 1 && s.charAt(0) == '1') {
+            return count;
+        }
+        // 转成大整数运算
+        BigInteger base = new BigInteger(s, BASIC_RADIX);
+        BigInteger zero = new BigInteger(ZERO_STR);
+        BigInteger one = new BigInteger(ONE_STR);
+        BigInteger two = new BigInteger(NUM2_STR);
+        // 迭代计算直到满足出口条件
+        while (base.compareTo(one) != 0) {
+            if(base.mod(two).compareTo(zero) == 0) {
+                base = base.divide(two);
+            } else {
+                base = base.add(one);
+            }
+            count++;
+        }
+        return count;
+    }
+}
+```
+
+
+
+## 比较器
+
+```java
+Arrays.sort(words, Comparator.comparingInt(String::length));
+List也自带sort方法
+
+```
+
+
+
+
+
 # 数学
 
 ## 最大最小值
@@ -1124,6 +1208,9 @@ Random rand=new Random();
 
 ```java
 int[][] dirctions = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
+private static int[][] direct = {
+        {-1, 0}, {-1, 1}, {0, 1}, {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}
+    };
 ```
 
 #### 结果需要对 `109 + 7` 取余

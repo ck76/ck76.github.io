@@ -6,6 +6,10 @@
 
 ##### [二分搜索速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164909502477795329)
 
+```java
+凡是求最大，最小，最大最小，最小最大的题，一般首先想到的应该是用二分的方法，如果不行再用别的方.
+```
+
 - [x] [34在排序数组中查找元素的第一个和最后一个位置（中等）](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 - [ ] [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/)
 - [ ] [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/)
@@ -24,64 +28,71 @@
 - [ ] [367. 有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/)
 - [ ] [825. 适龄的朋友](https://leetcode.cn/problems/friends-of-appropriate-ages/)
 - [ ] [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/)
+- [ ] [1300. 转变数组后最接近目标值的数组和](https://leetcode.cn/problems/sum-of-mutated-array-closest-to-target/)
+- [ ] [1482. 制作 m 束花所需的最少天数](https://leetcode.cn/problems/minimum-number-of-days-to-make-m-bouquets/)
+- [ ] [1855. 下标对中的最大距离](https://leetcode.cn/problems/maximum-distance-between-a-pair-of-values/)
+- [ ] [1552. 两球之间的磁力](https://leetcode.cn/problems/magnetic-force-between-two-balls/)
+- [ ] [754. 到达终点数字](https://leetcode.cn/problems/reach-a-number/)
+- [ ] [2226. 每个小孩最多能分到多少糖果](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/)
+  - [ ] Mark
+
+- [ ] [1283. 使结果不超过阈值的最小除数](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/)
+- [ ] [1574. 删除最短的子数组使剩余数组有序](https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
 
 - [x] [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
-
 - [ ] [76.最小覆盖子串（困难）](https://leetcode-cn.com/problems/minimum-window-substring/)
-
 - [x] [3.无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
-
-- [ ] 438.找到字符串中所有字母异位词
-
 - [ ] 567.字符串的排列
-
 - [x] [643. 子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i/)
-
 - [x] [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
-
 - [ ] [239.滑动窗口最大值（困难）](https://leetcode-cn.com/problems/sliding-window-maximum/)
-
 - [ ] [1696. 跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/)
-
 - [x] [面试题 17.18. 最短超串](https://leetcode.cn/problems/shortest-supersequence-lcci/)
-
 - [x] [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
-
 - [x] [567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
-
 - [ ] [713. 乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/)
-
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
-
 - [ ] [1763. 最长的美好子字符串](https://leetcode.cn/problems/longest-nice-substring/)
-
 - [x] [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/)
-
 - [x] [2024. 考试的最大困扰度](https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/)
   - [x] 和1004一样
-
 - [ ] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
-
 - [x] [剑指 Offer II 014. 字符串中的变位词](https://leetcode.cn/problems/MPnaiL/)
-
 - [x] [424. 替换后的最长重复字符](https://leetcode.cn/problems/longest-repeating-character-replacement/)
-
 - [x] [1423. 可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/)
-
 - [x] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
-
 - [ ] [1248. 统计「优美子数组」](https://leetcode.cn/problems/count-number-of-nice-subarrays/)
-
 - [x] [2379. 得到 K 个黑块的最少涂色次数](https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/)
-
 - [x] [1052. 爱生气的书店老板](https://leetcode.cn/problems/grumpy-bookstore-owner/)
-
 - [x] [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/)
-
 - [ ] [1658. 将 x 减到 0 的最小操作](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/)
+- [ ] [1509. 三次操作后最大值与最小值的最小差](https://leetcode.cn/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/)
+  - [ ] 同1658 
+
+- [ ] [1297. 子串的最大出现次数](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring/)
+- [ ] [930. 和相同的二元子数组](https://leetcode.cn/problems/binary-subarrays-with-sum/)
+- [ ] [220. 存在重复元素 III](https://leetcode.cn/problems/contains-duplicate-iii/)
+  - [ ] at 1438
+
+- [ ] [1493. 删掉一个元素以后全为 1 的最长子数组](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/)
+- [ ] [1855. 下标对中的最大距离](https://leetcode.cn/problems/maximum-distance-between-a-pair-of-values/)
+- [ ] [1695. 删除子数组的最大得分](https://leetcode.cn/problems/maximum-erasure-value/)
+- [ ] [1839. 所有元音按顺序排布的最长子字符串](https://leetcode.cn/problems/longest-substring-of-all-vowels-in-order/)
+- [ ] [1358. 包含所有三种字符的子字符串数目](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/)
+- [ ] [2134. 最少交换次数来组合所有的 1 II](https://leetcode.cn/problems/minimum-swaps-to-group-all-1s-together-ii/)
+  - [ ] Mark
+
+- [ ] [1234. 替换子串得到平衡字符串](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/)
+- [ ] [1477. 找两个和为目标值且不重叠的子数组](https://leetcode.cn/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)
+  - [ ] Mark
+
+- [ ] [1156. 单字符重复子串的最大长度](https://leetcode.cn/problems/swap-for-longest-repeated-character-substring/)
+  - [ ] Mark
 
 - [ ] 
 
@@ -117,6 +128,11 @@
 - [x] [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/)
 - [x] [696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/)
 - [x] [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/)
+- [ ] [1234. 替换子串得到平衡字符串](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/)
+- [ ] [2222. 选择建筑的方案数](https://leetcode.cn/problems/number-of-ways-to-select-buildings/)
+- [ ] [1855. 下标对中的最大距离](https://leetcode.cn/problems/maximum-distance-between-a-pair-of-values/)
+- [ ] [481. 神奇字符串](https://leetcode.cn/problems/magical-string/)
+- [ ] [1679. K 和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/)
 - [ ] 
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
@@ -149,11 +165,18 @@
 - [x] [剑指 Offer II 026. 重排链表](https://leetcode.cn/problems/LGjMqU/)
 - [x] [剑指 Offer II 029. 排序的循环链表](https://leetcode.cn/problems/4ueAj6/)
 - [x] [1171. 从链表中删去总和值为零的连续节点](https://leetcode.cn/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
+- [ ] [2130. 链表最大孪生和](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/)
+- [ ] [817. 链表组件](https://leetcode.cn/problems/linked-list-components/)
 - [ ] 
 
 ##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
-区间，子数组
+```
+区间，子数组【最难的是算坐标】
+有两种坐标计算方法
+presum[i]=arr[i-1]+presum[i-1]
+presum[i]=arr[i]+presum[i-1]
+```
 
 - [ ] [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
 - [ ] [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
@@ -172,6 +195,16 @@
 - [x] [1310. 子数组异或查询](https://leetcode.cn/problems/xor-queries-of-a-subarray/)
 - [ ] [2100. 适合打劫银行的日子](https://leetcode.cn/problems/find-good-days-to-rob-the-bank/)
 - [x] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+- [ ] [1930. 长度为 3 的不同回文子序列](https://leetcode.cn/problems/unique-length-3-palindromic-subsequences/)
+  - [ ] Mark
+
+- [ ] [1031. 两个非重叠子数组的最大和](https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays/)
+  - [ ] Mark 做一下
+
+- [ ] [930. 和相同的二元子数组](https://leetcode.cn/problems/binary-subarrays-with-sum/)
+- [ ] [918. 环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/)
+- [ ] [2055. 蜡烛之间的盘子](https://leetcode.cn/problems/plates-between-candles/)
+- [ ] [1685. 有序数组中差绝对值之和](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array/)
 - [ ] 
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
@@ -209,6 +242,17 @@
 - [ ] [659. 分割数组为连续子序列](https://leetcode.cn/problems/split-array-into-consecutive-subsequences/)
   - [ ] Mark
 
+- [x] [2261. 含最多 K 个可整除元素的子数组](https://leetcode.cn/problems/k-divisible-elements-subarrays/)
+- [ ] [849. 到最近的人的最大距离](https://leetcode.cn/problems/maximize-distance-to-closest-person/)
+- [ ] [1769. 移动所有球到每个盒子所需的最小操作数](https://leetcode.cn/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)
+- [ ] [1375. 二进制字符串前缀一致的次数](https://leetcode.cn/problems/number-of-times-binary-string-is-prefix-aligned/)
+- [ ] [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/)
+- [ ] [1551. 使数组中所有元素相等的最小操作数](https://leetcode.cn/problems/minimum-operations-to-make-array-equal/)
+- [ ] [957. N 天后的牢房](https://leetcode.cn/problems/prison-cells-after-n-days/)
+- [ ] [2165. 重排数字的最小值](https://leetcode.cn/problems/smallest-value-of-the-rearranged-number/)
+- [ ] [1191. K 次串联后最大子数组之和](https://leetcode.cn/problems/k-concatenation-maximum-sum/)[1191. K 次串联后最大子数组之和](https://leetcode.cn/problems/k-concatenation-maximum-sum/)
+- [ ] [1630. 等差子数组](https://leetcode.cn/problems/arithmetic-subarrays/)
+- [ ] [1186. 删除一次得到子数组最大和](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/)
 - [ ] 
 
 ##### 字符串
@@ -255,6 +299,8 @@ n x n 矩阵旋转总结：
 - [ ] [1314. 矩阵区域和](https://leetcode.cn/problems/matrix-block-sum/)
 - [ ] [1329. 将矩阵按对角线排序](https://leetcode.cn/problems/sort-the-matrix-diagonally/)
 - [ ] [566. 重塑矩阵](https://leetcode.cn/problems/reshape-the-matrix/)
+- [ ] [1424. 对角线遍历 II](https://leetcode.cn/problems/diagonal-traverse-ii/)
+- [ ] [1222. 可以攻击国王的皇后](https://leetcode.cn/problems/queens-that-can-attack-the-king/)
 - [ ] 
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
@@ -282,6 +328,16 @@ n x n 矩阵旋转总结：
 
 - [ ] [856. 括号的分数](https://leetcode.cn/problems/score-of-parentheses/)
 
+- [x] [1381. 设计一个支持增量操作的栈](https://leetcode.cn/problems/design-a-stack-with-increment-operation/)
+
+- [ ] [1003. 检查替换后的词是否有效](https://leetcode.cn/problems/check-if-word-is-valid-after-substitutions/)
+
+- [ ] [1209. 删除字符串中的所有相邻重复项 II](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/)
+
+- [ ] [2327. 知道秘密的人数](https://leetcode.cn/problems/number-of-people-aware-of-a-secret/)
+
+- [ ] [2216. 美化数组的最少删除数](https://leetcode.cn/problems/minimum-deletions-to-make-array-beautiful/)
+
 - [ ] 
 
 ##### 单调栈
@@ -302,20 +358,34 @@ n x n 矩阵旋转总结：
 - [ ] [2104. 子数组范围和](https://leetcode.cn/problems/sum-of-subarray-ranges/) 看看
 - [ ] [962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/) 看看
 - [ ] [1124. 表现良好的最长时间段](https://leetcode.cn/problems/longest-well-performing-interval/)
+  - [ ] 962题
+
 - [x] [853. 车队](https://leetcode.cn/problems/car-fleet/)
 - [x] [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/)
+  - [ ] 402题 跪了很久
+
+- [ ] [1673. 找出最具竞争力的子序列](https://leetcode.cn/problems/find-the-most-competitive-subsequence/)
+  - [ ] 402题
+
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
 - [x] [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/)
 
 ##### 单调队列
 
 - [x] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+- [ ] [220. 存在重复元素 III](https://leetcode.cn/problems/contains-duplicate-iii/)
+  - [ ] 同1438
+
+- [ ] 
 
 ##### 双端队列
 
 - [x] [2243. 计算字符串的数字和](https://leetcode.cn/problems/calculate-digit-sum-of-a-string/)
+- [ ] [1535. 找出数组游戏的赢家](https://leetcode.cn/problems/find-the-winner-of-an-array-game/)
 
-##### 哈希表
+##### 哈希表 or Set
+
+降低复杂度，预存数据快速检索
 
 - [x] [1. 两数之和](https://leetcode-cn.com/problems/two-sum)
 - [x] [532. 数组中的 k-diff 数对](https://leetcode.cn/problems/k-diff-pairs-in-an-array/)
@@ -338,9 +408,22 @@ n x n 矩阵旋转总结：
 - [x] [2363. 合并相似的物品](https://leetcode.cn/problems/merge-similar-items/)
 - [x] [676. 实现一个魔法字典](https://leetcode.cn/problems/implement-magic-dictionary/)
 - [x] [594. 最长和谐子序列](https://leetcode.cn/problems/longest-harmonious-subsequence/)
+- [x] [1461. 检查一个字符串是否包含所有长度为 K 的二进制子串](https://leetcode.cn/problems/check-if-a-string-contains-all-binary-codes-of-size-k/)
+- [ ] [1366. 通过投票对团队排名](https://leetcode.cn/problems/rank-teams-by-votes/)
+- [ ] [1487. 保证文件名唯一](https://leetcode.cn/problems/making-file-names-unique/)
+- [ ] [609. 在系统中查找重复文件](https://leetcode.cn/problems/find-duplicate-file-in-system/)
+  - [ ] 1487题
+
+- [ ] [1647. 字符频次唯一的最小删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-character-frequencies-unique/)
+  - [ ] Mark
+
+- [ ] [1726. 同积元组](https://leetcode.cn/problems/tuple-with-same-product/)
+- [ ] [1679. K 和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/)
 - [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
+
+动态排序
 
 - [ ] [23.合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 - [x] [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
@@ -374,6 +457,18 @@ n x n 矩阵旋转总结：
 
 - [ ] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
 
+- [ ] [2034. 股票价格波动](https://leetcode.cn/problems/stock-price-fluctuation/)
+
+- [ ] [1792. 最大平均通过率](https://leetcode.cn/problems/maximum-average-pass-ratio/)
+
+- [ ] [1353. 最多可以参加的会议数目](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/)
+
+- [ ] [1753. 移除石子的最大得分](https://leetcode.cn/problems/maximum-score-from-removing-stones/)
+
+- [ ] [2233. K 次增加后的最大乘积](https://leetcode.cn/problems/maximum-product-after-k-increments/)
+
+- [ ] [1834. 单线程 CPU](https://leetcode.cn/problems/single-threaded-cpu/)
+
 - [ ] 
 
 
@@ -382,6 +477,8 @@ n x n 矩阵旋转总结：
 ##### [二叉树算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165089327943417857)
 
 二叉树的递归分为「遍历」和「分解问题」两种思维模式
+
+- 树转图
 
 - [x] [687. 最长同值路径](https://leetcode.cn/problems/longest-univalue-path/) 
   - [x] 跪了
@@ -422,6 +519,9 @@ n x n 矩阵旋转总结：
 - [ ] [剑指 Offer II 050. 向下的路径节点之和](https://leetcode.cn/problems/6eUYwP/)
 - [ ] [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/)
 - [x] [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
+- [ ] [1443. 收集树上所有苹果的最少时间](https://leetcode.cn/problems/minimum-time-to-collect-all-apples-in-a-tree/)
+  - [ ] 863
+
 - [x] [1367. 二叉树中的列表](https://leetcode.cn/problems/linked-list-in-binary-tree/)
 - [ ] [1080. 根到叶路径上的不足节点](https://leetcode.cn/problems/insufficient-nodes-in-root-to-leaf-paths/)
 - [x] [623. 在二叉树中增加一行](https://leetcode.cn/problems/add-one-row-to-tree/)
@@ -437,6 +537,12 @@ n x n 矩阵旋转总结：
 
 - [ ] [894. 所有可能的真二叉树](https://leetcode.cn/problems/all-possible-full-binary-trees/)
   - [ ] Mark
+
+- [ ] [988. 从叶结点开始的最小字符串](https://leetcode.cn/problems/smallest-string-starting-from-leaf/)
+
+- [ ] [2265. 统计值等于子树平均值的节点数](https://leetcode.cn/problems/count-nodes-equal-to-average-of-subtree/)
+
+- [ ] [1261. 在受污染的二叉树中查找元素](https://leetcode.cn/problems/find-elements-in-a-contaminated-binary-tree/)
 
 - [ ] 
 
@@ -494,6 +600,8 @@ n x n 矩阵旋转总结：
 - [ ] [剑指 Offer II 112. 最长递增路径](https://leetcode.cn/problems/fpTFWP)
 - [ ] [剑指 Offer II 115. 重建序列](https://leetcode.cn/problems/ur2n8P)
 - [ ] [剑指 Offer II 111. 计算除法](https://leetcode.cn/problems/vlzXQL)
+- [ ] [1557. 可以到达所有点的最少点数目](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/)
+- [ ] [1042. 不邻接植花](https://leetcode.cn/problems/flower-planting-with-no-adjacent/)
 - [ ] 
 
 ##### 并查集
@@ -517,6 +625,8 @@ n x n 矩阵旋转总结：
 - [ ] [1361. 验证二叉树](https://leetcode.cn/problems/validate-binary-tree-nodes/)
 
 - [x] [1319. 连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected/)
+
+- [ ] [1267. 统计参与通信的服务器](https://leetcode.cn/problems/count-servers-that-communicate/)
 
 - [ ] 
 
@@ -549,6 +659,9 @@ n x n 矩阵旋转总结：
 - [x] [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
 - [ ] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv)
 - [ ] [784. 字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation/)
+- [ ] [1286. 字母组合迭代器](https://leetcode.cn/problems/iterator-for-combination/)
+  - [ ] 也是排列组合问题
+
 - [x] [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
 - [x] [2094. 找出 3 位偶数](https://leetcode.cn/problems/finding-3-digit-even-numbers/)
 - [ ] 17.电话号码的字母组合
@@ -571,6 +684,20 @@ n x n 矩阵旋转总结：
 - [ ] [1048. 最长字符串链](https://leetcode.cn/problems/longest-string-chain/)
 
 - [ ] [1239. 串联字符串的最大长度](https://leetcode.cn/problems/maximum-length-of-a-concatenated-string-with-unique-characters/)
+
+- [ ] [1774. 最接近目标价格的甜点成本](https://leetcode.cn/problems/closest-dessert-cost/)
+
+- [ ] [935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/)
+
+- [ ] [1759. 统计同构子字符串的数目](https://leetcode.cn/problems/count-number-of-homogenous-substrings/)
+
+- [ ] [1415. 长度为 n 的开心字符串中字典序第 k 小的字符串](https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)
+
+- [ ] [967. 连续差相同的数字](https://leetcode.cn/problems/numbers-with-same-consecutive-differences/)
+
+- [ ] [2375. 根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/)
+
+- [ ] [1849. 将字符串拆分为递减的连续值](https://leetcode.cn/problems/splitting-a-string-into-descending-consecutive-values/)
 
 - [ ] 
 
@@ -596,6 +723,9 @@ n x n 矩阵旋转总结：
 - [ ] [1034. 边界着色](https://leetcode.cn/problems/coloring-a-border/)
 - [ ] [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/)
 - [x] [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/)
+- [ ] [2368. 受限条件下可到达节点的数目](https://leetcode.cn/problems/reachable-nodes-with-restrictions/)
+- [ ] [1391. 检查网格中是否存在有效路径](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/)
+- [ ] [1291. 顺次数](https://leetcode.cn/problems/sequential-digits/)
 - [ ] 
 
 ##### [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
@@ -609,7 +739,20 @@ n x n 矩阵旋转总结：
 - [ ] [面试题 17.22. 单词转换](https://leetcode.cn/problems/word-transformer-lcci/)
 - [x] [994. 腐烂的橘子](https://leetcode.cn/problems/rotting-oranges/)
 
-- [x] 
+- [ ] [1091. 二进制矩阵中的最短路径](https://leetcode.cn/problems/shortest-path-in-binary-matrix/)
+  - [ ] 橘子
+
+- [ ] [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/)
+
+- [ ] [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/)
+
+- [ ] [1129. 颜色交替的最短路径](https://leetcode.cn/problems/shortest-path-with-alternating-colors/)
+
+- [ ] [1466. 重新规划路线](https://leetcode.cn/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/)
+
+- [ ] [1926. 迷宫中离入口最近的出口](https://leetcode.cn/problems/nearest-exit-from-entrance-in-maze/)
+
+- [ ] 
 
 ### 第四章、动态规划算法
 
@@ -620,6 +763,7 @@ n x n 矩阵旋转总结：
 - [ ] 354.俄罗斯套娃信封问题
 - [x] 53.最大子序和
 - [x] [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+- [ ] [1027. 最长等差数列](https://leetcode.cn/problems/longest-arithmetic-subsequence/)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
   - [ ] 
 
@@ -646,6 +790,18 @@ n x n 矩阵旋转总结：
 - [x] [264. 丑数 II](https://leetcode.cn/problems/ugly-number-ii/)
 - [ ] [983. 最低票价](https://leetcode.cn/problems/minimum-cost-for-tickets/)
 - [ ] [1014. 最佳观光组合](https://leetcode.cn/problems/best-sightseeing-pair/)
+- [ ] [1477. 找两个和为目标值且不重叠的子数组](https://leetcode.cn/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/)
+- [ ] [1425. 带限制的子序列和](https://leetcode.cn/problems/constrained-subsequence-sum/)
+- [ ] [1696. 跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/)
+- [ ] [1186. 删除一次得到子数组最大和](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/)
+  - [ ] 同1425 dp+单调队列
+
+- [ ] [2140. 解决智力问题](https://leetcode.cn/problems/solving-questions-with-brainpower/)
+  - [ ] 1774题
+
+- [ ] [2266. 统计打字方案数](https://leetcode.cn/problems/count-number-of-texts/)
+  - [ ] 同青蛙跳楼梯
+
 - [ ] 
 
 ##### [二维动态规划速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165181514903355392)
@@ -716,6 +872,13 @@ n x n 矩阵旋转总结：
 
 - [ ] [474. 一和零](https://leetcode.cn/problems/ones-and-zeroes/)
 
+- [ ] [935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/)
+  - [ ] Mark
+
+- [ ] [2063. 所有子字符串中的元音](https://leetcode.cn/problems/vowels-of-all-substrings/)
+
+- [ ] [1690. 石子游戏 VII](https://leetcode.cn/problems/stone-game-vii/)
+
 - [ ] 
 
 ##### 三维
@@ -730,6 +893,9 @@ n x n 矩阵旋转总结：
 - [x] 416.分割等和子集
 - [ ] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
 - [ ] [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/)
+- [ ] [813. 最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/)
+  - [ ] 这也是背包咩？
+
 - [ ] 
 
 
@@ -749,17 +915,43 @@ n x n 矩阵旋转总结：
 - [x] [646. 最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/)
 - [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
+- [ ] [1144. 递减元素使数组呈锯齿状](https://leetcode.cn/problems/decrease-elements-to-make-array-zigzag/)
+  - [ ] 
+
 - [x] [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/)
 - [x] [1953. 你可以工作的最大周数](https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/)
   - [ ] 同杯子，但是堆超时了，应该用贪心来解决
 - [x] [1833. 雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars/)
 - [ ] [1578. 使绳子变成彩色的最短时间](https://leetcode.cn/problems/minimum-time-to-make-rope-colorful/)
 - [ ] [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/)
+- [ ] [1689. 十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/)
+- [ ] [670. 最大交换](https://leetcode.cn/problems/maximum-swap/)
+- [ ] [954. 二倍数对数组](https://leetcode.cn/problems/array-of-doubled-pairs/)
+- [ ] [1029. 两地调度](https://leetcode.cn/problems/two-city-scheduling/)
+- [ ] [2195. 向数组中追加 K 个整数](https://leetcode.cn/problems/append-k-integers-with-minimal-sum/)
+- [ ] [1247. 交换字符使得字符串相同](https://leetcode.cn/problems/minimum-swaps-to-make-strings-equal/)
+- [ ] [984. 不含 AAA 或 BBB 的字符串](https://leetcode.cn/problems/string-without-aaa-or-bbb/)
+- [ ] [1481. 不同整数的最少数目](https://leetcode.cn/problems/least-number-of-unique-integers-after-k-removals/)
+- [ ] [1353. 最多可以参加的会议数目](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/)
+- [ ] [1663. 具有给定数值的最小字符串](https://leetcode.cn/problems/smallest-string-with-a-given-numeric-value/)
+- [ ] [2233. K 次增加后的最大乘积](https://leetcode.cn/problems/maximum-product-after-k-increments/)
+- [ ] [2311. 小于等于 K 的最长二进制子序列](https://leetcode.cn/problems/longest-binary-subsequence-less-than-or-equal-to-k/)
+- [ ] [1775. 通过最少操作次数使数组的和相等](https://leetcode.cn/problems/equal-sum-arrays-with-minimum-number-of-operations/)
+- [ ] [948. 令牌放置](https://leetcode.cn/problems/bag-of-tokens/)
+- [ ] [1488. 避免洪水泛滥](https://leetcode.cn/problems/avoid-flood-in-the-city/)
+- [ ] [1386. 安排电影院座位](https://leetcode.cn/problems/cinema-seat-allocation/)
+- [ ] [1328. 破坏回文串](https://leetcode.cn/problems/break-a-palindrome/)
+- [ ] [2358. 分组的最大数量](https://leetcode.cn/problems/maximum-number-of-groups-entering-a-competition/)
+- [ ] [2139. 得到目标值的最少行动次数](https://leetcode.cn/problems/minimum-moves-to-reach-target-score/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### 字符串
 
 - [x] [49. 字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
+- [ ] [1347. 制造字母异位词的最小步骤数](https://leetcode.cn/problems/minimum-number-of-steps-to-make-two-strings-anagram/)
+- [ ] 
 - [x] [剑指 Offer II 014. 字符串中的变位词](https://leetcode.cn/problems/MPnaiL/)
 - [x] [面试题 10.02. 变位词组](https://leetcode.cn/problems/group-anagrams-lcci/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
@@ -770,14 +962,26 @@ n x n 矩阵旋转总结：
 - [x] [686. 重复叠加字符串匹配](https://leetcode.cn/problems/repeated-string-match/)
 - [x] [537. 复数乘法](https://leetcode.cn/problems/complex-number-multiplication/)
 - [ ] [640. 求解方程](https://leetcode.cn/problems/solve-the-equation/)
+- [ ] [1419. 数青蛙](https://leetcode.cn/problems/minimum-number-of-frogs-croaking/)
+- [ ] [1138. 字母板上的路径](https://leetcode.cn/problems/alphabet-board-path/)
 - [ ] 
 
 ##### 模拟
 
 - [ ] [1560. 圆形赛道上经过次数最多的扇区](https://leetcode.cn/problems/most-visited-sector-in-a-circular-track/)
+- [ ] [985. 查询后的偶数和](https://leetcode.cn/problems/sum-of-even-numbers-after-queries/)
+- [ ] [289. 生命游戏](https://leetcode.cn/problems/game-of-life/)
+- [ ] [957. N 天后的牢房](https://leetcode.cn/problems/prison-cells-after-n-days/)
+- [ ] [1041. 困于环中的机器人](https://leetcode.cn/problems/robot-bounded-in-circle/)
 - [ ] 
 
 ##### 枚举
+
+- [ ] [2232. 向表达式添加括号后的最小结果](https://leetcode.cn/problems/minimize-result-by-adding-parentheses-to-expression/)
+- [ ] [1291. 顺次数](https://leetcode.cn/problems/sequential-digits/)
+- [ ] 
+
+##### 计数
 
 - [ ] 
 
@@ -810,6 +1014,8 @@ n x n 矩阵旋转总结：
 - [x] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 - [ ] [1996. 游戏中弱角色的数量](https://leetcode.cn/problems/the-number-of-weak-characters-in-the-game/)
 - [ ] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
+- [ ] [826. 安排工作以达到最大收益](https://leetcode.cn/problems/most-profit-assigning-work/)
+- [x] [1451. 重新排列句子中的单词](https://leetcode.cn/problems/rearrange-words-in-a-sentence/)
 - [ ] 
 
 ##### 查找
@@ -822,6 +1028,9 @@ n x n 矩阵旋转总结：
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list)
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [ ] [241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses)
+- [ ] [932. 漂亮数组](https://leetcode.cn/problems/beautiful-array/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
@@ -842,15 +1051,17 @@ n x n 矩阵旋转总结：
 - [ ] 191.位1的个数
 - [ ] 231.2的幂
 - [ ] 172.阶乘后的零
+- [ ] [372. 超级次方](https://leetcode.cn/problems/super-pow/)
 - [ ] 793.阶乘函数后K个零
 - [ ] 268.丢失的数字
 - [ ] 292.Nim游戏
-- [x] 319.灯泡开关
+- [x] [319. 灯泡开关](https://leetcode.cn/problems/bulb-switcher/)
 - [ ] 877.石子游戏
 - [x] 295.数据流的中位数
 - [ ] 372.超级次方
 - [ ] 382.链表随机节点
 - [ ] 398.随机数索引
+- [ ] [400. 第 N 位数字](https://leetcode.cn/problems/nth-digit/)
 - [ ] 391.完美矩形
 - [x] 509.斐波那契数
 - [ ] 645.错误的集合
@@ -877,6 +1088,25 @@ n x n 矩阵旋转总结：
 - [ ] [面试题 16.05. 阶乘尾数](https://leetcode.cn/problems/factorial-zeros-lcci/)
   - [x] 不会
 
+- [ ] [1140. 石子游戏 II](https://leetcode.cn/problems/stone-game-ii/)
+
+- [ ] [1513. 仅含 1 的子串数](https://leetcode.cn/problems/number-of-substrings-with-only-1s/)
+
+- [ ] [1227. 飞机座位分配概率](https://leetcode.cn/problems/airplane-seat-assignment-probability/)
+
+- [x] [1753. 移除石子的最大得分](https://leetcode.cn/problems/maximum-score-from-removing-stones/)
+
+- [ ] [1529. 最少的后缀翻转次数](https://leetcode.cn/problems/minimum-suffix-flips/)
+  - [ ] Mark
+
+- [ ] [1344. 时钟指针的夹角](https://leetcode.cn/problems/angle-between-hands-of-a-clock/)
+  - [ ] Mark
+
+- [ ] 
+
+##### 博弈
+
+- [ ] [464. 我能赢吗](https://leetcode.cn/problems/can-i-win/)
 - [ ] 
 
 ##### 位运算
@@ -889,6 +1119,10 @@ n x n 矩阵旋转总结：
 - [ ] [371. 两整数之和](https://leetcode.cn/problems/sum-of-two-integers/)
 - [ ] [1442. 形成两个异或相等数组的三元组数目](https://leetcode.cn/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/)
   - [x] 纯暴力
+
+- [ ] [201. 数字范围按位与](https://leetcode.cn/problems/bitwise-and-of-numbers-range/)
+
+- [ ] [1318. 或运算的最小翻转次数](https://leetcode.cn/problems/minimum-flips-to-make-a-or-b-equal-to-c/)
 
 - [ ] 
 
@@ -904,6 +1138,7 @@ n x n 矩阵旋转总结：
 - [x] [1893. 检查是否区域内所有整数都被覆盖](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/)
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/)
+- [ ] [1353. 最多可以参加的会议数目](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/)
 - [ ] 
 
 ##### 进制转换
@@ -925,11 +1160,14 @@ n x n 矩阵旋转总结：
 - [ ] [211. 添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/design-add-and-search-words-data-structure/)
 - [ ] [677. 键值映射](https://leetcode.cn/problems/map-sum-pairs/)
 - [ ] [676. 实现一个魔法字典](https://leetcode.cn/problems/implement-magic-dictionary/)
+- [ ] [1233. 删除子文件夹](https://leetcode.cn/problems/remove-sub-folders-from-the-filesystem/)
 - [ ] 
 
 ##### 树状数组/线段树
 
 - [ ] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+- [ ]  [1409. 查询带键的排列](https://leetcode.cn/problems/queries-on-a-permutation-with-key/)
+- [ ]  [2080. 区间内查询数字的频率](https://leetcode.cn/problems/range-frequency-queries/)
 - [ ]  
 
 ##### 多线程
@@ -938,6 +1176,7 @@ n x n 矩阵旋转总结：
 - [ ] [1195. 交替打印字符串](https://leetcode.cn/problems/fizz-buzz-multithreaded/)
 - [ ] [1116. 打印零与奇偶数](https://leetcode.cn/problems/print-zero-even-odd/)
 - [ ] [1117. H2O 生成](https://leetcode.cn/problems/building-h2o/)
+- [ ] [1226. 哲学家进餐](https://leetcode.cn/problems/the-dining-philosophers/)
 - [ ] 
 
 
@@ -959,7 +1198,7 @@ n x n 矩阵旋转总结：
 
 
 
-
+##### 很多题可以做但是没必要	
 
 - 波峰波谷问题摆动序列
 - 图
@@ -967,3 +1206,5 @@ n x n 矩阵旋转总结：
 - 接雨水
 - 子序列问题
 - 排列组合问题
+- 每次可以选择数+1，最后加到所有值相等的那一道数组题目
+- 
