@@ -4,7 +4,7 @@
 
 ### 第一章、基础数据结构
 
-##### [二分搜索速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164909502477795329)
+##### 🥑[二分搜索速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164909502477795329)
 
 ```java
 凡是求最大，最小，最大最小，最小最大的题，一般首先想到的应该是用二分的方法，如果不行再用别的方.
@@ -35,6 +35,11 @@
 - [ ] [754. 到达终点数字](https://leetcode.cn/problems/reach-a-number/)
 - [ ] [2226. 每个小孩最多能分到多少糖果](https://leetcode.cn/problems/maximum-candies-allocated-to-k-children/)
   - [ ] Mark
+
+- [ ] [1760. 袋子里最少数目的球](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/)
+  - [ ] 同2226糖果
+  - [ ] 同1552
+  - [ ] 看笔记
 
 - [ ] [1283. 使结果不超过阈值的最小除数](https://leetcode.cn/problems/find-the-smallest-divisor-given-a-threshold/)
 - [ ] [1574. 删除最短的子数组使剩余数组有序](https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted/)
@@ -169,7 +174,7 @@
 - [ ] [817. 链表组件](https://leetcode.cn/problems/linked-list-components/)
 - [ ] 
 
-##### [前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
+##### 🥑[前缀和技巧速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165052638772494337)
 
 ```
 区间，子数组【最难的是算坐标】
@@ -370,7 +375,7 @@ n x n 矩阵旋转总结：
 - [ ] [1856. 子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product/)
 - [x] [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/)
 
-##### 单调队列
+##### 🥑单调队列
 
 - [x] [1438. 绝对差不超过限制的最长连续子数组](https://leetcode.cn/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 - [ ] [220. 存在重复元素 III](https://leetcode.cn/problems/contains-duplicate-iii/)
@@ -419,6 +424,7 @@ n x n 矩阵旋转总结：
 
 - [ ] [1726. 同积元组](https://leetcode.cn/problems/tuple-with-same-product/)
 - [ ] [1679. K 和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/)
+- [ ] [2260. 必须拿起的最小连续卡牌数](https://leetcode.cn/problems/minimum-consecutive-cards-to-pick-up/)
 - [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
@@ -570,7 +576,7 @@ n x n 矩阵旋转总结：
 - [ ] [1008. 前序遍历构造二叉搜索树](https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/)
 - [ ] 
 
-##### [图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
+##### 🥑[图论算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165117958933610496)
 
 - [x] [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target)
 - [x] [130.被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)
@@ -646,7 +652,7 @@ n x n 矩阵旋转总结：
 
 ### 第三章、暴力搜索算法
 
-##### [回溯算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165135739779448832)
+##### 🥑[回溯算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165135739779448832)
 
 - [ ] [36. 有效的数独](https://leetcode.cn/problems/valid-sudoku/)
 - [ ] [37. 解数独](https://leetcode.cn/problems/sudoku-solver/)
@@ -754,7 +760,7 @@ n x n 矩阵旋转总结：
 
 - [ ] 
 
-### 第四章、动态规划算法
+### 🥑第四章、动态规划算法
 
 ##### [一维动态规划速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165170016067944448)
 
@@ -1022,7 +1028,7 @@ n x n 矩阵旋转总结：
 
 - [ ] 二分查找-前面有
 
-##### 分治
+##### 🥑分治
 
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list)
