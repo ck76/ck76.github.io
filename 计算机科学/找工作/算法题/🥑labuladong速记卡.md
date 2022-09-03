@@ -150,6 +150,9 @@
 - [ ] [1750. 删除字符串两端相同字符后的最短长度](https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/)
   - [ ] Mark
 
+- [ ] [1813. 句子相似性 III](https://leetcode.cn/problems/sentence-similarity-iii/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### [链表双指针速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165022824317485057)
@@ -278,7 +281,9 @@ presum[i]=arr[i]+presum[i-1]
 - [x] [2274. 不含特殊楼层的最大连续楼层数](https://leetcode.cn/problems/maximum-consecutive-floors-without-special-floors/)
   - [ ] Mark
 
-- [ ] 
+- [ ] [915. 分割数组](https://leetcode.cn/problems/partition-array-into-disjoint-intervals/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### 字符串
@@ -329,6 +334,7 @@ n x n 矩阵旋转总结：
 - [ ] [566. 重塑矩阵](https://leetcode.cn/problems/reshape-the-matrix/)
 - [ ] [1424. 对角线遍历 II](https://leetcode.cn/problems/diagonal-traverse-ii/)
 - [ ] [1222. 可以攻击国王的皇后](https://leetcode.cn/problems/queens-that-can-attack-the-king/)
+- [ ] [2257. 统计网格图中没有被保卫的格子数](https://leetcode.cn/problems/count-unguarded-cells-in-the-grid/)
 - [ ] 
 
 ##### [队列/栈算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165065740855443458)
@@ -457,6 +463,9 @@ n x n 矩阵旋转总结：
   - [ ] Mark
 
 - [ ] [2225. 找出输掉零场或一场比赛的玩家](https://leetcode.cn/problems/find-players-with-zero-or-one-losses/)
+- [ ] [1814. 统计一个数组中好对子的数目](https://leetcode.cn/problems/count-nice-pairs-in-an-array/)
+  - [ ] Mark-其实是数学题
+
 - [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
@@ -506,6 +515,8 @@ n x n 矩阵旋转总结：
 - [ ] [2233. K 次增加后的最大乘积](https://leetcode.cn/problems/maximum-product-after-k-increments/)
 
 - [ ] [1834. 单线程 CPU](https://leetcode.cn/problems/single-threaded-cpu/)
+
+- [ ] [1887. 使数组元素相等的减少操作次数](https://leetcode.cn/problems/reduction-operations-to-make-the-array-elements-equal/)
 
 - [ ] 
 
@@ -640,6 +651,7 @@ n x n 矩阵旋转总结：
 - [ ] [剑指 Offer II 111. 计算除法](https://leetcode.cn/problems/vlzXQL)
 - [ ] [1557. 可以到达所有点的最少点数目](https://leetcode.cn/problems/minimum-number-of-vertices-to-reach-all-nodes/)
 - [ ] [1042. 不邻接植花](https://leetcode.cn/problems/flower-planting-with-no-adjacent/)
+- [ ] [2115. 从给定原材料中找到所有可以做出的菜](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/)
 - [ ] 
 
 ##### 并查集
@@ -771,7 +783,9 @@ n x n 矩阵旋转总结：
 - [ ] [1391. 检查网格中是否存在有效路径](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/)
 - [ ] [1291. 顺次数](https://leetcode.cn/problems/sequential-digits/)
 - [ ] [2002. 两个回文子序列长度的最大乘积](https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/)
-- [ ] 
+- [ ] [2115. 从给定原材料中找到所有可以做出的菜](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### [BFS 算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165166763771068417)
@@ -813,6 +827,9 @@ n x n 矩阵旋转总结：
 - [ ] 354.俄罗斯套娃信封问题
 - [x] 53.最大子序和
 - [x] [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+- [ ] [1626. 无矛盾的最佳球队](https://leetcode.cn/problems/best-team-with-no-conflicts/)
+  - [ ] 同300题
+
 - [ ] [1027. 最长等差数列](https://leetcode.cn/problems/longest-arithmetic-subsequence/)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
   - [ ] 
@@ -1003,11 +1020,18 @@ n x n 矩阵旋转总结：
 - [ ] [1053. 交换一次的先前排列](https://leetcode.cn/problems/previous-permutation-with-one-swap/)
   - [ ] Mark
 
+- [ ] [1546. 和为目标值且不重叠的非空子数组的最大数目](https://leetcode.cn/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/)
+  - [ ] Mark-难-
+
+- [ ] [2294. 划分数组使最大差为 K](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k/)
+- [ ] [2279. 装满石头的背包的最大数量](https://leetcode.cn/problems/maximum-bags-with-full-capacity-of-rocks/)
 - [ ] 
 
 ##### 递归
 
 - [ ] 汉诺塔
+- [ ] [991. 坏了的计算器](https://leetcode.cn/problems/broken-calculator/)
+  - [ ] Mark
 - [ ] 
 
 ##### 字符串
@@ -1182,6 +1206,10 @@ n x n 矩阵旋转总结：
 - [ ] [464. 我能赢吗](https://leetcode.cn/problems/can-i-win/)
 - [ ] 
 
+##### 逆向思维
+
+- [ ] 
+
 ##### 位运算
 
 - [ ] [面试题 17.01. 不用加号的加法](https://leetcode.cn/problems/add-without-plus-lcci/)
@@ -1199,19 +1227,22 @@ n x n 矩阵旋转总结：
 
 - [ ] 
 
-##### [区间算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165269406745001984)
+##### 🥑[区间算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165269406745001984)
 
 - [x] 56.合并区间
 - [x] [57. 插入区间](https://leetcode.cn/problems/insert-interval/)
 - [x] 986.区间列表的交集
 - [x] 1288.删除被覆盖区间
-- [x] 435.无重叠区间
+- [x] [435. 无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/)
 - [x] 452.用最少数量的箭引爆气球
 - [ ] 1024.视频拼接
 - [x] [1893. 检查是否区域内所有整数都被覆盖](https://leetcode.cn/problems/check-if-all-the-integers-in-a-range-are-covered/)
 - [ ] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/)
 - [ ] [1353. 最多可以参加的会议数目](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/)
+- [ ] [1546. 和为目标值且不重叠的非空子数组的最大数目](https://leetcode.cn/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/)
+  - [ ] 求最多有多少不重叠区间
+
 - [ ] 
 
 ##### 进制转换
