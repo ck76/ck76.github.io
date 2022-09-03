@@ -262,7 +262,16 @@ add(int index, E e)    // 在index位置插一个元素e --- O(n)
 - clear()
 - Integer[] ans2 = list.toArray(new Integer[list.size()]);
 - List.sort();
-- 
+
+- containsAll() 方法用于检测 arraylist 是否包含指定集合中的所有元素。。
+
+  containsAll() 方法的语法为：
+
+  ```
+  arraylist.containsAll(Collection c);
+  ```
+
+
 
 ### 集合工具 Collections
 
@@ -653,7 +662,7 @@ last()    // 返回集合里的最大值（若给了比较器从大到小则是�
 
 ## TreeSet
 
-
+- 
 
 
 
@@ -720,7 +729,7 @@ substring(int beginIndex);    // 返回字符片段[beginIndex, end_of_String) �
 ```java
 indexOf(String str)    // 返回str第一个出现的位置(int)，没找到则返回-1。 --- O(m * n) m为原串长度， n为str长度
 // (假如要找一个字符char c，str可以表示成String.valueOf(c),然后作为参数传进去.
-
+【找不到会返回【-1】】
 s.indexOf(String str, int fromIndex);    // 同上，但从fromIndex开始找 --- O(m * n)
 ```
 
@@ -980,6 +989,36 @@ class Solution {
 }
 ```
 
+- [1498. 满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
+
+```java
+import java.math.BigInteger;
+class Solution {
+        public int numSubseq(int[] nums, int target) {
+            // 先排序
+            Arrays.sort(nums);
+            // 确定范围，需要使用二分搜索加速
+            BigInteger res = new BigInteger("0");
+            for (int i = 0; i < nums.length; i++) {
+                int left = i;
+                int right = nums.length;
+                while (right - left > 1) {
+                    int mid = (left + right) / 2;
+                    if (nums[i] + nums[mid] <= target) {
+                        left = mid;
+                    } else {
+                        right = mid;
+                    }
+                }
+                if (nums[i] + nums[left] <= target) {
+                    res = res.add(new BigInteger("2").pow(left - i));
+                }
+            }
+            return res.mod(new BigInteger("1000000007")).intValue();
+        }
+    }
+```
+
 
 
 ## 比较器
@@ -1151,14 +1190,39 @@ class Solution {
 ```
 
 - 排列公式
+  - **2的排列公式：n*(n-1)**
+
 
 ![img](https://bkimg.cdn.bcebos.com/formula/ac0926e610dce08b12a0c0c42b835cb0.svg)
 
 - 组合公式
+  - **2的组合公式：n*(n-1)/2;**
+
 
 ![img](https://bkimg.cdn.bcebos.com/formula/085254eb0c739dcdd352ba204a2db729.svg)
 
 
+
+- 求子集个数-适用于子数组-子序列【2的n次方】
+- [1498. 满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
+
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h5tgzo3aztj20il065t8q.jpg" alt="img" style="zoom:50%;" />
+
+```java
+假设一个集合包含n个元素，要求计算该集合的子集个数。
+该集合的所有子集，也叫该集合的幂集，比如集合{1,2,3}的所有子集为 空集，{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}数一数，一共8个，由此推测为2的三次方，即2的三次幂。那么这个结论是否正确呢？
+
+【方法1：】
+一共集合有n个元素，它的子集的个数就是对这n个元素做组合，一共有n个位置可以组合，每个位置上该元素可以出现也可以不出现，所以最后总的个数为2的n次方。
+
+【方法2：】
+具有n个元素的集合的子集其实就是空集，含有一个元素的集合，含有两个元素的集合...含有n个元素集合，这集合的和就是，如图1所示。
+根据多项式的公式和定理知道，上面式子之和为2的n次方。
+
+  ————————————————
+版权声明：本文为CSDN博主「Simple-Soft」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zhanghaiyang9999/article/details/40475389
+```
 
 
 
