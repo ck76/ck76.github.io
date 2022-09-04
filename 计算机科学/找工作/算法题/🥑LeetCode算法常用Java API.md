@@ -137,7 +137,11 @@ Arrays.sort(a, Collections.reverseOrder()); //降序
 
 - Arrays.equals(target,arr); //判断两个数组元素是不是都相等
 
+
+
 - original = **array.clone**();
+
+
 
 - System.arraycopy()
 
@@ -166,6 +170,9 @@ Arrays.copyOfRange(dataType[] srcArray,int startIndex,int endIndex)
 ```
 
 - Fill()
+
+
+
 - 求和
 
 ```java
@@ -199,6 +206,12 @@ static int [] intArr = new int[]{30,96,23,69,85,62,12,99,11};
         for (int i = 0; i < arr.length; i++) {
             nums[i] = arr[i];
         }
+```
+
+#### 转Integer[]
+
+```java
+Integer[] ARR = Arrays.stream(arr).boxed().toArray(Integer[]::new);
 ```
 
 
@@ -1019,7 +1032,35 @@ class Solution {
     }
 ```
 
+### BigDecimal
 
+- [2288. 价格减免](https://leetcode.cn/problems/apply-discount-to-prices/)
+
+```java
+import java.math.*;
+class Solution {
+    // 考察api使用啊，
+    public String discountPrices(String sentence, int discount) {
+        String[] s = sentence.split(" ");
+        for (int i = 0; i < s.length; i++) {
+            if (s[i].startsWith("$")) {
+                if (s[i].length() == 1) continue;
+                try {
+                    double v = Double.parseDouble(s[i].substring(1));
+                    v *= ((100 - discount));
+                    BigDecimal divide = BigDecimal.valueOf(v).divide(BigDecimal.valueOf(100), 3, RoundingMode.HALF_DOWN);
+                    s[i] = "$" + divide.toString();
+
+                } catch (Exception e) {
+                    continue;
+                }
+
+            }
+        }
+        return String.join(" ", s);
+    }
+}
+```
 
 ## 比较器
 
