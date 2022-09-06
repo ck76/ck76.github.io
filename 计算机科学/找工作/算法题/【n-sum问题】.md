@@ -14,7 +14,7 @@
 
 我们可以先对 `nums` 排序，然后利用前文「[双指针技巧汇总](http://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484505&idx=1&sn=0e9517f7c4021df0e6146c6b2b0c4aba&chksm=9bd7fa51aca07347009c591c403b3228f41617806429e738165bd58d60220bf8f15f92ff8a2e&scene=21#wechat_redirect)」写过的左右双指针技巧，从两端相向而行就行了：
 
-```
+```java
 vector<int> twoSum(vector<int>& nums, int target) {
     // 先对数组排序
     sort(nums.begin(), nums.end());
@@ -51,7 +51,7 @@ vector<vector<int>> twoSumTarget(vector<int>& nums, int target);
 
 首先，基本思路肯定还是排序加双指针：
 
-```
+```java
 vector<vector<int>> twoSumTarget(vector<int>& nums, int target {
     // 先对数组排序
     sort(nums.begin(), nums.end());
@@ -79,7 +79,7 @@ vector<vector<int>> twoSumTarget(vector<int>& nums, int target {
 
 所以，可以对双指针的 while 循环做出如下修改：
 
-```
+```java
 while (lo < hi) {
     int sum = nums[lo] + nums[hi];
     // 记录索引 lo 和 hi 最初对应的值
@@ -97,7 +97,7 @@ while (lo < hi) {
 
 这样就可以保证一个答案只被添加一次，重复的结果都会被跳过，可以得到正确的答案。不过，受这个思路的启发，其实前两个 if 分支也是可以做一点效率优化，跳过相同的元素：
 
-```
+```java
 vector<vector<int>> twoSumTarget(vector<int>& nums, int target) {
     // nums 数组必须有序
     sort(nums.begin(), nums.end());
@@ -155,7 +155,7 @@ vector<vector<int>> threeSumTarget(vector<int>& nums, int target) {
 
 可以直接写代码了，需要把 `twoSum` 函数稍作修改即可复用：
 
-```
+```java
 /* 从 nums[start] 开始，计算有序数组
  * nums 中所有和为 target 的二元组 */
 vector<vector<int>> twoSumTarget(
@@ -212,7 +212,7 @@ vector<vector<int>> fourSum(vector<int>& nums, int target);
 
 都到这份上了，`4Sum` 完全就可以用相同的思路：穷举第一个数字，然后调用 `3Sum` 函数计算剩下三个数，最后组合出和为 `target` 的四元组。
 
-```
+```java
 vector<vector<int>> fourSum(vector<int>& nums, int target) {
     // 数组需要排序
     sort(nums.begin(), nums.end());
@@ -255,7 +255,7 @@ vector<vector<int>>
 
 那么，如果我让你求 `100Sum` 问题，怎么办呢？其实我们可以观察上面这些解法，统一出一个 `nSum` 函数：
 
-```
+```java
 /* 注意：调用这个函数之前一定要先给 nums 排序 */
 vector<vector<int>> nSumTarget(
     vector<int>& nums, int n, int start, int target) {

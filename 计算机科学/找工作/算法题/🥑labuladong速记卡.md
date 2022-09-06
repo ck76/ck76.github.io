@@ -50,6 +50,9 @@
 
 - [ ] [1870. 准时到达的列车最小时速](https://leetcode.cn/problems/minimum-speed-to-arrive-on-time/)
 - [ ] [2070. 每一个查询的最大美丽值](https://leetcode.cn/problems/most-beautiful-item-for-each-query/)
+- [ ] [2064. 分配给商店的最多商品的最小值](https://leetcode.cn/problems/minimized-maximum-of-products-distributed-to-any-store/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### [滑动窗口算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2164991053991411713)
@@ -131,6 +134,9 @@
   - [ ] 376变形
 
 - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii)  死在处理数组奇偶长度
+- [ ] [1968. 构造元素不等于两相邻元素平均值的数组](https://leetcode.cn/problems/array-with-elements-not-equal-to-average-of-neighbors/)
+  - [ ] 同324
+
 - [ ] [925. 长按键入](https://leetcode.cn/problems/long-pressed-name/)
 - [x] [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/)
 - [ ] [面试题 16.06. 最小差](https://leetcode.cn/problems/smallest-difference-lcci/)
@@ -244,6 +250,7 @@ presum[i]=arr[i]+presum[i-1]
   - [ ] Mark-复杂
 
 - [x] [1525. 字符串的好分割数目](https://leetcode.cn/problems/number-of-good-ways-to-split-a-string/)
+- [ ] [1573. 分割字符串的方案数](https://leetcode.cn/problems/number-of-ways-to-split-a-string/)
 - [ ] 
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
@@ -305,6 +312,12 @@ presum[i]=arr[i]+presum[i-1]
   - [ ] Mark
 
 - [ ] [2161. 根据给定数字划分数组](https://leetcode.cn/problems/partition-array-according-to-given-pivot/)
+- [x] [1508. 子数组和排序后的区间和](https://leetcode.cn/problems/range-sum-of-sorted-subarray-sums/)
+- [ ] [2221. 数组的三角和](https://leetcode.cn/problems/find-triangular-sum-of-an-array/)
+- [ ] [1764. 通过连接另一个数组的子数组得到一个数组](https://leetcode.cn/problems/form-array-by-concatenating-subarrays-of-another-array/)
+- [ ] [2348. 全 0 子数组的数目](https://leetcode.cn/problems/number-of-zero-filled-subarrays/)
+  - [ ] 数学
+
 - [ ] 
 
 ##### 字符串
@@ -344,6 +357,7 @@ presum[i]=arr[i]+presum[i-1]
 - [ ] [1910. 删除一个字符串中所有出现的给定子字符串](https://leetcode.cn/problems/remove-all-occurrences-of-a-substring/)
 - [ ] [1540. K 次操作转变字符串](https://leetcode.cn/problems/can-convert-string-in-k-moves/)
 - [ ] [2288. 价格减免](https://leetcode.cn/problems/apply-discount-to-prices/)
+- [ ] [816. 模糊坐标](https://leetcode.cn/problems/ambiguous-coordinates/)
 - [ ] 
 
 ##### 矩阵
@@ -377,6 +391,9 @@ n x n 矩阵旋转总结：
 - [ ] [1222. 可以攻击国王的皇后](https://leetcode.cn/problems/queens-that-can-attack-the-king/)
 - [ ] [2257. 统计网格图中没有被保卫的格子数](https://leetcode.cn/problems/count-unguarded-cells-in-the-grid/)
 - [ ] [1292. 元素和小于等于阈值的正方形的最大边长](https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/)
+  - [ ] 不会
+
+- [ ] [1914. 循环轮转矩阵](https://leetcode.cn/problems/cyclically-rotating-a-grid/)
   - [ ] 不会
 
 - [ ] 
@@ -417,6 +434,8 @@ n x n 矩阵旋转总结：
 - [ ] [2216. 美化数组的最少删除数](https://leetcode.cn/problems/minimum-deletions-to-make-array-beautiful/)
 
 - [ ] [2211. 统计道路上的碰撞次数](https://leetcode.cn/problems/count-collisions-on-a-road/)
+
+- [ ] [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/)
 
 - [ ] 
 
@@ -515,6 +534,8 @@ n x n 矩阵旋转总结：
 - [ ] [1577. 数的平方等于两数乘积的方法数](https://leetcode.cn/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/)
   - [ ] Mark
 
+- [x] [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/)
+
 - [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
@@ -566,6 +587,8 @@ n x n 矩阵旋转总结：
 - [ ] [1834. 单线程 CPU](https://leetcode.cn/problems/single-threaded-cpu/)
 
 - [ ] [1887. 使数组元素相等的减少操作次数](https://leetcode.cn/problems/reduction-operations-to-make-the-array-elements-equal/)
+
+- [ ] [1865. 找出和为指定值的下标对](https://leetcode.cn/problems/finding-pairs-with-a-certain-sum/)
 
 - [ ] 
 
@@ -867,6 +890,8 @@ n x n 矩阵旋转总结：
 
 - [ ] [1311. 获取你好友已观看的视频](https://leetcode.cn/problems/get-watched-videos-by-your-friends/)
 
+- [ ] [2146. 价格范围内最高排名的 K 样物品](https://leetcode.cn/problems/k-highest-ranked-items-within-a-price-range/)
+
 - [ ] 
 
 ### 🥑第四章、动态规划算法
@@ -1112,6 +1137,13 @@ n x n 矩阵旋转总结：
 - [ ] [1911. 最大子序列交替和](https://leetcode.cn/problems/maximum-alternating-subsequence-sum/)
   - [ ] Mark
 
+- [ ] [1536. 排布二进制网格的最少交换次数](https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/)
+
+- [ ] [2086. 从房屋收集雨水需要的最少水桶数](https://leetcode.cn/problems/minimum-number-of-buckets-required-to-collect-rainwater-from-houses/)
+
+- [ ] [1558. 得到目标数组的最少函数调用次数](https://leetcode.cn/problems/minimum-numbers-of-function-calls-to-make-target-array/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### 递归
@@ -1132,6 +1164,7 @@ n x n 矩阵旋转总结：
 - [ ] [1041. 困于环中的机器人](https://leetcode.cn/problems/robot-bounded-in-circle/)
 - [ ] [2120. 执行所有后缀指令](https://leetcode.cn/problems/execution-of-all-suffix-instructions-staying-in-a-grid/)
 - [ ] [2079. 给植物浇水](https://leetcode.cn/problems/watering-plants/)
+- [ ] [777. 在LR字符串中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/)
 - [ ] 
 
 ##### 枚举
@@ -1157,6 +1190,8 @@ n x n 矩阵旋转总结：
 - [ ] [912. 排序数组](https://leetcode.cn/problems/sort-an-array/)
 - [ ] 计数排序
 - [ ] 桶排序
+  - [ ] [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii/)
+
 - [ ] [1122. 数组的相对排序](https://leetcode.cn/problems/relative-sort-array/)
 - [ ] [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/)
 - [x] [2164. 对奇偶下标分别排序](https://leetcode.cn/problems/sort-even-and-odd-indices-independently/)
@@ -1273,6 +1308,7 @@ n x n 矩阵旋转总结：
 ##### 脑筋急转弯
 
 - [x] [1503. 所有蚂蚁掉下来前的最后一刻](https://leetcode.cn/problems/last-moment-before-all-ants-fall-out-of-a-plank/)
+- [ ] [777. 在LR字符串中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/)
 - [ ] 
 
 ##### 博弈
@@ -1385,9 +1421,18 @@ n x n 矩阵旋转总结：
 - 波峰波谷问题摆动序列
   - [1911. 最大子序列交替和](https://leetcode.cn/problems/maximum-alternating-subsequence-sum/)
 - 图
-- dp
 - 接雨水
 - 子序列问题
 - 排列组合问题
+- 三数之和问题
+- 回溯算法多联系联系
 - 每次可以选择数+1，最后加到所有值相等的那一道数组题目
-- 【二分】【dp】【分治】【】
+  - [1558. 得到目标数组的最少函数调用次数](https://leetcode.cn/problems/minimum-numbers-of-function-calls-to-make-target-array/)
+- 【二分】
+- 【dp】
+- 【分治】【】
+
+
+
+
+

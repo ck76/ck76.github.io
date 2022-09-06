@@ -1245,7 +1245,9 @@ class Solution {
 
 
 - 求子集个数-适用于子数组-子序列【2的n次方】
-- [1498. 满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
+  - [1498. 满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/)
+  - [2348. 全 0 子数组的数目](https://leetcode.cn/problems/number-of-zero-filled-subarrays/)
+
 
 <img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h5tgzo3aztj20il065t8q.jpg" alt="img" style="zoom:50%;" />
 
