@@ -1431,7 +1431,7 @@ n x n 矩阵旋转总结：
 
 - 三数之和问题[双指针]
 - 回溯算法多练习练习
-  - 排列组合问题
+  - 排列组合问题【done✅】
 
 - 每次可以选择数+1，最后加到所有值相等的那一道数组题目【贪心+数学】
   - [1558. 得到目标数组的最少函数调用次数](https://leetcode.cn/problems/minimum-numbers-of-function-calls-to-make-target-array/)
