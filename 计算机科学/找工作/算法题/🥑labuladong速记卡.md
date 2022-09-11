@@ -781,7 +781,10 @@ n x n 矩阵旋转总结：
 - [x] [77.组合](https://leetcode-cn.com/problems/combinations/)
 - [x] [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
 - [x] [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
-- [ ] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv)
+- [x] [216. 组合总和 III](https://leetcode.cn/problems/combination-sum-iii/)
+- [x] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv)
+  - [ ] 回溯超时
+
 - [ ] [784. 字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation/)
 - [ ] [1286. 字母组合迭代器](https://leetcode.cn/problems/iterator-for-combination/)
   - [ ] 也是排列组合问题
@@ -1056,6 +1059,7 @@ n x n 矩阵旋转总结：
 
 - [ ] 518.零钱兑换II
 - [ ] [494.目标和](https://leetcode-cn.com/problems/target-sum/)
+- [ ] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/)
 - [x] 416.分割等和子集
 - [ ] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
 - [ ] [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/)
