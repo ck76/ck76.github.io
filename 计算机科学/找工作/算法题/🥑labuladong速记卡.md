@@ -117,6 +117,8 @@
 - [x] [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
 - [ ] 283.移动零
 - [x] [15.三数之和](https://leetcode-cn.com/problems/3sum/)
+  - [ ] Mark
+
 - [ ] [611. 有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number/)
 - [ ] 18.四数之和
 - [ ] 870.优势洗牌
@@ -220,6 +222,8 @@ presum[i]=arr[i]+presum[i-1]
 - [ ] [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
 - [ ] [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
 - [ ] [304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/)
+  - [ ] Mark
+
 - [ ] 560.和为K的子数组
 - [ ] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
 - [x] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
@@ -628,6 +632,8 @@ n x n 矩阵旋转总结：
 - [ ] 
 - [x] 222.完全二叉树的节点个数
 - [x] [297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
+  - [ ] Mark
+
 - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 - [ ] [1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/)
 - [ ] [865. 具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/)
@@ -752,6 +758,11 @@ n x n 矩阵旋转总结：
 
 - [ ] [1267. 统计参与通信的服务器](https://leetcode.cn/problems/count-servers-that-communicate/)
 
+- [ ] [剑指 Offer II 117. 相似的字符串](https://leetcode.cn/problems/H6lPxb/)
+
+- [ ] [剑指 Offer II 119. 最长连续序列](https://leetcode.cn/problems/WhsWhI/)
+  - [ ] 哈希+并查集-Mark
+
 - [ ] 
 
 ##### 二分图
@@ -873,7 +884,7 @@ n x n 矩阵旋转总结：
 
 - [x] [111.二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 - [x] [102.二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
-- [x] 752.打开转盘锁
+- [x] [752. 打开转盘锁](https://leetcode.cn/problems/open-the-lock/)
 - [ ] 773.滑动谜题
 - [x] [LCP 07. 传递信息](https://leetcode.cn/problems/chuan-di-xin-xi/)
 - [x] [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci/)
@@ -896,6 +907,9 @@ n x n 矩阵旋转总结：
 - [ ] [1311. 获取你好友已观看的视频](https://leetcode.cn/problems/get-watched-videos-by-your-friends/)
 
 - [ ] [2146. 价格范围内最高排名的 K 样物品](https://leetcode.cn/problems/k-highest-ranked-items-within-a-price-range/)
+
+- [ ] [127. 单词接龙](https://leetcode.cn/problems/word-ladder/)
+  - [ ] Mark
 
 - [ ] 
 
@@ -1378,6 +1392,7 @@ n x n 矩阵旋转总结：
 ##### Trie
 
 - [ ] [208. 实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree)
+- [ ] [剑指 Offer II 062. 实现前缀树](https://leetcode.cn/problems/QC3q1f/)
 - [ ] [820. 单词的压缩编码](https://leetcode.cn/problems/short-encoding-of-words/)
 - [ ] [剑指 Offer II 065. 最短的单词编码](https://leetcode.cn/problems/iSwD2y/)
 - [ ] [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci/)

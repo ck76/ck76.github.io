@@ -138,7 +138,7 @@ vector<vector<int>> threeSum(vector<int>& nums);
 
 这样，我们再泛化一下题目，不要光和为 0 的三元组了，计算和为 `target` 的三元组吧，同上面的 `twoSum` 一样，也不允许重复的结果：
 
-```
+```java
 vector<vector<int>> threeSum(vector<int>& nums) {
     // 求和为 0 的三元组
     return threeSumTarget(nums, 0);
@@ -304,7 +304,7 @@ vector<vector<int>> nSumTarget(
 
 比如说现在我们写 LeetCode 上的 `4Sum` 问题：
 
-```
+```java
 vector<vector<int>> fourSum(vector<int>& nums, int target) {
     sort(nums.begin(), nums.end());
     // n 为 4，从 nums[0] 开始计算和为 target 的四元组
@@ -314,7 +314,7 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
 
 再比如 LeetCode 的 `3Sum` 问题，找 `target == 0` 的三元组：
 
-```
+```java
 vector<vector<int>> threeSum(vector<int>& nums) {
     sort(nums.begin(), nums.end());
     // n 为 3，从 nums[0] 开始计算和为 0 的三元组
