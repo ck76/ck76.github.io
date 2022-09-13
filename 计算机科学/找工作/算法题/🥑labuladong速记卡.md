@@ -215,18 +215,21 @@
 ```
 区间，子数组【最难的是算坐标】
 有两种坐标计算方法
-presum[i]=arr[i-1]+presum[i-1]
+presum[i]=arr[i-1]+presum[i-1]【这种正宗一点🥑】
 presum[i]=arr[i]+presum[i-1]
 ```
 
 - [ ] [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
-- [ ] [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
+- [x] [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
+- [ ] [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/)
 - [ ] [304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/)
   - [ ] Mark
 
 - [ ] 560.和为K的子数组
 - [ ] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
 - [x] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
+  - [ ] Mark-错了很多次
+
 - [ ] [剑指 Offer II 011. 0 和 1 个数相同的子数组](https://leetcode.cn/problems/A1NYOS/)
 - [ ] [1089. 复写零](https://leetcode.cn/problems/duplicate-zeros/)
 - [x] [1413. 逐步求和得到正数的最小值](https://leetcode.cn/problems/minimum-value-to-get-positive-step-by-step-sum/)
@@ -255,6 +258,9 @@ presum[i]=arr[i]+presum[i-1]
 
 - [x] [1525. 字符串的好分割数目](https://leetcode.cn/problems/number-of-good-ways-to-split-a-string/)
 - [ ] [1573. 分割字符串的方案数](https://leetcode.cn/problems/number-of-ways-to-split-a-string/)
+- [x] [面试题 17.05.  字母与数字](https://leetcode.cn/problems/find-longest-subarray-lcci/)
+  - [x] Mark，哈希表+前缀和？
+
 - [ ] 
 
 ##### [差分数组速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165062281192177665)
@@ -552,6 +558,7 @@ n x n 矩阵旋转总结：
 - [x] [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
 - [x] [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
 - [x] [295.数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
+- [ ] [面试题 17.20. 连续中值](https://leetcode.cn/problems/continuous-median-lcci/)
 - [ ] [912. 排序数组](https://leetcode.cn/problems/sort-an-array)
 - [x] [767. 重构字符串](https://leetcode.cn/problems/reorganize-string/)
 - [x] [面试题 17.09. 第 k 个数](https://leetcode.cn/problems/get-kth-magic-number-lcci/)
@@ -696,6 +703,8 @@ n x n 矩阵旋转总结：
 - [ ] [剑指 Offer II 055. 二叉搜索树迭代器](https://leetcode.cn/problems/kTOapQ/)
 - [x] [1305. 两棵二叉搜索树中的所有元素](https://leetcode.cn/problems/all-elements-in-two-binary-search-trees/)
 - [ ] [面试题 04.09. 二叉搜索树序列](https://leetcode.cn/problems/bst-sequences-lcci/)
+  - [ ] Mark
+
 - [ ] [1008. 前序遍历构造二叉搜索树](https://leetcode.cn/problems/construct-binary-search-tree-from-preorder-traversal/)
 - [ ] 
 
@@ -805,6 +814,9 @@ n x n 矩阵旋转总结：
 - [ ] 17.电话号码的字母组合
 - [ ] 37.解数独
 - [ ] 51.N皇后
+- [ ] [面试题 08.12. 八皇后](https://leetcode.cn/problems/eight-queens-lcci/)
+  - [ ] 
+
 - [ ] 698.划分为k个相等的子集
 - [ ] [491. 递增子序列](https://leetcode.cn/problems/increasing-subsequences/)
 - [x] [494.目标和](https://leetcode-cn.com/problems/target-sum)
@@ -845,6 +857,9 @@ n x n 矩阵旋转总结：
 
 - [ ] [1947. 最大兼容性评分和](https://leetcode.cn/problems/maximum-compatibility-score-sum/)
   - [ ] Mark
+
+- [ ] [面试题 08.14. 布尔运算](https://leetcode.cn/problems/boolean-evaluation-lcci/)
+  - [ ] Mark，左右分区间问题，我不会
 
 - [ ] 
 
@@ -924,9 +939,15 @@ n x n 矩阵旋转总结：
 
 - [ ] 45.跳跃游戏||
 - [x] 55.跳跃游戏
-- [ ] 354.俄罗斯套娃信封问题
+- [ ] 
+- [ ] 
 - [x] 53.最大子序和
 - [x] [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+- [ ] [面试题 08.13. 堆箱子](https://leetcode.cn/problems/pile-box-lcci/)
+- [ ] [354. 俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes/)
+- [ ] [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci/)
+  - [ ] 300.最长递增子序列 变种
+
 - [ ] [1626. 无矛盾的最佳球队](https://leetcode.cn/problems/best-team-with-no-conflicts/)
   - [ ] 同300题
 
@@ -934,9 +955,8 @@ n x n 矩阵旋转总结：
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
   - [ ] 
 
-- [ ] [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci/)
-  - [ ] 300.最长递增子序列 变种
-
+- [ ] - [ ] 
+  
 - [x] 322.零钱兑换
 - [x] 70.爬楼梯
 - [x] [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
@@ -975,9 +995,12 @@ n x n 矩阵旋转总结：
   - [ ] Mark
 
 - [ ] [799. 香槟塔](https://leetcode.cn/problems/champagne-tower/)
-  - [ ] 杨辉三角
+  - [ ] @杨辉三角
 
 - [ ] [2370. 最长理想子序列](https://leetcode.cn/problems/longest-ideal-subsequence/)
+  - [ ] Mark
+
+- [ ] [面试题 17.13. 恢复空格](https://leetcode.cn/problems/re-space-lcci/)
   - [ ] Mark
 
 - [ ] 
@@ -1034,7 +1057,7 @@ n x n 矩阵旋转总结：
 
 - [ ] 887.鸡蛋掉落
 
-- [ ] [面试题 08.02. 迷路的机器人](https://leetcode.cn/problems/robot-in-a-grid-lcci/)
+- [x] [面试题 08.02. 迷路的机器人](https://leetcode.cn/problems/robot-in-a-grid-lcci/)
 
 - [ ] [剑指 Offer II 020. 回文子字符串的个数](https://leetcode.cn/problems/a7VOhD/)
 
@@ -1091,6 +1114,10 @@ n x n 矩阵旋转总结：
 ##### 区间问题
 
 - https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E5%8C%BA%E9%97%B4-DP
+
+- [ ] [面试题 08.14. 布尔运算](https://leetcode.cn/problems/boolean-evaluation-lcci/)
+
+- [x] [面试题 08.02. 迷路的机器人](https://leetcode.cn/problems/robot-in-a-grid-lcci/)
 
 - [ ] 
 
@@ -1466,4 +1493,12 @@ n x n 矩阵旋转总结：
 
 
 
+
+### 算法复杂度表示方法
+
+#### 日语
+
+
+
+#### 英语
 

@@ -46,6 +46,8 @@ https://www.jianshu.com/p/81e5c3e88fc6
 list.toArray(new String[0]);
 
 Arrays.asList(entry.getKey(), entry.getValue())//不定长参数应该是
+  String[] strArray = new String[2];
+		List list = Arrays.asList(strArray);
   
 //二维数组转list
 Arrays
@@ -1004,6 +1006,16 @@ Hexadecimal eqivalent of 100 = 64
 
 
 
+### Character
+
+#### isDigit
+
+- ```java
+  Character.isDigit(array[i].charAt(0))
+  ```
+
+
+
 ### BigInteger
 
 - [372. 超级次方](https://leetcode.cn/problems/super-pow/)
@@ -1590,3 +1602,58 @@ private class UnionFind {
 
 
 
+
+
+## 位运算
+
+#### 求数的二进制1的个数
+
+```java
+//求数的二进制1的个数
+  int findOneCount(int num) {
+        int count = 0;
+        while (num != 0) {
+            num &= num - 1;
+            count++;
+        }
+        return count;
+    }
+```
+
+
+
+## 前缀和
+
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+
+        int sum= subarraySum(new int[]{1,2,1,4,5,-1,5},4);
+        System.out.println(sum);
+        return new int[]{};
+        
+    }
+
+    int subarraySum(int[] nums,int k) {
+        int n = nums.length;
+        // 构造前缀和
+        int[] sum = new int[n + 1];
+        sum[0] = 0; 
+        for (int i = 1; i <= n; i++)
+            sum[i] = sum[i-1] + nums[i-1];
+        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(sum));
+        int ans = 0;
+        // 穷举所有子数组
+        for (int i = 0; i < n; i++)
+            for (int j = i+1; j <= n; j++){
+                System.out.println("i:"+i+" j:"+j+" sum:"+(sum[j]-sum[i]));
+                // sum of nums[i。。j-1]
+                if (sum[j] - sum[i] == k){
+                    ans++;
+                }
+            }
+        return ans;
+    }
+}
+```
