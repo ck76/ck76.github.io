@@ -220,13 +220,19 @@ presum[i]=arr[i]+presum[i-1]
 ```
 
 - [ ] [187. 重复的DNA序列](https://leetcode-cn.com/problems/repeated-dna-sequences/)
+- [x] [724. 寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index/)
+- [x] [238. 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/)
 - [x] [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/)
-- [ ] [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/)
-- [ ] [304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/)
+- [x] [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/)
+- [x] [304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/)
   - [ ] Mark
 
-- [ ] 560.和为K的子数组
+- [x] [560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/)
+  - [ ] Mark
+
 - [ ] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
+  - [ ] 很多时候会超时，需要配合Map使用
+
 - [x] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
   - [ ] Mark-错了很多次
 
@@ -548,6 +554,9 @@ n x n 矩阵旋转总结：
 
 - [x] [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/)
 
+- [ ] [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### [二叉堆算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165079011264200705)
@@ -602,6 +611,8 @@ n x n 矩阵旋转总结：
 - [ ] [1887. 使数组元素相等的减少操作次数](https://leetcode.cn/problems/reduction-operations-to-make-the-array-elements-equal/)
 
 - [ ] [1865. 找出和为指定值的下标对](https://leetcode.cn/problems/finding-pairs-with-a-certain-sum/)
+
+- [x] [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/)
 
 - [ ] 
 
@@ -685,7 +696,9 @@ n x n 矩阵旋转总结：
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
 
 - [ ] [99. 恢复二叉搜索树](https://leetcode.cn/problems/recover-binary-search-tree)
-- [x] [449. 序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
+- [ ] [449. 序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
+- [ ] [297. 二叉树的序列化与反序列化](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/)
+- [ ] 
 - [x] [235. 二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [x] [501. 二叉搜索树中的众数](https://leetcode.cn/problems/find-mode-in-binary-search-tree/)
 - [x] [700.二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/)
@@ -725,6 +738,8 @@ n x n 矩阵旋转总结：
 - [ ] 
 - [ ] [997. 找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge/)
 - [ ] [684. 冗余连接](https://leetcode.cn/problems/redundant-connection)
+  - [ ] 
+
 - [ ] [1765. 地图中的最高点](https://leetcode.cn/problems/map-of-highest-peak)
 - [ ] [399. 除法求值](https://leetcode.cn/problems/evaluate-division/)
 - [ ] [802. 找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/)
@@ -744,6 +759,14 @@ n x n 矩阵旋转总结：
 - [ ] 
 
 ##### 🥑并查集
+
+```
+并查集主要有三个功能。
+
+寻找根节点，函数：find(int u)，也就是判断这个节点的祖先节点是哪个
+将两个节点接入到同一个集合，函数：join(int u, int v)，将两个节点连在同一个根节点上
+判断两个节点是否在同一个集合，函数：same(int u, int v)，就是判断两个节点是不是同一个根节点
+```
 
 - [x] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)
 - [x] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
@@ -817,7 +840,15 @@ n x n 矩阵旋转总结：
 - [ ] [面试题 08.12. 八皇后](https://leetcode.cn/problems/eight-queens-lcci/)
   - [ ] 
 
-- [ ] 698.划分为k个相等的子集
+- [ ] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
+  - [ ] Mark-🥑
+
+- [ ] [473. 火柴拼正方形](https://leetcode.cn/problems/matchsticks-to-square/)
+  - [ ] Mark-🥑-698
+
+- [ ] [2305. 公平分发饼干](https://leetcode.cn/problems/fair-distribution-of-cookies/)
+  - [ ] Mark-🥑-698
+
 - [ ] [491. 递增子序列](https://leetcode.cn/problems/increasing-subsequences/)
 - [x] [494.目标和](https://leetcode-cn.com/problems/target-sum)
 - [x] 22.括号生成
@@ -945,6 +976,9 @@ n x n 矩阵旋转总结：
 - [x] [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
 - [ ] [面试题 08.13. 堆箱子](https://leetcode.cn/problems/pile-box-lcci/)
 - [ ] [354. 俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes/)
+- [ ] [面试题 08.13. 堆箱子](https://leetcode.cn/problems/pile-box-lcci/)
+  - [ ] 同300题
+
 - [ ] [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci/)
   - [ ] 300.最长递增子序列 变种
 
@@ -956,7 +990,7 @@ n x n 矩阵旋转总结：
   - [ ] 
 
 - [ ] - [ ] 
-  
+
 - [x] 322.零钱兑换
 - [x] 70.爬楼梯
 - [x] [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
@@ -1083,6 +1117,9 @@ n x n 矩阵旋转总结：
 - [ ] [1911. 最大子序列交替和](https://leetcode.cn/problems/maximum-alternating-subsequence-sum/)
   - [ ] 股票？
 
+- [ ] [剑指 Offer II 107. 矩阵中的距离](https://leetcode.cn/problems/2bCMpM/)
+  - [ ] Mark
+
 - [ ] 
 
 ##### 三维
@@ -1147,7 +1184,7 @@ n x n 矩阵旋转总结：
 - [ ] [1578. 使绳子变成彩色的最短时间](https://leetcode.cn/problems/minimum-time-to-make-rope-colorful/)
 - [ ] [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/)
 - [ ] [1689. 十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/)
-- [ ] [670. 最大交换](https://leetcode.cn/problems/maximum-swap/)
+- [x] [670. 最大交换](https://leetcode.cn/problems/maximum-swap/)
 - [ ] [954. 二倍数对数组](https://leetcode.cn/problems/array-of-doubled-pairs/)
 - [ ] [1029. 两地调度](https://leetcode.cn/problems/two-city-scheduling/)
 - [ ] [2195. 向数组中追加 K 个整数](https://leetcode.cn/problems/append-k-integers-with-minimal-sum/)
@@ -1273,7 +1310,17 @@ n x n 矩阵旋转总结：
 - [ ] [932. 漂亮数组](https://leetcode.cn/problems/beautiful-array/)
   - [ ] Mark
 
-- [ ] 
+- [ ] 多路归并
+  - [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
+  - [313. 超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
+  - [373. 查找和最小的K对数字](https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/comments/)
+  - [632. 最小区间](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists/)
+  - [719. 找出第 k 小的距离对](https://leetcode-cn.com/problems/find-k-th-smallest-pair-distance/)
+  - [786. 第 K 个最小的素数分数](https://leetcode-cn.com/problems/k-th-smallest-prime-fraction/)
+  - [1439. 有序矩阵中的第 k 个最小数组和](https://leetcode-cn.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/)
+  - [1508. 子数组和排序后的区间和](https://leetcode-cn.com/problems/range-sum-of-sorted-subarray-sums/)
+  - [1675. 数组的最小偏移量](https://leetcode-cn.com/problems/minimize-deviation-in-array/)
+
 
 ##### [数学算法速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165238261638660098)
 

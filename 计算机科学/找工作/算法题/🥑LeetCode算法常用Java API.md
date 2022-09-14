@@ -164,7 +164,7 @@ int[] a = new int[5];
 int[] newA = Arrays.copyOf(a, 5);
 ```
 
-- 拷贝：Arrays.copyOfRange()
+- 拷贝：Arrays.copyOfRange()**【左闭右开区间】**
 - ！！！Java的数组是引用传递，必要的时候要复制
 
 ```java
@@ -172,6 +172,15 @@ Arrays.copyOfRange(dataType[] srcArray,int startIndex,int endIndex)
 ```
 
 - Fill()
+
+
+
+- binarySearch()
+
+```java
+```
+
+
 
 
 
@@ -209,6 +218,24 @@ static int [] intArr = new int[]{30,96,23,69,85,62,12,99,11};
             nums[i] = arr[i];
         }
 ```
+
+### 翻转
+
+```java
+【1】类似双指针
+  			int middle;
+        for (int i=0;i<array.length/2;i++){
+    
+            middle = array[i];
+            array[i] = array[array.length-i-1];
+            array[array.length-i-1] = middle;
+        }
+【2】Collections.reverse(Arrays.asList(a)); 
+```
+
+
+
+
 
 #### 转Integer[]
 
