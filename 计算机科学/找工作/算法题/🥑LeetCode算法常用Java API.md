@@ -71,6 +71,24 @@ Arrays
 
 
 
+#### List to int[]
+
+```
+int[] example1 = list.stream().mapToInt(i->i).toArray();
+// OR
+int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
+```
+
+下面的居然比上面的快，上面的只能用来炫技，还是老老实实用下面的方法吧！！！
+
+```
+List<Integer> list = new ArrayList<>();
+int[] ans = new int[list.size()];
+for (int i = 0; i < list.size(); i++) {
+    ans[i] = list.get(i);
+}
+```
+
 
 
 ## 数组
@@ -702,6 +720,66 @@ size()    // 返回Map中中键值对<K, V>的个数 --- O(1)
 删除map的key
 ```
 
+#### HashMap 遍历方法
+
+```java
+Map<Integer, Integer> map = new HashMap<>();
+// 方法一：迭代器 EntrySet
+Iterator<Map.Entry<Integer, Integer>> iterator = map.entrySet().iterator();
+while (iterator.hasNext()) {
+    //...
+}
+// 方法二：迭代器 KeySet
+Iterator<Integer> iterator = map.keySet().iterator();
+// 方法三：ForEach EntrySet
+for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    //...
+}
+// 方法四：ForEach KeySet
+for (Integer key : map.keySet()) {
+    //...
+}
+// 方法五：Lambda
+map.forEach((key, value) -> {
+    //...
+});
+// 方法六：Streams API 单线程
+map.entrySet().stream().forEach((entry) -> {
+    //...
+});
+// 方法七：Streams API 多线程
+map.entrySet().parallelStream().forEach((entry) -> {
+    //...
+});
+```
+
+**结论：**从性能方面考虑，应该尽量使用`lambda`或者是`entrySet`来遍历`Map`集合
+
+#### HashMap 排序
+
+**关于如何使用 Java 8 Stream sorted() 来排序，可见 [Java 8 Stream sorted()](https://lfool.github.io/LFool-Notes/java/Java-8-Stream-sorted.html)**
+
+根据`key`排序
+
+```java
+// 方法一：KeySet 转化成 list
+List<Integer> list = new ArrayList<>(map.keySet());
+Collections.sort(list, Comparator.comparingInt(o -> o));
+// 方法二：EntrySet 转化成 list
+List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+Collections.sort(list, Comparator.comparingInt(Map.Entry::getKey));
+// 方法三：TreeMap 重写 比较器
+Map<Integer, Integer> treeMap = new TreeMap<>(Comparator.comparingInt(o -> o));
+```
+
+根据`value`排序，和根据`key`排序一样，不过是将比较器的比较内容改为比较`value`的大小
+
+```java
+// EntrySet 转化成 list
+List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+Collections.sort(list, Comparator.comparingInt(Map.Entry::getValue));
+```
+
 
 
 
@@ -1171,6 +1249,25 @@ class Solution {
 Arrays.sort(words, Comparator.comparingInt(String::length));
 List也自带sort方法
 
+```
+
+#### 实现 comparator 的几种方式
+
+以优先队列为例
+
+```java
+// 方法一
+PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
+    @Override
+    public int compare(int[] o1, int[] o2) {
+        return o1[0] - o2[0];
+    }
+});
+// 方法二
+PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[0] - o2[0]);
+// 方法三
+PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(o -> o[0]));
+PriorityQueue<Person> pq = new PriorityQueue<>(Comparator.comparingInt(Person::getAge));
 ```
 
 

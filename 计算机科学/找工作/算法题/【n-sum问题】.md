@@ -1,5 +1,7 @@
 [TOC]
 
+- https://mp.weixin.qq.com/s/fSyJVvggxHq28a0SdmZm6Q
+
 经常刷 LeetCode 的读者肯定知道鼎鼎有名的 `twoSum` 问题，我们的旧文 [Two Sum 问题的核心思想](http://mp.weixin.qq.com/s?__biz=MzAxODQxMDM0Mw==&mid=2247484474&idx=1&sn=dfbadbe6e17d695a1907e2adcd9f0d3c&chksm=9bd7fa32aca0732406829a6d1de34b7e3144af239cc25e014f5349d73cea952d5f2b0473345a&scene=21#wechat_redirect) 对 `twoSum` 的几个变种做了解析。
 
 但是除了 `twoSum` 问题，LeetCode 上面还有 `3Sum`，`4Sum` 问题，我估计以后出个 `5Sum`，`6Sum` 也不是不可能。
