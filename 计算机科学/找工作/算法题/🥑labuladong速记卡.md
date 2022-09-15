@@ -346,7 +346,9 @@ presum[i]=arr[i]+presum[i-1]
 - [ ] [1422. 分割字符串的最大得分](https://leetcode.cn/problems/maximum-score-after-splitting-a-string/)
 - [x] [1957. 删除字符使字符串变好](https://leetcode.cn/problems/delete-characters-to-make-fancy-string/)
 - [ ] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
-- [ ] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
+- [x] [890. 查找和替换模式](https://leetcode.cn/problems/find-and-replace-pattern/)
+  - [ ] Mark
+
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
 - [x] [1417. 重新格式化字符串](https://leetcode.cn/problems/reformat-the-string/)
 - [x] [205. 同构字符串](https://leetcode.cn/problems/isomorphic-strings/)
@@ -452,6 +454,8 @@ n x n 矩阵旋转总结：
 - [ ] [2211. 统计道路上的碰撞次数](https://leetcode.cn/problems/count-collisions-on-a-road/)
 
 - [ ] [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/)
+
+- [ ] [735. 行星碰撞](https://leetcode.cn/problems/asteroid-collision/)
 
 - [ ] 
 
@@ -1481,7 +1485,14 @@ n x n 矩阵旋转总结：
 - [ ] [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
 - [ ]  [1409. 查询带键的排列](https://leetcode.cn/problems/queries-on-a-permutation-with-key/)
 - [ ]  [2080. 区间内查询数字的频率](https://leetcode.cn/problems/range-frequency-queries/)
-- [ ]  
+- [ ]  [729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/)
+- [ ]  [731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/)
+- [ ]  [732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/)
+- [ ]  [715. Range 模块](https://leetcode.cn/problems/range-module/)
+- [ ]  [307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+- [ ]  [933. 最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)
+- [ ]  [699. 掉落的方块](https://leetcode.cn/problems/falling-squares/)
+- [ ]  [6206. 最长递增子序列 II](https://leetcode.cn/problems/longest-increasing-subsequence-ii/)
 
 ##### 多线程
 
