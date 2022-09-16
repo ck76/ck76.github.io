@@ -657,9 +657,10 @@ n x n 矩阵旋转总结：
   - [ ] Mark
 
 - [x] [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
-- [ ] [1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/)
-- [ ] [865. 具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/)
-- [ ] 
+- [x] [1123. 最深叶节点的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-deepest-leaves/)
+- [x] [865. 具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/)
+  - [ ] 其实和1123是一个题
+
 - [x] [993. 二叉树的堂兄弟节点](https://leetcode.cn/problems/cousins-in-binary-tree/)
 - [ ] [面试题 17.12. BiNode](https://leetcode.cn/problems/binode-lcci/)
 - [ ] [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
@@ -695,6 +696,8 @@ n x n 矩阵旋转总结：
 
 - [ ] [1261. 在受污染的二叉树中查找元素](https://leetcode.cn/problems/find-elements-in-a-contaminated-binary-tree/)
 
+- [x] [1372. 二叉树中的最长交错路径](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/)
+- [ ] [1145. 二叉树着色游戏](https://leetcode.cn/problems/binary-tree-coloring-game/)
 - [ ] 
 
 ##### [二叉搜索树速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165105273311494144)
@@ -797,6 +800,9 @@ n x n 矩阵旋转总结：
 - [ ] [剑指 Offer II 117. 相似的字符串](https://leetcode.cn/problems/H6lPxb/)
 
 - [ ] [剑指 Offer II 119. 最长连续序列](https://leetcode.cn/problems/WhsWhI/)
+  - [ ] 哈希+并查集-Mark
+
+- [ ] [1202. 交换字符串中的元素](https://leetcode.cn/problems/smallest-string-with-swaps/)
   - [ ] 哈希+并查集-Mark
 
 - [ ] 
@@ -910,7 +916,7 @@ n x n 矩阵旋转总结：
 - [ ] [1992. 找到所有的农场组](https://leetcode.cn/problems/find-all-groups-of-farmland/)
 - [x] [面试题 16.19. 水域大小](https://leetcode.cn/problems/pond-sizes-lcci/)
 - [x] [733. 图像渲染](https://leetcode.cn/problems/flood-fill/)
-- [ ] [841. 钥匙和房间](https://leetcode.cn/problems/keys-and-rooms)
+- [x] [841. 钥匙和房间](https://leetcode.cn/problems/keys-and-rooms)
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [x] [690. 员工的重要性](https://leetcode.cn/problems/employee-importance/)
 - [ ] [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/)
@@ -927,6 +933,8 @@ n x n 矩阵旋转总结：
 - [ ] [2002. 两个回文子序列长度的最大乘积](https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/)
 - [ ] [2115. 从给定原材料中找到所有可以做出的菜](https://leetcode.cn/problems/find-all-possible-recipes-from-given-supplies/)
   - [ ] Mark
+
+- [x] [1376. 通知所有员工所需的时间](https://leetcode.cn/problems/time-needed-to-inform-all-employees/)
 
 - [ ] 
 
