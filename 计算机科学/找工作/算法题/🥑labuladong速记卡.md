@@ -230,7 +230,7 @@ presum[i]=arr[i]+presum[i-1]
 - [x] [560. 和为 K 的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/)
   - [ ] Mark
 
-- [ ] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
+- [x] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
   - [ ] 很多时候会超时，需要配合Map使用
 
 - [x] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
@@ -455,7 +455,7 @@ n x n 矩阵旋转总结：
 
 - [ ] [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/)
 
-- [ ] [735. 行星碰撞](https://leetcode.cn/problems/asteroid-collision/)
+- [x] [735. 行星碰撞](https://leetcode.cn/problems/asteroid-collision/)
 
 - [ ] 
 
@@ -773,6 +773,7 @@ n x n 矩阵旋转总结：
 寻找根节点，函数：find(int u)，也就是判断这个节点的祖先节点是哪个
 将两个节点接入到同一个集合，函数：join(int u, int v)，将两个节点连在同一个根节点上
 判断两个节点是否在同一个集合，函数：same(int u, int v)，就是判断两个节点是不是同一个根节点
+【并查集的很多属性都可以挂载在父节点身上】
 ```
 
 - [x] [990. 等式方程的可满足性](https://leetcode.cn/problems/satisfiability-of-equality-equations/)
@@ -850,7 +851,7 @@ n x n 矩阵旋转总结：
 - [ ] [面试题 08.12. 八皇后](https://leetcode.cn/problems/eight-queens-lcci/)
   - [ ] 
 
-- [ ] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
+- [x] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
   - [ ] Mark-🥑
 
 - [ ] [473. 火柴拼正方形](https://leetcode.cn/problems/matchsticks-to-square/)
@@ -884,7 +885,7 @@ n x n 矩阵旋转总结：
 
 - [ ] [1415. 长度为 n 的开心字符串中字典序第 k 小的字符串](https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/)
 
-- [ ] [967. 连续差相同的数字](https://leetcode.cn/problems/numbers-with-same-consecutive-differences/)
+- [x] [967. 连续差相同的数字](https://leetcode.cn/problems/numbers-with-same-consecutive-differences/)
 
 - [ ] [2375. 根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/)
 
@@ -909,7 +910,7 @@ n x n 矩阵旋转总结：
 - [ ] 694.不同的岛屿数量
 - [ ] [1905.统计子岛屿](https://leetcode-cn.com/problems/count-sub-islands/)
 - [x] [695.岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
-- [ ] [1020. 飞地的数量](https://leetcode.cn/problems/number-of-enclaves/)
+- [x] [1020. 飞地的数量](https://leetcode.cn/problems/number-of-enclaves/)
 - [x] [130.被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/)
 - [x] [1254.统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
 - [x] [200.岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
@@ -1144,9 +1145,11 @@ n x n 矩阵旋转总结：
 - https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E8%83%8C%E5%8C%85-DP
 
 - [ ] 518.零钱兑换II
+- [x] [面试题 08.11. 硬币](https://leetcode.cn/problems/coin-lcci/)
 - [ ] [494.目标和](https://leetcode-cn.com/problems/target-sum/)
 - [ ] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/)
-- [x] 416.分割等和子集
+- [x] [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/)
+- [x] [剑指 Offer II 101. 分割等和子集](https://leetcode.cn/problems/NUPfPr/)
 - [ ] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
 - [ ] [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/)
 - [ ] [813. 最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/)
@@ -1169,6 +1172,25 @@ n x n 矩阵旋转总结：
 - [x] [面试题 08.02. 迷路的机器人](https://leetcode.cn/problems/robot-in-a-grid-lcci/)
 
 - [ ] 
+
+##### 子序列
+
+按照如下顺序将力扣题目做完，相信会帮助你对**动态规划之子序列问题**有一个深刻的理解。
+
+1. [300.最长递增子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0300.最长上升子序列.html)
+2. [674.最长连续递增序列](https://leetcode.cn/link/?target=https://programmercarl.com/0674.最长连续递增序列.html)
+3. [718.最长重复子数组](https://leetcode.cn/link/?target=https://programmercarl.com/0718.最长重复子数组.html)
+4. [1143.最长公共子序列](https://leetcode.cn/link/?target=https://programmercarl.com/1143.最长公共子序列.html)
+5. [1035.不相交的线](https://leetcode.cn/link/?target=https://programmercarl.com/1035.不相交的线.html)
+6. [53.最大子序和](https://leetcode.cn/link/?target=https://programmercarl.com/0053.最大子序和（动态规划）.html)
+7. [392.判断子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0392.判断子序列.html)
+8. [115.不同的子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0115.不同的子序列.html)
+9. [583.两个字符串的删除操作](https://leetcode.cn/link/?target=https://programmercarl.com/0583.两个字符串的删除操作.html)
+10. [72.编辑距离](https://leetcode.cn/link/?target=https://programmercarl.com/0072.编辑距离.html)
+11. [为了绝杀编辑距离，我做了三步铺垫，你都知道么？](https://leetcode.cn/link/?target=https://programmercarl.com/为了绝杀编辑距离，卡尔做了三步铺垫.html)
+12. [647.回文子串](https://leetcode.cn/link/?target=https://programmercarl.com/0647.回文子串.html)
+13. [516.最长回文子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0516.最长回文子序列.html)
+14. [动态规划总结篇](https://leetcode.cn/link/?target=https://programmercarl.com/动态规划总结篇.html)
 
 ### 第五章、其他经典算法
 

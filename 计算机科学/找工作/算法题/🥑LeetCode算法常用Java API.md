@@ -93,6 +93,13 @@ for (int i = 0; i < list.size(); i++) {
 
 ## 数组
 
+#### 二维映射到一维
+
+```
+```
+
+
+
 数组就不用多说什么了，大家最熟悉的数据结构。
 
 ### Arrays
@@ -676,6 +683,12 @@ get(x) == null // 可以代替改用法
 ```
 
 - boolean containsValue()
+
+```
+```
+
+
+
 - keySet
 
 ```java
@@ -719,6 +732,8 @@ size()    // 返回Map中中键值对<K, V>的个数 --- O(1)
 ```java
 删除map的key
 ```
+
+
 
 #### HashMap 遍历方法
 
