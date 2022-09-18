@@ -1146,9 +1146,11 @@ n x n 矩阵旋转总结：
 
 - [ ] 518.零钱兑换II
 - [x] [面试题 08.11. 硬币](https://leetcode.cn/problems/coin-lcci/)
+- [ ] [剑指 Offer II 104. 排列的数目](https://leetcode.cn/problems/D0F0SV/)
 - [ ] [494.目标和](https://leetcode-cn.com/problems/target-sum/)
 - [ ] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/)
 - [x] [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/)
+- [ ] [剑指 Offer II 104. 排列的数目](https://leetcode.cn/problems/D0F0SV/)
 - [x] [剑指 Offer II 101. 分割等和子集](https://leetcode.cn/problems/NUPfPr/)
 - [ ] [698. 划分为k个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/)
 - [ ] [1049. 最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/)
