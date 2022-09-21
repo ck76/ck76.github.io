@@ -128,7 +128,9 @@
 - [x] [LCP 28. 采购方案](https://leetcode.cn/problems/4xy4Wx/)
 - [x] [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/)
 - [x] [522. 最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii/)
-- [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) 重要
+- [ ] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/) 
+  - [ ] Mark重要
+
 - [ ] [665. 非递减数列](https://leetcode.cn/problems/non-decreasing-array/)
   - [ ] 
 
@@ -231,7 +233,7 @@ presum[i]=arr[i]+presum[i-1]
   - [ ] Mark
 
 - [x] [523. 连续的子数组和](https://leetcode.cn/problems/continuous-subarray-sum/)
-  - [ ] 很多时候会超时，需要配合Map使用
+  - [x] 很多时候会超时，需要配合Map使用
 
 - [x] [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
   - [ ] Mark-错了很多次
@@ -396,7 +398,7 @@ n x n 矩阵旋转总结：
 - [x] [867. 转置矩阵](https://leetcode.cn/problems/transpose-matrix/)
 - [x] [1886. 判断矩阵经轮转后是否一致](https://leetcode.cn/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 - [ ] [661. 图片平滑器](https://leetcode.cn/problems/image-smoother/)
-- [ ] [542. 01 矩阵](https://leetcode.cn/problems/01-matrix/)
+- [x] [542. 01 矩阵](https://leetcode.cn/problems/01-matrix/)
 - [ ] [1572. 矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum/)
 - [ ] [598. 范围求和 II](https://leetcode.cn/problems/range-addition-ii/)
 - [x] [2319. 判断矩阵是否是一个 X 矩阵](https://leetcode.cn/problems/check-if-matrix-is-x-matrix/)
@@ -456,6 +458,8 @@ n x n 矩阵旋转总结：
 - [ ] [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/)
 
 - [x] [735. 行星碰撞](https://leetcode.cn/problems/asteroid-collision/)
+
+- [x] [面试题 16.26. 计算器](https://leetcode.cn/problems/calculator-lcci/)
 
 - [ ] 
 
@@ -558,7 +562,7 @@ n x n 矩阵旋转总结：
 
 - [x] [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/)
 
-- [ ] [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)
+- [x] [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)
   - [ ] Mark
 
 - [ ] 
@@ -991,19 +995,14 @@ n x n 矩阵旋转总结：
 - [ ] [354. 俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes/)
 - [ ] [面试题 08.13. 堆箱子](https://leetcode.cn/problems/pile-box-lcci/)
   - [ ] 同300题
-
 - [ ] [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci/)
   - [ ] 300.最长递增子序列 变种
-
 - [ ] [1626. 无矛盾的最佳球队](https://leetcode.cn/problems/best-team-with-no-conflicts/)
   - [ ] 同300题
-
 - [ ] [1027. 最长等差数列](https://leetcode.cn/problems/longest-arithmetic-subsequence/)
 - [ ] [334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
   - [ ] 
-
 - [ ] - [ ] 
-
 - [x] 322.零钱兑换
 - [x] 70.爬楼梯
 - [x] [746. 使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
@@ -1011,11 +1010,9 @@ n x n 矩阵旋转总结：
 - [ ] 213.打家劫舍II
 - [ ] [740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/)
   - [ ] 同打家劫舍
-
 - [x] 198.打家劫舍
 - [ ] [740. 删除并获得点数](https://leetcode.cn/problems/delete-and-earn/)
   - [ ] 和打家劫舍一样的题，需要对数组转换
-
 - [ ] [279. 完全平方数](https://leetcode.cn/problems/perfect-squares/)
 - [ ] [97. 交错字符串](https://leetcode.cn/problems/interleaving-string/)
 - [ ] [91. 解码方法](https://leetcode.cn/problems/decode-ways/)
@@ -1029,26 +1026,23 @@ n x n 矩阵旋转总结：
 - [ ] [1696. 跳跃游戏 VI](https://leetcode.cn/problems/jump-game-vi/)
 - [ ] [1186. 删除一次得到子数组最大和](https://leetcode.cn/problems/maximum-subarray-sum-with-one-deletion/)
   - [ ] 同1425 dp+单调队列
-
 - [ ] [2140. 解决智力问题](https://leetcode.cn/problems/solving-questions-with-brainpower/)
   - [ ] 1774题
-
 - [ ] [2266. 统计打字方案数](https://leetcode.cn/problems/count-number-of-texts/)
   - [ ] 同青蛙跳楼梯
-
 - [ ] [1524. 和为奇数的子数组数目](https://leetcode.cn/problems/number-of-sub-arrays-with-odd-sum/)
 - [ ] [2110. 股票平滑下跌阶段的数目](https://leetcode.cn/problems/number-of-smooth-descent-periods-of-a-stock/)
 - [ ] [2369. 检查数组是否存在有效划分](https://leetcode.cn/problems/check-if-there-is-a-valid-partition-for-the-array/)
   - [ ] Mark
-
 - [ ] [799. 香槟塔](https://leetcode.cn/problems/champagne-tower/)
   - [ ] @杨辉三角
-
 - [ ] [2370. 最长理想子序列](https://leetcode.cn/problems/longest-ideal-subsequence/)
   - [ ] Mark
-
 - [ ] [面试题 17.13. 恢复空格](https://leetcode.cn/problems/re-space-lcci/)
   - [ ] Mark
+- [x] [152. 乘积最大子数组](https://leetcode.cn/problems/maximum-product-subarray/)
+- [ ] [1567. 乘积为正数的最长子数组长度](https://leetcode.cn/problems/maximum-length-of-subarray-with-positive-product/)
+  - [ ] @152
 
 - [ ] 
 
@@ -1157,7 +1151,30 @@ n x n 矩阵旋转总结：
 - [ ] [813. 最大平均值和的分组](https://leetcode.cn/problems/largest-sum-of-averages/)
   - [ ] 这也是背包咩？
 
-- [ ] 
+#### 卡尔
+
+只要按如下顺序刷题，相信会帮你在学习背包问题的路上少走很多弯路！
+
+- 0-1背包
+  - [01背包问题理论基础二维dp数组](https://leetcode.cn/link/?target=https://programmercarl.com/背包理论基础01背包-1.html)
+  - [01背包问题理论基础一维dp数组（滚动数组）](https://leetcode.cn/link/?target=https://programmercarl.com/背包理论基础01背包-2.html)
+  - [416.分割等和子集](https://leetcode.cn/link/?target=https://programmercarl.com/0416.分割等和子集.html)
+  - [1049.最后一块石头的重量 II](https://leetcode.cn/link/?target=https://programmercarl.com/1049.最后一块石头的重量II.html)
+  - [494.目标和](https://leetcode.cn/link/?target=https://programmercarl.com/0494.目标和.html)
+  - [474.一和零](https://leetcode.cn/link/?target=https://programmercarl.com/0474.一和零.html)
+- 完全背包
+  - [动态规划：关于完全背包，你该了解这些！](https://leetcode.cn/link/?target=https://programmercarl.com/背包问题理论基础完全背包.html)
+  - [518. 零钱兑换 II](https://leetcode.cn/link/?target=https://programmercarl.com/0518.零钱兑换II.html)
+  - [0377.组合总和Ⅳ.](https://leetcode.cn/link/?target=https://programmercarl.com/0377.组合总和Ⅳ.html)
+  - [70.爬楼梯进阶版](https://leetcode.cn/link/?target=https://programmercarl.com/0070.爬楼梯完全背包版本.html)
+  - [322. 零钱兑换](https://leetcode.cn/link/?target=https://programmercarl.com/0322.零钱兑换.html)
+  - [279.完全平方数](https://leetcode.cn/link/?target=https://programmercarl.com/0279.完全平方数.html)
+  - [139.单词拆分](https://leetcode.cn/link/?target=https://programmercarl.com/0139.单词拆分.html)
+- 多重背包
+  - [动态规划：关于多重背包，你该了解这些！](https://leetcode.cn/link/?target=https://programmercarl.com/背包问题理论基础多重背包.html)
+- [背包问题总结篇](https://leetcode.cn/link/?target=https://programmercarl.com/背包总结篇.html)
+
+
 
 ##### 序列问题
 
@@ -1340,12 +1357,16 @@ n x n 矩阵旋转总结：
 ##### 🥑分治
 
 - [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
+  - [ ] 
+
 - [ ] [148. 排序链表](https://leetcode.cn/problems/sort-list)
-- [ ] [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/)
+  - [ ] 
+
 - [ ] [241. 为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses)
-- [ ] [932. 漂亮数组](https://leetcode.cn/problems/beautiful-array/)
   - [ ] Mark
 
+- [ ] [932. 漂亮数组](https://leetcode.cn/problems/beautiful-array/)
+  - [ ] Mark
 - [ ] 多路归并
   - [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/)
   - [313. 超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
@@ -1558,6 +1579,7 @@ n x n 矩阵旋转总结：
 
 - 波峰波谷问题摆动序列
   - [1911. 最大子序列交替和](https://leetcode.cn/problems/maximum-alternating-subsequence-sum/)
+  - 
 - 图
   - 拓扑排序
   - 岛屿问题
