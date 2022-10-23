@@ -215,5 +215,10 @@ class LRUCache {
         cache.put(key, value);
     }
 
-    private void makeRecently(int 
+    private void makeRecently(int key) {
+        int val = cache.get(key);
+        cache.remove(key);
+        cache.put(key, val);
+    }
+}
 ```
