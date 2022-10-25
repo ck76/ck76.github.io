@@ -517,7 +517,7 @@ n x n 矩阵旋转总结：
 - [ ] [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)
 - [ ] [41. 缺失的第一个正数](https://leetcode.cn/problems/first-missing-positive)
 - [ ] [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring)
-- [ ] 
+- [x] [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)
 - [ ] [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k)
 - [x] [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/)
 - [x] [2248. 多个数组求交集](https://leetcode.cn/problems/intersection-of-multiple-arrays/)
@@ -985,7 +985,7 @@ n x n 矩阵旋转总结：
 
 ##### 🥑[一维动态规划速记卡](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzAxODQxMDM0Mw==&action=getalbum&album_id=2165170016067944448)
 
-- [ ] 45.跳跃游戏||
+- [x] [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)
 - [x] 55.跳跃游戏
 - [ ] 
 - [ ] 
@@ -1085,10 +1085,9 @@ n x n 矩阵旋转总结：
 - [ ] 518.零钱兑换II 
 
 - [x] 1143.最长公共子序列
+  - [x] [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
 
-- [ ] [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
-
-- [ ] [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
+  - [x] [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
 
 - [ ] 
 
@@ -1196,26 +1195,29 @@ n x n 矩阵旋转总结：
 
 按照如下顺序将力扣题目做完，相信会帮助你对**动态规划之子序列问题**有一个深刻的理解。
 
-1. [300.最长递增子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0300.最长上升子序列.html)
-2. [674.最长连续递增序列](https://leetcode.cn/link/?target=https://programmercarl.com/0674.最长连续递增序列.html)
-3. [718.最长重复子数组](https://leetcode.cn/link/?target=https://programmercarl.com/0718.最长重复子数组.html)
-4. [1143.最长公共子序列](https://leetcode.cn/link/?target=https://programmercarl.com/1143.最长公共子序列.html)
-5. [1035.不相交的线](https://leetcode.cn/link/?target=https://programmercarl.com/1035.不相交的线.html)
-6. [53.最大子序和](https://leetcode.cn/link/?target=https://programmercarl.com/0053.最大子序和（动态规划）.html)
-7. [392.判断子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0392.判断子序列.html)
-8. [115.不同的子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0115.不同的子序列.html)
-9. [583.两个字符串的删除操作](https://leetcode.cn/link/?target=https://programmercarl.com/0583.两个字符串的删除操作.html)
-10. [72.编辑距离](https://leetcode.cn/link/?target=https://programmercarl.com/0072.编辑距离.html)
-11. [为了绝杀编辑距离，我做了三步铺垫，你都知道么？](https://leetcode.cn/link/?target=https://programmercarl.com/为了绝杀编辑距离，卡尔做了三步铺垫.html)
-12. [647.回文子串](https://leetcode.cn/link/?target=https://programmercarl.com/0647.回文子串.html)
-13. [516.最长回文子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0516.最长回文子序列.html)
-14. [动态规划总结篇](https://leetcode.cn/link/?target=https://programmercarl.com/动态规划总结篇.html)
+- [ ] [300.最长递增子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0300.最长上升子序列.html)
+- [ ] [674.最长连续递增序列](https://leetcode.cn/link/?target=https://programmercarl.com/0674.最长连续递增序列.html)
+- [x] [718.最长重复子数组](https://leetcode.cn/link/?target=https://programmercarl.com/0718.最长重复子数组.html)
+- [ ] [1143.最长公共子序列](https://leetcode.cn/link/?target=https://programmercarl.com/1143.最长公共子序列.html)
+- [ ] [1035.不相交的线](https://leetcode.cn/link/?target=https://programmercarl.com/1035.不相交的线.html)
+- [ ] [53.最大子序和](https://leetcode.cn/link/?target=https://programmercarl.com/0053.最大子序和（动态规划）.html)
+- [ ] [392.判断子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0392.判断子序列.html)
+- [ ] [115.不同的子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0115.不同的子序列.html)
+- [ ] [583.两个字符串的删除操作](https://leetcode.cn/link/?target=https://programmercarl.com/0583.两个字符串的删除操作.html)
+- [ ] [72.编辑距离](https://leetcode.cn/link/?target=https://programmercarl.com/0072.编辑距离.html)
+- [ ] [为了绝杀编辑距离，我做了三步铺垫，你都知道么？](https://leetcode.cn/link/?target=https://programmercarl.com/为了绝杀编辑距离，卡尔做了三步铺垫.html)
+- [ ] [647.回文子串](https://leetcode.cn/link/?target=https://programmercarl.com/0647.回文子串.html)
+- [ ] [516.最长回文子序列](https://leetcode.cn/link/?target=https://programmercarl.com/0516.最长回文子序列.html)
+- [ ] [动态规划总结篇](https://leetcode.cn/link/?target=https://programmercarl.com/动态规划总结篇.html)
 
 ### 第五章、其他经典算法
 
 ##### 🥑贪心
 
 - [x] [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) 投降了
+- [ ] [1024. 视频拼接](https://leetcode.cn/problems/video-stitching/)
+  - [ ] Mark
+
 - [ ] [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)
 - [ ] [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/)
 - [ ] [134. 加油站](https://leetcode.cn/problems/gas-station)

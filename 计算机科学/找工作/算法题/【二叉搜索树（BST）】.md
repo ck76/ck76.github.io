@@ -424,3 +424,17 @@ public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     return left == null ? right : left;   
 }
 ```
+
+
+
+
+
+## 二叉搜索树的修改与构造
+
+- https://mp.weixin.qq.com/s/zLyWzB0erh3cdinESvisBQ
+
+<img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h7hlxfn525j30mo0zo42e.jpg" alt="Image" style="zoom:50%;" />
+
+
+
+- 

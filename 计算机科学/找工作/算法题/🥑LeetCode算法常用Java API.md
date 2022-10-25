@@ -66,7 +66,7 @@ Arrays
         for (int x : nums) 
             set.add(x);
         List<Integer> list = new ArrayList<>(set);
-        Collections.sort(list);
+        //Collections.sort(list);
 ```
 
 
@@ -95,12 +95,12 @@ for (int i = 0; i < list.size(); i++) {
 
 #### 二维映射到一维
 
+```java
+int[i][j] matrix
+int[i*n+j] array
 ```
-```
 
 
-
-数组就不用多说什么了，大家最熟悉的数据结构。
 
 ### Arrays
 
@@ -138,13 +138,13 @@ Arrays是比较常用的数组工具类，可以完成排序、拷贝等功能�
 - 从小到大排序：Arrays.sort(int[] arr)``Arrays.sort(int[] arr, int fromIndex, int toIndex)
 
 ```java
-Arrays.sort(int[] arr, int fromIndex, int toIndex, 比较器);   //一定是需要泛型
+Arrays.sort(int[] arr, int fromIndex, int toIndex, 比较器);   //⚠️⚠️⚠️⚠️一定是需要泛型
 
-Arrays.sort(arr, (o1, o2) -> o2 - o1);   //数组全部 从大到小排序 跟Collections.sort()一样
+Arrays.sort(arr, (o1, o2) -> o2 - o1);   //⚠️⚠️⚠️⚠️数组全部 从大到小排序 跟Collections.sort()一样
 
-Arrays.sort(arr, 0, 3, (o1, o2) -> o2 - o1);   //从大到小排序，只排序[0, 3)
+Arrays.sort(arr, 0, 3, (o1, o2) -> o2 - o1);   //⚠️⚠️⚠️⚠️从大到小排序，只排序[0, 3)
 
-Arrays.sort(a, Collections.reverseOrder()); //降序
+Arrays.sort(a, Collections.reverseOrder()); //⚠️⚠️⚠️⚠️降序
 				/*
          * 注意，要想改变默认的排列顺序，不能使用基本类型（int,double,char）而要使用它们对应的类
          */
@@ -156,6 +156,7 @@ Arrays.sort(a, Collections.reverseOrder()); //降序
         }
         // Arrays.sort(integerNums,(o1,o2)-> o2-o1);
         Arrays.sort(integerNums,new Comparator<Integer>(){
+          //⚠️⚠️⚠️⚠️返回int
             public int compare(Integer val1,Integer val2){
                 return val2-val1;
             }
@@ -182,7 +183,7 @@ Arrays.sort(a, Collections.reverseOrder()); //降序
       System.arraycopy(nums,0,nums2,len,len);
   ```
 
-- 拷贝：Array.copyOf
+- 拷贝：Array.copyOf(int[] sourceArray)
 
 ```java
 int[] a = new int[5];
@@ -196,16 +197,30 @@ int[] newA = Arrays.copyOf(a, 5);
 Arrays.copyOfRange(dataType[] srcArray,int startIndex,int endIndex)
 ```
 
-- Fill()
+- fill()
+
+```java
+		int[] a = new int[3];
+    Arrays.fill(a, 10);
+```
 
 
 
 - binarySearch()
 
 ```java
+				// 配列を作成 
+        int[] arrayA = {12, 65, 92, 2, 84, 23, 11, 23, 45};
+        
+        // 配列の内容を表示 
+        System.out.println(Arrays.toString(arrayA)); 
+        
+        // 92を配列内から検索する 
+        int target1 = 92; 
+        int pos = Arrays.binarySearch(arrayA, target1);
+        
+        System.out.println(target1 + "は" + pos + "番目の要素");
 ```
-
-
 
 
 
@@ -244,7 +259,7 @@ static int [] intArr = new int[]{30,96,23,69,85,62,12,99,11};
         }
 ```
 
-### 翻转
+### 翻转数组
 
 ```java
 【1】类似双指针
@@ -464,16 +479,16 @@ size()    // 返回队中元素个数 --- O(1)
 Deque<Integer> q = new LinkedList<>();
 ```
 
-- offFirst
+- offerFirst
 
 ```java
-offFirst(Object e)   // 将指定元素添加到双端队列的头部 --- O(1)
+offerFirst(Object e)   // 将指定元素添加到双端队列的头部 --- O(1)
 ```
 
-- offLast
+- offerLast
 
 ```java
-offLast(Object e)   //将指定元素添加到双端队列的尾部 --- O(1)
+offerLast(Object e)   //将指定元素添加到双端队列的尾部 --- O(1)
 ```
 
 - pollFirst
@@ -617,7 +632,7 @@ class Solution {
                 window.push(nums[i]);
                 // 记录当前窗口的最大值
                 res.add(window.max());
-                // 移出旧数字
+                // 移出旧数字【窗口开头的数字】
                 window.pop(nums[i - k + 1]);
             }
         }
@@ -653,9 +668,9 @@ put(K key, V value);    // 在Map中加入键值对<key, value>。返回value值
 
 - putIfAbsent（）
 
-- ```java
-  putIfAbsent
-  ```
+```java
+putIfAbsent()
+```
 
 - get
 
@@ -682,14 +697,25 @@ containsKey(Key key);    // 在Map中若存在key，则返回true，否则返回
 get(x) == null // 可以代替改用法
 ```
 
-- boolean containsValue()
+- boolean containsValue(Object value)
 
+```java
+				// 创建一个 HashMap
+        HashMap<Integer, String> sites = new HashMap<>();
+
+        // 往 HashMap 添加一些元素
+        sites.put(1, "Google");
+        sites.put(2, "Runoob");
+        sites.put(3, "Taobao");
+        System.out.println("sites HashMap: " + sites);
+
+        //检查映射中值value是否有Java
+        if(sites.containsValue("Runoob")) {
+            System.out.println("Runoob 存在于 sites 中");
+        }
 ```
-```
 
-
-
-- keySet
+- keySet()
 
 ```java
 keySet();    // 返回一个Set,这个Set中包含Map中所有的Key --- O(1)
@@ -702,7 +728,7 @@ for (Character key : map.keySet()) {
 }
 ```
 
-- values
+- values()
 
 ```java
 values();    // 返回一个Collection<v>,里面全是对应的每一个value --- O(1)
@@ -715,13 +741,13 @@ for (Integer value : map.values()) {
 }
 ```
 
-- isEmpty
+- isEmpty()
 
 ```java
 isEmpty()    // 若Map为空返回true， 否则返回false --- O(1)
 ```
 
-- size
+- size()
 
 ```java
 size()    // 返回Map中中键值对<K, V>的个数 --- O(1)
@@ -730,7 +756,28 @@ size()    // 返回Map中中键值对<K, V>的个数 --- O(1)
 - remove(key)
 
 ```java
-删除map的key
+删除map的key-value
+  
+class Main {
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> sites = new HashMap<>();
+        sites.put(1, "Google");
+        sites.put(2, "Runoob");
+        sites.put(3, "Taobao");
+        System.out.println("HashMap: " + sites);
+
+        // 删除key为2的映射关系
+        String siteName = sites.remove(2);  // return Runoob
+        System.out.println("返回值: " + siteName);
+        System.out.println("删除后的 HashMap: " + sites);
+    }
+}
+执行以上程序输出结果为：
+
+HashMap: {1=Google, 2=Runoob, 3=Taobao}
+返回值: Runoob
+删除后的 HashMap: {1=Google, 3=Taobao}
 ```
 
 
@@ -794,10 +841,6 @@ Map<Integer, Integer> treeMap = new TreeMap<>(Comparator.comparingInt(o -> o));
 List<Map.Entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
 Collections.sort(list, Comparator.comparingInt(Map.Entry::getValue));
 ```
-
-
-
-
 
 
 
@@ -871,6 +914,8 @@ last()    // 返回集合里的最大值（若给了比较器从大到小则是�
 
 ### String
 
+- [菜鸟教程](https://www.runoob.com/java/java-string-contains.html)
+
 不可变量(相当于只读final修饰)，每个位置元素是个char。
 
 - 初始化
@@ -903,13 +948,13 @@ char[] ch = {'a', 'b', 'c'};
 String.valueOf(ch);
 ```
 
-- charAt
+- charAt(int index)
 
 ```java
 charAt(int index);    // 返回index位置的char --- O(1)
 ```
 
-- length
+- length()
 
 ```java
 length();    // 返回字符串长度 --- O(1)
@@ -928,7 +973,7 @@ substring(int beginIndex);    // 返回字符片段[beginIndex, end_of_String) �
 ```java
 indexOf(String str)    // 返回str第一个出现的位置(int)，没找到则返回-1。 --- O(m * n) m为原串长度， n为str长度
 // (假如要找一个字符char c，str可以表示成String.valueOf(c),然后作为参数传进去.
-【找不到会返回【-1】】
+⚠️⚠️⚠️⚠️⚠️【找不到会返回【-1】】
 s.indexOf(String str, int fromIndex);    // 同上，但从fromIndex开始找 --- O(m * n)
 ```
 
@@ -982,7 +1027,7 @@ s = s.toLowerCase();    // 返回一个新的字符串全部转成小写 --- O(n
 s = s.toUpperCase();    // 返回一个新的字符串全部转成大写 --- O(n)
 ```
 
-- contains
+- boolean contains()
 
 ```java
 (s+s).contains(goal);
@@ -1039,7 +1084,11 @@ Arrays.sort(c);
 
 s.equals()
 
+
+
 ### StringBuilder
+
+- [菜鸟教程](https://www.runoob.com/java/java-stringbuffer.html)
 
 由于String是所谓的不可变类，使用 `str+`这种形式拼接字符串实际上，是JVM帮助循环创建StringBuilder来拼接，所以拼接字符串最好用StringBuilder。
 
@@ -1128,7 +1177,9 @@ Hexadecimal eqivalent of 100 = 64
 
 ### Character
 
-#### isDigit
+- [菜鸟教程](https://www.runoob.com/java/java-character.html)
+
+- isDigit 和 isLetter
 
 - ```java
   Character.isDigit(array[i].charAt(0))
