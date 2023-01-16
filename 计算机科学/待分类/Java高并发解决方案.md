@@ -110,7 +110,7 @@ CDN它本身也是一个缓存，它把后端应用的数据缓存起来，用�
 
 在整个应用系统的不同层级进行数据的缓存，多层次缓存，来提升访问效率;
 
-比如：浏览器 -> CDN -> Nginx -> Redis -> DB (磁盘、文件系统)
+**比如：浏览器 -> CDN -> Nginx -> Redis -> DB (磁盘、文件系统)**
 
 ### ⑸ 缓存的使用场景
 
@@ -444,3 +444,451 @@ http://blog.51cto.com/yangrong/1567427 偏运维的职责
 **总结**
 
 完成以上的工作，我们才能实现一个 高并发、高性能、高可用 的“三高”分布式系统。
+
+---
+# Java high concurrency solution
+
+High concurrency is a major feature of Internet applications, and it is also an inevitable problem for Internet applications; such as Taobao Double 11 Shopping Carnival, JD.com 618 Shopping Promotion Festival, 12306 Spring Festival train tickets, promotions, spikes, etc.
+
+Solving high concurrency problems is a systematic project, which requires overall planning from a global perspective and architecture design from multiple perspectives;
+
+Solving high-concurrency problems cannot be solved by one or two solutions, and requires comprehensive measures from various dimensions to complete;
+
+In practice, we have summarized and extracted many solutions or means to deal with high concurrency, which are as follows:
+
+## 1. Hardware
+
+### ⑴ Overview
+
+The increase in system access users and traffic increase will lead to increased pressure on the server and performance bottlenecks. We can adopt a simple and crude strategy: improve the server hardware configuration. The strategy of improving the server hardware configuration is also called: vertical expansion of a single application.
+
+For example: in the initial stage of a product or website, there are usually few functions and a small number of users. Generally, one project is used to complete it. This is a single application, also called a centralized application.
+
+According to the classic MVC three-tier architecture design, deploy a single server, use a single database, and deploy the application system and database on the same server. With the increase of application system functions and the increase of access users, a single server can no longer bear the burden a lot of access traffic.
+
+At this point, we can directly adopt a simple and crude method: improve the hardware configuration to solve it.
+
+### ⑵ Single Application Vertical Expansion Solution
+
+• CPU increased from 32-bit to 64-bit
+
+• Memory increased from 64GB to 256GB (such as cache server);
+
+• The disk has been upgraded from HDD (Hard Disk Drive) to SSD (Solid State Drives), with a large number of read and write applications
+
+• Disk expansion, 1TB to 2TB, such as file system
+
+• Gigabit network card upgraded to 10 Gigabit network card
+
+But no matter how to improve hardware performance, the improvement of hardware performance cannot be endless, so in the end it still depends on distributed solutions.
+
+## 2. Caching
+
+### ⑴ Overview
+
+Caching can be said to be a very important strategy to solve large traffic and high concurrency and optimize system performance;
+
+It is a sharp tool to solve performance problems, like a Swiss army knife, sharp and powerful;
+
+Caches are ubiquitous (everywhere) in highly concurrent systems.
+
+### ⑵ http cache
+
+① Browser cache
+
+Browser caching means that when we use a browser to access some website pages or HTTP services, the response header is set according to the cache returned by the server to cache the response content in the browser. Next time, we can directly use the cached content or only need to go to the server for verification It doesn’t matter whether the content expires, which can reduce the amount of data transmitted back and forth between the browser and the server, save bandwidth and improve performance;
+
+For example Sina: http://www.sina.com.cn/
+
+The first visit returns 200, and the second refresh visit returns a response code of 304, indicating that the content of the page has not been modified, and the content in the browser cache is still up-to-date, so it does not need to be obtained from the server, just read the browser cache directly
+
+We can also tell the front-end browser to cache by setting the response header in the Java code:
+
+```java
+ateFormat format = new SimpleDateFormat("EEE,MMM yyyy HH: mm: ss 'GMT'", Locale. US);
+//current time
+long now = System. currentTimeMillis() * 1000 * 1000;
+response. addHeader( "Date", format. format(new Date()));
+// Expiration time http 1.0 support
+response.addHeader("Expires", format.format(new Date(now+ 20 * 1000)));
+//Document life time http 1.1 support
+response.addHeader("Cache-Control", "max-age=20");
+```
+
+② Nginx cache
+
+Nginx provides the expires directive to implement cache control, such as:
+
+```html
+location /static {
+   root /opt/static/;
+   expires 1d;//all day
+}
+```
+
+When a user visits, Nginx intercepts the request and first queries the data from the Nginx local cache. If there is and it has not expired, it returns the cache content directly.
+
+③ CDN cache
+
+The full name of CDN is Content Delivery Network, that is, content distribution network. CDN is a content distribution network built on the Internet. Relying on the edge servers deployed in various places, through the load balancing, content distribution, scheduling and other functional modules of the central platform, users can obtain the required content nearby, reduce network congestion, and improve user access. Response speed and hit rate. The key technology of CDN mainly includes content storage and distribution technology.
+
+CDN itself is also a cache. It caches the data of the back-end application. When the user wants to access it, it is directly obtained from the CDN. It does not need to use the back-end Nginx or the specific application server Tomcat. Its role is mainly to accelerate data. Transmission also improves stability. If no data is obtained from the CDN, then go to the back-end Nginx cache, and there is no Nginx, then go to the back-end application server, and the CDN mainly caches static resources.
+
+![img](https://p.ipic.vip/umtehr.png)
+
+Famous manufacturers: (Dilian Technology) http://www.dnion.com/
+
+### ⑶ Application cache
+
+① memory cache
+
+Cache data in memory, with high efficiency and fast speed, and the cache will be lost when the application is restarted.
+
+② Disk cache
+
+Data is cached on the disk, and the read efficiency is slightly lower than that of the memory cache, and the cache will not be lost when the application is restarted.
+
+Code components: Guava, Ehcache
+
+Server: Redis, MemCache
+
+### ⑷ Multi-level cache
+
+Data caching at different levels of the entire application system, multi-level caching to improve access efficiency;
+
+**For example: browser -> CDN -> Nginx -> Redis -> DB (disk, file system)**
+
+### ⑸ Usage scenarios of cache
+
+• Data that needs to be read frequently
+
+• Frequently accessed data
+
+• Hot data cache
+
+• IO bottleneck data
+
+• Computationally expensive data
+
+• Data that does not need to be updated in real time
+
+• The purpose of caching is to reduce access to backend services and reduce the pressure on backend services
+
+## 3. Cluster
+
+There is a single application. When the access traffic is too large to support, then it can be deployed in a cluster, which is also called horizontal expansion of the single application. In the past, one server was deployed to provide services, but now several more are deployed, and the service capability will be improved. .
+
+Multiple servers are deployed, but there can only be one user access portal, such as www.web.com, so load balancing is required. Load balancing is a necessary step after the application cluster is expanded. After the cluster is deployed, the user's session state must be maintained. If so, you need to implement session sharing.
+
+## 4. Split
+
+### ⑴ application split
+
+Splitting of Applications: Distributed (Microservices)
+
+Monolithic application, with the development of business and the increase of application functions, the monolithic application gradually becomes very large. Many people maintain such a system, development, testing, and online will cause big problems, such as code conflicts, code duplication, The logic is confusing, the logic complexity of the code increases, the speed of responding to new requirements decreases, and the hidden risks increase. Therefore, it is necessary to split the application according to the business dimension and adopt distributed development;
+
+After the application is split, the original calls in the same process are turned into remote method calls. At this time, some remote call technologies need to be used: httpClient, hessian, dubbo, webservice, etc.;
+
+As business complexity increases, we need to adopt some open source solutions for development to improve development and maintenance efficiency, such as Dubbo and SpringCloud;
+
+After splitting the application, capacity expansion becomes easy. If the system processing capacity cannot keep up at this time, you only need to add servers (make a few more clusters for each split service).
+
+### ⑵ Database splitting
+
+Database splitting is divided into: vertical splitting and horizontal splitting (sub-database sub-table);
+
+Put the same type of tables in one database according to the business dimension, and put other tables in another database. This kind of split is called vertical split, that is, different tables are built in different databases, and the tables are distributed to each database;
+
+For example, the data of products, orders, and users used to be in one database, but now three databases can be used, which are product database, order database, and user database;
+
+In this way, different databases can be deployed on different servers, improving the capacity and performance of a single machine, and also solving the problem of IO competition between multiple tables;
+
+According to the characteristics and rules of the data rows, some rows in the table are split into one database, and some other rows are split into another database. This method of splitting is called horizontal splitting;
+
+In the process of increasing data volume and traffic in single database and single table, large tables often become performance bottlenecks, so the database needs to be split horizontally;
+
+For database splitting, some open source solutions are adopted to reduce the difficulty of development, such as MyCat and Sharding-Sphere.
+
+## 5. Static
+
+For some data with a large amount of visits and a low update frequency, you can directly generate static html pages regularly for front-end access instead of accessing jsp;
+
+Commonly used static technologies: freemaker, velocity;
+
+Timed task, generate a static page of the homepage every 2 minutes;
+
+Static page can firstly greatly improve the access speed, no need to access the database or cache to obtain data, the browser can directly load the html page;
+
+Static pages can improve the stability of the website. If there is a problem with the program or database, the static pages can still be accessed normally.
+
+## 6. Separation of dynamic and static
+
+For example, Nginx is used to achieve dynamic and static separation. Nginx is responsible for proxying static resources, and Tomcat is responsible for processing dynamic resources;
+
+Nginx is extremely efficient, using it to process static resources can share the pressure for the back-end server;
+
+Schematic diagram of dynamic and static separation architecture
+
+![img](https://p.ipic.vip/fvdty5.png)
+
+The concurrency of redis and nginx is about 5w, and that of tomcat and mysql is about 700. Of course, it can be adjusted in some ways.
+
+## 7. Queue
+
+• The use of queues is a powerful tool to solve high concurrency and large traffic
+
+• The role of the queue is: asynchronous processing / traffic peak clipping / system decoupling
+
+• Asynchronous processing is one of the main reasons for using queues. For example, after successful registration, operations such as sending coupons/sending points/sending red envelopes/sending text messages/sending emails can all be processed asynchronously
+
+• Use queue traffic peak shaving, such as concurrent ordering, seckill, etc., you can consider using queues to temporarily enqueue requests, and use queues to flatten the traffic and turn it into flat requests for processing, so as to avoid the pressure of the application system due to instantaneous huge pressure collapse
+
+• Use queues to achieve system decoupling, for example, if the payment is successful, send a message to notify the logistics system, invoice system, inventory system, etc., without directly calling these systems;
+
+• Queue application scenarios
+
+Not all processing has to be done in real time;
+
+Not all requests must tell the user the result in real time;
+
+Not all requests must be 100% successfully processed at one time;
+
+I don't know which system needs my assistance to realize its business processing, guarantee the final consistency, and do not need strong consistency.
+
+**Common message queue products: ActiveMQ/RabbitMQ/RocketMQ/kafka**
+
+• ActiveMQ is an old and mature message middleware/message server under the jms specification
+
+• RabbitMQ/RocketMQ has excellent data reliability and excellent performance, and is widely used in some financial fields and e-commerce fields; RocketMQ is owned by Alibaba;
+
+• Kafka is mainly used in the field of big data for data analysis, log analysis and other processing. It may cause the loss of messages. It pursues performance, excellent performance, and does not pursue data reliability
+
+## 8. Pooling
+
+In actual development, we often use some pooling technologies to reduce resource consumption and improve system performance.
+
+### ⑴ object pool
+
+Reduce the resource overhead of object creation and garbage collector recycling objects by reusing objects;
+
+It can be realized by commons-pool2;
+
+It is not common to use object pools in actual projects, and it is mainly used when developing frameworks or components.
+
+### ⑵ Database connection pool
+
+Druid/DBCP/C3P0/BoneCP
+
+### ⑶ Redis connection pool
+
+JedisPool (internal implementation based on commons-pool2)
+
+### ⑷ HttpClient connection pool
+
+Core implementation class: PoolingClientConnectionManager
+
+http://hc.apache.org/httpcomponents-client-ga/httpclient/examples/org/apache/http/examples/client/ClientMultiThreadedExecution.java
+
+### ⑸ thread pool
+
+Java provides the java.util.concurrent package to implement thread pools
+
+Executors.newFixedThreadPool(8); The number of threads is fixed
+
+Executors.newSingleThreadExecutor(); Only one thread to avoid shutdown
+
+Executors.newCachedThreadPool(); can be automatically expanded
+
+Executors. newScheduledT
+
+hreadPool(10); how often to execute
+
+## 9. Optimization
+
+### ⑴ JVM optimization
+
+Set JVM parameters
+
+-server -Xmx4g -Xms4g -Xmn256m
+
+-XX:PermSize=128m
+
+-Xss256k
+
+-XX:+DisableExplicitGC
+
+-XX:+UseConcMarkSweepGC
+
+-XX:+CMSParallelRemarkEnabled
+
+-XX:+UseCMSCompactAtFullCollection
+
+-XX:LargePageSizeInBytes=128m
+
+```html
+-server VM has two operating modes, Server and Client. The difference between the two modes is that the client mode starts faster, and the server mode starts slower; but after the startup enters a stable period and runs for a long time, the program running in the server mode runs faster than the client a lot of;
+-Xmx2g maximum heap size
+-Xms2g initial heap size
+-Xmn256m the size of the young generation in the heap;
+-XX:PermSize sets the initial value of non-heap memory, which is 1/64 of physical memory by default; sets the maximum non-heap memory size by XX:MaxPermSize, which is 1/4 of physical memory by default.
+-Xss Stack size of each thread
+-XX:+DisableExplicitGC, the function of this parameter is to prohibit the display of calling GC in the code. How does the code display the call to GC, through the System.gc() function call. If this JVM startup parameter is added, calling System.gc() in the code has no effect, which is equivalent to not having this line of code.
+-XX:+UseConcMarkSweepGC Concurrent Mark Sweep (CMS) collector, CMS collector is also known as short pause concurrent collector;
+-XX:+CMSParallelRemarkEnabled reduce mark pause;
+-XX:+UseCMSCompactAtFullCollection: When using the concurrent collector, turn on the compression of the old generation.
+-XX:LargePageSizeInBytes specifies the paging page size of the Java heap
+-XX:+UseFastAccessorMethods Fast optimization of primitive types
+-XX:+UseCMSInitiatingOccupancyOnly Start CMS collection with manually defined initialization definitions
+-XX:CMSInitiatingOccupancyFraction Use cms as garbage collection to start CMS collection after 70% usage;
+```
+
+⑵Tomcat optimization
+
+• Set JVM parameters, you can refer to JVM optimization parameters
+
+Set jvm parameters in catalina.sh in the bin directory of tomcat:
+
+JAVA_OPTS="-server -XX:+PrintGCDetails -Xmx4g -Xms4g -Xmn256m
+
+-XX:PermSize=128m
+
+-Xss256k
+
+-XX:+DisableExplicitGC
+
+-XX:+UseConcMarkSweepGC
+
+-XX:+CMSParallelRemarkEnabled
+
+-XX:+UseCMSCompactAtFullCollection
+
+-XX:LargePageSizeInBytes=128m
+
+-XX:+UseFastAccessorMethods
+
+-XX:+UseCMSInitiatingOccupancyOnly
+
+-XX:CMSInitiatingOccupancyFraction=70"
+
+• Set the thread pool size of tomcat
+
+• Set IO mode
+
+• Configure APR
+
+## 10. Java program optimization
+
+• Develop good programming habits
+
+• Don't create too many objects repeatedly
+
+• Streams/files/connections must be closed in the finally block
+
+• Use less heavyweight synchronous lock synchronized, use Lock
+
+• Do not use try/catch in loop body
+
+• Define more local variables and less member variables
+
+## 11. Database optimization
+
+### ⑴ Database server optimization
+
+Modify the parameters of the configuration file of the database server, partial DBA (database administrator)
+
+### ⑵ Database Architecture Optimization
+
+• Separation of database server and application server
+
+• Separation of reading and writing: Solved by the database master-slave architecture, the main database is operated when writing data, and the slave database is operated when reading data, so as to share the pressure of reading and writing
+
+• Sub-database and sub-table: expand the database to solve the problem of data volume and capacity
+
+### ⑶ Database index optimization
+
+• Build proper indexes
+
+• The field to be indexed should be as small as possible, preferably a numeric value
+
+• Try to create indexes on fields with high uniqueness, such as primary key, serial number, etc.
+
+• Do not create indexes on fields with low uniqueness like gender
+
+### ⑷ SQL optimization
+
+There are many SQL optimizations, and a lot of experience can be summed up;
+
+Reference article: https://blog.csdn.net/jie_liang/article/details/77340905
+
+### ⑸ Using data search engine
+
+solr/elasticsearch
+
+## 12. Ning optimization
+
+Adjust configuration file parameters
+
+```html
+worker_processes 16;
+gzip on; #Open gzip compressed output
+events {
+worker_connections 65535; #limit value 65535
+   multi_accept on; #Open multi-way connection
+   use epoll; #use epoll model
+}
+```
+
+\13. Linux optimization
+
+Optimize Linux kernel parameters
+
+Modify /etc/sysctl.conf
+
+http://blog.51cto.com/yangrong/1567427 partial operation and maintenance responsibilities
+
+## 14. Network Optimization
+
+Optimization of computer room, bandwidth, router, etc.
+
+The network structure is more reasonable
+
+Operation and maintenance responsibilities
+
+## 15. Front-end optimization
+
+### ⑴ js optimization
+
+• Compression becomes smaller
+
+• Compression tool
+
+• Merge multiple js files into one js file, copy them manually directly to one file, and the page only loads this file or uses a program, such as controller, /aa/js?path=xxx.js,xxx.js
+
+### ⑵ css optimization
+
+• Compression becomes smaller
+
+• Combine multiple css files into one css file
+
+### ⑶ HTML page optimization
+
+• Don't load too much js and css
+
+• js and css are loaded at the end of the page, from the perspective of user experience
+
+• Reduced number of requests to service on the page
+
+## 16. Pressure test
+
+• Stress testing is stress testing
+
+• Before the system goes online, it is necessary to conduct a stress test on each link of the system to find out the bottlenecks of the system, and then optimize the bottlenecks of the system. After the tuning is completed, other risk factors need to be considered, such as network instability, computer room failure, etc. Therefore, we need to have fault preparation plans in advance, such as multi-computer room deployment disaster recovery, routing switching, etc. After the failure preparation plan is prepared, it is necessary to conduct drills in advance to ensure the effectiveness of the plan
+
+• Stress testing tools: Apache JMeter / LoadRunner, etc., partial testing work
+
+• CTO, architect, technical team, testing team, operation and maintenance team, DBA, etc.
+
+**Summarize**
+
+Only by completing the above work can we realize a "three high" distributed system with high concurrency, high performance, and high availability.
