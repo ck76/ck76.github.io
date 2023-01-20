@@ -5,13 +5,22 @@ https://blog.csdn.net/qq_34756156/article/details/120713595
 - Java中List，Set，数组的互相转换  https://www.jianshu.com/p/717bc27141c4
 - 
 
-
+相交
 
 - Comparetor 
 
 https://blog.csdn.net/level_code/article/details/123034411
 
 https://www.jianshu.com/p/81e5c3e88fc6
+
+
+
+```java
+//记得提前import这些
+import java.*;
+import java.util.*;
+import java.io.*;
+```
 
 
 
