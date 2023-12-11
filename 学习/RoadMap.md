@@ -8,6 +8,16 @@
 
 ## Programming Language Theory
 
+### Tool
+
+#### GCC
+
+#### LLVM
+
+#### Antlr
+
+### Assembly
+
 ### C/C++
 
 ### Rust
@@ -18,6 +28,10 @@
 
 ### Kotlin
 
+### Scala
+
+### C#
+
 ### JavaScript
 
 ### TypeScript
@@ -25,6 +39,24 @@
 ### Ruby
 
 ### Python
+
+### Lua
+
+### PHP
+
+
+
+Haskell
+
+Lisp
+
+Comman Lisp
+
+Scheme
+
+Clojure
+
+
 
 
 
@@ -39,25 +71,49 @@
 
 #### PostgreSQL
 
+#### MariaDB
+
 ### NoSQL
 
-MongoDB
+#### MongoDB
+
+Cassandra
+
+Redis
+
+Memcached
+
+
 
 
 
 ## Operating System
 
-Unix
+### Unix
 
-FreeBSD
+### FreeBSD
 
-Linux
+### Linux
 
-MaxOS
+### MaxOS
 
 
 
 ## Network
+
+HTTP
+
+FTP
+
+SMTP
+
+SSH
+
+VPN
+
+Websocket
+
+
 
 
 
@@ -67,6 +123,8 @@ MaxOS
 ### LLM
 
 ### ChatGPT
+
+### Hugging Face
 
 
 
@@ -83,6 +141,12 @@ MaxOS
 - Tailwind
 
 ### SSR
+
+Nuxt
+
+Nest
+
+Next
 
 #### Vuejs
 
@@ -104,11 +168,15 @@ esbuild
 
 Webpack
 
-### Desktop and Mobile Application
+### Desktop
+
+#### Electorn
+
+### Mobile Application
 
 #### Flutter
 
-#### Electorn
+#### Android
 
 #### React Native
 
@@ -116,9 +184,7 @@ Webpack
 
 #### Ionic
 
-
-
-
+### 
 
 
 
@@ -126,9 +192,45 @@ Webpack
 
 ### APIs
 
+SOAP
+
+REST
+
+GraphQL
+
+RPC
+
+JSON
+
 #### Caching
 
+CDN
 
+Redis
+
+### Architecture
+
+
+
+### Authentication
+
+Cookie Based
+
+OAuth
+
+Basic Auth
+
+Token Auth
+
+JWT
+
+OpenID
+
+SAML
+
+
+
+Nginx
 
 ### SpringBoot
 
@@ -136,7 +238,13 @@ Webpack
 
 ### Gin
 
-Nodejs
+#### Nodejs
+
+Django
+
+FastAPI
+
+Flask
 
 
 
@@ -147,6 +255,14 @@ Nodejs
 
 
 ## System Design
+
+### OOD
+
+### Design Pattern
+
+### Distributed System
+
+
 
 
 
@@ -182,7 +298,7 @@ Nodejs
 
 ### GCP
 
-
+Developer？
 
 ### Azure
 
@@ -191,6 +307,8 @@ Nodejs
 ## DevOps
 
 Jira
+
+Git
 
 VSCode
 
@@ -234,6 +352,22 @@ Consul
 
 
 
+## Tools
+
+Shell
+
+Bash
+
+Yaml
+
+Vim
+
+Make
+
+WordPress
+
+
+
 
 
 
@@ -251,3 +385,7 @@ Consul
 ### Links
 
 - https://roadmap.sh/roadmaps
+- https://blog.bytebytego.com/archive
+- https://www.youtube.com/@ByteByteGo/videos
+- https://www.youtube.com/@TechWorldwithNana/videos
+- 
