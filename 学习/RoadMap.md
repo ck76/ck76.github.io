@@ -32,9 +32,13 @@
 
 ### C#
 
+### Browser Engine
+
 ### JavaScript
 
 ### TypeScript
+
+### WebAssembly
 
 ### Ruby
 
@@ -50,11 +54,15 @@ Haskell
 
 Lisp
 
-Comman Lisp
+Common Lisp
 
 Scheme
 
 Clojure
+
+Crystal
+
+
 
 
 
@@ -126,6 +134,10 @@ Websocket
 
 ### Hugging Face
 
+### NLP
+
+### CV
+
 
 
 
@@ -136,7 +148,7 @@ Websocket
 
 ### HTML
 
-### CSS
+### CSS Modern CSS
 
 - Tailwind
 
@@ -190,6 +202,8 @@ Webpack
 
 ## Backend
 
+### Web Server
+
 ### APIs
 
 SOAP
@@ -202,15 +216,7 @@ RPC
 
 JSON
 
-#### Caching
-
-CDN
-
-Redis
-
-### Architecture
-
-
+# Authentication
 
 ### Authentication
 
@@ -228,9 +234,51 @@ OpenID
 
 SAML
 
+#### Caching
 
+CDN
+
+Redis
+
+# Web Security Knowledge
+
+# Testing
+
+# Scaling Databases
+
+# Databases
+
+
+
+# Architectural Patterns
+
+# Message Brokers
+
+# Containerization vs. Virtualization
+
+# Search Engines
+
+
+
+
+
+# Web Servers
 
 Nginx
+
+# Real Time Data
+
+# GraphQL
+
+# NoSQL databases
+
+
+
+# Building for Scale
+
+
+
+
 
 ### SpringBoot
 
@@ -256,9 +304,120 @@ Flask
 
 ## System Design
 
+- https://github.com/ByteByteGoHq/system-design-101
+- https://github.com/donnemartin/system-design-primer
+- 《Designing Data-Intensive Applications》
+
+### ByteByteGo
+
+#### System Design Fundamentals 
+
+#### Design a Product 
+
+Youtube
+Ads AggregationStock ExchangeNewsfeed SystemGaming LeaderboardMail ServersHotel ReservationURL ShortenerWeb CrawlerNotification SystemPayment SystemDigital WalletSearch Autocomplete
+
+#### Big Data, Storage & Location-based Service
+
+Chat System
+Key-value StoreMetrics MonitoringS3Google DriveProximity ServiceNearby FriendsGoogle Maps
+
+
+
+### 九章System Design
+
+- 
+
+
+
+### RoadMAP
+
+Introduction
+
+What is System Design?
+
+Performance vs Scalability
+
+Latency vs Throughput
+
+Availability vs Consistency
+
+- CAP Theorem
+
+Consistency Patterns
+
+Availability Patterns
+
+Background Jobs
+
+Domain Name System
+
+Content Delivery Networks
+
+Load Balancers
+
+Application Layer
+
+
+
+Databases
+
+NoSQL
+
+Key Value Store
+
+Document Store
+
+Wide Column Store
+
+Graph Databases
+
+RDBMS
+
+Replication
+
+Sharding
+
+Federation
+
+Denormalization
+
+SQL Tuning
+
+Caching
+
+Asynchronism
+
+Idempotent Operations
+
+Communication
+
+Performance Antipatterns
+
+Monitoring
+
+Cloud Design Patterns
+
+Messaging
+
+Data Management
+
+Design and Implementation
+
+Reliability Patterns
+
+
+
 ### OOD
 
+
+
 ### Design Pattern
+
+
+
+
+
 
 ### Distributed System
 
@@ -312,6 +471,10 @@ Git
 
 VSCode
 
+Gradle
+
+Yarn
+
 Webpack
 
 JUnit
@@ -327,6 +490,8 @@ Ansible
 Terraform
 
 Prometheus
+
+Fluentd
 
 Grafana
 
@@ -356,7 +521,7 @@ Consul
 
 Shell
 
-Bash
+Bash/zsh
 
 Yaml
 
@@ -367,6 +532,20 @@ Make
 WordPress
 
 
+
+## Game
+
+Render
+
+Game Engine
+
+
+
+## Build your own x
+
+- https://github.com/codecrafters-io/build-your-own-x
+
+- https://app.codecrafters.io/catalog
 
 
 
