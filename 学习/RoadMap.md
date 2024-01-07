@@ -22,7 +22,18 @@
 
 ### Rust
 
+- 
+
 ### Golang
+
+- https://www.yuque.com/aceld/lfhu8y/rg6nsf
+- https://www.yuque.com/aceld
+- https://github.com/aceld/golang
+- https://github.com/geektutu/7days-golang
+- https://github.com/senghoo/golang-design-pattern
+- https://github.com/overnote/over-golang?tab=readme-ov-file
+- https://www.bilibili.com/video/BV1gf4y1r79E/
+- 
 
 ### Java
 
@@ -50,17 +61,17 @@
 
 
 
-Haskell
+### Haskell
 
-Lisp
+### Lisp
 
-Common Lisp
+### Common Lisp
 
-Scheme
+### Scheme
 
-Clojure
+### Clojure
 
-Crystal
+### Crystal
 
 
 
@@ -102,6 +113,8 @@ Memcached
 ### FreeBSD
 
 ### Linux
+
+- https://github.com/dibingfa/flash-linux0.11-talk
 
 ### MaxOS
 
@@ -151,18 +164,29 @@ Websocket
 ### CSS Modern CSS
 
 - Tailwind
+- 吴悠讲编程 https://www.bilibili.com/video/BV17X4y1d7mT
 
 ### SSR
 
-Nuxt
+#### Nuxt
 
-Nest
+- 黑马BIlibili https://www.bilibili.com/video/BV1u84y1R7d1/
 
-Next
+#### Next
+
+- 面向加薪学习 https://www.bilibili.com/video/BV1do4y1K7BF/?spm_id_from=333.999.0.0
+
+### Nest
 
 #### Vuejs
 
+- 黑马 https://www.bilibili.com/video/BV1HE411e7vY/?spm_id_from=333.999.0.0
+- 狂神 https://www.bilibili.com/video/BV18E411a7mC/?spm_id_from=333.999.0.0
+- 吴悠讲编程 https://www.bilibili.com/video/BV1oj411D7jk/?spm_id_from=333.999.0.0
+
 #### React
+
+- 吴悠讲编程 https://www.bilibili.com/video/BV1pF411m7wV/?spm_id_from=333.999.0.0
 
 #### Angular
 
@@ -180,6 +204,8 @@ esbuild
 
 Webpack
 
+- 
+
 ### Desktop
 
 #### Electorn
@@ -196,7 +222,7 @@ Webpack
 
 #### Ionic
 
-### 
+
 
 
 
@@ -216,7 +242,7 @@ RPC
 
 JSON
 
-# Authentication
+### Authentication
 
 ### Authentication
 
@@ -240,41 +266,57 @@ CDN
 
 Redis
 
-# Web Security Knowledge
-
-# Testing
-
-# Scaling Databases
-
-# Databases
+### Web Security Knowledge
 
 
 
-# Architectural Patterns
-
-# Message Brokers
-
-# Containerization vs. Virtualization
-
-# Search Engines
+### Testing
 
 
 
+### Scaling Databases
 
 
-# Web Servers
+
+### Databases
+
+
+
+### Architectural Patterns
+
+
+
+### Message Brokers
+
+
+
+### Containerization vs. Virtualization
+
+
+
+### Search Engines
+
+
+
+
+
+### Web Servers
 
 Nginx
 
-# Real Time Data
-
-# GraphQL
-
-# NoSQL databases
+### Real Time Data
 
 
 
-# Building for Scale
+### GraphQL
+
+
+
+### NoSQL databases
+
+
+
+### Building for Scale
 
 
 
@@ -298,7 +340,9 @@ Flask
 
 ## Data Structure and Algorithm
 
-
+- 九章算法  https://www.jiuzhang.com/
+- Leetcode https://leetcode-cn.com/
+- 
 
 
 
@@ -307,10 +351,14 @@ Flask
 - https://github.com/ByteByteGoHq/system-design-101
 - https://github.com/donnemartin/system-design-primer
 - 《Designing Data-Intensive Applications》
+- https://www.youtube.com/watch?v=MbjObHmDbZo&t=73s
+- 九章算法 https://www.jiuzhang.com/
 
 ### ByteByteGo
 
 #### System Design Fundamentals 
+
+- https://www.youtube.com/@ByteByteGo
 
 #### Design a Product 
 
@@ -451,9 +499,15 @@ Reliability Patterns
 
 #### SAA
 
+- https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/
+
 #### SAP
 
+- https://www.udemy.com/course/aws-solutions-architect-professional/
+
 #### DVA
+
+- https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/
 
 ### GCP
 
@@ -465,7 +519,7 @@ Developer？
 
 ## DevOps
 
-Jira
+### Jira
 
 Git
 
@@ -481,15 +535,25 @@ JUnit
 
 Docker
 
+- Nana 
+
 ArgoCD
+
+- Nana https://www.youtube.com/watch?v=MeU5_k9ssrs
 
 Kubernetes
 
+- https://www.youtube.com/@TechWorldwithNana/playlists
+
 Ansible
 
-Terraform
+- 
 
-Prometheus
+### Terraform
+
+- https://www.youtube.com/@TechWorldwithNana/playlists
+
+### Prometheus
 
 Fluentd
 
@@ -497,15 +561,23 @@ Grafana
 
 DataDog
 
+- 
+
 Rollbar
 
+- 
+
 Jenkins
+
+- 
 
 CircleCI
 
 GithubCI
 
-GithubActions
+Github Actions
+
+- 
 
 ### Service Mesh
 
@@ -514,6 +586,8 @@ Istio
 Envoy
 
 Consul
+
+- Nana https://www.youtube.com/watch?v=s3I1kKKfjtQ
 
 
 
@@ -561,10 +635,25 @@ Game Engine
 
 
 
-### Links
+## Links
 
 - https://roadmap.sh/roadmaps
 - https://blog.bytebytego.com/archive
 - https://www.youtube.com/@ByteByteGo/videos
 - https://www.youtube.com/@TechWorldwithNana/videos
+
+### books
+
+- https://www.jb51.net/books/
+- 
+
+### BIlibili
+
+- **timdcn** https://space.bilibili.com/2094867263/video
+- **dbaplus社群** https://space.bilibili.com/2094867263/video
+- **TinTinLand** https://space.bilibili.com/1152852334/video
+- 
+
+### YouTube
+
 - 
