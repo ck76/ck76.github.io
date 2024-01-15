@@ -34,7 +34,7 @@
 - https://github.com/senghoo/golang-design-pattern
 - https://github.com/overnote/over-golang?tab=readme-ov-file
 - https://www.bilibili.com/video/BV1gf4y1r79E/
-- 
+- https://www.bilibili.com/video/BV1Mb4y1L7th/
 
 ### Java
 
@@ -176,19 +176,20 @@ Websocket
 
 #### Next
 
-- 面向加薪学习 https://www.bilibili.com/video/BV1do4y1K7BF/?spm_id_from=333.999.0.0
+- 面向加薪学习 https://www.bilibili.com/video/BV1do4y1K7BF/
 
 ### Nest
 
 #### Vuejs
 
-- 黑马 https://www.bilibili.com/video/BV1HE411e7vY/?spm_id_from=333.999.0.0
-- 狂神 https://www.bilibili.com/video/BV18E411a7mC/?spm_id_from=333.999.0.0
-- 吴悠讲编程 https://www.bilibili.com/video/BV1oj411D7jk/?spm_id_from=333.999.0.0
+- 黑马 https://www.bilibili.com/video/BV1HE411e7vY/
+- 狂神 https://www.bilibili.com/video/BV18E411a7mC/
+- 吴悠讲编程 https://www.bilibili.com/video/BV1oj411D7jk/
 
 #### React
 
-- 吴悠讲编程 https://www.bilibili.com/video/BV1pF411m7wV/?spm_id_from=333.999.0.0
+- 吴悠讲编程 https://www.bilibili.com/video/BV1pF411m7wV/
+- 
 
 #### Angular
 
@@ -328,6 +329,8 @@ Nginx
 
 ### SpringBoot
 
+- 黑马 https://www.bilibili.com/video/BV1WZ4y1P7Bp/
+
 ### Ruby on Rails
 
 ### Gin
@@ -357,6 +360,20 @@ Flask
 - 《Designing Data-Intensive Applications》
 - https://www.youtube.com/watch?v=MbjObHmDbZo&t=73s
 - 九章算法 https://www.jiuzhang.com/
+- https://www.algoexpert.io/product
+- https://www.educative.io/search?query=system+design
+  - https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
+
+- https://interviewing.io/guides/system-design-interview
+- Udemy
+  - https://www.udemy.com/course/system-design-interview-prep/
+  - https://www.udemy.com/course/rocking-system-design/
+  - https://www.udemy.com/course/system-design-a-comprehensive-guide/
+  - https://www.udemy.com/course/pragmatic-system-design/
+  - https://www.udemy.com/course/developer-to-architect/
+- https://www.designgurus.io/course/grokking-the-system-design-interview?aff=84Y9hP
+- https://www.tryexponent.com/courses/system-design-interview?ref=javinpaul2
+- 
 
 ### ByteByteGo
 
@@ -649,7 +666,7 @@ Game Engine
 ### books
 
 - https://www.jb51.net/books/
-- 
+- 豆瓣
 
 ### BIlibili
 
@@ -719,7 +736,37 @@ Game Engine
 - **谭玉刚** https://space.bilibili.com/41036636/channel/series
 - **骑自行车唱歌的木木** https://space.bilibili.com/250682464/channel/series
 - **lazyparser** https://space.bilibili.com/296494084/channel/series
+- **刘丹冰Aceld** https://space.bilibili.com/373073810/video
+- **墨明棋妙的豆子** https://space.bilibili.com/1532368659/video
 
 ### YouTube
 
 - 
+
+
+
+
+
+
+
+
+
+- https://tophub.today/
+
+- https://news.ycombinator.com/
+- https://www.v2ex.com/
+- https://www.infoq.cn/
+- https://www.csdn.net/
+- https://www.jb51.net/
+- https://juejin.cn/
+- https://www.runoob.com/
+- https://www.w3cschool.cn/
+- https://segmentfault.com/
+- https://medium.com/
+- https://www.reddit.com/
+- https://github.com/
+- https://gitee.com/explore
+- https://www.zhihu.com/
+- https://www.oschina.net/
+- https://www.cnblogs.com/
+- https://stackoverflow.com/
