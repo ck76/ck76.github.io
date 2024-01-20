@@ -373,6 +373,7 @@ Flask
   - https://www.udemy.com/course/developer-to-architect/
 - https://www.designgurus.io/course/grokking-the-system-design-interview?aff=84Y9hP
 - https://www.tryexponent.com/courses/system-design-interview?ref=javinpaul2
+- https://github.com/soulmachine/system-design
 - 
 
 ### ByteByteGo
