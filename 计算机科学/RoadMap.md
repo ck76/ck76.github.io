@@ -60,8 +60,6 @@
 
 ### PHP
 
-
-
 ### Haskell
 
 ### Lisp
@@ -492,10 +490,10 @@ Reliability Patterns
 
 
 
+## Microservices
 
 
-
-### Distributed System
+## Distributed System
 
 
 
