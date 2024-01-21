@@ -74,7 +74,9 @@
 
 ### Crystal
 
+### 开发者生态
 
+- https://www.jetbrains.com/zh-cn/lp/devecosystem-2023/
 
 
 
@@ -84,6 +86,8 @@
 ## Database
 
 ### SQL
+
+- https://github.com/ascoders/weekly/blob/master/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/64.%E7%B2%BE%E8%AF%BB%E3%80%8A%E6%89%8B%E5%86%99%20SQL%20%E7%BC%96%E8%AF%91%E5%99%A8%20-%20%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90%E3%80%8B.md
 
 #### MySQL
 
@@ -207,7 +211,9 @@ esbuild
 
 Webpack
 
-- 
+- 《深入浅出Webpack》
+  - https://webpack.wuhaolin.cn/
+
 
 ### Desktop
 
@@ -335,7 +341,7 @@ Nginx
 
 ### Gin
 
-#### Nodejs
+### Nodejs
 
 Django
 
@@ -561,19 +567,19 @@ Docker
 
 ArgoCD
 
-- Nana https://www.youtube.com/watch?v=MeU5_k9ssrs
+- Nana Tech https://www.youtube.com/watch?v=MeU5_k9ssrs
 
 Kubernetes
 
-- https://www.youtube.com/@TechWorldwithNana/playlists
+- Nana Tech https://www.youtube.com/@TechWorldwithNana/playlists
 
 Ansible
 
-- 
+- Nana Tech 
 
 ### Terraform
 
-- https://www.youtube.com/@TechWorldwithNana/playlists
+- Nana Tech https://www.youtube.com/@TechWorldwithNana/playlists
 
 ### Prometheus
 
@@ -605,7 +611,11 @@ Github Actions
 
 Istio
 
+- Nana 
+
 Envoy
+
+- 
 
 Consul
 
@@ -643,6 +653,8 @@ Game Engine
 
 - https://app.codecrafters.io/catalog
 
+- 《自己动手写XX》
+
 
 
 
@@ -664,13 +676,13 @@ Game Engine
 - https://www.youtube.com/@ByteByteGo/videos
 - https://www.youtube.com/@TechWorldwithNana/videos
 
-### books
+- 
 
-- https://www.jb51.net/books/
-- 豆瓣
+
 
 ### BIlibili
 
+- 
 - **timdcn** https://space.bilibili.com/2094867263/video
 - **dbaplus社群** https://space.bilibili.com/2094867263/video
 - **TinTinLand** https://space.bilibili.com/1152852334/video
@@ -746,6 +758,28 @@ Game Engine
 
 
 
+### 网课
+
+- https://www.udemy.com/
+- 
+
+
+
+
+
+### books
+
+- https://www.jb51.net/books/
+- 豆瓣
+
+- **机械工业出版社**：
+- **电子工业出版社**：https://www.phei.com.cn/module/goods/wssd_index.jsp
+- **清华大学出版社**：http://www.tup.tsinghua.edu.cn/booksCenter/allbooks.html?id=2000&year=2024
+- **人民邮电出版社**：https://www.ptpress.com.cn/shopping/index
+- **图灵图书**：https://m.ituring.com.cn/
+- **北京大学出版社**：除了一般学术书籍，也出版计算机科学相关书籍。
+- **科学出版社**：出版各类科学技术书籍，包括计算机科学领域。
+
 
 
 
@@ -771,3 +805,33 @@ Game Engine
 - https://www.oschina.net/
 - https://www.cnblogs.com/
 - https://stackoverflow.com/
+
+
+
+
+
+
+
+
+
+https://rss-source.com/
+
+https://docs.rsshub.app/zh/
+
+- Bytebytego https://blog.bytebytego.com/
+- 美团 https://tech.meituan.com/
+- 阿里
+- 字节
+- 百度
+- 腾讯
+- 滴滴
+- 阿里云 https://developer.aliyun.com/
+- 极客时间 https://time.geekbang.org/
+- 阮一峰 https://www.ruanyifeng.com/blog/
+- Facebook https://engineering.fb.com/
+- Twitter https://blog.twitter.com/engineering/en_us
+- Linkedin https://engineering.linkedin.com/
+- Netflix https://netflixtechblog.com/
+- Uber https://www.uber.com/en-JP/blog/engineering/
+- MFi https://mfi.engineering/hello-world-technologies-behind-saas-management-platform-d0f0fcfb99c0
+- 
