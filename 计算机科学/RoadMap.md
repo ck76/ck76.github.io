@@ -22,7 +22,7 @@
 
 ### Rust
 
-- https://www.bilibili.com/video/BV1Tx411s7Hr/
+- BIlibili oeasy https://www.bilibili.com/video/BV1Tx411s7Hr/
 - 
 
 ### Golang
@@ -33,8 +33,12 @@
 - https://github.com/geektutu/7days-golang
 - https://github.com/senghoo/golang-design-pattern
 - https://github.com/overnote/over-golang?tab=readme-ov-file
-- https://www.bilibili.com/video/BV1gf4y1r79E/
-- https://www.bilibili.com/video/BV1Mb4y1L7th/
+- [刘丹冰Aceld ](https://space.bilibili.com/373073810) 8小时 https://www.bilibili.com/video/BV1gf4y1r79E/
+- [timdcn go](https://space.bilibili.com/1783460869) 
+  - AST https://www.bilibili.com/video/BV1Mb4y1L7th/
+  - Reflection https://www.bilibili.com/video/BV1Te411r7eM/
+
+- 狂神 https://space.bilibili.com/95256449
 
 ### Java
 
@@ -182,18 +186,34 @@ Websocket
 
 ### Nest
 
-#### Vuejs
+- 小满 https://www.bilibili.com/video/BV1NG41187Bs/
+
+-  [NestJS 官方基础课程【中英字幕 NestJS Fundamentals Course】](https://www.bilibili.com/video/BV1T44y1W7Si?p=75&vd_source=873139316c17ab467d7d8fccf2e388f5)
+
+### Vuejs
 
 - 黑马 https://www.bilibili.com/video/BV1HE411e7vY/
 - 狂神 https://www.bilibili.com/video/BV18E411a7mC/
 - 吴悠讲编程 https://www.bilibili.com/video/BV1oj411D7jk/
+- 小满 Vue3-Router https://www.bilibili.com/video/BV1oL411P7JX/
+- [coderwhy官方账号](https://space.bilibili.com/36139192)  Vue https://www.bilibili.com/video/BV15741177Eh
 
-#### React
+### React
 
 - 吴悠讲编程 https://www.bilibili.com/video/BV1pF411m7wV/
 - 
 
-#### Angular
+### Angular
+
+- 
+
+
+
+### MicroFrontEnd微前端
+
+- 小满 
+
+
 
 ### Package Manage
 
@@ -561,7 +581,9 @@ JUnit
 
 Docker
 
-- Nana 
+- Nana Docker 
+- Nana Docker Compose https://www.youtube.com/watch?v=SXwC9fSwct8
+- 狂神 https://www.bilibili.com/video/BV1og4y1q7M4
 
 ArgoCD
 
@@ -599,7 +621,11 @@ Jenkins
 
 CircleCI
 
+- 
+
 GithubCI
+
+- 
 
 Github Actions
 
