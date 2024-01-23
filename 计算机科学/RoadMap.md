@@ -205,7 +205,8 @@ Websocket
 
 ### Angular
 
-- 
+- https://www.youtube.com/watch?v=3dHNOWTI7H8
+- https://www.youtube.com/watch?v=k5E2AVpwsko
 
 
 
@@ -591,11 +592,14 @@ ArgoCD
 
 Kubernetes
 
-- Nana Tech https://www.youtube.com/@TechWorldwithNana/playlists
+- Nana Tech 
+  - https://www.youtube.com/@TechWorldwithNana/playlists
+  - https://www.youtube.com/watch?v=S8eX0MxfnB4
+
 
 Ansible
 
-- Nana Tech 
+- Nana Tech  https://www.youtube.com/watch?v=1id6ERvfozo
 
 ### Terraform
 
@@ -617,7 +621,7 @@ Rollbar
 
 Jenkins
 
-- 
+- Nana Tech https://www.youtube.com/watch?v=pMO26j2OUME
 
 CircleCI
 
