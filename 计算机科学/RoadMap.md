@@ -829,7 +829,7 @@ Game Engine
 - https://www.jb51.net/books/
 - 豆瓣
 
-- **机械工业出版社**：
+- **机械工业出版社**：http://www.cmpedu.com/so.htm?p=1&max=8&KEY=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%9B%E4%B9%A6&S=BOOK&SORT=&ZYFL=
 - **电子工业出版社**：https://www.phei.com.cn/module/goods/wssd_index.jsp
 - **清华大学出版社**：http://www.tup.tsinghua.edu.cn/booksCenter/allbooks.html?id=2000&year=2024
 - **人民邮电出版社**：https://www.ptpress.com.cn/shopping/index
@@ -889,6 +889,7 @@ https://docs.rsshub.app/zh/
 - 阮一峰 https://www.ruanyifeng.com/blog/
 - Facebook https://engineering.fb.com/
 - Twitter https://blog.twitter.com/engineering/en_us
+  - https://blog.twitter.com/en_us
 - Linkedin https://engineering.linkedin.com/
 - Netflix https://netflixtechblog.com/
 - Uber https://www.uber.com/en-JP/blog/engineering/
