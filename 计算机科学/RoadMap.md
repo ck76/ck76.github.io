@@ -16,6 +16,8 @@
 
 #### Antlr
 
+#### Lex & Yacc
+
 ### Assembly
 
 ### C/C++
@@ -57,6 +59,8 @@
 ### WebAssembly
 
 ### Ruby
+
+- https://www.youtube.com/watch?v=CfdRXSrwLDo
 
 ### Python
 
@@ -109,7 +113,7 @@ Redis
 
 Memcached
 
-
+### ElasticSearch
 
 
 
@@ -117,7 +121,11 @@ Memcached
 
 ### Unix
 
+- 《》
+
 ### FreeBSD
+
+- 
 
 ### Linux
 
@@ -126,21 +134,23 @@ Memcached
 
 ### MaxOS
 
+- 《》
+
 
 
 ## Network
 
-HTTP
+### HTTP
 
-FTP
+#### FTP
 
-SMTP
+#### SMTP
 
-SSH
+#### SSH
 
-VPN
+#### VPN
 
-Websocket
+#### Websocket
 
 
 
@@ -156,6 +166,8 @@ Websocket
 ### Hugging Face
 
 ### NLP
+
+- [【计算机博物志】自然语言处理的“古往”和“今来”](https://www.youtube.com/watch?v=RUtvBkibIT8)
 
 ### CV
 
@@ -173,6 +185,7 @@ Websocket
 
 - Tailwind
 - 吴悠讲编程 https://www.bilibili.com/video/BV17X4y1d7mT
+- 
 
 ### SSR
 
@@ -212,7 +225,7 @@ Websocket
 
 ### MicroFrontEnd微前端
 
-- 小满 
+- 小满  https://www.bilibili.com/video/BV1tg4y1x75Q/
 
 
 
@@ -362,11 +375,13 @@ Nginx
 
 ### Nodejs
 
-Django
+### Django
 
-FastAPI
+- 
 
-Flask
+### FastAPI
+
+### Flask
 
 
 
@@ -374,6 +389,12 @@ Flask
 
 - 九章算法  https://www.jiuzhang.com/
 - Leetcode https://leetcode-cn.com/
+- The Algorithms https://github.com/TheAlgorithms
+
+
+
+## Design Patterns
+
 - 
 
 
@@ -558,9 +579,11 @@ Reliability Patterns
 
 ### GCP
 
-Developer？
+- Developer？
 
 ### Azure
+
+- 
 
 
 
@@ -590,7 +613,7 @@ ArgoCD
 
 - Nana Tech https://www.youtube.com/watch?v=MeU5_k9ssrs
 
-Kubernetes
+### Kubernetes
 
 - Nana Tech 
   - https://www.youtube.com/@TechWorldwithNana/playlists
@@ -779,16 +802,22 @@ Game Engine
 - **lazyparser** https://space.bilibili.com/296494084/channel/series
 - **刘丹冰Aceld** https://space.bilibili.com/373073810/video
 - **墨明棋妙的豆子** https://space.bilibili.com/1532368659/video
+- 
+
+
 
 ### YouTube
 
-- 
+- **プログラミングチュートリアル** https://www.youtube.com/@user-hl9uv6cv7k/playlists
+- **TechWorld with Nana** https://www.youtube.com/@TechWorldwithNana
 
 
 
 ### 网课
 
 - https://www.udemy.com/
+- https://time.geekbang.org/
+- https://kaiwu.lagou.com/
 - 
 
 
@@ -812,7 +841,7 @@ Game Engine
 
 
 
-
+### 资讯网站
 
 - https://tophub.today/
 
@@ -841,6 +870,8 @@ Game Engine
 
 
 
+
+### RSS
 
 https://rss-source.com/
 
