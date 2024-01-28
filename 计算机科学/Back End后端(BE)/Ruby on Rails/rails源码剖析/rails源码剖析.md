@@ -1,0 +1,3 @@
+
+
+- [googl](https://www.google.com/search?q=rails%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90&newwindow=1&sca_esv=598399931&sxsrf=ACQVn08VGG_JXVWkTppP-f0PPL6e44BD6w%3A1705246733528&ei=DQCkZffXH-jg2roPzpmhuAo&oq=rails%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIhFyYWlsc-a6kOeggeWJluaekEjjQFDZEVjTPXADeAGQAQCYAdQBoAGOCKoBBTAuNS4xuAEDyAEA-AEBqAIPwgIKEAAYRxjWBBiwA8ICBxAjGOoCGCfCAgcQLhjqAhgnwgIKECMYgAQYigUYJ8ICBBAjGCfCAgUQABiABMICCxAuGIAEGMcBGNEDwgIFEC4YgATiAwQYACBBiAYBkAYC&sclient=mobile-gws-wiz-serp&authuser=0)
