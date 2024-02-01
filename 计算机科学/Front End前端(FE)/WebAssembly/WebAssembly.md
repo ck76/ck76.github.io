@@ -1,0 +1,3 @@
+- https://roadmap.sh/frontend
+
+**[WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)** - WebAssembly is a comparatively new technology that allows you to run  code written in languages other than JavaScript on the web. It’s a  low-level assembly-like language with a compact binary format that runs  with near-native performance and provides languages such as C/C++ and  Rust with a compilation target so that they can run on the web.
