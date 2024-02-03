@@ -609,9 +609,13 @@ Docker
 - Nana Docker Compose https://www.youtube.com/watch?v=SXwC9fSwct8
 - 狂神 https://www.bilibili.com/video/BV1og4y1q7M4
 
+Pulumi
+
 ArgoCD
 
 - Nana Tech https://www.youtube.com/watch?v=MeU5_k9ssrs
+
+FluxCD
 
 ### Kubernetes
 
@@ -877,6 +881,7 @@ https://rss-source.com/
 
 https://docs.rsshub.app/zh/
 
+- 王垠  https://www.yinwang.org/
 - Bytebytego https://blog.bytebytego.com/
 - 美团 https://tech.meituan.com/
 - 阿里
