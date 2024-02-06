@@ -1,5 +1,7 @@
 
 
+<img src="https://p.ipic.vip/am3o2r.jpg" alt="InCollage_20240207_002539181" style="zoom: 33%;" />
+
 
 
 对比不同的编程范式可以帮助理解每种范式的特点、优势和使用场景。以下是一些主要编程范式的对比表格：
