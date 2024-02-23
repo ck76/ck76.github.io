@@ -822,7 +822,9 @@ Game Engine
 - https://www.udemy.com/
 - https://time.geekbang.org/
 - https://kaiwu.lagou.com/
-- 
+- https://conanhujinming.github.io/comments-for-awesome-courses/
+- https://www.yuque.com/apachecn/awesome-cs-courses-zh/ewaeib?language=en-us
+- https://csdiy.wiki/
 
 
 
