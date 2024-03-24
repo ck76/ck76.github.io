@@ -285,8 +285,6 @@ JSON
 
 ### Authentication
 
-### Authentication
-
 Cookie Based
 
 OAuth
@@ -781,7 +779,7 @@ Game Engine
 - https://space.bilibili.com/314509002/channel/series
 - https://space.bilibili.com/495226768/channel/series
 - https://space.bilibili.com/165659472/channel/series
-- **软件工艺师** https://space.bilibili.com/361469957/channel/series
+- **软件工艺师 杨旭** https://space.bilibili.com/361469957/channel/series
 - **掘金技术社区** https://space.bilibili.com/298238638
 - **Golang在发光** https://space.bilibili.com/698418199/channel/series
 - **波波微课** https://space.bilibili.com/518029478/channel/series
@@ -833,6 +831,7 @@ Game Engine
 ### books
 
 - https://www.jb51.net/books/
+- https://www.manongbook.com/
 - 豆瓣
 
 - **机械工业出版社**：http://www.cmpedu.com/so.htm?p=1&max=8&KEY=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%9B%E4%B9%A6&S=BOOK&SORT=&ZYFL=
