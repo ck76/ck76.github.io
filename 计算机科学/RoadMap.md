@@ -351,7 +351,7 @@ Nginx
 
 ### GraphQL
 
-
+- https://www.youtube.com/watch?v=bUD6ERbcXrQ&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=2
 
 ### NoSQL databases
 
@@ -400,8 +400,14 @@ Nginx
 ## System Design
 
 - https://github.com/ByteByteGoHq/system-design-101
+  - 
+
 - https://github.com/donnemartin/system-design-primer
+  - ①
+
 - 《Designing Data-Intensive Applications》
+  - ①②
+
 - https://www.youtube.com/watch?v=MbjObHmDbZo&t=73s
 - 九章算法 https://www.jiuzhang.com/
 - https://www.algoexpert.io/product
@@ -440,7 +446,7 @@ Key-value StoreMetrics MonitoringS3Google DriveProximity ServiceNearby FriendsGo
 
 ### 九章System Design
 
-- 
+- ①
 
 
 
@@ -589,6 +595,8 @@ Reliability Patterns
 
 ### Jira
 
+- https://www.youtube.com/watch?v=nHuhojfjeUY
+
 Git
 
 VSCode
@@ -601,7 +609,7 @@ Webpack
 
 JUnit
 
-Docker
+### Docker
 
 - Nana Docker 
 - Nana Docker Compose https://www.youtube.com/watch?v=SXwC9fSwct8
@@ -609,7 +617,7 @@ Docker
 
 Pulumi
 
-ArgoCD
+### ArgoCD
 
 - Nana Tech https://www.youtube.com/watch?v=MeU5_k9ssrs
 
@@ -636,15 +644,15 @@ Fluentd
 
 Grafana
 
-DataDog
+### DataDog
 
 - 
 
-Rollbar
+### Rollbar
 
 - 
 
-Jenkins
+### Jenkins
 
 - Nana Tech https://www.youtube.com/watch?v=pMO26j2OUME
 
@@ -656,13 +664,13 @@ GithubCI
 
 - 
 
-Github Actions
+### Github Actions
 
 - 
 
 ### Service Mesh
 
-Istio
+#### Istio
 
 - Nana 
 
@@ -670,7 +678,7 @@ Envoy
 
 - 
 
-Consul
+### Consul
 
 - Nana https://www.youtube.com/watch?v=s3I1kKKfjtQ
 
@@ -686,7 +694,7 @@ Yaml
 
 Vim
 
-Make
+### Make
 
 WordPress
 
