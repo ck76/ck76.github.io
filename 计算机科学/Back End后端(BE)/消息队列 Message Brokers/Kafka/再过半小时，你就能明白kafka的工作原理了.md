@@ -80,7 +80,7 @@
 
 话不多说，先看图，通过这张图我们来捋一捋相关的概念及之间的关系：
 
-![img](https://pic1.zhimg.com/80/v2-4692429e9184ed4a93911fa3a1361d28_1440w.webp)
+![img](https://p.ipic.vip/0kcomo.jpg)
 
 如果看到这张图你很懵逼，木有关系！我们先来分析相关概念
 
@@ -112,7 +112,7 @@
 
 我们看上面的架构图中，producer就是生产者，是数据的入口。注意看图中的红色箭头，Producer在写入数据的时候**永远的找leader**，不会直接将数据写入follower！那leader怎么找呢？写入的流程又是什么样的呢？我们看下图：
 
-![img](https://pic2.zhimg.com/80/v2-b7e72e9c5b9971e89ec174a2c2201ed9_1440w.webp)
+![img](https://p.ipic.vip/rrj6bi.jpg)
 
 发送的流程就在图中已经说明了，就不单独在文字列出来了！需要注意的一点是，消息写入leader后，follower是主动的去leader进行同步的！producer采用push模式将数据发布到broker，每条消息追加到分区中，顺序写入磁盘，所以保证**同一分区**内的数据是有序的！写入示意图如下：
 
