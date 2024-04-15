@@ -1,6 +1,10 @@
+[TOC]
 
 
 
+
+
+### Brew 
 
 ```sh
 https://formulae.brew.sh/cask/
@@ -59,4 +63,8 @@ iBar.app
 iPic.app
 TencentDocs.app
 ```
+
+
+
+### Chrome App Extension
 
