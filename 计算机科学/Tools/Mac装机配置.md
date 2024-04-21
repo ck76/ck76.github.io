@@ -27,6 +27,8 @@ brew install awscli
 brew install rust
 brew install go
 brew install node
+brew install ghc
+brew install ocaml
 brew install rustbrew tap localsend/localsend
 brew install localsend
 
