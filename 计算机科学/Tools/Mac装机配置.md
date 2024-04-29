@@ -16,21 +16,25 @@ https://formulae.brew.sh/formula/
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-
-
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/OhMyZsh/ohmyzsh/master/tools/install.sh)"
 
 brew install wget
 brew install awscli
-#brew install docker 
+brew install docker 
 brew install rust
 brew install go
 brew install node
 brew install ghc
 brew install ocaml
-brew install rustbrew tap localsend/localsend
+brew install rust
+brew tap localsend/localsend
 brew install localsend
+brew install tree
+brew install gh
+brew install git-lfs
+git lfs install
+git lfs install --system
 
 
 
