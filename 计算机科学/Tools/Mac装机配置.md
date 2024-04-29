@@ -21,7 +21,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/OhMyZsh/ohmyzsh/master/too
 
 brew install wget
 brew install awscli
-brew install docker 
 brew install rust
 brew install go
 brew install node
@@ -35,6 +34,7 @@ brew install gh
 brew install git-lfs
 git lfs install
 git lfs install --system
+git config --global core.quotepath false
 
 
 
@@ -60,6 +60,7 @@ brew install --cask simple-web-server
 brew install --cask pdfelement
 brew install --cask rancher
 brew install --cask rectangle
+#brew install docker 
 brew install --cask docker
 
 
