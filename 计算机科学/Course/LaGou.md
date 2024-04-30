@@ -9,6 +9,7 @@
   - ①
 
 - [24讲吃透分布式数据库](https://www.bilibili.com/video/BV1WY411C73V/?spm_id_from=333.999.0.0)
+  - ①
 - [300分钟吃透分布式缓存](https://www.bilibili.com/video/BV1TM411M7r5/?spm_id_from=333.999.0.0)
 - [ZooKeeper源码分析与实战](https://www.bilibili.com/video/BV19Y411B7rd/?spm_id_from=333.999.0.0)
 - [etcd原理与实践](https://www.bilibili.com/video/BV1fD4y1g75B/?spm_id_from=333.999.0.0)
