@@ -112,8 +112,10 @@
 - [14讲提升职场竞争力](https://www.bilibili.com/video/BV1C24y177EF/?spm_id_from=333.999.0.0)
 - 极简 OKR 实战
   - 
+
 - [OKR：组织敏捷目标和绩效管理](https://www.bilibili.com/video/BV1kk4y147EJ/?spm_id_from=333.999.0.0)
   - 
+
 - 
 
 

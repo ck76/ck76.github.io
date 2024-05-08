@@ -35,6 +35,8 @@ brew install git-lfs
 git lfs install
 git lfs install --system
 git config --global core.quotepath false
+brew install minikube
+brew install kubectl
 
 
 
@@ -62,6 +64,7 @@ brew install --cask rancher
 brew install --cask rectangle
 #brew install docker 
 brew install --cask docker
+#brew install orbstack
 
 
 
