@@ -1,5 +1,10 @@
 
 
+- https://github.com/heynickc/awesome-ddd?tab=readme-ov-file#go
+- https://www.processon.com/view/5c8a63f7e4b0ab74ecd87698
+
+
+
 # DDD书籍推荐
 
 
