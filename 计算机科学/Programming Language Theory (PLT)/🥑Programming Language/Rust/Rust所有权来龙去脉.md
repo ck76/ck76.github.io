@@ -238,7 +238,7 @@ let s2 = s1;
 
 示意图如下：
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/IxaA7MOpq6vLWVPlQPlBRibok7jqiaMkOI6YiakV8J5Br5s8ysqwiazK1oqrVu7RjoLne6E0YQiajI8uUl7gE1I6DPw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://p.ipic.vip/ilt24t.jpg)
 
 
 
@@ -277,7 +277,7 @@ println!("s1 = {}, s2 = {}", s1, s2);
 
 示意图如下：
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/IxaA7MOpq6vLWVPlQPlBRibok7jqiaMkOIdbDNLDqC7xicJbrhkrRnWUpZQlsoicwGXwDToqK83jyx6JjlBeYibJqzw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://p.ipic.vip/spcmkm.png)
 
 
 
