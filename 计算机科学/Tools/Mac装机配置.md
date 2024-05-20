@@ -26,6 +26,7 @@ brew install go
 brew install node
 brew install ghc
 brew install ocaml
+brew install opam
 brew install rust
 brew tap localsend/localsend
 brew install localsend
