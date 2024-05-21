@@ -2,6 +2,12 @@
 
 
 
+![img](https://p.ipic.vip/sp8ysq.png)
+
+- https://medium.com/@m.sandovalcalvo/kotlin-type-system-unveiling-the-mystery-50613f0db893
+
+
+
 Kotlin 的类型系统是其语言设计中一个核心特征，它融合了多种编程语言理论（PLT）和类型理论（Type Theory）的元素，以提供既强大又灵活的开发体验。Kotlin 的类型系统受到了多种语言的影响，特别是 Java、Scala 以及其他一些函数式编程语言。下面是一些主要的影响和设计决策：
 
 ### 1. 静态类型系统

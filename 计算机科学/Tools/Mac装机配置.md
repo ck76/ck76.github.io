@@ -23,6 +23,7 @@ brew install wget
 brew install awscli
 brew install rust
 brew install go
+brew install --cask racket
 brew install node
 brew install ghc
 brew install ocaml
