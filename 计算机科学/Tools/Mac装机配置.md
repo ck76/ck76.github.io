@@ -55,12 +55,12 @@ brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask sublime-text
 brew install --cask the-unarchiver
-brew install --cask miro
-brew install --cask discord
-brew install --cask figma
+#brew install --cask miro
+#brew install --cask discord
+#brew install --cask figma
 brew install --cask maccy
-brew install --cask drawio
-brew install --cask simple-web-server
+#brew install --cask drawio
+#brew install --cask simple-web-server
 brew install --cask pdfelement
 brew install --cask rancher
 brew install --cask rectangle

@@ -39,6 +39,8 @@
 #### 操作系统
 
 - [重学操作系统](https://www.bilibili.com/video/BV1YL41127RT/?spm_id_from=333.999.0.0)
+  - ①
+
 - [重学操作系统 上](https://www.bilibili.com/video/BV1Yx4y1L7Uu/?spm_id_from=333.999.0.0)
 - [重学操作系统 下](https://www.bilibili.com/video/BV1As4y1e7vC/?spm_id_from=333.999.0.0)
 - 
@@ -53,6 +55,8 @@
 - [架构设计面试精讲](https://www.bilibili.com/video/BV1Qs4y1Z7Yf/?spm_id_from=333.999.0.0)
 - [软件架构场景实战22讲](https://www.bilibili.com/video/BV19j41137Wp/?spm_id_from=333.999.0.0)
 - [趣学设计模式](https://www.bilibili.com/video/BV1hY411Y7zR/?spm_id_from=333.999.0.0)
+  - 
+
 - [软件系统架构：从科研到实践](https://www.bilibili.com/video/BV1Km4y117Fe/?spm_id_from=333.999.0.0)
 
 
@@ -72,7 +76,9 @@
 
 #### 云 微服务
 
-- Kubernetes 原理剖析与实战应用
+- [Kubernetes 原理剖析与实战应用](https://www.bilibili.com/video/BV1A84y1J7vp/?spm_id_from=333.337.search-card.all.click&vd_source=873139316c17ab467d7d8fccf2e388f5)
+  - ①
+
 - [云原生微服务架构实战精讲](https://www.bilibili.com/video/BV1a24y147WS/?spm_id_from=333.999.0.0)
 
 
