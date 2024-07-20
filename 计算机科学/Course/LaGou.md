@@ -13,8 +13,12 @@
 - [24讲吃透分布式数据库](https://www.bilibili.com/video/BV1WY411C73V/?spm_id_from=333.999.0.0)
   - ①
 - [300分钟吃透分布式缓存](https://www.bilibili.com/video/BV1TM411M7r5/?spm_id_from=333.999.0.0)
+  - 
+
 - [ZooKeeper源码分析与实战](https://www.bilibili.com/video/BV19Y411B7rd/?spm_id_from=333.999.0.0)
 - [etcd原理与实践](https://www.bilibili.com/video/BV1fD4y1g75B/?spm_id_from=333.999.0.0)
+  - 
+
 
 
 
@@ -41,8 +45,6 @@
 - [重学操作系统](https://www.bilibili.com/video/BV1YL41127RT/?spm_id_from=333.999.0.0)
   - ①
 
-- [重学操作系统 上](https://www.bilibili.com/video/BV1Yx4y1L7Uu/?spm_id_from=333.999.0.0)
-- [重学操作系统 下](https://www.bilibili.com/video/BV1As4y1e7vC/?spm_id_from=333.999.0.0)
 - 
 
 
@@ -72,14 +74,24 @@
 
 
 
+#### 计算机网路
+
+- 计算机网络
+  - ①
+
 
 
 #### 云 微服务
+
+- Docker
+  - ①
 
 - [Kubernetes 原理剖析与实战应用](https://www.bilibili.com/video/BV1A84y1J7vp/?spm_id_from=333.337.search-card.all.click&vd_source=873139316c17ab467d7d8fccf2e388f5)
   - ①
 
 - [云原生微服务架构实战精讲](https://www.bilibili.com/video/BV1a24y147WS/?spm_id_from=333.999.0.0)
+  - 
+
 
 
 
@@ -88,6 +100,8 @@
 #### Go
 
 - [Go 微服务实战 38讲](https://www.bilibili.com/video/BV1cv4y1b7E8/?spm_id_from=333.999.0.0)
+  - 
+
 - [22 讲通关 Go 语言](https://www.bilibili.com/video/BV1GT411R7H6/?spm_id_from=333.999.0.0)
 
 
@@ -95,14 +109,22 @@
 #### 数据库
 
 - [高性能MySQL实战](https://www.bilibili.com/video/BV1Nj411K7BT/?spm_id_from=333.999.0.0)
+  - 
+
 - [MySQL难点解析](https://www.bilibili.com/video/BV1hc411n7RY/?spm_id_from=333.999.0.0)
+  - 
+
 
 
 
 #### 大数据
 
 - [大数据技术基础 22 讲](https://www.bilibili.com/video/BV1BR4y1q7eA/?spm_id_from=333.999.0.0)
+  - ①🆖。。。
+
 - [21讲吃透实时流计算](https://www.bilibili.com/video/BV1yg4y1H76k/?spm_id_from=333.999.0.0)
+  - 
+
 
 
 

@@ -32,6 +32,7 @@ brew install rust
 brew tap localsend/localsend
 brew install localsend
 brew install tree
+brew install thefuck
 brew install gh
 brew install git-lfs
 git lfs install
@@ -66,7 +67,8 @@ brew install --cask rancher
 brew install --cask rectangle
 #brew install docker 
 brew install --cask docker
-#brew install orbstack
+brew install --cask orbstack
+brew install --cask multipass
 
 
 
