@@ -1,0 +1,4 @@
+- https://www.andres-loeh.de/LambdaPi/
+- http://strictlypositive.org/Easy.pdf
+- https://www.andres-loeh.de/LambdaPi/LambdaPi.pdf
+- 

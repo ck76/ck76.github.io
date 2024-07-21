@@ -1,0 +1,17 @@
+
+
+- [OPLSS — Oregon Programming Language Summer School](https://www.cs.uoregon.edu/research/summerschool/summer24/)
+  - [OPLSS 2023 — Types, Semantics, and Logic](https://www.cs.uoregon.edu/research/summerschool/summer23/topics.php)
+  - [OPLSS 2022 — Types, Semantics, and Program Reasoning](https://www.cs.uoregon.edu/research/summerschool/summer22/topics.php)
+  - [OPLSS 2021 — Foundations of Programming and Security](https://www.cs.uoregon.edu/research/summerschool/summer21/topics.php)
+  - [OPLSS 2019 — Foundations of Probabilistic Programming and Security](https://www.cs.uoregon.edu/research/summerschool/summer19/topics.php)
+  - [OPLSS 2018 — Parallelism and Concurrency](https://www.cs.uoregon.edu/research/summerschool/summer18/topics.php)
+  - [OPLSS 2017 — A Spectrum of Types](https://www.cs.uoregon.edu/research/summerschool/summer17/topics.php)
+  - [OPLSS 2016 — Types, Logic, Semantics, and Verification](http://www.cs.uoregon.edu/research/summerschool/summer16/curriculum.php)
+  - [OPLSS 2015 — Types, Logic, Semantics, and Verification](http://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html)
+  - [OPLSS 2014 — Types, Logic, Semantics, and Verification](http://www.cs.uoregon.edu/research/summerschool/summer14/curriculum.html)
+  - [OPLSS 2013 — Types, Logic, and Verification](http://www.cs.uoregon.edu/research/summerschool/summer13/curriculum.html)
+  - [OPLSS 2012 — Logic, Languages, Compilation, and Verification](http://www.cs.uoregon.edu/research/summerschool/summer12/curriculum.html)
+  - [OPLSS 2011 — Types, Semantics and Verification](http://www.cs.uoregon.edu/research/summerschool/summer11/curriculum.html)
+  - [OPLSS 2010 — Logic, Languages, Compilation, and Verification](http://www.cs.uoregon.edu/research/summerschool/summer10/curriculum.html)
+  - [Complete archives 2002-Present](https://www.cs.uoregon.edu/research/summerschool/archives.html)

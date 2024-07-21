@@ -1,0 +1,17 @@
+# So you want to learn type theory... but where to start? Here are some suggestions.
+
+First, watch Frank Pfenning's OPLSS2012 lectures "Proof Theory Foundations". The videos on the OPLSS website ([here](https://web.archive.org/web/20190213100051/https://www.cs.uoregon.edu/research/summerschool/summer12/curriculum.html)) are very large (>1gb per file, 3 files per lecture, 4 lectures), but they're also very high def (1080p I think) which means you can read what he writes on the whiteboard. The videos on YouTube ([here](https://web.archive.org/web/20190213100051/https://www.youtube.com/playlist?list=PL_zaeQ6Mf5FAYNk3GsK9tdj_Ce-eIfH_b)) are smaller in size and resolution, but each video is a whole lecture, and it's on YouTube so you don't have to download anything. Other years have other versions of the course, which is also helpful as you get different emphasis, different audience questions, etc. but 2012 is the best, because the content can vary significantly from year to year, and 2012 provides the best general, foundational introduction to the ideas.
+
+**Update (15 May 2016)** I've had several requests to add my Curry-Howard tutorial to this page, and I think this is the best place to put it in the progression, so consider this the first-and-a-half suggestion: [A Tutorial on the Curry-Howard Correspondence](https://web.archive.org/web/20190213100051/http://purelytheoretical.com/papers/ATCHC.pdf).
+
+Second, read Frank's lecture notes for his Constructive Logic course at CMU ([here](https://web.archive.org/web/20190213100051/http://www.cs.cmu.edu/~fp/courses/15317-f09/schedule.html)) which go along nicely with the OPLSS class.
+
+Third, once you've felt you've properly understood what Frank was talking about, watch Bob Harper's OPLSS2012 lectures "Type Theory Foundations", at the same link above. This introduces a richer, more complicated theory that's necessary for doing dependently typed programming, mathematical reasoning, etc. YouTube videos are again available ([here](https://web.archive.org/web/20190213100051/https://www.youtube.com/playlist?list=PLGCr8P_YncjXRzdGq2SjKv5F2J8HUFeqN))
+
+Fourth, read *Programming in Martin-Löf Type Theory* ([here](https://web.archive.org/web/20190213100051/http://www.cse.chalmers.se/research/group/logic/book/book.pdf)).
+
+Another optional thing you can do is read Harper's excellent book *Practical Foundations for Programming Languages* (aka PFPL, [here](https://web.archive.org/web/20190213100051/http://www.cs.cmu.edu/~rwh/pfpl.html)), and/or Ben Pierce's *Types and Programming Languages*. These are both oriented more towards implementing languages with rich type theories, rather than about type theory in and of itself, and so are longer and more involved, but they're great nonetheless.
+
+If you're curious how to implement a type checker, I've written a blog post ([here](https://web.archive.org/web/20190213100051/http://languagengine.co/blog/so-you-want-to-write-a-type-checker/)) which is hopefully enlightening.
+
+While you're doing all of these, play around with various strongly typed programming languages, like ML, Haskell, and Agda. Also get on IRC. Go on freenode, join #haskell, #agda, and ##typetheory, and talk to people (my nick there is augur). Learn by doing, and talk to people when you get stuck. It really helps. Also get on Twitter, follow people into this sort of thing (my handle is @psygnisfive), check out who they talk to about type theory, and engage people.
