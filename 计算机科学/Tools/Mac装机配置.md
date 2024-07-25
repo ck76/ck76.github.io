@@ -69,6 +69,7 @@ brew install --cask rectangle
 brew install --cask docker
 brew install --cask orbstack
 brew install --cask multipass
+brew install --cask the-unarchiver
 
 
 

@@ -25,7 +25,7 @@
   - 
 
 - 魔力Haskell
-  - ①第二部分
+  - ①第二部分 116页
 
 - 如何设计程序 How to design program
   - ①
@@ -64,8 +64,3 @@
 
 
 
-
-
-
-- [邏輯、語言與計算暑期研習營](https://flolac.iis.sinica.edu.tw/zh/2024/)
-- 
