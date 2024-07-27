@@ -22,9 +22,51 @@ Lambda 立方体有三个维度，分别是：
 
 这三个维度一起作用，形成了一个非常强大的类型系统框架，允许语言设计者和程序员根据需要定义更加丰富和复杂的类型。在 Lambda 立方体中，每个顶点都代表了这三个维度的一种组合，可以描述具有相应类型系统特征的编程语言。例如，简单的类型化 Lambda 演算（如 Java 中的方法类型系统）就位于立方体的一个角落，而更复杂的系统，如允许依赖类型的语言，则可能位于立方体的另一个角落。
 
+![bcf6afc886daf30a921a8ac885feb5a1](https://p.ipic.vip/wnijcv.png)
 
+要详解类型系统表中的八个系统，我们需要理解每个系统如何扩展了基本的简单类型λ演算（Simply Typed Lambda Calculus，STLC）。以下是每个系统的详细解释：
 
+1. **λ→ (STLC)**：
+   - **关系**：$ \star \rightarrow \star $
+   - **例子**：简单类型λ演算（STLC）
+   - **解释**：在简单类型λ演算中，类型只包含基本类型（$\star$）和从一种类型到另一种类型的箭头类型（$ \rightarrow $）。这是最基本的类型系统，支持函数应用和函数抽象。
 
+2. **λ2 (System F)**：
+   - **关系**：$ \star \rightarrow \star $, $ \square \rightarrow \star $
+   - **例子**：System F
+   - **解释**：System F引入了类型多态性，允许函数不仅可以抽象值，还可以抽象类型。类型变量（$ \square $）可以被实例化为任何类型。这扩展了简单类型λ演算，使得泛型编程成为可能。
+
+3. **λω (Weak λω)**：
+   - **关系**：$ \star \rightarrow \star $, $ \square \rightarrow \square $
+   - **例子**：Weak λω
+   - **解释**：Weak λω进一步扩展了System F，允许类型构造器之间的抽象。这意味着我们可以构造接受类型并返回类型的类型构造器，使得类型系统更加灵活和强大。
+
+4. **λω (System Fω)**：
+   - **关系**：$ \star \rightarrow \star $, $ \square \rightarrow \star $, $ \square \rightarrow \square $
+   - **例子**：System Fω
+   - **解释**：System Fω结合了System F和Weak λω的特性，既允许类型多态性又允许类型构造器之间的抽象。这是一个非常强大的类型系统，能够表示复杂的类型关系和抽象。
+
+5. **λP (LF)**：
+   - **关系**：$ \star \rightarrow \star $, $ \star \rightarrow \square $
+   - **例子**：LF（Logical Framework）
+   - **解释**：LF是一种逻辑框架，用于表示逻辑推理中的各种规则。它允许类型依赖于其他类型，从而支持更复杂的逻辑表达。
+
+6. **λP2 (λP2)**：
+   - **关系**：$ \star \rightarrow \star $, $ \star \rightarrow \square $, $ \square \rightarrow \star $
+   - **例子**：λP2
+   - **解释**：λP2进一步扩展了LF，结合了类型多态性和类型依赖性。这使得它可以表示更复杂的逻辑和类型关系。
+
+7. **λPω (Weak λPω)**：
+   - **关系**：$ \star \rightarrow \star $, $ \star \rightarrow \square $, $ \square \rightarrow \square $
+   - **例子**：Weak λPω
+   - **解释**：Weak λPω是一个结合了Weak λω和LF的特性，允许类型构造器之间的抽象和类型依赖性。
+
+8. **λPω (CoC)**：
+   - **关系**：$ \star \rightarrow \star $, $ \square \rightarrow \star $, $ \star \rightarrow \square $, $ \square \rightarrow \square $
+   - **例子**：CoC（Calculus of Constructions）
+   - **解释**：CoC是λ立方体中最强大的系统，结合了所有前面系统的特性，允许完全的类型多态性、类型构造器抽象和类型依赖性。它是依赖类型理论的重要基础。
+
+这些系统通过扩展基本类型λ演算，逐步增加了类型多态性、类型构造器和类型依赖性，使得类型系统能够表示更复杂的类型和逻辑关系。这些扩展使得编程语言能够更强大地表达和验证程序的正确性。
 
 
 
