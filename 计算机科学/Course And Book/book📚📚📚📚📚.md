@@ -53,6 +53,18 @@
 - 程序设计语言概念 Robert W.Sebesta
   - ①2021-11-18 -肥肠肥肠号
 
+- 极客时间
+  
+- BIlibili
+  
+- Zhihu
+  
+- YouTube
+  
+- Transformer and Attention Mechanism
+  
+- CNN and BiLSTM
+  
 - 数据密集型应用系统设计
   - ①2022-06-28-肥肠号
 
