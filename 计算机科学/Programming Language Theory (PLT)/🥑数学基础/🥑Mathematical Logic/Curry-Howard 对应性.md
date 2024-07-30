@@ -365,3 +365,88 @@ class TypeClass a b | a -> b where
 
 ### 总结
 Curry-Howard-Lambek对应关系在Haskell编程语言中有广泛的应用。它将逻辑中的命题、编程语言中的类型以及范畴论中的对象联系起来，使得编程和逻辑证明具有一致性。通过理解这些概念，可以更好地利用Haskell进行函数式编程，并且能够应用逻辑和数学中的一些深刻理论。
+
+
+
+### -----------------------------
+
+一个例子
+
+![ef71afa7ecd38042639ae3162ae7487e](https://p.ipic.vip/lpwh1d.png)
+
+## 柯里-霍华德对应的简单情形
+
+柯里-霍华德对应表明，逻辑证明可以看作是程序，而逻辑命题可以看作是类型。这个对应关系的一个简单情形是直觉主义命题逻辑的蕴含片段（Propositional Logic of Implications）与只含有基本类型和函数类型的简单类型 Lambda 演算（Simply Typed Lambda Calculus）之间的对应。
+
+### 逻辑命题与类型系统的对应
+
+在这个简单情形中，我们只考虑命题逻辑中的蕴含（implication）和简单类型 Lambda 演算中的函数类型。这种对应关系的具体表现如下：
+
+- 逻辑命题中的蕴含 $A \rightarrow B$ 对应于类型系统中的函数类型 $A \rightarrow B$。
+- 逻辑证明对应于 Lambda 演算中的函数定义。
+- 逻辑命题的推理规则对应于 Lambda 演算中的类型规则。
+
+### 一个具体的例子
+
+考虑命题 $(A \rightarrow (B \rightarrow C)) \rightarrow ((A \rightarrow B) \rightarrow (A \rightarrow C))$。我们将展示它在自然演绎系统中的证明和在 Lambda 演算中的程序表示。
+
+#### 自然演绎系统中的证明
+
+自然演绎系统中的证明是一棵树，表示如何从假设一步步推导出结论。下面是这个命题的证明树：
+
+$$
+\frac{
+    \frac{
+        \frac{u: A \rightarrow (B \rightarrow C) \quad w: A}{v: A \rightarrow B}
+        {vw: B}
+    }
+    {u(vw): C}
+}
+{\lambda w. u(vw): A \rightarrow C}
+$$
+
+$$
+\frac{
+    \frac{
+        \frac{u: A \rightarrow (B \rightarrow C)}{v: A \rightarrow B}
+        {\lambda v w. u(vw): (A \rightarrow B) \rightarrow (A \rightarrow C)}
+    }
+    {\lambda u v w. u(vw): (A \rightarrow (B \rightarrow C)) \rightarrow ((A \rightarrow B) \rightarrow (A \rightarrow C))}
+}
+{\text{证明结束}}
+$$
+
+#### Lambda 演算中的程序
+
+在 Lambda 演算中，我们可以将这个逻辑证明表示为一个程序：
+
+$$
+\lambda u v w. u (v w)
+$$
+
+这个程序的类型可以通过类型推断规则一步步推导出来：
+
+1. $u$ 的类型是 $A \rightarrow (B \rightarrow C)$
+2. $v$ 的类型是 $A \rightarrow B$
+3. $w$ 的类型是 $A$
+4. $v w$ 的类型是 $B$
+5. $u (v w)$ 的类型是 $C$
+6. 因此 $\lambda w. u (v w)$ 的类型是 $A \rightarrow C$
+7. 因此 $\lambda v w. u (v w)$ 的类型是 $(A \rightarrow B) \rightarrow (A \rightarrow C)$
+8. 最终 $\lambda u v w. u (v w)$ 的类型是 $(A \rightarrow (B \rightarrow C)) \rightarrow ((A \rightarrow B) \rightarrow (A \rightarrow C))$
+
+### 逻辑证明与程序类型的对应关系
+
+通过这个例子，我们可以看到逻辑证明与程序类型之间的对应关系：
+
+- 逻辑证明树对应于程序的构造。
+- 逻辑命题对应于程序的类型。
+
+具体来说：
+
+- 逻辑命题 $(A \rightarrow (B \rightarrow C)) \rightarrow ((A \rightarrow B) \rightarrow (A \rightarrow C))$ 对应于类型 $(A \rightarrow (B \rightarrow C)) \rightarrow ((A \rightarrow B) \rightarrow (A \rightarrow C))$。
+- 证明树对应于 Lambda 表达式 $\lambda u v w. u (v w)$。
+
+### 总结
+
+柯里-霍华德对应展示了逻辑与计算之间的深刻联系。通过理解自然演绎系统中的证明树如何对应于 Lambda 演算中的程序，我们可以更深入地理解程序的类型系统，以及如何使用类型来确保程序的正确性。这种对应关系不仅美妙地统一了逻辑与计算，而且在实际编程中也有着重要的应用，尤其是在函数式编程语言如 OCaml 和 Haskell 中。

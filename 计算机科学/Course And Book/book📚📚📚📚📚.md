@@ -43,6 +43,8 @@
 - 深入理解计算机系统（原书第2版）
 - 自己动手实现Lua : 虚拟机、编译器和标准库
 - 漫画算法：小灰的算法之旅
+- 九章算法
+- 九章系统设计System Design
 - labuladong的算法小抄
 - 计算机程序的构造和解释(原书第2版)
   - ①2021-10-07 -号
@@ -96,7 +98,7 @@
 - 程序员的范畴论
   - ①肥肠号
   - ②
-- [函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
+- [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
@@ -116,12 +118,28 @@
   - ①20240727-肥肠号
 - 如何设计程序 How to design program
   - ①20240727应该从第五部分生成递归第25章开始看, 确实都是设计函数的好思想，就是例子都太无聊了
+- [python-telegram-bot](https://core.telegram.org/bots/api)
+
+  - 2024-07-30 免费云端相册Telegram
+
 - [十分钟魔法练习](https://magic.huohuo.moe/)
   - ①20240
 - A Timeline for Logic, λ-Calculus, and Programming Language Theory
+
+  - 
+
 - 类型论简史  A Brief History of Type Theory
+
+  - 
+
 - 面向PL宝宝的柯里-霍华德同构curry-howard
-- Advanced topics in types and programming languages (Benjamin C. Pierce) 
+
+  - 
+
+- [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
+
+  - 
+
 - ice1000-立方类型论入门
 - simply-typed-lambda-calculus简单类型 λ 演算
 - Proofs and Types
@@ -190,8 +208,10 @@
 - 计算机程序构造和解释 sicp-py
 - 编程语言实现模式
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
+- [Python源码剖析](https://book.douban.com/subject/3117898/)
 - Lua解释器构建：从虚拟机到编译器
 - Lua设计与实现 (李创)
+- On Lisp
 - OAuth 2.0 從入門到實戰：利用驗證和授權守護 API 的安全 (周建毅
 - OAuth 2 in Action 、OAuth 2实战
 - Go程序员面试笔试宝典
