@@ -70,7 +70,7 @@ brew install --cask docker
 brew install --cask orbstack
 brew install --cask multipass
 brew install --cask the-unarchiver
-brew install --cask db-browser-for-sqlite
+#brew install --cask db-browser-for-sqlite
 
 
 Dash.app

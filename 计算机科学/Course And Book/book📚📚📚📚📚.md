@@ -43,7 +43,7 @@
 - 深入理解计算机系统（原书第2版）
 - 自己动手实现Lua : 虚拟机、编译器和标准库
 - 漫画算法：小灰的算法之旅
-- 九章算法
+- 九章算法Algorithm
 - 九章系统设计System Design
 - labuladong的算法小抄
 - 计算机程序的构造和解释(原书第2版)
@@ -55,13 +55,19 @@
 - 程序设计语言概念 Robert W.Sebesta
   - ①2021-11-18 -肥肠肥肠号
 
-- 极客时间
+- Leetcode*
   
-- BIlibili
+- 极客时间*
   
-- Zhihu
+- BIlibili*
   
-- YouTube
+- Zhihu*
+  
+- YouTube*
+  
+- Vue.js入門 基礎から実践アプリケーション開発まで
+  
+- AWS Solution Architecture Associate (Udemy)
   
 - Transformer and Attention Mechanism
   
@@ -70,13 +76,13 @@
 - 数据密集型应用系统设计
   - ①2022-06-28-肥肠号
 
-- 深入剖析Kubernetes
+- 深入剖析Kubernetes-张磊
   - ①肥肠地号
 
 - ANSI Common Lisp
   - ①2024-05-26
 
-- 软技能 : 代码之外的生存指南
+- 软技能 : 代码之外的生存指南-博客
   - ①2024-07-13
 
 
@@ -90,16 +96,13 @@
 - 深入设计模式-Guru
 
   - ①挺不错
-
 - 范畴论完全装逼手册 / Grokking Monad
 
   - ①挺不错
-
+  - ②
 - 程序员的范畴论
   - ①肥肠号
   - ②
-- [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
-- [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
   - ②
@@ -107,7 +110,7 @@
   - ①20240717-肥肠号, 需要再读
   - 北大-编程语言的设计原理
   - ②
-- Types and Programming Language-m4p1e
+  - Types and Programming Language-m4p1e
 - 计算机是怎样跑起来的
   - ①20240721-没必要读
 - 面向对象是怎样工作的
@@ -120,26 +123,29 @@
   - ①20240727应该从第五部分生成递归第25章开始看, 确实都是设计函数的好思想，就是例子都太无聊了
 - [python-telegram-bot](https://core.telegram.org/bots/api)
 
-  - 2024-07-30 免费云端相册Telegram
-
-- [十分钟魔法练习](https://magic.huohuo.moe/)
-  - ①20240
+  - 2024-07-30 [免费云端相册Telegram-Bot](https://github.com/ck76/Telegram-Bulk-File-Uploader-Bot)
 - A Timeline for Logic, λ-Calculus, and Programming Language Theory
+  - ①20240804-肥肠棒
+- [十分钟魔法练习](https://magic.huohuo.moe/)
+  - ①20240804-Java
+- 函数式程序设计入门邓玉欣
 
-  - 
-
+  - ①20240805-前边介绍概念的地方是真的好，甚至我都能看懂！后面还没仔细看, 但是大致是介绍Coq和OCaml语法凑字数的
+- [学习Datadog](https://docs.datadoghq.com/)
+  - 20240802
+- - 
+- [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
+  - ①2024080
+- [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
+- 
 - 类型论简史  A Brief History of Type Theory
 
-  - 
-
+  - ①2024080
+- [香蕉空间-类型论](https://www.bananaspace.org/wiki/%E7%B1%BB%E5%9E%8B%E8%AE%BA)
 - 面向PL宝宝的柯里-霍华德同构curry-howard
-
-  - 
-
+  - ①2024080
 - [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
-
   - 
-
 - ice1000-立方类型论入门
 - simply-typed-lambda-calculus简单类型 λ 演算
 - Proofs and Types
@@ -157,8 +163,11 @@
   - 
 - 程序设计语言理论基础  Foundations for Programming Languages
   - 
+- [nLab](https://ncatlab.org/nlab/all_pages)
+- [agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
 - 魔力Haskell
-  - ①第二部分 116页
+
+  - ①①2024080 第二部分 116页
 - Haskell趣学指南
 - Go 语言设计与实现
   - 
@@ -168,45 +177,46 @@
 - Go程序员面试笔试宝典
 - Go 1.5 源码剖析
 - 网络是怎样连接的
-  - 
+  - ①2024080
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
-  - 
 - [Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
-  - 
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
-  - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
-  - 
+  - ①2024080
 - 
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
+  - ①2024080
 - [TypeScript 类型体操姿势合集](https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.zh-CN.md)
   - https://github.com/ronami/HypeScript
   - https://github.com/skyzh/type-exercise-in-rust
 - ML程序设计教程
-  - 
+  - ①2024080
 - Haskell函数式编程入门卷一
   - 
 - Haskell函数式编程入门卷二
   - 
 - Haskell in Depth (Vitaly Bragilevsky)
 - Programming with Types
-- Essentials.of.Programming.Languages EOPL
+- [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - 
+- [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
+- 
 - 自己动手实现解释器
-  - 
+  - ①2024080
 - Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
-  - 
+  - ①2024080
 - Functional Programming in Kotlin (Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano) 
-  - 
+  - ①2024080
 - Functional Programming Made Easier A Step-by-Step Guide (Charles Scalfani) 
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
 - [Github 搜索Functional Programming](https://github.com/search?q=Functional+Programming&type=repositories&p=2)
-- 函数式程序设计入门邓玉欣
 - The Dao of Functional Programming Bartosz Milewski
 - 函数式编程思维
 - 计算的本质：深入剖析程序和计算机
 - 计算机程序构造和解释 sicp-py
 - 编程语言实现模式
+
+  - ①2024080
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
 - [Python源码剖析](https://book.douban.com/subject/3117898/)
 - Lua解释器构建：从虚拟机到编译器
@@ -240,4 +250,8 @@
 - LLM-TAP大规模语言模型 从理论到实践
 - 大语言模型 (赵鑫, 李军毅, 周昆, 唐天一, 文继荣)
 - 
+
+
+
+
 
