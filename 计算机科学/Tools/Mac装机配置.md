@@ -29,6 +29,7 @@ brew install ghc
 brew install ocaml
 brew install opam
 brew install rust
+#brew install antlr
 brew tap localsend/localsend
 brew install localsend
 brew install tree
