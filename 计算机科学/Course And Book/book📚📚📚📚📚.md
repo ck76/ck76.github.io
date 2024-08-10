@@ -102,8 +102,10 @@
 - 深入设计模式-Guru
 
   - ①挺不错
-- 范畴论完全装逼手册 / Grokking Monad
+- 函数式编程指南 [mostly-adequate-guide-chinese](https://github.com/ck76/mostly-adequate-guide-chinese)
 
+  - ①挺不错
+- 范畴论完全装逼手册 / Grokking Monad
   - ①挺不错
   - ②
 - 程序员的范畴论
@@ -122,9 +124,8 @@
 - 面向对象是怎样工作的
   - ①20240721-也没啥必要讲Java的
 - 松本行弘：编程语言的设计与实现
-  
+
   - ①20240806-也没啥必要读，没意思
-  
 - The Little Schemer  递归与函数式的奥妙
   - ①20240721-非常好
 - [wikiwand Category:类型论](https://www.wikiwand.com/zh/Category:%E7%B1%BB%E5%9E%8B%E8%AE%BA)
@@ -138,6 +139,7 @@
   - ①20240804-肥肠棒
 - [十分钟魔法练习](https://magic.huohuo.moe/)
   - ①20240804-Java
+  - ②2024080-Typescript
 - 函数式程序设计入门邓玉欣
 
   - ①20240805-前边介绍概念的地方是真的好，甚至我都能看懂！后面还没仔细看, 但是大致是介绍Coq和OCaml语法凑字数的
@@ -145,21 +147,23 @@
 
   - ①20240805
 - [学习Datadog](https://docs.datadoghq.com/)
-  - 20240802
-- - 
+  - ①20240802
+- [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
+  - ①20240812-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
+- [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
+  - 第三章第70页
+- [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①2024080
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
-- 
 - 类型论简史  A Brief History of Type Theory
 
   - ①2024080
 - [香蕉空间-类型论](https://www.bananaspace.org/wiki/%E7%B1%BB%E5%9E%8B%E8%AE%BA)
 - 面向PL宝宝的柯里-霍华德同构curry-howard
   - ①2024080
-- simply-typed-lambda-calculus简单类型 λ 演算-Jiatu Li-李嘉图
+- simply-typed-lambda-calculus简单类型 λ 演算
 - [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
-  - 
 - ice1000-立方类型论入门
 - simply-typed-lambda-calculus简单类型 λ 演算
 - Proofs and Types
@@ -202,7 +206,6 @@
   - ①2024080
 - 图解网络硬件
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
-- [Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
   - ①2024080
@@ -220,16 +223,13 @@
   - 
 - Haskell in Depth (Vitaly Bragilevsky)
 - Programming with Types WITH EXAMPLES IN TYPESCRIPT
-- [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
-  - 
-- [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
-  - 
-- [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
+- [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
+
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程 (图灵程序设计丛书) 
 - 编程语言实现模式 - Language Implementation Patterns
   - ①2024080
 - 自己动手实现解释器
-  - ①2024080
+  - ①2024080  
 - [TODO](https://github.com/12Tall/lsbasi_cn)
 - Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
   - ①2024080
