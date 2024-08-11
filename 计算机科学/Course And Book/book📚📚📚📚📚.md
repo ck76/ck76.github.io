@@ -54,7 +54,8 @@
 - 北航程序设计语言原理教材（共18章）
 - 程序设计语言概念 Robert W.Sebesta
   - ①2021-11-18 -肥肠肥肠号
-
+  - ②【TODO】
+  
 - Leetcode*
   
 - 极客时间*
@@ -93,7 +94,7 @@
 
 - [程序语言理论与实现-张宏波](https://bobzhang.github.io/courses/) 基础软件理论与实践公开课 张宏波
   - ①肥肠号
-  - ②
+  - ②【TODO】
 - [当然我在扯淡](https://www.yinwang.org/#)
   - 王垠-A Fresh View at  Type Inference 幻灯片
   - Ground-Up Computer Science(gucs-sample-merged)
@@ -105,19 +106,20 @@
 - 函数式编程指南 [mostly-adequate-guide-chinese](https://github.com/ck76/mostly-adequate-guide-chinese)
 
   - ①挺不错
+- ②【TODO】
 - 范畴论完全装逼手册 / Grokking Monad
   - ①挺不错
-  - ②
+  - ②【TODO】
 - 程序员的范畴论
   - ①肥肠号
-  - ②
+  - ②【TODO】
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
-  - ②
+  - ②【TODO】
 - 类型和程序设计语言 Types and Programming Languages
   - ①20240717-肥肠号, 需要再读
   - 北大-编程语言的设计原理
-  - ②
+  - ②【TODO】
   - Types and Programming Language-m4p1e
 - 计算机是怎样跑起来的
   - ①20240721-没必要读
@@ -139,10 +141,10 @@
   - ①20240804-肥肠棒
 - [十分钟魔法练习](https://magic.huohuo.moe/)
   - ①20240804-Java
-  - ②2024080-Typescript
+  - ②2024080【TODO】-Typescript
 - 函数式程序设计入门邓玉欣
 
-  - ①20240805-前边介绍概念的地方是真的好，甚至我都能看懂！后面还没仔细看, 但是大致是介绍Coq和OCaml语法凑字数的
+  - ①20240805-前边介绍概念的地方是真的好，甚至我都能看懂！后面还没仔细看, 但是大致有点像是介绍Coq和OCaml用法凑字数的
 - [github搜索中文翻译](https://github.com/search?q=%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91&type=repositories&p=37)
 
   - ①20240805
@@ -150,9 +152,18 @@
   - ①20240802
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
   - ①20240812-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
+  - 【TODO】Kotlin版本
+- [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
+
+  - ①20240812
+
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
-  - 第三章第70页
+  - ①第三章第70页
+  - 【TODO】
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
+
+  - ①
+
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①2024080
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
@@ -244,9 +255,11 @@
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
 - [Github 搜索Functional Programming](https://github.com/search?q=Functional+Programming&type=repositories&p=2)
 - The Dao of Functional Programming Bartosz Milewski
+- The Little Javer
 - 函数式编程思维
 - 计算的本质：深入剖析程序和计算机
-- 计算机程序构造和解释 sicp-py
+- SICP-计算机程序构造和解释 sicp
+- CTM-Concepts, Techniques, and Models of Computer Programming
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
 - [Python源码剖析](https://book.douban.com/subject/3117898/)
 - 自己动手写Python虚拟机
