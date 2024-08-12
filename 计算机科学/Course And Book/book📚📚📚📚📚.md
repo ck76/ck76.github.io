@@ -178,6 +178,7 @@
 - ice1000-立方类型论入门
 - simply-typed-lambda-calculus简单类型 λ 演算
 - Proofs and Types
+- TTFP Type Theory & Functional Programming Simon Thompson
 - Type and Proof-类型和证明 (rainoftime, txyyss, marisa)
   - 
 - 编程语言的邀请
@@ -199,7 +200,7 @@
   - ①①2024080 第二部分 116页
 - Haskell趣学指南
 
-
+- 
 
 
 - Go 语言设计与实现
