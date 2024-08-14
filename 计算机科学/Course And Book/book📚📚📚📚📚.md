@@ -47,13 +47,13 @@
 - 九章系统设计System Design
 - labuladong的算法小抄
 - 计算机程序的构造和解释(原书第2版)
-  - ①2021-10-07 -号
-  - ②2022-08-24
+  - ①20211007 -号
+  - ②20220824
 - MySQL必知必会
 - 微服务架构设计模式
 - 北航程序设计语言原理教材（共18章）
 - 程序设计语言概念 Robert W.Sebesta
-  - ①2021-11-18 -肥肠肥肠号
+  - ①20211118 -肥肠肥肠号
   - ②【TODO】
   
 - Leetcode*
@@ -80,16 +80,16 @@
 - CNN and BiLSTM
 
 - 数据密集型应用系统设计
-  - ①2022-06-28-肥肠号
+  - ①20220628-肥肠号
 
 - 深入剖析Kubernetes-张磊
   - ①肥肠地号
 
 - ANSI Common Lisp
-  - ①2024-05-26
+  - ①20240526
 
 - 软技能 : 代码之外的生存指南-博客
-  - ①2024-07-13
+  - ①20240713
 
 
 - [程序语言理论与实现-张宏波](https://bobzhang.github.io/courses/) 基础软件理论与实践公开课 张宏波
@@ -136,7 +136,7 @@
   - ①20240727应该从第五部分生成递归第25章开始看, 确实都是设计函数的好思想，就是例子都太无聊了
 - [python-telegram-bot](https://core.telegram.org/bots/api)
 
-  - 2024-07-30 [免费云端相册Telegram-Bot](https://github.com/ck76/Telegram-Bulk-File-Uploader-Bot)
+  - 20240730 [免费云端相册Telegram-Bot](https://github.com/ck76/Telegram-Bulk-File-Uploader-Bot)
 - A Timeline for Logic, λ-Calculus, and Programming Language Theory
   - ①20240804-肥肠棒
 - [十分钟魔法练习](https://magic.huohuo.moe/)
@@ -149,30 +149,29 @@
 
   - ①20240805
 - [学习Datadog](https://docs.datadoghq.com/)
-  - ①20240802
+  - ①20240802~20240816
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
   - ①20240812-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
   - 【TODO】Kotlin版本
 - [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
 
   - ①20240812
-
+- 类型论简史  A Brief History of Type Theory
+  
+  - ①20240814~
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
-  - ①第三章第70页
-  - 【TODO】
+  - ①第三章第70页【TODO】
+  - ②
+- [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
-
-  - ①
-
+- ①
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①2024080
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
-- 类型论简史  A Brief History of Type Theory
-
-  - ①2024080
+- - 
 - [香蕉空间-类型论](https://www.bananaspace.org/wiki/%E7%B1%BB%E5%9E%8B%E8%AE%BA)
 - 面向PL宝宝的柯里-霍华德同构curry-howard
-  - ①2024080
+  - ①202408
 - simply-typed-lambda-calculus简单类型 λ 演算
 - [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
 - ice1000-立方类型论入门
@@ -235,13 +234,13 @@
   - 
 - Haskell in Depth (Vitaly Bragilevsky)
 - Programming with Types WITH EXAMPLES IN TYPESCRIPT
-- [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
+- [CPDT](http://adam.chlipala.net/cpdt/) - Certified Programming with Dependent Types - Adam Chlipala
 
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程 (图灵程序设计丛书) 
 - 编程语言实现模式 - Language Implementation Patterns
-  - ①2024080
+  - ①20240813~
 - 自己动手实现解释器
-  - ①2024080  
+  - ①20240813~
 - [TODO](https://github.com/12Tall/lsbasi_cn)
 - Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
   - ①2024080
