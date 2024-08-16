@@ -1,6 +1,6 @@
-总结形式化语言的相关概念。源自于教材Practical Foundations for Programming Languages。这个总结作为辅助阅读资料，无法代替教材本身。
+[toc]
 
-Chapter1: Abstract Syntax
+### Chapter 1: Abstract Syntax
 抽象语法。用树状结构表达。书中的内容不关注具体的语法，仅仅关注语法片段（句法）对应的树，以及树中的标识符（类似于变量）的绑定关系（类似于变量的赋值）。这本书主要关注语法的结构化信息，对于语法最后是如何用字符串表达的并不关心。
 
 abstract syntax tree。 抽象语法树，经常用$ a $表示。叶子被称作variables，非叶节点（内部节点）被称作operators。
@@ -31,7 +31,7 @@ occur free。一个变量如果在一个abstractor中是occur free的，代表�
 
 symbolic parameter（symbol）。符号参数。抽象语法并不在任何时候都包含固定的operator。有时，一个operator是否可用与当前语法的上下文有关。我们使用symbolic parameter，或者symbol来表示operator的集合的索引，只有symbolic parameter是活跃的，对应的那些operator才是可用的，用$ u $表示，用$ U $代表symbol的集合。$ o[u] $表示与symbol $ u $对应的operator $ o $。语法绑定树的定义可以进一步扩展，用$ B[U;\chi] $代表语法绑定树的集合，包含了符号集合$ U $和变量集合$ \chi $。与variable（变量）一样，symbol也支持绑定到一定的语法树中，比如abstractor $ u.a $。symbol和variable在重命名上是完全一致的，只要不产生新的冲突，但是除此之外，symbol就有所不同，symbol不是一个占位符，不能被替换。
 
-Chapter 2: Inductive Definitions
+### Chapter  2: Inductive Definitions
 归纳定义。一种编程语言的基本工具。用递归的方式来做出定义。structural induction是一种特殊的归纳定义。
 
 judgment。判断，也被称作assertion，断言。judgement是一种对于语法树性质和多个语法树关系的描述。
@@ -54,8 +54,8 @@ strongest judgement。强断言。是一种相比闭包更为严格的条件。�
 
 rule induction。规则归纳。归纳定义（inductive definition）的一种方式。规则归纳出现在我们要推理的judgement（所定义的性质）既是一推rule要推理的目标，又存在于这些rule的前提之中。所谓”我推理我自己“。数学归纳法就是一个规则归纳，即通常中一个基础的对象对应的断言出发，然后通过加入一个假设（归纳假设），扩展到整个值域。rule induction必须保证judgement是strongest judgment。PFPL在为什么要strongest judgment，没说明原因。我猜测只有strongest judgment才能保证对于一个推理的路径是唯一的，从而使得归纳过程可以无限递归下去。或者如果在前提中包含了目标judgement的rule集合不是唯一的推理路径，那么可能使用普通的、不递归的其他方式也可以推理出目标judgement，rule induction就不是必须的。
 
-Chapter 3: Hypothetical and General Judgements
-这一章节包含了两种进阶的断言。与Chapter 2介绍的judgement不同（这一章将这类断言称作basic judgement），Chapter 3中的断言更像是“断言的断言”，与之前的以语法树为对象的断言不同，这一章的断言的对象也是断言。这一章的两种断言，一个是hypothetical judgement，研究的是假设与可推理性，还有可接受性。另外一种断言是general judgment，研究的是断言的变量（见variable的概念）的不同重命名和替换以及断言的符号参数（见symbolic parameter的概念）的重命名对于断言有效性的影响。此外，这一章还给出了两种进阶的断言对应的rule和rule induction（归纳定义）。
+### Chapter  3: Hypothetical and General Judgements
+这一章节包含了两种进阶的断言。与### Chapter  2介绍的judgement不同（这一章将这类断言称作basic judgement），### Chapter  3中的断言更像是“断言的断言”，与之前的以语法树为对象的断言不同，这一章的断言的对象也是断言。这一章的两种断言，一个是hypothetical judgement，研究的是假设与可推理性，还有可接受性。另外一种断言是general judgment，研究的是断言的变量（见variable的概念）的不同重命名和替换以及断言的符号参数（见symbolic parameter的概念）的重命名对于断言有效性的影响。此外，这一章还给出了两种进阶的断言对应的rule和rule induction（归纳定义）。
 
 derivability judgement。可推导性断言，假设性断言的一种。这类断言可以表达为$ J_1,...,J_k\vdash_RK $。其中$ J $和$ K $都代表断言，$ J $可以进一步称为假设（hypothesis），可以用符号$ \Gamma $和$ \triangle $代表所有假设的集合。$ R $代表规则的集合。$ \vdash $是可推导的意思，可以不带假设，单独使用$ \vdash_R\Gamma $表示，代表$ R $中的规则可以推导出$ \Gamma $中所有的judgement。这个断言可以表达为本质相同的四种意思：
 
@@ -96,11 +96,11 @@ hypothetical rule induction。假设规则归纳，由一系列rule对于形式�
 
 uniformity of rules。rule的一致性。集合$ R $中的rule如果是满足一致性的，那么其中任意一个rule中的变量和symbol被重命名、被替换所产生的rule也被包含在$ R $中。
 
-general derivability judgement。一般性可推导断言。关注断言中的语法树的variable的renaming和substitution以及symbolic parameter的renaming对于可推导性的影响（详见Chapter 1）。用符号$ \Gamma\vdash_{R}^{U;\chi}J $来代表$ \Gamma $可以通过规则集$ R $推导出$ J $。在这一可推导性断言中的所有variable包含集合$ \chi $中，所有的symbol包含在集合$ U $中。对于一个一般性可推导断言，如果有可推导性断言$ \Gamma\vdash_{R}^{\chi\ Y}J $，$ \chi $和$ Y $都是变量的集合，其中$ Y $中都是可以随意命名和替换的变量，那么一般性可推导断言可以将“自由”的变量放到外面去。$ Y|\Gamma\vdash_R^\chi J $，代表Y中的变量无论怎么赋值和重命名，都不改变可推导性。此外这里要求$ R $中的规则是满足uniformity的。当然，symbolic parameter的重命名也是一样的。可以用双杠放在更前面来表示：$ V||Y|\Gamma\vdash_R^{U,\chi}J $，$ V $是可以随意命名的symbol。
+general derivability judgement。一般性可推导断言。关注断言中的语法树的variable的renaming和substitution以及symbolic parameter的renaming对于可推导性的影响（详见### Chapter  1）。用符号$ \Gamma\vdash_{R}^{U;\chi}J $来代表$ \Gamma $可以通过规则集$ R $推导出$ J $。在这一可推导性断言中的所有variable包含集合$ \chi $中，所有的symbol包含在集合$ U $中。对于一个一般性可推导断言，如果有可推导性断言$ \Gamma\vdash_{R}^{\chi\ Y}J $，$ \chi $和$ Y $都是变量的集合，其中$ Y $中都是可以随意命名和替换的变量，那么一般性可推导断言可以将“自由”的变量放到外面去。$ Y|\Gamma\vdash_R^\chi J $，代表Y中的变量无论怎么赋值和重命名，都不改变可推导性。此外这里要求$ R $中的规则是满足uniformity的。当然，symbolic parameter的重命名也是一样的。可以用双杠放在更前面来表示：$ V||Y|\Gamma\vdash_R^{U,\chi}J $，$ V $是可以随意命名的symbol。
 
 formal generic judgement、generic rule、generic inductive definition。与formal derivability judgement、hypothetical rule、hypothetical rule induction的定义类似。
 
-Chapter 4: Statics
+### Chapter  4: Statics
 （编程语言）静力学。用以在程序编写完之后、运行之前检查程序的语法。主要以表达式的类型检查为主。
 
 abstract syntax。抽象语法。本质上是对于语法树的描述，包含了一系列的operator及其arity。BNF范式是表达语法的常用方法。从类型检查的角度来说，一个语法表中包含两种sort的语法，一种是表达式，即expression；另一种是表达式的类型，即type。注意sort与type两个概念的区别。sort是abt的种类（例如表达式是一种abt，是一种语法类型），type是表达式的类型（有类似于编程语言中的数据类型）。
@@ -123,7 +123,7 @@ introduction and elimination。语法构建的两种形式：介绍和消除。i
 
 closed expression。封闭的表达式。当表达式中的所有的variable所代表的子表达式都计算成值（value）了，当前表达式已经可以被直接计算为值了，那么这一表达式称为封闭表达式。
 
-Chapter 5: Dynamics
+### Chapter  5: Dynamics
 代码动力学。主要是研究代码怎么被执行的。主要包含了三种动力学：structural dynamics（表达式在一步步执行中的变化），contextual dynamics（对于一个多层嵌套的复杂表达式来说，表达式不同部分的执行顺序），equational dynamics（表达式之间的等效关系）。在这一章中，编程语言的表达式（expression）基本等同于计算机程序（program）或者指令（instruction）。
 
 transition system。变迁系统。类似于状态机。变迁系统中包含一系列state（状态）。包含initial（起始状态）和final（终结状态）作为一开始的状态和结束的状态。以及它们之间变迁的方式。如果每一个状态最多只有一个后继状态，那么就说这一变迁系统是确定的（deterministic）。
@@ -140,17 +140,17 @@ contextual dynamics。上下文动力学。结构动力学的变体，为了进�
 
 equational dynamics。等价动力学。与结构或者上下文动力学都不同，等价动力学研究程序之间的等价关系。这一等价关系被称为定义等价性或者计算等价性。等价的概念可以表达为$ \chi|\Gamma \vdash e\equiv e':\tau $。一般隐含地要求$ e $的类型和$ e' $是一样的。两个表达式等价，说明两个表达式最终可以变迁到相等大小的值上。同时等价也有结构化的性质，自身与自身是等价的（反射性），$ \equiv $两侧的内容可以交换（交换性），$ e \equiv e' $以及$ e' \equiv e'' $那么$ e'\equiv e'' $（传递性）。
 
-Chapter 6: Type Safety
+### Chapter  6: Type Safety
 类型安全。类型安全代表程序在语法上完全正确。Statics和Dynamics都可以保证类型安全，Statics主要在运行前通过type system保证，Dynamics主要通过transition system来检查运行时错误。
 
 type safety。类型安全，类型安全要满足两个条件。第一个称为preservation（类型保存），代表一个变迁断言$ e\longmapsto e' $前后的两个状态的type必须是一样的，即如果$ e:\tau $，那么$ e':\tau $。第二个条件称为progress，代表如果一个表达式不是值，那么它就应该可以变迁下去。
 
 run-time error。运行时错误。有些错误在静力学阶段难以通过类型系统推断出来，那么在动力学阶段加入名为error的表达式和相关变迁规则来处理就可以，一旦出现错误的前提，那么直接变迁出error来弹出错误即可。而与一般编程语言的异常处理一样，在变迁系统中除了要规定错误的产生的直接rule之外，还需要给出子表示中的错误怎么从外层表达式传递的问题，即当子表达式变迁到error之后，外层表达式也要变迁到error。
 
-Chapter 7: Evaluation Dynamics
+### Chapter  7: Evaluation Dynamics
 计算动力学。有时候为了简化dynamics的表达，我们需要仅仅关注表达式的计算结果，而对于其具体的执行过程乃至类型安全的检查都不在意，那么我们可以使用evaluation dynamics。
 
-evaluation judgement。计算断言。表达为$ e\Downarrow v $，代表封闭表达式$ e $（见chapter 4）可以计算出值$ v $，用结构动力学可以表达为$ e\longmapsto^* v $。此外，一个表达式$ e $的计算结果和其在变迁系统的后继表达式$ e' $的计算结果是一致的，即如果$ e\longmapsto e' $并且$ e'\Downarrow v $，那么$ e\Downarrow v $。
+evaluation judgement。计算断言。表达为$ e\Downarrow v $，代表封闭表达式$ e $（见### Chapter  4）可以计算出值$ v $，用结构动力学可以表达为$ e\longmapsto^* v $。此外，一个表达式$ e $的计算结果和其在变迁系统的后继表达式$ e' $的计算结果是一致的，即如果$ e\longmapsto e' $并且$ e'\Downarrow v $，那么$ e\Downarrow v $。
 
 rule of evaluation dynamics。计算动力学中的规则。一个语法的计算动力学由一大堆规则构成，规则前提是一个表达式中子表达式的结果以及表达式自身的语义，规则的结论是表达式自身的计算结果。例如，$ \frac{e_1\Downarrow num[n_1]\ \ e_2\Downarrow num[n_2]\ \ n_1+n_2=n}{plus(e_1;e_2)\Downarrow num[n]} $。与之前的动力学不同，计算动力学不是语法导向的，不是每一个语法表达式都对应一个动力学规则。
 
@@ -158,7 +158,7 @@ goes wrong。（一个表达式）发生错误。结构动力学通过声明什�
 
 cost dynamics。开销动力学。结构动力学天然地表达了时间复杂度，通过看两个表达式之间变迁的步骤。但是evaluation dynamics因为省略了结构动力学中的中间步骤，所以对于开销的表达就需要额外的定义，通过扩展计算断言为$ e \Downarrow^k v $代表表达式$ e $需要$ k $步来变迁到值$ v $，等效于$ e\longmapsto^k v $。开销动力学包含了一系列由扩展过的evaluation judgement构成的rule，比如$ \frac{e_1\Downarrow^{k_1} num[n_1]\ \ e_2\Downarrow^{k_2} num[n_2]}{plus(e_1;e_2)\Downarrow^{k_1+k_2+1} num[n]} $。
 
-Chapter 8: Function Definitions and Values
+### Chapter  8: Function Definitions and Values
 函数定义和值。函数表达了对于一个变量的操作。一般来说，一个表达式可能包含多个变量，这些变量中有一个是可变的，剩下的部分是这一变量的上下文，也称作这一变量的函数。函数分为定义和调用两个过程。定义（definition）本质上是将一个变量绑定到一个abt中，并且这一变量本质上就是函数的参数。函数的应用（application）本质上是用一个表达式来替换函数的参数，最终形成一个没有绑定变量的完整表达式的过程。函数的输入是一个表达式（函数的参数），输出是另一个表达式。函数的参数是输出表达式的一个绑定变量，而输入的表达式会替换这个绑定变量。
 
 first-order function。一阶函数。如果一个函数不能作为一个编程语言的变量、不能作为另一个函数的参数和返回值。那么这个函数就是一阶函数。一阶函数调用，表达为$ apply\{f\}(e) $。$ f $是函数名，$ e $是函数的参数。也可以表达为“将函数名$ f $绑定在参数$ e $上”。一阶函数的定义，表达为$ fun\{\tau_1;\tau_2\}(x_1.e_2;f.e) $。其中$ e_2 $是一个类型为$ \tau_2 $表达式，定义了函数的输出（按照编程语言的语境，定义了函数内容），称为range。其中$ x_1 $是一个类型为$ \tau_1 $，为函数的参数，是$ e_2 $的一个绑定变量，称为domain。在函数的定义中，$ e $是一个表达式，是函数声明的外层表达式，即函数声明会替换到$ e $中。$ e $通常会是函数调用的表达式。
@@ -185,7 +185,7 @@ static scoping(binding)。静态绑定。变量具有作用域，变量的名字
 
 dynamic scoping。动态绑定。相当于变量没有作用域，所有的自由变量都是编程语言中的全局变量，在实际的运行中，根据执行的情况，某一个变量会被不同的作用域的同名变量改变其赋值，那么一个变量的赋值由其最后一次被赋值决定。Dynamic scoping in Lua举了一个例子。dynamic scoping只在高阶函数中存在，高阶函数可以通过互为输入输出嵌套在一起，才有内部的变量重名问题。动态绑定没法保证类型安全，在当代的编程语言中已经不存在了。
 
-Chapter 9: System T of Higher-Order Recursion
+### Chapter  9: System T of Higher-Order Recursion
 System T，关注一个程序是不是可以结束的。其核心语法为递归。System T中的递归强制了递归的次数。System T只关注自然数和函数，任何可以被System T的语义表达的程序是可以保证“一定可以结束的程序”。
 
 recursor。递归器。每一轮递归都是拿上一轮递归的结果、当前的递归次数作为输入，得出这一轮递归的新结果用以下一轮递归。表达为$ rec\{\tau\}(e;e_0;x.y.e_1) $。其中，$ e_0 $是递归计算的初值，$ e $是要递归的总次数，$ e_1 $是每一轮递归中要执行的表达式。$ e_1 $中有两个绑定变量，$ x $代表当前已经递归次数，当$ x $不断自增、到达$ e $后递归过程会停止。$ y $是每一轮递归的结果和下一轮递归的输入，一开始从$ e_0 $开始，最后作为整个递归过程的输出。
@@ -202,7 +202,7 @@ syntax of system T。system T的语义。相比一般的编程语言system T的�
 
 definability of system T。在system T中可定义性。如果一个参数和返回值都是自然数的数学函数$ f $可以在system T中被定义，即可以找到表达式$ e_f(\overline{n})\equiv\overline{f(n)}:nat $，那么我们就说这一函数在system T中是可被定义的。在system T中可定义说明这一函数的执行的有穷的，不会出现无限的递归（或者循环，二者等价）。system的这一性质也被称作termination theorem（终止定理），对于一个system T中的表达式$ e:\tau $，一定有数值$ v $，使得$ e\equiv v:\tau $。这一定理的证明主要是用递归语法来执行数学归纳法。
 
-Chapter 10: Product Types
+### Chapter  10: Product Types
 这一章提出一个叫做product（积）的概念。类似于一般编程语言中的元组或者数组的概念，将一些有限的变量组合起来。而product type是将元组中每一元素的类型组合起来产生的积类型。
 
 binary products。二元积。二元积本质上为两个表达式（称作product的component）的有序组合，表达为$ \langle e_1,e_2 \rangle $，或者写成operator的形式$ pair(e_1;e_2) $。二元积的的类型本质上就是两个表达式的类型组合在一起，写成$ \tau_1 \times \tau_2 $或者$ \times(\tau_1;\tau_2) $的形式。二元组有两种操作，分别是取二元组的左右值，取左值写成$ e.l $或者$ pr[l](e) $，取右值写成$ e.r $或者$ pr[r](e) $。
@@ -211,7 +211,7 @@ nullary products。空积。代表空的元组，空的元组也是值的一种�
 
 finite products。有限积。将有限的表达式按照顺序组合起来，每一个表达式都有自己的类型，这些类型构成了有限积的类型。有限积中表达式的索引用$ I=\{i_1,...,i_n\} $表示。每一个索引对应的表达式类型和表达式表达为$ i_k \hookrightarrow \tau_k $，和$ i_k \hookrightarrow e_k $。$ \hookrightarrow $代表了“映射”或者对应的关系，在PFPL中，这一符号的含义很丰富，在这里代表索引对应的元素，也可以代表函数输入输出的关系，也可以代表递归（迭代）次数和迭代结果之间的关系，等等。有限积的表达形式和其类型的表达方式与二元积是一样的。当然也有取对应位置的值的操作，表达为$ pr[i](e) $或者$ e.i $。
 
-Chapter 11: Sum Types
+### Chapter  11: Sum Types
 Sum Types处理有选择的执行过程。一个表达式可以带入不同的分支中的不同的母表达式中（当然要和表达式中的变量的类型一致）。那么分支的索引加上表达式就也就是一个表达式被带入到不同分支的所有可能。sum type就是不同分支中表达式带入到的变量的type的集合。product type代表同时具有一系列类型，sum type代表从一系列类型中选一个类型。sum type的表达式可以用来表达分支、枚举之类的语法。
 
 binary sums。二元和。表达了表达式向不同分支中母表达式的带入。可以写成case表达式，写成$ case(e_0;x_1.e_1;x_2.e_2) $和$ case\ e_0\{l.x_1\hookrightarrow e_1|r.x_2 \hookrightarrow e_2\} $的形式。$ l.x_1 $和$ r.x_2 $是注入（injection）表达式，包含了被替换的变量名称（$ x_1\ x_2 $）和被替换变量所处的分支的名称($ l\ r $)。也可以写成operator的形式，$ in[l]\{\tau_1;\tau_2\}(e) $。注入表达式也用以表达要注入的表达式，$ e_0 $可以表达为类似的形式$ l.e $，代表将表达式$ e $带入到$ l $分支的变量$ x_1 $中，并且给出表达式$ e_1 $。这个过程可以表达为一个核心的动力学断言：
@@ -228,7 +228,7 @@ injection表达式是对应分支的被注入变量和分支名字的组合。in
 
 finite sums。有限和。与有限积类似，分支超过两个的sum。在有限和中注入表达式为$ i.e $，也可以表达为$ in[i]\{\vec{\tau}\}(e) $。其中$ \vec{\tau} $代表了所有分支中被替代变量的类型，$ i $代表被注入的分支。
 
-Chapter 12: Constructive Logic
+### Chapter  12: Constructive Logic
 建设性逻辑。利用数学的推理方法来逻辑推理。即要证明一个命题是正确的，那就给出一个证明，如果要证明一个命题是错误的，那么只需要给出一个反例就好了。所谓的证明，就是以公理或者假设为源头的推导。这种证明方法不能证明所有的命题，有些命题可能（在有限时间内）证明和反例都给不出来（这类问题被称为undecided，或者称作open problem，反之可以给出真值的问题被称为decidable），这是建设性逻辑必然需要面对和接受的情况。
 
 constructive logic。建设性逻辑。使用$ \phi $来代表一个命题。使用$ \phi\ true $代表命题$ \Phi $是正确的，是可以给出一个证明的。当然，一个命题的证明可能存在以其他命题存在证明为前提，表达为$ \phi_1\ true,...,\phi_n\ true \vdash \phi\ true $。这是假设命题，满足假设命题的一系列属性。
@@ -267,7 +267,7 @@ $ \frac{\Gamma\vdash p:\phi_1\vee\phi_2\ \ \Gamma,x_1:\phi_1\vdash p_1:\phi\ \ \
 
 Gentzen’s Principle。根岑原理。根岑原理认为，在introduction形式（由子命题证明母命题）对母命题的证明中可以通过elimination形式的rule还原出子命题的证明。即对于命题逻辑来说，子命题的证明可以在introduction form的规则中用以产生母命题的证明，而母命题可以进一步利用elimination form的规则复原对于子命题的证明。反之，对于母命题的证明可以用以在elimination form的规则中产生对于其子命题的证明，而通过introduction form的规则又可以从这些子命题中复原出对于母命题的证明。
 
-Chapter 13: Classical Logic
+### Chapter  13: Classical Logic
 经典逻辑。与建设性逻辑（证明命题为真就给出证明，证明命题为假就给出反例）不同。经典逻辑无论证明命题为真还是命题为假都使用反证法来证明。主要的区别在想证明一个命题为真，那就先假设这个命题为假，然后推导出一个矛盾。在经典逻辑中，命题的真假是具有对称性的、是没有open problem的、非真即假的。经典逻辑对于命题为假的证明的严格程度和建设性逻辑是一样的，但是对于命题为真的证明是不用给出真正意义上的证明的，这会使得经典逻辑对于真命题的证明比建设性逻辑更弱。
 
 provability and refutability。可证明性与可反驳性。使用$ \phi\ true $来表达命题$ \phi $是真的、可以证明的。使用$ \phi\ false $来证明命题$ \phi $是假的、是可以找出反驳的。使用$ \# $来代表一个矛盾。可以使用假设命题来表达与命题真假相关的断言$ J $，表达为：

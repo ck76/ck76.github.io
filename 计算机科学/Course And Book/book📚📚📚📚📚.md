@@ -60,6 +60,8 @@
   
 - 极客时间*
   
+- 得到+喜马拉雅听书*
+  
 - BIlibili*
   
 - Zhihu*
@@ -93,7 +95,7 @@
 
 
 - [程序语言理论与实现-张宏波](https://bobzhang.github.io/courses/) 基础软件理论与实践公开课 张宏波
-  - ①肥肠号
+  - ①肥肠肥肠号
   - ②【TODO】
 - [当然我在扯淡](https://www.yinwang.org/#)
   - 王垠-A Fresh View at  Type Inference 幻灯片
@@ -108,10 +110,10 @@
   - ①挺不错
 - ②【TODO】
 - 范畴论完全装逼手册 / Grokking Monad
-  - ①挺不错
+  - ①第一遍
   - ②【TODO】
 - 程序员的范畴论
-  - ①肥肠号
+  - ①第一遍
   - ②【TODO】
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
@@ -154,21 +156,23 @@
   - ①20240812-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
   - 【TODO】Kotlin版本
 - [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
-
-  - ①20240812
+- ①20240812
 - 类型论简史  A Brief History of Type Theory
   
-  - ①20240814~
+  - ①20240814-第一遍
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - ①第三章第70页【TODO】
   - ②
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
+
+  - ①
+- Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
+- Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
-- ①
+  - ①
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①2024080
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
-- - 
 - [香蕉空间-类型论](https://www.bananaspace.org/wiki/%E7%B1%BB%E5%9E%8B%E8%AE%BA)
 - 面向PL宝宝的柯里-霍华德同构curry-howard
   - ①202408
@@ -176,10 +180,15 @@
 - [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
 - ice1000-立方类型论入门
 - simply-typed-lambda-calculus简单类型 λ 演算
-- Proofs and Types
-- TTFP Type Theory & Functional Programming Simon Thompson
+- *Structure and Interpretation of Computer Programs* (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
+- *Category Theory for Computing Science* (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
+- *Proofs and Types* (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
+- *Type Theory and Functional Programming* (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
+- *Certified Programming with Dependent Types* (**CPDT**) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
+- *Homotopy Type Theory* (**HoTT**) (by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 - Type and Proof-类型和证明 (rainoftime, txyyss, marisa)
   - 
+- [ntype-cafe-summer-school](https://github.com/Infinity-Type-Cafe/ntype-cafe-summer-school)
 - 编程语言的邀请
   - 
 - 程序设计语言——实践之路 Programming Language Pragmatics
@@ -216,8 +225,7 @@
 - 网络是怎样连接的
   - ①2024080
 - 图解网络硬件
-- Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
-- Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
+- 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
   - ①2024080
 - 
@@ -234,11 +242,13 @@
   - 
 - Haskell in Depth (Vitaly Bragilevsky)
 - Programming with Types WITH EXAMPLES IN TYPESCRIPT
-- [CPDT](http://adam.chlipala.net/cpdt/) - Certified Programming with Dependent Types - Adam Chlipala
+- 
 
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程 (图灵程序设计丛书) 
 - 编程语言实现模式 - Language Implementation Patterns
   - ①20240813~
+- *Lisp in Small Pieces* (**L.i.S.P**) (by Christian Queinnec)
+- *Implementing Functional Languages: A Tutorial* (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
 - 自己动手实现解释器
   - ①20240813~
 - [TODO](https://github.com/12Tall/lsbasi_cn)
@@ -259,7 +269,8 @@
 - 函数式编程思维
 - 计算的本质：深入剖析程序和计算机
 - SICP-计算机程序构造和解释 sicp
-- CTM-Concepts, Techniques, and Models of Computer Programming
+- [CTM-Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
+- 
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
 - [Python源码剖析](https://book.douban.com/subject/3117898/)
 - 自己动手写Python虚拟机
