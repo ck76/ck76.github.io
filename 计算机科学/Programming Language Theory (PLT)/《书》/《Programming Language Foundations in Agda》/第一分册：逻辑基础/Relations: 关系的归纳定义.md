@@ -1,3 +1,5 @@
+[toc]
+
 以下是本章节涉及的所有数理逻辑相关概念的解释，并使用了 Markdown 的公式表示法：
 
 ### 1. **关系（Relation）**
@@ -32,8 +34,7 @@
    - **全序（Total Order）**：满足完全性的偏序。
 
 ### 9. **单调性（Monotonicity）**
-   - 一个运算符对于一个序关系是单调的，意味着当参数的顺序满足某个序关系时，运算结果的顺序也满足该关系。例如，加法对于 $ \leq $ 是单调的，即：
-     $$\forall m, n, p, q \in \mathbb{N}, \, (m \leq n) \text{ 且 } (p \leq q) \Rightarrow (m + p \leq n + q)$$
+   - 一个运算符对于一个序关系是单调的，意味着当参数的顺序满足某个序关系时，运算结果的顺序也满足该关系。例如，加法对于 $ \leq $ 是单调的，即：$\forall m, n, p, q \in \mathbb{N}, \, (m \leq n) \text{ 且 } (p \leq q) \Rightarrow (m + p \leq n + q)$
 
 ### 10. **严格不等关系（Strict Inequality, $<$）**
    - 严格不等关系表示一个自然数小于另一个自然数，定义为 $ m < n $。该关系可以通过两个推理规则来定义：
