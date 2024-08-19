@@ -153,7 +153,7 @@
 - [学习Datadog](https://docs.datadoghq.com/)
   - ①20240802~20240816
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
-  - ①20240812-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
+  - ①20240812~20240819-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
   - 【TODO】Kotlin版本
 - [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
 - ①20240812
@@ -161,11 +161,11 @@
   
   - ①20240814-第一遍
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
-  - ①第三章第70页【TODO】
+  - ①20240820~第三章第70页【TODO】
   - ②
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
-  - ①
+  - ①20240820~
 
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
