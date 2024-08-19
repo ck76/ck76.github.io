@@ -21,7 +21,7 @@
    - 反演是从更大的东西推导出更小的东西的过程。例如，如果 $ \text{suc}(m) \leq \text{suc}(n) $，那么我们可以反推出 $ m \leq n $。
 
 ### 7. **序关系的性质**
-   - **自反性（Reflexivity）**：对于所有的 $ n $，$ n \leq n $ 成立。
+   - **自反性（Reflexivity）**：对于所有的 $n$，$ n \leq n $ 成立。
    - **传递性（Transitivity）**：如果 $ m \leq n $ 且 $ n \leq p $，那么 $ m \leq p $。
    - **反对称性（Anti-symmetry）**：如果 $ m \leq n $ 且 $ n \leq m $，那么 $ m = n $。
    - **完全性（Totality）**：对于所有的 $ m $ 和 $ n $，$ m \leq n $ 或 $ n \leq m $ 成立。
@@ -33,7 +33,7 @@
 
 ### 9. **单调性（Monotonicity）**
    - 一个运算符对于一个序关系是单调的，意味着当参数的顺序满足某个序关系时，运算结果的顺序也满足该关系。例如，加法对于 $ \leq $ 是单调的，即：
-     $$ \forall m, n, p, q \in \mathbb{N}, \, (m \leq n) \text{ 且 } (p \leq q) \Rightarrow (m + p \leq n + q) $$
+     $$\forall m, n, p, q \in \mathbb{N}, \, (m \leq n) \text{ 且 } (p \leq q) \Rightarrow (m + p \leq n + q)$$
 
 ### 10. **严格不等关系（Strict Inequality, $<$）**
    - 严格不等关系表示一个自然数小于另一个自然数，定义为 $ m < n $。该关系可以通过两个推理规则来定义：
@@ -44,7 +44,7 @@
    - 非自反性表示对于任意 $ n $，$ n < n $ 不成立。
 
 ### 12. **三分律（Trichotomy）**
-   - 三分律表明，对于任意自然数 $ m $ 和 $ n $，只能有以下三种情况之一成立：$ m < n $，$ m = n $，或 $ m > n $（其中 $ m > n $ 意味着 $ n < m $）。
+   - 三分律表明，对于任意自然数 $ m $ 和 $ n $，只能有以下三种情况之一成立：$m < n$，$ m = n $，或 $ m > n $（其中 $ m > n $ 意味着 $ n < m $）。
 
 ### 13. **奇数与偶数（Odd and Even Numbers）**
    - 偶数的定义：$ 0 $ 是偶数；如果 $ n $ 是奇数，那么 $ \text{suc}(n) $ 是偶数。
