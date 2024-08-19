@@ -166,6 +166,7 @@
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
   - ①
+
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
@@ -173,7 +174,7 @@
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①2024080
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
-- [香蕉空间-类型论](https://www.bananaspace.org/wiki/%E7%B1%BB%E5%9E%8B%E8%AE%BA)
+- 
 - 面向PL宝宝的柯里-霍华德同构curry-howard
   - ①202408
 - simply-typed-lambda-calculus简单类型 λ 演算
