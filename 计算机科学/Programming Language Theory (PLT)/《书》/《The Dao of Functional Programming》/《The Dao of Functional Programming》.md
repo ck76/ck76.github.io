@@ -1,0 +1,2 @@
+- https://github.com/BartoszMilewski/Publications/blob/master/TheDaoOfFP/DaoFP.pdf
+- https://github.com/BartoszMilewski/DaoFP?tab=readme-ov-file
