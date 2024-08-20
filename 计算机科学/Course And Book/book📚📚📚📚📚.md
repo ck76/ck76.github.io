@@ -156,9 +156,11 @@
   - ①20240812~20240819-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
   - 【TODO】Kotlin版本
 - [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
-- ①20240812
+
+  - ①20240812
+
 - 类型论简史  A Brief History of Type Theory
-  
+
   - ①20240814-第一遍
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - ①20240820~第三章第70页【TODO】
@@ -166,15 +168,19 @@
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
   - ①20240820~
-
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
+
+  - ①
+
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
+
+  - ①
+
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
   - ①
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①2024080
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
-- 
 - 面向PL宝宝的柯里-霍华德同构curry-howard
   - ①202408
 - simply-typed-lambda-calculus简单类型 λ 演算
@@ -208,7 +214,6 @@
 
   - ①①2024080 第二部分 116页
 - Haskell趣学指南
-
 - 
 
 
