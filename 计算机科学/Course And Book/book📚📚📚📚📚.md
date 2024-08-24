@@ -161,9 +161,17 @@
   - ①20240814-第一遍
 - [Type and Proof-类型和证明 (rainoftime, txyyss, marisa)](https://openpal.github.io/TypeAndProof/Type%20and%20Proof.pdf)
 
-  - ①
+  - ①20240822~20240823-挺好的，就是作者没写完
 - 面向PL宝宝的柯里-霍华德同构curry-howard
-  - ①202408
+  - ①20240822-肥肠好, 作者不去出书可惜了
+- [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
+  - ①20240822
+- [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
+  - ①
+- 
+- [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
+
+  - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
   - ①2024080
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
@@ -180,9 +188,6 @@
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
   - ①2024
-- [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
-  - ①
-- 
 - Go 语言设计与实现
   - 
 - Go语言高级编程
@@ -190,6 +195,7 @@
 - Go语言底层原理剖析【文字版】
 - Go程序员面试笔试宝典
 - Go 1.5 源码剖析
+- Go程序员面试笔试宝典
 
 
 - 网络是怎样连接的
@@ -211,34 +217,30 @@
 - *Homotopy Type Theory* (**HoTT**) (by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 - 
 - 魔力Haskell
-  - ①①2024080 第二部分 116页
+  - ①2024080 第二部分 116页
 - Haskell趣学指南
 
 
 - 
 
-- [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
-  - ①20240
-- [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
-
-  - 
+- 
 - 《The Dao of Functional Programming》
 - 自己动手实现解释器
   - ①20240813~
 - 编程语言实现模式 - Language Implementation Patterns
   - ①20240813~
 - 编程语言的邀请
-  - 
+  - ①
 - 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
-  - 
+  - ①
 - 程序设计语言——原理和实践 Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  
   - 没找到中文
 - 程序设计语言原理 (（美）賽巴斯塔（Sebesta，R.W.）)   Concepts of Programming Languages 第十版
-  - 
+  - ①
 - 程序设计语言的形式语义 (Glynn Winskel)   Formal Semantics of Programming Languages
-  - 
+  - ①
 - 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    Foundations for Programming Languages
-  - 
+  - ①
 - 程序设计语言理论, 第二版 (陈意云, 张昱)  
 - [nLab*](https://ncatlab.org/nlab/all_pages)
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
@@ -249,100 +251,57 @@
 - [TypeScript 类型体操姿势合集](https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.zh-CN.md)
   - https://github.com/ronami/HypeScript
   - https://github.com/skyzh/type-exercise-in-rust
-
 - ML程序设计教程
   - ①2024080
-
 - Haskell函数式编程入门卷一
   - 
-
 - Haskell函数式编程入门卷二
   - 
-
 - Haskell in Depth (Vitaly Bragilevsky)
-
 - Programming with Types WITH EXAMPLES IN TYPESCRIPT
-
 - 
-
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
-
-- 
-
-- *Lisp in Small Pieces* (**L.i.S.P**) (by Christian Queinnec)
-
-- *Implementing Functional Languages: A Tutorial* (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
-
-- - 
-
-- [TODO](https://github.com/12Tall/lsbasi_cn)
-
-- Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
-  - ①2024080
-
-- Functional Programming in Kotlin (Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano) 
-  - ①2024080
-
-- Functional Programming Made Easier A Step-by-Step Guide (Charles Scalfani) 
-
-- The Art of Functional Programming (Minh Quang Tran)
-
-- Write You a Haskell Building a modern functional compiler from first principles
-
-- [臺灣大學 邏輯、語言與計算暑期研習營](https://flolac.iis.sinica.edu.tw/zh/2024/registration.html) Formosan Summer School on Logic, Language, and Computation
   - 
 
+- *Lisp in Small Pieces* (**L.i.S.P**) (by Christian Queinnec)
+- *Implementing Functional Languages: A Tutorial* (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
+- [TODO](https://github.com/12Tall/lsbasi_cn)
+- Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
+  - ①2024080
+- Functional Programming in Kotlin (Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano) 
+  - ①2024080
+- Functional Programming Made Easier A Step-by-Step Guide (Charles Scalfani) 
+- The Art of Functional Programming (Minh Quang Tran)
+- Write You a Haskell Building a modern functional compiler from first principles
+- [臺灣大學 邏輯、語言與計算暑期研習營](https://flolac.iis.sinica.edu.tw/zh/2024/registration.html) Formosan Summer School on Logic, Language, and Computation
+  - 
 - [∞-type Café 暑期学校](https://infinity-type-cafe.github.io/ntype-cafe-summer-school/2023/06/01/introduction2023/) [ntype-cafe-summer-school](https://github.com/Infinity-Type-Cafe/ntype-cafe-summer-school)
 
   - 
-
 - ice1000-立方类型论入门
-
 - 
-
 - [Github 搜索Functional Programming](https://github.com/search?q=Functional+Programming&type=repositories&p=2)
-
 - The Dao of Functional Programming Bartosz Milewski
-
 - The Little Javer
-
 - 函数式编程思维
-
 - 计算的本质：深入剖析程序和计算机
-
 - SICP-计算机程序构造和解释 sicp
-
 - [CTM-Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
-
 - 
-
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
-
 - [Python源码剖析](https://book.douban.com/subject/3117898/)
-
 - 自己动手写Python虚拟机
-
 - Lua解释器构建：从虚拟机到编译器
-
 - Lua设计与实现 (李创)
-
 - Ruby原理剖析
-
 - 
-
 - On Lisp
-
 - OAuth 2.0 從入門到實戰：利用驗證和授權守護 API 的安全 (周建毅
-
 - OAuth 2 in Action 、OAuth 2实战
-
-- Go程序员面试笔试宝典
-
+- 
 - MySQL是怎样运行的 从根儿上理解MySQL
   - 
-
 - 
-
 - ProgrammingRust
 
 
