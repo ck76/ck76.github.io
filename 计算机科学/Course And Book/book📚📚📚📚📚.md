@@ -168,9 +168,12 @@
   - ①20240822
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
   - ①
-- 
-- [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
+- [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
 
+  - ①20240823-ChatGPT比普通翻译器强太多
+  - 
+
+- [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
   - ①2024080
@@ -224,7 +227,7 @@
 - 
 
 - 
-- 《The Dao of Functional Programming》
+- 
 - 自己动手实现解释器
   - ①20240813~
 - 编程语言实现模式 - Language Implementation Patterns
@@ -251,57 +254,97 @@
 - [TypeScript 类型体操姿势合集](https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.zh-CN.md)
   - https://github.com/ronami/HypeScript
   - https://github.com/skyzh/type-exercise-in-rust
+  
 - ML程序设计教程
   - ①2024080
+  
 - Haskell函数式编程入门卷一
   - 
+  
 - Haskell函数式编程入门卷二
   - 
+  
 - Haskell in Depth (Vitaly Bragilevsky)
+
 - Programming with Types WITH EXAMPLES IN TYPESCRIPT
+
 - 
+
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
   - 
 
 - *Lisp in Small Pieces* (**L.i.S.P**) (by Christian Queinnec)
+
 - *Implementing Functional Languages: A Tutorial* (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
+
 - [TODO](https://github.com/12Tall/lsbasi_cn)
+
 - Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
   - ①2024080
+  
 - Functional Programming in Kotlin (Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano) 
   - ①2024080
+  
 - Functional Programming Made Easier A Step-by-Step Guide (Charles Scalfani) 
+
 - The Art of Functional Programming (Minh Quang Tran)
+
 - Write You a Haskell Building a modern functional compiler from first principles
+
 - [臺灣大學 邏輯、語言與計算暑期研習營](https://flolac.iis.sinica.edu.tw/zh/2024/registration.html) Formosan Summer School on Logic, Language, and Computation
   - 
+  
 - [∞-type Café 暑期学校](https://infinity-type-cafe.github.io/ntype-cafe-summer-school/2023/06/01/introduction2023/) [ntype-cafe-summer-school](https://github.com/Infinity-Type-Cafe/ntype-cafe-summer-school)
 
   - 
+  
 - ice1000-立方类型论入门
+
 - 
+
 - [Github 搜索Functional Programming](https://github.com/search?q=Functional+Programming&type=repositories&p=2)
-- The Dao of Functional Programming Bartosz Milewski
+
+  
+
 - The Little Javer
+
 - 函数式编程思维
+
 - 计算的本质：深入剖析程序和计算机
+
 - SICP-计算机程序构造和解释 sicp
+
 - [CTM-Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
+
 - 
+
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
+
 - [Python源码剖析](https://book.douban.com/subject/3117898/)
+
 - 自己动手写Python虚拟机
+
 - Lua解释器构建：从虚拟机到编译器
+
 - Lua设计与实现 (李创)
+
 - Ruby原理剖析
+
 - 
+
 - On Lisp
+
 - OAuth 2.0 從入門到實戰：利用驗證和授權守護 API 的安全 (周建毅
+
 - OAuth 2 in Action 、OAuth 2实战
+
 - 
+
 - MySQL是怎样运行的 从根儿上理解MySQL
   - 
+  
 - 
+
 - ProgrammingRust
 
 
