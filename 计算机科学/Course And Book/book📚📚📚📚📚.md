@@ -167,12 +167,15 @@
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①20240822
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
-  - ①
+  - ①20240823~20240828
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
 
   - ①20240823-ChatGPT比普通翻译器强太多
   - 
 
+- 程序员的自我修养：链接、装载与库
+  
+  - ①20240825~
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
@@ -206,10 +209,10 @@
 
 - 图解网络硬件
 
-- 
+  - 
 
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
-- 
+- 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
 - [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
 - *Structure and Interpretation of Computer Programs* (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
@@ -231,7 +234,7 @@
 - 自己动手实现解释器
   - ①20240813~
 - 编程语言实现模式 - Language Implementation Patterns
-  - ①20240813~
+  - ①2024082~
 - 编程语言的邀请
   - ①
 - 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
@@ -351,7 +354,9 @@
 
 
 - 汇编语言（第4版） (王爽)
-- 程序员的自我修养：链接、装载与库
+- 
+  - 
+
 - 自己动手构造编译系统 编译、汇编与链接
 - 自己动手写编译器链接器
 - 深入淺出 Hello World
