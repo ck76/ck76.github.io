@@ -110,11 +110,9 @@
   - ①入门用挺不错
   - ②【TODO】
 - 范畴论完全装逼手册 / Grokking Monad
-  - ①第一遍
-  - ②【TODO】
+  - ①
 - 程序员的范畴论
-  - ①第一遍
-  - ②【TODO】
+  - ①
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
   - ②【TODO】
@@ -158,42 +156,55 @@
 - [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
   - ①20240812
 - [类型论简史  A Brief History of Type Theory](https://github.com/Trebor-Huang/history)
-  - ①20240814-第一遍
+  - ①20240814
 - [Type and Proof-类型和证明 (rainoftime, txyyss, marisa)](https://openpal.github.io/TypeAndProof/Type%20and%20Proof.pdf)
 
   - ①20240822~20240823-挺好的，就是作者没写完
-- 面向PL宝宝的柯里-霍华德同构curry-howard
+- 面向PL宝宝的柯里-霍华德同构Curry-Howard
   - ①20240822-肥肠好, 作者不去出书可惜了
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①20240822
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
   - ①20240823~20240828
+  - ②【TODO】ChatGPT
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
 
   - ①20240823-ChatGPT比普通翻译器强太多
-  - 
+  - 20240901~
 
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825~
+- 搜论文 POPL, ICFP, ESOP, PLDI, OOPSLA, TYPES
+  
+  - 20240830
+  
+- [怎么学类型论](https://cha.fan/articles/5u9DV2LWWcjgJ8c7ha7T)-[千里冰封](https://cha.fan/users/ice1000)
+
+  - ①20240831
+
+- [何幻 业余程序员的个人修养](https://www.zhihu.com/column/self-discipline)
+
+  - 20240901
+
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
-  - ①2024080
+  - ①2024090
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
-  - ①2024080
+  - ①2024090
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - ①20240820~第三章第70页【TODO】
   - ②
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
-  - ①20240820~
+  - ①202409~
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
 
-  - ①2024
+  - ①202409~
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
-  - ①2024
+  - ①202409~
 - Go 语言设计与实现
   - 
 - Go语言高级编程
@@ -221,16 +232,17 @@
 - *Type Theory and Functional Programming* (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
 - *Certified Programming with Dependent Types* (**CPDT**) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
 - *Homotopy Type Theory* (**HoTT**) (by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
-- 
+- [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
 - 魔力Haskell
   - ①2024080 第二部分 116页
 - Haskell趣学指南
 
+  - 
 
-- 
 
-- 
-- 
+
+- 主流编程语言Compilers 代码库
+- https://github.com/AndrasKovacs/elaboration-zoo
 - 自己动手实现解释器
   - ①20240813~
 - 编程语言实现模式 - Language Implementation Patterns

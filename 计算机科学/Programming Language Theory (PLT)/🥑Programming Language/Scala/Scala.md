@@ -1,0 +1,2 @@
+- https://github.com/scala/scala
+- https://github.com/scala/scala3
