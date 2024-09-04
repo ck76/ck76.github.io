@@ -187,6 +187,11 @@
 
   - 20240901
 
+- 类型理论和程序设计 李未 王飓安
+  
+  - 20240902
+  
+- [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
@@ -239,9 +244,14 @@
 
   - 
 
-
+- [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
 
 - 主流编程语言Compilers 代码库
+- miniXXX
+- 
+- https://plzoo.andrej.com/
+- [Lean 4 定理证明](https://www.leanprover.cn/tp-lean-zh/title_page.html) 
+- [Lean 函数式编程](https://www.leanprover.cn/fp-lean-zh/)
 - https://github.com/AndrasKovacs/elaboration-zoo
 - 自己动手实现解释器
   - ①20240813~

@@ -87,7 +87,7 @@ val result = id(42) // result 是 42
   - 值 `x` 依赖于类型 `Int`
   - 函数 `id` 的返回类型依赖于 `x` 的类型 `Int`
   
-### 2. 函数类型 (\(\lambda \rightarrow\))
+### 2. 函数类型 (\($\lambda \rightarrow$\))
 
 #### 示例：
 ```kotlin
@@ -103,7 +103,7 @@ val check = isEven(4) // check 是 true
   - 函数 `isEven` 的返回类型依赖于 `x` 的类型 `Int`
   - 返回值 `Boolean` 依赖于函数体中的计算结果
 
-### 3. 系统 F（多态性，\(\lambda 2\)）
+### 3. 系统 F（多态性，\($\lambda 2$\)）
 
 #### 示例：
 ```kotlin
@@ -120,7 +120,7 @@ val strId = identity("hello") // strId 是 "hello"
   - 函数 `identity` 的返回类型依赖于类型参数 `T`
   - 类型 `T` 可以是任何类型，体现了多态性
 
-### 4. 高阶类型（类型构造器，\(\lambda \omega\)）
+### 4. 高阶类型（类型构造器，\($\lambda \omega$\)）
 
 #### 示例：
 ```kotlin
