@@ -99,8 +99,6 @@
   - ②幻灯片【TODO】
 - [当然我在扯淡](https://www.yinwang.org/#)
   - 王垠-A Fresh View at  Type Inference 幻灯片
-  - Ground-Up Computer Science(gucs-sample-merged)
-  - 【TODO】
 - [凤凰架构构建可靠的大型分布式系统](https://github.com/fenixsoft/awesome-fenix)
 - 深入设计模式-Guru
 
@@ -108,7 +106,6 @@
 - 函数式编程指南 [mostly-adequate-guide-chinese](https://github.com/ck76/mostly-adequate-guide-chinese)
 
   - ①入门用挺不错
-  - ②【TODO】
 - 范畴论完全装逼手册 / Grokking Monad
   - ①
 - 程序员的范畴论
@@ -171,27 +168,35 @@
 
   - ①20240823-ChatGPT比普通翻译器强太多
   - 20240901~
-
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825~
 - 搜论文 POPL, ICFP, ESOP, PLDI, OOPSLA, TYPES
   
   - 20240830
-  
 - [怎么学类型论](https://cha.fan/articles/5u9DV2LWWcjgJ8c7ha7T)-[千里冰封](https://cha.fan/users/ice1000)
 
   - ①20240831
-
 - [何幻 业余程序员的个人修养](https://www.zhihu.com/column/self-discipline)
 
   - 20240901
-
 - 类型理论和程序设计 李未 王飓安
   
   - 20240902
-  
-- [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
+- 在Github探索一些人一些仓库
+
+  - 20240904
+- [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
+
+  - 20240
+
+- [逻辑](https://zh.wikipedia.org/zh-hans/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91?oldformat=true)
+
+  - [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
+  - [直觉主义逻辑](https://zh.wikipedia.org/w/index.php?title=%E7%9B%B4%E8%A7%89%E4%B8%BB%E4%B9%89%E9%80%BB%E8%BE%91&oldformat=true)
+- [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
+
+  - 
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
@@ -272,7 +277,10 @@
 - 程序设计语言理论, 第二版 (陈意云, 张昱)  
 - [nLab*](https://ncatlab.org/nlab/all_pages)
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
-- 
+
+
+
+- Rust 编译器开发指南
 
 
 
