@@ -167,7 +167,7 @@
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
 
   - ①20240823-ChatGPT比普通翻译器强太多
-  - 20240901~
+  - 20240901~202409
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825~
@@ -187,9 +187,8 @@
 
   - 20240904
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
-
   - 20240
-
+  
 - [逻辑](https://zh.wikipedia.org/zh-hans/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91?oldformat=true)
 
   - [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
@@ -215,6 +214,7 @@
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
   - ①202409~
+- [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
 - Go 语言设计与实现
   - 
 - Go语言高级编程
