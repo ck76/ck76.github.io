@@ -167,7 +167,10 @@
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
 
   - ①20240823-ChatGPT比普通翻译器强太多
-  - 20240901~202409
+  - 20240901 : 第1-5章
+  - 20240907 : 第6-10章
+  - 20240908 : 第11-13章
+  - 202409
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825~
@@ -203,8 +206,8 @@
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
   - ①2024090
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
-  - ①20240820~第三章第70页【TODO】
-  - ②
+  - ①20240820~第三章
+  - ②2024090
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
   - ①202409~
