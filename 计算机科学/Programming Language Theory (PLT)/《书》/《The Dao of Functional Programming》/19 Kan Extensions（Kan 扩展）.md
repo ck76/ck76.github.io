@@ -804,3 +804,770 @@ instance Functor (Ran p f) where
 
 ### -------------------------
 
+**左伴随作为右 Kan 扩展**的讨论涉及函子、伴随性以及 Kan 扩展的核心概念。为了让这些内容更易于理解，我们可以逐步进行解释。
+
+### 1. 伴随函子的背景
+
+伴随函子 ($L \dashv R$) 的定义表示两个函子 $L$ 和 $R$ 之间的特殊关系。假设有两个范畴 $\mathcal{C}$ 和 $\mathcal{D}$，以及函子 $L: \mathcal{D} \to \mathcal{C}$ 和 $R: \mathcal{C} \to \mathcal{D}$。那么 $L$ 和 $R$ 满足以下条件：
+
+$$
+\mathcal{C}(L(d), c) \cong \mathcal{D}(d, R(c))
+$$
+
+这表示，从 $L(d)$ 到 $\mathcal{C}$ 中对象 $c$ 的箭头与从 $d$ 到 $\mathcal{D}$ 中对象 $R(c)$ 的箭头之间存在自然同构。
+
+- **单位（unit）**：$\eta: \text{Id}_{\mathcal{D}} \to R \circ L$
+- **余单位（counit）**：$\epsilon: L \circ R \to \text{Id}_{\mathcal{C}}$
+
+这些自然变换展示了 $L$ 和 $R$ 之间的伴随关系。
+
+### 2. Kan 扩展的定义
+
+**右 Kan 扩展** 是一种扩展形式，用于从一个函子推广到另一个函子。如果我们有函子 $F: \mathcal{E} \to \mathcal{C}$ 和 $P: \mathcal{B} \to \mathcal{E}$，右 Kan 扩展 $Ran_P F: \mathcal{B} \to \mathcal{C}$ 是这样一种函子，使得存在自然变换 $\epsilon: (Ran_P F) \circ P \to F$。
+
+这个扩展满足以下**泛化性条件**：对于任何函子 $G: \mathcal{B} \to \mathcal{C}$ 和自然变换 $\alpha: G \circ P \to F$，存在唯一的自然变换 $\sigma: G \to Ran_P F$，使得 $\alpha = \epsilon \circ (\sigma \circ P)$。
+
+### 3. 左伴随作为右 Kan 扩展
+
+现在，我们将伴随函子的情形与右 Kan 扩展联系起来。假设有一对伴随函子 $L \dashv R$。我们想要展示左伴随函子 $L$ 实际上可以被理解为沿着右伴随函子 $R$ 的恒等函子的右 Kan 扩展。换句话说，我们要证明：
+
+$$
+L \cong \text{Ran}_R \text{Id}
+$$
+
+在这里，$\text{Id}$ 是恒等函子。也就是说，左伴随 $L$ 就是恒等函子 $\text{Id}_{\mathcal{C}}$ 的右 Kan 扩展。
+
+这种情况下，右 Kan 扩展的余单位 $\epsilon$ 与伴随函子的余单位相同：
+$$
+\epsilon: L \circ R \to \text{Id}_{\mathcal{C}}
+$$
+
+### 4. 泛化性与 $\sigma$ 的构造
+
+我们现在要展示如何构造自然变换 $\sigma: G \to L$，以便满足以下条件：
+
+$$
+\alpha = \epsilon \circ (\sigma \circ R)
+$$
+
+假设我们有另一个函子 $G: \mathcal{D} \to \mathcal{C}$ 和自然变换 $\alpha: G \circ R \to \text{Id}_{\mathcal{C}}$。我们利用伴随函子的单位 $\eta: \text{Id}_{\mathcal{D}} \to R \circ L$，来定义 $\sigma$。
+
+定义过程如下：
+
+1. 从函子 $G$ 开始：
+$$
+G \to G \circ \text{Id} \to G \circ \eta
+$$
+2. 然后通过伴随关系，得到：
+$$
+G \circ R \circ L \to \alpha \circ L \to L
+$$
+
+最终得到 $\sigma$ 的定义：
+$$
+\sigma = (\alpha \circ L) \cdot (G \circ \eta)
+$$
+
+### 5. 反向问题：右 Kan 扩展是否自动成为左伴随？
+
+我们可以反向问：如果右 Kan 扩展 $\text{Ran}_R \text{Id}$ 存在，它是否自动成为 $R$ 的左伴随？答案是：并不总是如此。为此需要额外的条件，即 Kan 扩展必须被 $R$ 保留。这意味着：
+
+$$
+R \circ \text{Ran}_R \text{Id} \cong \text{Ran}_R R
+$$
+
+这是一个重要的条件，它确保 $R$ 能保留 Kan 扩展的结构。
+
+### 6. 证明条件 $\alpha = \epsilon \cdot (\sigma \circ R)$
+
+为了证明这个条件，我们使用伴随函子的**三角等式**。这个等式保证单位和余单位之间的相互作用符合特定的规则。通过绘制相应的图，我们可以直观地看到 $\alpha$ 如何因子分解为 $\epsilon$ 和 $\sigma$ 的组合。最终得到：
+
+$$
+\alpha = \epsilon \cdot (\sigma \circ R)
+$$
+
+### 总结
+
+将左伴随理解为右 Kan 扩展展示了两者之间的密切关系。伴随函子的结构与 Kan 扩展的结构相符，尤其是在余单位的表现上。Kan 扩展何时能成为左伴随则取决于 $R$ 是否能保留这种扩展的结构。这种分析有助于理解 Kan 扩展和伴随性在更广泛的范畴论框架中的应用。
+
+### ---------------------------------------------------------
+
+
+
+### 密度余子模 (Codensity Monad) 详细解释
+
+#### 1. 伴随函子和子模
+在范畴论中，伴随函子是一种非常强大的工具。我们已经知道，对于任何一对伴随函子 $L \dashv F$，它们会形成一个子模 $F \circ L$。这一对伴随函子中的 $F$ 是右伴随，而 $L$ 是左伴随。
+
+伴随函子中，右函子 $F$ 与左函子 $L$ 的组合 $F \circ L$ 形成了一个从范畴 $\mathcal{C}$ 到 $\mathcal{C}$ 的自函子（endofunctor），这个自函子本身构成一个**子模**。对于这种情况，子模被定义为由左函子和右函子的组合所产生的结构。
+
+#### 2. 右 Kan 扩展的引入
+有趣的是，伴随函子的这个自函子 $F \circ L$ 实际上是 $F$ 沿着自身的右 Kan 扩展。右 Kan 扩展 $Ran_F F$ 是一种将 $F$“延伸”的方式，使得在某种意义上，这个扩展是泛化最优的。
+
+即使 $F$ 没有左伴随函子 $L$，我们依然可以定义 Kan 扩展 $Ran_F F$，这个结构被称为**密度余子模** (Codensity Monad)，记作 $T_F$：
+$$
+T_F = Ran_F F
+$$
+这个定义展示了即使没有左伴随，我们也可以从 Kan 扩展的角度为右函子构造一个子模。
+
+#### 3. 密度余子模的单位与乘法
+要说明 $T_F$ 是一个子模，我们需要定义子模的**单位**和**乘法**。子模类似于一个代数结构，如单子 (monad)，它需要满足某些结构条件。
+
+- **单位**: $\eta : \text{Id} \to T_F$，从恒等函子到密度余子模的自然变换。
+- **乘法**: $\mu : T_F \circ T_F \to T_F$，这是密度余子模的自函子组合。
+
+这些结构来自 Kan 扩展的**泛化性**，即 Kan 扩展的定义要求它必须满足某种泛化条件。对于任何函子 $G$ 和自然变换 $\alpha$，我们都能构造一个自然变换 $\sigma$ 来满足这个泛化条件：
+$$
+\sigma : G \to T_F
+$$
+
+#### 4. 单位与乘法的构造
+为了得到密度余子模的**单位**，我们将函子 $G$ 替换为恒等函子 $\text{Id}$，并将自然变换 $\alpha$ 替换为恒等自然变换。
+
+为了得到**乘法**，我们将函子 $G$ 替换为 $T_F \circ T_F$，并使用 Kan 扩展的余单位 $\epsilon$，即：
+$$
+\epsilon: T_F \circ F \to F
+$$
+
+我们还可以选择合适的自然变换 $\alpha$，例如：
+$$
+\alpha : T_F \circ T_F \circ F \to F
+$$
+这个自然变换可以分解为：
+$$
+T_F \circ T_F \circ F \to T_F \circ F \to F
+$$
+通过上述过程，我们构造了密度余子模的乘法 $\mu$。
+
+#### 5. 从伴随函数子到密度余子模
+我们现在可以从伴随的角度重新审视密度余子模。假设我们有一个伴随函子对 $L \dashv F$，我们知道 $F \circ L$ 是一个子模。我们通过对任意函子 $G$ 的映射，得到以下关系：
+$$
+[\mathcal{C}, \mathcal{C}](G, F \circ L) \cong \int_c \mathcal{C}(G(c), F(L(c)))
+$$
+这里使用了 Yoneda 引理，我们可以重写它为：
+$$
+\cong \int_c \int_d \text{Set}(\mathcal{D}(L(c), d), \mathcal{C}(G(c), F(d)))
+$$
+进一步利用伴随性，可以化简为：
+$$
+\cong \int_d \mathcal{C}(G(F(d)), F(d))
+$$
+这实际上定义了一组自然变换：
+$$
+\cong [\mathcal{D}, \mathcal{C}](G \circ F, F)
+$$
+通过 $F$ 的前置组合，密度余子模 $Ran_F F$ 可以理解为右 Kan 扩展的左伴随。
+
+由于函子 $G$ 是任意的，因此我们可以得出结论，$F \circ L$ 确实是密度余子模 $Ran_F F$，也就是说，密度余子模是从伴随函子中的右伴随函子的组合中得出的。
+
+#### 6. 总结
+密度余子模 (Codensity Monad) 是 Kan 扩展的一个具体应用，即使在没有左伴随函子的情况下，右函子 $F$ 沿自身的 Kan 扩展依然能够生成一个自函子 $T_F = Ran_F F$。这个自函子构成了一个子模，具有单位和乘法。通过 Yoneda 引理和伴随函子的概念，我们可以看到，这种结构实际上广泛存在于范畴论中的各种子模中。
+
+### ----------------------
+
+### Haskell 中的 Codensity Monad 详解
+
+**Codensity Monad** 是 Haskell 中的一种技术，它能够优化长链的 `bind` 操作，特别是在处理如自由单子 (free monads) 这样的结构时。在介绍代码和实现之前，我们可以先理解一些核心概念。
+
+#### 1. Codensity Monad 的定义
+
+Codensity Monad 是通过 `newtype` 定义的，它接受一个函子 `f` 和一个类型 `c`，并提供一个包含通用参数的构造函数：
+
+```haskell
+newtype Codensity f c = C (forall d. (c -> f d) -> f d)
+```
+
+这段代码中：
+- `Codensity f c` 包装了一个类型为 `(c -> f d) -> f d` 的函数，它接收一个类型为 `c -> f d` 的回调，并返回类型为 `f d` 的结果。
+- `f` 是一个函子，而 `c` 是 Codensity Monad 所作用的类型。
+
+Codensity Monad 的提取函数 `runCodensity` 将其解包，以便访问内部封装的函数：
+
+```haskell
+runCodensity :: Codensity f c -> forall d. (c -> f d) -> f d
+runCodensity (C h) = h
+```
+
+这个提取函数允许我们执行 Codensity Monad 并从中提取值。
+
+#### 2. Codensity 与 Continuation Monad 的相似性
+
+Codensity Monad 非常类似于 Continuation Monad (续延单子)：
+
+```haskell
+newtype Cont r a = Cont { runCont :: (a -> r) -> r }
+```
+
+它们都涉及将回调函数传递给某个计算。事实上，如果我们将 `f` 设为 `Identity` 函子，则 Codensity Monad 和 Continuation Monad 是等价的。Continuation Monad 通过将计算封装在回调函数中，使得计算能够以 continuation passing style (CPS) 的方式执行。
+
+#### 3. Codensity Monad 的 Monad 实例
+
+我们可以为 Codensity Monad 实现 `Monad` 实例：
+
+```haskell
+instance Monad (Codensity f) where
+    return x = C (\k -> k x)
+    m >>= kl = C (\k -> runCodensity m (\a -> runCodensity (kl a) k))
+```
+
+- `return` 将值 `x` 传递给一个回调 `k`，它本质上将 `x` 作为结果。
+- `>>=` 的实现解包 `m`，然后依次应用 `kl` 和回调 `k`，这非常类似于 Continuation Monad 中的 `bind` 操作。
+
+这与 Continuation Monad 的 `Monad` 实现几乎一致：
+
+```haskell
+instance Monad (Cont r) where
+    return x = Cont (\k -> k x)
+    m >>= kl = Cont (\k -> runCont m (\a -> runCont (kl a) k))
+```
+
+正因为如此，Codensity Monad 拥有与 Continuation Monad 类似的性能优化特性，尤其是针对长链的 `bind` 操作。
+
+#### 4. 性能优化与 Free Monad
+
+Codensity Monad 能够优化由 `do` 语法块生成的长链 `bind` 操作。对于普通的 `Monad` 实例，每次 `bind` 操作都会创建一个新节点，并需要从头开始执行计算。而 Codensity Monad 通过将这些 `bind` 操作“嵌套”到 continuations 中，避免了这种递归回溯，因而提供了性能提升。
+
+特别是在处理**自由单子 (free monads)** 时，这种优化非常有用。自由单子本质上是树形结构，在解释它时，传统的 `bind` 操作会反复遍历整棵树，导致性能下降。Codensity Monad 则将这些 `bind` 操作积累为 continuations，减少了对树结构的遍历，类似于通过反转列表的方式优化队列。
+
+#### 5. Codensity Monad 的 Functor 和 Applicative 实例
+
+你可以通过练习来实现 Codensity 的 Functor 和 Applicative 实例。
+
+##### Functor 实例：
+
+```haskell
+instance Functor (Codensity f) where
+    fmap f m = C (\k -> runCodensity m (k . f))
+```
+
+- `fmap` 通过将函数 `f` 应用于 `Codensity` 中的值 `m`，然后组合到回调 `k` 中。
+
+##### Applicative 实例：
+
+```haskell
+instance Applicative (Codensity f) where
+    pure = return
+    mf <*> ma = C (\k -> runCodensity mf (\f -> runCodensity ma (k . f)))
+```
+
+- `pure` 直接调用 `return`。
+- `<*>` 将 Codensity Monad 中的函数和值组合起来，生成新的 Codensity。
+
+#### 总结
+
+Codensity Monad 是一种强大的工具，它与 Continuation Monad 十分相似，能够通过 Continuation Passing Style (CPS) 优化长链的 `bind` 操作，尤其适用于处理复杂的结构，如自由单子。通过这种方式，Codensity Monad 提供了显著的性能优势，尤其在计算密集的场景中。
+
+这些特性使得 Codensity Monad 在 Haskell 中被广泛应用于优化和提升代码性能。
+
+### -------------------------------
+
+<img src="https://p.ipic.vip/jjbfth.png" alt="0a51e59743a2a5fc204149ecd9828862" style="zoom:50%;" />
+
+### 左 Kan 扩展的详细讲解
+
+左 Kan 扩展是一种重要的范畴论工具，用来从一个函子 $F$ 沿另一个函子 $P$ 进行“扩展”。这种扩展方式能够捕捉到通过 $P$ 传递的信息的最一般形式，并且有着广泛的应用。我们将从多个角度来解释这一概念。
+
+#### 1. **左 Kan 扩展的定义**
+
+假设有两个范畴 $\mathcal{B}$ 和 $\mathcal{E}$，以及两个函子 $F: \mathcal{E} \to \mathcal{C}$ 和 $P: \mathcal{B} \to \mathcal{E}$。左 Kan 扩展 $Lan_P F: \mathcal{B} \to \mathcal{C}$ 是一个新函子，它配有一个自然变换 $\eta: F \to Lan_P F \circ P$，这个自然变换叫做**单位元**（unit）。这个扩展满足以下的**泛化性条件**：
+
+对于任何其他函子 $G: \mathcal{B} \to \mathcal{C}$ 和自然变换 $\alpha: F \to G \circ P$，都存在唯一的自然变换 $\sigma: Lan_P F \to G$，使得 $\alpha = (\sigma \circ P) \cdot \eta$。
+
+这可以用公式表示为：
+$$
+\alpha = (\sigma \circ P) \cdot \eta
+$$
+
+#### 2. **图解与自然变换**
+
+图中显示了左 Kan 扩展的**单位元** $\eta$ 和自然变换 $\alpha$：
+
+- 第一个图展示了**单位元** $\eta: F \to Lan_P F \circ P$。箭头表示了从函子 $F$ 通过自然变换 $\eta$ 到 $Lan_P F \circ P$ 的过程。
+- 第二个图展示了自然变换 $\alpha: F \to G \circ P$，并通过 $\sigma$ 因式分解（即将 $\alpha$ 表示为两个步骤的组合），其中 $\sigma: Lan_P F \to G$ 是唯一的映射，满足泛化性条件。
+
+在右侧的图中，$\sigma$ 表示将左 Kan 扩展 $Lan_P F$ 映射到其他函子 $G$ 的唯一自然变换。
+
+#### 3. **左 Kan 扩展与右 Kan 扩展的对比**
+
+注意，左 Kan 扩展的单位元方向与右 Kan 扩展的**余单位元**方向相反。这是两者的主要区别之一。左 Kan 扩展更像是一个“左伴随”，而右 Kan 扩展则与“右伴随”对应。
+
+#### 4. **左 Kan 扩展的应用**
+
+在范畴论中，左 Kan 扩展通常用于构造最一般的函子，尤其是在需要从一个范畴映射到另一个范畴，并且保持一定的结构时。左 Kan 扩展提供了一种标准化的方式来进行这种映射。
+
+通过使用左 Kan 扩展，我们可以在更加复杂的范畴之间建立函子的映射，同时保持它们的结构不变。在计算机科学中，左 Kan 扩展也常用于描述数据流中的依赖关系或传递信息的方式。
+
+#### 5. **公式与普遍性质**
+
+左 Kan 扩展的普遍性质保证了这种扩展的唯一性。也就是说，给定函子 $F$ 和 $P$，左 Kan 扩展 $Lan_P F$ 是唯一满足这些条件的函子。公式可以表示为：
+$$
+[ \mathcal{B}, \mathcal{C} ]( Lan_P F, G ) \cong [ \mathcal{E}, \mathcal{C} ]( F, G \circ P )
+$$
+
+这表明从 $Lan_P F$ 到 $G$ 的自然变换集合与从 $F$ 到 $G \circ P$ 的自然变换集合是一一对应的。这个普遍性是 Kan 扩展定义中的关键。
+
+### 总结
+
+左 Kan 扩展是一种沿着给定函子扩展另一个函子的标准方式，它的关键在于其泛化性和单位元的定义。通过这个工具，我们可以在保持范畴结构的同时，在范畴间进行更复杂的映射操作。
+
+你可以理解左 Kan 扩展为一种标准的“延展”方式，它允许我们将原来的函子通过一个中介函子进行扩展，并提供一种唯一的方式来保证这种扩展的最优性。
+
+### ---------------------------------
+
+### 左 Kan 扩展作为共端的通俗解释
+
+**左 Kan 扩展 (Left Kan Extension)** 是范畴论中非常重要的工具之一，它允许我们沿着一个给定的函子 $P$ 来扩展一个函子 $F$。我们将从**共端 (coend)** 的角度来解释左 Kan 扩展的结构。
+
+#### 1. **什么是共端 (Coend)？**
+
+共端是范畴论中的一种特殊结构，它是一种“加权余极限”，可以理解为一种加权和。具体来说，如果我们有一个函子 $F$，并且有一个范畴 $\mathcal{B}$，共端通过对每个对象 $b$ 的一个“加权和”来构造一个新对象。
+
+在左 Kan 扩展中，**共端**表示我们通过函子 $P$ 和 $F$ 的数据在整个范畴上“整合”信息的方式。
+
+#### 2. **co-Yoneda 引理的回顾**
+
+在开始之前，我们可以先回顾一下**co-Yoneda 引理**。co-Yoneda 引理指出，对于每个共预层 (co-presheaf) $F$，有下面的同构：
+$$
+F(b) \cong \int_c \mathcal{B}(c, b) \cdot F(c)
+$$
+这意味着 $F(b)$ 可以表示为一种共端，其中我们对每个对象 $c$ 在 $\mathcal{B}(c, b)$ 和 $F(c)$ 上的笛卡尔积进行求和。
+
+#### 3. **左 Kan 扩展的共端表示**
+
+左 Kan 扩展可以看作是 co-Yoneda 引理的推广。对于每个对象 $b$，左 Kan 扩展 $Lan_P F$ 定义为：
+$$
+(Lan_P F)(b) \cong \int_e \mathcal{B}(P(e), b) \cdot F(e)
+$$
+这表示从范畴 $\mathcal{B}$ 中的对象 $P(e)$ 到 $b$ 的映射，以及从 $F(e)$ 中抽取的信息的整合。我们通过共端来表示从范畴 $\mathcal{E}$ 中的对象 $e$ 到 $\mathcal{C}$ 中的对象 $b$ 的信息传递。
+
+#### 4. **一般函子的情况**
+
+对于一般的函子 $F: \mathcal{E} \to \mathcal{C}$，我们将乘积替换为一种称为**copower** 的结构。copower 是一种特殊的乘法，它允许我们将对象进行加权。
+
+因此，在一般情况下，左 Kan 扩展 $Lan_P F$ 表示为：
+$$
+(Lan_P F)(b) \cong \int_e \mathcal{B}(P(e), b) \cdot F(e)
+$$
+这个公式展示了如何通过共端对整个范畴上的对象进行加权求和，形成一个新的函子。
+
+#### 5. **映射到其他函子的普遍性**
+
+为了证明这个公式的正确性，我们可以考虑映射到某个函子 $G$ 的映射。我们用自然变换的集合表示为一个共端：
+$$
+\int_b \mathcal{C} \left( \int_e \mathcal{B}(P(e), b) \cdot F(e), G(b) \right)
+$$
+接下来，我们可以通过**余小连续性 (colimits)** 将共端拉出来，得到一个端（即极限）：
+$$
+\int_b \int_e \mathcal{C} \left( \mathcal{B}(P(e), b) \cdot F(e), G(b) \right)
+$$
+然后使用 copower 的定义，我们可以将这个公式进一步简化为：
+$$
+\int_b \int_e \mathcal{C} \left( \mathcal{B}(P(e), b), \mathcal{C}(F(e), G(b)) \right)
+$$
+最后，通过应用**Yoneda 引理**，我们可以将 $b$ 替换为 $P(e)$，从而得到：
+$$
+\int_e \mathcal{C}(F(e), G(P(e)))
+$$
+这与函子预组合的左伴随公式一致，表示为：
+$$
+[ \mathcal{B}, \mathcal{C} ](Lan_P F, G) \cong [ \mathcal{E}, \mathcal{C} ](F, G \circ P)
+$$
+这个公式展示了左 Kan 扩展如何作为一个伴随函子，通过共端的方式实现普遍的映射关系。
+
+#### 6. **简化公式：Set 范畴中的情况**
+
+在 Set 范畴中，copower 会退化为笛卡尔积，因此左 Kan 扩展可以简化为：
+$$
+(Lan_P F)(b) \cong \int_e \mathcal{B}(P(e), b) \times F(e)
+$$
+这个公式比一般的公式更简单，因为 Set 中的 copower 就是常规的笛卡尔积。
+
+#### 7. **伴随函子的特殊情况**
+
+如果 $P$ 有一个右伴随函子 $P^*$，那么我们可以进一步简化。根据 co-Yoneda 引理，有：
+$$
+\mathcal{B}(P(e), b) \cong \mathcal{E}(e, P^*(b))
+$$
+因此，左 Kan 扩展可以进一步写为：
+$$
+(Lan_P F)(b) \cong (F \circ P^*)(b)
+$$
+这展示了 Kan 扩展如何逆转 $P$，并跟随 $F$。
+
+### 总结
+
+左 Kan 扩展可以通过共端来理解，它是一种将函子沿着另一个函子扩展的方式。通过共端结构，我们可以看出左 Kan 扩展是如何整合不同对象之间的关系，形成一个新的函子。通过 co-Yoneda 引理的推广和应用，我们得到了左 Kan 扩展的更深层理解，尤其是在 Set 范畴和有伴随函子的特殊情况下，这些结构变得更加直观和易于计算。
+
+### ---------------------------------
+
+### Haskell 中的左 Kan 扩展
+
+在 Haskell 中，我们可以将左 Kan 扩展的概念用类型和代码来实现。左 Kan 扩展本质上是沿着一个函子 $p$ 扩展另一个函子 $f$。我们在实现时需要用**存在类型**来表示共端的概念，并使用**广义代数数据类型 (GADT)** 来实现。
+
+#### 1. **Lan 的定义**
+
+左 Kan 扩展的定义在 Haskell 中可以用存在类型表示如下：
+```haskell
+type Lan p f b = exists e. (p e -> b, f e)
+```
+
+这表示一个对象类型 $b$ 是通过某个中间类型 $e$ 从 $p e$ 映射到 $b$ 的。我们可以将这种形式用 GADT 来编码存在性。存在类型可以让我们表示这个类型 $e$ 只在局部范围内存在。
+
+用 GADT 表示左 Kan 扩展：
+```haskell
+data Lan p f b where
+    Lan :: (p e -> b) -> f e -> Lan p f b
+```
+
+在这里，`Lan` 包含了两个部分：
+- **转换函数** `(p e -> b)`：将类型 $p e$ 映射到 $b$。
+- **函子值** `f e`：函子 $f$ 应用到类型 $e$ 的结果。
+
+#### 2. **单位元 (Unit) 的定义**
+
+左 Kan 扩展的单位元是从函子 $f$ 到左 Kan 扩展 `Lan p f` 之后组合 $p$ 的自然变换。我们在 Haskell 中可以定义为：
+```haskell
+unit :: forall p f e'. f e' -> Lan p f (p e')
+```
+
+这个类型表示我们从一个类型为 `f e'` 的值开始，并将其转换为左 Kan 扩展 `Lan p f`，其目标是类型 `p e'`。
+
+实现单位元的代码如下：
+```haskell
+unit fe = Lan id fe
+```
+
+在这里：
+- 我们选择 `e = e'`，因为我们需要在 $p e'$ 上使用恒等函数 `id`。
+- 然后直接将 `fe` 传递给构造函数 `Lan`。
+
+#### 3. **普遍性与 sigma 自然变换**
+
+左 Kan 扩展的普遍性是其强大的地方。我们定义一个类型别名 `Alpha`，表示从函子 $f$ 到 $g$ 之后组合 $p$ 的自然变换：
+```haskell
+type Alpha p f g = forall e. f e -> g (p e)
+```
+
+我们接下来需要定义一个唯一的自然变换 `sigma`，它将左 Kan 扩展映射到函子 $g$：
+```haskell
+sigma :: Functor g => Alpha p f g -> forall b. (Lan p f b -> g b)
+sigma alpha (Lan pe_b fe) = fmap pe_b (alpha fe)
+```
+
+在 `sigma` 的实现中：
+- `alpha fe` 将 $f e$ 映射到 $g (p e)$。
+- 然后使用 `fmap pe_b` 将 $p e$ 映射到 $b$，实现从左 Kan 扩展到 $g$ 的转换。
+
+#### 4. **因式分解**
+
+在 Kan 扩展中，$\alpha$ 的因式分解（factorization）通过单位元 $\eta$ 和 $\sigma$ 来实现：
+$$
+\alpha = (\sigma \circ P) \cdot \eta
+$$
+
+我们可以用 Haskell 实现这个因式分解过程。定义一个函数 `factorize`，它通过 `sigma` 和 `unit` 来实现 $\alpha$ 的因式分解：
+```haskell
+factorize :: Functor g => Alpha p f g -> f e -> g (p e)
+factorize alpha = sigma alpha . unit
+```
+
+#### 5. **Lan 的 Functor 实例**
+
+为了使 `Lan` 在 Haskell 中更具表现力，我们可以为它实现 `Functor` 实例。你可以按照下列方式实现 `Lan` 的 `fmap` 方法，使其遵循 `Functor` 法则：
+
+```haskell
+instance Functor (Lan p f) where
+    fmap h (Lan pe_b fe) = Lan (h . pe_b) fe
+```
+
+在这个 `Functor` 实现中：
+- `fmap h` 将函数 `h` 组合到 `pe_b` 中，即先执行 `pe_b`，然后再执行 `h`。
+- 最终返回新的 `Lan p f b`。
+
+### 总结
+
+在 Haskell 中，左 Kan 扩展可以通过 GADT 和存在类型来编码。通过这种方式，我们能够捕捉到左 Kan 扩展的单位元和其与其他函子的普遍性。在实现上，`Lan p f b` 通过一个中间类型 $e$ 来连接 $p$ 和 $f$，并使用自然变换来进行映射和因式分解。
+
+### ---------------------------------
+
+<img src="https://p.ipic.vip/rcsatm.png" alt="78e81f01630290a497dc39fc50fd26c6" style="zoom:50%;" />
+
+从你上传的图片来看，它展示了**余极限 (Colimit)** 的概念，作为**左 Kan 扩展**来定义的方式。让我们详细讲解这一概念。
+
+### 1. **什么是余极限？**
+
+余极限可以看作是极限的对偶概念。给定一个索引范畴 $\mathcal{J}$ 和一个函子 $D: \mathcal{J} \to \mathcal{C}$，余极限是 $D$ 的圆锥（cone）的**普遍对象**。这里，“普遍对象”意味着从 $D$ 到某个对象 $X$ 的所有圆锥都可以通过唯一的态射从 $Colim D$ 因子分解。
+
+例如，在图中展示的例子中，有三个对象和三个态射（不包括身份态射）组成的简单图形。余极限 $Colim D$ 就是 $D$ 的普遍圆锥。
+
+### 2. **圆锥的定义**
+
+在图中，左侧展示了范畴 $\mathcal{J}$，它有三个对象（1, 2, 3）和对应的态射（从 1 到 2、从 2 到 3 等等）。这些对象在目标范畴 $\mathcal{C}$ 中被映射到相应的对象 $D_1$, $D_2$, 和 $D_3$。
+
+自然变换 $\gamma$ 定义了从函子 $D$ 到对象 $X$ 的圆锥。在右侧的图中，$\gamma_1$, $\gamma_2$, 和 $\gamma_3$ 分别是从 $D_1$, $D_2$, $D_3$ 到 $X$ 的箭头，形成了一个圆锥的结构。
+
+### 3. **余极限作为左 Kan 扩展**
+
+余极限可以通过左 Kan 扩展来定义。我们可以将余极限视为某个函子 $D$ 沿着从终端单对象范畴 $1$ 到 $\mathcal{J}$ 的函子 $!$ 的左 Kan 扩展。这种定义方式提供了余极限的普遍性，即余极限是所有圆锥中最具泛化性的一个。
+
+公式表示为：
+$$
+Colim D = Lan_! D
+$$
+在这里，$!$ 是一个从单对象范畴 $1$ 到索引范畴 $\mathcal{J}$ 的函子，表示将范畴 $1$ 映射到 $\mathcal{J}$ 中的一个对象。$Lan_! D$ 是左 Kan 扩展，它提供了从 $D$ 到某个普遍对象 $Colim D$ 的自然变换。
+
+### 4. **余极限的普遍性**
+
+余极限具有**普遍性**，意味着对于任何从 $D$ 到 $X$ 的圆锥，余极限 $Colim D$ 都是最优的选择。这也就是说，给定任何对象 $X$，存在一个唯一的态射，使得从 $Colim D$ 到 $X$ 的态射可以通过从 $D$ 到 $Colim D$ 的自然变换来唯一确定。
+
+### 5. **总结**
+
+余极限是一种非常重要的范畴论概念，它表示的是某个图形（由对象和态射组成）的最普遍的“组合”。作为左 Kan 扩展，它可以通过范畴中的函子结构来定义。图中的例子展示了如何通过圆锥来构造余极限，并且展示了其在范畴之间的映射关系。
+
+余极限在计算机科学和数学的许多领域都有应用，特别是在理解数据流、依赖关系以及范畴之间的映射时，提供了统一的方式。
+
+### ---------------------------------
+
+### 右伴随作为左 Kan 扩展的详细讲解
+
+在范畴论中，**伴随函子** (adjoint functors) 是一对函子，它们之间有非常特殊的关系。我们知道，当有一对伴随函子 $L \dashv R$，左伴随函子 $L$ 和右 Kan 扩展相关。同样，对偶地，**右伴随**函子也可以通过**左 Kan 扩展**来描述。这就是我们要详细讨论的概念：右伴随可以看作是左 Kan 扩展。
+
+#### 1. **基本定义**
+
+如果我们有一对伴随函子 $L \dashv R$，表示 $L$ 是左伴随，$R$ 是右伴随，它们满足伴随函子的定义：对每一个对象 $c$ 和 $d$，有自然同构：
+$$
+\mathcal{C}(L(d), c) \cong \mathcal{D}(d, R(c))
+$$
+
+现在，我们可以将右伴随函子 $R$ 理解为某个左 Kan 扩展。具体来说，右伴随 $R$ 可以表示为**恒等函子 (identity functor)** 沿着左伴随 $L$ 的**左 Kan 扩展**：
+$$
+R \cong \text{Lan}_L \text{Id}
+$$
+
+这表示右伴随 $R$ 实际上是恒等函子的左 Kan 扩展，即：
+$$
+\text{Lan}_L \text{Id}
+$$
+是 $L$ 的右伴随函子。
+
+#### 2. **左 Kan 扩展的条件**
+
+反过来，如果存在这个左 Kan 扩展 $\text{Lan}_L \text{Id}$ 并且它**保持**函子 $L$，即满足以下条件：
+$$
+L \circ \text{Lan}_L \text{Id} \cong \text{Lan}_L L
+$$
+那么这个左 Kan 扩展 $\text{Lan}_L \text{Id}$ 就是 $L$ 的右伴随函子。换句话说，右伴随函子是通过这个左 Kan 扩展定义的。
+
+#### 3. **密度共模子 (Density Comonad)**
+
+如果我们将这个左 Kan 扩展 $\text{Lan}_L \text{Id}$ 沿着 $L$ 进行扩展，那么它会形成一种被称为**密度共模子 (density comonad)** 的结构。
+
+密度共模子是一种与左 Kan 扩展紧密相关的结构。具体来说，密度共模子是由函子 $L$ 沿着自身的左 Kan 扩展所形成的结构。
+
+#### 4. **单位元 (Unit) 的关系**
+
+在 Kan 扩展中，**单位元 (unit)** 是定义扩展的一部分。对于右伴随函子作为左 Kan 扩展的情况，单位元 $\eta$ 与伴随函子的单位元是相同的。这意味着：
+$$
+\eta : \text{Id} \to R \circ L
+$$
+这里的单位元 $\eta$ 保持了 Kan 扩展的结构，与伴随函子的单位元保持一致性。
+
+#### 5. **普遍性**
+
+右伴随作为左 Kan 扩展的普遍性证明与右 Kan 扩展的普遍性证明类似。Kan 扩展的普遍性确保了我们可以通过左 Kan 扩展来捕捉右伴随的结构。
+
+### Haskell 实现密度共模子 (Density Comonad)
+
+在 Haskell 中，我们可以为密度共模子实现一个 `Comonad` 实例。这里是它的定义：
+
+```haskell
+data Density f c where
+    D :: (f d -> c) -> f d -> Density f c
+```
+
+- `Density f c` 表示密度共模子的结构，其中包含一个从 `f d` 到 $c$ 的映射，以及一个值 `f d`。
+
+我们现在需要实现 `Comonad` 实例。Comonad 需要实现 `extract` 和 `duplicate`，分别用于从共模子中提取值以及生成嵌套的共模子。
+
+```haskell
+instance Comonad (Density f) where
+    extract (D f x) = f x
+    duplicate (D f x) = D (\y -> D f y) x
+```
+
+- `extract` 函数将 `f` 应用于 `x`，从密度共模子中提取结果。
+- `duplicate` 函数将共模子嵌套为新的共模子。
+
+### 总结
+
+右伴随可以通过左 Kan 扩展的形式定义。这一结构展示了伴随函子的深层次联系，即右伴随函子可以通过左 Kan 扩展来描述，反之亦然。密度共模子是 Kan 扩展中非常重要的一种结构，它捕捉了函子沿自身扩展的共模子形式。在 Haskell 中，我们可以通过 GADT 来实现密度共模子，并为其提供 `Comonad` 实例。
+
+### ---------------------------------
+
+### Day 卷积作为 Kan 扩展的通俗讲解
+
+在范畴论中，**Day 卷积** 是一种对函子进行组合的方式。它能够将两个函子“卷积”在一起，产生一个新的函子。通过**左 Kan 扩展**，我们可以从外部张量积的角度来理解 Day 卷积。
+
+#### 1. **Day 卷积的定义**
+
+Day 卷积 $F ⋆ G$ 是定义在单对象范畴 $\mathcal{C}$ 上的两个函子 $F$ 和 $G$ 的一种组合。它可以用共端的形式表示为：
+$$
+(F ⋆ G)(c) \cong \int^{a, b} \mathcal{C}(a \otimes b, c) \cdot F(a) \cdot G(b)
+$$
+
+这个公式表明，我们通过将 $F(a)$ 和 $G(b)$ 作用到范畴 $\mathcal{C}$ 的对象 $a \otimes b$，再对所有的对象 $a, b$ 进行共端整合，最终得到 Day 卷积的结果。
+
+#### 2. **外部张量积**
+
+在讨论 Day 卷积之前，我们首先引入**外部张量积 (external tensor product)** 的概念。
+
+外部张量积是一种操作，它将两个不同的范畴中的对象组合在一起。具体来说，给定两个函子 $F, G$，它们可以进行外部张量积：
+$$
+(F \otimes G)(\langle a, b \rangle) = F(a) \cdot G(b)
+$$
+
+这个操作定义了两个函子在两个不同范畴中的对象上的组合。这里 $F(a)$ 和 $G(b)$ 分别是两个范畴中的对象 $a$ 和 $b$ 的函子值。通过这种方式，我们得到一个新的函子，它作用在 $\mathcal{C} \times \mathcal{C}$（即范畴 $\mathcal{C}$ 的笛卡尔积）的对象对上。
+
+#### 3. **Day 卷积作为左 Kan 扩展**
+
+事实证明，**Day 卷积**可以通过**左 Kan 扩展**来描述。具体来说，Day 卷积 $F ⋆ G$ 是沿着 $\mathcal{C}$ 中的张量积 $\otimes$ 的外部张量积的**左 Kan 扩展**：
+$$
+F ⋆ G \cong \text{Lan}_\otimes (F \otimes G)
+$$
+
+这意味着我们可以通过左 Kan 扩展的方式，沿着范畴 $\mathcal{C}$ 的张量积 $\otimes$，将外部张量积 $F \otimes G$ 扩展成 Day 卷积。
+
+#### 4. **Day 卷积的公式**
+
+通过左 Kan 扩展的共端公式，我们可以得到 Day 卷积的具体表达式。左 Kan 扩展的共端形式为：
+$$
+(\text{Lan}_\otimes(F \otimes G))(c) \cong \int^{\langle a, b \rangle} \mathcal{C}(a \otimes b, c) \cdot (F \otimes G)(\langle a, b \rangle)
+$$
+
+这里 $\int^{\langle a, b \rangle}$ 表示对 $a$ 和 $b$ 进行共端，$\mathcal{C}(a \otimes b, c)$ 是从 $a \otimes b$ 到 $c$ 的映射，$(F \otimes G)(\langle a, b \rangle) = F(a) \cdot G(b)$ 是外部张量积的结果。
+
+由于我们讨论的是**Set 值**的函子，copower 在这个情况下会退化为笛卡尔积，因此公式可以简化为：
+$$
+(F ⋆ G)(c) \cong \int^{a, b} \mathcal{C}(a \otimes b, c) \times F(a) \times G(b)
+$$
+
+这就是我们之前提到的 Day 卷积的公式。
+
+#### 5. **Day 卷积的直观理解**
+
+Day 卷积可以看作是两种函子的“组合运算”，其中 $F$ 和 $G$ 分别作用于范畴 $\mathcal{C}$ 的不同对象，并通过张量积将它们组合在一起。通过对所有可能的对象对 $(a, b)$ 进行整合，最终得到作用于对象 $c$ 的新函子。
+
+#### 6. **总结**
+
+- Day 卷积是通过左 Kan 扩展定义的一种函子组合方式。它将外部张量积沿着范畴中的张量积扩展，形成一个新的函子。
+- 在 Set 值函子的情况下，Day 卷积通过笛卡尔积和共端表示出来。
+- 这种结构非常适用于描述复杂系统中的组合操作，尤其是在范畴论和高阶函数编程中。
+
+理解 Day 卷积和 Kan 扩展之间的关系有助于我们更好地掌握范畴论中函子的运算方式以及 Kan 扩展的应用。
+
+### ---------------------------------
+
+### 详细讲解：19.5 有用的公式
+
+这些公式涉及**范畴论**中一些常见的结构，如 **copower**、**power**、以及**Kan 扩展**。我们将逐步详细解释每一个公式及其背后的含义。
+
+#### 1. **Co-power (共冪)**
+
+公式：
+$$
+\mathcal{C}(A \cdot b, c) \cong \text{Set}(A, \mathcal{C}(b, c))
+$$
+
+**解释：**
+- **Co-power (共冪)** 是范畴论中的一种构造。这里的公式表达了一种同构关系：
+  - 在范畴 $\mathcal{C}$ 中，从对象 $A \cdot b$ 到对象 $c$ 的态射集合，与在 Set 范畴中，从 $A$ 到 $\mathcal{C}(b, c)$ 的态射集合是同构的。
+- **$\cdot$** 通常表示对象之间的一种“加权”的方式，因此 Co-power 描述了在范畴 $\mathcal{C}$ 中通过对象 $A$ 对 $b$ 进行加权后得到的结果。
+
+#### 2. **Power (幂)**
+
+公式：
+$$
+\mathcal{C}(b, A \pitchfork c) \cong \text{Set}(A, \mathcal{C}(b, c))
+$$
+
+**解释：**
+- **Power (幂)** 公式展示了一种同构关系，其中 $A \pitchfork c$ 表示对象 $c$ 在对象 $A$ 上的**幂**。
+  - 从 $b$ 到 $A \pitchfork c$ 的态射集合，与从 $A$ 到 $\mathcal{C}(b, c)$ 的态射集合是同构的。
+- 这个公式中的 $A \pitchfork c$ 可以理解为对象 $c$ 的一个“内部”幂对象，它反映了 $A$ 如何在态射关系中发挥作用。
+
+#### 3. **Right Kan Extension (右 Kan 扩展)**
+
+公式：
+$$
+[\mathcal{E}, \mathcal{C}](G \circ P, F) \cong [\mathcal{B}, \mathcal{C}](G, \text{Ran}_P F)
+$$
+
+具体展开：
+$$
+(\text{Ran}_P F)(b) \cong \int_e \mathcal{B}(b, P e) \pitchfork F(e)
+$$
+
+**解释：**
+- **右 Kan 扩展**公式描述了右 Kan 扩展的普遍性质。右 Kan 扩展 $\text{Ran}_P F$ 的定义可以理解为通过“逆映射”将 $F$ 延展到范畴 $\mathcal{B}$ 上。
+- 在公式中：
+  - $[\mathcal{E}, \mathcal{C}](G \circ P, F)$ 表示从 $G \circ P$ 到 $F$ 的自然变换集合。
+  - $[\mathcal{B}, \mathcal{C}](G, \text{Ran}_P F)$ 表示从 $G$ 到 $\text{Ran}_P F$ 的自然变换集合。
+
+公式中的共端积分 $\int_e \mathcal{B}(b, P e) \pitchfork F(e)$ 表示对所有对象 $e$ 进行整合，从对象 $P e$ 到对象 $b$ 的态射与 $F(e)$ 的组合结果。
+
+#### 4. **Left Kan Extension (左 Kan 扩展)**
+
+公式：
+$$
+[\mathcal{B}, \mathcal{C}](\text{Lan}_P F, G) \cong [\mathcal{E}, \mathcal{C}](F, G \circ P)
+$$
+
+具体展开：
+$$
+(\text{Lan}_P F)(b) \cong \int_e \mathcal{B}(P e, b) \cdot F(e)
+$$
+
+**解释：**
+- **左 Kan 扩展**类似于右 Kan 扩展，但它描述的是沿着函子 $P$ 对 $F$ 进行扩展。
+- 公式表示了从 $\text{Lan}_P F$ 到 $G$ 的自然变换集合与从 $F$ 到 $G \circ P$ 的自然变换集合之间的同构关系。
+- 公式中的共端 $\int_e \mathcal{B}(P e, b) \cdot F(e)$ 表示在范畴 $\mathcal{B}$ 中，对象 $b$ 通过 $P e$ 与 $F(e)$ 的组合进行整合。
+
+#### 5. **Right Kan Extension in Set (Set 中的右 Kan 扩展)**
+
+公式：
+$$
+(\text{Ran}_P F)(b) \cong \int_e \text{Set}(\mathcal{B}(b, P e), F(e))
+$$
+
+**解释：**
+- **右 Kan 扩展在 Set 范畴中的情况**表示为一个共端，在 Set 范畴中计算右 Kan 扩展。
+- $\text{Set}(\mathcal{B}(b, P e), F(e))$ 表示从 $\mathcal{B}(b, P e)$ 到 $F(e)$ 的映射集合（态射集合）。
+- 这个公式表示在 Set 范畴中的右 Kan 扩展如何通过整合 $\mathcal{B}(b, P e)$ 和 $F(e)$ 的映射来定义。
+
+#### 6. **Left Kan Extension in Set (Set 中的左 Kan 扩展)**
+
+公式：
+$$
+(\text{Lan}_P F)(b) \cong \int_e \mathcal{B}(P e, b) \times F(e)
+$$
+
+**解释：**
+- **左 Kan 扩展在 Set 范畴中的情况**类似于右 Kan 扩展，但它描述了如何沿着函子 $P$ 对 $F$ 进行扩展，并整合从 $P e$ 到 $b$ 的态射与 $F(e)$ 的笛卡尔积。
+- 笛卡尔积 $\times$ 表示 Set 范畴中对象之间的常规乘积。
+
+### 总结
+
+这些公式展示了范畴论中的一些重要构造，特别是 **Kan 扩展** 的左、右版本，以及它们在 Set 范畴中的具体表现。Kan 扩展本质上是一种函子的“推广”方式，允许我们沿着另一个函子进行扩展或逆向映射。通过这些公式，我们可以看到如何通过共端或积来定义这些扩展。
+
+### ---------------------------------
+
+
+
+### ---------------------------------
+
+
+
+
+
+
+--------------------------------
