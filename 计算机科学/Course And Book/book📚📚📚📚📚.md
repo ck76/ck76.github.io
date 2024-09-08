@@ -218,6 +218,12 @@
 
   - ①202409~
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
+- [nLab 分类页](https://ncatlab.org/nlab/page_categories)
+
+  - [Type Theory](https://ncatlab.org/nlab/show/type+theory)
+  - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
+  - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
+
 - Go 语言设计与实现
   - 
 - Go语言高级编程
