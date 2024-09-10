@@ -112,12 +112,8 @@
   - ①
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
-  - ②【TODO】
 - 类型和程序设计语言 Types and Programming Languages
   - ①20240717-肥肠号, 需要再读
-  - 北大-编程语言的设计原理
-  - ②【TODO】
-  - Types and Programming Language-m4p1e
 - 计算机是怎样跑起来的
   - ①20240721-没必要读
 - 面向对象是怎样工作的
@@ -190,24 +186,27 @@
 
   - 20240904
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
-  - 20240
-  
+- 202409
 - [逻辑](https://zh.wikipedia.org/zh-hans/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91?oldformat=true)
 
   - [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
   - [直觉主义逻辑](https://zh.wikipedia.org/w/index.php?title=%E7%9B%B4%E8%A7%89%E4%B8%BB%E4%B9%89%E9%80%BB%E8%BE%91&oldformat=true)
+- [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
+  - ①20240820 : 第1-2章
+  - ②20240910 : 第3-章
+  - ②202409 : 第-章
+  - ②202409 : 第-章
+- ML程序设计教程
+- ①2024080
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
-
-  - 
+- 
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
   - ①2024090
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
   - ①2024090
-- [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
-  - ①20240820~第三章
-  - ②2024090
+- 
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
   - ①202409~
@@ -218,11 +217,26 @@
 
   - ①202409~
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
-- [nLab 分类页](https://ncatlab.org/nlab/page_categories)
+- 
+- [nLab*](https://ncatlab.org/nlab/all_pages)
 
+  - [nLab 分类页](https://ncatlab.org/nlab/page_categories)
   - [Type Theory](https://ncatlab.org/nlab/show/type+theory)
   - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
   - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
+
+- 
+- 类型和程序设计语言 Types and Programming Languages
+
+  - ②
+
+- 实用编程语言理论基础 Practical Foundations for Programming
+
+  - ②
+
+- [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
+
+  - ①
 
 - Go 语言设计与实现
   - 
@@ -236,15 +250,13 @@
 
 - 网络是怎样连接的
   - ①2024080
-
 - 图解网络硬件
 
   - 
-
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
-- [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
+- 
 - *Structure and Interpretation of Computer Programs* (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
 - *Category Theory for Computing Science* (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
 - *Proofs and Types* (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
@@ -257,9 +269,7 @@
 - Haskell趣学指南
 
   - 
-
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
-
 - 主流编程语言Compilers 代码库
 - miniXXX
 - 
@@ -273,23 +283,25 @@
   - ①2024082~
 - 编程语言的邀请
   - ①
+- 程序设计语言的形式语义 (Glynn Winskel)  The Formal Semantics of Programming Languages
+  - ①202409【TODO】
+- 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    Foundations for Programming Languages
+  - ①202409【TODO】
+- 程序设计语言理论, 第二版 (陈意云, 张昱)  
+
+  - ①202409【TODO】
+
 - 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
   - ①
-- 程序设计语言——原理和实践 Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  
-  - 没找到中文
+- [程序设计语言——原理和实践 Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  黄林鹏译](http://find.nlc.cn/search/showDocDetails?docId=-3476831687557735465&dataSource=ucs01&query=%09%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E8%B7%B5)
+  - 没找到中文pdf ：<
 - 程序设计语言原理 (（美）賽巴斯塔（Sebesta，R.W.）)   Concepts of Programming Languages 第十版
-  - ①
-- 程序设计语言的形式语义 (Glynn Winskel)   Formal Semantics of Programming Languages
-  - ①
-- 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    Foundations for Programming Languages
-  - ①
-- 程序设计语言理论, 第二版 (陈意云, 张昱)  
-- [nLab*](https://ncatlab.org/nlab/all_pages)
+  - ①202409【TODO】
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
 
 
 
-- Rust 编译器开发指南
+- Rust 编译器开发指南-官方文档
 
 
 
@@ -297,8 +309,7 @@
   - https://github.com/ronami/HypeScript
   - https://github.com/skyzh/type-exercise-in-rust
   
-- ML程序设计教程
-  - ①2024080
+- 
   
 - Haskell函数式编程入门卷一
   - 
@@ -322,10 +333,10 @@
 - [TODO](https://github.com/12Tall/lsbasi_cn)
 
 - Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
-  - ①2024080
+  - ①2024090
   
 - Functional Programming in Kotlin (Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano) 
-  - ①2024080
+  - ①2024090
   
 - Functional Programming Made Easier A Step-by-Step Guide (Charles Scalfani) 
 
