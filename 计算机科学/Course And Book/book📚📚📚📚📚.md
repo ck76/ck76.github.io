@@ -169,7 +169,8 @@
   - 202409
 - 程序员的自我修养：链接、装载与库
   
-  - ①20240825~
+  - ①20240825：第2~第章
+  - 202409
 - 搜论文 POPL, ICFP, ESOP, PLDI, OOPSLA, TYPES
   
   - 20240830
@@ -185,21 +186,26 @@
 - 在Github探索一些人一些仓库
 
   - 20240904
-- [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
-- 202409
+- 
 - [逻辑](https://zh.wikipedia.org/zh-hans/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91?oldformat=true)
 
   - [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
   - [直觉主义逻辑](https://zh.wikipedia.org/w/index.php?title=%E7%9B%B4%E8%A7%89%E4%B8%BB%E4%B9%89%E9%80%BB%E8%BE%91&oldformat=true)
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - ①20240820 : 第1-2章
-  - ②20240910 : 第3-章
+  - ②20240910 : 第3章
   - ②202409 : 第-章
   - ②202409 : 第-章
+- PFPL 
+
+  - 20240916 : 第一~第四部分有限数据类型
+  - 20240917 : 第五~第六部分有限数据类型
+  - 20240918 : 第七~第部分有限数据类型
+
 - ML程序设计教程
 - ①2024080
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
-- 
+- LLVM
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
@@ -217,7 +223,10 @@
 
   - ①202409~
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
-- 
+- [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
+
+  - 202410
+
 - [nLab*](https://ncatlab.org/nlab/all_pages)
 
   - [nLab 分类页](https://ncatlab.org/nlab/page_categories)
@@ -264,6 +273,9 @@
 - *Certified Programming with Dependent Types* (**CPDT**) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
 - *Homotopy Type Theory* (**HoTT**) (by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 - [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
+
+  - 
+
 - 魔力Haskell
   - ①2024080 第二部分 116页
 - Haskell趣学指南

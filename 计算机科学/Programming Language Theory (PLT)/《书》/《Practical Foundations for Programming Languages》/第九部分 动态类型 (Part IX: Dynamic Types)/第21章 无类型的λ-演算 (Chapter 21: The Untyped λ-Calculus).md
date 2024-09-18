@@ -145,7 +145,7 @@ $$
 x_1 \, \text{ok}, \ldots, x_n \, \text{ok} \vdash u \, \text{ok}
 $$
 
-这表示在给定变量 $x_1, \ldots, x_n$ 是合法的前提下，表达式 $u$ 也是合法的。此关系通过以下规则归纳定义：
+这表示在给定变量 $x_1, \ldots, x_n$ 是合法的前提下，**表达式** $u$ 也是合法的。此关系通过以下规则归纳定义：
 
 #### 规则 17.1a: 变量规则
 $$
@@ -410,7 +410,9 @@ $$
 
 ### Scott's Theorem 详解
 
-**Scott's Theorem (斯科特定理)**：斯科特定理指出，对于未类型化的 $\lambda$ 演算，定义性等价 (definitional equality) 是不可判定的：即没有算法能够确定两个未类型化的 $\lambda$ 项是否在定义上等价。
+**Scott's Theorem (斯科特定理)**：斯科特定理指出，对于未类型化的 $\lambda$ 演算，定义性等价 (definitional equality) 是不可判定的：
+
+🥑即没有算法能够确定两个未类型化的 $\lambda$ 项是否在定义上等价。
 
 #### 定理内容解释：
 

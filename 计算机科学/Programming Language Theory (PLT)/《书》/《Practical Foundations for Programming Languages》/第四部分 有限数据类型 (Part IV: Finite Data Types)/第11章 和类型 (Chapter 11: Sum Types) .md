@@ -244,6 +244,12 @@ $$
 
   - $\text{None} = \text{inr}(\langle \rangle)$：表示不存在值。
 
+```
+其实也就是0个，1个，2个，多个、、
+```
+
+
+
 ---
 
 ### **12.4 注释 (Notes)**
@@ -1492,21 +1498,19 @@ $$
 #### **单位类型 (Unit Type)**
 
 - **定义**：单位类型是**零元积类型 (Nullary Product Type)**，它有且只有一个元素，通常记为 $\langle \rangle$ 或 $\text{hi}$。
-
   $$
   \text{unit}
   $$
-
+  
 - **唯一值**：单位类型的唯一值为 $\langle \rangle$，表示一个没有信息的值。
 
 - **性质**：如果 $e : \text{unit}$，并且 $e$ 计算得到一个值，那么这个值必定是单位值 $\langle \rangle$。
 
   - **公式表示**：
-
     $$
     e : \text{unit} \implies e \rightarrow^* \langle \rangle
     $$
-
+    
     - **符号解释**：
       - $e : \text{unit}$：表达式 $e$ 的类型是 $\text{unit}$。
       - $e \rightarrow^* \langle \rangle$：$e$ 经过零或多步计算，得到 $\langle \rangle$。
