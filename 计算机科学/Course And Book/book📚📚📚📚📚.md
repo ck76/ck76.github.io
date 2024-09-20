@@ -186,7 +186,6 @@
 - 在Github探索一些人一些仓库
 
   - 20240904
-- 
 - [逻辑](https://zh.wikipedia.org/zh-hans/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91?oldformat=true)
 
   - [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
@@ -198,12 +197,20 @@
   - ②202409 : 第-章
 - PFPL 
 
-  - 20240916 : 第一~第四部分有限数据类型
-  - 20240917 : 第五~第六部分有限数据类型
-  - 20240918 : 第七~第部分有限数据类型
+  - 20240916 : 第一~四部分有限数据类型
+  - 20240917 : 第五~六部分有限数据类型
+  - 20240918 : 第七~九部分有限数据类型
+  - 20240920 : 第十~部分有限数据类型
+
+- TAPL
+
+  - 
 
 - ML程序设计教程
-- ①2024080
+
+  - ①2024090
+
+- Compiling with continuations
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
 - LLVM
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
@@ -233,20 +240,16 @@
   - [Type Theory](https://ncatlab.org/nlab/show/type+theory)
   - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
   - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
-
 - 
 - 类型和程序设计语言 Types and Programming Languages
 
   - ②
-
 - 实用编程语言理论基础 Practical Foundations for Programming
 
   - ②
-
 - [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
 
   - ①
-
 - Go 语言设计与实现
   - 
 - Go语言高级编程

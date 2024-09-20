@@ -61,6 +61,484 @@
 
 - **类型安全**：由于绑定的是符号，且类型系统明确规定了符号的类型，类型安全性得以保证。
 
+### ------------------------------------------------
+
+### 详解：流动绑定（Fluid Binding）：动态作用域的类型安全替代方案
+
+#### 1. **流动绑定的概念**
+流动绑定（Fluid Binding）是为了解决动态作用域（Dynamic Scope）问题而提出的替代机制。它通过引入**符号**和**绑定机制**，实现了在动态环境中安全地使用值而不会引发类型不安全或作用域混乱的情况。
+
+##### **流动绑定 vs 动态作用域**
+- **动态作用域**：变量的绑定会随着程序的控制流而变化，可能会因为不明确的变量绑定而导致程序的行为难以预测，尤其是在嵌套作用域中，外部作用域的变量可能会被覆盖或改变。
+- **流动绑定**：通过将变量的动态绑定过程从传统的变量概念中抽离出来，代之以**符号**来实现安全的值绑定。符号不会直接与值关联，而是通过特定的绑定机制，确保在合适的作用域内绑定和恢复。
+
+#### 2. **符号与绑定机制**
+
+##### **符号**
+- 符号是类似标识符的存在，但与普通变量不同。符号并不直接存储或代表某个值，而是通过绑定机制在运行时的某个特定作用域内关联到一个具体的值。
+- 这种机制确保了符号可以动态地绑定到不同的值，但不会破坏类型系统的安全性。
+
+##### **绑定机制**
+- **绑定的动态性**：在流动绑定中，符号在特定的作用域内与某个值动态关联，绑定只在该作用域内有效。
+- **恢复机制**：当离开作用域时，符号与值的绑定被撤销或恢复为原始上下文中的绑定，从而保证了不同作用域之间的独立性。
+
+这种机制类似于动态作用域，但通过符号绑定和作用域控制的组合，确保了值绑定的**确定性**，避免了动态作用域带来的不确定性。
+
+#### 3. **流动绑定的工作原理**
+
+##### **绑定过程**
+- **进入作用域**：当程序进入一个新的作用域时，可以将一个符号绑定到特定的值。
+- **离开作用域**：当程序离开该作用域时，绑定会自动被撤销，符号的值恢复为其在外部作用域中的绑定。
+  
+##### **作用域控制与确定性**
+- **显式作用域**：流动绑定通过显式的作用域控制来避免动态作用域中的混乱。每次绑定都只在定义的作用域中有效，当程序离开该作用域时，绑定会被有序地撤销或恢复。
+- **避免覆盖问题**：通过符号和作用域的组合，确保即便存在嵌套作用域，外层作用域的符号绑定不会被内部作用域无意间覆盖或改变。
+
+#### 4. **类型安全性**
+
+由于绑定的对象是**符号**，而非传统变量，且类型系统明确规定了符号的类型，流动绑定的安全性得到了保障：
+- **类型一致性**：符号的绑定具有严格的类型检查，保证绑定的值符合预期的类型。
+- **动态绑定与类型安全的结合**：流动绑定允许值在不同作用域间流动，但通过类型系统的限制，确保了每个符号的值在不同作用域中始终保持类型一致。
+
+### 代码示例（Kotlin）
+
+我们可以通过 Kotlin 的 `ThreadLocal` 来模拟类似的流动绑定机制。`ThreadLocal` 允许我们在不同的线程（或作用域）内动态地绑定和恢复值。
+
+```kotlin
+// 使用 ThreadLocal 模拟符号绑定
+val symbolBinding = ThreadLocal<String>()
+
+// 进入新的作用域时绑定符号
+fun enterScope(newBinding: String) {
+    println("Entering scope with binding: $newBinding")
+    symbolBinding.set(newBinding)
+}
+
+// 离开作用域时恢复原始绑定
+fun exitScope() {
+    println("Exiting scope")
+    symbolBinding.remove()
+}
+
+fun main() {
+    // 初始绑定
+    enterScope("Initial Binding")
+    println("Current Binding: ${symbolBinding.get()}") // 输出: Initial Binding
+    
+    // 进入嵌套作用域
+    enterScope("Nested Binding")
+    println("Current Binding: ${symbolBinding.get()}") // 输出: Nested Binding
+    
+    // 离开嵌套作用域，恢复原始绑定
+    exitScope()
+    println("Current Binding: ${symbolBinding.get()}") // 输出: null （恢复到无绑定状态）
+}
+```
+
+#### **解释**：
+- **符号绑定**：`symbolBinding` 是一个 `ThreadLocal` 对象，类似于符号绑定的上下文。它在不同的作用域内动态绑定符号值。
+- **作用域管理**：`enterScope` 函数表示进入新的作用域，并为符号绑定一个新的值；`exitScope` 表示离开作用域，并撤销当前的绑定，恢复之前的状态。
+- **动态绑定的安全性**：通过这种显式的作用域控制，符号的绑定与解除有序进行，保证了不同作用域之间的绑定不会混淆。
+
+### 总结
+
+- **流动绑定**通过符号的引入和动态绑定的机制，替代了传统动态作用域的混乱行为。
+- **显式作用域控制**确保了绑定的可预测性与确定性，避免了动态作用域中不确定性的变量覆盖问题。
+- **类型安全性**通过类型系统对符号的严格要求，使得流动绑定在提供动态绑定灵活性的同时保持了程序的类型安全性。
+
+### ---------------------------------------------
+
+**流动绑定（Fluid Binding）** 和 **动态作用域（Dynamic Scope）** 在控制符号或变量的绑定方式上有所不同。虽然它们都涉及绑定值的动态行为，但它们的设计目标、机制以及安全性保障有显著区别。以下是两者的详细对比：
+
+### 1. **基本概念**
+- **动态作用域（Dynamic Scope）**：当一个变量在某个函数内被使用时，它的值取决于程序控制流的当前环境。也就是说，在执行过程中，变量绑定的值是根据运行时的上下文决定的。
+- **流动绑定（Fluid Binding）**：流动绑定是动态作用域的类型安全替代方案，它通过显式的**符号**和**绑定机制**，实现了一种动态绑定值的方式。符号在不同的作用域中可以绑定不同的值，并通过显式的作用域控制和类型系统保障安全性。
+
+### 2. **作用域控制**
+- **动态作用域**：变量的绑定是**隐式的**，依赖于程序的控制流。当程序调用某个函数时，函数体内的变量可能会绑定到调用时环境中定义的变量值，而不是函数本地定义的值。这意味着，变量的作用域是基于运行时的上下文，而不是静态代码结构。
+- **流动绑定**：流动绑定是**显式的**，符号绑定在进入某个作用域时明确设置，并在离开时明确解除或恢复。这种显式控制避免了动态作用域的混乱和不可预测性。
+
+### 3. **变量 vs 符号**
+- **动态作用域**：动态作用域中涉及的通常是**变量**，这些变量可以根据调用栈的状态绑定不同的值，容易导致意外的变量覆盖或错误绑定，尤其是在嵌套作用域中。
+- **流动绑定**：流动绑定中引入了**符号**（Symbols）机制。符号与变量不同，它们不会直接表示某个值，而是通过绑定机制在特定的作用域中与值动态关联。符号的绑定更明确，避免了传统动态作用域中的变量混淆问题。
+
+### 4. **类型安全**
+- **动态作用域**：动态作用域的绑定机制容易引发类型安全问题，因为变量的绑定是在运行时决定的，可能会导致变量绑定到不符合预期类型的值。例如，一个函数可能会意外地使用外部作用域中的变量值，而这些值的类型不符合预期，导致潜在的类型错误。
+- **流动绑定**：流动绑定通过符号和类型系统的结合，确保符号绑定的值符合预期的类型。符号的类型是在定义时明确指定的，任何对符号进行的绑定操作都会经过类型检查，保证程序的类型安全。
+
+### 5. **确定性 vs 不确定性**
+- **动态作用域**：由于变量的绑定是根据程序运行时的上下文决定的，因此在动态作用域中，变量的值可能是不确定的，特别是在嵌套作用域或复杂的调用链中，可能难以追踪变量的绑定关系。
+- **流动绑定**：流动绑定通过显式的作用域控制，提供了**确定性**。每个符号的绑定范围是清晰定义的，程序离开某个作用域时，绑定会被撤销或恢复，避免了动态作用域中潜在的绑定混乱问题。
+
+### 6. **常见问题**
+- **动态作用域的问题**：
+  - **变量覆盖**：动态作用域中的变量绑定容易导致变量覆盖。例如，内部作用域中的局部变量可能会意外覆盖外部作用域中的全局变量。
+  - **调试困难**：由于变量绑定是基于运行时的调用栈决定的，调试动态作用域中的变量问题可能非常困难，因为变量的值取决于复杂的调用链。
+  
+- **流动绑定的优势**：
+  - **可预测性**：流动绑定的显式控制机制使得符号的绑定过程变得可预测，每个符号绑定的范围和生命周期是清晰明确的。
+  - **类型安全**：流动绑定通过类型系统的支持，保证符号的绑定操作不会破坏类型一致性，避免了动态作用域中的类型错误问题。
+
+### 7. **示例对比**
+
+#### 动态作用域示例（伪代码）
+
+```java
+global x = 5
+
+function f() {
+    print(x)  // 动态作用域：使用调用时环境中的全局变量 x
+}
+
+function g() {
+    local x = 10
+    f()  // f 输出 10，因为 x 在调用时的动态作用域中被绑定为 10
+}
+
+g()  // 输出 10
+```
+
+在动态作用域中，`f` 函数依赖于当前调用环境中的变量 `x`，而不是它自己的定义范围。这可能会导致不可预测的行为，特别是在复杂的调用链中。
+
+#### 流动绑定示例（Kotlin）
+
+```kotlin
+val symbolBinding = ThreadLocal<String>()
+
+fun f() {
+    println("Symbol: ${symbolBinding.get()}")
+}
+
+fun g() {
+    symbolBinding.set("Dynamic Binding in g")
+    f()  // 输出 "Dynamic Binding in g"
+    symbolBinding.remove()  // 恢复绑定
+}
+
+fun main() {
+    symbolBinding.set("Global Binding")
+    f()  // 输出 "Global Binding"
+    
+    g()  // 执行 g 时修改了符号绑定
+    f()  // 输出 "Global Binding"（恢复了原始绑定）
+}
+```
+
+在流动绑定中，`f` 函数依然可以动态获取符号的值，但是符号的绑定是显式控制的，通过 `set` 和 `remove` 方法确保绑定和解除的顺序。这避免了动态作用域中的不可预测性。
+
+### 总结
+- **动态作用域**是基于程序的运行时控制流进行变量绑定，容易产生类型安全性问题和不确定性。
+- **流动绑定**是一种显式的符号绑定机制，它通过明确的作用域控制和类型检查，提供了一种类型安全且确定性的动态绑定方式，解决了动态作用域中存在的变量覆盖、调试困难等问题。
+
+### -----------------------------------------------
+
+### 流动绑定与动态作用域的详细对比
+
+以下表格从多个维度详细对比了**流动绑定（Fluid Binding）**与**动态作用域（Dynamic Scope）**，帮助理解两者在概念、机制、类型安全性等方面的区别与联系。
+
+| **维度**       | **动态作用域（Dynamic Scope）**                              | **流动绑定（Fluid Binding）**                                |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **基本概念**   | 变量的绑定依赖于程序的调用栈，即变量的值由当前执行上下文决定。 | 通过符号和显式的绑定机制，将变量的绑定过程与控制流分离，确保类型安全和作用域的明确控制。 |
+| **作用域控制** | **隐式**：变量绑定基于运行时的调用链，函数调用时可以访问调用者的变量。 | **显式**：通过符号绑定和解除绑定操作，明确控制变量的绑定范围，防止绑定泄漏或混淆。 |
+| **绑定机制**   | **隐式绑定**：不需要显式声明，变量在函数调用时自动绑定到调用环境中的值。 | **显式绑定**：使用符号和绑定操作（如`bind`和`unbind`）来管理变量的绑定和解除。 |
+| **类型安全性** | **较低**：由于绑定基于动态上下文，可能导致类型不匹配，增加运行时错误的风险。 | **较高**：通过类型系统和显式绑定机制，确保符号绑定的值类型与预期一致，减少类型错误。 |
+| **变量与符号** | **变量**：直接通过名称访问，绑定不透明，容易被覆盖或误用。   | **符号**：特殊标识符，通过绑定机制与值关联，绑定过程可控，避免变量覆盖问题。 |
+| **确定性**     | **较低**：变量值依赖于调用链，难以预测和追踪，尤其在嵌套调用中。 | **较高**：绑定和解除绑定过程明确，符号的值在特定作用域内可预测，便于调试和维护。 |
+| **内存管理**   | **简单**：通常由语言的调用栈自动管理，变量在函数退出时自动销毁。 | **复杂**：需要显式管理符号的绑定和解除，确保绑定在适当的时机被撤销，防止内存泄漏。 |
+| **应用场景**   | **有限**：适用于简单的脚本或早期编程语言，现代语言较少采用动态作用域。 | **广泛**：适用于需要灵活绑定机制且要求类型安全的场景，如高级函数式编程、模块化编程和协程。 |
+| **代码示例**   | **动态作用域（伪代码）**                                     | **流动绑定（Kotlin 示例）**                                  |
+|                | ```text                                                                                                               | ```kotlin |                                                              |
+|                | global x = 5                                                 | // 使用 ThreadLocal 模拟符号绑定                             |
+|                |                                                              | val symbolBinding = ThreadLocal<String>()                    |
+|                | function f() {                                               |                                                              |
+|                | print(x)  // 动态作用域：使用调用时环境中的全局变量 x        | fun f() {                                                    |
+|                | }                                                            | println("Symbol: ${symbolBinding.get()}")                    |
+|                |                                                              | }                                                            |
+|                |                                                              |                                                              |
+|                | function g() {                                               | fun g() {                                                    |
+|                | local x = 10                                                 | symbolBinding.set("Dynamic Binding in g")                    |
+|                | f()  // f 输出 10，因为 x 在调用时的动态作用域中被绑定为 10  | f()  // 输出 "Dynamic Binding in g"                          |
+|                | }                                                            | symbolBinding.remove()  // 恢复绑定                          |
+|                |                                                              | }                                                            |
+|                |                                                              |                                                              |
+|                | g()  // 输出 10                                              | fun main() {                                                 |
+|                | ```                                                          | symbolBinding.set("Global Binding")                          |
+|                |                                                              | f()  // 输出 "Global Binding"                                |
+|                |                                                              | g()  // 执行 g 时修改了符号绑定                              |
+|                |                                                              | f()  // 输出 "Global Binding"  // 恢复了原始绑定             |
+|                |                                                              | }                                                            |
+|                | ```                                                                                                                   | ``` |                                                              |
+| **优点**       | - 简单直观，适用于早期编程语言。                             | - 明确的绑定机制，避免变量覆盖问题。                         |
+|                | - 不需要显式管理绑定，减少代码复杂性。                       | - 通过类型系统保障类型安全。                                 |
+|                |                                                              | - 提高代码的可预测性和可维护性。                             |
+| **缺点**       | - 难以调试和维护，变量绑定不透明。                           | - 需要显式管理绑定过程，增加代码复杂性。                     |
+|                | - 容易导致类型不匹配和运行时错误。                           | - 绑定和解除绑定需要谨慎操作，防止内存泄漏。                 |
+| **语言支持**   | - 早期语言如某些Lisp方言、Emacs Lisp等。                     | - 现代语言如Kotlin（通过`ThreadLocal`等机制）、Clojure（通过动态变量）、Racket等。 |
+| **总结**       | 动态作用域通过依赖调用栈的运行时上下文动态绑定变量，虽然灵活但容易引发类型和作用域安全问题。 | 流动绑定通过显式的符号和绑定机制，将动态绑定的灵活性与类型安全性结合起来，提供了更可控和安全的动态绑定方式。 |
+
+### 代码示例详解
+
+#### 动态作用域示例（伪代码）
+
+```text
+global x = 5
+
+function f() {
+    print(x)  // 动态作用域：使用调用时环境中的全局变量 x
+}
+
+function g() {
+    local x = 10
+    f()  // f 输出 10，因为 x 在调用时的动态作用域中被绑定为 10
+}
+
+g()  // 输出 10
+```
+
+**解释**：
+- `f` 函数在动态作用域中访问变量 `x`，其值依赖于调用者 `g` 的环境。
+- 在调用 `g` 时，`g` 内部定义了 `x = 10`，因此 `f` 输出 `10`。
+- 这种绑定方式依赖于调用栈，难以预测和维护。
+
+#### 流动绑定示例（Kotlin）
+
+```kotlin
+import kotlin.concurrent.thread
+
+// 使用 ThreadLocal 模拟符号绑定
+val symbolBinding = ThreadLocal<String>()
+
+// 函数 f，通过符号引用打印当前绑定
+fun f() {
+    println("Symbol: ${symbolBinding.get()}")
+}
+
+// 函数 g，修改符号绑定并调用 f
+fun g() {
+    symbolBinding.set("Dynamic Binding in g")
+    f()  // 输出 "Dynamic Binding in g"
+    symbolBinding.remove()  // 恢复绑定
+}
+
+fun main() {
+    // 初始绑定
+    symbolBinding.set("Global Binding")
+    f()  // 输出 "Global Binding"
+    
+    // 创建一个新线程模拟不同作用域
+    val t = thread(start = true) {
+        g()  // 执行 g 时修改了符号绑定
+        f()  // 输出 "Global Binding"（恢复了原始绑定）
+    }
+    
+    t.join()
+    f()  // 输出 "Global Binding"
+}
+```
+
+**解释**：
+- `symbolBinding` 使用 `ThreadLocal` 模拟符号绑定，确保每个线程有独立的绑定上下文。
+- `f` 函数通过符号引用打印当前绑定的值。
+- `g` 函数修改绑定并调用 `f`，在其作用域内，绑定为 `"Dynamic Binding in g"`。
+- 离开 `g` 的作用域后，绑定被撤销，恢复到 `"Global Binding"`。
+- 通过显式的绑定和解除绑定，避免了动态作用域中的变量覆盖问题，确保类型安全和作用域的明确控制。
+
+### 总结
+
+- **动态作用域**依赖于运行时的调用环境，容易导致变量绑定的不确定性和类型安全问题。
+- **流动绑定**通过引入符号和显式的绑定机制，提供了一种类型安全且可预测的动态绑定方式，避免了动态作用域的诸多问题。
+
+通过这种对比，可以看出流动绑定在现代编程语言中如何提供更安全和灵活的变量绑定机制，特别是在需要动态绑定且要求类型安全的复杂应用场景中。
+
+### -----------------------------------------
+
+### 流动绑定与动态作用域在主流编程语言中的实现特性
+
+以下表格详细对比了**流动绑定（Fluid Binding）**和**动态作用域（Dynamic Scope）**在多个主流编程语言中的实现方式、支持情况及相关特性。通过具体的语言特性和代码示例，帮助理解这两种绑定机制在不同语言中的应用。
+
+| **维度**             | **动态作用域（Dynamic Scope）**                              | **流动绑定（Fluid Binding）**                                |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **语言**             | **Emacs Lisp**<br>**Common Lisp**<br>**Perl**<br>**Lua**     | **Kotlin**<br>**Clojure**<br>**Ruby**<br>**JavaScript**      |
+| **支持情况**         | **Emacs Lisp** 和 **Common Lisp** 支持动态作用域；**Perl** 和 **Lua** 通过特定的模块或特性可以模拟动态作用域。<br>大多数现代主流语言（如 **Java**、**Python**、**C#**、**Swift**）不直接支持动态作用域。 | **Kotlin** 不直接支持流动绑定，但可以通过 `ThreadLocal` 和其他机制模拟类似行为。<br>**Clojure** 支持动态变量绑定，通过 `binding` 宏实现。<br>**Ruby** 和 **JavaScript** 支持闭包和动态作用域的某些方面，通过上下文管理实现流动绑定。 |
+| **绑定机制**         | **隐式绑定**：变量绑定依赖于运行时的调用栈，函数调用时可以访问调用者的变量。 | **显式绑定**：通过符号和绑定操作（如 `binding`、`ThreadLocal`）来管理变量的绑定和解除，确保类型安全和作用域的明确控制。 |
+| **类型安全性**       | **较低**：动态作用域容易导致类型不匹配和运行时错误，因为变量的绑定基于动态上下文，缺乏静态类型检查。 | **较高**：通过类型系统和显式绑定机制，确保符号绑定的值类型与预期一致，减少类型错误。 |
+| **变量与符号**       | **变量**：直接通过名称访问，绑定不透明，容易被覆盖或误用。   | **符号**：特殊标识符，通过绑定机制与值关联，绑定过程可控，避免变量覆盖问题。 |
+| **确定性**           | **较低**：变量值依赖于调用链，难以预测和追踪，尤其在嵌套调用中。 | **较高**：绑定和解除绑定过程明确，符号的值在特定作用域内可预测，便于调试和维护。 |
+| **内存管理**         | **简单**：通常由语言的调用栈自动管理，变量在函数退出时自动销毁。 | **复杂**：需要显式管理符号的绑定和解除，确保绑定在适当的时机被撤销，防止内存泄漏。 |
+| **应用场景**         | **有限**：适用于需要动态变量绑定的脚本语言和早期编程语言，如 **Emacs Lisp** 中的宏和配置管理。 | **广泛**：适用于需要灵活绑定机制且要求类型安全的场景，如高级函数式编程、模块化编程和协程。 |
+| **代码示例**         | **动态作用域示例（Emacs Lisp）**                             | **流动绑定示例（Kotlin）**                                   |
+|                      | ```lisp                                                                                                                                                                                                                            | ```kotlin |                                                              |
+|                      | ;; Emacs Lisp 动态作用域示例                                 | import kotlin.concurrent.thread                              |
+|                      | (setq x 10)                                                  |                                                              |
+|                      | (defun f ()                                                  | // 使用 ThreadLocal 模拟符号绑定                             |
+|                      | (print x))                                                   | val symbolBinding = ThreadLocal<String>()                    |
+|                      |                                                              |                                                              |
+|                      | (defun g ()                                                  | // 函数 f，通过符号引用打印当前绑定                          |
+|                      | (let ((x 20))                                                | fun f() {                                                    |
+|                      | (f)))                                                        | println("Symbol: ${symbolBinding.get()}")                    |
+|                      |                                                              | }                                                            |
+|                      |                                                              |                                                              |
+|                      | (g)  ;; 输出 20，因为 x 在调用时的动态作用域中被绑定为 20    | fun g() {                                                    |
+|                      | ```                                                          | symbolBinding.set("Dynamic Binding in g")                    |
+|                      |                                                              | f()  // 输出 "Dynamic Binding in g"                          |
+|                      |                                                              | symbolBinding.remove()  // 恢复绑定                          |
+|                      |                                                              | }                                                            |
+|                      |                                                              |                                                              |
+|                      |                                                              | fun main() {                                                 |
+|                      |                                                              | symbolBinding.set("Global Binding")                          |
+|                      |                                                              | f()  // 输出 "Global Binding"                                |
+|                      |                                                              | thread {                                                     |
+|                      |                                                              | g()  // 执行 g 时修改了符号绑定                              |
+|                      |                                                              | f()  // 输出 "Global Binding"（恢复了原始绑定）              |
+|                      |                                                              | }.join()                                                     |
+|                      |                                                              | f()  // 输出 "Global Binding"                                |
+|                      |                                                              | }                                                            |
+|                      | ```                                                                                                                                                                                                                                | ``` |                                                              |
+| **优点**             | - 简单直观，适用于早期编程语言。<br>- 不需要显式管理绑定，减少代码复杂性。 | - 明确的绑定机制，避免变量覆盖问题。<br>- 通过类型系统保障类型安全。<br>- 提高代码的可预测性和可维护性。 |
+| **缺点**             | - 难以调试和维护，变量绑定不透明。<br>- 容易导致类型不匹配和运行时错误。 | - 需要显式管理绑定过程，增加代码复杂性。<br>- 绑定和解除绑定需要谨慎操作，防止内存泄漏。 |
+| **语言支持**         | - **Emacs Lisp**：天然支持动态作用域。<br>- **Common Lisp**：通过特定的宏或扩展可以实现动态作用域。<br>- **Perl** 和 **Lua**：通过特定模块或特性可以模拟动态作用域。 | - **Kotlin**：不直接支持流动绑定，但可以通过 `ThreadLocal` 等机制模拟。<br>- **Clojure**：支持动态变量绑定，通过 `binding` 宏实现。<br>- **Ruby** 和 **JavaScript**：支持闭包和动态作用域的某些方面，通过上下文管理实现流动绑定。 |
+| **语言特性实现示例** | **Emacs Lisp**：                                             |                                                              |
+```lisp
+(setq x 10)
+
+(defun f ()
+  (print x))
+
+(defun g ()
+  (let ((x 20))
+    (f)))  ;; f 输出 20，因为 x 在调用时的动态作用域中被绑定为 20
+
+(g)  ;; 输出 20
+```
+**Common Lisp**（使用 `symbol-macrolet` 模拟动态作用域）：
+```lisp
+(defvar *x* 10)
+
+(defun f ()
+  (print *x*))
+
+(defun g ()
+  (symbol-macrolet ((*x*) 20)
+    (f)))  ;; f 输出 20
+
+(g)  ;; 输出 20
+```
+
+| **语言**     | **流动绑定实现示例**                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Kotlin**   | 通过 `ThreadLocal` 实现显式的符号绑定和解除绑定。                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Clojure**  | 使用动态变量和 `binding` 宏实现流动绑定。                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Ruby**     | 利用全局变量或线程局部变量来模拟流动绑定。                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **JavaScript** | 通过闭包和上下文对象来管理符号绑定。🤔？                                                                                                                                                                                                                                                                                                                                                                                                                              |
+
+#### **Kotlin 中的流动绑定实现示例**
+
+在 Kotlin 中，虽然没有内置的流动绑定机制，但可以通过 `ThreadLocal` 和显式的绑定管理来模拟类似的行为。以下示例展示了如何通过 `ThreadLocal` 实现显式的符号绑定和解除绑定。
+
+```kotlin
+import kotlin.concurrent.thread
+
+// 使用 ThreadLocal 模拟符号绑定
+val symbolBinding = ThreadLocal<String>()
+
+// 函数 f，通过符号引用打印当前绑定
+fun f() {
+    println("Symbol: ${symbolBinding.get()}")
+}
+
+// 函数 g，修改符号绑定并调用 f
+fun g() {
+    symbolBinding.set("Dynamic Binding in g")
+    f()  // 输出 "Dynamic Binding in g"
+    symbolBinding.remove()  // 恢复绑定
+}
+
+fun main() {
+    // 初始绑定
+    symbolBinding.set("Global Binding")
+    f()  // 输出 "Global Binding"
+
+    // 创建一个新线程模拟不同作用域
+    val t = thread(start = true) {
+        g()  // 执行 g 时修改了符号绑定
+        f()  // 输出 "Dynamic Binding in g"
+    }
+
+    t.join()
+    f()  // 输出 "Global Binding"（恢复了原始绑定）
+}
+```
+
+**解释**：
+1. **符号绑定**：`symbolBinding` 是一个 `ThreadLocal` 对象，用于在不同线程（模拟不同作用域）中保存符号的绑定状态。
+2. **函数 `f`**：打印当前符号绑定的值。
+3. **函数 `g`**：设置新的符号绑定值，调用 `f` 打印绑定值，然后解除绑定，恢复原始状态。
+4. **主函数 `main`**：
+    - 设置初始绑定为 `"Global Binding"`，并调用 `f` 打印。
+    - 启动一个新线程，在新线程中调用 `g`，修改绑定并打印，然后恢复绑定。
+    - 主线程等待子线程完成后，再次调用 `f`，确认绑定已恢复。
+
+**输出**：
+```
+Symbol: Global Binding
+Symbol: Dynamic Binding in g
+Symbol: Global Binding
+```
+
+#### **Clojure 中的流动绑定实现示例**
+
+Clojure 提供了动态变量绑定的支持，通过 `binding` 宏可以实现流动绑定，确保在特定作用域内符号的绑定有效。
+
+```clojure
+(def ^:dynamic *symbol-binding* "Global Binding")
+
+(defn f []
+  (println "Symbol:" *symbol-binding*))
+
+(defn g []
+  (binding [*symbol-binding* "Dynamic Binding in g"]
+    (f)))  ;; 输出 "Dynamic Binding in g"
+
+(defn -main []
+  (f)  ;; 输出 "Global Binding"
+  (g)
+  (f))  ;; 输出 "Global Binding"
+```
+
+**解释**：
+1. **动态变量**：`*symbol-binding*` 被声明为动态变量，允许在 `binding` 中进行临时绑定。
+2. **函数 `f`**：打印当前符号绑定的值。
+3. **函数 `g`**：通过 `binding` 宏临时绑定 `*symbol-binding*`，调用 `f` 打印绑定值。
+4. **主函数 `-main`**：
+    - 调用 `f` 打印初始绑定。
+    - 调用 `g` 修改绑定并打印。
+    - 再次调用 `f` 确认绑定已恢复。
+
+**输出**：
+```
+Symbol: Global Binding
+Symbol: Dynamic Binding in g
+Symbol: Global Binding
+```
+
+### 总结
+
+- **动态作用域（Dynamic Scope）**：
+  - **实现方式**：主要在某些 Lisp 方言（如 Emacs Lisp、Common Lisp）中原生支持，其他语言通过特定模块或扩展模拟。
+  - **优缺点**：
+    - **优点**：灵活，适用于需要动态变量绑定的场景。
+    - **缺点**：难以预测和调试，容易引发类型不安全和变量覆盖问题。
+
+- **流动绑定（Fluid Binding）**：
+  - **实现方式**：通过显式的绑定机制（如 `ThreadLocal`、`binding` 宏）在现代语言中模拟，确保类型安全和作用域控制。
+  - **优缺点**：
+    - **优点**：类型安全，绑定过程明确，避免变量覆盖和绑定混乱。
+    - **缺点**：需要显式管理绑定，增加代码复杂性。
+
+通过引入流动绑定，编程语言能够在保持动态绑定灵活性的同时，确保类型安全和作用域控制，使得代码更易于维护和调试。
+
+### -------------------------------------------------
+
 ---
 
 ### 33.1 静态语义（Statics）
@@ -866,7 +1344,7 @@ $$
 
 ##### 5.2 示例代码
 
-```pseudo
+```haskell
 // 定义符号 a 和 b，其类型为 nat
 Σ = { a ∼ nat, b ∼ nat }
 
@@ -980,11 +1458,995 @@ let result = putfl(ref; 10; getfl(ref));
 
 通过对本章内容的学习和练习，我们加深了对流动绑定和流动引用的理解，为进一步探索编程语言的高级特性奠定了基础。
 
+### ---------------------------------
+
+### 动态语义（Dynamics）
+
+---
+
+在编程语言理论中，**动态语义**（Dynamics）描述了程序在运行时的行为，特别是符号（Symbols）的绑定和解除绑定过程。本节将详细介绍符号的堆栈式动力学、转换判断的形式、动态语义规则以及如何处理未绑定符号和错误传播。为了更直观地理解这些概念，我们将使用 Kotlin 代码示例进行说明。
+
+#### 1. 符号的堆栈式动力学
+
+##### 1.1 符号绑定的堆栈模型
+
+- **堆栈式动力学**：符号的绑定在执行过程中以堆栈的方式变化，新的绑定压入堆栈，离开作用域时弹出。
+  
+- **动机**：模拟静态作用域的嵌套，但允许符号的绑定在运行时动态变化。
+
+**解释**：
+
+堆栈式动力学通过维护一个符号绑定的栈，确保在进入新作用域时可以动态地绑定符号，并在退出作用域时恢复之前的绑定。这类似于函数调用时的调用栈管理，但专门用于符号的绑定和解除绑定。
+
+**Kotlin 实现示例**：
+
+我们可以使用 Kotlin 的 `Stack` 数据结构来模拟符号绑定的堆栈模型。
+
+```kotlin
+import java.util.Stack
+
+// 定义符号类型
+typealias Symbol = String
+typealias Value = Any
+
+// 符号绑定环境，使用 Stack 模拟堆栈式绑定
+class SymbolBindingEnvironment {
+    private val bindings: MutableMap<Symbol, Stack<Value>> = mutableMapOf()
+
+    // 绑定符号到值，压入栈
+    fun bind(symbol: Symbol, value: Value) {
+        val stack = bindings.getOrDefault(symbol, Stack())
+        stack.push(value)
+        bindings[symbol] = stack
+        println("Bound symbol '$symbol' to value '$value'.")
+    }
+
+    // 获取符号当前绑定的值
+    fun get(symbol: Symbol): Value? {
+        return bindings[symbol]?.peek()
+    }
+
+    // 解除符号的绑定，弹出栈
+    fun unbind(symbol: Symbol) {
+        bindings[symbol]?.pop()
+        if (bindings[symbol]?.isEmpty() == true) {
+            bindings.remove(symbol)
+        }
+        println("Unbound symbol '$symbol'.")
+    }
+}
+
+fun main() {
+    val env = SymbolBindingEnvironment()
+
+    // 全局作用域绑定
+    env.bind("x", 10)
+    println("x = ${env.get("x")}")  // 输出: x = 10
+
+    // 进入新作用域，重新绑定符号
+    env.bind("x", 20)
+    println("x = ${env.get("x")}")  // 输出: x = 20
+
+    // 解除绑定，恢复到上一个绑定
+    env.unbind("x")
+    println("x = ${env.get("x")}")  // 输出: x = 10
+
+    // 解除全局绑定
+    env.unbind("x")
+    println("x = ${env.get("x")}")  // 输出: x = null
+}
+```
+
+**输出**：
+```
+Bound symbol 'x' to value '10'.
+x = 10
+Bound symbol 'x' to value '20'.
+x = 20
+Unbound symbol 'x'.
+x = 10
+Unbound symbol 'x'.
+x = null
+```
+
+**解释**：
+
+1. **绑定符号**：使用 `bind` 方法将符号 `x` 绑定到值 `10`，然后在新作用域中重新绑定 `x` 到 `20`。
+2. **获取符号**：使用 `get` 方法获取当前符号 `x` 的值。
+3. **解除绑定**：使用 `unbind` 方法解除符号 `x` 的绑定，恢复到上一个绑定。
+
+##### 1.2 执行过程中符号的绑定
+
+- **绑定环境 $\mu$**：记录符号到值的映射关系，是一个有限函数。
+  
+  - **形式**：$\mu : \text{符号} \rightarrow \text{值}$。
+
+- **符号的绑定操作**：
+  
+  - **绑定符号**：将符号 $a$ 绑定到值 $e$，表示为 $\mu \oplus (a \mapsto e)$。
+  
+  - **解除绑定**：当离开作用域时，恢复符号 $a$ 之前的绑定。
+
+**解释**：
+
+绑定环境 $\mu$ 是一个映射关系，用于记录符号与其对应值的绑定状态。通过操作 $\mu \oplus (a \mapsto e)$，我们可以向环境中添加新的绑定或更新现有绑定。当离开绑定作用域时，通过撤销绑定（恢复之前的绑定）来保持符号环境的一致性。
+
+**Kotlin 实现示例**：
+
+在前面的示例中，我们已经展示了如何使用 `SymbolBindingEnvironment` 类来管理符号的绑定和解除绑定。下面进一步说明绑定环境的操作。
+
+```kotlin
+fun scopeExample(env: SymbolBindingEnvironment) {
+    // 进入作用域
+    env.bind("y", "Hello")
+    println("y = ${env.get("y")}")  // 输出: y = Hello
+
+    // 进入嵌套作用域
+    env.bind("y", "World")
+    println("y = ${env.get("y")}")  // 输出: y = World
+
+    // 解除嵌套作用域的绑定
+    env.unbind("y")
+    println("y = ${env.get("y")}")  // 输出: y = Hello
+}
+
+fun main() {
+    val env = SymbolBindingEnvironment()
+    env.bind("x", 10)
+    scopeExample(env)
+    env.unbind("x")
+    println("x = ${env.get("x")}")  // 输出: x = null
+}
+```
+
+**输出**：
+```
+Bound symbol 'x' to value '10'.
+Bound symbol 'y' to value 'Hello'.
+y = Hello
+Bound symbol 'y' to value 'World'.
+y = World
+Unbound symbol 'y'.
+y = Hello
+Unbound symbol 'x'.
+x = null
+```
+
+**解释**：
+
+1. **全局绑定**：符号 `x` 绑定到 `10`。
+2. **函数作用域绑定**：在 `scopeExample` 函数中，符号 `y` 绑定到 `"Hello"`，然后在嵌套作用域中重新绑定 `y` 到 `"World"`。
+3. **解除绑定**：解除嵌套作用域的绑定，恢复 `y` 的值为 `"Hello"`，再解除全局绑定。
+
+#### 2. 转换判断的形式
+
+- **转换判断**：$e \xrightarrow{\Sigma}_{\mu} e'$。
+  
+  - **$e$**：当前的表达式。
+  
+  - **$\Sigma$**：符号上下文。
+  
+  - **$\mu$**：符号的绑定环境，记录了符号到值的映射。
+  
+  - **$e'$**：求值后的表达式。
+
+- **符号绑定的表示**：
+  
+  - **已绑定的符号**：如果 $\mu$ 中定义了符号 $a$，则记为 $a \mapsto e$，表示 $a$ 绑定到值 $e$。
+  
+  - **未绑定的符号**：如果 $\mu$ 中未定义符号 $a$，可以视为 $a \mapsto \bullet$，其中 $\bullet$ 表示未绑定。
+
+**解释**：
+
+转换判断描述了在特定的符号上下文 $\Sigma$ 和绑定环境 $\mu$ 下，如何将一个表达式 $e$ 转换为另一个表达式 $e'$。符号绑定的状态（是否已绑定）决定了表达式的求值结果。
+
+**Kotlin 实现示例**：
+
+为了模拟转换判断，我们可以定义一个简化的表达式求值系统。
+
+```kotlin
+// 定义表达式类型
+sealed class Expr
+data class Get(val symbol: Symbol) : Expr()
+data class Put(val symbol: Symbol, val valueExpr: Expr, val body: Expr) : Expr()
+data class Value(val value: Value) : Expr()
+
+// 定义转换判断函数
+fun eval(expr: Expr, env: SymbolBindingEnvironment, sigma: Set<Symbol>): Expr {
+    return when (expr) {
+        is Get -> {
+            val boundValue = env.get(expr.symbol)
+            if (boundValue != null) {
+                Value(boundValue)
+            } else {
+                throw RuntimeException("Symbol '${expr.symbol}' is unbound.")
+            }
+        }
+        is Put -> {
+            // 首先求值 valueExpr
+            val evaluatedValue = eval(expr.valueExpr, env, sigma)
+            if (evaluatedValue is Value) {
+                // 绑定符号到值
+                env.bind(expr.symbol, evaluatedValue.value)
+                // 在新的绑定环境下求值 body
+                val result = eval(expr.body, env, sigma)
+                // 解除绑定
+                env.unbind(expr.symbol)
+                result
+            } else {
+                throw RuntimeException("Put expression must evaluate to a value.")
+            }
+        }
+        is Value -> expr
+    }
+}
+
+fun main() {
+    val env = SymbolBindingEnvironment()
+    val sigma = setOf("x", "y")  // 符号上下文
+
+    // 绑定符号 x = 10
+    val expr1 = Put("x", Value(10), Get("x"))
+    val result1 = eval(expr1, env, sigma)
+    if (result1 is Value) {
+        println("Result1: ${result1.value}")  // 输出: Result1: 10
+    }
+
+    // 尝试获取未绑定符号 y
+    try {
+        val expr2 = Get("y")
+        val result2 = eval(expr2, env, sigma)
+        if (result2 is Value) {
+            println("Result2: ${result2.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'y' is unbound.
+    }
+}
+```
+
+**输出**：
+```
+Bound symbol 'x' to value '10'.
+Result1: 10
+Error: Symbol 'y' is unbound.
+```
+
+**解释**：
+
+1. **表达式 `Put("x", Value(10), Get("x"))`**：
+   - 绑定符号 `x` 到值 `10`。
+   - 在绑定环境中获取 `x` 的值，返回 `10`。
+
+2. **表达式 `Get("y")`**：
+   - 尝试获取未绑定符号 `y`，导致运行时错误。
+
+#### 3. 动态语义规则
+
+动态语义规则定义了符号引用在不同操作下的求值方式。以下是四条关键规则及其解释和实现。
+
+##### 规则 (33.2a)：获取符号的绑定值
+
+$$
+\frac{}{\text{get}[a]\ \xrightarrow{\Sigma, a \sim \tau}_{\mu \oplus (a \mapsto e)}\ e}
+\tag{33.2a}
+$$
+
+- **解释**：
+
+  - 当符号 $a$ 在绑定环境 $\mu$ 中绑定到值 $e$，则 $\text{get}[a]$ 求值为 $e$。
+
+  - **要求**：符号 $a$ 必须在符号上下文 $\Sigma$ 中声明，其类型为 $\tau$。
+
+- **含义**：
+
+  - **$\text{get}[a]$** 操作从当前的绑定环境中获取符号 $a$ 的值。
+
+**Kotlin 实现示例**：
+
+在前面的 `eval` 函数中，`Get` 表达式对应于规则 (33.2a)。
+
+```kotlin
+// 示例调用规则 (33.2a)
+fun exampleGet(env: SymbolBindingEnvironment) {
+    env.bind("a", 42)
+    val expr = Get("a")
+    val result = eval(expr, env, setOf("a"))
+    if (result is Value) {
+        println("Value of 'a': ${result.value}")  // 输出: Value of 'a': 42
+    }
+}
+```
+
+##### 规则 (33.2b)：绑定值的求值
+
+$$
+\frac{
+e_1\ \xrightarrow{\Sigma}_{\mu}\ e_1'
+}{
+\text{put}[a](e_1; e_2)\ \xrightarrow{\Sigma}_{\mu}\ \text{put}[a](e_1'; e_2)
+}
+\tag{33.2b}
+$$
+
+- **解释**：
+
+  - 在绑定环境 $\mu$ 下，首先求值 $e_1$，结果为 $e_1'$。
+
+  - 然后，继续求值 $\text{put}[a](e_1'; e_2)$。
+
+- **含义**：
+
+  - **绑定前**，需要先求值绑定值 $e_1$。
+
+**Kotlin 实现示例**：
+
+在 `eval` 函数中，当处理 `Put` 表达式时，首先求值 `e1`，然后继续执行。
+
+```kotlin
+// 示例调用规则 (33.2b) 和 (33.2c)
+fun examplePut(env: SymbolBindingEnvironment) {
+    val expr = Put("b", Value("Hello"), Get("b"))
+    val result = eval(expr, env, setOf("b"))
+    if (result is Value) {
+        println("Value of 'b': ${result.value}")  // 输出: Value of 'b': Hello
+    }
+}
+```
+
+##### 规则 (33.2c)：在新的绑定环境下求值 $e_2$
+
+$$
+\frac{
+e_1\ \text{val}_{\Sigma, a \sim \tau} \quad e_2\ \xrightarrow{\Sigma, a \sim \tau}_{\mu \oplus (a \mapsto e_1)}\ e_2'
+}{
+\text{put}[a](e_1; e_2)\ \xrightarrow{\Sigma}_{\mu}\ \text{put}[a](e_1; e_2')
+}
+\tag{33.2c}
+$$
+
+- **解释**：
+
+  - 当 $e_1$ 已经求值到一个值，在绑定环境 $\mu \oplus (a \mapsto e_1)$ 下，求值 $e_2$，得到 $e_2'$。
+
+  - 然后，继续求值 $\text{put}[a](e_1; e_2')$。
+
+- **含义**：
+
+  - **在 $e_2$ 的求值过程中**，符号 $a$ 被绑定到值 $e_1$。
+
+  - 无论 $a$ 是否已经在环境中绑定，都将新的绑定添加到环境中。
+
+**Kotlin 实现示例**：
+
+在 `eval` 函数中，`Put` 表达式处理绑定值和求值 `e2` 的过程对应于规则 (33.2c)。
+
+```kotlin
+fun examplePutWithBody(env: SymbolBindingEnvironment) {
+    val expr = Put("c", Value(100), Get("c"))
+    val result = eval(expr, env, setOf("c"))
+    if (result is Value) {
+        println("Value of 'c': ${result.value}")  // 输出: Value of 'c': 100
+    }
+}
+```
+
+##### 规则 (33.2d)：解除绑定
+
+$$
+\frac{
+e_1\ \text{val}_{\Sigma, a \sim \tau} \quad e_2\ \text{val}_{\Sigma, a \sim \tau}
+}{
+\text{put}[a](e_1; e_2)\ \xrightarrow{\Sigma}_{\mu}\ e_2
+}
+\tag{33.2d}
+$$
+
+- **解释**：
+
+  - 当 $e_1$ 和 $e_2$ 都已经求值到值，$\text{put}[a](e_1; e_2)$ 求值为 $e_2$。
+
+- **含义**：
+
+  - **流动绑定结束**：当 $e_2$ 的求值完成后，解除符号 $a$ 的绑定，恢复之前的环境。
+
+**Kotlin 实现示例**：
+
+在 `eval` 函数中，解除绑定是在 `Put` 表达式求值完成后自动执行的，对应于规则 (33.2d)。
+
+```kotlin
+fun examplePutAndUnbind(env: SymbolBindingEnvironment) {
+    val expr = Put("d", Value("Kotlin"), Value("Done"))
+    val result = eval(expr, env, setOf("d"))
+    if (result is Value) {
+        println("Result of 'put[d](\"Kotlin\"; \"Done\")': ${result.value}")  // 输出: Result of 'put[d](\"Kotlin\"; \"Done\")': Done
+    }
+    println("d after put: ${env.get("d")}")  // 输出: d after put: null
+}
+```
+
+**解释**：
+
+1. **绑定符号**：通过 `Put("d", Value("Kotlin"), Value("Done"))` 将 `d` 绑定到 `"Kotlin"`。
+2. **求值 `e2`**：求值 `Value("Done")` 返回 `"Done"`。
+3. **解除绑定**：解除符号 `d` 的绑定，恢复到未绑定状态。
+
+**输出**：
+```
+Bound symbol 'd' to value 'Kotlin'.
+Result of 'put[d]("Kotlin"; "Done")': Done
+Unbound symbol 'd'.
+d after put: null
+```
+
+#### 4. 动态语义规则的总结
+
+- **规则 (33.2a)**：获取符号的当前绑定值。
+  
+- **规则 (33.2b)**：在创建绑定之前，先求值绑定的值。
+  
+- **规则 (33.2c)**：在新的绑定环境下求值作用域内的表达式。
+  
+- **规则 (33.2d)**：当作用域内的求值完成后，解除绑定，恢复之前的环境。
+
+**总结**：
+
+这些规则共同定义了符号在程序执行过程中的绑定和解除绑定机制，确保符号引用的正确性和作用域的隔离。
+
+#### 5. 卡住状态和未绑定判断
+
+##### 5.1 卡住状态
+
+- **卡住状态（stuck state）**：当尝试获取一个未绑定的符号的值时，程序无法继续执行，进入卡住状态。
+  
+- **示例**：如果 $\mu(a) = \bullet$，即符号 $a$ 未绑定，那么 $\text{get}[a]$ 无法继续求值。
+
+**Kotlin 实现示例**：
+
+当尝试获取未绑定符号时，通过抛出异常来模拟卡住状态。
+
+```kotlin
+fun exampleUnboundSymbol(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Get("e")
+        val result = eval(expr, env, setOf("e"))
+        if (result is Value) {
+            println("Value of 'e': ${result.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'e' is unbound.
+    }
+}
+```
+
+**输出**：
+```
+Error: Symbol 'e' is unbound.
+```
+
+##### 5.2 未绑定判断
+
+- **判断形式**：$e\ \text{unbound}_{\mu}$，表示表达式 $e$ 在绑定环境 $\mu$ 下会导致卡住状态。
+
+- **定义**：通过以下规则归纳定义未绑定判断。
+
+###### 规则 (33.3a)：获取未绑定符号
+
+$$
+\frac{\mu(a) = \bullet}{\text{get}[a]\ \text{unbound}_{\mu}}
+\tag{33.3a}
+$$
+
+- **解释**：如果符号 $a$ 未绑定，则 $\text{get}[a]$ 会导致卡住状态。
+
+**Kotlin 实现示例**：
+
+通过异常捕获来判断符号是否未绑定。
+
+```kotlin
+fun isUnbound(expr: Expr, env: SymbolBindingEnvironment, sigma: Set<Symbol>): Boolean {
+    return try {
+        eval(expr, env, sigma)
+        false
+    } catch (e: RuntimeException) {
+        true
+    }
+}
+
+fun main() {
+    val env = SymbolBindingEnvironment()
+    val sigma = setOf("a", "b")
+
+    // 符号 a 已绑定
+    env.bind("a", 100)
+    val expr1 = Get("a")
+    println("Is 'a' unbound? ${isUnbound(expr1, env, sigma)}")  // 输出: Is 'a' unbound? false
+
+    // 符号 b 未绑定
+    val expr2 = Get("b")
+    println("Is 'b' unbound? ${isUnbound(expr2, env, sigma)}")  // 输出: Is 'b' unbound? true
+}
+```
+
+**输出**：
+```
+Bound symbol 'a' to value '100'.
+Is 'a' unbound? false
+Is 'b' unbound? true
+```
+
+###### 规则 (33.3b)：绑定值导致卡住
+
+$$
+\frac{e_1\ \text{unbound}_{\mu}}{\text{put}[a](e_1; e_2)\ \text{unbound}_{\mu}}
+\tag{33.3b}
+$$
+
+- **解释**：如果 $e_1$ 会导致卡住，那么 $\text{put}[a](e_1; e_2)$ 也会导致卡住。
+
+**Kotlin 实现示例**：
+
+如果绑定值 `e1` 未绑定，整个 `Put` 表达式也会导致卡住状态。
+
+```kotlin
+fun examplePutWithUnboundValue(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Put("f", Get("g"), Value("Ignored"))
+        val result = eval(expr, env, setOf("f", "g"))
+        if (result is Value) {
+            println("Result: ${result.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'g' is unbound.
+    }
+}
+```
+
+**输出**：
+```
+Error: Symbol 'g' is unbound.
+```
+
+###### 规则 (33.3c)：作用域内表达式导致卡住
+
+$$
+\frac{e_1\ \text{val}_{\Sigma} \quad e_2\ \text{unbound}_{\mu}}{\text{put}[a](e_1; e_2)\ \text{unbound}_{\mu}}
+\tag{33.3c}
+$$
+
+- **解释**：如果 $e_1$ 已经求值到值，但 $e_2$ 会导致卡住，那么 $\text{put}[a](e_1; e_2)$ 也会导致卡住。
+
+**Kotlin 实现示例**：
+
+即使 `e1` 已经求值，但如果 `e2` 导致卡住，整个 `Put` 表达式也会卡住。
+
+```kotlin
+fun examplePutWithUnboundBody(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Put("h", Value("Hello"), Get("i"))
+        val result = eval(expr, env, setOf("h", "i"))
+        if (result is Value) {
+            println("Result: ${result.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'i' is unbound.
+    }
+}
+```
+
+**输出**：
+```
+Error: Symbol 'i' is unbound.
+```
+
+#### 5.3 错误传播规则
+
+- 在更大的语言中，还需要包含错误传播规则，使得卡住状态可以在程序中正确传播和处理。
+
+- **参考**：第6章讨论的错误传播规则。
+
+**解释**：
+
+错误传播规则确保当程序在某个地方遇到未绑定符号或其他错误时，这些错误能够正确地传递到调用链的上层，并被适当处理或报告。这样可以防止错误被忽略或导致程序以不可预测的方式运行。
+
+**Kotlin 实现示例**：
+
+通过使用异常机制，错误可以在调用链中传播，并在适当的位置被捕获和处理。
+
+```kotlin
+fun propagateError(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Put("j", Get("k"), Get("j"))
+        val result = eval(expr, env, setOf("j", "k"))
+        if (result is Value) {
+            println("Result: ${result.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Caught Error: ${e.message}")  // 输出: Caught Error: Symbol 'k' is unbound.
+    }
+}
+
+fun main() {
+    val env = SymbolBindingEnvironment()
+    propagateError(env)
+}
+```
+
+**输出**：
+```
+Error: Symbol 'k' is unbound.
+Caught Error: Symbol 'k' is unbound.
+```
+
+**解释**：
+
+在 `propagateError` 函数中，尝试绑定符号 `j` 到 `k` 的值，但符号 `k` 未绑定，导致 `Get("k")` 抛出异常。异常被 `main` 函数捕获并处理，确保错误信息被正确报告。
+
+### 总结
+
+- **堆栈式动力学**通过维护符号绑定的堆栈，确保在进入新作用域时可以动态绑定符号，并在离开作用域时恢复之前的绑定。这模拟了静态作用域的嵌套，同时允许符号绑定的动态变化。
+
+- **绑定环境 $\mu$** 记录了符号到值的映射关系，通过 `bind` 和 `unbind` 操作管理符号的绑定状态。
+
+- **转换判断**定义了在特定符号上下文和绑定环境下，如何将一个表达式转换为另一个表达式。
+
+- **动态语义规则**（规则 33.2a 至 33.2d）详细描述了符号引用的获取、绑定、求值以及解除绑定的过程，确保符号引用的正确性和作用域的隔离。
+
+- **卡住状态和未绑定判断**确保程序在符号未绑定时能够正确处理错误，防止程序进入不可预测的状态。
+
+- **错误传播规则**确保错误能够在调用链中正确传递和处理，维护程序的健壮性。
+
+通过这些机制，编程语言能够在动态环境中安全、可预测地管理符号绑定，确保程序的正确性和类型安全性。
 
 ### ---------------------------------
 
+### 公式符号解释
 
-### ---------------------------------
+在动态语义规则中，使用了多种符号来表示不同的概念和关系。以下是对这些符号的详细解释，帮助您理解公式中的每个部分。
+
+#### **通用符号**
+
+| **符号**            | **含义**                                                     |
+| ------------------- | ------------------------------------------------------------ |
+| **$\Gamma$**        | **上下文（Context）**：表示当前的类型或变量上下文，通常包含变量及其类型的映射关系。 |
+| **$\Sigma$**        | **符号上下文（Symbol Context）**：包含符号及其类型的声明，用于在推导过程中参考符号的类型信息。 |
+| **$\mu$**           | **绑定环境（Binding Environment）**：记录符号到值的映射关系，是一个有限函数。形式为 $\mu : \text{符号} \rightarrow \text{值}$。 |
+| **$a$**             | **符号（Symbol）**：程序中的标识符，用于引用特定的值或对象。 |
+| **$\rho$**          | **类型（Type）**：符号绑定的值的类型。                       |
+| **$\tau$**          | **类型表达式（Type Expression）**：可能依赖于类型变量 $t$ 的类型表达式，用于描述更复杂的类型关系。 |
+| **$t$**             | **类型变量（Type Variable）**：在类型表达式中用作占位符的变量，可以被具体类型替换。 |
+| **$e$**             | **表达式（Expression）**：程序中的代码片段，可能是变量引用、绑定操作等。 |
+| **$e'$**            | **求值后的表达式（Evaluated Expression）**：表达式 $e$ 经过求值后的结果。 |
+| **$\text{sym}[a]$** | **符号引用（Symbolic Reference）**：通过符号 $a$ 引用其绑定的值。 |
+
+#### **推导符号**
+
+| **符号**                           | **含义**                                                     |
+| ---------------------------------- | ------------------------------------------------------------ |
+| **$\Gamma \vdash$**                | **类型推导（Type Judgement）**：表示在上下文 $\Gamma$ 下进行类型推导。 |
+| **$\Sigma, a \sim \rho$**          | **扩展符号上下文**：在符号上下文 $\Sigma$ 中，符号 $a$ 被绑定到类型 $\rho$。 |
+| **$\vdash_{\Sigma, a \sim \rho}$** | **在扩展符号上下文中的推导**：表示在符号上下文 $\Sigma$ 和符号 $a$ 绑定到类型 $\rho$ 的条件下进行推导。 |
+| **:$\text{sym}(\rho)$**            | **类型标注**：表示表达式的类型是符号类型，具体为 $\text{sym}(\rho)$。 |
+| **:$[\rho / t]\tau$**              | **类型替换**：将类型表达式 $\tau$ 中的类型变量 $t$ 替换为类型 $\rho$。 |
+| **:$[\rho' / t]\tau$**             | **类型替换**：将类型表达式 $\tau$ 中的类型变量 $t$ 替换为类型 $\rho'$。 |
+| **$\xrightarrow{\Sigma}_{\mu}$**   | **转换判断（Transition Judgment）**：表示在符号上下文 $\Sigma$ 和绑定环境 $\mu$ 下，表达式 $e$ 转换为 $e'$。 |
+
+#### **操作符与函数**
+
+| **符号**                                | **含义**                                                     |
+| --------------------------------------- | ------------------------------------------------------------ |
+| **$\text{sym}[a]$**                     | **符号引用**：通过符号 $a$ 引用其绑定的值。                  |
+| **$\text{is}[a][t.\tau](e; e_1; e_2)$** | **符号引用消除**：基于符号 $a$ 的绑定类型，选择执行表达式 $e_1$ 或 $e_2$。 |
+| **$\text{put}[a](e_1; e_2)$**           | **绑定操作**：将符号 $a$ 绑定到表达式 $e_1$ 的值，然后在新的绑定环境下执行表达式 $e_2$。 |
+| **$\text{get}[a]$**                     | **获取符号的值**：从当前绑定环境中获取符号 $a$ 的值。        |
+| **$\oplus$**                            | **绑定操作符**：表示将新的符号绑定加入到绑定环境中，形式为 $\mu \oplus (a \mapsto e)$。 |
+| **$\mapsto$**                           | **映射符号到值**：表示符号 $a$ 被绑定到值 $e$。              |
+
+#### **状态与错误处理**
+
+| **符号**                   | **含义**                                                     |
+| -------------------------- | ------------------------------------------------------------ |
+| **$\bullet$**              | **未绑定符号**：表示符号未被绑定到任何值。                   |
+| **stuck state**            | **卡住状态**：当尝试获取未绑定的符号时，程序无法继续执行，进入卡住状态。 |
+| **$\text{unbound}_{\mu}$** | **未绑定判断**：表示在绑定环境 $\mu$ 下，表达式 $e$ 会导致卡住状态。 |
+| **$\text{val}_{\Sigma}$**  | **值判断**：表示表达式 $e$ 在符号上下文 $\Sigma$ 下已经求值为一个值。 |
+
+### 具体符号解释
+
+以下是公式中使用的具体符号及其详细解释：
+
+#### **公式 (32.5a)：符号引用的引入（Introduction）**
+
+$$
+\frac{}{\Gamma \vdash_{\Sigma, a \sim \rho}\ \text{sym}[a] : \text{sym}(\rho)}
+\tag{32.5a}
+$$
+
+| **符号**                                                     | **含义**                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **$\Gamma$**                                                 | 当前的类型上下文，包含变量及其类型的映射。                   |
+| **$\Sigma$**                                                 | 当前的符号上下文，包含符号及其类型的声明。                   |
+| **$a \sim \rho$**                                            | 符号 $a$ 被绑定到类型 $\rho$。                               |
+| **$\text{sym}[a]$**                                          | 符号引用 $a$，其类型是符号类型 $\text{sym}(\rho)$。          |
+| **:$\text{sym}(\rho)$**                                      | 类型标注，表示符号引用的类型。                               |
+| **$\Gamma \vdash_{\Sigma, a \sim \rho}\ \text{sym}[a] : \text{sym}(\rho)$** | 在上下文 $\Gamma$ 和符号上下文 $\Sigma$ 中，符号 $a$ 绑定到类型 $\rho$ 时，符号引用 $\text{sym}[a]$ 的类型为 $\text{sym}(\rho)$。 |
+
+**解释**：
+- 这个规则说明，在类型上下文 $\Gamma$ 和符号上下文 $\Sigma$ 中，如果符号 $a$ 被绑定到类型 $\rho$，那么符号引用 $\text{sym}[a]$ 的类型就是 $\text{sym}(\rho)$。
+
+#### **公式 (32.5b)：符号引用的消除（Elimination）**
+
+$$
+\frac{
+\Gamma \vdash_{\Sigma, a \sim \rho}\ e : \text{sym}(\rho') \quad
+\Gamma \vdash_{\Sigma, a \sim \rho}\ e_1 : [\rho / t]\tau \quad
+\Gamma \vdash_{\Sigma, a \sim \rho}\ e_2 : [\rho' / t]\tau
+}{
+\Gamma \vdash_{\Sigma, a \sim \rho}\ \text{is}[a][t.\tau](e; e_1; e_2) : [\rho' / t]\tau
+}
+\tag{32.5b}
+$$
+
+| **符号**                                  | **含义**                                                     |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| **$e$**                                   | 一个符号引用，类型为 $\text{sym}(\rho')$，引用了某个符号 $b$，其类型为 $\rho'$。 |
+| **$e_1$**                                 | 在符号引用 $e$ 与符号 $a$ 类型匹配时执行的表达式，类型为 $[\rho / t]\tau$。 |
+| **$e_2$**                                 | 在符号引用 $e$ 与符号 $a$ 类型不匹配时执行的表达式，类型为 $[\rho' / t]\tau$。 |
+| **$\tau$**                                | 一个类型表达式，可能依赖于类型变量 $t$。                     |
+| **$\text{is}[a][t.\tau](e; e_1; e_2)$**   | 符号引用消除，根据符号 $a$ 的绑定类型选择执行 $e_1$ 或 $e_2$。 |
+| **$[\rho / t]\tau$**                      | 将类型表达式 $\tau$ 中的类型变量 $t$ 替换为类型 $\rho$。     |
+| **$[\rho' / t]\tau$**                     | 将类型表达式 $\tau$ 中的类型变量 $t$ 替换为类型 $\rho'$。    |
+| **$\Gamma \vdash_{\Sigma, a \sim \rho}$** | 在上下文 $\Gamma$ 和符号上下文 $\Sigma$ 中，符号 $a$ 被绑定到类型 $\rho$ 的条件下进行类型推导。 |
+
+**解释**：
+- 这个规则描述了如何消除符号引用 $e$。如果 $e$ 引用的符号 $b$ 的类型 $\rho'$ 与符号 $a$ 的类型 $\rho$ 匹配，则执行表达式 $e_1$，其类型为 $[\rho / t]\tau$；否则执行表达式 $e_2$，其类型为 $[\rho' / t]\tau$。
+
+### 其他相关符号
+
+| **符号**                      | **含义**                                                     |
+| ----------------------------- | ------------------------------------------------------------ |
+| **$\frac{A}{B}$**             | **推导规则**：表示在满足条件 $A$ 的情况下，可以推导出结论 $B$。 |
+| **$\vdash$**                  | **类型判断符号**：表示在某个上下文下进行类型判断或推导。     |
+| **$\oplus$**                  | **绑定操作符**：表示将新的绑定加入到绑定环境中，如 $\mu \oplus (a \mapsto e)$ 表示在环境 $\mu$ 中绑定符号 $a$ 到值 $e$。 |
+| **$\mapsto$**                 | **映射符号到值**：表示符号与值之间的绑定关系，如 $a \mapsto e$ 表示符号 $a$ 绑定到值 $e$。 |
+| **$\text{get}[a]$**           | **获取符号的值**：表示从当前绑定环境中获取符号 $a$ 的值。    |
+| **$\text{put}[a](e_1; e_2)$** | **绑定并执行**：表示将符号 $a$ 绑定到值 $e_1$，然后在新的绑定环境下执行表达式 $e_2$。 |
+| **$\text{unbound}_{\mu}$**    | **未绑定判断**：表示在绑定环境 $\mu$ 下，某个表达式会导致程序进入卡住状态。 |
+| **$\text{val}_{\Sigma}$**     | **值判断**：表示表达式 $e$ 在符号上下文 $\Sigma$ 下已经求值为一个值。 |
+| **$stuck state$**             | **卡住状态**：表示程序在尝试获取未绑定符号时无法继续执行。   |
+| **$\bullet$**                 | **未绑定符号**：表示符号未被绑定到任何值。                   |
+
+### 示例解释
+
+为了更好地理解这些符号的意义，以下是一些具体的公式示例及其解释：
+
+#### **规则 (33.2a)：获取符号的绑定值**
+
+$$
+\frac{}{\text{get}[a]\ \xrightarrow{\Sigma, a \sim \tau}_{\mu \oplus (a \mapsto e)}\ e}
+\tag{33.2a}
+$$
+
+| **符号**                                              | **含义**                                                     |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| **$\text{get}[a]$**                                   | 获取符号 $a$ 的当前绑定值。                                  |
+| **$\xrightarrow{\Sigma}_{\mu \oplus (a \mapsto e)}$** | 在符号上下文 $\Sigma$ 和绑定环境 $\mu$ 新增绑定 $a \mapsto e$ 的条件下，将表达式 `get[a]` 转换为值 $e$。 |
+| **$e$**                                               | 符号 $a$ 绑定的值。                                          |
+
+**解释**：
+- 当符号 $a$ 在绑定环境 $\mu$ 中绑定到值 $e$，并且在符号上下文 $\Sigma$ 中声明了 $a$ 的类型为 $\tau$，则表达式 `get[a]` 的求值结果是 $e$。
+
+**Kotlin 示例**：
+
+```kotlin
+fun exampleGet(env: SymbolBindingEnvironment) {
+    env.bind("a", 42)
+    val expr = Get("a")
+    val result = eval(expr, env, setOf("a"))
+    if (result is Value) {
+        println("Value of 'a': ${result.value}")  // 输出: Value of 'a': 42
+    }
+}
+```
+
+#### **规则 (33.2b)：绑定值的求值**
+
+$$
+\frac{
+e_1\ \xrightarrow{\Sigma}_{\mu}\ e_1'
+}{
+\text{put}[a](e_1; e_2)\ \xrightarrow{\Sigma}_{\mu}\ \text{put}[a](e_1'; e_2)
+}
+\tag{33.2b}
+$$
+
+| **符号**                         | **含义**                                                  |
+| -------------------------------- | --------------------------------------------------------- |
+| **$e_1$**                        | 绑定值的表达式，需要先求值。                              |
+| **$e_1'$**                       | 表达式 $e_1$ 求值后的结果。                               |
+| **$\text{put}[a](e_1; e_2)$**    | 绑定符号 $a$ 到值 $e_1$，然后在新的绑定环境下执行 $e_2$。 |
+| **$\xrightarrow{\Sigma}_{\mu}$** | 在符号上下文 $\Sigma$ 和绑定环境 $\mu$ 下进行的转换。     |
+
+**解释**：
+- 在符号上下文 $\Sigma$ 和绑定环境 $\mu$ 下，首先求值表达式 $e_1$，得到结果 $e_1'$。
+- 然后，继续求值表达式 `put[a](e_1'; e_2)`，即将符号 $a$ 绑定到 $e_1'$，并在新的绑定环境下执行表达式 $e_2$。
+
+**Kotlin 示例**：
+
+```kotlin
+fun examplePut(env: SymbolBindingEnvironment) {
+    val expr = Put("b", Value("Hello"), Get("b"))
+    val result = eval(expr, env, setOf("b"))
+    if (result is Value) {
+        println("Value of 'b': ${result.value}")  // 输出: Value of 'b': Hello
+    }
+}
+```
+
+#### **规则 (33.2c)：在新的绑定环境下求值 $e_2$**
+
+$$
+\frac{
+e_1\ \text{val}_{\Sigma, a \sim \tau} \quad e_2\ \xrightarrow{\Sigma, a \sim \tau}_{\mu \oplus (a \mapsto e_1)}\ e_2'
+}{
+\text{put}[a](e_1; e_2)\ \xrightarrow{\Sigma}_{\mu}\ \text{put}[a](e_1; e_2')
+}
+\tag{33.2c}
+$$
+
+| **符号**                         | **含义**                                                     |
+| -------------------------------- | ------------------------------------------------------------ |
+| **$e_1$**                        | 绑定值的表达式，已经求值为一个值。                           |
+| **$e_2$**                        | 在新的绑定环境下求值的表达式。                               |
+| **$\mu \oplus (a \mapsto e_1)$** | 新的绑定环境，将符号 $a$ 绑定到值 $e_1$。                    |
+| **$e_2'$**                       | 表达式 $e_2$ 在新的绑定环境下求值后的结果。                  |
+| **$\text{put}[a](e_1; e_2')$**   | 将符号 $a$ 绑定到 $e_1$，并在新的绑定环境下执行表达式 $e_2'$。 |
+
+**解释**：
+- 当表达式 $e_1$ 已经求值为值 $e_1$，在绑定环境 $\mu$ 中新增绑定 $a \mapsto e_1$ 后，继续在新的绑定环境下求值表达式 $e_2$，得到结果 $e_2'$。
+- 然后，继续求值表达式 `put[a](e_1; e_2')`，即在新的绑定环境下执行 $e_2'$。
+
+**Kotlin 示例**：
+
+```kotlin
+fun examplePutWithBody(env: SymbolBindingEnvironment) {
+    val expr = Put("c", Value(100), Get("c"))
+    val result = eval(expr, env, setOf("c"))
+    if (result is Value) {
+        println("Value of 'c': ${result.value}")  // 输出: Value of 'c': 100
+    }
+}
+```
+
+#### **规则 (33.2d)：解除绑定**
+
+$$
+\frac{
+e_1\ \text{val}_{\Sigma, a \sim \tau} \quad e_2\ \text{val}_{\Sigma, a \sim \tau}
+}{
+\text{put}[a](e_1; e_2)\ \xrightarrow{\Sigma}_{\mu}\ e_2
+}
+\tag{33.2d}
+$$
+
+| **符号**                      | **含义**                                                     |
+| ----------------------------- | ------------------------------------------------------------ |
+| **$e_1$**                     | 绑定值的表达式，已经求值为一个值。                           |
+| **$e_2$**                     | 在绑定环境 $\mu$ 新增绑定 $a \mapsto e_1$ 下求值的表达式，已经求值为一个值。 |
+| **$\text{put}[a](e_1; e_2)$** | 绑定符号 $a$ 到值 $e_1$，然后在新的绑定环境下执行表达式 $e_2$。 |
+| **$e_2$**                     | 最终的求值结果，解除绑定后返回 $e_2$ 的值。                  |
+
+**解释**：
+- 当表达式 $e_1$ 和 $e_2$ 都已经求值为值，表达式 `put[a](e_1; e_2)$` 的求值结果为 $e_2$。
+- 同时，解除符号 $a$ 的绑定，恢复到之前的绑定环境。
+
+**Kotlin 示例**：
+
+```kotlin
+fun examplePutAndUnbind(env: SymbolBindingEnvironment) {
+    val expr = Put("d", Value("Kotlin"), Value("Done"))
+    val result = eval(expr, env, setOf("d"))
+    if (result is Value) {
+        println("Result of 'put[d](\"Kotlin\"; \"Done\")': ${result.value}")  // 输出: Done
+    }
+    println("d after put: ${env.get("d")}")  // 输出: null
+}
+```
+
+### 未绑定判断与卡住状态
+
+#### **规则 (33.3a)：获取未绑定符号**
+
+$$
+\frac{\mu(a) = \bullet}{\text{get}[a]\ \text{unbound}_{\mu}}
+\tag{33.3a}
+$$
+
+**解释**：
+- 如果符号 $a$ 在绑定环境 $\mu$ 中未绑定（即 $\mu(a) = \bullet$），则表达式 `get[a]` 会导致程序进入卡住状态。
+
+**Kotlin 示例**：
+
+```kotlin
+fun exampleUnboundSymbol(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Get("e")
+        val result = eval(expr, env, setOf("e"))
+        if (result is Value) {
+            println("Value of 'e': ${result.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'e' is unbound.
+    }
+}
+```
+
+#### **规则 (33.3b)：绑定值导致卡住**
+
+$$
+\frac{e_1\ \text{unbound}_{\mu}}{\text{put}[a](e_1; e_2)\ \text{unbound}_{\mu}}
+\tag{33.3b}
+$$
+
+**解释**：
+- 如果表达式 $e_1$ 会导致卡住（即 $e_1$ 未绑定），则整个表达式 `put[a](e_1; e_2)$` 也会导致卡住状态。
+
+**Kotlin 示例**：
+
+```kotlin
+fun examplePutWithUnboundValue(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Put("f", Get("g"), Value("Ignored"))
+        val result = eval(expr, env, setOf("f", "g"))
+        if (result is Value) {
+            println("Result: ${result.value}")
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'g' is unbound.
+    }
+}
+```
+
+#### **规则 (33.3c)：作用域内表达式导致卡住**
+
+$$
+\frac{e_1\ \text{val}_{\Sigma} \quad e_2\ \text{unbound}_{\mu}}{\text{put}[a](e_1; e_2)\ \text{unbound}_{\mu}}
+\tag{33.3c}
+$$
+
+**解释**：
+- 如果表达式 $e_1$ 已经求值为值，但表达式 $e_2$ 会导致卡住（即 $e_2$ 未绑定），则整个表达式 `put[a](e_1; e_2)$` 也会导致卡住状态。
+
+**Kotlin 示例**：
+
+```kotlin
+fun examplePutWithUnboundBody(env: SymbolBindingEnvironment) {
+    try {
+        val expr = Put("h", Value("Hello"), Get("i"))
+        val result = eval(expr, env, setOf("h", "i"))
+        if (result is Value) {
+            println("Result: ${result.value}")  // 输出: Result: Hello
+        }
+    } catch (e: RuntimeException) {
+        println("Error: ${e.message}")  // 输出: Error: Symbol 'i' is unbound.
+    }
+}
+```
+
+### 总结
+
+- **符号绑定的堆栈模型**：通过维护符号绑定的栈，确保在进入新作用域时可以动态绑定符号，并在退出作用域时恢复之前的绑定。
+- **绑定环境 $\mu$**：记录符号到值的映射关系，支持符号的绑定与解除绑定操作。
+- **转换判断**：定义在特定符号上下文和绑定环境下，表达式如何转换为新的表达式或值。
+- **动态语义规则**：
+  - **规则 (33.2a)**：获取符号的当前绑定值。
+  - **规则 (33.2b)**：在绑定之前，先求值绑定的值。
+  - **规则 (33.2c)**：在新的绑定环境下求值表达式。
+  - **规则 (33.2d)**：解除符号绑定，恢复之前的环境。
+- **未绑定判断与卡住状态**：确保程序在符号未绑定时能够正确处理错误，防止程序进入不可预测的状态。
+- **错误传播规则**：确保错误能够在调用链中正确传递和处理，维护程序的健壮性。
+
+通过这些机制，编程语言能够在动态环境中安全、可预测地管理符号绑定，确保程序的正确性和类型安全性。
 
 
 ### ---------------------------------
