@@ -166,11 +166,11 @@
   - 20240901 : 第1-5章
   - 20240907 : 第6-10章
   - 20240908 : 第11-13章
-  - 202409
+  - 202409【】
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825：第2~第章
-  - 202409
+  - 202409【】
 - 搜论文 POPL, ICFP, ESOP, PLDI, OOPSLA, TYPES
   
   - 20240830
@@ -200,17 +200,21 @@
   - 20240916 : 第一~四部分有限数据类型
   - 20240917 : 第五~六部分有限数据类型
   - 20240918 : 第七~九部分有限数据类型
-  - 20240920 : 第十~部分有限数据类型
-
+  - 20240920 : 第十~十四部分有限数据类型
+  - 
 - TAPL
 
+  - 202409
+  - 202409
+  - 202409
   - 
-
 - ML程序设计教程
 
   - ①2024090
-
 - Compiling with continuations
+
+  - 
+
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
 - LLVM
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
@@ -219,7 +223,6 @@
   - ①2024090
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
   - ①2024090
-- 
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
 
   - ①202409~
@@ -233,14 +236,12 @@
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
 
   - 202410
-
 - [nLab*](https://ncatlab.org/nlab/all_pages)
 
   - [nLab 分类页](https://ncatlab.org/nlab/page_categories)
   - [Type Theory](https://ncatlab.org/nlab/show/type+theory)
   - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
   - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
-- 
 - 类型和程序设计语言 Types and Programming Languages
 
   - ②
