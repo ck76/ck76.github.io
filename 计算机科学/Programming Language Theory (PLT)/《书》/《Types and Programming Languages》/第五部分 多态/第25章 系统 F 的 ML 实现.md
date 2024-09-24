@@ -51,7 +51,7 @@ type binding =
 
 - **VarBind of ty**：项变量的绑定，携带一个类型 $ty$。
 
-- **TyVarBind**：类型变量的绑定，不携带任何额外数据值，因为在此系统中（与项变量不同），类型变量没有任何附加的假设。在具有 **有界量化** (Bounded Quantification)（第 26 章）或 **高阶种类** (Higher Kinds)（第 29 章）的系统中，我们会为每个 `TyVarBind` 添加适当的注解。
+- **TyVarBind**：类型变量的绑定，不携带任何额外数据值，因为在此系统中（与项变量不同），类型变量没有任何附加的假设。在具有 **有界量化** (Bounded Quantification)（第 26 章）或 **高阶种类** (Higher Kinds)（第 29 章）的系统中，我们会为每个 $TyVarBind$ 添加适当的注解。
 
 ---
 
@@ -124,19 +124,19 @@ let typeShiftAbove d c tyT =
 
 - **参数 $c$**：**截止值** (Cutoff)，在此值以下的变量不应提升，以避免提升被绑定的变量。
 
-- **函数 `walk c tyT`**：递归地遍历类型 `tyT`，根据类型的构造器进行模式匹配。
+- **函数 $walk c tyT$**：递归地遍历类型 $tyT$，根据类型的构造器进行模式匹配。
 
-  - **`TyVar(x, n)`**：如果 $x \geq c$，则需要提升索引：
+  - **$TyVar(x, n)$**：如果 $x \geq c$，则需要提升索引：
 
     $$
     \text{如果 } x \geq c,\ \text{则 } \text{TyVar}(x + d, n + d);\quad \text{否则 } \text{TyVar}(x, n + d)
     $$
 
-  - **`TyArr(tyT1, tyT2)`**：函数类型，递归地对 `tyT1` 和 `tyT2` 调用 `walk`。
+  - **$TyArr(tyT1, tyT2)$**：函数类型，递归地对 $tyT1$ 和 $tyT2$ 调用 $walk$。
 
-  - **`TyAll(tyX, tyT2)`** 和 **`TySome(tyX, tyT2)`**：对于量词，增加截止值 `c`（因为进入了一个新的绑定层次），递归地调用 `walk (c + 1) tyT2`。
+  - **$TyAll(tyX, tyT2)$** 和 **$TySome(tyX, tyT2)$**：对于量词，增加截止值 $c$（因为进入了一个新的绑定层次），递归地调用 $walk (c + 1) tyT2$。
 
-现在，如果我们将 `typeShiftAbove` 中的 `TyVar` 分支抽象为一个新的参数 `onvar`，并且去掉只在 `TyVar` 分支中使用的参数 `d`，我们就得到了一个通用的映射函数：
+现在，如果我们将 $typeShiftAbove$ 中的 $TyVar$ 分支抽象为一个新的参数 $onvar$，并且去掉只在 $TyVar$ 分支中使用的参数 $d$，我们就得到了一个通用的映射函数：
 
 ```ocaml
 let tymap onvar c tyT =
@@ -148,7 +148,7 @@ let tymap onvar c tyT =
   in walk c tyT
 ```
 
-我们可以通过提供一个基于 `c`、`x` 和 `n` 的函数作为参数，来恢复提升函数：
+我们可以通过提供一个基于 $c$、$x$ 和 $n$ 的函数作为参数，来恢复提升函数：
 
 ```ocaml
 let typeShiftAbove d c tyT =
@@ -163,7 +163,7 @@ let typeShiftAbove d c tyT =
 let typeShift d tyT = typeShiftAbove d 0 tyT
 ```
 
-我们也可以实例化 `tymap` 来实现将类型 `tyS` 替换到类型 `tyT` 中编号为 `j` 的类型变量的操作：
+我们也可以实例化 $tymap$ 来实现将类型 $tyS$ 替换到类型 $tyT$ 中编号为 $j$ 的类型变量的操作：
 
 ```ocaml
 let typeSubst tyS j tyT =
@@ -172,7 +172,7 @@ let typeSubst tyS j tyT =
     j tyT
 ```
 
-当我们在类型检查和求值过程中使用类型替换时，我们总是要替换编号为 0（最外层）的变量，并且希望对结果进行提升，使该变量消失。辅助函数 `typeSubstTop` 为我们完成了这一操作：
+当我们在类型检查和求值过程中使用类型替换时，我们总是要替换编号为 0（最外层）的变量，并且希望对结果进行提升，使该变量消失。辅助函数 $typeSubstTop$ 为我们完成了这一操作：
 
 ```ocaml
 let typeSubstTop tyS tyT =
@@ -198,7 +198,7 @@ type term =
 
 **解释：**
 
-- **TmVar of info * int * int**：项变量，`info` 是位置信息，第一个 `int` 是 de Bruijn 索引，第二个 `int` 是上下文的大小。
+- **TmVar of info * int * int**：项变量，$info$ 是位置信息，第一个 $int$ 是 de Bruijn 索引，第二个 $int$ 是上下文的大小。
 
 - **TmAbs of info * string * ty * term**：抽象（λ 抽象），带有类型注解。
 
@@ -231,13 +231,13 @@ let tmmap onvar ontype c t =
 
 **注意：**
 
-- `tmmap` 接受四个参数，比 `tymap` 多一个。原因是，项可能包含两种不同类型的变量：**项变量** (Term Variables) 和嵌入在项的类型注解中的 **类型变量** (Type Variables)。
+- $tmmap$ 接受四个参数，比 $tymap$ 多一个。原因是，项可能包含两种不同类型的变量：**项变量** (Term Variables) 和嵌入在项的类型注解中的 **类型变量** (Type Variables)。
 
 - 在进行提升时，需要对这两种变量分别处理。
 
-- 参数 `onvar` 和 `ontype` 分别告诉 `tmmap` 在遇到项变量和类型时该如何处理。
+- 参数 $onvar$ 和 $ontype$ 分别告诉 $tmmap$ 在遇到项变量和类型时该如何处理。
 
-项的提升可以通过给 `tmmap` 提供适当的参数来定义：
+项的提升可以通过给 $tmmap$ 提供适当的参数来定义：
 
 ```ocaml
 let termShiftAbove d c t =
@@ -254,7 +254,7 @@ let termShift d t = termShiftAbove d 0 t
 
 - **对于项变量**，我们检查是否需要提升索引。
 
-- **对于类型注解**，我们调用前面定义的 `typeShiftAbove` 函数。
+- **对于类型注解**，我们调用前面定义的 $typeShiftAbove$ 函数。
 
 将一个项替换到另一个项中的函数类似：
 
@@ -268,7 +268,7 @@ let termSubst j s t =
 
 **注意：**
 
-- 类型注解不会被 `termSubst` 改变，因为类型不能包含项变量。
+- 类型注解不会被 $termSubst$ 改变，因为类型不能包含项变量。
 
 我们还需要一个将类型替换到项中的函数，用于类型应用的求值规则，例如：
 
@@ -290,7 +290,7 @@ let rec tytermSubst tyS j t =
 
 - **对于类型注解**，我们对其执行类型替换。
 
-最后，我们定义一些方便的函数，将基本的替换函数封装起来，以供 `eval` 和 `typeof` 使用：
+最后，我们定义一些方便的函数，将基本的替换函数封装起来，以供 $eval$ 和 $typeof$ 使用：
 
 ```ocaml
 let termSubstTop s t =
@@ -304,7 +304,7 @@ let tytermSubstTop tyS t =
 
 ### 25.4 求值 (Evaluation)
 
-对 `eval` 函数的扩展是对第 23 章和第 24 章中引入的求值规则的直接转录。主要的工作由前一节中定义的替换函数完成。
+对 $eval$ 函数的扩展是对第 23 章和第 24 章中引入的求值规则的直接转录。主要的工作由前一节中定义的替换函数完成。
 
 ```ocaml
 let rec eval1 ctx t = match t with
@@ -327,26 +327,26 @@ let rec eval1 ctx t = match t with
 
 **25.4.1 练习 [«]**
 
-**题目：** 为什么在第一个 `TmUnpack` 情况下需要 `termShift`？
+**题目：** 为什么在第一个 $TmUnpack$ 情况下需要 $termShift$？
 
 **解答：**
 
-在第一个 `TmUnpack` 情况下，我们有：
+在第一个 $TmUnpack$ 情况下，我们有：
 
 ```ocaml
 | TmUnpack(fi, _, _, TmPack(_, tyT11, v12, _), t2) when isval ctx v12 ->
     tytermSubstTop tyT11 (termSubstTop (termShift 1 v12) t2)
 ```
 
-需要对 `v12` 进行 `termShift 1`，这是因为在解包时，我们将一个值 `v12` 替换到 `t2` 中，而 `t2` 的上下文中增加了两个绑定（一个类型变量，一个项变量）。因此，为了正确地替换 `v12`，我们需要提升其索引，以适应新的上下文。
+需要对 $v12$ 进行 $termShift 1$，这是因为在解包时，我们将一个值 $v12$ 替换到 $t2$ 中，而 $t2$ 的上下文中增加了两个绑定（一个类型变量，一个项变量）。因此，为了正确地替换 $v12$，我们需要提升其索引，以适应新的上下文。
 
-如果不进行 `termShift`，`v12` 中的自由变量可能会错误地引用到 `t2` 中新添加的绑定，导致求值错误。
+如果不进行 $termShift$，$v12$ 中的自由变量可能会错误地引用到 $t2$ 中新添加的绑定，导致求值错误。
 
 ---
 
 ### 25.5 类型检查 (Typing)
 
-`typeof` 函数的新分支直接来源于类型抽象、类型应用以及存在类型的打包和解包的类型规则。我们展示了 `typeof` 的完整定义，以便将新的 `TmTAbs` 和 `TmTApp` 分支与旧的普通抽象和应用的分支进行比较。
+$typeof$ 函数的新分支直接来源于类型抽象、类型应用以及存在类型的打包和解包的类型规则。我们展示了 $typeof$ 的完整定义，以便将新的 $TmTAbs$ 和 $TmTApp$ 分支与旧的普通抽象和应用的分支进行比较。
 
 ```ocaml
 let rec typeof ctx t =
@@ -394,37 +394,37 @@ let rec typeof ctx t =
 
 **解释：**
 
-- **`TmTAbs` 分支：**
+- **$TmTAbs$ 分支：**
 
-  - 我们在上下文中添加类型变量绑定 `tyX`，然后对 `t2` 进行类型检查。
+  - 我们在上下文中添加类型变量绑定 $tyX$，然后对 $t2$ 进行类型检查。
 
-  - 最终返回类型为 `TyAll(tyX, tyT2)`。
+  - 最终返回类型为 $TyAll(tyX, tyT2)$。
 
-- **`TmTApp` 分支：**
+- **$TmTApp$ 分支：**
 
-  - 对 `t1` 进行类型检查，期望其类型为 `TyAll`。
+  - 对 $t1$ 进行类型检查，期望其类型为 $TyAll$。
 
-  - 然后将类型 `tyT2` 替换到 `tyT12` 中，得到结果类型。
+  - 然后将类型 $tyT2$ 替换到 $tyT12$ 中，得到结果类型。
 
-- **`TmPack` 分支：**
+- **$TmPack$ 分支：**
 
   - 检查打包的类型是否为存在类型。
 
-  - 对 `t2` 进行类型检查，期望其类型与替换后的类型相同。
+  - 对 $t2$ 进行类型检查，期望其类型与替换后的类型相同。
 
-- **`TmUnpack` 分支：**
+- **$TmUnpack$ 分支：**
 
-  - 对 `t1` 进行类型检查，期望其类型为存在类型。
+  - 对 $t1$ 进行类型检查，期望其类型为存在类型。
 
-  - 在上下文中添加类型变量绑定 `tyX` 和项变量绑定 `x`。
+  - 在上下文中添加类型变量绑定 $tyX$ 和项变量绑定 $x$。
 
-  - 对 `t2` 进行类型检查，然后对结果类型进行 `typeShift (-2)`，以移除上下文中添加的两个绑定。
+  - 对 $t2$ 进行类型检查，然后对结果类型进行 $typeShift (-2)$，以移除上下文中添加的两个绑定。
 
 **注意：**
 
-- 在 `TmUnpack` 分支中，如果 `t2` 的类型中包含了绑定的类型变量 `X`，那么在 `typeShift (-2)` 时会产生负索引，导致作用域错误。
+- 在 $TmUnpack$ 分支中，如果 $t2$ 的类型中包含了绑定的类型变量 $X$，那么在 $typeShift (-2)$ 时会产生负索引，导致作用域错误。
 
-- 为了防止这种情况，我们重新定义了 `typeShiftAbove`，使其在遇到负索引时抛出错误：
+- 为了防止这种情况，我们重新定义了 $typeShiftAbove$，使其在遇到负索引时抛出错误：
 
   ```ocaml
   let typeShiftAbove d c tyT =
@@ -436,7 +436,7 @@ let rec typeof ctx t =
       c tyT
   ```
 
-  这样，当我们计算存在消除表达式 `let {X, x} = t1 in t2` 的主体 `t2` 的类型时，如果 `t2` 中包含了绑定的类型变量 `X`，就会报告作用域错误。
+  这样，当我们计算存在消除表达式 $let {X, x} = t1 in t2$ 的主体 $t2$ 的类型时，如果 $t2$ 中包含了绑定的类型变量 $X$，就会报告作用域错误。
 
 **示例：**
 
