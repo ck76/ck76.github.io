@@ -2518,11 +2518,11 @@ $$
 健全性引理表明，算法型的判断是健全的，即它们与声明性的判断一致。以下是具体的健全性陈述：
 
 1. 如果 $\Gamma  \rightarrow K$，则 $\Gamma ` K$。
-2. 如果 $\Gamma  \rightarrow T :: K$，则 $\Gamma ` T :: K$。
-3. 如果 $\Gamma  \rightarrow t : T$，则 $\Gamma ` t : T$。
+2. 如果 $\Gamma  \rightarrow T :: K$，则 $\Gamma \rightarrow :: K$。
+3. 如果 $\Gamma  \rightarrow t : T$，则 $\Gamma \rightarrow : T$。
 4. 如果 $\Gamma  \rightarrow K \equiv K_0$，则 $\Gamma ` K \equiv K_0$。
-5. 如果 $\Gamma  \rightarrow T \equiv T_0 :: K$，则 $\Gamma ` T \equiv T_0 :: K$。
-6. 如果 $\Gamma  \rightarrow t \equiv t_0 : T$，则 $\Gamma ` t \equiv t_0 : T$。
+5. 如果 $\Gamma  \rightarrow T \equiv T_0 :: K$，则 $\Gamma \rightarrow \equiv T_0 :: K$。
+6. 如果 $\Gamma  \rightarrow t \equiv t_0 : T$，则 $\Gamma \rightarrow \equiv t_0 : T$。
 
 **证明**：通过对算法推导的归纳证明。
 
@@ -2552,10 +2552,10 @@ $$
 算法型判定规则的完备性表明，声明性的判断都能被算法型系统捕捉到。具体完备性如下：
 
 1. 如果 $\Gamma ` K$，则 $\Gamma  \rightarrow K$。
-2. 如果 $\Gamma ` T :: K$，则存在 $K_0$，使得 $\Gamma  \rightarrow T :: K_0$ 并且 $\Gamma  \rightarrow K \equiv K_0$。
-3. 如果 $\Gamma ` t : T$，则存在 $T_0$，使得 $\Gamma  \rightarrow t : T_0$ 并且 $\Gamma  \rightarrow T \equiv T_0$。
-4. 如果 $\Gamma ` t_1 \equiv t_2 : T$，则 $\Gamma  \rightarrow t_1 \equiv t_2$。
-5. 如果 $\Gamma ` T_1 \equiv T_2 :: K$，则 $\Gamma  \rightarrow T_1 \equiv T_2$。
+2. 如果 $\Gamma \rightarrow :: K$，则存在 $K_0$，使得 $\Gamma  \rightarrow T :: K_0$ 并且 $\Gamma  \rightarrow K \equiv K_0$。
+3. 如果 $\Gamma \rightarrow : T$，则存在 $T_0$，使得 $\Gamma  \rightarrow t : T_0$ 并且 $\Gamma  \rightarrow T \equiv T_0$。
+4. 如果 $\Gamma \rightarrow_1 \equiv t_2 : T$，则 $\Gamma  \rightarrow t_1 \equiv t_2$。
+5. 如果 $\Gamma \rightarrow_1 \equiv T_2 :: K$，则 $\Gamma  \rightarrow T_1 \equiv T_2$。
 
 **证明**：首先证明声明性规则在算法系统中是可容许的，接着通过声明性系统中的推导进行归纳。这一结果由此得出。
 
@@ -2587,7 +2587,7 @@ $$
 ### **2.4.5 习题**：证明 $QT-Trans$ 规则的可容许性
 
 #### **题目**：
-证明 $QT-Trans$ 规则在算法型系统中是可容许的，即当 $\Gamma ` t_i : T$ 且 $\Gamma  \rightarrow t_1 \equiv t_2$ 和 $\Gamma  \rightarrow t_2 \equiv t_3$ 时， $\Gamma  \rightarrow t_1 \equiv t_3$。
+证明 $QT-Trans$ 规则在算法型系统中是可容许的，即当 $\Gamma \rightarrow_i : T$ 且 $\Gamma  \rightarrow t_1 \equiv t_2$ 和 $\Gamma  \rightarrow t_2 \equiv t_3$ 时， $\Gamma  \rightarrow t_1 \equiv t_3$。
 
 #### **解题思路**：
 1. **引理**：$QT-Trans$ 表示的是等价关系的传递性，即如果 $t_1$ 等价于 $t_2$ 且 $t_2$ 等价于 $t_3$，则 $t_1$ 必须等价于 $t_3$。
@@ -2604,7 +2604,7 @@ $$
 ### **2.4.6 习题**：证明 $Q-App$ 规则的可容许性
 
 #### **题目**：
-证明 $Q-App$ 规则在算法型系统中是可容许的，即当 $\Gamma ` t_1 t_2 : T$ 和 $\Gamma ` s_1 s_2 : T$ 且 $\Gamma  \rightarrow t_1 \equiv s_1$ 和 $\Gamma  \rightarrow t_2 \equiv s_2$ 时，$\Gamma  \rightarrow t_1 t_2 \equiv s_1 s_2$。
+证明 $Q-App$ 规则在算法型系统中是可容许的，即当 $\Gamma \rightarrow_1 t_2 : T$ 和 $\Gamma ` s_1 s_2 : T$ 且 $\Gamma  \rightarrow t_1 \equiv s_1$ 和 $\Gamma  \rightarrow t_2 \equiv s_2$ 时，$\Gamma  \rightarrow t_1 t_2 \equiv s_1 s_2$。
 
 #### **解题思路**：
 1. **引理**：$Q-App$ 规则表示的是函数应用中的等价性，即如果 $t_1$ 和 $s_1$ 等价，$t_2$ 和 $s_2$ 等价，那么 $t_1 t_2$ 和 $s_1 s_2$ 也应该等价。
@@ -2638,7 +2638,7 @@ $$
 ### **2.4.8 引理**：项等价的终止性
 
 #### **题目**：
-证明当 $\Gamma ` t_1:T_1$ 和 $\Gamma ` t_2:T_2$ 时，向后搜索导出 $\Gamma  \rightarrow t_1 \equiv t_2$ 的推导总是终止的。
+证明当 $\Gamma \rightarrow_1:T_1$ 和 $\Gamma \rightarrow_2:T_2$ 时，向后搜索导出 $\Gamma  \rightarrow t_1 \equiv t_2$ 的推导总是终止的。
 
 #### **证明思路**：
 1. **引理**：该引理表明，算法型系统中的等价推导总会终止，并且不会出现无限推导序列。
@@ -2680,7 +2680,7 @@ $$
 ### **2.4.10 定理 [类型保持 (Preservation)]** 
 
 **定理**：
-若 $\Gamma ` t : T$ 并且 $t -→β t_0$，那么 $\Gamma ` t_0 : T$ 也成立。
+若 $\Gamma \rightarrow : T$ 并且 $t -→β t_0$，那么 $\Gamma \rightarrow_0 : T$ 也成立。
 
 #### **证明思路**：
 - 我们通过证明一个稍微受限的形式，即在良构上下文下的类型保持定理。
@@ -2701,7 +2701,7 @@ $$
 
 4. 对于最后一步，使用 **引理 2.3.3** 来获得 $\Gamma ` S_1 :: ∗$，从而推导出 $\Gamma  \rightarrow S_1 :: ∗$。
 
-5. 通过 $T-Conv$，可以推导出 $\Gamma ` t_2 : S_2$，然后通过 **引理 2.3.2** （替换引理），我们得到 $\Gamma ` [x , t_2] t_1 : [x , t_2] S_2$。
+5. 通过 $T-Conv$，可以推导出 $\Gamma \rightarrow_2 : S_2$，然后通过 **引理 2.3.2** （替换引理），我们得到 $\Gamma ` [x , t_2] t_1 : [x , t_2] S_2$。
 
 6. 最终，再次使用 $T-Conv$ 并结合 **引理 2.3.3**，可以得到 $\Gamma ` [x , t_2] S_2 \equiv T :: ∗$，从而完成证明。
 
@@ -2751,7 +2751,7 @@ $$
 #### **T-Pair 规则**
 
 $$
-\frac{\Gamma ` t_1 : T_1 \quad \Gamma ` t_2 : [x, t_1]T_2}{\Gamma ` (t_1, t_2) : \Sigma x:T_1.T_2}
+\frac{\Gamma \rightarrow_1 : T_1 \quad \Gamma \rightarrow_2 : [x, t_1]T_2}{\Gamma ` (t_1, t_2) : \Sigma x:T_1.T_2}
 $$
 
 **解释：**
@@ -2765,7 +2765,7 @@ $$
 投影规则与 **T-App** 类似，分别获取对的第一或第二个元素。以下是第二投影的规则：
 
 $$
-\frac{\Gamma ` t : \Sigma x:T_1.T_2}{\Gamma ` \pi_2 \ t : [x, \pi_1 \ t]T_2}
+\frac{\Gamma \rightarrow : \Sigma x:T_1.T_2}{\Gamma ` \pi_2 \ t : [x, \pi_1 \ t]T_2}
 $$
 
 **解释：**
@@ -2784,7 +2784,7 @@ $$
 #### **Q-SurjPair 规则**
 
 $$
-\frac{\Gamma ` t : \Sigma x:T_1.T_2}{\Gamma ` t \equiv (\pi_1 \ t, \pi_2 \ t) : \Sigma x:T_1.T_2}
+\frac{\Gamma \rightarrow : \Sigma x:T_1.T_2}{\Gamma \rightarrow \equiv (\pi_1 \ t, \pi_2 \ t) : \Sigma x:T_1.T_2}
 $$
 
 **解释：**
@@ -3130,7 +3130,7 @@ $$
 #### **(K-Sigma) 规则**
 
 $$
-\frac{Γ  \rightarrow S :: ∗ \quad Γ , x:S ` T :: ∗}{Γ  \rightarrow Σx:S.T :: ∗}
+\frac{Γ  \rightarrow S :: ∗ \quad Γ , x:S \rightarrow :: ∗}{Γ  \rightarrow Σx:S.T :: ∗}
 $$
 
 **解释：**
@@ -3395,7 +3395,7 @@ $$
 #### **(T-All) 规则**
 
 $$
-\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T ` t : Prop}{Γ  \rightarrow all \ x:T.t : Prop}
+\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T \rightarrow : Prop}{Γ  \rightarrow all \ x:T.t : Prop}
 $$
 
 **解释**：
@@ -3421,7 +3421,7 @@ $$
 #### **(QT-All) 规则**
 
 $$
-\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T ` t : Prop}{Γ  \rightarrow Prf \ (all \ x:T.t) ≡ Πx:T.Prf \ t :: ∗}
+\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T \rightarrow : Prop}{Γ  \rightarrow Prf \ (all \ x:T.t) ≡ Πx:T.Prf \ t :: ∗}
 $$
 
 **解释**：
@@ -3475,7 +3475,7 @@ CC 相对于 λLF 的主要扩展包括：
 #### **全称量化 (T-All)**
 
 $$
-\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T ` t : Prop}{Γ  \rightarrow all \ x:T.t : Prop} \quad (T-All)
+\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T \rightarrow : Prop}{Γ  \rightarrow all \ x:T.t : Prop} \quad (T-All)
 $$
 
 **解释**：
@@ -3497,7 +3497,7 @@ $$
 #### **命题与证明的等价性 (QT-All)**
 
 $$
-\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T ` t : Prop}{Γ  \rightarrow Prf \ (all \ x:T.t) ≡ Πx:T.Prf \ t :: ∗} \quad (QT-All)
+\frac{Γ  \rightarrow T :: ∗ \quad Γ , x:T \rightarrow : Prop}{Γ  \rightarrow Prf \ (all \ x:T.t) ≡ Πx:T.Prf \ t :: ∗} \quad (QT-All)
 $$
 
 **解释**：
@@ -4385,7 +4385,7 @@ $$
    - **解释**：如果变量 $x$ 存在于上下文中，并具有类型 $T$，那么我们可以推导出 $x$ 的类型为 $T$。
    - **作用**：确定上下文中变量的类型。
 
-3. **$Γ  \rightarrow S : ∗ , Γ , x:S ` t : T ，Γ  \rightarrow λx:S.t : Πx:S.T$：抽象规则（T-Abs）**
+3. **$Γ  \rightarrow S : ∗ , Γ , x:S \rightarrow : T ，Γ  \rightarrow λx:S.t : Πx:S.T$：抽象规则（T-Abs）**
    - **前提条件**：$S$ 是一个类型，$x$ 被绑定到 $S$，并且在扩展的上下文中，$t$ 具有类型 $T$。
    - **解释**：抽象 $λx:S.t$ 的类型是依赖积类型 $Πx:S.T$。
    - **作用**：定义函数抽象的类型推导规则，确保函数的参数和返回值都符合类型。
@@ -4395,7 +4395,7 @@ $$
    - **解释**：如果我们有一个依赖积类型的函数 $t1$，并且它应用到参数 $t2$，那么结果的类型是 $[x , t2]T$，即将 $x$ 替换为 $t2$。
    - **作用**：定义函数应用的类型推导规则。
 
-5. **$Γ  \rightarrow S : si ，Γ , x:S ` T : sj ，Γ  \rightarrow Πx:S.T : sj$：依赖积类型（T-Pi）**
+5. **$Γ  \rightarrow S : si ，Γ , x:S \rightarrow : sj ，Γ  \rightarrow Πx:S.T : sj$：依赖积类型（T-Pi）**
    - **前提条件**：$S$ 是一个 $si$ 类型，$T$ 是一个 $sj$ 类型。
    - **解释**：依赖积类型 $Πx:S.T$ 是一个 $sj$ 类型，$si$ 和 $sj$ 的组合控制不同层次的抽象。
    - **作用**：定义依赖积类型的形成规则。

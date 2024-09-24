@@ -3894,8 +3894,8 @@ and mapRev(f: T1 → T2, input: (lin, pa, a) list, output: (lin, pb, b) list) : 
 ### **类型替换引理 (Type Substitution Lemma)**
 
 ```plaintext
-1. 如果 ∆, p; Γ ` t : T 且 FV(q) ∈ ∆ 则 ∆; [p , q]Γ ` [p , q]t : [p , q]T
-2. 如果 ∆, a; Γ ` t : T 且 FV(P) ∈ ∆ 则 ∆; [a , P]Γ ` [a , P]t : [a , P]T ✷
+1. 如果 ∆, p; Γ \rightarrow : T 且 FV(q) ∈ ∆ 则 ∆; [p , q]Γ ` [p , q]t : [p , q]T
+2. 如果 ∆, a; Γ \rightarrow : T 且 FV(P) ∈ ∆ 则 ∆; [a , P]Γ ` [a , P]t : [a , P]T ✷
 ```
 
 **解释：**
