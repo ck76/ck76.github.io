@@ -195,16 +195,16 @@
   - ②20240910 : 第3章
   - ②202409 : 第-章
   - ②202409 : 第-章
-- PFPL 
+- PFPL  实用编程语言理论基础 Practical Foundations for Programming
 
   - 20240916 : 第一~四部分有限数据类型
   - 20240917 : 第五~六部分有限数据类型
   - 20240918 : 第七~九部分有限数据类型
   - 20240920 : 第十~十四部分有限数据类型
   - 
-- TAPL
+- TAPL 类型和程序设计语言 Types and Programming Languages
 
-  - 2024092
+  - 20240928 ：第一部分：无类型系统
   - 202409
   - 202409
   - 
@@ -214,7 +214,6 @@
 - Compiling with continuations
 
   - 
-
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
 - LLVM
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
@@ -242,15 +241,8 @@
   - [Type Theory](https://ncatlab.org/nlab/show/type+theory)
   - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
   - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
-- 类型和程序设计语言 Types and Programming Languages
-
-  - ②
-- 实用编程语言理论基础 Practical Foundations for Programming
-
-  - ②
-- [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
-
-  - ①
+- ATTPL [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
+- ①
 - Go 语言设计与实现
   - 
 - Go语言高级编程

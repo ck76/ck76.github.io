@@ -36,7 +36,7 @@
 4.2 自然变换 (Natural transformations) 101  
 4.3 函子之间的自然变换 (Natural transformations between functors) 109  
 4.4 Godement自然变换计算 (The Godement calculus of natural transformations) 117  
-4.5 $$Yoneda$$引理和泛对象 (The Yoneda Lemma and universal elements) 121  
+4.5 $Yoneda$引理和泛对象 (The Yoneda Lemma and universal elements) 121  
 4.6 线性草图 (Linear sketches) 128  
 4.7 带常量的线性草图：初始术语模型 (Linear sketches with constants: initial term models) 134  
 4.8 $$2$$-范畴 ($$2$$-categories) 141
