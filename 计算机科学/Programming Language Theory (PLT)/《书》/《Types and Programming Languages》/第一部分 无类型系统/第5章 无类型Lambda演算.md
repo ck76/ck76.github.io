@@ -3186,11 +3186,11 @@ Evaluated: a
 
 Expression: apply_const
 AST: ((λx.λy.x a) b)
-Evaluated: a
+Evaluated: λy.ba
 
 Expression: complex_expr
 AST: ((λx.x λx.x) a)
-Evaluated: a
+Evaluated: a(λx.x)
 ```
 
 ### 8. 示例与测试
@@ -3236,7 +3236,7 @@ let apply_const = App(App(const, Var "a"), Var "b")
 1. **初始表达式**：`((λx.λy.x) a) b`
 2. **第一步Beta归约**：将`a`替换到`x`的位置，得到`(λy.a) b`
 3. **第二步Beta归约**：将`b`替换到`y`的位置，得到`a`
-4. **最终结果**：`a`
+4. **最终结果**：`a`？？？？？？？？？？？？？？？？？？？？？纯粹瞎生成啊
 
 **输出**：
 
