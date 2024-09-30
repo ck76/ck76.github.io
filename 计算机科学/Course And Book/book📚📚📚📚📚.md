@@ -193,19 +193,19 @@
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - ①20240820 : 第1-2章
   - ②20240910 : 第3章
-  - ②202409 : 第-章
-  - ②202409 : 第-章
+  - ②202410 : 第-章
+  - ②202410 : 第-章
 - PFPL  实用编程语言理论基础 Practical Foundations for Programming
 
   - 20240916 : 第一~四部分有限数据类型
   - 20240917 : 第五~六部分有限数据类型
   - 20240918 : 第七~九部分有限数据类型
   - 20240920 : 第十~十四部分有限数据类型
-  - 
+  - 202410
 - TAPL 类型和程序设计语言 Types and Programming Languages
 
   - 20240928 ：第一部分：无类型系统
-  - 202409
+  - 20240929 ：7 An ML Implementation of the Lambda-Calculus(de bruijn index)
   - 202409
   - 
 - ML程序设计教程
@@ -216,6 +216,9 @@
   - 
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
 - LLVM
+
+  - [Tutorial](https://llvm.org/docs/tutorial/)
+
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
@@ -242,22 +245,28 @@
   - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
   - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
 - ATTPL [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
-- ①
-- Go 语言设计与实现
-  - 
-- Go语言高级编程
+  - ①
+- [Go 语言设计与实现](https://draveness.me/golang/) 
   - 
 - Go语言底层原理剖析【文字版】
+
+  - 是个轮廓
+
 - Go程序员面试笔试宝典
 - Go 1.5 源码剖析
-- Go程序员面试笔试宝典
+
+  - 看不看都行
 
 
+
+- Go语言高级编程
+  - 看不看都行
 - 网络是怎样连接的
   - ①2024080
 - 图解网络硬件
 
   - 
+- 
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
@@ -274,8 +283,11 @@
 
 - 魔力Haskell
   - ①2024080 第二部分 116页
-- Haskell趣学指南
+- [Think with Types](https://thinkingwithtypes.com/)
 
+  - github [thinking-with-types](https://github.com/isovector/thinking-with-types)
+
+- Haskell趣学指南
   - 
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
 - 主流编程语言Compilers 代码库
