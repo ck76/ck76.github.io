@@ -206,8 +206,9 @@
 
   - 20240928 ：第一部分：无类型系统
   - 20240929 ：7 An ML Implementation of the Lambda-Calculus(de bruijn index)
-  - 202409
-  - 
+  - 20241001 ：
+  - 20241002：
+  - 202410
 - ML程序设计教程
 
   - ①2024090
@@ -234,6 +235,7 @@
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
   - ①202409~
+- The Little *Typer*
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
 
@@ -291,6 +293,18 @@
   - 
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
 - 主流编程语言Compilers 代码库
+  - OCaml
+  - Rust
+  - Golang
+  - Haskell
+  - Lua
+  - Typescript
+  - ML
+  - Lisp
+  - Python
+  - Scheme
+  - Kotlin
+
 - miniXXX
 - 
 - https://plzoo.andrej.com/

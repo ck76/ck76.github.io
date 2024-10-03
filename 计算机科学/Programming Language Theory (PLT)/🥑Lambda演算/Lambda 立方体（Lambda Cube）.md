@@ -4,6 +4,49 @@
 
 [toc]
 
+
+$$
+\xymatrix@-1pc{
+{}\\ {}\\ {}\\ {}\\
+&{\scriptsize(\Box,~\Box)} \\
+{} \ar[u]^{(\Box,~\ast)} \ar[ur] \ar[r]_{(\ast,~\Box)} & {}
+}
+\qquad
+\xymatrix@!=10pt{
+& {\boldsymbol{\lambda\omega}} \ar@{-}[rr]\ar@{-}'[d][dd]
+& & {\boldsymbol{\lambda\textbf{C}}} \ar@{-}[dd]
+\\
+{\boldsymbol{\lambda 2}} \ar@{-}[ur]\ar@{-}[rr]\ar@{-}[dd]
+& & {\boldsymbol{\lambda\textbf{P}2}} \ar@{-}[ur]\ar@{-}[dd]
+\\
+& {\boldsymbol{\lambda \underline{\omega}}} \ar@{-}'[r][rr]
+& & {\boldsymbol{\lambda\textbf{P}\underline{\omega}}}
+\\
+{\boldsymbol{\lambda_\to}} \ar@{-}[rr]\ar@{-}[ur]
+& & {\boldsymbol{\lambda \textbf{P}}} \ar@{-}[ur]
+}
+$$
+
+
+
+
+
+
+| 体系の名前 | (∗,∗) | (◻,∗) | (∗,◻) | (◻,◻) | 等価な型システム              | 対応する論理体系 |
+| ---------- | ----- | ----- | ----- | ----- | ----------------------------- | ---------------- |
+| λ→         | 〇    | ×     | ×     | ×     | 単純型付きλ計算               | 命題論理         |
+| λ2         | 〇    | 〇    | ×     | ×     | system F                      | 2階命題論理      |
+| λP         | 〇    | ×     | 〇    | ×     | Logical Framework (LF)        | 述語論理         |
+| λω―        | 〇    | ×     | ×     | 〇    |                               | 弱高階命題論理   |
+| λP2        | 〇    | 〇    | 〇    | ×     |                               | 2階述語論理      |
+| λω         | 〇    | 〇    | ×     | 〇    | system Fω                     | 高階命題論理     |
+| λPω―       | 〇    | ×     | 〇    | 〇    |                               | 弱高階述語論理   |
+| λC         | 〇    | 〇    | 〇    | 〇    | Calculus of Construction (CC) | 高階述語論理     |
+
+- https://liewecmays.net/articles/pure-type-system_lambda-cube
+
+### ----------------------------------------------
+
 Lambda 立方体（Lambda Cube）是一种用于表示不同类型系统间关系的模型，由 Henk Barendregt 提出。它主要用于研究和分类各种类型系统，特别是那些在函数式编程语言如 Haskell 中使用的系统。Lambda 立方体中的每一个维度代表类型系统能表达的一种能力。
 
 Lambda 立方体有三个维度，分别是：
@@ -23,6 +66,90 @@ Lambda 立方体有三个维度，分别是：
 这三个维度一起作用，形成了一个非常强大的类型系统框架，允许语言设计者和程序员根据需要定义更加丰富和复杂的类型。在 Lambda 立方体中，每个顶点都代表了这三个维度的一种组合，可以描述具有相应类型系统特征的编程语言。例如，简单的类型化 Lambda 演算（如 Java 中的方法类型系统）就位于立方体的一个角落，而更复杂的系统，如允许依赖类型的语言，则可能位于立方体的另一个角落。
 
 ![bcf6afc886daf30a921a8ac885feb5a1](https://p.ipic.vip/wnijcv.png)
+
+**基本类型**（$\star$）和**类型变量**（$\square$）是类型系统中的核心概念，它们帮助我们理解类型构造和多态性在编程语言中的角色。让我们分别从两个方面来解释这两个符号，并通过相关例子说明它们在不同类型系统中的应用。
+
+### 1. 基本类型（$\star$）
+
+**基本类型**，也称为*具体类型*，是编程语言中最基础、最直接的类型。它们通常表示可以直接使用的值类型，比如整数、布尔值、字符串等。在类型论的符号中，$\star$ 是用来表示基本类型的。
+
+#### 例子：
+- 在 Haskell 或 OCaml 中，`Int`、`Bool` 就是具体类型，这些类型表示的值都是程序中可以直接操作的数据。
+
+```haskell
+-- 一个接受整数并返回整数的函数，参数类型和返回值类型都是基本类型
+addOne :: Int -> Int
+addOne x = x + 1
+```
+
+在这个例子中，`Int` 是一种基本类型，它可以被实例化为具体的值。
+
+### 2. 类型变量（$\square$）
+
+**类型变量**（或多态类型）允许类型抽象化，用来表示某种类型，但不指定其具体类型。它在泛型和多态系统中被广泛使用。类型变量使得我们可以编写能够适用于多种类型的函数或数据结构。在类型论的符号中，$\square$ 被用来表示类型变量。
+
+#### 例子：
+- 在 Haskell 中，类型变量通常用小写字母表示，例如 `a`、`b` 等。
+
+```haskell
+-- 这是一个多态函数 identity，它适用于任意类型
+identity :: a -> a
+identity x = x
+```
+
+在这个例子中，`a` 是一个类型变量，它可以代表任意类型。这个函数可以用于任何类型的输入，并返回相同类型的输出。这使得 `identity` 变得更加通用。
+
+### 3. 类型构造与两者的结合
+
+**类型构造器**可以将基本类型或类型变量作为输入，并生成新的类型。类型构造器可以是高阶的，即可以接受类型本身作为参数。
+
+#### 例子：
+- 在 Haskell 中，`Maybe` 是一个类型构造器，它接受一个类型（可以是 $\star$ 或 $\square$）作为参数，并返回一个新的类型。
+
+```haskell
+-- Maybe 类型构造器，接受一个类型参数并返回一个新的类型
+maybeInt :: Maybe Int
+maybeInt = Just 5
+
+maybeString :: Maybe String
+maybeString = Nothing
+```
+
+在这个例子中，`Maybe Int` 是用 `Int` 这样的基本类型构造的具体类型，而 `Maybe a` 是用类型变量 `a` 构造的多态类型。
+
+### 4. 基本类型与类型变量的对比
+
+| **概念**     | **符号**  | **定义**                                               | **例子**                          |
+| ------------ | --------- | ------------------------------------------------------ | --------------------------------- |
+| **基本类型** | $\star$   | 直接表示可操作的具体类型，例如整数、布尔值、字符串等。 | `Int`、`Bool`                     |
+| **类型变量** | $\square$ | 表示抽象类型或泛型类型，用来定义通用的类型和多态函数。 | `a`（在 `identity :: a -> a` 中） |
+
+### 5. 结合应用的理解
+
+在高级类型系统（如 Haskell）中，$\star$ 和 $\square$ 结合使用可以构造非常复杂的类型。通过类型构造器，函数和数据结构能够接受类型参数，使得它们既可以应用于具体的基本类型，也可以应用于抽象的类型变量。
+
+#### 例子：
+```haskell
+-- Functor 是一个高阶类型构造器，它接受一个类型构造器并作用于任意类型
+class Functor f where
+  fmap :: (a -> b) -> f a -> f b
+
+instance Functor Maybe where
+  fmap _ Nothing = Nothing
+  fmap f (Just x) = Just (f x)
+```
+
+在这个例子中，`f` 是一个类型变量，它本身是一个类型构造器（可以是 `Maybe`、`[]` 等），而 `a` 和 `b` 是普通的类型变量。`Maybe` 接受基本类型 `Int` 或类型变量 `a` 来生成新的类型。
+
+### 6. 总结
+
+- **基本类型**（$\star$）是程序中直接操作的具体类型，如整数和布尔值。
+- **类型变量**（$\square$）允许类型抽象化，能够用于编写通用的多态函数和数据结构。
+- 通过**类型构造器**，可以将基本类型和类型变量结合，构造出复杂的高阶类型和多态结构。
+
+这些概念是理解类型系统的核心，特别是在泛型和高阶类型编程中，它们有助于增强程序的灵活性和可复用性。
+
+### ---------------------------
 
 要详解类型系统表中的八个系统，我们需要理解每个系统如何扩展了基本的简单类型λ演算（Simply Typed Lambda Calculus，STLC）。以下是每个系统的详细解释：
 
@@ -68,190 +195,5 @@ Lambda 立方体有三个维度，分别是：
 
 这些系统通过扩展基本类型λ演算，逐步增加了类型多态性、类型构造器和类型依赖性，使得类型系统能够表示更复杂的类型和逻辑关系。这些扩展使得编程语言能够更强大地表达和验证程序的正确性。
 
+### -----------------------------
 
-
-为了详细解释 lambda 立方体的每个节点和路径，并结合具体编程语言（如 Kotlin）中的例子，我们将逐步解释每个类型系统的特性，详细说明每个例子是如何结合多态性、类型构造器和依赖性的。
-
-### 1. 简单类型 λ 演算 (\(\lambda\))
-
-#### 示例：
-```kotlin
-// 简单类型示例
-fun id(x: Int): Int = x
-
-// 使用示例
-val result = id(42) // result 是 42
-```
-
-- **依赖关系：**
-  - 值 `x` 依赖于类型 `Int`
-  - 函数 `id` 的返回类型依赖于 `x` 的类型 `Int`
-  
-### 2. 函数类型 (\($\lambda \rightarrow$\))
-
-#### 示例：
-```kotlin
-// 函数类型示例
-fun isEven(x: Int): Boolean = x % 2 == 0
-
-// 使用示例
-val check = isEven(4) // check 是 true
-```
-
-- **依赖关系：**
-  - 值 `x` 依赖于类型 `Int`
-  - 函数 `isEven` 的返回类型依赖于 `x` 的类型 `Int`
-  - 返回值 `Boolean` 依赖于函数体中的计算结果
-
-### 3. 系统 F（多态性，\($\lambda 2$\)）
-
-#### 示例：
-```kotlin
-// 多态类型示例
-fun <T> identity(x: T): T = x
-
-// 使用示例
-val intId = identity(42)      // intId 是 42
-val strId = identity("hello") // strId 是 "hello"
-```
-
-- **依赖关系：**
-  - 值 `x` 依赖于类型参数 `T`
-  - 函数 `identity` 的返回类型依赖于类型参数 `T`
-  - 类型 `T` 可以是任何类型，体现了多态性
-
-### 4. 高阶类型（类型构造器，\($\lambda \omega$\)）
-
-#### 示例：
-```kotlin
-// 类型构造器示例
-fun <A, B> map(list: List<A>, f: (A) -> B): List<B> {
-    return list.map(f)
-}
-
-// 使用示例
-val nums = listOf(1, 2, 3)
-val strs = map(nums) { it.toString() } // strs 是 ["1", "2", "3"]
-```
-
-- **依赖关系：**
-  - 值 `list` 依赖于类型 `List<A>`
-  - 函数 `f` 依赖于类型 `A -> B`
-  - 函数 `map` 的返回类型依赖于类型 `List<B>`
-  - 类型 `A` 和 `B` 是参数化的，可以是任何类型
-
-### 5. 依赖类型（\(\lambda \Pi\)）【云里雾里】
-
-#### 示例：
-```kotlin
-// 模拟依赖类型的示例
-sealed class Vec<out T> {
-    object Nil : Vec<Nothing>()
-    data class Cons<T>(val head: T, val tail: Vec<T>) : Vec<T>()
-}
-
-fun <T> length(vec: Vec<T>): Int = when (vec) {
-    is Vec.Nil -> 0
-    is Vec.Cons -> 1 + length(vec.tail)
-}
-
-// 使用示例
-val vec = Vec.Cons(1, Vec.Cons(2, Vec.Cons(3, Vec.Nil)))
-val len = length(vec) // len 是 3
-```
-
-- **依赖关系：**
-  - 值 `head` 依赖于类型参数 `T`
-  - 值 `tail` 依赖于类型 `Vec<T>`
-  - 函数 `length` 的返回值依赖于递归计算
-
-### 6. 系统 Fω（多态性和类型构造器，\(\lambda 2 \rightarrow\)）
-
-#### 示例：
-```kotlin
-// 结合多态性和类型构造器的示例
-fun <A, B> flatMap(list: List<A>, f: (A) -> List<B>): List<B> {
-    return list.flatMap(f)
-}
-
-// 使用示例
-val nums = listOf(1, 2, 3)
-val listOfLists = flatMap(nums) { listOf(it, it * 2) } // listOfLists 是 [1, 2, 2, 4, 3, 6]
-```
-
-- **依赖关系：**
-  - 值 `list` 依赖于类型 `List<A>`
-  - 函数 `f` 依赖于类型 `A -> List<B>`
-  - 函数 `flatMap` 的返回类型依赖于类型 `List<B>`
-
-### 7. 构造计算（多态性和依赖类型，\(\lambda \Pi 2\)）
-
-#### 示例：
-```kotlin
-// 模拟多态性和依赖类型的示例
-sealed class Either<out A, out B> {
-    data class Left<out A>(val value: A) : Either<A, Nothing>()
-    data class Right<out B>(val value: B) : Either<Nothing, B>()
-}
-
-fun <A, B, C> either(e: Either<A, B>, f: (A) -> C, g: (B) -> C): C = when (e) {
-    is Either.Left -> f(e.value)
-    is Either.Right -> g(e.value)
-}
-
-// 使用示例
-val left = Either.Left(42)
-val right = Either.Right("hello")
-val leftResult = either(left, { it * 2 }, { it.length }) // leftResult 是 84
-val rightResult = either(right, { it * 2 }, { it.length }) // rightResult 是 5
-```
-
-- **依赖关系：**
-  - 值 `value` 依赖于类型参数 `A` 或 `B`
-  - 函数 `either` 的返回类型依赖于函数 `f` 和 `g` 的结果类型 `C`
-  - 类型 `A` 和 `B` 可以是任意类型，体现了多态性
-
-### 8. 扩展构造计算（所有特性，\(\lambda \Pi \omega\)）
-
-#### 示例：
-```kotlin
-// 模拟所有特性的示例
-sealed class Expr {
-    data class Var(val name: String) : Expr()
-    data class Abs(val param: String, val body: Expr) : Expr()
-    data class App(val func: Expr, val arg: Expr) : Expr()
-}
-
-fun eval(env: Map<String, Int>, expr: Expr): Int = when (expr) {
-    is Expr.Var -> env[expr.name] ?: error("Undefined variable")
-    is Expr.Abs -> error("Cannot evaluate an abstraction directly")
-    is Expr.App -> {
-        val func = eval(env, expr.func)
-        val arg = eval(env, expr.arg)
-        func + arg // Simplified for illustration; real implementation would be more complex
-    }
-}
-
-// 使用示例
-val env = mapOf("x" to 1, "y" to 2)
-val expr = Expr.App(Expr.Var("x"), Expr.Var("y"))
-val result = eval(env, expr) // result 是 3
-```
-
-- **依赖关系：**
-  - 值 `name` 依赖于类型 `String`
-  - 值 `param` 和 `body` 依赖于类型 `String` 和 `Expr`
-  - 函数 `eval` 的返回类型依赖于表达式的计算结果
-  - 类型 `Expr` 依赖于具体的表达式子类型
-
-### 总结
-
-通过这些详细的Kotlin示例，我们可以看到不同类型系统的特点和它们之间的关系。Lambda立方体展示了从简单类型到最复杂类型系统的逐步演进。每个节点增加了新的类型特性，使得类型系统更加丰富和强大。希望这些示例能够帮助你更好地理解这些概念。
-
-### 如何结合多态、类型构造器和依赖性
-
-- **多态性**：通过类型参数化（泛型）实现，可以适应多种类型。
-- **类型构造器**：通过高阶类型（如List、Map）实现，可以构造复杂的类型。
-- **依赖性**：通过依赖类型和递归函数实现，类型可以依赖于值，值也可以依赖于类型。
-
-这些特性相互结合，使得编程语言在类型表达能力上非常强大，有助于捕捉程序中的潜在错误。
