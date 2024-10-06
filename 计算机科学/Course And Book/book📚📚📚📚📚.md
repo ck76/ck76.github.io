@@ -204,11 +204,13 @@
   - 202410
 - TAPL 类型和程序设计语言 Types and Programming Languages
 
+  - [Github code](https://github.com/ck76/TAPL-mspertus)
   - 20240928 ：第一部分：无类型系统
   - 20240929 ：7 An ML Implementation of the Lambda-Calculus(de bruijn index)
-  - 20241001 ：
-  - 20241002：
+  - 20241006 ：第二部分：简单类型
+  - 2024100：第三部分：子类型
   - 202410
+  
 - ML程序设计教程
 
   - ①2024090
