@@ -9,6 +9,19 @@ The Formal Semantics of Programming Languages An Introduction Glynn Winskel
 
 
 ```
+用一段详细的话帮我把整本书的脉络穿起来。《The Formal Semantics of Programming Languages An Introduction 》Glynn Winskel
+```
+
+```
+给我从宏观来整体讲解以下这个本书《The Formal Semantics of Programming Languages An Introduction 》Glynn Winskel,宏观讲解，全局理解。
+这都是很重要的内容，不要省略任何！！！
+```
+
+
+
+
+
+```
 我正在阅读一本书《The Formal Semantics of Programming Languages An Introduction 》Glynn Winskel 。请以超出原文的详细程度帮我理解其内容，我是一个初学者，没有相关知识背景，所以请你讲解的时候全面，不要偷懒，通俗易懂。按顺序一点一点讲解，不要省略任何内容。我可能给你英文的问题，但是请中文回答我。关键术语用中文（英语）格式。
 
 这些都是很重要的内容，不要省略任何。都是很重要的内容！！！

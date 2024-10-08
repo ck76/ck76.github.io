@@ -159,9 +159,7 @@
   - ①20240822
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
   - ①20240823~20240828
-  - ②【TODO】ChatGPT
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
-
   - ①20240823-ChatGPT比普通翻译器强太多
   - 20240901 : 第1-5章
   - 20240907 : 第6-10章
@@ -210,9 +208,14 @@
   - 20241006 ：第二部分：简单类型
   - 202410：第三部分：子类型
   - 202410
-  
 - 程序员的范畴论
-- 
+- [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
+- [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
+- [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
+- Type and Proof-类型和证明
+
+  - 
+
 - ML程序设计教程
   - ①2024090
 - Compiling with continuations
@@ -222,7 +225,6 @@
 - LLVM
 
   - [Tutorial](https://llvm.org/docs/tutorial/)
-
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
@@ -231,8 +233,18 @@
   - ①2024090
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
   - ①202409~
-- Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
+- [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
+- Category Theory for Computing Science (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
 
+  - 
+
+- Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
+- Proofs and Types (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
+- Structure and Interpretation of Computer Programs (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
+
+  - Structure and Interpretation of Computer Programs, 2nd ed..pdf 带目录
+
+- Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
   - ①202409~
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
@@ -254,14 +266,11 @@
 - Go语言底层原理剖析【文字版】
 
   - 是个轮廓
-
 - Go程序员面试笔试宝典
 - Go 1.5 源码剖析
 
   - 看不看都行
-
 - 
-
 - Go语言高级编程
   - 看不看都行
 - 网络是怎样连接的
@@ -273,27 +282,27 @@
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
+- 鲸书🐳📚
+- 虎书🐯📚 Concepts in Programming Languages John C. Mitchell
+- 龙书🐲📚
 - 
-- *Structure and Interpretation of Computer Programs* (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
-- *Category Theory for Computing Science* (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
-- *Proofs and Types* (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
-- *Type Theory and Functional Programming* (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
+- Design Concepts in Programming Languages 
+- Theories of Programming Languages
+- Syntax and Semantics of Programming Languages
+- 
+- 
+- 
 - *Certified Programming with Dependent Types* (**CPDT**) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
-- *Homotopy Type Theory* (**HoTT**) (by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
-- [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
-
-  - 
-
+- *Homotopy Type Theory* (**HoTT**) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 - 魔力Haskell
   - ①2024080 第二部分 116页
   - 2024
 - [Think with Types](https://thinkingwithtypes.com/)
 
   - github [thinking-with-types](https://github.com/isovector/thinking-with-types)
-
 - Haskell趣学指南
   - 
-- [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
+- [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc
 - 主流编程语言Compilers 代码库
   - OCaml
@@ -307,7 +316,6 @@
   - Python
   - Scheme
   - Kotlin
-
 - miniXXX
 - 
 - https://plzoo.andrej.com/
@@ -322,23 +330,25 @@
   - ①
 - 程序设计语言的形式语义 (Glynn Winskel)  The Formal Semantics of Programming Languages
   - ①202409【TODO】
-- 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    Foundations for Programming Languages
+- 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    
   - ①202409【TODO】
 - 程序设计语言理论, 第二版 (陈意云, 张昱)  
 
   - ①202409【TODO】
-
 - 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
   - ①
 - [程序设计语言——原理和实践 Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  黄林鹏译](http://find.nlc.cn/search/showDocDetails?docId=-3476831687557735465&dataSource=ucs01&query=%09%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E8%B7%B5)
+
+  - Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  没找到带目录的
   - 没找到中文pdf ：<
+
 - 程序设计语言原理 (（美）賽巴斯塔（Sebesta，R.W.）)   Concepts of Programming Languages 第十版
   - ①202409【TODO】
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
 
 
 
-- Rust 编译器开发指南-官方文档
+- 
 
 
 
