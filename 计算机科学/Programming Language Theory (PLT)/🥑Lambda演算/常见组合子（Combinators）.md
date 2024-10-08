@@ -6,42 +6,42 @@
 
 #### 1. I 组合子（Identity Combinator）
 - **名字来源**：Identity（身份）的首字母。
-- **定义**：\[ I = \lambda x . x \]
+- **定义**：$$ I = \lambda x . x$$
 - **作用**：返回自身。是最简单的组合子，用于保持输入不变。
 
 #### 2. K 组合子（Kestrel Combinator）
 - **名字来源**：鸟类“Kestrel”（隼）的首字母，名字来自Combinatory Logic中的传统命名。
-- **定义**：\[ K = \lambda x . \lambda y . x \]
+- **定义**：$$ K = \lambda x . \lambda y . x$$
 - **作用**：忽略第二个参数，返回第一个参数。
 
 #### 3. S 组合子（Starling Combinator）
 - **名字来源**：鸟类“Starling”（椋鸟）的首字母，名字来自Combinatory Logic中的传统命名。
-- **定义**：\[ S = \lambda x . \lambda y . \lambda z . (xz)(yz) \]
+- **定义**：$$ S = \lambda x . \lambda y . \lambda z . (xz)(yz)$$
 - **作用**：分配应用，将参数传递给两个函数并将结果组合。
 
 #### 4. B 组合子（Bluebird Combinator）
 - **名字来源**：鸟类“Bluebird”（蓝知更鸟）的首字母，名字来自Combinatory Logic中的传统命名。
-- **定义**：\[ B = \lambda f . \lambda g . \lambda x . f (g x) \]
+- **定义**：$$ B = \lambda f . \lambda g . \lambda x . f (g x)$$
 - **作用**：函数组合，将一个函数的输出作为另一个函数的输入。
 
 #### 5. C 组合子（Cardinal Combinator）
 - **名字来源**：鸟类“Cardinal”（红雀）的首字母，名字来自Combinatory Logic中的传统命名。
-- **定义**：\[ C = \lambda f . \lambda x . \lambda y . f y x \]
+- **定义**：$$ C = \lambda f . \lambda x . \lambda y . f y x$$
 - **作用**：交换函数的两个参数。
 
 #### 6. W 组合子（Warbler Combinator）
 - **名字来源**：鸟类“Warbler”（莺）的首字母，名字来自Combinatory Logic中的传统命名。
-- **定义**：\[ W = \lambda f . \lambda x . f x x \]
+- **定义**：$$ W = \lambda f . \lambda x . f x x$$
 - **作用**：将同一个参数传递给函数两次。
 
 #### 7. Y 组合子（Y Combinator）
 - **名字来源**：不动点组合子（Fixed-point Combinator），名字可能与形状类似有关。
-- **定义**：\[ Y = \lambda f . (\lambda x . f (x x)) (\lambda x . f (x x)) \]
+- **定义**：$$ Y = \lambda f . (\lambda x . f (x x)) (\lambda x . f (x x))$$
 - **作用**：用于定义递归函数。
 
 #### 8. M 组合子（Mockingbird Combinator）
 - **名字来源**：鸟类“Mockingbird”（知更鸟）的首字母，名字来自Combinatory Logic中的传统命名。
-- **定义**：\[ M = \lambda f . f f \]
+- **定义**：$$ M = \lambda f . f f$$
 - **作用**：将函数应用于自身。
 
 ### 总结

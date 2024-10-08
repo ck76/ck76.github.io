@@ -439,7 +439,7 @@ C 实现 C++ 的面向对象特性（封装、继承、多态）
 - 继承：结构体嵌套
 - 多态：父类与子类方法的函数指针不同
 
-> [Can you write object-oriented code in C? [closed\]](https://stackoverflow.com/a/351745)
+> [Can you write object-oriented code in C? [closed$$](https://stackoverflow.com/a/351745)
 
 ### explicit（显式）关键字
 

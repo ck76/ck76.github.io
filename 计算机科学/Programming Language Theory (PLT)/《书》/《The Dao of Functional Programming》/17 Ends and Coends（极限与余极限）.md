@@ -1367,7 +1367,7 @@ instance (Functor f, Functor g) => Functor (Day f g) where
 
 ```haskell
 assoc :: Day f (Day g h) x -> Day (Day f g) h x
-assoc (Day f fa (Day g gb hc)) = Day (\(a, (b, c)) -> f (a, g (b, c))) (Day id fa gb) hc
+assoc (Day f fa (Day g gb hc)) = Day ($a, (b, c)) -> f (a, g (b, c))) (Day id fa gb) hc
 ```
 
 - 这里，我们将 `Day f (Day g h)` 中的嵌套结构解开，通过关联性转换为 `Day (Day f g) h` 的形式。
@@ -1566,7 +1566,7 @@ app (f, a) = f a
 ```haskell
 instance Functor f => Functor (FreeA f) where
   fmap f (DoneA x) = DoneA (f x)
-  fmap f (MoreA abx fa frb) = MoreA (\(a, b) -> f (abx (a, b))) fa (fmap f frb)
+  fmap f (MoreA abx fa frb) = MoreA ($a, b) -> f (abx (a, b))) fa (fmap f frb)
 ```
 
 这个 `Functor` 实例通过递归遍历 `FreeA` 的结构，将函数 `f` 应用于 `DoneA` 或 `MoreA` 中的值。

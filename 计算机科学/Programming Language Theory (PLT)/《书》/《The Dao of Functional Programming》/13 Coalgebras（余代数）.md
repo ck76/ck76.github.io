@@ -123,13 +123,13 @@ split (n : ns) = NodeF n left right
 
 给定两个余代数 $(a, \alpha)$ 和 $(b, \beta)$，**余代数态射**是一个箭头 $f : a \to b$，使得以下图交换：
 
-\[
+$$
 \begin{array}{c}
 a \xrightarrow{f} b \\
 \downarrow_{\alpha} \quad \downarrow_{\beta} \\
 F a \xrightarrow{F f} F b
 \end{array}
-\]
+$$
 
 这意味着无论是先通过箭头 $f$ 映射载体，再应用余代数 $\beta$，还是先应用余代数 $\alpha$ 再通过 $F f$ 映射到目标，结果都是相同的。
 
@@ -151,9 +151,9 @@ $$
 
 在余代数和代数的范畴中，存在一个从初代数到终余代数的唯一态射。这个态射 $\rho$ 嵌入了初代数的载体到终余代数的载体。在集合范畴中，初代数的载体集合是终余代数的载体集合的子集。这个唯一的态射 $\rho$ 将初代数嵌入终余代数：
 
-\[
+$$
 \rho: \mu F \to \nu F
-\]
+$$
 
 这个态射可以视为将一个递归结构的“最小表示”映射到其“最大表示”。例如，在集合范畴中，初代数的载体可能是有限深度的结构，而终余代数的载体则可以表示为无限深度的结构。
 
@@ -182,13 +182,13 @@ data Fix f where
 
 终余代数 $(t, \tau)$ 通过其**泛性质**（universal property）定义：对任何余代数 $(a, \alpha)$，存在一个唯一的余代数态射 $h : a \to t$，使得如下图所示的交换图成立：
 
-\[
+$$
 \begin{array}{c}
 a \xrightarrow{h} t \\
 \downarrow_{\alpha} \quad \downarrow_{\tau} \\
 F a \xrightarrow{F h} F t
 \end{array}
-\]
+$$
 
 这个唯一的余代数态射 $h$ 被称为**异态射 (Anamorphism)**。作为一个余代数态射，它通过 $\alpha$ 和 $\tau$ 的递归结构定义，并遵循 Lambek 引理的对偶性。
 

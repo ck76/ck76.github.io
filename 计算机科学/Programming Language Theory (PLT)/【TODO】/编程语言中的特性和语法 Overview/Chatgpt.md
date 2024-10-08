@@ -159,7 +159,7 @@
 
     func main() {
         let sum = add(a: 10, b: 20)
-        print("Sum: \(sum)") // 输出: Sum: 30
+        print("Sum: $sum)") // 输出: Sum: 30
 
         // 需要重载或使用泛型以支持不同类型
     }

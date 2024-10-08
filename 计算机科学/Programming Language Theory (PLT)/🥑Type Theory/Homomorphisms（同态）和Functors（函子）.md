@@ -10,11 +10,11 @@
 同态是两个代数结构之间的映射，该映射保持结构的操作。例如，对于群、环或向量空间，同态是一种保持这些结构操作（如加法、乘法）的映射。
 
 #### 形式定义
-设 \( (G, *) \) 和 \( (H, \cdot) \) 是两个群，同态是一个函数 \( f: G \rightarrow H \)，满足对于所有 \( a, b \in G \)，有：
-\[ f(a * b) = f(a) \cdot f(b) \]
+设$(G, *)$和$(H, \cdot)$是两个群，同态是一个函数$f: G \rightarrow H $，满足对于所有$a, b \in G $，有：
+$$ f(a * b) = f(a) \cdot f(b)$$
 
 #### 例子
-- **群同态**：如果 \( f: (Z, +) \rightarrow (Z, +) \) 是定义为 \( f(x) = 2x \) 的函数，那么 \( f \) 是一个群同态，因为对于所有的整数 \( a \) 和 \( b \) 有 \( f(a + b) = 2(a + b) = 2a + 2b = f(a) + f(b) \)。
+- **群同态**：如果$f: (Z, +) \rightarrow (Z, +)$是定义为$f(x) = 2x$的函数，那么$f$是一个群同态，因为对于所有的整数$a$和$b$有$f(a + b) = 2(a + b) = 2a + 2b = f(a) + f(b) $。
 
 #### 应用
 同态广泛应用于代数结构的研究中，通过同态可以将复杂结构简化为已知结构，从而更容易分析和解决问题。
@@ -25,18 +25,18 @@
 函子是范畴论中的一个概念，它描述了从一个范畴到另一个范畴的映射。一个函子不仅映射对象（objects），还映射态射（morphisms），并且保持范畴结构。
 
 #### 形式定义
-设 \( \mathcal{C} \) 和 \( \mathcal{D} \) 是两个范畴，函子 \( F \) 是一个映射，定义如下：
-- 对于每个对象 \( X \in \mathcal{C} \)，有一个对象 \( F(X) \in \mathcal{D} \)。
-- 对于每个态射 \( f: X \rightarrow Y \in \mathcal{C} \)，有一个态射 \( F(f): F(X) \rightarrow F(Y) \in \mathcal{D} \)。
+设$\mathcal{C}$和$\mathcal{D}$是两个范畴，函子$F$是一个映射，定义如下：
+- 对于每个对象$X \in \mathcal{C} $，有一个对象$F(X) \in \mathcal{D} $。
+- 对于每个态射$f: X \rightarrow Y \in \mathcal{C} $，有一个态射$F(f): F(X) \rightarrow F(Y) \in \mathcal{D} $。
 
 此外，函子必须满足：
-1. 恒等态射保持：\( F(id_X) = id_{F(X)} \)。
-2. 态射的复合保持：对于所有 \( f: X \rightarrow Y \) 和 \( g: Y \rightarrow Z \)，有 \( F(g \circ f) = F(g) \circ F(f) \)。
+1. 恒等态射保持：$ F(id_X) = id_{F(X)} $。
+2. 态射的复合保持：对于所有$f: X \rightarrow Y$和$g: Y \rightarrow Z $，有$F(g \circ f) = F(g) \circ F(f) $。
 
 #### 例子
-- **集合函子**：从集合范畴到自身的幂集函子 \( P \)，定义为：
-  - 对于每个集合 \( X \)，令 \( P(X) \) 为 \( X \) 的幂集。
-  - 对于每个函数 \( f: X \rightarrow Y \)，令 \( P(f): P(X) \rightarrow P(Y) \) 为映射 \( P(f)(A) = f[A] \)，其中 \( A \subseteq X \)，\( f[A] \) 为 \( Y \) 中 \( f \) 的像。
+- **集合函子**：从集合范畴到自身的幂集函子$P $，定义为：
+  - 对于每个集合$X $，令$P(X)$为$X$的幂集。
+  - 对于每个函数$f: X \rightarrow Y $，令$P(f): P(X) \rightarrow P(Y)$为映射$P(f)(A) = f[A] $，其中$A \subseteq X $，$ f[A]$为$Y$中$f$的像。
 
 #### 应用
 函子在范畴论中广泛应用，特别是在数学的各个领域，如代数、拓扑和几何。它们在计算机科学中也很重要，尤其是在函数式编程中，如 Haskell 中的 Functor 类。

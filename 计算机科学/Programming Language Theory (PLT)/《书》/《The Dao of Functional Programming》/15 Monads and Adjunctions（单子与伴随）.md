@@ -1120,7 +1120,7 @@ Monad 变换器是一种将多个效果组合到同一 monad 中的机制。通�
 
 #### 1. **柯里化伴随与 State Monad**
 
-`StateT` 来自 **柯里化伴随** (currying adjunction)。左函子 \( L_s \) 表示乘积函子，它将类型 \( a \) 转换为 \( (a, s) \)，即一个带有状态 \( s \) 的元组。右函子 \( R_s \) 表示指数函子 (exponential functor)，它将 \( c \) 转换为 \( s \to c \)，这也被称为 **读者函子** (Reader functor)。
+`StateT` 来自 **柯里化伴随** (currying adjunction)。左函子$L_s$表示乘积函子，它将类型$a$转换为$(a, s) $，即一个带有状态$s$的元组。右函子$R_s$表示指数函子 (exponential functor)，它将$c$转换为$s \to c $，这也被称为 **读者函子** (Reader functor)。
 
 在 Haskell 中，`StateT` 的定义如下：
 
@@ -1128,12 +1128,12 @@ Monad 变换器是一种将多个效果组合到同一 monad 中的机制。通�
 newtype StateT s m a = StateT { runStateT :: s -> m (a, s) }
 ```
 
-- 这里，`StateT` 是一个带有状态 \( s \) 的 monad 变换器，它与任意的 monad \( m \) 结合使用。
-- `runStateT` 是用于运行状态 monad 的函数，它接受一个初始状态 \( s \) 并返回一个 monadic 结果 \( m (a, s) \)。
+- 这里，`StateT` 是一个带有状态$s$的 monad 变换器，它与任意的 monad$m$结合使用。
+- `runStateT` 是用于运行状态 monad 的函数，它接受一个初始状态$s$并返回一个 monadic 结果$m (a, s) $。
 
 #### 2. **单位元 (unit)**
 
-`StateT` 的 `return` 函数是单位元 \( \eta \)，它表示将一个值引入到状态计算中，而不会改变状态。公式为：
+`StateT` 的 `return` 函数是单位元$\eta $，它表示将一个值引入到状态计算中，而不会改变状态。公式为：
 
 $$
 \eta_a = R(\eta_i L_a) \circ \eta_o
@@ -1145,8 +1145,8 @@ $$
 return x = StateT (\s -> return (x, s))
 ```
 
-- `return x` 创建了一个新的状态计算，该计算接收初始状态 \( s \)，并将其作为不变的状态返回，同时输出值 \( x \)。
-- 公式中的 \( \eta_i \) 是内在 monad 的 `return`，将值封装到 monad 中；而 \( \eta_o \) 是柯里化构造函数 `unit`，即状态不会改变。
+- `return x` 创建了一个新的状态计算，该计算接收初始状态$s $，并将其作为不变的状态返回，同时输出值$x $。
+- 公式中的$\eta_i$是内在 monad 的 `return`，将值封装到 monad 中；而$\eta_o$是柯里化构造函数 `unit`，即状态不会改变。
 
 #### 3. **乘法 (multiplication)**
 
@@ -1164,7 +1164,7 @@ join mma = StateT (join . fmap (uncurry runStateT) . runStateT mma)
 ```
 
 - `join mma` 接受一个嵌套的状态计算，将其展平为单一的计算。
-- `runStateT mma` 将数据构造函数 `StateT` 剥离出来，得到函数类型 \( s \to m (StateT s m a, s) \)。
+- `runStateT mma` 将数据构造函数 `StateT` 剥离出来，得到函数类型$s \to m (StateT s m a, s) $。
 - `uncurry runStateT` 将结果从嵌套状态中解包，并合并为单一状态。
 
 #### 4. **使用 `StateT` 结合其他 Monad**
@@ -1218,56 +1218,56 @@ type State s a = StateT s Identity a
 在编程中，monad 的**单位元**和**乘法**为我们提供了从值生成 monadic 表达式以及组合 monadic 表达式的方法，而代数提供了评估这些表达式的规则。
 
 #### 单位元与代数
-假设我们有一个 monad \( T \)，并且我们正在寻找它的代数 \( (\alpha: T a \to a) \)，其中 \( a \) 是代数的载体类型。代数 \( \alpha \) 应该与 monad 的单位元 \( \eta \) 兼容，也就是说，它应该满足以下条件：
+假设我们有一个 monad$T $，并且我们正在寻找它的代数$(\alpha: T a \to a) $，其中$a$是代数的载体类型。代数$\alpha$应该与 monad 的单位元$\eta$兼容，也就是说，它应该满足以下条件：
 
 $$
 \alpha \circ \eta_a = \text{id}_a
 $$
 
-这个等式的意思是：将值 \( a \) 封装到 monad \( T a \) 中，再通过代数 \( \alpha \) 评估它时，应该得到原来的值 \( a \)。
+这个等式的意思是：将值$a$封装到 monad$T a$中，再通过代数$\alpha$评估它时，应该得到原来的值$a $。
 
 #### 乘法与代数
-monad 的乘法 \( \mu \) 用于将嵌套的 monadic 表达式 \( T (T a) \) 扁平化为 \( T a \)。对于代数来说，也有类似的要求，即代数应该能够直接评估嵌套的表达式：
+monad 的乘法$\mu$用于将嵌套的 monadic 表达式$T (T a)$扁平化为$T a $。对于代数来说，也有类似的要求，即代数应该能够直接评估嵌套的表达式：
 
 $$
 \alpha \circ \mu_a = \alpha \circ T \alpha
 $$
 
-这里的意思是：我们可以先用 \( T \alpha \) 对每个 monadic 表达式进行代数映射，然后再通过 \( \alpha \) 扁平化结果，或者直接扁平化嵌套的表达式再应用 \( \alpha \)，两者的结果应该是相同的。
+这里的意思是：我们可以先用$T \alpha$对每个 monadic 表达式进行代数映射，然后再通过$\alpha$扁平化结果，或者直接扁平化嵌套的表达式再应用$\alpha $，两者的结果应该是相同的。
 
 ### 2. **Monad 代数的定义**
 
-**Monad 代数** 是配备了一个箭头 \( \alpha: T a \to a \) 的对象 \( a \)，它满足以下两个交换图：
+**Monad 代数** 是配备了一个箭头$\alpha: T a \to a$的对象$a $，它满足以下两个交换图：
 
 #### 单位定律
 $$
 \alpha \circ \eta_a = \text{id}_a
 $$
 
-这个定律要求代数的结构映射 \( \alpha \) 与 monad 的单位元 \( \eta \) 兼容。也就是说，代数应该对 monadic 单元没有任何作用。
+这个定律要求代数的结构映射$\alpha$与 monad 的单位元$\eta$兼容。也就是说，代数应该对 monadic 单元没有任何作用。
 
 #### 乘法定律
 $$
 \alpha \circ \mu_a = \alpha \circ T \alpha
 $$
 
-这个定律要求代数结构映射 \( \alpha \) 对 monad 的嵌套表达式处理是一致的。
+这个定律要求代数结构映射$\alpha$对 monad 的嵌套表达式处理是一致的。
 
 这些图表确保了 monad 的 algebra 可以正确处理通过 monad 生成的表达式，并且这种处理方式与 monad 的单位元和乘法操作兼容。
 
 ### 3. **Monad 代数的态射**
 
-在范畴论中，**代数态射**是代数之间的箭头，它保持代数的结构。对于 monad \( T \) 的两个代数 \( (\alpha: T a \to a) \) 和 \( (\beta: T b \to b) \)，代数态射是满足以下交换图的箭头 \( f: a \to b \)：
+在范畴论中，**代数态射**是代数之间的箭头，它保持代数的结构。对于 monad$T$的两个代数$(\alpha: T a \to a)$和$(\beta: T b \to b) $，代数态射是满足以下交换图的箭头$f: a \to b $：
 
 $$
 \beta \circ T f = f \circ \alpha
 $$
 
-这意味着 \( f \) 不仅是 \( a \) 到 \( b \) 的一个映射，它还必须保持 monad 的结构，换句话说，\( f \) 必须与 monad 的作用方式兼容。
+这意味着$f$不仅是$a$到$b$的一个映射，它还必须保持 monad 的结构，换句话说，$ f$必须与 monad 的作用方式兼容。
 
 ### 4. **Monad 的代数结构与因式分解**
 
-寻找 monad 的代数也可以帮助我们将 monad 表示为两个函子的组合，即 \( T = R \circ L \)。其中 \( R \) 和 \( L \) 是从某个中间范畴到原范畴的两个函子。通过研究 monad 的代数结构，我们可以确定适当的中间范畴，并找到生成这个 monad 的伴随函子。
+寻找 monad 的代数也可以帮助我们将 monad 表示为两个函子的组合，即$T = R \circ L $。其中$R$和$L$是从某个中间范畴到原范畴的两个函子。通过研究 monad 的代数结构，我们可以确定适当的中间范畴，并找到生成这个 monad 的伴随函子。
 
 在编程中，我们可以通过代数的角度来看待 monad 的使用场景。例如，在 `Maybe` monad 中，代数可以表示为如何处理 `Just` 和 `Nothing` 两种不同的情况；在 `State` monad 中，代数则可以表示为如何处理状态的更新和传递。
 
@@ -1281,55 +1281,55 @@ $$
 
 ### Eilenberg-Moore 范畴详解
 
-**Eilenberg-Moore 范畴** 是给定 monad 的代数范畴。该范畴提供了一个框架，帮助我们将 monad \( T \) 分解为伴随函子的组合，从而揭示 monad 的结构。这种范畴通常记作 \( \mathcal{C}_T \)，其中 \( \mathcal{C} \) 是我们研究的范畴，而 \( T \) 是范畴 \( \mathcal{C} \) 上的 monad。
+**Eilenberg-Moore 范畴** 是给定 monad 的代数范畴。该范畴提供了一个框架，帮助我们将 monad$T$分解为伴随函子的组合，从而揭示 monad 的结构。这种范畴通常记作$\mathcal{C}_T $，其中$\mathcal{C}$是我们研究的范畴，而$T$是范畴$\mathcal{C}$上的 monad。
 
 ### 1. **Eilenberg-Moore 范畴的定义**
 
-在 \( \mathcal{C} \) 上的 monad \( T \) 的 Eilenberg-Moore 范畴 \( \mathcal{C}_T \) 的对象是 **monad 代数**。每个 monad 代数是一个配对 \( (a, \alpha: T a \to a) \)，其中：
-- \( a \) 是 \( \mathcal{C} \) 中的对象。
-- \( \alpha \) 是一个从 \( T a \) 到 \( a \) 的箭头，满足两个条件：
-    - **单位律**： \( \alpha \circ \eta_a = \text{id}_a \)。
-    - **结合律**： \( \alpha \circ \mu_a = \alpha \circ T \alpha \)，其中 \( \mu \) 是 monad 的乘法。
+在$\mathcal{C}$上的 monad$T$的 Eilenberg-Moore 范畴$\mathcal{C}_T$的对象是 **monad 代数**。每个 monad 代数是一个配对$(a, \alpha: T a \to a) $，其中：
+-$a$是$\mathcal{C}$中的对象。
+-$\alpha$是一个从$T a$到$a$的箭头，满足两个条件：
+    - **单位律**：$\alpha \circ \eta_a = \text{id}_a $。
+    - **结合律**：$\alpha \circ \mu_a = \alpha \circ T \alpha $，其中$\mu$是 monad 的乘法。
 
 ### 2. **Eilenberg-Moore 范畴中的态射**
 
-在 \( \mathcal{C}_T \) 中，两个代数 \( (a, \alpha) \) 和 \( (b, \beta) \) 之间的态射是满足如下条件的箭头 \( f: a \to b \)：
-- \( \beta \circ T f = f \circ \alpha \)
+在$\mathcal{C}_T$中，两个代数$(a, \alpha)$和$(b, \beta)$之间的态射是满足如下条件的箭头$f: a \to b $：
+-$\beta \circ T f = f \circ \alpha $
 
-也就是说，箭头 \( f \) 保持 monad 的结构，即它在两个代数之间是兼容的。
+也就是说，箭头$f$保持 monad 的结构，即它在两个代数之间是兼容的。
 
 ### 3. **自由函子和遗忘函子**
 
 为了构建与 monad 对应的伴随关系，我们引入两个函子：
-1. **遗忘函子 \( U_T \)**：从 Eilenberg-Moore 范畴 \( \mathcal{C}_T \) 到原始范畴 \( \mathcal{C} \)。它将代数 \( (a, \alpha) \) 映射到它的载体 \( a \)，并将代数态射视为载体之间的常规态射。
-2. **自由函子 \( F_T \)**：从 \( \mathcal{C} \) 到 \( \mathcal{C}_T \)。它将 \( \mathcal{C} \) 中的对象 \( a \) 映射为自由 monad 代数 \( (T a, \mu_a) \)，其中 \( \mu_a \) 是 monad 的乘法。
+1. **遗忘函子$U_T $**：从 Eilenberg-Moore 范畴$\mathcal{C}_T$到原始范畴$\mathcal{C} $。它将代数$(a, \alpha)$映射到它的载体$a $，并将代数态射视为载体之间的常规态射。
+2. **自由函子$F_T $**：从$\mathcal{C}$到$\mathcal{C}_T $。它将$\mathcal{C}$中的对象$a$映射为自由 monad 代数$(T a, \mu_a) $，其中$\mu_a$是 monad 的乘法。
 
 通过定义这两个函子，我们可以形成伴随关系：
 $$
 F_T \dashv U_T
 $$
-即，\( F_T \) 是 \( U_T \) 的左伴随函子。
+即，$ F_T$是$U_T$的左伴随函子。
 
 ### 4. **单位与余单位**
 
 在伴随函子中，我们需要定义**单位**和**余单位**。对于这个伴随关系：
-- **单位元 \( \eta \)**：这是 monad \( T \) 的单位元，自然变换 \( \eta_a: a \to U_T(F_T a) \)，它将对象 \( a \) 映射到自由代数 \( (T a, \mu_a) \) 中。
-- **余单位元 \( \varepsilon \)**：这是一个自然变换 \( \varepsilon: F_T(U_T(a, \alpha)) \to (a, \alpha) \)。对于代数 \( (a, \alpha) \)，余单位元就是 \( \alpha \) 本身，因为 \( \alpha \) 是从 \( T a \) 到 \( a \) 的 monad 代数态射。
+- **单位元$\eta $**：这是 monad$T$的单位元，自然变换$\eta_a: a \to U_T(F_T a) $，它将对象$a$映射到自由代数$(T a, \mu_a)$中。
+- **余单位元$\varepsilon $**：这是一个自然变换$\varepsilon: F_T(U_T(a, \alpha)) \to (a, \alpha) $。对于代数$(a, \alpha) $，余单位元就是$\alpha$本身，因为$\alpha$是从$T a$到$a$的 monad 代数态射。
 
 这两个自然变换满足伴随函子的**三角恒等式**，从而建立了伴随关系的完备性。
 
 ### 5. **从伴随函子生成 Monad**
 
-对于每个伴随函子对 \( F_T \dashv U_T \)，我们可以生成一个 monad，其定义如下：
-- **自函子**：\( U_T \circ F_T \)，即将 \( a \) 映射到 \( T a \)。
-- **单位元**：\( \eta \) 是这个组合的单位元。
-- **乘法**：通过 \( U_T \circ \varepsilon \circ F_T \) 定义的自然变换。
+对于每个伴随函子对$F_T \dashv U_T $，我们可以生成一个 monad，其定义如下：
+- **自函子**：$ U_T \circ F_T $，即将$a$映射到$T a $。
+- **单位元**：$ \eta$是这个组合的单位元。
+- **乘法**：通过$U_T \circ \varepsilon \circ F_T$定义的自然变换。
 
-可以证明这个 monad 就是我们最初的 monad \( T \)。在对象上，复合 \( U_T(F_T a) \) 恰好是 \( T a \)，而在箭头上，它对应于 monad \( T \) 在箭头上的提升。
+可以证明这个 monad 就是我们最初的 monad$T $。在对象上，复合$U_T(F_T a)$恰好是$T a $，而在箭头上，它对应于 monad$T$在箭头上的提升。
 
 ### 6. **总结**
 
-Eilenberg-Moore 范畴为我们提供了一个分解 monad 的方法，通过将 monad 表示为两个函子的组合 \( T = R \circ L \)。这种伴随关系可以从 monad 代数中构建，证明了每个 monad 都可以通过伴随函子的组合来生成。
+Eilenberg-Moore 范畴为我们提供了一个分解 monad 的方法，通过将 monad 表示为两个函子的组合$T = R \circ L $。这种伴随关系可以从 monad 代数中构建，证明了每个 monad 都可以通过伴随函子的组合来生成。
 
 这种结构化的方法有助于我们更好地理解 monad 的行为，并为我们在编程中设计复杂的 monad 提供了理论支持。
 
@@ -1341,31 +1341,31 @@ Kleisli 范畴是与 monad 密切相关的一个结构，它从另一个角度�
 
 ### 1. **Kleisli 范畴的定义**
 
-给定一个范畴 \( \mathcal{C} \) 和一个 monad \( T \) 在这个范畴上，**Kleisli 范畴** \( \mathcal{C}_T \) 的定义如下：
-- **对象**：Kleisli 范畴 \( \mathcal{C}_T \) 的对象与 \( \mathcal{C} \) 中的对象相同。
-- **箭头**：从对象 \( a \) 到对象 \( b \) 的箭头是 \( \mathcal{C} \) 中的箭头 \( f: a \to T b \)，即从对象 \( a \) 到对象 \( b \) 的 Kleisli 箭头是从 \( a \) 到 \( T b \) 的普通箭头。
+给定一个范畴$\mathcal{C}$和一个 monad$T$在这个范畴上，**Kleisli 范畴**$\mathcal{C}_T$的定义如下：
+- **对象**：Kleisli 范畴$\mathcal{C}_T$的对象与$\mathcal{C}$中的对象相同。
+- **箭头**：从对象$a$到对象$b$的箭头是$\mathcal{C}$中的箭头$f: a \to T b $，即从对象$a$到对象$b$的 Kleisli 箭头是从$a$到$T b$的普通箭头。
 
-换句话说，Kleisli 范畴中的箭头是我们之前见过的 "Kleisli 箭头"（形式为 \( a \to m b \)），这些箭头与 monad \( T \) 的结构相吻合。
+换句话说，Kleisli 范畴中的箭头是我们之前见过的 "Kleisli 箭头"（形式为$a \to m b $），这些箭头与 monad$T$的结构相吻合。
 
 #### **Kleisli 箭头的组合**
 
-Kleisli 箭头可以通过 "鱼操作符" \( <=< \) 来组合。对于两个 Kleisli 箭头 \( f: a \to T b \) 和 \( g: b \to T c \)，它们的组合定义为：
+Kleisli 箭头可以通过 "鱼操作符"$<=<$来组合。对于两个 Kleisli 箭头$f: a \to T b$和$g: b \to T c $，它们的组合定义为：
 $$
 g <=< f = \mu_c \circ T g \circ f
 $$
-其中 \( \mu_c: T(T c) \to T c \) 是 monad 的乘法，表示将两个嵌套的 monad 进行扁平化。
+其中$\mu_c: T(T c) \to T c$是 monad 的乘法，表示将两个嵌套的 monad 进行扁平化。
 
 ### 2. **自由函子与 Kleisli 范畴**
 
-Kleisli 范畴是从 monad \( T \) 生成的自由函子的像。为了更清楚地理解这一点，我们定义两个重要的函子：
+Kleisli 范畴是从 monad$T$生成的自由函子的像。为了更清楚地理解这一点，我们定义两个重要的函子：
 
-#### **左函子 \( L_T \)**：自由函子
-- 对象上，它将 \( \mathcal{C} \) 中的对象映射到 Kleisli 范畴中的相同对象。
-- 箭头上，它将 \( \mathcal{C} \) 中的普通箭头 \( f: a \to b \) 映射为 Kleisli 箭头 \( L_T f: a \to T b \)，具体地定义为复合 \( \eta_b \circ f \)，其中 \( \eta_b \) 是 monad 的单位元。
+#### **左函子$L_T $**：自由函子
+- 对象上，它将$\mathcal{C}$中的对象映射到 Kleisli 范畴中的相同对象。
+- 箭头上，它将$\mathcal{C}$中的普通箭头$f: a \to b$映射为 Kleisli 箭头$L_T f: a \to T b $，具体地定义为复合$\eta_b \circ f $，其中$\eta_b$是 monad 的单位元。
 
-#### **右函子 \( R_T \)**：遗忘函子
-- 对象上，它将 Kleisli 范畴中的对象映射回 \( \mathcal{C} \) 中的对象 \( T a \)。
-- 箭头上，给定一个 Kleisli 箭头 \( g: a \to T b \)，\( R_T \) 将它映射为 \( \mu_b \circ T g: T a \to T b \)，即通过 monad 的乘法 \( \mu_b \) 将箭头进行组合。
+#### **右函子$R_T $**：遗忘函子
+- 对象上，它将 Kleisli 范畴中的对象映射回$\mathcal{C}$中的对象$T a $。
+- 箭头上，给定一个 Kleisli 箭头$g: a \to T b $，$ R_T$将它映射为$\mu_b \circ T g: T a \to T b $，即通过 monad 的乘法$\mu_b$将箭头进行组合。
 
 ### 3. **伴随关系**
 
@@ -1373,24 +1373,24 @@ Kleisli 范畴是从 monad \( T \) 生成的自由函子的像。为了更清楚
 $$
 L_T \dashv R_T
 $$
-即 \( L_T \) 是 \( R_T \) 的左伴随函子。这个伴随关系表明，Kleisli 范畴可以看作是通过自由构造获得的。
+即$L_T$是$R_T$的左伴随函子。这个伴随关系表明，Kleisli 范畴可以看作是通过自由构造获得的。
 
 #### **伴随关系的单位与余单位**
 
-- **单位元** \( \eta \)：这是 monad \( T \) 的单位元，它从 \( a \) 到 \( R_T(L_T a) \) 的箭头。
-- **余单位元** \( \varepsilon \)：这是 monad \( T \) 的余单位元，它将 \( L_T \circ R_T \) 复合产生的箭头映射回原来的箭头。
+- **单位元**$\eta $：这是 monad$T$的单位元，它从$a$到$R_T(L_T a)$的箭头。
+- **余单位元**$\varepsilon $：这是 monad$T$的余单位元，它将$L_T \circ R_T$复合产生的箭头映射回原来的箭头。
 
 ### 4. **Kleisli 范畴的组合**
 
-在 Kleisli 范畴中，箭头的组合基于 monad 的结构。具体来说，给定两个箭头 \( f: a \to T b \) 和 \( g: b \to T c \)，它们在 Kleisli 范畴中的组合定义为：
+在 Kleisli 范畴中，箭头的组合基于 monad 的结构。具体来说，给定两个箭头$f: a \to T b$和$g: b \to T c $，它们在 Kleisli 范畴中的组合定义为：
 $$
 g \circ_T f = \mu_c \circ T(g) \circ f
 $$
-这意味着我们首先使用 \( f \) 生成 \( T b \) 的结果，然后使用 \( g \) 处理结果，最后用 \( \mu_c \) 进行扁平化。
+这意味着我们首先使用$f$生成$T b$的结果，然后使用$g$处理结果，最后用$\mu_c$进行扁平化。
 
 ### 5. **Kleisli 范畴与 Eilenberg-Moore 范畴的关系**
 
-尽管 Eilenberg-Moore 范畴 \( \mathcal{C}_T \) 更加丰富，Kleisli 范畴 \( \mathcal{C}_T \) 则提供了一个更直接的方式来处理 monad 的计算。在两者之间，Kleisli 范畴是更小的范畴，但它捕捉了 monad 作为序列计算的一部分。这两个范畴为我们理解 monad 提供了互补的视角。
+尽管 Eilenberg-Moore 范畴$\mathcal{C}_T$更加丰富，Kleisli 范畴$\mathcal{C}_T$则提供了一个更直接的方式来处理 monad 的计算。在两者之间，Kleisli 范畴是更小的范畴，但它捕捉了 monad 作为序列计算的一部分。这两个范畴为我们理解 monad 提供了互补的视角。
 
 Kleisli 伴随关系是所有生成给定 monad 的伴随关系中最初的对象，而 Eilenberg-Moore 伴随关系是终极的对象，这意味着 Kleisli 范畴提供了 monad 的一个更初级的形式，而 Eilenberg-Moore 范畴则更加完整。
 

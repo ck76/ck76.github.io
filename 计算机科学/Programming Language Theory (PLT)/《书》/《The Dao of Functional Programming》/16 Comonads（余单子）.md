@@ -349,7 +349,7 @@ data BiStream a = BStr [a] [a]
 ```haskell
 instance Comonad BiStream where
     extract (BStr _ (a:_)) = a
-    duplicate (BStr past (a:future)) = BStr (tail (scanl (flip (:)) [] (a:past))) (iterate (\(BStr p (f:fs)) -> BStr (a:p) fs) (BStr past future))
+    duplicate (BStr past (a:future)) = BStr (tail (scanl (flip (:)) [] (a:past))) (iterate ($BStr p (f:fs)) -> BStr (a:p) fs) (BStr past future))
 ```
 
 - `extract` 提取当前的元素，即第二个列表的头部。

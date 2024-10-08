@@ -187,13 +187,13 @@ type Algebra f c = f c -> c
 
 两个代数 $(a, \alpha)$ 和 $(b, \beta)$ 之间的**代数态射**是一个从 $a$ 到 $b$ 的箭头 $f: a \to b$，它保持代数结构。具体来说，代数态射 $f$ 必须满足下图的交换条件：
 
-\[
+$$
 \begin{aligned}
 F a \quad \xrightarrow{F f} \quad F b \\
 \alpha \downarrow \quad \quad \quad \downarrow \beta \\
 a \quad \xrightarrow{f} \quad b
 \end{aligned}
-\]
+$$
 
 换句话说，$f$ 需要使以下等式成立：
 
@@ -268,13 +268,13 @@ show :: Int -> String
 
 假设我们有一个函子 $F$，在由 $F$ 生成的代数的范畴 $\text{Alg}_F$ 中，**初始代数** $(i, \iota)$ 是一个对象，它满足以下条件：对于范畴中任何其他代数 $(a, \alpha)$，都存在一个**唯一的代数态射** $f$ 使得下图交换：
 
-\[
+$$
 \begin{aligned}
 F i \quad \xrightarrow{F f} \quad F a \\
 \iota \downarrow \quad \quad \quad \downarrow \alpha \\
 i \quad \xrightarrow{f} \quad a
 \end{aligned}
-\]
+$$
 
 在这幅图中：
 - $(i, \iota)$ 是初始代数，$\iota: F i \to i$ 是它的结构映射。
@@ -325,13 +325,13 @@ mulAlg (Op x y) = x * y
 
 我们需要证明 `log` 是 `addAlg` 和 `mulAlg` 之间的代数态射。这意味着，我们要验证以下图交换：
 
-\[
+$$
 \begin{aligned}
 FloatF Float \quad \xrightarrow{FloatF \log} \quad FloatF Float \\
 addAlg \downarrow \quad \quad \quad \downarrow mulAlg \\
 Float \quad \xrightarrow{\log} \quad Float
 \end{aligned}
-\]
+$$
 
 换句话说，必须满足以下条件：
 $$
@@ -387,13 +387,13 @@ Lambek 引理是一条非常重要的结果，它揭示了**初始代数的结�
 
 由于 $(i, \iota)$ 是初始代数，因此根据初始代数的定义，必须存在一个唯一的代数态射 $h: i \to F i$ 使得以下图交换：
 
-\[
+$$
 \begin{aligned}
 F i \quad \xrightarrow{F h} \quad F(F i) \\
 \iota \downarrow \quad \quad \quad \downarrow F \iota \\
 i \quad \xrightarrow{h} \quad F i
 \end{aligned}
-\]
+$$
 
 换句话说，代数态射 $h$ 是结构映射 $\iota$ 的逆元，这表明 $\iota$ 是一个同构。
 
@@ -567,17 +567,17 @@ e9 = plus (plus (val 2) (val 3)) (val 4)
 我们已经看到，递归数据结构是由某个自函子 $F$ 的不动点定义的，而代数定义了我们希望在这些结构上执行的操作。
 
 一个典型的卡塔态射的形式化定义可以表示为：
-\[
+$$
 \begin{aligned}
 F i \quad \xrightarrow{F f} \quad F a \\
 \iota \downarrow \quad \quad \quad \downarrow \alpha \\
 i \quad \xrightarrow{f} \quad a
 \end{aligned}
-\]
+$$
 其中，$(i, \iota)$ 是不动点，$(a, \alpha)$ 是代数，$f$ 是卡塔态射。Lambek 引理告诉我们 $\iota$ 是一个同构，因此我们可以把 $f$ 递归地定义为：
-\[
+$$
 f = \alpha \circ F f \circ \iota^{-1}
-\]
+$$
 这意味着卡塔态射 $f$ 是递归定义的，它依赖于代数 $\alpha$ 和递归结构。
 
 #### 2. **Haskell 中的卡塔态射**

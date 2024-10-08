@@ -56,10 +56,10 @@ morphisms that connect them. A functor also maps morphisms --- it's a
 function on morphisms. But it doesn't map morphisms willy-nilly --- it
 preserves connections. So if a morphism $f$ in $\cat{C}$ connects object
 $a$ to object $b$,
-\[f \Colon a \to b\]
+$$f \Colon a \to b$$
 the image of $f$ in $\cat{D}$, $F f$, will connect the image of
 $a$ to the image of $b$:
-\[F f \Colon F a \to F b\]
+$$F f \Colon F a \to F b$$
 像这部分也是应该翻译到中文的
 ```
 

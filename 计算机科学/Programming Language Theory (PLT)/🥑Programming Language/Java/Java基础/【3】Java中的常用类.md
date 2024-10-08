@@ -54,14 +54,14 @@ Math 的方法都被定义为 static 形式，通过 Math 类可以在主函数�
 | 4        | [int compareToIgnoreCase(String str)](http://www.runoob.com/java/java-string-comparetoignorecase.html) 按字典顺序比较两个字符串，不考虑大小写。 |
 | 5        | **[String concat(String str)](http://www.runoob.com/java/java-string-concat.html) 将指定字符串连接到此字符串的结尾。** |
 | 6        | [boolean contentEquals(StringBuffer sb)](http://www.runoob.com/java/java-string-contentequals.html) 当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。 |
-| 7        | [static String copyValueOf(char[\] data)](http://www.runoob.com/java/java-string-copyvalueof.html) 返回指定数组中表示该字符序列的 String。 |
-| 8        | [static String copyValueOf(char[\] data, int offset, int count)](http://www.runoob.com/java/java-string-copyvalueof.html) 返回指定数组中表示该字符序列的 String。 |
+| 7        | [static String copyValueOf(char[$$ data)](http://www.runoob.com/java/java-string-copyvalueof.html) 返回指定数组中表示该字符序列的 String。 |
+| 8        | [static String copyValueOf(char[$$ data, int offset, int count)](http://www.runoob.com/java/java-string-copyvalueof.html) 返回指定数组中表示该字符序列的 String。 |
 | 9        | **[boolean endsWith(String suffix)](http://www.runoob.com/java/java-string-endswith.html) 测试此字符串是否以指定的后缀结束。** |
 | 10       | **[boolean equals(Object anObject)](http://www.runoob.com/java/java-string-equals.html) 将此字符串与指定的对象比较。** |
 | 11       | [boolean equalsIgnoreCase(String anotherString)](http://www.runoob.com/java/java-string-equalsignorecase.html) 将此 String 与另一个 String 比较，不考虑大小写。 |
-| 12****   | **[byte[\] getBytes()](http://www.runoob.com/java/java-string-getbytes.html)  使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。** |
-| 13****   | **[byte[\] getBytes(String charsetName)](http://www.runoob.com/java/java-string-getbytes.html) 使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。** |
-| 14       | [void getChars(int srcBegin, int srcEnd, char[\] dst, int dstBegin)](http://www.runoob.com/java/java-string-getchars.html) 将字符从此字符串复制到目标字符数组。 |
+| 12****   | **[byte[$$ getBytes()](http://www.runoob.com/java/java-string-getbytes.html)  使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。** |
+| 13****   | **[byte[$$ getBytes(String charsetName)](http://www.runoob.com/java/java-string-getbytes.html) 使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。** |
+| 14       | [void getChars(int srcBegin, int srcEnd, char[$$ dst, int dstBegin)](http://www.runoob.com/java/java-string-getchars.html) 将字符从此字符串复制到目标字符数组。 |
 | 15****   | **[int hashCode()](http://www.runoob.com/java/java-string-hashcode.html) 返回此字符串的哈希码。** |
 | 16       | [int indexOf(int ch)](http://www.runoob.com/java/java-string-indexof.html) 返回指定字符在此字符串中第一次出现处的索引。 |
 | 17       | [int indexOf(int ch, int fromIndex)](http://www.runoob.com/java/java-string-indexof.html) 返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。 |
@@ -79,14 +79,14 @@ Math 的方法都被定义为 static 形式，通过 Math 类可以在主函数�
 | 29       | **[String replace(char oldChar, char newChar)](http://www.runoob.com/java/java-string-replace.html) 返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。** |
 | 30****   | **[String replaceAll(String regex, String replacement)](http://www.runoob.com/java/java-string-replaceall.html) 使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。** |
 | 31       | [String replaceFirst(String regex, String replacement)](http://www.runoob.com/java/java-string-replacefirst.html)  使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。 |
-| 32       | **[String[\] split(String regex)](http://www.runoob.com/java/java-string-split.html) 根据给定正则表达式的匹配拆分此字符串。** |
-| 33       | [String[\] split(String regex, int limit)](http://www.runoob.com/java/java-string-split.html) 根据匹配给定的正则表达式来拆分此字符串。 |
+| 32       | **[String[$$ split(String regex)](http://www.runoob.com/java/java-string-split.html) 根据给定正则表达式的匹配拆分此字符串。** |
+| 33       | [String[$$ split(String regex, int limit)](http://www.runoob.com/java/java-string-split.html) 根据匹配给定的正则表达式来拆分此字符串。 |
 | 34       | [boolean startsWith(String prefix)](http://www.runoob.com/java/java-string-startswith.html) 测试此字符串是否以指定的前缀开始。 |
 | 35       | [boolean startsWith(String prefix, int toffset)](http://www.runoob.com/java/java-string-startswith.html) 测试此字符串从指定索引开始的子字符串是否以指定前缀开始。 |
 | 36       | [CharSequence subSequence(int beginIndex, int endIndex)](http://www.runoob.com/java/java-string-subsequence.html)  返回一个新的字符序列，它是此序列的一个子序列。 |
 | 37       | [String substring(int beginIndex)](http://www.runoob.com/java/java-string-substring.html) 返回一个新的字符串，它是此字符串的一个子字符串。 |
 | 38       | [String substring(int beginIndex, int endIndex)](http://www.runoob.com/java/java-string-substring.html) 返回一个新字符串，它是此字符串的一个子字符串。 |
-| 39       | [char[\] toCharArray()](http://www.runoob.com/java/java-string-tochararray.html) 将此字符串转换为一个新的字符数组。 |
+| 39       | [char[$$ toCharArray()](http://www.runoob.com/java/java-string-tochararray.html) 将此字符串转换为一个新的字符数组。 |
 | 40       | [String toLowerCase()](http://www.runoob.com/java/java-string-tolowercase.html) 使用默认语言环境的规则将此 String 中的所有字符都转换为小写。 |
 | 41       | [String toLowerCase(Locale locale)](http://www.runoob.com/java/java-string-tolowercase.html)  使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。 |
 | 42       | [String toString()](http://www.runoob.com/java/java-string-tostring.html)  返回此对象本身（它已经是一个字符串！）。 |
