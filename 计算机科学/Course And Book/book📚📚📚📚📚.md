@@ -237,7 +237,7 @@
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
   - ①202409~
-- The Little *Typer*
+- The Little Typer
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
   - 202410
