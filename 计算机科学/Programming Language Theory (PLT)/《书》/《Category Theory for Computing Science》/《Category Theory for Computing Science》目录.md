@@ -1,6 +1,6 @@
 [toc]
 
-以下是《$$Category$$ Theory for Computing Science》的目录内容：
+以下是《$Category$ Theory for Computing Science》的目录内容：
 
 ### 目录 (Contents)
 
@@ -39,7 +39,7 @@
 4.5 $Yoneda$引理和泛对象 (The Yoneda Lemma and universal elements) 121  
 4.6 线性草图 (Linear sketches) 128  
 4.7 带常量的线性草图：初始术语模型 (Linear sketches with constants: initial term models) 134  
-4.8 $$2$$-范畴 ($$2$$-categories) 141
+4.8 $2$-范畴 ($2$-categories) 141
 
 ### 第5章 乘积与和 (Chapter 5: Products and Sums) 153  
 5.1 范畴中两个对象的乘积 (The product of two objects in a category) 153  
@@ -53,8 +53,8 @@
 ### 第6章 笛卡尔闭范畴 (Chapter 6: Cartesian Closed Categories) 197  
 6.1 笛卡尔闭范畴 (Cartesian closed categories) 197  
 6.2 笛卡尔闭范畴的性质 (Properties of cartesian closed categories) 204  
-6.3 带类型的$$\lambda$$演算 (Typed $$\lambda$$-calculus) 210  
-6.4 $$\lambda$$演算与范畴的相互转换 ($$\lambda$$-calculus to category and back) 212  
+6.3 带类型的$\lambda$演算 (Typed $\lambda$-calculus) 210  
+6.4 $\lambda$演算与范畴的相互转换 ($\lambda$-calculus to category and back) 212  
 6.5 箭头与术语 (Arrows vs. terms) 214  
 6.6 笛卡尔闭范畴中的不动点 (Fixed points in cartesian closed categories) 217
 
@@ -124,8 +124,8 @@
 
 ### 第16章 带单乘结构的范畴 (Chapter 16: Categories with Monoidal Structure) 419  
 16.1 闭单乘范畴 (Closed monoidal categories) 419  
-16.2 $$A−◦C$$的性质 (Properties of $$A−◦C$$) 423  
-16.3 ∗-自律范畴 ($$\ast$$-autonomous categories) 428  
+16.2 $A−◦C$的性质 (Properties of $A−◦C$) 423  
+16.3 ∗-自律范畴 ($\ast$-autonomous categories) 428  
 16.4 Chu构造 (The Chu construction) 430
 
 **参考文献** (Bibliography) 437  

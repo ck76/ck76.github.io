@@ -107,9 +107,9 @@
 
   - ①入门用挺不错
 - 范畴论完全装逼手册 / Grokking Monad
-  - ①
+  - ①粗读，也是当个入门
 - 程序员的范畴论
-  - ①
+  - ①音频
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
 - 类型和程序设计语言 Types and Programming Languages
@@ -166,7 +166,7 @@
   - 20240901 : 第1-5章
   - 20240907 : 第6-10章
   - 20240908 : 第11-13章
-  - 202409【】
+  - 202410【】
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825：第2~第章
@@ -208,11 +208,12 @@
   - 20240928 ：第一部分：无类型系统
   - 20240929 ：7 An ML Implementation of the Lambda-Calculus(de bruijn index)
   - 20241006 ：第二部分：简单类型
-  - 2024100：第三部分：子类型
+  - 202410：第三部分：子类型
   - 202410
   
+- 程序员的范畴论
+- 
 - ML程序设计教程
-
   - ①2024090
 - Compiling with continuations
 
@@ -229,7 +230,6 @@
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
   - ①2024090
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
-
   - ①202409~
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
 
@@ -240,7 +240,6 @@
 - The Little *Typer*
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
-
   - 202410
 - [nLab*](https://ncatlab.org/nlab/all_pages)
 
@@ -249,7 +248,7 @@
   - [Category Theory](https://ncatlab.org/nlab/show/category+theory)
   - [Homotopy type theory](https://ncatlab.org/nlab/show/homotopy+type+theory)
 - ATTPL [Advanced Topics in Types and Programming Languages](https://book.douban.com/subject/1761911/)
-  - ①
+  - 
 - [Go 语言设计与实现](https://draveness.me/golang/) 
   - 
 - Go语言底层原理剖析【文字版】
@@ -261,7 +260,7 @@
 
   - 看不看都行
 
-- Rust rfc
+- 
 
 - Go语言高级编程
   - 看不看都行
@@ -270,7 +269,7 @@
 - 图解网络硬件
 
   - 
-- 
+- 知乎收藏夹
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
@@ -287,6 +286,7 @@
 
 - 魔力Haskell
   - ①2024080 第二部分 116页
+  - 2024
 - [Think with Types](https://thinkingwithtypes.com/)
 
   - github [thinking-with-types](https://github.com/isovector/thinking-with-types)
@@ -294,6 +294,7 @@
 - Haskell趣学指南
   - 
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
+- Rust rfc
 - 主流编程语言Compilers 代码库
   - OCaml
   - Rust

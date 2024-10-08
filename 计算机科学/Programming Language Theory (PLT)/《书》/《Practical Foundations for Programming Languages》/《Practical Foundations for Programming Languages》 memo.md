@@ -289,11 +289,11 @@ Preface to the First Edition xvii
 37.5 调度 (Scheduling) 346  
 37.6 备注 (Notes) 348
 
-第38章 期货与推测 (Chapter 38: Futures and Speculations) 350  
-38.1 期货 (Futures) 350  
+第38章 Futures与推测 (Chapter 38: Futures and Speculations) 350  
+38.1 Futures (Futures) 350  
 38.2 推测 (Speculations) 351  
 38.3 并行动态性 (Parallel Dynamics) 352  
-38.4 通过期货进行流水线 (Pipelining with Futures) 354  
+38.4 通过Futures进行流水线 (Pipelining with Futures) 354  
 38.5 备注 (Notes) 356
 
 ### 第十六部分 并发性与分布性 (Part XVI: Concurrency and Distribution)
