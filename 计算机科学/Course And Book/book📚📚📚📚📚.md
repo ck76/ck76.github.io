@@ -1,11 +1,8 @@
 📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚📚
 
 - 第一行代码：Android（第2版） : Android
-  
 - 剑指Offer : 名企面试官精讲典型编程题（第2版）
-  
 - Android 源码设计模式解析与实战（第2版）
-
 - Android开发艺术探索
 - Kotlin实战
 - Android进阶之光
@@ -25,7 +22,6 @@
 - 黑客与画家 : 硅谷创业之父Paul Graham文集
 - Python 3网络爬虫开发实战
   - 通过这本书开始写爬虫的哈哈
-
 - 人工智能 : 一种现代的方法
 - Java编程思想 （第4版）
   - 挺不错的，学了很多Java
@@ -52,44 +48,31 @@
 - MySQL必知必会
 - 微服务架构设计模式
 - 北航程序设计语言原理教材（共18章）
-- 程序设计语言概念 Robert W.Sebesta
+- 程序设计语言概念 Robert W.Sebesta 
+  - 程序设计语言原理 （美）賽巴斯塔（Sebesta，R.W.）
+  - Concepts of Programming Languages 为同一本书
   - ①20211118 -肥肠肥肠号
-  - ②【TODO】
-  
 - Leetcode*
-  
 - 极客时间*
-  
 - 得到+喜马拉雅听书*
-  
 - BIlibili*
-  
 - Zhihu*
-  
 - YouTube*
   - [XCode 系统设计](https://www.youtube.com/watch?v=8F0ckuArL1w&list=PLbhaS_83B97vSWVslD63vjIi5OTYmSVrk)
-  
+
   - [NaNa Tech](https://www.youtube.com/@TechWorldwithNana)
-  
+
   - [Bytebytego](https://www.youtube.com/@ByteByteGo)
-  
 - Vue.js入門 基礎から実践アプリケーション開発まで
-
 - AWS Solution Architecture Associate (Udemy)
-
 - Transformer and Attention Mechanism
-
 - CNN and BiLSTM
-
 - 数据密集型应用系统设计
   - ①20220628-肥肠号
-
 - 深入剖析Kubernetes-张磊
   - ①肥肠地号
-
 - ANSI Common Lisp
   - ①20240526
-
 - 软技能 : 代码之外的生存指南-博客
   - ①20240713
 
@@ -97,102 +80,140 @@
 - [程序语言理论与实现-张宏波](https://bobzhang.github.io/courses/) 基础软件理论与实践公开课 张宏波
   - ①肥肠号
   - ②幻灯片【TODO】
+  
 - [当然我在扯淡](https://www.yinwang.org/#)
   - 王垠-A Fresh View at  Type Inference 幻灯片
+  
 - [凤凰架构构建可靠的大型分布式系统](https://github.com/fenixsoft/awesome-fenix)
+
 - 深入设计模式-Guru
 
   - ①挺不错
+  
 - 函数式编程指南 [mostly-adequate-guide-chinese](https://github.com/ck76/mostly-adequate-guide-chinese)
 
   - ①入门用挺不错
+  
 - 范畴论完全装逼手册 / Grokking Monad
   - ①粗读，也是当个入门
+  
 - 程序员的范畴论
   - ①音频
+  
 - 实用编程语言理论基础 Practical Foundations for Programming
   - ①20240717-肥肠号, 需要再读
+  
 - 类型和程序设计语言 Types and Programming Languages
   - ①20240717-肥肠号, 需要再读
+  
 - 计算机是怎样跑起来的
   - ①20240721-没必要读
+  
 - 面向对象是怎样工作的
   - ①20240721-也没啥必要讲Java的
+  
 - 松本行弘：编程语言的设计与实现
 
   - ①20240806-也没啥必要读，没意思
+  
 - The Little Schemer  递归与函数式的奥妙
   - ①20240721-非常好
+  
 - [wikiwand Category:类型论](https://www.wikiwand.com/zh/Category:%E7%B1%BB%E5%9E%8B%E8%AE%BA)
   - ①20240727-肥肠号
+  
 - 如何设计程序 How to design program
   - ①20240727应该从第五部分生成递归第25章开始看, 确实都是设计函数的好思想，就是例子都太无聊了
+  
 - [python-telegram-bot](https://core.telegram.org/bots/api)
 
   - 20240730 [免费云端相册Telegram-Bot](https://github.com/ck76/Telegram-Bulk-File-Uploader-Bot)
+  
 - A Timeline for Logic, λ-Calculus, and Programming Language Theory
   - ①20240804-肥肠棒
+  
 - [十分钟魔法练习](https://magic.huohuo.moe/)
   - ①20240804-Java
   - ②2024080【TODO】-Typescript
+  
 - 函数式程序设计入门邓玉欣
 
   - ①20240805-前边介绍概念的地方是真的好，甚至我都能看懂！后面还没仔细看, 但是大致有点像是介绍Coq和OCaml用法凑字数的
+  
 - [github搜索中文翻译](https://github.com/search?q=%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91&type=repositories&p=37)
 
   - ①20240805
+  
 - [学习Datadog](https://docs.datadoghq.com/)
   - ①20240802~20240816
+  
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
   - ①20240812~20240819-肥肠肥肠号，まぁ、我能看懂的书都是好书啊
   - 【TODO】Kotlin版本
+  
 - [关于类型系统的最简基础概述——type systems](https://zhuanlan.zhihu.com/p/55926585)
   - ①20240812
+  
 - [类型论简史  A Brief History of Type Theory](https://github.com/Trebor-Huang/history)
   - ①20240814
+  
 - [Type and Proof-类型和证明 (rainoftime, txyyss, marisa)](https://openpal.github.io/TypeAndProof/Type%20and%20Proof.pdf)
 
   - ①20240822~20240823-挺好的，就是作者没写完
+  
 - 面向PL宝宝的柯里-霍华德同构Curry-Howard
   - ①20240822-肥肠好, 作者不去出书可惜了
+  
 - [fp-jargon-zh-函数式编程术语](https://github.com/shfshanyue/fp-jargon-zh)
   - ①20240822
+  
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
   - ①20240823~20240828
+  
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
+
   - ①20240823-ChatGPT比普通翻译器强太多
   - 20240901 : 第1-5章
   - 20240907 : 第6-10章
   - 20240908 : 第11-13章
   - 202410【】
+  
 - 程序员的自我修养：链接、装载与库
   
   - ①20240825：第2~第章
   - 202409【】
+  
 - 搜论文 POPL, ICFP, ESOP, PLDI, OOPSLA, TYPES
   
   - 20240830
+  
 - [怎么学类型论](https://cha.fan/articles/5u9DV2LWWcjgJ8c7ha7T)-[千里冰封](https://cha.fan/users/ice1000)
 
   - ①20240831
+  
 - [何幻 业余程序员的个人修养](https://www.zhihu.com/column/self-discipline)
 
   - 20240901
+  
 - 类型理论和程序设计 李未 王飓安
   
   - 20240902
+  
 - 在Github探索一些人一些仓库
 
   - 20240904
+  
 - [逻辑](https://zh.wikipedia.org/zh-hans/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91?oldformat=true)
 
   - [一阶逻辑-Wikipedia](https://zh.wikipedia.org/zh-hans/%E4%B8%80%E9%98%B6%E9%80%BB%E8%BE%91?oldformat=true)
   - [直觉主义逻辑](https://zh.wikipedia.org/w/index.php?title=%E7%9B%B4%E8%A7%89%E4%B8%BB%E4%B9%89%E9%80%BB%E8%BE%91&oldformat=true)
+  
 - [EOPL Essentials.of.Programming.Languages](https://eopl3.com/) 
   - ①20240820 : 第1-2章
   - ②20240910 : 第3章
   - ②202410 : 第-章
   - ②202410 : 第-章
+  
 - PFPL  实用编程语言理论基础 Practical Foundations for Programming
 
   - 20240916 : 第一~四部分有限数据类型
@@ -200,6 +221,7 @@
   - 20240918 : 第七~九部分有限数据类型
   - 20240920 : 第十~十四部分有限数据类型
   - 202410
+  
 - TAPL 类型和程序设计语言 Types and Programming Languages
 
   - [Github code](https://github.com/ck76/TAPL-mspertus)
@@ -208,43 +230,74 @@
   - 20241006 ：第二部分：简单类型
   - 202410：第三部分：子类型
   - 202410
+  
 - 程序员的范畴论
+
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
+
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
+
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
+
 - Type and Proof-类型和证明
 
-  - 
+    - 
+
+
 
 - ML程序设计教程
   - ①2024090
+
 - Compiling with continuations
 
   - 
+
 - [王垠 - Ground-Up Computer Science(gucs-sample-merged)](https://www.yinwang.org/blog-cn/2021/05/11/gucs-sample)
+
 - LLVM
 
   - [Tutorial](https://llvm.org/docs/tutorial/)
+
+- [CS3110 OCaml Programming: Correct + Efficient + Beautiful](https://cs3110.github.io/textbook/cover.html)
+  
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
+
 - [类型论驿站写作计划](https://zhuanlan.zhihu.com/p/32182423)
   - ①2024090
+
 - [类型论入门笔记-知乎](https://zhuanlan.zhihu.com/p/112024185)
   - ①2024090
+
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
   - ①202409~
+
+- Type Systems Luca Cardelli Microsoft Research
+  
 - [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
+
+- [Programming and Programming Languages (Shriram Krishnamurthi, Benjamin S. Lerner, Joe Gibbs Politz, Kathi Fisler)](https://papl.cs.brown.edu/2020/)
+
+- Using, Understanding, and Unravelling The OCaml Language — An introduction [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
+
+- Write You a Haskell Building a modern functional compiler from first principles
+
 - Category Theory for Computing Science (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
 
-  - 
+
+  - [CTM - Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
 
 - Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
+
 - Proofs and Types (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
+
 - Structure and Interpretation of Computer Programs (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
 
-  - Structure and Interpretation of Computer Programs, 2nd ed..pdf 带目录
+    - Structure and Interpretation of Computer Programs, 2nd ed..pdf 带目录
+
 
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
+
   - ①202409~
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
@@ -282,18 +335,36 @@
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
-- 鲸书🐳📚
-- 虎书🐯📚 Concepts in Programming Languages John C. Mitchell
-- 龙书🐲📚
-- 
-- Design Concepts in Programming Languages 
+- 鲸书🐳📚 Advanced Compiler Design and Implementation (Steven S.Muchnick) 高级编译器设计与实现
+- 虎书🐯📚 Modern Compiler Implementation in C (Andrew W.Appel,with Jens Palsberg) 现代编译原理-C语言描述
+- 龙书🐲📚 Compilers: Principles,Techniques,and Tools (Alfred V.Aho,Ravi Sethi,Jeffrey D.Ullman) 编译原理技术和工具
+- 程序设计语言概念 Concepts in Programming Languages John C. Mitchell
+- Design Concepts in Programming Languages (Franklyn A. Turbak, David K. Gifford)
 - Theories of Programming Languages
 - Syntax and Semantics of Programming Languages
-- 
-- 
-- 
-- *Certified Programming with Dependent Types* (**CPDT**) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
-- *Homotopy Type Theory* (**HoTT**) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
+- Type Theory and Formal Proof An Introduction
+- Lectures on the Curry-Howard Isomorphism
+- Programs and Proofs Mechanizing Mathematics with Dependent Types
+
+  - https://ilyasergey.net/pnp/
+- Paper---------------------------------------------------------------------------------
+- [A Tutorial Implementation of a Dependently Typed Lambda Calculus](http://www.andres-loeh.de/LambdaPi/) — Andres Löh, Conor McBride and Wouter Swierstra [pdf](http://www.andres-loeh.de/LambdaPi/LambdaPi.pdf). Previously published as [Simply Easy](http://strictlypositive.org/Easy.pdf).
+- [ΠΣ: Dependent Types without the Sugar](https://www.andres-loeh.de/PiSigma/PiSigma.pdf) - Thorsten Altenkirch, Nils Anders Danielsson, Andres Löh, and Nicolas Oury
+- [Lambda Calculi with Types](http://ttic.uchicago.edu/~dreyer/course/papers/barendregt.pdf) — Henk Barendregt
+- [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf)
+- [Type Theory](https://plato.stanford.edu/entries/type-theory/) - Thierry Coquand
+- [An argument against call/cc](http://okmij.org/ftp/continuations/against-callcc.html) — Oleg Kiselyov
+- [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf), Abdulaziz Ghuloum
+- [A Nanopass Framework for Compiler Education](http://www.cs.indiana.edu/~dyb/pubs/nano-jfp.pdf), Dipanwita Sarkar, Oscar Waddell, R. Kent Dybvig
+- [A Nanopass Framework for Commercial Compiler Development](http://andykeep.com/pubs/dissertation.pdf), [Andrew W. Keep](http://andykeep.com/)
+- [ZINC](http://caml.inria.fr/pub/papers/xleroy-zinc.pdf) - The ZINC experiment, an economical implementation of the ML language - Xavier Leroy (Technical Report) [more OCaml papers](http://caml.inria.fr/about/papers.en.html)
+- Subtopic  ----------------------------------------------------------------------------
+- Higher Type Theory
+- Module Systems
+- Effect Systems
+- e------------------------------------------------------------------------------------------
+- Certified Programming with Dependent Types (CPDT) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
+- Homotopy Type Theory (HoTT) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 - 魔力Haskell
   - ①2024080 第二部分 116页
   - 2024
@@ -302,6 +373,7 @@
   - github [thinking-with-types](https://github.com/isovector/thinking-with-types)
 - Haskell趣学指南
   - 
+- [RWOC](https://realworldocaml.org/) - Real World OCaml - Jason Hickey, Anil Madhavapeddy, and Yaron Minsky
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc
 - 主流编程语言Compilers 代码库
@@ -316,34 +388,56 @@
   - Python
   - Scheme
   - Kotlin
+- The Definition of Standard ML
+- C++语言的设计和演化 ([美] Bjarne Stroustrup 著 裘宗燕 译) 
+- 编程之魂  与27位编程语言创始人对话 
+
+
+  - 直看对应的几章
+
 - miniXXX
+
 - 
+
 - https://plzoo.andrej.com/
+
 - [Lean 4 定理证明](https://www.leanprover.cn/tp-lean-zh/title_page.html) 
+
 - [Lean 函数式编程](https://www.leanprover.cn/fp-lean-zh/)
+
 - https://github.com/AndrasKovacs/elaboration-zoo
+
 - 自己动手实现解释器
   - ①20240813~
+
 - 编程语言实现模式 - Language Implementation Patterns
   - ①2024082~
+
 - 编程语言的邀请
   - ①
+
 - 程序设计语言的形式语义 (Glynn Winskel)  The Formal Semantics of Programming Languages
   - ①202409【TODO】
+
 - 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    
   - ①202409【TODO】
+
 - 程序设计语言理论, 第二版 (陈意云, 张昱)  
 
   - ①202409【TODO】
+
 - 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
   - ①
+
 - [程序设计语言——原理和实践 Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  黄林鹏译](http://find.nlc.cn/search/showDocDetails?docId=-3476831687557735465&dataSource=ucs01&query=%09%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E8%B7%B5)
+
 
   - Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  没找到带目录的
   - 没找到中文pdf ：<
 
 - 程序设计语言原理 (（美）賽巴斯塔（Sebesta，R.W.）)   Concepts of Programming Languages 第十版
   - ①202409【TODO】
+
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
 
 
@@ -389,7 +483,9 @@
 
 - The Art of Functional Programming (Minh Quang Tran)
 
-- Write You a Haskell Building a modern functional compiler from first principles
+- 
+
+- 
 
 - [臺灣大學 邏輯、語言與計算暑期研習營](https://flolac.iis.sinica.edu.tw/zh/2024/registration.html) Formosan Summer School on Logic, Language, and Computation
   - 
@@ -414,7 +510,7 @@
 
 - SICP-计算机程序构造和解释 sicp
 
-- [CTM-Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
+- 
 
 - 
 
