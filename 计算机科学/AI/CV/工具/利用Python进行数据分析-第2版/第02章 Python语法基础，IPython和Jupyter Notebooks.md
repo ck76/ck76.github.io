@@ -13,8 +13,8 @@
 > 笔记：本章没有介绍Python的某些概念，如类和面向对象编程，你可能会发现它们在Python数据分析中很有用。 为了加强Python知识，我建议你学习官方Python教程，[https://docs.python.org/3/，或是通用的Python教程书籍，比如：](https://docs.python.org/3/，或是通用的Python教程书籍，比如：)
 >
 > * Python Cookbook，第3版，David Beazley和Brian K. Jones著（O’Reilly）
-> * 流畅的Python，Luciano Ramalho著 \(O’Reilly\)
-> * 高效的Python，Brett Slatkin著 \(Pearson\)
+> * 流畅的Python，Luciano Ramalho著 $O’Reilly$
+> * 高效的Python，Brett Slatkin著 $Pearson$
 
 ## 2.1 Python解释器 
 

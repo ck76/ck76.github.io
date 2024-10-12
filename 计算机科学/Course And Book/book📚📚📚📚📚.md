@@ -243,11 +243,6 @@
 
     - 
 
-
-
-- ML程序设计教程
-  - ①2024090
-
 - Compiling with continuations
 
   - 
@@ -259,7 +254,7 @@
   - [Tutorial](https://llvm.org/docs/tutorial/)
 
 - [CS3110 OCaml Programming: Correct + Efficient + Beautiful](https://cs3110.github.io/textbook/cover.html)
-  
+
 - [Fantasy Land Specification](https://github.com/fantasyland/fantasy-land)
   - 
 
@@ -272,11 +267,12 @@
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
   - ①202409~
 
-- Type Systems Luca Cardelli Microsoft Research
-  
+- Type Systems (Luca Cardelli Microsoft Research)
+
 - [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
 
 - [Programming and Programming Languages (Shriram Krishnamurthi, Benjamin S. Lerner, Joe Gibbs Politz, Kathi Fisler)](https://papl.cs.brown.edu/2020/)
+  - 
 
 - Using, Understanding, and Unravelling The OCaml Language — An introduction [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
 
@@ -284,10 +280,17 @@
 
 - Category Theory for Computing Science (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
 
+    - 
+
+
 
   - [CTM - Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
 
+  - Foundations of Object-Oriented Languages, J.W. de Bakker, W.P. de Roever, G. Rozenberg (Eds.)
+
 - Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
+
+    - 
 
 - Proofs and Types (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
 
@@ -339,30 +342,20 @@
 - 虎书🐯📚 Modern Compiler Implementation in C (Andrew W.Appel,with Jens Palsberg) 现代编译原理-C语言描述
 - 龙书🐲📚 Compilers: Principles,Techniques,and Tools (Alfred V.Aho,Ravi Sethi,Jeffrey D.Ullman) 编译原理技术和工具
 - 程序设计语言概念 Concepts in Programming Languages John C. Mitchell
+- Programming languages : principles and paradigms, Tucker, Allen B.
 - Design Concepts in Programming Languages (Franklyn A. Turbak, David K. Gifford)
+- Programming language design concepts Watt, David A. (David Anthony)
 - Theories of Programming Languages
 - Syntax and Semantics of Programming Languages
+- Semantics of Programming Language (Gunter)
 - Type Theory and Formal Proof An Introduction
 - Lectures on the Curry-Howard Isomorphism
+- Foundations for programming languages, Mitchell, John C.
+- 
 - Programs and Proofs Mechanizing Mathematics with Dependent Types
 
   - https://ilyasergey.net/pnp/
-- Paper---------------------------------------------------------------------------------
-- [A Tutorial Implementation of a Dependently Typed Lambda Calculus](http://www.andres-loeh.de/LambdaPi/) — Andres Löh, Conor McBride and Wouter Swierstra [pdf](http://www.andres-loeh.de/LambdaPi/LambdaPi.pdf). Previously published as [Simply Easy](http://strictlypositive.org/Easy.pdf).
-- [ΠΣ: Dependent Types without the Sugar](https://www.andres-loeh.de/PiSigma/PiSigma.pdf) - Thorsten Altenkirch, Nils Anders Danielsson, Andres Löh, and Nicolas Oury
-- [Lambda Calculi with Types](http://ttic.uchicago.edu/~dreyer/course/papers/barendregt.pdf) — Henk Barendregt
-- [Intuitionistic Type Theory](http://www.csie.ntu.edu.tw/~b94087/ITT.pdf)
-- [Type Theory](https://plato.stanford.edu/entries/type-theory/) - Thierry Coquand
-- [An argument against call/cc](http://okmij.org/ftp/continuations/against-callcc.html) — Oleg Kiselyov
-- [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf), Abdulaziz Ghuloum
-- [A Nanopass Framework for Compiler Education](http://www.cs.indiana.edu/~dyb/pubs/nano-jfp.pdf), Dipanwita Sarkar, Oscar Waddell, R. Kent Dybvig
-- [A Nanopass Framework for Commercial Compiler Development](http://andykeep.com/pubs/dissertation.pdf), [Andrew W. Keep](http://andykeep.com/)
-- [ZINC](http://caml.inria.fr/pub/papers/xleroy-zinc.pdf) - The ZINC experiment, an economical implementation of the ML language - Xavier Leroy (Technical Report) [more OCaml papers](http://caml.inria.fr/about/papers.en.html)
-- Subtopic  ----------------------------------------------------------------------------
-- Higher Type Theory
-- Module Systems
-- Effect Systems
-- e------------------------------------------------------------------------------------------
+- 
 - Certified Programming with Dependent Types (CPDT) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
 - Homotopy Type Theory (HoTT) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 - 魔力Haskell
@@ -373,6 +366,8 @@
   - github [thinking-with-types](https://github.com/isovector/thinking-with-types)
 - Haskell趣学指南
   - 
+- ML程序设计教程
+  - ①2024090
 - [RWOC](https://realworldocaml.org/) - Real World OCaml - Jason Hickey, Anil Madhavapeddy, and Yaron Minsky
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc
@@ -429,7 +424,7 @@
 - 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
   - ①
 
-- [程序设计语言——原理和实践 Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  黄林鹏译](http://find.nlc.cn/search/showDocDetails?docId=-3476831687557735465&dataSource=ucs01&query=%09%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E2%80%94%E2%80%94%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E8%B7%B5)
+- Programming languages : principles and practice, Louden, Kenneth C.
 
 
   - Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  没找到带目录的
@@ -437,6 +432,8 @@
 
 - 程序设计语言原理 (（美）賽巴斯塔（Sebesta，R.W.）)   Concepts of Programming Languages 第十版
   - ①202409【TODO】
+
+- Concepts in programming languages, Mitchell, John C.
 
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
 
@@ -467,9 +464,9 @@
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
   - 
 
-- *Lisp in Small Pieces* (**L.i.S.P**) (by Christian Queinnec)
+- Lisp in Small Pieces (**L.i.S.P**) (by Christian Queinnec)
 
-- *Implementing Functional Languages: A Tutorial* (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
+- Implementing Functional Languages: A Tutorial (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
 
 - [TODO](https://github.com/12Tall/lsbasi_cn)
 

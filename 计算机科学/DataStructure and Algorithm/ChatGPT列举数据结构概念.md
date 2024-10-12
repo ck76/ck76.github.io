@@ -52,7 +52,7 @@
 
 5. **树状数组（Binary Indexed Tree, BIT）或Fenwick树**: 一种查询和修改数组前缀和的高效数据结构，适用于频繁更新和计算前缀和的场景。
 
-6. **van Emde Boas树（van Emde Boas Trees, vEB）**: 一种优化的树数据结构，支持在\(O(\log \log M)\)时间内完成插入、删除、查找、前驱和后继操作，其中M是树中存储的元素的范围。
+6. **van Emde Boas树（van Emde Boas Trees, vEB）**: 一种优化的树数据结构，支持在$O(\log \log M)$时间内完成插入、删除、查找、前驱和后继操作，其中M是树中存储的元素的范围。
 
 7. **斐波那契堆（Fibonacci Heap）**: 一种具有优秀摊还分析性能的优先队列数据结构，特别适合于Dijkstra和Prim最小生成树算法中。
 

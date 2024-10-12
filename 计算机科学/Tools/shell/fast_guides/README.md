@@ -283,7 +283,7 @@ echo $length
 
 ### Shell 流程控制
 
-和Java、PHP、Python等语言不一样，sh的流程控制不可为空，如\(以下为PHP流程控制写法\)：
+和Java、PHP、Python等语言不一样，sh的流程控制不可为空，如$以下为PHP流程控制写法$：
 
 ```
 <?php

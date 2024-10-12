@@ -664,7 +664,7 @@ $$
 
 #### 14.1.1 函子的固定点是什么？
 
-设 $R : \mathcal{A} \to \mathcal{A}$ 是一个自函子（endofunctor），即作用在范畴 \(\mathcal{A}\) 上的函子。固定点的概念仅在自函子的情况下有意义，因为我们需要函子作用后的对象仍在同一范畴内。固定点和最小固定点分别描述了在函子作用下不变的对象及其最小化的结构。
+设 $R : \mathcal{A} \to \mathcal{A}$ 是一个自函子（endofunctor），即作用在范畴 $\mathcal{A}$ 上的函子。固定点的概念仅在自函子的情况下有意义，因为我们需要函子作用后的对象仍在同一范畴内。固定点和最小固定点分别描述了在函子作用下不变的对象及其最小化的结构。
 
 对于集合上的函数，我们熟知**固定点**的定义，即满足 $f(x) = x$ 的 $x$。若集合是一个偏序集，**最小固定点**则是所有固定点中最小的那个。对于函子而言，固定点的相关结构由**R-代数**的概念来刻画，这不仅考虑对象本身，还包括对象上的结构映射。
 
@@ -676,7 +676,7 @@ $$
 
 #### 14.1.3 函子上的代数
 
-引入 **R-代数** 的概念，有助于理解函子的固定点。设 $R : \mathcal{A} \to \mathcal{A}$ 是一个自函子。一个 $R$-代数是一个对 $(A, a)$，其中 $A$ 是 \(\mathcal{A}\) 中的一个对象，$a : R(A) \to A$ 是一个态射（箭头）。两个 $R$-代数 $(A, a)$ 和 $(B, b)$ 之间的同态是满足以下交换图的态射 $f : A \to B$:
+引入 **R-代数** 的概念，有助于理解函子的固定点。设 $R : \mathcal{A} \to \mathcal{A}$ 是一个自函子。一个 $R$-代数是一个对 $(A, a)$，其中 $A$ 是 $\mathcal{A}$ 中的一个对象，$a : R(A) \to A$ 是一个态射（箭头）。两个 $R$-代数 $(A, a)$ 和 $(B, b)$ 之间的同态是满足以下交换图的态射 $f : A \to B$:
 
 $$
 \begin{array}{ccc}
@@ -982,7 +982,7 @@ $$
 
 #### 14.3.1 定义：三元组
 
-**定义**：在一个范畴 \(\mathcal{A}\) 上，**三元组** $T = (T, \eta, \mu)$ 由以下组成部分构成：
+**定义**：在一个范畴 $\mathcal{A}$ 上，**三元组** $T = (T, \eta, \mu)$ 由以下组成部分构成：
 - **函子** $T : \mathcal{A} \to \mathcal{A}$
 - **自然变换** $\eta : \text{id} \to T$（称为单元，Unit）
 - **自然变换** $\mu : T^2 \to T$（称为乘法，Multiplication）
@@ -1041,7 +1041,7 @@ $$
 
 #### 14.3.3 命题：伴随对产生三元组
 
-**命题**：设 $U : \mathcal{B} \to \mathcal{A}$ 和 $F : \mathcal{A} \to \mathcal{B}$ 是一对伴随对，其中 $F \dashv U$，单位为 $\eta : \text{id}_{\mathcal{A}} \to U \circ F$，余单位为 $\epsilon : F \circ U \to \text{id}_{\mathcal{B}}$。那么 $(U \circ F, \eta, U \circ \epsilon \circ F)$ 构成了 \(\mathcal{A}\) 上的一个三元组。
+**命题**：设 $U : \mathcal{B} \to \mathcal{A}$ 和 $F : \mathcal{A} \to \mathcal{B}$ 是一对伴随对，其中 $F \dashv U$，单位为 $\eta : \text{id}_{\mathcal{A}} \to U \circ F$，余单位为 $\epsilon : F \circ U \to \text{id}_{\mathcal{B}}$。那么 $(U \circ F, \eta, U \circ \epsilon \circ F)$ 构成了 $\mathcal{A}$ 上的一个三元组。
 
 **通俗解释**：
 - 通过组合伴随对中的函子 $U$ 和 $F$，以及自然变换 $\eta$ 和 $\epsilon$，我们可以构造出一个满足三元组定义的结构。
@@ -1073,7 +1073,7 @@ $$
 
 #### 14.3.5 余三元组（Cotriples）
 
-**定义**：**余三元组（Cotriples）** $G = (G, \epsilon, \delta)$ 在一个范畴 \(\mathcal{A}\) 中，是 \(\mathcal{A}^{op}\) 上的一个三元组。具体来说：
+**定义**：**余三元组（Cotriples）** $G = (G, \epsilon, \delta)$ 在一个范畴 $\mathcal{A}$ 中，是 $\mathcal{A}^{op}$ 上的一个三元组。具体来说：
 - $G$ 是一个自函子 $G : \mathcal{A} \to \mathcal{A}$。
 - $\epsilon : G \to \text{id}$ 和 $\delta : G \to G^2$ 是自然变换。
 - 它们需要满足与三元组相似的单位律和结合律，但在对偶范畴中。
@@ -1126,10 +1126,10 @@ $$
 
 **定义与构造**：
 
-设 $T = (T, \eta, \mu)$ 是范畴 \(\mathcal{C}\) 上的一个三元组。Kleisli范畴 $\mathcal{K}(T)$ 是基于这个三元组构造的一个新范畴，其对象与原范畴 \(\mathcal{C}\) 相同。但在Kleisli范畴中，态射的定义有所不同：
+设 $T = (T, \eta, \mu)$ 是范畴 $\mathcal{C}$ 上的一个三元组。Kleisli范畴 $\mathcal{K}(T)$ 是基于这个三元组构造的一个新范畴，其对象与原范畴 $\mathcal{C}$ 相同。但在Kleisli范畴中，态射的定义有所不同：
 
-- **对象**：与 \(\mathcal{C}\) 相同。
-- **态射**：从对象 $A$ 到对象 $B$ 的态射是原范畴 \(\mathcal{C}\) 中的态射 $A \to T(B)$。
+- **对象**：与 $\mathcal{C}$ 相同。
+- **态射**：从对象 $A$ 到对象 $B$ 的态射是原范畴 $\mathcal{C}$ 中的态射 $A \to T(B)$。
 - **组合**：若有 $f : A \to T(B)$ 和 $g : B \to T(C)$，则在Kleisli范畴中的复合 $g \circ_K f$ 定义为：
   $$
   A \xrightarrow{f} T(B) \xrightarrow{T(g)} T^2(C) \xrightarrow{\mu_C} T(C)
@@ -1175,7 +1175,7 @@ Eilenberg–Moore代数提供了另一种将三元组分解为伴随对的方法
   A & = & A \\
   \end{array}
   $$
-- **态射**：两个 $T$-代数 $(A, a)$ 和 $(B, b)$ 之间的态射是原范畴 \(\mathcal{C}\) 中的态射 $f : A \to B$，满足 $f \circ a = b \circ T(f)$。
+- **态射**：两个 $T$-代数 $(A, a)$ 和 $(B, b)$ 之间的态射是原范畴 $\mathcal{C}$ 中的态射 $f : A \to B$，满足 $f \circ a = b \circ T(f)$。
 
 **通俗解释**：
 
@@ -1252,7 +1252,7 @@ Kleisli范畴允许我们以更直观的方式处理带有额外结构或效果�
    - 计算 $(h \circ_K g) \circ_K f$ 和 $h \circ_K (g \circ_K f)$。
    - 利用三元组的结合律 $\mu \circ T(\mu) = \mu \circ \mu T$，证明两者相等。
 
-3. **习题3†**：设 $(T, \eta, \mu)$ 是在集合范畴 \(\text{Set}\) 中定义的三元组，如14.3节的习题3所述。
+3. **习题3†**：设 $(T, \eta, \mu)$ 是在集合范畴 $\text{Set}$ 中定义的三元组，如14.3节的习题3所述。
 
    a. **证明**：证明该三元组的代数是幺半群。具体来说，如果 $\alpha : T(A) \to A$ 是一个代数，则定义 $ab = \alpha(a, b)$ 使得 $A$ 成为一个幺半群，并且每个幺半群（最多同构）都由这种方式产生。
 
