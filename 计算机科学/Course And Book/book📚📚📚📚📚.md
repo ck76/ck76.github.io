@@ -231,9 +231,13 @@
   - 202410：第三部分：子类型
   - 202410
   
-- 程序员的范畴论
+- 给程序员的范畴论-Haskell-中文翻译
+
+    - 
 
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
+
+    - o1
 
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
 
@@ -265,9 +269,12 @@
   - ①2024090
 
 - [PLFA - Programming Language Foundations in Agda](https://agda-zh.github.io/PLFA-zh/)
+  - o1
   - ①202409~
 
 - Type Systems (Luca Cardelli Microsoft Research)
+
+    - o1 or o1-mini
 
 - [Essentials of Compilation (EoC)](https://iucompilercourse.github.io/tutorial-web-page/)
 
@@ -276,23 +283,29 @@
 
 - Using, Understanding, and Unravelling The OCaml Language — An introduction [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
 
+    - o1
+
+    - 
+
 - Write You a Haskell Building a modern functional compiler from first principles
 
-- Category Theory for Computing Science (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)]
+- Category Theory for Computing Science (**CTCS**) (by Michael Barr, Charles Wells) [[Homepage](http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html)] [[PDF](http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf)] 计算科学范畴论
 
-    - 
-
-
+    - o1
 
   - [CTM - Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
+    - o1-moni
 
   - Foundations of Object-Oriented Languages, J.W. de Bakker, W.P. de Roever, G. Rozenberg (Eds.)
+    - o1
 
-- Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)]
+- Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)] 类型理论与函数式编程
 
-    - 
+    - o1
 
 - Proofs and Types (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
+
+    - 
 
 - Structure and Interpretation of Computer Programs (**SICP**, **“Wizard Book”**) (by Gerald Jay Sussman, Hal Abelson, Julie Sussman) [[Homepage](http://mitpress.mit.edu/sicp/)] [[HTML](http://mitpress.mit.edu/sicp/full-text/book/book.html)] [[PDF](https://github.com/sarabander/sicp-pdf/blob/master/sicp.pdf?raw=true) (Unofficial)]
 
@@ -301,11 +314,20 @@
 
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
 
-  - ①202409~
+  - o1-mini
+  - ①2024~
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
-  - ①202409~
+  - o1-mini
+  - ①2024~
 - The Little Typer
+
+  - o1-mini
+
+- A little Java, a few patterns (Felleisen, MatthiasFriedman, Daniel P)
+
+  - mini
+
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
   - 202410
@@ -326,7 +348,6 @@
 - Go 1.5 源码剖析
 
   - 看不看都行
-- 
 - Go语言高级编程
   - 看不看都行
 - 网络是怎样连接的
@@ -338,37 +359,73 @@
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
-- 鲸书🐳📚 Advanced Compiler Design and Implementation (Steven S.Muchnick) 高级编译器设计与实现
-- 虎书🐯📚 Modern Compiler Implementation in C (Andrew W.Appel,with Jens Palsberg) 现代编译原理-C语言描述
-- 龙书🐲📚 Compilers: Principles,Techniques,and Tools (Alfred V.Aho,Ravi Sethi,Jeffrey D.Ullman) 编译原理技术和工具
-- 程序设计语言概念 Concepts in Programming Languages John C. Mitchell
+- Advanced Compiler Design and Implementation (Steven S.Muchnick)  鲸书🐳📚  高级编译器设计与实现
+- Modern Compiler Implementation in C (Andrew W.Appel,with Jens Palsberg) 虎书🐯📚  现代编译原理-C语言描述
+
+  - 读
+
+- Compilers: Principles,Techniques,and Tools (Alfred V.Aho,Ravi Sethi,Jeffrey D.Ullman)  龙书🐲📚  编译原理技术和工具
+- Concepts in Programming Languages John C. Mitchell 程序设计语言概念 
+
+  - 读
+
 - Programming languages : principles and paradigms, Tucker, Allen B.
+
+  - 待定
+
 - Design Concepts in Programming Languages (Franklyn A. Turbak, David K. Gifford)
+
+  - o1 or o1-mini
+
 - Programming language design concepts Watt, David A. (David Anthony)
+
+  - 读不读都行吧
+
 - Theories of Programming Languages
-- Syntax and Semantics of Programming Languages
+
+  - 读
+
+- Formal Syntax And Semantics Of Programming Languages
+
+  - 读
+
+- Syntax and Semantics of Programming Languages [[homepage]](https://homepage.cs.uiowa.edu/~slonnegr/plf/Book/)
+
+  - 待定
+
 - Semantics of Programming Language (Gunter)
+
+  - 读
+
 - Type Theory and Formal Proof An Introduction
+
+  - 读 o1
 - Lectures on the Curry-Howard Isomorphism
-- Foundations for programming languages, Mitchell, John C.
-- 
+
+  - 
+
 - Programs and Proofs Mechanizing Mathematics with Dependent Types
 
   - https://ilyasergey.net/pnp/
-- 
-- Certified Programming with Dependent Types (CPDT) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)]
+- Certified Programming with Dependent Types (CPDT) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)] 免费版
+
+  - 读o1-mini
+
 - Homotopy Type Theory (HoTT) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
+
+  - 读读
+
 - 魔力Haskell
   - ①2024080 第二部分 116页
   - 2024
 - [Think with Types](https://thinkingwithtypes.com/)
-
-  - github [thinking-with-types](https://github.com/isovector/thinking-with-types)
+  - github [thinking-with-types ](https://github.com/isovector/thinking-with-types) Think with Types
+  - 读o1-mini
 - Haskell趣学指南
   - 
 - ML程序设计教程
   - ①2024090
-- [RWOC](https://realworldocaml.org/) - Real World OCaml - Jason Hickey, Anil Madhavapeddy, and Yaron Minsky
+- [RWOC](https://realworldocaml.org/) - Real World OCaml 🐫 - Jason Hickey, Anil Madhavapeddy, and Yaron Minsky
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc
 - 主流编程语言Compilers 代码库
@@ -384,56 +441,48 @@
   - Scheme
   - Kotlin
 - The Definition of Standard ML
+
+  - 
+
 - C++语言的设计和演化 ([美] Bjarne Stroustrup 著 裘宗燕 译) 
 - 编程之魂  与27位编程语言创始人对话 
 
+    - 直看对应的几章
 
-  - 直看对应的几章
+
 
 - miniXXX
-
 - 
-
 - https://plzoo.andrej.com/
-
 - [Lean 4 定理证明](https://www.leanprover.cn/tp-lean-zh/title_page.html) 
-
 - [Lean 函数式编程](https://www.leanprover.cn/fp-lean-zh/)
-
 - https://github.com/AndrasKovacs/elaboration-zoo
-
 - 自己动手实现解释器
   - ①20240813~
-
 - 编程语言实现模式 - Language Implementation Patterns
   - ①2024082~
-
 - 编程语言的邀请
   - ①
-
-- 程序设计语言的形式语义 (Glynn Winskel)  The Formal Semantics of Programming Languages
+- The Formal Semantics of Programming Languages 程序设计语言的形式语义🇨🇳 (Glynn Winskel)  
   - ①202409【TODO】
-
-- 程序设计语言理论基础 (John C. Mitchell,许满武,徐建,衷宜,杨群)    
+- Foundations for programming languages (美) John C. Mitchell 程序设计语言理论基础🇨🇳 (John C. Mitchell,许满武,徐建,衷宜,杨群)    
+  - 
   - ①202409【TODO】
-
 - 程序设计语言理论, 第二版 (陈意云, 张昱)  
 
   - ①202409【TODO】
-
-- 程序设计语言 实践之路 第3版（中文版） (Michael L. Scott译者 韩江  陈玉)   Programming Language Pragmatics
+- Programming Language Pragmatics 程序设计语言 实践之路 第3版🇨🇳（中文版） (Michael L. Scott译者 韩江  陈玉)   
   - ①
+- Programming languages : principles and practice, Louden, Kenneth C. 没找到带目录的没找到中文pdf ：<
 
-- Programming languages : principles and practice, Louden, Kenneth C.
+  - 读
 
 
-  - Programming Languages Principles and Practices (Kenneth C. Louden, Kenneth A. Lambert)  没找到带目录的
-  - 没找到中文pdf ：<
 
-- 程序设计语言原理 (（美）賽巴斯塔（Sebesta，R.W.）)   Concepts of Programming Languages 第十版
+-  Concepts of Programming Languages 第十版 程序设计语言原理🇨🇳 (（美）賽巴斯塔（Sebesta，R.W.）)  
   - ①202409【TODO】
 
-- Concepts in programming languages, Mitchell, John C.
+- 
 
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
 
@@ -446,98 +495,55 @@
 - [TypeScript 类型体操姿势合集](https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.zh-CN.md)
   - https://github.com/ronami/HypeScript
   - https://github.com/skyzh/type-exercise-in-rust
-  
 - 
-  
 - Haskell函数式编程入门卷一
   - 
-  
 - Haskell函数式编程入门卷二
   - 
-  
 - Haskell in Depth (Vitaly Bragilevsky)
-
 - Programming with Types WITH EXAMPLES IN TYPESCRIPT
-
 - 
-
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
   - 
-
 - Lisp in Small Pieces (**L.i.S.P**) (by Christian Queinnec)
-
 - Implementing Functional Languages: A Tutorial (by Simon Peyton Jones, David Lester) [[Homepage](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/)] [[PDF](http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/student.pdf.gz)]
-
 - [TODO](https://github.com/12Tall/lsbasi_cn)
-
 - Functional Programming in Kotlin by Tutorials A Practical Approach to Writing Safer, More Reliable Apps (Raywenderlich Tutorial Team, Massimo Carli) 
   - ①2024090
-  
 - Functional Programming in Kotlin (Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano) 
   - ①2024090
-  
 - Functional Programming Made Easier A Step-by-Step Guide (Charles Scalfani) 
-
 - The Art of Functional Programming (Minh Quang Tran)
-
 - 
-
 - 
-
 - [臺灣大學 邏輯、語言與計算暑期研習營](https://flolac.iis.sinica.edu.tw/zh/2024/registration.html) Formosan Summer School on Logic, Language, and Computation
   - 
-  
 - [∞-type Café 暑期学校](https://infinity-type-cafe.github.io/ntype-cafe-summer-school/2023/06/01/introduction2023/) [ntype-cafe-summer-school](https://github.com/Infinity-Type-Cafe/ntype-cafe-summer-school)
 
   - 
-  
 - ice1000-立方类型论入门
-
 - 
-
 - [Github 搜索Functional Programming](https://github.com/search?q=Functional+Programming&type=repositories&p=2)
 
-  
-
-- The Little Javer
-
 - 函数式编程思维
-
 - 计算的本质：深入剖析程序和计算机
-
 - SICP-计算机程序构造和解释 sicp
-
 - 
-
 - 
-
 - Scala与Clojure函数式编程模式 Java虚拟机高效编程
-
 - [Python源码剖析](https://book.douban.com/subject/3117898/)
-
 - 自己动手写Python虚拟机
-
 - Lua解释器构建：从虚拟机到编译器
-
 - Lua设计与实现 (李创)
-
 - Ruby原理剖析
-
 - 
-
 - On Lisp
-
 - OAuth 2.0 從入門到實戰：利用驗證和授權守護 API 的安全 (周建毅
-
 - OAuth 2 in Action 、OAuth 2实战
-
 - 
-
 - MySQL是怎样运行的 从根儿上理解MySQL
   - 
-  
 - 
-
 - ProgrammingRust
 
 

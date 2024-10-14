@@ -1,0 +1,1 @@
+A little Java, a few patterns

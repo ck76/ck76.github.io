@@ -1,5 +1,7 @@
 [toc]
 
+《Proofs and Types》
+
 ### 目录 (Contents) - Proofs and Types 中英双语对照版
 
 **序言** (Preface)
