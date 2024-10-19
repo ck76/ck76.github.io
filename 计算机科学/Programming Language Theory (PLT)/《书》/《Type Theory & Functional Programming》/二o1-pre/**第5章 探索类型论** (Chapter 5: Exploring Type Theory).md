@@ -4106,50 +4106,50 @@ with f1 :: A -> A
 
 #### **记号约定**
 
-- `::` 被认为是右结合的，即 `(a :: b :: l)` 等价于 `(a :: (b :: l))`。
+- `::` 被认为是右结合的，即 $(a :: b :: l)$ 等价于 $(a :: (b :: l))$。
 
-- 我们使用 `[a_1, a_2, \dots, a_n]` 来表示列表 `(a_1 :: a_2 :: \dots :: a_n :: [\ ])`。
+- 我们使用 $[a_1, a_2, \dots, a_n]$ 来表示列表 $(a_1 :: a_2 :: \dots :: a_n :: [\ ])$。
 
 #### **示例**
 
-- 使用 `lrec` 定义 `map` 函数，它接受一个函数 `f` 和一个列表 `[a_1, a_2, \dots, a_n]`，返回 `[f\ a_1, f\ a_2, \dots, f\ a_n]`。
+- 使用 $lrec$ 定义 $map$ 函数，它接受一个函数 $f$ 和一个列表 $[a_1, a_2, \dots, a_n]$，返回 $[f\ a_1, f\ a_2, \dots, f\ a_n]$。
 
 #### **练习**
 
-1. 使用 `lrec` 定义 `map` 函数。
+1. 使用 $lrec$ 定义 $map$ 函数。
 
-2. 定义 `segs` 函数，其类型为 `[A] \rightarrow [[A]]`，满足：
+2. 定义 $segs$ 函数，其类型为 $[A] \rightarrow [[A]]$，满足：
 
    $$
    \text{segs}\ [n_1, n_2, \dots, n_m] \equiv_{\text{df}} [\ [\ ],\ [n_1],\ [n_1, n_2],\ \dots,\ [n_1, n_2, \dots, n_m]\ ]
    $$
 
-3. 使用 `segs` 或其他方法，定义 `sums` 函数，其类型为 `[N] \rightarrow [N]`，满足：
+3. 使用 $segs$ 或其他方法，定义 $sums$ 函数，其类型为 $[N] \rightarrow [N]$，满足：
 
    $$
    \text{sums}\ [n_1, n_2, \dots, n_m] \equiv_{\text{df}} [0,\ n_1,\ n_1 + n_2,\ \dots,\ n_1 + n_2 + \dots + n_m]
    $$
 
-   考虑空列表 `[ ]` 的适当值。
+   考虑空列表 $[ ]$ 的适当值。
 
-4. 定义 `sublists` 函数，其类型为 `[A] \rightarrow [[A]]`，返回一个列表的所有子列表。
+4. 定义 $sublists$ 函数，其类型为 $[A] \rightarrow [[A]]$，返回一个列表的所有子列表。
 
-5. 讨论如何从类型 `A` 上的等式操作定义列表类型 `[A]` 上的等式操作。
+5. 讨论如何从类型 $A$ 上的等式操作定义列表类型 $[A]$ 上的等式操作。
 
 ### **5.10.2 一般情况——W类型**
 
-在一般情况下，我们可以将任何代数类型的元素视为**树（trees）**。例如，图5.1展示了自然数 `0` 和 `2`（即 `succ (succ 0)`）以及列表 `[1, 0]` 的树形表示。
+在一般情况下，我们可以将任何代数类型的元素视为**树（trees）**。例如，图5.1展示了自然数 $0$ 和 $2$（即 $succ (succ 0)$）以及列表 $[1, 0]$ 的树形表示。
 
 #### **树的表示**
 
 - **自然数的树形表示**：
 
-  - `0` 被表示为一个没有前驱的节点。
-  - `succ n` 被表示为一个带有一个前驱的节点，前驱是 `n`。
+  - $0$ 被表示为一个没有前驱的节点。
+  - $succ n$ 被表示为一个带有一个前驱的节点，前驱是 $n$。
 
 - **列表的树形表示**：
 
-  - 列表 `[a_1, a_2, \dots, a_n]` 被表示为一系列 `cons` 节点，最后是一个 `nil` 节点。
+  - 列表 $[a_1, a_2, \dots, a_n]$ 被表示为一系列 $cons$ 节点，最后是一个 $nil$ 节点。
 
 - **二叉树的表示**：
 
@@ -4159,14 +4159,14 @@ with f1 :: A -> A
 
 这些类型的共同特点是，每个节点由相同类型的某些前驱集合构建。对于一般的代数类型，我们有：
 
-- 一个类型 `A`，表示**节点的种类（sorts of node）**。
+- 一个类型 $A$，表示**节点的种类（sorts of node）**。
 
-  - 对于树而言，`A` 可以是一个和类型，如 `A ≡ ( > \lor N )`，其中 `>` 表示只有一个元素的类型（例如 `Null` 节点），`N` 表示携带数字的节点。
+  - 对于树而言，$A$ 可以是一个和类型，如 $A ≡ ( > \lor N )$，其中 $>$ 表示只有一个元素的类型（例如 $Null$ 节点），$N$ 表示携带数字的节点。
 
-- 一个类型族 `B(a)`，对于每个 `a : A`，`B(a)` 是一个类型，表示节点 `a` 的**前驱名称的类型**。
+- 一个类型族 $B(a)$，对于每个 $a : A$，$B(a)$ 是一个类型，表示节点 $a$ 的**前驱名称的类型**。
 
-  - 对于 `Null` 节点，`B(\text{Null}) ≡ \bot`（空类型），因为它没有前驱。
-  - 对于二叉节点 `Bnode n`，`B(\text{Bnode}\ n) ≡ N^2`，表示有两个前驱。
+  - 对于 $Null$ 节点，$B(\text{Null}) ≡ \bot$（空类型），因为它没有前驱。
+  - 对于二叉节点 $Bnode n$，$B(\text{Bnode}\ n) ≡ N^2$，表示有两个前驱。
 
 #### **W类型的构造**
 
@@ -4174,7 +4174,7 @@ with f1 :: A -> A
 
 1. **形成规则（Formation Rule）**：
 
-   如果 `A` 是一个类型，并且对于所有 `x : A`，`B(x)` 是一个类型，那么：
+   如果 $A$ 是一个类型，并且对于所有 $x : A$，$B(x)$ 是一个类型，那么：
 
    $$
    \frac{A\ \text{是一个类型} \quad [x : A]\ .\ .\ .\ B(x)\ \text{是一个类型}}{(W\ x : A)\ .\ B(x)\ \text{是一个类型}} \quad (\text{W F})
@@ -4182,19 +4182,19 @@ with f1 :: A -> A
 
 2. **引入规则（Introduction Rule）**：
 
-   - 如果 `a : A`，`f : B(a) \rightarrow (W\ x : A)\ .\ B(x)`，那么：
+   - 如果 $a : A$，$f : B(a) \rightarrow (W\ x : A)\ .\ B(x)$，那么：
 
      $$
      \frac{a : A \quad f : B(a) \rightarrow (W\ x : A)\ .\ B(x)}{\text{node}\ a\ f : (W\ x : A)\ .\ B(x)} \quad (\text{W I})
      $$
 
-     这表示我们可以使用节点种类 `a` 和前驱函数 `f` 构造一个 W 类型的元素。
+     这表示我们可以使用节点种类 $a$ 和前驱函数 $f$ 构造一个 W 类型的元素。
 
 3. **消除规则（Elimination Rule）**：
 
    为了在 W 类型上定义递归或归纳函数，我们需要一个消除规则。
 
-   - 假设我们有 `w : (W\ x : A)\ .\ B(x)`，并希望证明 `C(w)`。
+   - 假设我们有 $w : (W\ x : A)\ .\ B(x)$，并希望证明 $C(w)$。
 
    - **消除规则**：
 
@@ -4202,7 +4202,7 @@ with f1 :: A -> A
      \frac{w : (W\ x : A)\ .\ B(x) \quad R : \text{Ind}(A, B, C)}{\text{Rec}\ w\ R : C(w)} \quad (\text{W E})
      $$
 
-     其中，`R` 是一个归纳步骤，类型为：
+     其中，$R$ 是一个归纳步骤，类型为：
 
      $$
      R : (\forall a : A)(\forall f : B(a) \rightarrow (W\ x : A)\ .\ B(x))\ ((\forall y : B(a))\ C(f\ y) \Rightarrow C(\text{node}\ a\ f))
@@ -4210,55 +4210,55 @@ with f1 :: A -> A
 
 4. **计算规则（Computation Rule）**：
 
-   - 对于 `\text{node}\ a\ f`：
+   - 对于 $\text{node}\ a\ f$：
 
      $$
      \text{Rec}\ (\text{node}\ a\ f)\ R \rightarrow R\ a\ f\ (\lambda x . \text{Rec}\ (f\ x)\ R)
      $$
 
-     这表示对节点 `\text{node}\ a\ f` 的递归结果由 `R` 确定，它接受 `a`、`f` 和对所有前驱的递归结果。
+     这表示对节点 $\text{node}\ a\ f$ 的递归结果由 $R$ 确定，它接受 $a$、$f$ 和对所有前驱的递归结果。
 
 #### **W类型的解释**
 
 - **节点的构造**：
 
-  - 使用 `node` 构造函数，我们可以构造 W 类型的元素。
+  - 使用 $node$ 构造函数，我们可以构造 W 类型的元素。
 
 - **递归定义**：
 
-  - 使用 `Rec` 函数和消除规则，我们可以在 W 类型上定义递归函数。
+  - 使用 $Rec$ 函数和消除规则，我们可以在 W 类型上定义递归函数。
 
 #### **示例：树类型的W类型表示**
 
-- **定义节点种类类型 `A`**：
+- **定义节点种类类型 $A$**：
 
-  - `A ≡ ( > \lor N )`，表示节点可以是 `Null` 或 `Bnode n`。
+  - $A ≡ ( > \lor N )$，表示节点可以是 $Null$ 或 $Bnode n$。
 
-- **定义前驱名称类型族 `B(a)`**：
+- **定义前驱名称类型族 $B(a)$**：
 
-  - 对于 `Null`，`B(\text{Null}) ≡ \bot`。
+  - 对于 $Null$，$B(\text{Null}) ≡ \bot$。
 
-  - 对于 `Bnode n`，`B(\text{Bnode}\ n) ≡ N^2`。
+  - 对于 $Bnode n$，$B(\text{Bnode}\ n) ≡ N^2$。
 
-- **构造 `Null` 节点**：
+- **构造 $Null$ 节点**：
 
-  - 使用 `node` 和一个从空类型到 W 类型的函数 `efun`，我们得到：
+  - 使用 $node$ 和一个从空类型到 W 类型的函数 $efun$，我们得到：
 
     $$
     \text{node}\ \text{Null}\ \text{efun}
     $$
 
-  - 这对应于 `Null` 节点。
+  - 这对应于 $Null$ 节点。
 
-- **构造 `Bnode` 节点**：
+- **构造 $Bnode$ 节点**：
 
-  - 对于给定的 `n : N`，`u, v : \text{tree}`，我们定义：
+  - 对于给定的 $n : N$，$u, v : \text{tree}$，我们定义：
 
     $$
     f_{u, v} \equiv_{\text{df}} \lambda x . (\text{cases}_2\ x\ u\ v)
     $$
 
-    其中，`f_{u, v} : N^2 \rightarrow \text{tree}`，将前驱名称映射到前驱 `u` 和 `v`。
+    其中，$f_{u, v} : N^2 \rightarrow \text{tree}$，将前驱名称映射到前驱 $u$ 和 $v$。
 
   - 然后，我们构造：
 
@@ -4276,19 +4276,19 @@ with f1 :: A -> A
     R : (\forall a : A)(\forall f : B(a) \rightarrow (W\ x : A)\ .\ B(x))\ ((\forall y : B(a))\ C(f\ y) \Rightarrow C(\text{node}\ a\ f))
     $$
 
-  - 对于 `Null` 节点，`B(\text{Null}) ≡ \bot`，因此函数 `f : \bot \rightarrow (W\ x : A)\ .\ B(x)` 是唯一的。
+  - 对于 $Null$ 节点，$B(\text{Null}) ≡ \bot$，因此函数 $f : \bot \rightarrow (W\ x : A)\ .\ B(x)$ 是唯一的。
 
-  - 因此，我们需要一个 `c : C(\text{Null})`。
+  - 因此，我们需要一个 $c : C(\text{Null})$。
 
 - **计算规则的应用**
 
-  - 对于 `\text{node}\ \text{Null}\ \text{efun}`，计算规则为：
+  - 对于 $\text{node}\ \text{Null}\ \text{efun}$，计算规则为：
 
     $$
     \text{Rec}\ \text{Null}\ R \rightarrow R\ \text{Null}\ \text{efun}\ (\lambda x . \text{Rec}\ (\text{efun}\ x)\ R)
     $$
 
-  - 由于 `\text{efun}` 的域是空的，`(\lambda x . \text{Rec}\ (\text{efun}\ x)\ R)` 可以被忽略，因此结果为 `c`。
+  - 由于 $\text{efun}$ 的域是空的，$(\lambda x . \text{Rec}\ (\text{efun}\ x)\ R)$ 可以被忽略，因此结果为 `c`。
 
 #### **讨论**
 
@@ -4300,13 +4300,13 @@ with f1 :: A -> A
 
   - **定义5.38**：
 
-    两个类型 `A` 和 `B` 是外延同构的，如果存在两个函数 `f : A \rightarrow B` 和 `g : B \rightarrow A`，使得：
+    两个类型 `A` 和 `B` 是外延同构的，如果存在两个函数 $f : A \rightarrow B$ 和 $g : B \rightarrow A$，使得：
 
     $$
     (\forall x : A)\ (g(f\ x) \approx_A x) \quad \text{且} \quad (\forall y : B)\ (f(g\ y) \approx_B y)
     $$
 
-    其中 `\approx` 表示外延等价。
+    其中 $\approx$ 表示外延等价。
 
 - **简化记号**
 
@@ -4403,7 +4403,7 @@ with f1 :: A -> A
 
 - **良基类型（Well-founded Types）** 是一种广泛的类型，用于表示可以通过递归或归纳定义的数据结构，如自然数、列表、树等。
 
-- **W类型** 提供了一种统一的方式来定义这些良基类型，使用节点种类类型 `A` 和前驱名称类型族 `B(a)`。
+- **W类型** 提供了一种统一的方式来定义这些良基类型，使用节点种类类型 `A` 和前驱名称类型族 B(a)。
 
 - **引入规则** 和 **消除规则** 允许我们构造 W 类型的元素并在其上定义递归函数。
 
