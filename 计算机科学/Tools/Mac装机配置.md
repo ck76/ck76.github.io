@@ -54,6 +54,7 @@ brew install --cask postman
 brew install --cask pycharm-ce
 brew install --cask tencent-lemon
 brew install --cask typora
+brew install --cask iina
 brew install --cask github
 brew install --cask visual-studio-code
 brew install --cask iterm2
@@ -66,11 +67,11 @@ brew install --cask maccy
 #brew install --cask drawio
 #brew install --cask simple-web-server
 brew install --cask pdfelement
-brew install --cask rancher
-brew install --cask rectangle
+#brew install --cask rancher
+#brew install --cask rectangle 新版macos似乎似乎是提供了
 #brew install docker 
 brew install --cask docker
-brew install --cask orbstack
+#brew install --cask orbstack
 brew install --cask multipass
 brew install --cask the-unarchiver
 #brew install --cask db-browser-for-sqlite

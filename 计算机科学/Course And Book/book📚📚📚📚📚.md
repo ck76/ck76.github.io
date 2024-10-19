@@ -314,15 +314,15 @@
 
 - Software Foundations [VOLUME 1: 逻辑基础](https://coq-zh.github.io/SF-zh/lf-current/index.html)
 
-  - o1-mini
+  - o1
   - ①2024~
 - Software Foundations [VOLUME 2: 编程语言基础](https://coq-zh.github.io/SF-zh/plf-current/index.html)
 
-  - o1-mini
+  - o1
   - ①2024~
 - The Little Typer
 
-  - o1-mini
+  - 4o
 
 - A little Java, a few patterns (Felleisen, MatthiasFriedman, Daniel P)
 
