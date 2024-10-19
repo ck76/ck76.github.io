@@ -20,3 +20,49 @@
 - Higher Type Theory
 - Module Systems
 - Effect Systems
+
+
+
+### ----------------------------
+
+#### ICFP (International Conference on Functional Programming)
+
+- https://icfpconference.org/
+- https://icfpconference.org/history.html
+
+- [Most Influential ICFP Paper](https://www.sigplan.org/Awards/ICFP)
+
+
+
+---
+
+##### POPL (Principles of Programming Languages)
+
+- [Most Influential POPL Paper](https://www.sigplan.org/Awards/POPL)
+
+---
+
+##### PLDI (Programming Language Design and Implementation)
+
+- [Most Influential PLDI Paper](https://www.sigplan.org/Awards/PLDI)
+- (2002年) Extended Static Checking for Java [link](https://www.cs.utexas.edu/~isil/cs389L/esc-pldi02.pdf)
+
+---
+
+##### ESOP (European Symposium on Programming)
+
+- 
+
+---
+
+##### OOPSLA (Object-Oriented Programming, Systems, Languages, and Applications)
+
+- [Most Influential OOPSLA Paper](https://www.sigplan.org/Awards/OOPSLA)
+
+- 
+
+---
+
+##### TYPES (Conference on Types for Proofs and Programs)
+
+- 
