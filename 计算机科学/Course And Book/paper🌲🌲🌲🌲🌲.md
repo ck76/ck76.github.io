@@ -25,6 +25,11 @@
 
 
 
+
+
+- λ-Calculus- Then & Now   Dana S. Scott University Professor Emeritus Carnegie Mellon University Visiting Scholar University of California, Berkeley [link](https://turing100.acm.org/lambda_calculus_timeline.pdf)
+- 
+
 ### ----------------------------
 
 #### ICFP (International Conference on Functional Programming)

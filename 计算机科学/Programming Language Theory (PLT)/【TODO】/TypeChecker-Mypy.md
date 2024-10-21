@@ -1,0 +1,4 @@
+- https://github.com/python/mypy/wiki/Type-Checker
+- https://github.com/python/mypy/blob/master/mypy/checker.py
+- https://github.com/python/mypy/blob/master/mypy/checkexpr.py
+- 

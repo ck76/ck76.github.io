@@ -228,7 +228,7 @@
   - 
 - Understanding and Evolving the Rust Programming Language
 
-    - o1
+    - 4o看起来更好
 
 - Using, Understanding, and Unravelling The OCaml Language — An introduction [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
     - o1
@@ -267,11 +267,9 @@
 - The Little Typer
 
   - 4o
-
 - A little Java, a few patterns (Felleisen, MatthiasFriedman, Daniel P)
 
   - mini
-
 - [知乎-雾雨魔法店](https://www.zhihu.com/column/marisa)
 - [minimoonbit-public](https://github.com/moonbitlang/minimoonbit-public)
   - 202410
@@ -307,58 +305,47 @@
 - Modern Compiler Implementation in C (Andrew W.Appel,with Jens Palsberg) 虎书🐯📚  现代编译原理-C语言描述
 
   - 读
-
 - Compilers: Principles,Techniques,and Tools (Alfred V.Aho,Ravi Sethi,Jeffrey D.Ullman)  龙书🐲📚  编译原理技术和工具
 - Concepts in Programming Languages John C. Mitchell 程序设计语言概念 
 
   - 读
-
 - Programming languages : principles and paradigms, Tucker, Allen B.
 
   - 待定
-
 - Design Concepts in Programming Languages (Franklyn A. Turbak, David K. Gifford)
 
   - o1 or o1-mini
-
 - Programming language design concepts Watt, David A. (David Anthony)
 
   - 读不读都行吧
-
 - Theories of Programming Languages
 
   - 读
-
 - Formal Syntax And Semantics Of Programming Languages
 
   - 读
-
 - Syntax and Semantics of Programming Languages [[homepage]](https://homepage.cs.uiowa.edu/~slonnegr/plf/Book/)
 
   - 待定
-
 - Semantics of Programming Language (Gunter)
 
   - 读
-
 - Type Theory and Formal Proof An Introduction
 
   - 读 o1
 - Lectures on the Curry-Howard Isomorphism
 
   - 
-
 - Programs and Proofs Mechanizing Mathematics with Dependent Types
 
   - https://ilyasergey.net/pnp/
 - Certified Programming with Dependent Types (CPDT) (by Adam Chlipala) [[Homepage](http://adam.chlipala.net/cpdt/)] 免费版
 
   - 读o1-mini
-
 - Homotopy Type Theory (HoTT) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 
   - 读读
-
+- 
 - 魔力Haskell
   - ①2024080 第二部分 116页
   - 2024
@@ -367,13 +354,18 @@
   - 读o1-mini
 - Haskell趣学指南
   - 
+- Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours
+- All About Monads [link](https://wiki.haskell.org/All_About_Monads)
 - ML程序设计教程
-  - ①2024090
+
+    - ①2024090
+
+- The Little MLer
 - [RWOC](https://realworldocaml.org/) - Real World OCaml 🐫 - Jason Hickey, Anil Madhavapeddy, and Yaron Minsky
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc [link](https://github.com/rust-lang/rfcs)
 - 主流编程语言Compilers 代码库
-  
+
   - miniXXX
   - OCaml
   - Rust
@@ -386,16 +378,13 @@
   - Python
   - Scheme
   - Kotlin
-  
 - The Definition of Standard ML
 
   - 
-
 - C++语言的设计和演化 ([美] Bjarne Stroustrup 著 裘宗燕 译) 
 - 编程之魂  与27位编程语言创始人对话 
 
     - 直看对应的几章
-
 - https://plzoo.andrej.com/
 - [Lean 4 定理证明](https://www.leanprover.cn/tp-lean-zh/title_page.html) 
 - [Lean 函数式编程](https://www.leanprover.cn/fp-lean-zh/)
@@ -419,11 +408,9 @@
 - Programming languages : principles and practice, Louden, Kenneth C. 没找到带目录的没找到中文pdf ：<
 
   - 读
-
 - Concepts of Programming Languages 第十版 程序设计语言原理🇨🇳 (（美）賽巴斯塔（Sebesta，R.W.）)  
   - ①202409【TODO】
 - [Agda-unimath-category-theory](https://unimath.github.io/agda-unimath/category-theory.html)
-
 - [TypeScript 类型体操姿势合集](https://github.com/type-challenges/type-challenges/blob/main/questions/00016-medium-pop/README.zh-CN.md)
   - https://github.com/ronami/HypeScript
   - https://github.com/skyzh/type-exercise-in-rust
