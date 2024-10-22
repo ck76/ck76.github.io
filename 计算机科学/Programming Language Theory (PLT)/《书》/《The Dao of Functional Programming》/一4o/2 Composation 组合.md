@@ -1,6 +1,6 @@
 [toc]
 
-![7172847cf31bb96ba7277f550dd4a5fa](https://p.ipic.vip/015l45.png)
+<img src="https://p.ipic.vip/015l45.png" alt="7172847cf31bb96ba7277f550dd4a5fa" style="zoom:53%;" />
 
 这段内容来自一个关于函数组合的章节，特别是涉及到“前置组合”和“后置组合”的概念。让我逐步解释每个部分：
 

@@ -21873,7 +21873,7 @@ This is similar to twin-Atom inframe 4:54.
     step- ))
 ```
 5. ```scheme
-  (add1
+    (add1
     (j k)).
 ```
 **43**这非常像第189页关于`incr`的观察。**Double Your Money, Get Twice as Much** 第209页关于的观察：无论`j`和`k`是哪些`Nat`，
@@ -21898,7 +21898,7 @@ This is similar to twin-Atom inframe 4:54.
 ((add1 n-1) (add1 n-1))
 ```
 3. ```scheme
-  (add1
+    (add1
     (n-1 (add1 n-1)))
 ```
 能用`cong`解决吗？
