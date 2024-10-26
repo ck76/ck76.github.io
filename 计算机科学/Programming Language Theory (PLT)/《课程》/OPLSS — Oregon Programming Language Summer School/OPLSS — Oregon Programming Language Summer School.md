@@ -1,6 +1,7 @@
 
 
 - [OPLSS — Oregon Programming Language Summer School](https://www.cs.uoregon.edu/research/summerschool/summer24/)
+  - [OPLSS 2024 — Types, Semantics, and Applications](https://www.cs.uoregon.edu/research/summerschool/summer24/)
   - [OPLSS 2023 — Types, Semantics, and Logic](https://www.cs.uoregon.edu/research/summerschool/summer23/topics.php)
   - [OPLSS 2022 — Types, Semantics, and Program Reasoning](https://www.cs.uoregon.edu/research/summerschool/summer22/topics.php)
   - [OPLSS 2021 — Foundations of Programming and Security](https://www.cs.uoregon.edu/research/summerschool/summer21/topics.php)

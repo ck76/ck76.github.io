@@ -2,6 +2,17 @@
 
 
 
+- https://arxiv.org/list/cs.PL/recent
+- https://arxiv.org/list/cs.LO/recent
+- https://arxiv.org/list/math.CT/recent
+- [ACM Digital Library](https://dl.acm.org/)
+- ACM Functional Languages [link](https://dl.acm.org/topic/ccs2012/10011007.10011006.10011008.10011009.10011012?expand=all&startPage=)
+- ACM Language Types [link](https://dl.acm.org/topic/ccs2012/10011007.10011006.10011008.10011009?expand=all&startPage=)
+
+- ACM Lambda Calculus [link](https://dl.acm.org/topic/ccs2012/10002950.10003714.10003732.10003733?expand=all&startPage=0&pageSize=20)
+
+- Journal of Functional Programming [link](https://www.cambridge.org/core/journals/journal-of-functional-programming/listing?q=&searchWithinIds=49AD4731AAB0E94D8EF98BBB4EE56A7F&aggs[productTypes][filters]=JOURNAL_ARTICLE)
+
 
 
 
@@ -76,6 +87,10 @@
 
 
 
+##### TOPLAS (Transactions on Programming Languages and Systems)
+
+
+
 ##### The Haskell Symposium
 
 https://www.haskell.org/haskell-symposium/
@@ -111,3 +126,115 @@ G. Morrisett, D. Walker, K. Crary, and N. Glew. From system F to typed assembly 
 D.L. Parnas On the criteria to be used in decomposing systems into modules. Communications of the ACM, 1972, 15(12), 1053--1058. [url](http://dl.acm.org/citation.cfm?id=361623)
 
 G.D. Plotkin. Call-by-name, call-by-value, and the λ-calculus. Theoretical Computer Science 1 (1975), 125--159. [url](http://homepages.inf.ed.ac.uk/gdp/publications/cbn_cbv_lambda.pdf)
+
+
+
+Efficient Reading of Papers in Science and Technology
+
+Some Hints to Improve Writing of Technical Papers
+
+How to Read a Paper
+
+How to Get Good at Learning
+
+On the Unhappiness of Soware Developers
+
+On the Shortness of Life
+
+
+
+What every compiler writer should know about programmers or “Optimization” based on undefined behaviour hurts performance 
+
+Understanding TypeScript
+
+Safe & Efficient Gradual Typing for TypeScript
+
+JavaScript: The First 20 Years [link](https://dl.acm.org/doi/pdf/10.1145/3386327)
+
+How Statically-Typed Functional Programmers Write Code
+
+Gradual Typing as if Types Mattered
+
+Gradual Typing: A New Perspective
+
+Fundamental Concepts in Programming Languages CHRISTOPHER STRACHEY
+
+Comonads for user interfaces Arthur Xavier
+
+de Bruijn Notation as a Nested Datatype
+
+System Programming in Rust- Beyond Safety
+
+Type Analysis for Javascript
+
+Type Inference for Static Compilation of JavaScript
+
+Type Inference for JavaScript
+
+Fast and Precise Type Checking for JavaScript
+
+A Model for Reasoning About JavaScript Promises
+
+Sound and Complete Type Inference for a Systems Programming Language
+
+Static Analysis for Javascript
+
+Why Functional Programming Matters
+
+The Purely Functional Software Deployment Model Het puur functionele softwaredeploymentmodel
+
+Liquid Haskell: Haskell as a Theorem Prover
+
+Elm: Concurrent FRP for Functional GUIs
+
+Lightweight higher-kinded polymorphism Jeremy Yallop and Leo White University of Cambridge
+
+
+
+
+
+
+
+
+Introduction to Type Theory Herman Geuvers
+
+PROOFS AND TYPES
+
+Notions of computation and monads Eugenio Moggi∗
+
+Principal type-schemes for functional programs Luis Damas* and Robin Milner Edinburgh University
+
+Definitional interpreters for higher-order programming languages Definitional interpreters for higher-order programming languages John C. Reynolds
+
+Computational lambda-calculus and monads
+
+Why dependent types matter
+
+Why It's Nice to Be Quoted_ Quasiquoting for Haskell
+
+When is one thing equal to some other thing
+
+What is a Categorical Model of Arrows? Robert Atkey
+
+What Makes Code Hard to Understand
+
+Visible type application
+
+Value Recursion in Monadic Computations
+
+Universes for Generic Programs and Proofs in Dependent Type Theory
+
+Unfolding Abstract Datatypes Jeremy Gibbons
+
+Unboxed values as rst class citizens in a non-strict functional language
+
+Type Families with Class, Type Classes with Family
+
+Type Inference, Haskell and Dependent Types Adam Michael Gundry
+
+Total Functional Programming
+
+Total Parser Combinators
+
+
+

@@ -301,6 +301,13 @@
 - [Category Theory Illustrated](https://github.com/abuseofnotation/category-theory-illustrated)
 - 张宏波-
 - simply-typed-lambda-calculus简单类型 λ 演算
+
+
+
+
+- Type Systems for Programming Languages Benjamin C. Pierce bcpierce@cis.upenn.edu Working draft of January 15, 2000
+- A Structural Approach to Operational Semantics Gordon D. Plotkin
+
 - Advanced Compiler Design and Implementation (Steven S.Muchnick)  鲸书🐳📚  高级编译器设计与实现
 - Modern Compiler Implementation in C (Andrew W.Appel,with Jens Palsberg) 虎书🐯📚  现代编译原理-C语言描述
 
@@ -345,23 +352,33 @@
 - Homotopy Type Theory (HoTT) 🇨🇳(by Univalent Foundations of Mathematics) [[Homepage](http://homotopytypetheory.org/book/)] [[GitHub](https://github.com/HoTT/book)]
 
   - 读读
-- 
+- Basics of Compiler Design 
 - 魔力Haskell
   - ①2024080 第二部分 116页
   - 2024
 - [Think with Types](https://thinkingwithtypes.com/)
   - github [thinking-with-types ](https://github.com/isovector/thinking-with-types) Think with Types
   - 读o1-mini
+- The Monad.Reader, Issue 1~24
+
+
+  - https://wiki.haskell.org/The_Monad.Reader/Previous_issues
+  - Typeclassopedia [link](https://wiki.haskell.org/Typeclassopedia)
 - Haskell趣学指南
+
   - 
 - Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours
+- Book of Monads
 - All About Monads [link](https://wiki.haskell.org/All_About_Monads)
+- [Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours](Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours) [link](https://en.wikibooks.org/wiki/Haskell/Write/_Yourself/_a/_Scheme/_in/_48/_Hours)
 - ML程序设计教程
 
     - ①2024090
-
 - The Little MLer
 - [RWOC](https://realworldocaml.org/) - Real World OCaml 🐫 - Jason Hickey, Anil Madhavapeddy, and Yaron Minsky
+- [Developing Applications With](https://caml.inria.fr/pub/docs/oreilly-book/ ) [link](https://caml.inria.fr/pub/docs/oreilly-book/)
+- Introduction to Objective Caml 
+- Xavier Leroy. The ZINC experiment: an economical implementation of the ML language. Technical report 117, INRIA, 1990.
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc [link](https://github.com/rust-lang/rfcs)
 - 主流编程语言Compilers 代码库
