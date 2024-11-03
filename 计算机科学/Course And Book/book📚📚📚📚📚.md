@@ -230,7 +230,7 @@
 
     - 4o看起来更好
 
-- Using, Understanding, and Unravelling The OCaml Language — An introduction [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
+- Using, Understanding, and Unraveling The OCaml Language From Practice to Theory and vice versa [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
     - o1
 - Write You a Haskell Building a modern functional compiler from first principles
 
@@ -247,7 +247,6 @@
     - o1
 - Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)] 类型理论与函数式编程
 
-    - o1
 - Proofs and Types (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
 
     - 
