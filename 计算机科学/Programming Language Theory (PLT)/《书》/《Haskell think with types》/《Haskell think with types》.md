@@ -1,1 +1,0 @@
-Haskell think with types

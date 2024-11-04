@@ -247,6 +247,8 @@
     - o1
 - Type Theory and Functional Programming (**TTFP**) (by Simon Thompson) [[Homepage](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)] [[PDF](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/ttfp.pdf)] 类型理论与函数式编程
 
+    - 
+
 - Proofs and Types (**ProT**) (by Jean-Yves Girard, Yves Lafont, Paul Taylor) [[Homepage](http://www.paultaylor.eu/stable/Proofs+Types.html)] [[PDF](http://www.paultaylor.eu/stable/prot.pdf)]
 
     - 
@@ -420,7 +422,7 @@
 
   - ①202409【TODO】
 - Programming Language Pragmatics 程序设计语言 实践之路 第3版🇨🇳（中文版） (Michael L. Scott译者 韩江  陈玉)   
-  - ①
+  - ①20241028 - 7 Type System 有点过誉了8?
 - Programming languages : principles and practice, Louden, Kenneth C. 没找到带目录的没找到中文pdf ：<
 
   - 读

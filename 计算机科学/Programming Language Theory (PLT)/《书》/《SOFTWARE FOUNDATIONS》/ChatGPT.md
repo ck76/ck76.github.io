@@ -3,8 +3,84 @@
 
 
 ```
+我正在阅读Software Foundations  Volume 1: 逻辑基础，
+请你帮我详解我提供给你的内容帮助我理解。我并没有相关的知识背景所以我偏好详细详尽的回答，所以不要省略和偷懒。非常详细的详解我提供给你的内容。在回答的开头详解这段内容讲了什么，给我一个概览，在回答的结束给我全面详尽的总结这段内容讲解了什么。
+并且习题分别给我解答
+```
+
+
+
+
 
 ```
+详解：【
+Imp
+简单的指令式程序
+在本章中，我们会更加认真地看待如何用 Coq 来研究其它东西。 我们的案例研究是一个名为 Imp 的'简单的指令式编程语言'， 它包含了传统主流语言（如 C 和 Java）的一小部分核心片段。下面是一个用 Imp 编写的常见数学函数：
+       Z ::= X;;
+       Y ::= 1;;
+       WHILE ~(Z = 0) DO
+         Y ::= Y × Z;;
+         Z ::= Z - 1
+       END
+本章关注于如何定义 Imp 的'语法'和'语义'；'《编程语言基础》 （Programming Language Foundations）'（'《软件基础》'第二卷） 中的章节则发展了'程序等价关系（Program Equivalence）'并引入了 '霍尔逻辑（Hoare Logic）'，它是一种广泛用于推理指令式程序的逻辑。
+
+Set Warnings "-notation-overridden,-parsing".
+From Coq Require Import Bool.Bool.
+From Coq Require Import Init.Nat.
+From Coq Require Import Arith.Arith.
+From Coq Require Import Arith.EqNat.
+From Coq Require Import omega.Omega.
+From Coq Require Import Lists.List.
+From Coq Require Import Strings.String.
+Import ListNotations.
+From LF Require Import Maps.
+
+——————
+- Imp简单的指令式程序
+- 算术和布尔表达式
+  - 语法
+  - 求值
+  - 优化
+- Coq 自动化
+  - 泛策略
+    - try 泛策略
+    - ; 泛策略（简单形式）
+    - ; 泛策略（一般形式）
+    - repeat 泛策略
+  - 定义新的策略记法
+  - omega 策略
+  - 更多方便的策略
+- 求值作为关系
+  - 推理规则的记法
+  - 定义的等价关系
+  - 计算式定义与关系式定义
+- 带变量的表达式
+  - 状态
+  - 语法
+  - 记法
+  - 求值
+- 指令
+  - 语法
+  - 脱糖记法
+  - Locate 命令
+    - 查询记法
+    - 查询标识符
+  - 更多示例
+    - 循环
+    - 无限循环：
+- 求值指令
+  - 求值作为函数（失败的尝试）
+  - 求值作为一种关系
+    - 操作语义
+  - 求值的确定性
+- 对 Imp 进行推理
+- 附加练习】
+```
+
+
+
+
 
 
 
