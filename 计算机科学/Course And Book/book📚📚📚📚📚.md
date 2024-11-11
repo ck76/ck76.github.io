@@ -191,7 +191,7 @@
   - 20240929 ：7 An ML Implementation of the Lambda-Calculus(de bruijn index)
   - 20241006 ：第二部分：简单类型
   - 202410：第三部分：子类型
-  - 202410
+  - 202411 : 
 - 给程序员的范畴论-Haskell-中文翻译
 
     - 
