@@ -196,8 +196,7 @@
 
     - 
 - [The Dao of Functional Programming  Bartosz Milewski](https://github.com/ck76/DaoFP)
-
-    - o1
+- o1
 - [PLAI - **Programming Languages: Application and Interpretation**](https://lotuc.org/PLAI-cn/) 
 - [OOPLAI-zh 面对对象编程语言：应用和解释 ](https://mrmathematica.github.io/ooplai-zh/)
 - Type and Proof-类型和证明
@@ -228,7 +227,7 @@
   - 
 - Understanding and Evolving the Rust Programming Language
 
-    - 4o看起来更好
+    - 
 
 - Using, Understanding, and Unraveling The OCaml Language From Practice to Theory and vice versa [pdf](http://pauillac.inria.fr/~remy/cours/appsem/ocaml.pdf)
     - o1
@@ -337,7 +336,7 @@
   - 待定
 - Semantics of Programming Language (Gunter)
 
-  - 读
+  - 读o1
 - Type Theory and Formal Proof An Introduction
 
   - 读 o1
@@ -371,7 +370,7 @@
 - Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours
 - Book of Monads
 
-    - O1mini
+    - o1mini
 
 - All About Monads [link](https://wiki.haskell.org/All_About_Monads)
 - [Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours](Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours) [link](https://en.wikibooks.org/wiki/Haskell/Write/_Yourself/_a/_Scheme/_in/_48/_Hours)
@@ -383,6 +382,9 @@
 - [Developing Applications With](https://caml.inria.fr/pub/docs/oreilly-book/ ) [link](https://caml.inria.fr/pub/docs/oreilly-book/)
 - Introduction to Objective Caml 
 - Xavier Leroy. The ZINC experiment: an economical implementation of the ML language. Technical report 117, INRIA, 1990.
+
+    - o1
+
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html) Rust 编译器开发指南-官方文档
 - Rust rfc [link](https://github.com/rust-lang/rfcs)
 - 主流编程语言Compilers 代码库
@@ -410,6 +412,7 @@
 - [Lean 4 定理证明](https://www.leanprover.cn/tp-lean-zh/title_page.html) 
 - [Lean 函数式编程](https://www.leanprover.cn/fp-lean-zh/)
 - https://github.com/AndrasKovacs/elaboration-zoo
+- 《Parsing Techniques A Practical Guide》
 - 自己动手实现解释器
   - ①20240813~
 - 编程语言实现模式 - Language Implementation Patterns

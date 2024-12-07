@@ -1364,7 +1364,7 @@ in
 
 **希望以上详细的解释能够帮助您深入理解第三章的内容。如果您对某些部分有进一步的疑问，或者需要更多的解释，请随时提出来，我会尽力解答。**
  #  
- Thought for a couple of seconds
+ 
 **概览**
 
 您提供的是《函数式编程语言的实现》（The Implementation of Functional Programming Languages）一书的第三章，标题是“将高级函数式语言翻译成 Lambda 演算”。本章的主要目标是展示如何将高级函数式编程语言（以 Miranda 为例）翻译成 Lambda 演算。这对于理解函数式编程语言的实现非常关键，因为 Lambda 演算是函数式编程语言的理论基础，提供了一种精确的语义描述方法。
