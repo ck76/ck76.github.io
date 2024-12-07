@@ -370,6 +370,9 @@
   - 
 - Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours
 - Book of Monads
+
+    - O1mini
+
 - All About Monads [link](https://wiki.haskell.org/All_About_Monads)
 - [Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours](Haskell/Write/ Yourself/ a/ Scheme/ in/ 48/ Hours) [link](https://en.wikibooks.org/wiki/Haskell/Write/_Yourself/_a/_Scheme/_in/_48/_Hours)
 - ML程序设计教程
