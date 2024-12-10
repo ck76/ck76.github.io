@@ -4,6 +4,8 @@ You:\s*\n([\s\S]*?)\nChatGPT:
 
  \)
 \( 
+
+Thought for a couple of seconds
 ```
 
  这段对话是一个关于Pie语言中“Atom”（原子）概念的解释。我们一步步来详细解析：
